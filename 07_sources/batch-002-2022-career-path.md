@@ -47,16 +47,23 @@ ID: sources:batch-002-2022-career-path
 | B2-S06 | https://liquipedia.net/dota2/The_International/2022/China | TI11中国区预选 | 结构化历史 |
 | B2-S07 | https://liquipedia.net/dota2/PGL/Arlington_Major/2022 | Arlington名单/替补 | 结构化历史 |
 | B2-S08 | https://liquipedia.net/dota2/Invictus_Gaming/Played_Matches | iG逐系列结果 | 非一手；用于精确赛果 |
-| B2-S09 | https://liquipedia.net/dota2/Vici_Gaming/Played_Matches | VG逐系列结果/LCQ路径 | 同上 |
+| B2-S09 | https://liquipedia.net/dota2/Vici_Gaming/Played_Matches | VG逐系列结果/LCQ路径 | 同上；VG仍保留为历史对手，不再作主角首队候选 |
 | B2-S10 | https://liquipedia.net/dota2/EHOME/Played_Matches | EHOME逐系列结果 | 同上 |
 | B2-S11 | https://liquipedia.net/dota2/Dandelion_Esport_Club | DEC海选→A级→S级原型 | 同上 |
 | B2-S12 | https://liquipedia.net/dota2/Dota_Pro_Circuit/2021-22/3/China/Open_Qualifier | Fusion等公开海选原型 | 同上 |
+| B2-S13 | https://k.sina.cn/article_6609699502_189f802ae00100mde6.html | Yang与VG长期关系背景侧证：转述其早期经历，称VG老板为挖Yang买下Duobao队 | 二手游戏资讯；不能证明2022回归的具体动机，只作背景侧证 |
 
 ## C. 证据缺口
 
-1. VG 2022-02 Irving离开及Yang回归的俱乐部原始公告/公开换人理由。
+1. VG 2022-02 Irving离开及Yang回归的俱乐部原始公告/公开换人理由；**但该路线已退出主角首队候选，不再作为高优先级大纲依赖。**
 2. EHOME 7e→Echo的原始公告和真实换人理由。
 3. iG为什么最终在2022-05选择fy，以及Fade当时离队/替补的原始公告。
 4. RNG 2022-04 Kaka加入、FelixCiaoBa后续安排的原始俱乐部材料。
 5. 每支候选队2022年日常训练/基地/教练职责，目前采访样本远少于赛后问答。
-6. TI11之后四队的内部解散/休息原因需要独立批次研究，不能用 roster 日期代替动机。
+6. TI11之后iG/RNG/EHOME的内部解散/休息原因需要独立批次研究，不能用 roster 日期代替动机。
+
+## D. 关系材料使用原则
+
+- “关系好”不等于每个转会都由私人关系决定。
+- “现实选择某选手”不等于不存在其他试训者。
+- 但若一个小说入口同时需要逆着长期关系、队伍公开需求和现实最终选择去改写，而已有更自然候选，则应直接降低优先级或排除，而不是为主角强造例外。
