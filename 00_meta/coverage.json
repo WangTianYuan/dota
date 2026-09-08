@@ -1,0 +1,17 @@
+{
+  "as_of": "2026-09-08",
+  "batch": "001",
+  "full_period_complete": false,
+  "coverage": {
+    "official_numbered_patch_index": {"status":"indexed","count":51,"range":"7.30d..7.41e","unnumbered_hotfixes_included":false},
+    "patch_mechanics": {"status":"selected_claims_checked","full_meta_analysis":false},
+    "hero_statistics": {"status":"not_extracted","match_count":0},
+    "age_rules": {"status":"selected_primary_rules_checked","tour1_cn_2022":true,"tour2_cn_2022":false,"tour3_cn_2022_age":false},
+    "tournaments": {"status":"partial_anchors","complete_calendar":false},
+    "team_changes": {"status":"research_board","complete_roster_ledger":false},
+    "ame": {"status":"initial_temporal_evidence","original_vlog_watched":false,"full_career_complete":false},
+    "ti10_gf_g5": {"status":"source_audit","full_vod_watched":false,"replay_parsed":false},
+    "other_players": {"status":"not_yet_systematically_collected"}
+  },
+  "story_gate": "First team, role and TI route remain undecided until evidence gaps are resolved"
+}
