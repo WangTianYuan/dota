@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source_id": "S01",
+  "source_url": "https://www.dota2.com/datafeed/patchnoteslist",
+  "retrieved_at": "2026-09-08",
+  "capture_method": "Manual transcription of the official web-tool JSON response; not a byte-identical raw archive",
+  "scope": "7.30d baseline through 7.41e, as returned by this feed at retrieval",
+  "columns": ["version", "patch_timestamp"],
+  "timestamp_semantics": "Source metadata; do not interpret as exact client rollout instant or Chinese announcement date",
+  "count": 51,
+  "patches": [
+    ["7.30d",1632553200],["7.30e",1635404400],
+    ["7.31",1645603200],["7.31b",1646035200],["7.31c",1651474800],["7.31d",1654671600],
+    ["7.32",1661238000],["7.32b",1661842800],["7.32c",1664262000],["7.32d",1669708800],["7.32e",1678089600],
+    ["7.33",1681974000],["7.33b",1682406000],["7.33c",1683961200],["7.33d",1686812400],["7.33e",1689145200],
+    ["7.34",1691478000],["7.34b",1691996400],["7.34c",1694156400],["7.34d",1696402800],["7.34e",1700467200],
+    ["7.35",1702540800],["7.35b",1703145600],["7.35c",1708502400],["7.35d",1711004400],
+    ["7.36",1716361200],["7.36a",1716706800],["7.36b",1717657200],["7.36c",1719212400],
+    ["7.37",1722409200],["7.37b",1723618800],["7.37c",1724828400],["7.37d",1727766000],["7.37e",1732003200],
+    ["7.38",1739865600],["7.38b",1741075200],["7.38c",1743058800],
+    ["7.39",1747897200],["7.39b",1748502000],["7.39c",1750748400],["7.39d",1754377200],["7.39e",1759388400],
+    ["7.40",1765785600],["7.40b",1766476800],["7.40c",1768982400],
+    ["7.41",1774335600],["7.41a",1774594800],["7.41b",1775545200],["7.41c",1778050800],["7.41d",1780556400],["7.41e",1785394800]
+  ],
+  "limitations": ["Not all unnumbered hotfixes", "Not an analysis of every patch", "No hero win rates exported", "Exact event-to-patch mapping still requires event evidence"]
+}
