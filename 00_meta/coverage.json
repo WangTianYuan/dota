@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-09-08",
-  "batch": "003",
+  "as_of": "2026-09-09",
+  "batch": "004",
   "full_period_complete": false,
   "coverage": {
     "official_numbered_patch_index": {"status":"indexed","count":51,"range":"7.30d..7.41e","unnumbered_hotfixes_included":false},
@@ -11,10 +11,11 @@
     "tournaments": {"status":"2021_22_dpc_path_and_2022_patch_event_map","complete_2021_2026_calendar":false},
     "team_changes": {"status":"2022_cn_roster_ledger_plus_post_ti11_market","complete_2021_2026_ledger":false},
     "first_team_candidates": {"status":"active_research","vg_removed":true,"leading":"iG pos4","not_locked":true},
-    "ame": {"status":"periodized_through_2023_start","original_longform_interviews_complete":false,"full_career_complete":false},
-    "ti10_gf_g5": {"status":"source_audit","full_vod_watched":false,"replay_parsed":false},
-    "other_players": {"status":"selected_2022_interviews_and_transfer_paths","full_temporal_profiles":false},
+    "ame": {"status":"cross_period_skeleton_2018_2025","periods":["2018-2019","2021-10_to_2022-11","2022-11_to_2023-start","2023-2025"],"game_level_performance_database_complete":false,"relationships_file_complete":false},
+    "core_players": {"status":"initial_temporal_profiles_created","players":["Somnus","Chalice","XinQ","fy","Kaka","y`"],"deep_full_career_complete":false},
+    "ob_ecosystem": {"status":"2019_2021_official_event_prototypes_mapped","specific_2021_11_to_2022_02_first_contact_event_locked":false},
+    "ti10_gf_g5": {"status":"match_id_and_key_replay_log_verified","match_id":6227492909,"duration":"36:44","entry_window_verified":true,"major_fight_19m_verified":true,"roshan_2125_verified":true,"full_vod_scene_cards_complete":false,"player_pov_complete":false,"team_voice_complete":false},
     "post_ti11_cn_market": {"status":"baseline_mapped","relationship_and_motivation_profiles_complete":false}
   },
-  "story_gate": "First team and final role remain undecided. iG pos4 is the leading route, but must survive relationship/roster and all-Chinese post-TI11 team construction review."
+  "story_gate": "First team and final role remain undecided. iG pos4 remains the leading research route. Before locking it, complete iG 2022 exact roster/coach/tryout chain, late-2021 to early-2022 OB contact calendar, and compare TI11-post roster construction around Ame. G5 micro-divergence remains unlocked until VOD/vision scene review is complete."
 }
