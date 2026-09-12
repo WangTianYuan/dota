@@ -1,6 +1,6 @@
 {
   "as_of": "2026-09-12",
-  "batch": "008",
+  "batch": "009",
   "full_period_complete": false,
   "coverage": {
     "official_numbered_patch_index": {"status":"indexed","count":51,"range":"7.30d..7.41e","unnumbered_hotfixes_included":false},
@@ -8,7 +8,7 @@
     "hero_statistics": {"status":"2022_selected_competitive_slices_extracted","scopes":["CN Tour 2","CN Tour 3","Summer Tour/Major","TI11"],"all_years_complete":false},
     "pos4_2022": {"status":"archived_as_non_primary_protagonist_route","spring_to_ti11_research_retained":true},
     "age_rules": {"status":"selected_primary_rules_checked","protagonist_ti10_age_locked":18,"tour1_cn_2022":true,"later_event_specific_rules_still_required":true},
-    "tournaments": {"status":"2021_22_dpc_path_plus_aries_ti11_options_researched","complete_2021_2026_calendar":false},
+    "tournaments": {"status":"2021_22_dpc_path_plus_aries_ti11_qualification_locked_and_placement_options_researched","complete_2021_2026_calendar":false},
     "team_changes": {"status":"2022_cn_roster_ledger_plus_post_ti11_market","complete_2021_2026_ledger":false},
     "protagonist_role": {"status":"locked_by_author","role":"pos2","archetype":"variable-resource elite mid"},
     "first_professional_team": {"status":"locked_by_author","team":"Aster.Aries","role":"pos2","exact_trial_and_debut_date_locked":false},
@@ -16,9 +16,10 @@
     "p2_aster_contract_gate": {"status":"passed_with_condition","aries_is_aster_second_squad":true,"real_internal_promotions":["Siamese.C/皮球","Xwy"],"real_loan_precedent":"生死 -> Keen Gaming","exact_contract_terms_public":false,"recommended_story_path":"Aries -> Team Aster promotion -> later formal transfer/buyout/loan after Ame rest"},
     "p2_ame_mid_chemistry_gate": {"status":"passed","recommended_mid_archetype":"variable-resource elite mid","fixed_sacrifice_role":false},
     "aster_aries_2022": {"status":"first_year_macro_path_researched","tour2_record_real":"6-1, 2nd Div II","tour2_only_loss":"2022-03-18 0-2 DEC","tour3_record_real":"4-3, 5th after tiebreaks","first_real_lgd_anchor":"2022-06-24 PSG.LGD 2-0 Aries","ti11_cn_qualifier_real":"5th-6th","post_ti_real_mid_path":"Xwy transferred to Team Aster"},
-    "ti11_qualification_design": {"status":"options_ready_for_author_decision","recommended":"China qualifier 3rd -> LCQ -> TI11","alternatives":["China qualifier champion -> direct TI11","realistic fallback: no TI11 first year"],"locked":false},
-    "ti11_lcq": {"status":"format_and_real_field_researched","dates":"2022-10-08..2022-10-12","teams":12,"qualifying_slots":2,"real_winners":["Secret","Liquid"],"fictional_aries_path_locked":false},
-    "ti11_final_placement": {"status":"unlocked","first_year_final_or_championship_not_recommended":true},
+    "ti11_qualification_design": {"status":"locked_by_author","path":"China qualifier 3rd -> Singapore LCQ -> TI11","regional_frame":{"RNG":"1st retained","XG":"2nd retained","Aries":"3rd fictional"}},
+    "ti11_lcq": {"status":"locked_to_qualify_but_exact_path_unlocked","dates":"2022-10-08..2022-10-12","teams":12,"qualifying_slots":2,"real_winners":["Secret","Liquid"],"critical_butterfly":"Aries qualification necessarily displaces Secret or Liquid","recommended_displacement":"Liquid","recommended_reason":"preserve Tundra-Secret final frame while accepting major lower-bracket ripple"},
+    "ti11_final_placement": {"status":"options_researched","recommended":"7th-8th, lower bracket 1-2 loss to PSG.LGD","alternatives":["9th-12th","5th-6th"],"top4_not_recommended":true,"locked":false},
+    "ti11_real_reference": {"status":"verified","real_top8":{"1":"Tundra","2":"Secret","3":"Liquid","4":"Aster","5-6":["PSG.LGD","Thunder Awaken"],"7-8":["beastcoast","OG"]},"real_lgd_path":["0-2 Secret","2-0 BOOM","2-1 beastcoast","0-2 Aster"]},
     "ame_xinq_roster_constraint": {"status":"high_weight","long_term_pos4_protagonist_requires_special_justification":true},
     "ame": {"status":"cross_period_skeleton_2018_2025","periods":["2018-2019","2021-10_to_2022-11","2022-11_to_2023-start","2023-2025"],"game_level_performance_database_complete":false,"relationships_file_complete":false},
     "core_players": {"status":"initial_temporal_profiles_created","players":["Somnus","Chalice","XinQ","fy","Kaka","y`"],"deep_full_career_complete":false},
@@ -26,5 +27,5 @@
     "ti10_gf_g5": {"status":"match_id_and_key_replay_log_verified","match_id":6227492909,"duration":"36:44","entry_window_verified":true,"major_fight_19m_verified":true,"roshan_2125_verified":true,"full_vod_scene_cards_complete":false,"player_pov_complete":false,"team_voice_complete":false},
     "post_ti11_cn_market": {"status":"baseline_mapped","preferred_next_step":"Team Aster main-team phase before later Ame reunion","exact_reunion_window_locked":false}
   },
-  "story_gate": "Protagonist long-term role=pos2 and 2022 first team=Aster.Aries are locked. The next macro author decision is TI11 entry. Current recommendation: preserve Aries real 2-0 VG and 0-2 RNG, flip the close 1-2 iG series, beat VG again, lose to XG, finish China qualifier 3rd, then qualify through the Singapore LCQ to TI11. Do not lock TI11 final placement yet."
+  "story_gate": "Role=pos2, first team=Aster.Aries, and first-year TI11 qualification via China qualifier 3rd -> LCQ are locked. The next macro author decision is TI11 final placement. Current recommendation: 7th-8th, with Aries surviving lower-bracket R1/R2 and losing 1-2 to PSG.LGD in R3. Before scene design, explicitly account for the LCQ butterfly: fictional Aries must replace real qualifier Secret or Liquid; current recommendation is to replace Liquid, not yet locked."
 }
