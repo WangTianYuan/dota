@@ -1,6 +1,6 @@
 {
   "as_of": "2026-09-12",
-  "batch": "006",
+  "batch": "007",
   "full_period_complete": false,
   "coverage": {
     "official_numbered_patch_index": {"status":"indexed","count":51,"range":"7.30d..7.41e","unnumbered_hotfixes_included":false},
@@ -10,12 +10,14 @@
     "age_rules": {"status":"selected_primary_rules_checked","protagonist_ti10_age_locked":18,"tour1_cn_2022":true,"later_event_specific_rules_still_required":true},
     "tournaments": {"status":"2021_22_dpc_path_and_2022_patch_event_map","complete_2021_2026_calendar":false},
     "team_changes": {"status":"2022_cn_roster_ledger_plus_post_ti11_market","complete_2021_2026_ledger":false},
-    "first_team_candidates": {"status":"two_route_pressure_test_complete","routes":["Aster.Aries pos2","iG pos4"],"leading":"Aster.Aries pos2","not_locked":true},
-    "final_role_backsolve": {"status":"P2_leads_after_eight_node_test","routes":["Aries pos2 -> long-term pos2","iG pos4 -> long-term pos3"],"long_term_pos4_deprioritized":true,"direct_2022_pos3_entry_deprioritized":true},
-    "p2_p3_pressure_test": {"status":"complete","nodes":8,"P2_strengths":["role continuity","real mid trial window","real June 24 LGD match","direct competitive credibility for Ame roster"],"P2_open_risks":["Aster/Aries contract and main-team promotion path","Ame1+protagonist2 resource/hero chemistry"],"P3_strengths":["closer real TI qualifier finish","natural iG post-TI rebuild"],"P3_open_risks":["Frisk/fy replacement chain","Tour2 promotion butterfly","post-TI pos4->pos3 proof burden"]},
+    "first_team_candidates": {"status":"P2_lockable_after_final_gates","leading":"Aster.Aries pos2","fallback":"iG pos4 -> pos3","not_locked_by_author":true},
+    "final_role_backsolve": {"status":"P2_lockable","recommended_long_term_role":"pos2","fallback":"pos3 via iG pos4","long_term_pos4_deprioritized":true,"direct_2022_pos3_entry_deprioritized":true},
+    "p2_p3_pressure_test": {"status":"complete","nodes":8,"winner":"P2","P2_strengths":["role continuity","real mid trial window","real June 24 LGD match","direct competitive credibility for Ame roster"],"P3_strengths":["closer real TI qualifier finish","natural iG post-TI rebuild"],"P3_open_risks":["Frisk/fy replacement chain","Tour2 promotion butterfly","post-TI pos4->pos3 proof burden"]},
+    "p2_aster_contract_gate": {"status":"passed_with_condition","aries_is_aster_second_squad":true,"real_internal_promotions":["Siamese.C/皮球","Xwy"],"real_loan_precedent":"生死 -> Keen Gaming","exact_contract_terms_public":false,"recommended_story_path":"Aries -> Team Aster promotion -> later formal transfer/buyout/loan after Ame rest"},
+    "p2_ame_mid_chemistry_gate": {"status":"passed","evidence":["Maybe/Ame roles depend on draft","NTS/Ame conditional resource tilt","LGD pos1/pos2 Kunkka flex","Ame nontraditional carry usage"],"recommended_mid_archetype":"variable-resource elite mid","fixed_sacrifice_role":false},
     "pos3_2022_entry_scan": {"status":"broad_cn_scan_complete_for_major_and_relevant_div2_teams","clean_tier1_spring_window_found":false,"best_direct_lower_window":"LBZS May pos3 change","recommended":false},
     "aster_aries_2022": {"status":"mid_route_researched","tour2_mid_trial_before_formal_transfer":true,"tour2_record":"6-1","tour3_record":"4-3, 5th after tiebreaks","first_real_lgd_anchor":"2022-06-24 PSG.LGD 2-0 Aries","ti11_cn_qualifier":"5th-6th","post_ti_real_mid_path":"Xwy transferred to Team Aster"},
-    "ig_2022_route": {"status":"pressure_tested","tour2_record":"5-2, 3rd Div II","tour3_real":"6-1, 2nd Div II","ti11_cn_qualifier":"4th","fy_real_join":"2022-05","post_ti_rebuild":"natural organizational exit window"},
+    "ig_2022_route": {"status":"fallback_after_pressure_test","tour2_record":"5-2, 3rd Div II","tour3_real":"6-1, 2nd Div II","ti11_cn_qualifier":"4th","fy_real_join":"2022-05","post_ti_rebuild":"natural organizational exit window"},
     "ame_xinq_roster_constraint": {"status":"high_weight","long_term_pos4_protagonist_requires_special_justification":true},
     "ame": {"status":"cross_period_skeleton_2018_2025","periods":["2018-2019","2021-10_to_2022-11","2022-11_to_2023-start","2023-2025"],"game_level_performance_database_complete":false,"relationships_file_complete":false},
     "core_players": {"status":"initial_temporal_profiles_created","players":["Somnus","Chalice","XinQ","fy","Kaka","y`"],"deep_full_career_complete":false},
@@ -23,5 +25,5 @@
     "ti10_gf_g5": {"status":"match_id_and_key_replay_log_verified","match_id":6227492909,"duration":"36:44","entry_window_verified":true,"major_fight_19m_verified":true,"roshan_2125_verified":true,"full_vod_scene_cards_complete":false,"player_pov_complete":false,"team_voice_complete":false},
     "post_ti11_cn_market": {"status":"baseline_mapped","relationship_and_motivation_profiles_complete":false}
   },
-  "story_gate": "P2 (Aster.Aries mid -> long-term mid) leads after the eight-node pressure test but is not locked. Before asking to lock it, research two gates: (A) Aster/Aries contract, transfer and main-team promotion realism; (B) competitive chemistry of protagonist pos2 + Ame pos1 and what types of pos3/4/5 make that dual-core structure work. P3 remains the fallback. G5 micro-divergence remains unlocked until VOD/vision scene review is complete."
+  "story_gate": "P2 (Aster.Aries mid -> long-term mid) has passed the two final structural gates and is now recommended as lockable, but the author has not locked it yet. If locked, stop broad P2/P3 comparison and move to detailed 2022 Aries career path, TI11 qualification/result design, post-TI Team Aster promotion, and a 2023 Ame reunion window. G5 micro-divergence remains unlocked until VOD/vision scene review is complete."
 }
