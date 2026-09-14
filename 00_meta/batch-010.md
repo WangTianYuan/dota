@@ -135,7 +135,7 @@ Aries试训依据仍是游戏实力与圈内评价，不能写成靠粉丝数签
 
 禁止：粉丝换属性、礼物流水换奖励、魔法魅力、系统操纵平台流量。
 
-详细：`06_story/livestream-system-task-design.md`。
+详细：`06_story/streaming-system-task-design.md`。
 
 ---
 
