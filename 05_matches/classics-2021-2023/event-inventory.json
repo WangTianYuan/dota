@@ -1,0 +1,498 @@
+[
+  {
+    "league_id": 13647,
+    "title": "英特尔世界公开赛北京站（含资格阶段）",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/13647/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:46:44.127601+00:00",
+      "raw_sha256": "9508620317f0b68016aed3bfd575bed83350d820d5fb582484b17372cd054131",
+      "raw_bytes": 69797,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 270,
+    "in_window_count": 270,
+    "earliest_beijing": "2021-10-30T10:51:37+08:00",
+    "latest_beijing": "2022-01-22T19:42:50+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 13717,
+    "title": "DPC中国2021/22冬季A级",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/13717/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:46:45.136771+00:00",
+      "raw_sha256": "2b3510bfd7150a68565bdd7ef3930e2dfd72788079646556069fc6417db031fc",
+      "raw_bytes": 16502,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 62,
+    "in_window_count": 62,
+    "earliest_beijing": "2021-11-29T12:58:18+08:00",
+    "latest_beijing": "2021-12-17T19:53:08+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 13716,
+    "title": "DPC中国2021/22冬季S级",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/13716/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:44.063929+00:00",
+      "raw_sha256": "a3985e191809263ee9713c65433291de38fc1ee916b6c855016168af06acb249",
+      "raw_bytes": 26354,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 73,
+    "in_window_count": 73,
+    "earliest_beijing": "2022-01-03T12:55:29+08:00",
+    "latest_beijing": "2022-01-24T20:38:37+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 13738,
+    "title": "DPC西欧2021/22冬季S级",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/13738/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:46:48.856097+00:00",
+      "raw_sha256": "cf06466194b42f4dbf84d81d2974300bde6b7fc7154676fddb7deaf08c74d8a1",
+      "raw_bytes": 18841,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 71,
+    "in_window_count": 71,
+    "earliest_beijing": "2021-11-30T21:55:18+08:00",
+    "latest_beijing": "2022-01-22T02:33:09+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 13804,
+    "title": "OGA Dota PIT欧洲/独联体第5赛季",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/13804/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:46:47.769420+00:00",
+      "raw_sha256": "d0ff06f24aed028414c30aae461877bfabaffdebba8df2df00402b6ac1805d65",
+      "raw_bytes": 9532,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 36,
+    "in_window_count": 36,
+    "earliest_beijing": "2021-12-13T19:01:42+08:00",
+    "latest_beijing": "2021-12-21T03:32:18+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 13937,
+    "title": "DPC中国2021/22冬季地区决赛",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/13937/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:44.067532+00:00",
+      "raw_sha256": "4a0f26f4f4419e4fb17669042e71ada11af2ecb0238113ca86d9afc658b4a554",
+      "raw_bytes": 6135,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 17,
+    "in_window_count": 17,
+    "earliest_beijing": "2022-02-18T14:00:52+08:00",
+    "latest_beijing": "2022-02-20T20:34:43+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 13960,
+    "title": "DPC西欧2021/22冬季地区决赛",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/13960/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:46:49.896911+00:00",
+      "raw_sha256": "addf7890298ceb607c1cbdce0e9bd9d9781ba60faa2376481d50f1739f371882",
+      "raw_bytes": 3971,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 15,
+    "in_window_count": 15,
+    "earliest_beijing": "2022-02-11T20:55:19+08:00",
+    "latest_beijing": "2022-02-14T02:57:30+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 13978,
+    "title": "OGA Dota PIT中国2022",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/13978/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:45.127034+00:00",
+      "raw_sha256": "2f30f47c0e9707b939748e55d8d51901ea92cc340c121c82e5d109bd58ea65f7",
+      "raw_bytes": 13397,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 37,
+    "in_window_count": 37,
+    "earliest_beijing": "2022-02-22T18:00:31+08:00",
+    "latest_beijing": "2022-02-28T21:12:03+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 13994,
+    "title": "Gamers Galaxy迪拜2022",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/13994/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:47.114513+00:00",
+      "raw_sha256": "97bd9ac531a73d37e262bd9a7043f4065d3952f5ad7936d90b9e2768db7e2cf1",
+      "raw_bytes": 16082,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 44,
+    "in_window_count": 44,
+    "earliest_beijing": "2022-03-02T18:00:01+08:00",
+    "latest_beijing": "2022-03-07T03:23:05+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14040,
+    "title": "DPC中国2021/22春季A级",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14040/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:45.050080+00:00",
+      "raw_sha256": "3fb5b4d56e2844b3b32bc0ef92be74cbea9312ef1d1a8f7201347283d7055405",
+      "raw_bytes": 25114,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 69,
+    "in_window_count": 69,
+    "earliest_beijing": "2022-03-14T11:57:54+08:00",
+    "latest_beijing": "2022-04-26T17:20:04+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14041,
+    "title": "DPC中国2021/22春季S级",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14041/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:46.010365+00:00",
+      "raw_sha256": "d32fc63ec7786ff07c99d51d87dfacf4c11f1753c93bd1415196cb6ef465bc51",
+      "raw_bytes": 24278,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 67,
+    "in_window_count": 67,
+    "earliest_beijing": "2022-03-15T14:55:11+08:00",
+    "latest_beijing": "2022-04-25T19:10:39+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14196,
+    "title": "DPC中国2021/22春季地区决赛",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14196/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:46.130920+00:00",
+      "raw_sha256": "ed126f10e91e8dabc9c0c968c052d68b1796ce5abe59a7839c592c49dfe59e53",
+      "raw_bytes": 5800,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 16,
+    "in_window_count": 16,
+    "earliest_beijing": "2022-05-06T16:09:45+08:00",
+    "latest_beijing": "2022-05-08T21:47:40+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14173,
+    "title": "斯德哥尔摩Major2022",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14173/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:48.017018+00:00",
+      "raw_sha256": "c3d80c958c65ddd8039de402d0d916bd3794a4fe8f4b7026c9bdb29b22c6b674",
+      "raw_bytes": 44459,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 122,
+    "in_window_count": 122,
+    "earliest_beijing": "2022-05-12T18:00:05+08:00",
+    "latest_beijing": "2022-05-23T01:59:12+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14248,
+    "title": "DPC中国2021/22夏季S级",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14248/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:47.031589+00:00",
+      "raw_sha256": "21b4b03580656d9a2513f2c84f0318a3e4d81ae962087955cec587e14f3b03bf",
+      "raw_bytes": 26059,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 72,
+    "in_window_count": 72,
+    "earliest_beijing": "2022-06-07T14:56:35+08:00",
+    "latest_beijing": "2022-07-17T20:04:30+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14391,
+    "title": "利雅得大师赛2022",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14391/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:48.185457+00:00",
+      "raw_sha256": "962e3dd181e69a0675cce1a4c2276452dcaf16432214641be35d2b57eda61e8a",
+      "raw_bytes": 19625,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 54,
+    "in_window_count": 54,
+    "earliest_beijing": "2022-07-20T20:00:13+08:00",
+    "latest_beijing": "2022-07-25T03:56:55+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14417,
+    "title": "阿灵顿Major2022",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14417/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:48.967881+00:00",
+      "raw_sha256": "8036ae37f2f9719456e9b4f9a0df774d64aa069b43a10519a5f5cb0f3143d495",
+      "raw_bytes": 65048,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 179,
+    "in_window_count": 179,
+    "earliest_beijing": "2022-08-04T23:04:41+08:00",
+    "latest_beijing": "2022-08-15T07:34:48+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14388,
+    "title": "ESL One马来西亚2022",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14388/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:49.167641+00:00",
+      "raw_sha256": "ee748079ea4b403b0c98b77233a4ac502fb90cd22841bee4279c7488e71e06c7",
+      "raw_bytes": 31729,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 87,
+    "in_window_count": 87,
+    "earliest_beijing": "2022-08-23T12:00:09+08:00",
+    "latest_beijing": "2022-08-28T18:37:20+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14572,
+    "title": "TI11中国区预选（实际进行的42局）",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14572/matches",
+      "cache_file_modified_at_utc": "2026-09-15T11:20:18.621265+00:00",
+      "raw_sha256": "749d35d2960dc38c4d7fef85e81f740da02846d3b4dc9258971f275b6448f18f",
+      "raw_bytes": 11079,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 42,
+    "in_window_count": 42,
+    "earliest_beijing": "2022-09-08T09:03:15+08:00",
+    "latest_beijing": "2022-09-12T15:39:50+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14642,
+    "title": "TI11最终突围赛",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14642/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:49.914839+00:00",
+      "raw_sha256": "00e4583e077e875eaf9748c84eb7e901d55c02a1e762e97cbe44395c085da7fe",
+      "raw_bytes": 37458,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 103,
+    "in_window_count": 103,
+    "earliest_beijing": "2022-10-08T10:03:43+08:00",
+    "latest_beijing": "2022-10-12T17:21:33+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14268,
+    "title": "TI11小组赛与主赛事",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14268/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:38:51.298276+00:00",
+      "raw_sha256": "6f0b745beacd1c3e237ae373d897fb6186e5cdde4f4da92353de801b8e6069eb",
+      "raw_bytes": 84036,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 231,
+    "in_window_count": 231,
+    "earliest_beijing": "2022-10-15T10:27:57+08:00",
+    "latest_beijing": "2022-10-30T19:49:25+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 14859,
+    "title": "DPC中国2023冬季S级",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/14859/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:46:46.734470+00:00",
+      "raw_sha256": "d5bd83c1a4f0430b57352fa417663368b2f9853f28e60a990b9654901383ddd1",
+      "raw_bytes": 18607,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 71,
+    "in_window_count": 71,
+    "earliest_beijing": "2023-01-05T16:01:25+08:00",
+    "latest_beijing": "2023-02-04T19:57:16+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 15089,
+    "title": "利马Major2023",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/15089/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:50.147169+00:00",
+      "raw_sha256": "477ae23621a3cbcdd8ca40308affc3639432dd434c0ae6820bdb90044488a7a8",
+      "raw_bytes": 70836,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 195,
+    "in_window_count": 195,
+    "earliest_beijing": "2023-02-22T23:02:11+08:00",
+    "latest_beijing": "2023-03-06T06:55:31+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 15140,
+    "title": "DPC中国2023春季S级",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/15140/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:54.190782+00:00",
+      "raw_sha256": "0d81b7173a4d7fcc53d31253279bb79e937629ce6158b733584483e1e5efa292",
+      "raw_bytes": 24258,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 67,
+    "in_window_count": 67,
+    "earliest_beijing": "2023-03-14T12:00:06+08:00",
+    "latest_beijing": "2023-04-03T17:11:47+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 15196,
+    "title": "DreamLeague第19赛季",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/15196/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:50.901631+00:00",
+      "raw_sha256": "4f62a02c2cb8612e60d0eee553332cf1083513b7827c9c0acde0545d9abc737c",
+      "raw_bytes": 70595,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 194,
+    "in_window_count": 194,
+    "earliest_beijing": "2023-04-09T17:55:06+08:00",
+    "latest_beijing": "2023-04-24T03:31:43+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 15251,
+    "title": "柏林Major2023",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/15251/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:51.146103+00:00",
+      "raw_sha256": "f0849befbdd14a0583a8e169803bbf6e1136bcec6048217af88d390b6c68b78c",
+      "raw_bytes": 69358,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 191,
+    "in_window_count": 191,
+    "earliest_beijing": "2023-04-26T18:00:00+08:00",
+    "latest_beijing": "2023-05-08T02:08:03+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 15383,
+    "title": "DPC中国2023夏季S级",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/15383/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:54.847173+00:00",
+      "raw_sha256": "90dd3f610fd042f07a3a12acace2853f25dde760280b6d2536a6257e08e5b964",
+      "raw_bytes": 26468,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 73,
+    "in_window_count": 73,
+    "earliest_beijing": "2023-05-16T11:59:25+08:00",
+    "latest_beijing": "2023-06-05T19:13:54+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 15439,
+    "title": "DreamLeague第20赛季",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/15439/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:52.168053+00:00",
+      "raw_sha256": "bf163679452171512e58af92ed07f944b5bad799846f736ab17793efc343ac82",
+      "raw_bytes": 72039,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 198,
+    "in_window_count": 198,
+    "earliest_beijing": "2023-06-11T17:55:03+08:00",
+    "latest_beijing": "2023-06-26T03:31:08+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 15438,
+    "title": "巴厘岛Major2023",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/15438/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:51.860564+00:00",
+      "raw_sha256": "4752211f4db35ddfeed497885d7b245fbfce4fb7a61ebfae6e182a47325e2473",
+      "raw_bytes": 72612,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 200,
+    "in_window_count": 200,
+    "earliest_beijing": "2023-06-29T10:01:26+08:00",
+    "latest_beijing": "2023-07-09T20:14:01+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 15475,
+    "title": "利雅得大师赛2023（API列表缺末两日）",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/15475/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:52.820175+00:00",
+      "raw_sha256": "0396294a37861c28c249e4074edb2059b06ad1367b87643013c85a4ddd678e74",
+      "raw_bytes": 85960,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 236,
+    "in_window_count": 236,
+    "earliest_beijing": "2023-06-19T19:58:19+08:00",
+    "latest_beijing": "2023-07-29T03:50:41+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 15739,
+    "title": "DreamLeague第21赛季",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/15739/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:53.875174+00:00",
+      "raw_sha256": "a456636b0ddf5a2b4b624f3b45881d49e664c71c8c4079974baeeca433da3713",
+      "raw_bytes": 31288,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 86,
+    "in_window_count": 86,
+    "earliest_beijing": "2023-09-18T17:57:33+08:00",
+    "latest_beijing": "2023-09-25T01:09:00+08:00",
+    "coverage_verified_against_full_bracket": false
+  },
+  {
+    "league_id": 15728,
+    "title": "TI12",
+    "source": {
+      "url": "https://api.opendota.com/api/leagues/15728/matches",
+      "cache_file_modified_at_utc": "2026-09-15T09:39:53.152922+00:00",
+      "raw_sha256": "b9d2991b70db83ddcaa917e15413d94ae03a74b1fc389403562a973e3ac8fe9f",
+      "raw_bytes": 54950,
+      "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+    },
+    "returned_count": 151,
+    "in_window_count": 151,
+    "earliest_beijing": "2023-10-13T01:00:44+08:00",
+    "latest_beijing": "2023-10-30T07:13:43+08:00",
+    "coverage_verified_against_full_bracket": false
+  }
+]

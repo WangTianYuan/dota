@@ -1,0 +1,386 @@
+{
+  "source_url": "https://stats.ru.spectral.gg/lrg2/?league=ti11_cn_quali&mod=matches",
+  "accessed_on": "2026-09-15",
+  "retrieval_method": "web工具表格事实摘录；直接HTTP返回验证页。",
+  "source_timestamp_warning": "Finished列对应开局时间样本；12小时显示缺AM/PM，不据此替换OpenDota start_time。",
+  "rows": [
+    {
+      "match_id": 6746425134,
+      "radiant_label": "Royal Never Give Up (RNG)",
+      "dire_label": "Ybb Gaming (Ybb)",
+      "duration_display": "36:39",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_2",
+      "source_finished_column": "02:07:12 8 Sep 2022"
+    },
+    {
+      "match_id": 6749931110,
+      "radiant_label": "CDEC (CDEC)",
+      "dire_label": "Xtreme  Gaming (XG)",
+      "duration_display": "36:09",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_22",
+      "source_finished_column": "03:11:24 10 Sep 2022"
+    },
+    {
+      "match_id": 6753917157,
+      "radiant_label": "Royal Never Give Up (RNG)",
+      "dire_label": "Xtreme  Gaming (XG)",
+      "duration_display": "37:59",
+      "combined_kills": 61,
+      "spectral_series": "Series 0_40",
+      "source_finished_column": "05:13:37 12 Sep 2022"
+    },
+    {
+      "match_id": 6746805851,
+      "radiant_label": "INVICTUS GAMING (IG)",
+      "dire_label": "Xtreme  Gaming (XG)",
+      "duration_display": "38:59",
+      "combined_kills": 43,
+      "spectral_series": "Series 0_8",
+      "source_finished_column": "10:03:14 8 Sep 2022"
+    },
+    {
+      "match_id": 6748244943,
+      "radiant_label": "Team Fusion (Fusion)",
+      "dire_label": "Vici Gaming (VG)",
+      "duration_display": "32:05",
+      "combined_kills": 49,
+      "spectral_series": "Series 0_13",
+      "source_finished_column": "05:23:53 9 Sep 2022"
+    },
+    {
+      "match_id": 6748544248,
+      "radiant_label": "INVICTUS GAMING (IG)",
+      "dire_label": "LBZS (LBZS)",
+      "duration_display": "42:12",
+      "combined_kills": 65,
+      "spectral_series": "Series 0_17",
+      "source_finished_column": "10:19:08 9 Sep 2022"
+    },
+    {
+      "match_id": 6751834824,
+      "radiant_label": "CDEC (CDEC)",
+      "dire_label": "Vici Gaming (VG)",
+      "duration_display": "34:15",
+      "combined_kills": 45,
+      "spectral_series": "Series 0_28",
+      "source_finished_column": "02:21:12 11 Sep 2022"
+    },
+    {
+      "match_id": 6752195021,
+      "radiant_label": "Xtreme  Gaming (XG)",
+      "dire_label": "Royal Never Give Up (RNG)",
+      "duration_display": "27:36",
+      "combined_kills": 46,
+      "spectral_series": "Series 0_33",
+      "source_finished_column": "07:59:45 11 Sep 2022"
+    },
+    {
+      "match_id": 6748095913,
+      "radiant_label": "Ybb Gaming (Ybb)",
+      "dire_label": "Team Magma (Magma)",
+      "duration_display": "44:08",
+      "combined_kills": 54,
+      "spectral_series": "Series 0_10",
+      "source_finished_column": "02:12:30 9 Sep 2022"
+    },
+    {
+      "match_id": 6748448382,
+      "radiant_label": "LBZS (LBZS)",
+      "dire_label": "INVICTUS GAMING (IG)",
+      "duration_display": "50:02",
+      "combined_kills": 52,
+      "spectral_series": "Series 0_17",
+      "source_finished_column": "08:56:41 9 Sep 2022"
+    },
+    {
+      "match_id": 6752271552,
+      "radiant_label": "Xtreme  Gaming (XG)",
+      "dire_label": "Royal Never Give Up (RNG)",
+      "duration_display": "44:10",
+      "combined_kills": 51,
+      "spectral_series": "Series 0_33",
+      "source_finished_column": "08:50:41 11 Sep 2022"
+    },
+    {
+      "match_id": 6748208449,
+      "radiant_label": "Team Fusion (Fusion)",
+      "dire_label": "Vici Gaming (VG)",
+      "duration_display": "28:14",
+      "combined_kills": 35,
+      "spectral_series": "Series 0_13",
+      "source_finished_column": "04:33:01 9 Sep 2022"
+    },
+    {
+      "match_id": 6746471021,
+      "radiant_label": "Ybb Gaming (Ybb)",
+      "dire_label": "Royal Never Give Up (RNG)",
+      "duration_display": "24:03",
+      "combined_kills": 32,
+      "spectral_series": "Series 0_2",
+      "source_finished_column": "03:08:08 8 Sep 2022"
+    },
+    {
+      "match_id": 6746573621,
+      "radiant_label": "Vici Gaming (VG)",
+      "dire_label": "Aster.Aries (Aries)",
+      "duration_display": "35:09",
+      "combined_kills": 37,
+      "spectral_series": "Series 0_4",
+      "source_finished_column": "05:40:30 8 Sep 2022"
+    },
+    {
+      "match_id": 6746620244,
+      "radiant_label": "CDEC (CDEC)",
+      "dire_label": "EHOME (EHOME)",
+      "duration_display": "37:10",
+      "combined_kills": 58,
+      "spectral_series": "Series 0_6",
+      "source_finished_column": "06:50:52 8 Sep 2022"
+    },
+    {
+      "match_id": 6748621592,
+      "radiant_label": "LBZS (LBZS)",
+      "dire_label": "INVICTUS GAMING (IG)",
+      "duration_display": "41:52",
+      "combined_kills": 38,
+      "spectral_series": "Series 0_17",
+      "source_finished_column": "11:29:14 9 Sep 2022"
+    },
+    {
+      "match_id": 6749824546,
+      "radiant_label": "Royal Never Give Up (RNG)",
+      "dire_label": "Aster.Aries (Aries)",
+      "duration_display": "29:10",
+      "combined_kills": 32,
+      "spectral_series": "Series 0_20",
+      "source_finished_column": "01:02:07 10 Sep 2022"
+    },
+    {
+      "match_id": 6752116128,
+      "radiant_label": "Xtreme  Gaming (XG)",
+      "dire_label": "Royal Never Give Up (RNG)",
+      "duration_display": "29:54",
+      "combined_kills": 31,
+      "spectral_series": "Series 0_33",
+      "source_finished_column": "07:05:54 11 Sep 2022"
+    },
+    {
+      "match_id": 6753802120,
+      "radiant_label": "Xtreme  Gaming (XG)",
+      "dire_label": "Vici Gaming (VG)",
+      "duration_display": "31:29",
+      "combined_kills": 34,
+      "spectral_series": "Series 0_38",
+      "source_finished_column": "03:00:36 12 Sep 2022"
+    },
+    {
+      "match_id": 6752392642,
+      "radiant_label": "INVICTUS GAMING (IG)",
+      "dire_label": "Vici Gaming (VG)",
+      "duration_display": "43:41",
+      "combined_kills": 57,
+      "spectral_series": "Series 0_36",
+      "source_finished_column": "10:07:43 11 Sep 2022"
+    },
+    {
+      "match_id": 6752024325,
+      "radiant_label": "INVICTUS GAMING (IG)",
+      "dire_label": "Aster.Aries (Aries)",
+      "duration_display": "57:06",
+      "combined_kills": 69,
+      "spectral_series": "Series 0_30",
+      "source_finished_column": "05:37:33 11 Sep 2022"
+    },
+    {
+      "match_id": 6746385664,
+      "radiant_label": "Team Fusion (Fusion)",
+      "dire_label": "Team Saiyan (TSaiyin)",
+      "duration_display": "26:23",
+      "combined_kills": 32,
+      "spectral_series": "Series 0_1",
+      "source_finished_column": "01:03:15 8 Sep 2022"
+    },
+    {
+      "match_id": 6746739403,
+      "radiant_label": "Xtreme  Gaming (XG)",
+      "dire_label": "INVICTUS GAMING (IG)",
+      "duration_display": "38:58",
+      "combined_kills": 49,
+      "spectral_series": "Series 0_8",
+      "source_finished_column": "08:58:10 8 Sep 2022"
+    },
+    {
+      "match_id": 6753967144,
+      "radiant_label": "Xtreme  Gaming (XG)",
+      "dire_label": "Royal Never Give Up (RNG)",
+      "duration_display": "57:45",
+      "combined_kills": 74,
+      "spectral_series": "Series 0_40",
+      "source_finished_column": "06:16:25 12 Sep 2022"
+    },
+    {
+      "match_id": 6753851077,
+      "radiant_label": "Xtreme  Gaming (XG)",
+      "dire_label": "Vici Gaming (VG)",
+      "duration_display": "25:38",
+      "combined_kills": 26,
+      "spectral_series": "Series 0_38",
+      "source_finished_column": "03:57:31 12 Sep 2022"
+    },
+    {
+      "match_id": 6749988311,
+      "radiant_label": "CDEC (CDEC)",
+      "dire_label": "Xtreme  Gaming (XG)",
+      "duration_display": "39:37",
+      "combined_kills": 48,
+      "spectral_series": "Series 0_22",
+      "source_finished_column": "04:15:39 10 Sep 2022"
+    },
+    {
+      "match_id": 6750060151,
+      "radiant_label": "Ybb Gaming (Ybb)",
+      "dire_label": "Vici Gaming (VG)",
+      "duration_display": "32:44",
+      "combined_kills": 48,
+      "spectral_series": "Series 0_24",
+      "source_finished_column": "05:32:57 10 Sep 2022"
+    },
+    {
+      "match_id": 6751890098,
+      "radiant_label": "INVICTUS GAMING (IG)",
+      "dire_label": "Aster.Aries (Aries)",
+      "duration_display": "35:44",
+      "combined_kills": 43,
+      "spectral_series": "Series 0_30",
+      "source_finished_column": "03:26:01 11 Sep 2022"
+    },
+    {
+      "match_id": 6748362878,
+      "radiant_label": "EHOME (EHOME)",
+      "dire_label": "SHENZHEN (SZ)",
+      "duration_display": "44:50",
+      "combined_kills": 36,
+      "spectral_series": "Series 0_15",
+      "source_finished_column": "07:40:44 9 Sep 2022"
+    },
+    {
+      "match_id": 6749870836,
+      "radiant_label": "Aster.Aries (Aries)",
+      "dire_label": "Royal Never Give Up (RNG)",
+      "duration_display": "37:29",
+      "combined_kills": 40,
+      "spectral_series": "Series 0_20",
+      "source_finished_column": "02:00:47 10 Sep 2022"
+    },
+    {
+      "match_id": 6746684278,
+      "radiant_label": "CDEC (CDEC)",
+      "dire_label": "EHOME (EHOME)",
+      "duration_display": "30:02",
+      "combined_kills": 39,
+      "spectral_series": "Series 0_6",
+      "source_finished_column": "07:52:47 8 Sep 2022"
+    },
+    {
+      "match_id": 6751775817,
+      "radiant_label": "CDEC (CDEC)",
+      "dire_label": "Vici Gaming (VG)",
+      "duration_display": "39:46",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_28",
+      "source_finished_column": "01:15:12 11 Sep 2022"
+    },
+    {
+      "match_id": 6748032069,
+      "radiant_label": "Team Magma (Magma)",
+      "dire_label": "Ybb Gaming (Ybb)",
+      "duration_display": "35:03",
+      "combined_kills": 43,
+      "spectral_series": "Series 0_10",
+      "source_finished_column": "01:10:56 9 Sep 2022"
+    },
+    {
+      "match_id": 6750314405,
+      "radiant_label": "INVICTUS GAMING (IG)",
+      "dire_label": "SHENZHEN (SZ)",
+      "duration_display": "33:29",
+      "combined_kills": 44,
+      "spectral_series": "Series 0_26",
+      "source_finished_column": "08:58:49 10 Sep 2022"
+    },
+    {
+      "match_id": 6746509252,
+      "radiant_label": "Vici Gaming (VG)",
+      "dire_label": "Aster.Aries (Aries)",
+      "duration_display": "1:03:39",
+      "combined_kills": 65,
+      "spectral_series": "Series 0_4",
+      "source_finished_column": "04:05:23 8 Sep 2022"
+    },
+    {
+      "match_id": 6750140853,
+      "radiant_label": "Ybb Gaming (Ybb)",
+      "dire_label": "Vici Gaming (VG)",
+      "duration_display": "43:19",
+      "combined_kills": 49,
+      "spectral_series": "Series 0_24",
+      "source_finished_column": "06:42:56 10 Sep 2022"
+    },
+    {
+      "match_id": 6750250583,
+      "radiant_label": "SHENZHEN (SZ)",
+      "dire_label": "INVICTUS GAMING (IG)",
+      "duration_display": "24:50",
+      "combined_kills": 42,
+      "spectral_series": "Series 0_26",
+      "source_finished_column": "08:03:56 10 Sep 2022"
+    },
+    {
+      "match_id": 6754052082,
+      "radiant_label": "Royal Never Give Up (RNG)",
+      "dire_label": "Xtreme  Gaming (XG)",
+      "duration_display": "48:31",
+      "combined_kills": 50,
+      "spectral_series": "Series 0_40",
+      "source_finished_column": "07:39:50 12 Sep 2022"
+    },
+    {
+      "match_id": 6751948451,
+      "radiant_label": "Aster.Aries (Aries)",
+      "dire_label": "INVICTUS GAMING (IG)",
+      "duration_display": "38:47",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_30",
+      "source_finished_column": "04:28:05 11 Sep 2022"
+    },
+    {
+      "match_id": 6748146454,
+      "radiant_label": "Team Magma (Magma)",
+      "dire_label": "Ybb Gaming (Ybb)",
+      "duration_display": "42:49",
+      "combined_kills": 52,
+      "spectral_series": "Series 0_10",
+      "source_finished_column": "03:18:56 9 Sep 2022"
+    },
+    {
+      "match_id": 6748294251,
+      "radiant_label": "SHENZHEN (SZ)",
+      "dire_label": "EHOME (EHOME)",
+      "duration_display": "47:20",
+      "combined_kills": 50,
+      "spectral_series": "Series 0_15",
+      "source_finished_column": "06:27:49 9 Sep 2022"
+    },
+    {
+      "match_id": 6752498546,
+      "radiant_label": "INVICTUS GAMING (IG)",
+      "dire_label": "Vici Gaming (VG)",
+      "duration_display": "44:18",
+      "combined_kills": 52,
+      "spectral_series": "Series 0_36",
+      "source_finished_column": "11:17:01 11 Sep 2022"
+    }
+  ]
+}

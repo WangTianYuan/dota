@@ -1,0 +1,542 @@
+{
+  "accessed_on": "2026-09-15",
+  "evidence": "F：Spectral页面事实摘录；与OpenDota详细解析库分开。",
+  "scope_note": "14局来自7月29—30日；另1局来自7月25日BB—9Pandas。只保存来源支持的字段。",
+  "full_vod_watched": false,
+  "scene_vod_watched": false,
+  "api_detail_available": false,
+  "api_checks_on": "2026-09-15",
+  "api_checks": [
+  {
+    "match_id": 7256935330,
+    "url": "https://api.opendota.com/api/matches/7256935330",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7261513228,
+    "url": "https://api.opendota.com/api/matches/7261513228",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7261599919,
+    "url": "https://api.opendota.com/api/matches/7261599919",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7261721075,
+    "url": "https://api.opendota.com/api/matches/7261721075",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7261906286,
+    "url": "https://api.opendota.com/api/matches/7261906286",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7262034121,
+    "url": "https://api.opendota.com/api/matches/7262034121",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7262210509,
+    "url": "https://api.opendota.com/api/matches/7262210509",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7262318315,
+    "url": "https://api.opendota.com/api/matches/7262318315",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7262424077,
+    "url": "https://api.opendota.com/api/matches/7262424077",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7263116991,
+    "url": "https://api.opendota.com/api/matches/7263116991",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7263223087,
+    "url": "https://api.opendota.com/api/matches/7263223087",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7263486698,
+    "url": "https://api.opendota.com/api/matches/7263486698",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7263597757,
+    "url": "https://api.opendota.com/api/matches/7263597757",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7263702415,
+    "url": "https://api.opendota.com/api/matches/7263702415",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  },
+  {
+    "match_id": 7263801942,
+    "url": "https://api.opendota.com/api/matches/7263801942",
+    "http_status": 404,
+    "body": "{\"error\":\"Not Found\"}"
+  }
+],
+  "missing_detail_fields": [
+    "完整BP交错顺序与选禁时间",
+    "分人逐分钟经济经验",
+    "装备购买和送达时刻",
+    "买活与肉山日志",
+    "施法顺序",
+    "玩家可见信息"
+  ],
+  "index": [
+    {
+      "match_id": 7256935330,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "38:52",
+      "combined_kills": 38,
+      "spectral_series": "Series 0_196",
+      "source_finished_column": "07:15:10 25 Jul 2023"
+    },
+    {
+      "match_id": 7261513228,
+      "radiant_label": "Talon (TLN)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "1:00:02",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_222",
+      "source_finished_column": "07:25:17 29 Jul 2023"
+    },
+    {
+      "match_id": 7261599919,
+      "radiant_label": "9Pandas (9Pandas)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "30:11",
+      "combined_kills": 32,
+      "spectral_series": "Series 0_222",
+      "source_finished_column": "08:44:35 29 Jul 2023"
+    },
+    {
+      "match_id": 7261721075,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "49:26",
+      "combined_kills": 34,
+      "spectral_series": "Series 0_224",
+      "source_finished_column": "10:38:53 29 Jul 2023"
+    },
+    {
+      "match_id": 7261906286,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "54:00",
+      "combined_kills": 43,
+      "spectral_series": "Series 0_224",
+      "source_finished_column": "12:52:07 29 Jul 2023"
+    },
+    {
+      "match_id": 7262034121,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "32:19",
+      "combined_kills": 26,
+      "spectral_series": "Series 0_224",
+      "source_finished_column": "02:26:33 29 Jul 2023"
+    },
+    {
+      "match_id": 7262210509,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "50:45",
+      "combined_kills": 49,
+      "spectral_series": "Series 0_227",
+      "source_finished_column": "04:30:45 29 Jul 2023"
+    },
+    {
+      "match_id": 7262318315,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "47:52",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_227",
+      "source_finished_column": "05:59:20 29 Jul 2023"
+    },
+    {
+      "match_id": 7262424077,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "52:52",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_227",
+      "source_finished_column": "07:39:20 29 Jul 2023"
+    },
+    {
+      "match_id": 7263116991,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "33:59",
+      "combined_kills": 27,
+      "spectral_series": "Series 0_230",
+      "source_finished_column": "08:47:30 30 Jul 2023"
+    },
+    {
+      "match_id": 7263223087,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "22:13",
+      "combined_kills": 23,
+      "spectral_series": "Series 0_230",
+      "source_finished_column": "10:03:21 30 Jul 2023"
+    },
+    {
+      "match_id": 7263486698,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "33:15",
+      "combined_kills": 45,
+      "spectral_series": "Series 0_232",
+      "source_finished_column": "12:50:51 30 Jul 2023"
+    },
+    {
+      "match_id": 7263597757,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "50:54",
+      "combined_kills": 65,
+      "spectral_series": "Series 0_232",
+      "source_finished_column": "02:02:13 30 Jul 2023"
+    },
+    {
+      "match_id": 7263702415,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "46:33",
+      "combined_kills": 51,
+      "spectral_series": "Series 0_232",
+      "source_finished_column": "03:21:26 30 Jul 2023"
+    },
+    {
+      "match_id": 7263801942,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "42:27",
+      "combined_kills": 49,
+      "spectral_series": "Series 0_232",
+      "source_finished_column": "04:42:23 30 Jul 2023"
+    }
+  ],
+  "grand_final_lineups": [
+    {
+      "match_id": 7263486698,
+      "game_number": 1,
+      "radiant": "Team Spirit",
+      "dire": "Team Liquid",
+      "radiant_kills_displayed": 12,
+      "dire_kills_displayed": 33,
+      "winner": "Team Liquid",
+      "players": [
+        {
+          "side": "radiant",
+          "source_player_name": "Mira",
+          "hero_zh": "魅惑魔女",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Yatoro雨",
+          "hero_zh": "虚空假面",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Collapse",
+          "hero_zh": "伐木机",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Larl",
+          "hero_zh": "帕克",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Miposhka",
+          "hero_zh": "远古冰魄",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Boxi",
+          "hero_zh": "电炎绝手",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "zai",
+          "hero_zh": "娜迦海妖",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Insania",
+          "hero_zh": "艾欧",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "m1CKe",
+          "hero_zh": "拉席克",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Nisha",
+          "hero_zh": "圣堂刺客",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        }
+      ],
+      "source_url": "https://stats.ru.spectral.gg/lrg2/?gets=0_232&league=riyadh_masters_2023&mod=matches-cards"
+    },
+    {
+      "match_id": 7263597757,
+      "game_number": 2,
+      "radiant": "Team Liquid",
+      "dire": "Team Spirit",
+      "radiant_kills_displayed": 29,
+      "dire_kills_displayed": 36,
+      "winner": "Team Spirit",
+      "players": [
+        {
+          "side": "radiant",
+          "source_player_name": "Nisha",
+          "hero_zh": "电炎绝手",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "zai",
+          "hero_zh": "娜迦海妖",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Insania",
+          "hero_zh": "拉比克",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "m1CKe",
+          "hero_zh": "齐天大圣",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Boxi",
+          "hero_zh": "米拉娜",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Miposhka",
+          "hero_zh": "魅惑魔女",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Yatoro雨",
+          "hero_zh": "虚空假面",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Mira",
+          "hero_zh": "工程师",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Collapse",
+          "hero_zh": "伐木机",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Larl",
+          "hero_zh": "蝙蝠骑士",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        }
+      ],
+      "source_url": "https://stats.ru.spectral.gg/lrg2/?gets=0_232&league=riyadh_masters_2023&mod=matches-cards"
+    },
+    {
+      "match_id": 7263702415,
+      "game_number": 3,
+      "radiant": "Team Spirit",
+      "dire": "Team Liquid",
+      "radiant_kills_displayed": 26,
+      "dire_kills_displayed": 25,
+      "winner": "Team Spirit",
+      "players": [
+        {
+          "side": "radiant",
+          "source_player_name": "Collapse",
+          "hero_zh": "黑暗贤者",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Miposhka",
+          "hero_zh": "远古冰魄",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Larl",
+          "hero_zh": "风行者",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Mira",
+          "hero_zh": "巨牙海民",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Yatoro雨",
+          "hero_zh": "巨魔战将",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Insania",
+          "hero_zh": "艾欧",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Nisha",
+          "hero_zh": "拉席克",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Boxi",
+          "hero_zh": "小小",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "m1CKe",
+          "hero_zh": "血魔",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "zai",
+          "hero_zh": "维萨吉",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        }
+      ],
+      "source_url": "https://stats.ru.spectral.gg/lrg2/?gets=0_232&league=riyadh_masters_2023&mod=matches-cards"
+    },
+    {
+      "match_id": 7263801942,
+      "game_number": 4,
+      "radiant": "Team Liquid",
+      "dire": "Team Spirit",
+      "radiant_kills_displayed": 18,
+      "dire_kills_displayed": 31,
+      "winner": "Team Spirit",
+      "players": [
+        {
+          "side": "radiant",
+          "source_player_name": "zai",
+          "hero_zh": "育母蜘蛛",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Boxi",
+          "hero_zh": "发条技师",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Insania",
+          "hero_zh": "巫妖",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "m1CKe",
+          "hero_zh": "卓尔游侠",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "radiant",
+          "source_player_name": "Nisha",
+          "hero_zh": "灰烬之灵",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Miposhka",
+          "hero_zh": "魅惑魔女",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Collapse",
+          "hero_zh": "兽王",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Larl",
+          "hero_zh": "电炎绝手",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Yatoro雨",
+          "hero_zh": "恐怖利刃",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        },
+        {
+          "side": "dire",
+          "source_player_name": "Mira",
+          "hero_zh": "暗影恶魔",
+          "association_basis": "按来源卡片对应顺序读取；尚未由录像确认显示ID"
+        }
+      ],
+      "source_url": "https://stats.ru.spectral.gg/lrg2/?gets=0_232&league=riyadh_masters_2023&mod=matches-cards"
+    }
+  ],
+  "third_game_reported_comeback": {
+    "value": 29000,
+    "unit": "gold",
+    "source_url": "https://stats.ru.spectral.gg/lrg2/?gets=0_232&league=riyadh_masters_2023&mod=matches-cards",
+    "basis": "Spectral记录栏标示，未取得分钟曲线核验；不是自行计算的最大瞬时差"
+  }
+}

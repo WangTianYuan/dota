@@ -1,0 +1,15 @@
+{
+  "generated_at_utc": "2026-09-15T11:40:21.877246+00:00",
+  "scope_beijing": "2021-10-18 through 2023-10-30 inclusive",
+  "events": 31,
+  "inventory_rows": 3329,
+  "unique_inventory_matches": 3329,
+  "selected_series": 62,
+  "requested_matches": 171,
+  "exported_matches": 171,
+  "parsed_objectives_present": 171,
+  "gold_curves_present": 171,
+  "purchase_logs_nonempty_players": 1710,
+  "full_vods_watched": 0,
+  "failures": []
+}

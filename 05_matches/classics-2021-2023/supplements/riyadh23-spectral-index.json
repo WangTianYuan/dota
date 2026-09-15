@@ -1,0 +1,2123 @@
+{
+  "source_url": "https://stats.ru.spectral.gg/lrg2/?league=riyadh_masters_2023&mod=matches",
+  "accessed_on": "2026-09-15",
+  "retrieval_method": "web工具实际返回的页面表格；仅提取事实行。直接HTTP取回的是验证页，未冒称获得原站完整HTML。",
+  "source_timestamp_warning": "表头Finished与卡片Finished含义不同；列表值与已知局start_time吻合，且页面使用无AM/PM的12小时钟。保留原串，不据此换算精确UTC/北京时间。",
+  "rows": [
+    {
+      "match_id": 7247969507,
+      "radiant_label": "beastcoast (bc)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "40:42",
+      "combined_kills": 51,
+      "spectral_series": "Series 0_1",
+      "source_finished_column": "09:00:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7247972025,
+      "radiant_label": "Xtreme Gaming (XG)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "24:51",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_2",
+      "source_finished_column": "09:00:06 19 Jul 2023"
+    },
+    {
+      "match_id": 7247975922,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "27:10",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_3",
+      "source_finished_column": "09:04:16 19 Jul 2023"
+    },
+    {
+      "match_id": 7247975974,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Execration (XctN)",
+      "duration_display": "32:43",
+      "combined_kills": 48,
+      "spectral_series": "Series 0_4",
+      "source_finished_column": "09:01:14 19 Jul 2023"
+    },
+    {
+      "match_id": 7247977154,
+      "radiant_label": "Entity (Entity)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "33:03",
+      "combined_kills": 39,
+      "spectral_series": "Series 0_5",
+      "source_finished_column": "09:00:17 19 Jul 2023"
+    },
+    {
+      "match_id": 7247980284,
+      "radiant_label": "Virtus.pro (VP)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "28:26",
+      "combined_kills": 50,
+      "spectral_series": "Series 0_6",
+      "source_finished_column": "09:00:06 19 Jul 2023"
+    },
+    {
+      "match_id": 7248020937,
+      "radiant_label": "Xtreme Gaming (XG)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "34:47",
+      "combined_kills": 57,
+      "spectral_series": "Series 0_2",
+      "source_finished_column": "09:57:04 19 Jul 2023"
+    },
+    {
+      "match_id": 7248028230,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Execration (XctN)",
+      "duration_display": "30:38",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_4",
+      "source_finished_column": "10:06:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7248029264,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "Virtus.pro (VP)",
+      "duration_display": "31:59",
+      "combined_kills": 26,
+      "spectral_series": "Series 0_6",
+      "source_finished_column": "10:02:02 19 Jul 2023"
+    },
+    {
+      "match_id": 7248032259,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "36:42",
+      "combined_kills": 36,
+      "spectral_series": "Series 0_3",
+      "source_finished_column": "10:06:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7248039044,
+      "radiant_label": "beastcoast (bc)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "39:42",
+      "combined_kills": 69,
+      "spectral_series": "Series 0_1",
+      "source_finished_column": "10:17:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7248071062,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Entity (Entity)",
+      "duration_display": "37:31",
+      "combined_kills": 51,
+      "spectral_series": "Series 0_5",
+      "source_finished_column": "10:46:03 19 Jul 2023"
+    },
+    {
+      "match_id": 7248126519,
+      "radiant_label": "beastcoast (bc)",
+      "dire_label": "OG (OG)",
+      "duration_display": "34:07",
+      "combined_kills": 51,
+      "spectral_series": "Series 0_13",
+      "source_finished_column": "11:40:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7248128342,
+      "radiant_label": "Xtreme Gaming (XG)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "42:03",
+      "combined_kills": 54,
+      "spectral_series": "Series 0_14",
+      "source_finished_column": "11:40:20 19 Jul 2023"
+    },
+    {
+      "match_id": 7248131945,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "41:26",
+      "combined_kills": 43,
+      "spectral_series": "Series 0_15",
+      "source_finished_column": "12:07:42 19 Jul 2023"
+    },
+    {
+      "match_id": 7248134730,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "44:29",
+      "combined_kills": 62,
+      "spectral_series": "Series 0_16",
+      "source_finished_column": "11:42:54 19 Jul 2023"
+    },
+    {
+      "match_id": 7248144462,
+      "radiant_label": "Entity (Entity)",
+      "dire_label": "Virtus.pro (VP)",
+      "duration_display": "41:31",
+      "combined_kills": 57,
+      "spectral_series": "Series 0_17",
+      "source_finished_column": "12:06:00 19 Jul 2023"
+    },
+    {
+      "match_id": 7248157543,
+      "radiant_label": "Execration (XctN)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "26:28",
+      "combined_kills": 54,
+      "spectral_series": "Series 0_18",
+      "source_finished_column": "12:06:05 19 Jul 2023"
+    },
+    {
+      "match_id": 7248207247,
+      "radiant_label": "OG (OG)",
+      "dire_label": "beastcoast (bc)",
+      "duration_display": "46:22",
+      "combined_kills": 65,
+      "spectral_series": "Series 0_13",
+      "source_finished_column": "12:46:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7248210120,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "33:39",
+      "combined_kills": 51,
+      "spectral_series": "Series 0_16",
+      "source_finished_column": "12:56:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7248211527,
+      "radiant_label": "Xtreme Gaming (XG)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "56:47",
+      "combined_kills": 47,
+      "spectral_series": "Series 0_14",
+      "source_finished_column": "12:54:06 19 Jul 2023"
+    },
+    {
+      "match_id": 7248228850,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Execration (XctN)",
+      "duration_display": "30:02",
+      "combined_kills": 42,
+      "spectral_series": "Series 0_18",
+      "source_finished_column": "01:03:07 19 Jul 2023"
+    },
+    {
+      "match_id": 7248249493,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "35:12",
+      "combined_kills": 34,
+      "spectral_series": "Series 0_15",
+      "source_finished_column": "01:20:02 19 Jul 2023"
+    },
+    {
+      "match_id": 7248250653,
+      "radiant_label": "Virtus.pro (VP)",
+      "dire_label": "Entity (Entity)",
+      "duration_display": "46:12",
+      "combined_kills": 56,
+      "spectral_series": "Series 0_17",
+      "source_finished_column": "01:19:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7248385003,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Virtus.pro (VP)",
+      "duration_display": "36:40",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_25",
+      "source_finished_column": "02:45:57 19 Jul 2023"
+    },
+    {
+      "match_id": 7248385188,
+      "radiant_label": "Execration (XctN)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "39:00",
+      "combined_kills": 46,
+      "spectral_series": "Series 0_26",
+      "source_finished_column": "02:46:04 19 Jul 2023"
+    },
+    {
+      "match_id": 7248385474,
+      "radiant_label": "OG (OG)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "24:07",
+      "combined_kills": 39,
+      "spectral_series": "Series 0_27",
+      "source_finished_column": "02:46:15 19 Jul 2023"
+    },
+    {
+      "match_id": 7248385753,
+      "radiant_label": "beastcoast (bc)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "44:58",
+      "combined_kills": 79,
+      "spectral_series": "Series 0_28",
+      "source_finished_column": "02:46:26 19 Jul 2023"
+    },
+    {
+      "match_id": 7248386837,
+      "radiant_label": "Team Secret (Secret)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "36:36",
+      "combined_kills": 48,
+      "spectral_series": "Series 0_29",
+      "source_finished_column": "02:47:09 19 Jul 2023"
+    },
+    {
+      "match_id": 7248392645,
+      "radiant_label": "Entity (Entity)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "21:04",
+      "combined_kills": 29,
+      "spectral_series": "Series 0_30",
+      "source_finished_column": "02:51:00 19 Jul 2023"
+    },
+    {
+      "match_id": 7248527564,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Entity (Entity)",
+      "duration_display": "29:58",
+      "combined_kills": 46,
+      "spectral_series": "Series 0_30",
+      "source_finished_column": "04:28:41 19 Jul 2023"
+    },
+    {
+      "match_id": 7248530839,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "26:37",
+      "combined_kills": 37,
+      "spectral_series": "Series 0_29",
+      "source_finished_column": "04:31:17 19 Jul 2023"
+    },
+    {
+      "match_id": 7248538199,
+      "radiant_label": "beastcoast (bc)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "36:08",
+      "combined_kills": 55,
+      "spectral_series": "Series 0_28",
+      "source_finished_column": "04:37:09 19 Jul 2023"
+    },
+    {
+      "match_id": 7248552573,
+      "radiant_label": "Virtus.pro (VP)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "50:37",
+      "combined_kills": 52,
+      "spectral_series": "Series 0_25",
+      "source_finished_column": "04:48:41 19 Jul 2023"
+    },
+    {
+      "match_id": 7248558189,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "Execration (XctN)",
+      "duration_display": "44:40",
+      "combined_kills": 63,
+      "spectral_series": "Series 0_26",
+      "source_finished_column": "04:53:13 19 Jul 2023"
+    },
+    {
+      "match_id": 7248560231,
+      "radiant_label": "OG (OG)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "37:29",
+      "combined_kills": 59,
+      "spectral_series": "Series 0_27",
+      "source_finished_column": "04:54:53 19 Jul 2023"
+    },
+    {
+      "match_id": 7248630757,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "37:32",
+      "combined_kills": 55,
+      "spectral_series": "Series 0_37",
+      "source_finished_column": "05:55:17 19 Jul 2023"
+    },
+    {
+      "match_id": 7248644335,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "32:31",
+      "combined_kills": 31,
+      "spectral_series": "Series 0_38",
+      "source_finished_column": "06:14:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7248650483,
+      "radiant_label": "beastcoast (bc)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "30:19",
+      "combined_kills": 45,
+      "spectral_series": "Series 0_39",
+      "source_finished_column": "06:22:24 19 Jul 2023"
+    },
+    {
+      "match_id": 7248654234,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "41:12",
+      "combined_kills": 60,
+      "spectral_series": "Series 0_40",
+      "source_finished_column": "06:19:03 19 Jul 2023"
+    },
+    {
+      "match_id": 7248665403,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "Entity (Entity)",
+      "duration_display": "26:49",
+      "combined_kills": 38,
+      "spectral_series": "Series 0_41",
+      "source_finished_column": "06:23:57 19 Jul 2023"
+    },
+    {
+      "match_id": 7248666403,
+      "radiant_label": "Execration (XctN)",
+      "dire_label": "Virtus.pro (VP)",
+      "duration_display": "42:34",
+      "combined_kills": 60,
+      "spectral_series": "Series 0_42",
+      "source_finished_column": "06:24:48 19 Jul 2023"
+    },
+    {
+      "match_id": 7248699241,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "38:53",
+      "combined_kills": 55,
+      "spectral_series": "Series 0_37",
+      "source_finished_column": "07:05:06 19 Jul 2023"
+    },
+    {
+      "match_id": 7248721077,
+      "radiant_label": "Team Secret (Secret)",
+      "dire_label": "OG (OG)",
+      "duration_display": "45:09",
+      "combined_kills": 51,
+      "spectral_series": "Series 0_38",
+      "source_finished_column": "07:20:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7248724335,
+      "radiant_label": "beastcoast (bc)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "24:31",
+      "combined_kills": 47,
+      "spectral_series": "Series 0_39",
+      "source_finished_column": "07:23:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7248733336,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "46:29",
+      "combined_kills": 54,
+      "spectral_series": "Series 0_40",
+      "source_finished_column": "07:35:01 19 Jul 2023"
+    },
+    {
+      "match_id": 7248740059,
+      "radiant_label": "Virtus.pro (VP)",
+      "dire_label": "Execration (XctN)",
+      "duration_display": "24:05",
+      "combined_kills": 47,
+      "spectral_series": "Series 0_42",
+      "source_finished_column": "07:40:02 19 Jul 2023"
+    },
+    {
+      "match_id": 7248741544,
+      "radiant_label": "Entity (Entity)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "36:13",
+      "combined_kills": 54,
+      "spectral_series": "Series 0_41",
+      "source_finished_column": "07:31:32 19 Jul 2023"
+    },
+    {
+      "match_id": 7249255112,
+      "radiant_label": "Execration (XctN)",
+      "dire_label": "Entity (Entity)",
+      "duration_display": "27:17",
+      "combined_kills": 43,
+      "spectral_series": "Series 0_49",
+      "source_finished_column": "09:00:05 20 Jul 2023"
+    },
+    {
+      "match_id": 7249258245,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Virtus.pro (VP)",
+      "duration_display": "30:35",
+      "combined_kills": 30,
+      "spectral_series": "Series 0_50",
+      "source_finished_column": "09:00:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7249259261,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "36:41",
+      "combined_kills": 47,
+      "spectral_series": "Series 0_51",
+      "source_finished_column": "09:00:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7249304747,
+      "radiant_label": "Entity (Entity)",
+      "dire_label": "Execration (XctN)",
+      "duration_display": "44:22",
+      "combined_kills": 75,
+      "spectral_series": "Series 0_49",
+      "source_finished_column": "09:58:09 20 Jul 2023"
+    },
+    {
+      "match_id": 7249306650,
+      "radiant_label": "Virtus.pro (VP)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "30:07",
+      "combined_kills": 29,
+      "spectral_series": "Series 0_50",
+      "source_finished_column": "10:00:06 20 Jul 2023"
+    },
+    {
+      "match_id": 7249315898,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "34:31",
+      "combined_kills": 50,
+      "spectral_series": "Series 0_51",
+      "source_finished_column": "10:06:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7249401006,
+      "radiant_label": "9Pandas (9Pandas)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "16:04",
+      "combined_kills": 27,
+      "spectral_series": "Series 0_55",
+      "source_finished_column": "11:45:02 20 Jul 2023"
+    },
+    {
+      "match_id": 7249408926,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "38:01",
+      "combined_kills": 38,
+      "spectral_series": "Series 0_56",
+      "source_finished_column": "11:45:04 20 Jul 2023"
+    },
+    {
+      "match_id": 7249410249,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "beastcoast (bc)",
+      "duration_display": "32:07",
+      "combined_kills": 45,
+      "spectral_series": "Series 0_57",
+      "source_finished_column": "11:45:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7249462665,
+      "radiant_label": "Team Secret (Secret)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "35:19",
+      "combined_kills": 47,
+      "spectral_series": "Series 0_55",
+      "source_finished_column": "12:36:05 20 Jul 2023"
+    },
+    {
+      "match_id": 7249484880,
+      "radiant_label": "beastcoast (bc)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "33:11",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_57",
+      "source_finished_column": "12:48:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7249493194,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "37:11",
+      "combined_kills": 38,
+      "spectral_series": "Series 0_56",
+      "source_finished_column": "12:56:03 20 Jul 2023"
+    },
+    {
+      "match_id": 7249621449,
+      "radiant_label": "Entity (Entity)",
+      "dire_label": "OG (OG)",
+      "duration_display": "42:15",
+      "combined_kills": 59,
+      "spectral_series": "Series 0_61",
+      "source_finished_column": "02:30:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7249627081,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "beastcoast (bc)",
+      "duration_display": "30:56",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_62",
+      "source_finished_column": "02:30:02 20 Jul 2023"
+    },
+    {
+      "match_id": 7249721965,
+      "radiant_label": "beastcoast (bc)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "57:34",
+      "combined_kills": 64,
+      "spectral_series": "Series 0_62",
+      "source_finished_column": "03:35:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7249735049,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Entity (Entity)",
+      "duration_display": "29:36",
+      "combined_kills": 47,
+      "spectral_series": "Series 0_61",
+      "source_finished_column": "03:49:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7249839727,
+      "radiant_label": "Team Secret (Secret)",
+      "dire_label": "Execration (XctN)",
+      "duration_display": "47:09",
+      "combined_kills": 62,
+      "spectral_series": "Series 0_65",
+      "source_finished_column": "05:05:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7249842726,
+      "radiant_label": "Virtus.pro (VP)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "36:32",
+      "combined_kills": 45,
+      "spectral_series": "Series 0_66",
+      "source_finished_column": "05:16:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7249926824,
+      "radiant_label": "Virtus.pro (VP)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "31:36",
+      "combined_kills": 39,
+      "spectral_series": "Series 0_66",
+      "source_finished_column": "06:24:02 20 Jul 2023"
+    },
+    {
+      "match_id": 7249933319,
+      "radiant_label": "Execration (XctN)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "37:16",
+      "combined_kills": 46,
+      "spectral_series": "Series 0_65",
+      "source_finished_column": "06:33:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7249995788,
+      "radiant_label": "Virtus.pro (VP)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "29:40",
+      "combined_kills": 46,
+      "spectral_series": "Series 0_66",
+      "source_finished_column": "07:27:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7250010833,
+      "radiant_label": "Team Secret (Secret)",
+      "dire_label": "Execration (XctN)",
+      "duration_display": "37:17",
+      "combined_kills": 46,
+      "spectral_series": "Series 0_65",
+      "source_finished_column": "07:43:01 20 Jul 2023"
+    },
+    {
+      "match_id": 7250531471,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "41:47",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_71",
+      "source_finished_column": "09:04:12 21 Jul 2023"
+    },
+    {
+      "match_id": 7250537167,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "53:05",
+      "combined_kills": 46,
+      "spectral_series": "Series 0_72",
+      "source_finished_column": "09:00:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7250539605,
+      "radiant_label": "PSG.LGD (PSG.LGD)",
+      "dire_label": "OG (OG)",
+      "duration_display": "39:45",
+      "combined_kills": 52,
+      "spectral_series": "Series 0_73",
+      "source_finished_column": "09:00:04 21 Jul 2023"
+    },
+    {
+      "match_id": 7250541462,
+      "radiant_label": "Evil Geniuses (EG)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "32:55",
+      "combined_kills": 48,
+      "spectral_series": "Series 0_74",
+      "source_finished_column": "09:00:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7250588988,
+      "radiant_label": "Evil Geniuses (EG)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "36:33",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_74",
+      "source_finished_column": "10:05:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7250595844,
+      "radiant_label": "OG (OG)",
+      "dire_label": "PSG.LGD (PSG.LGD)",
+      "duration_display": "27:34",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_73",
+      "source_finished_column": "10:10:02 21 Jul 2023"
+    },
+    {
+      "match_id": 7250606256,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Gaimin Gladiators (GG)",
+      "duration_display": "47:20",
+      "combined_kills": 59,
+      "spectral_series": "Series 0_72",
+      "source_finished_column": "10:26:00 21 Jul 2023"
+    },
+    {
+      "match_id": 7250614031,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "52:43",
+      "combined_kills": 62,
+      "spectral_series": "Series 0_71",
+      "source_finished_column": "10:26:06 21 Jul 2023"
+    },
+    {
+      "match_id": 7250672112,
+      "radiant_label": "Talon (TLN)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "32:51",
+      "combined_kills": 31,
+      "spectral_series": "Series 0_79",
+      "source_finished_column": "11:30:00 21 Jul 2023"
+    },
+    {
+      "match_id": 7250681311,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Shopify Rebellion (SR)",
+      "duration_display": "27:23",
+      "combined_kills": 28,
+      "spectral_series": "Series 0_80",
+      "source_finished_column": "11:33:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7250701354,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "42:43",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_81",
+      "source_finished_column": "12:06:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7250720002,
+      "radiant_label": "Tundra Esports (Tundra)",
+      "dire_label": "BetBoom (BB)",
+      "duration_display": "1:00:27",
+      "combined_kills": 60,
+      "spectral_series": "Series 0_82",
+      "source_finished_column": "12:25:05 21 Jul 2023"
+    },
+    {
+      "match_id": 7250740268,
+      "radiant_label": "Shopify Rebellion (SR)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "30:44",
+      "combined_kills": 26,
+      "spectral_series": "Series 0_80",
+      "source_finished_column": "12:34:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7250740468,
+      "radiant_label": "Talon (TLN)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "32:27",
+      "combined_kills": 28,
+      "spectral_series": "Series 0_79",
+      "source_finished_column": "12:36:03 21 Jul 2023"
+    },
+    {
+      "match_id": 7250808347,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "41:30",
+      "combined_kills": 31,
+      "spectral_series": "Series 0_81",
+      "source_finished_column": "01:20:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7250866770,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "Tundra Esports (Tundra)",
+      "duration_display": "44:52",
+      "combined_kills": 69,
+      "spectral_series": "Series 0_82",
+      "source_finished_column": "02:02:06 21 Jul 2023"
+    },
+    {
+      "match_id": 7250874839,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "29:04",
+      "combined_kills": 35,
+      "spectral_series": "Series 0_87",
+      "source_finished_column": "02:15:03 21 Jul 2023"
+    },
+    {
+      "match_id": 7250879388,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "36:19",
+      "combined_kills": 56,
+      "spectral_series": "Series 0_88",
+      "source_finished_column": "02:15:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7250936095,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Evil Geniuses (EG)",
+      "duration_display": "41:46",
+      "combined_kills": 57,
+      "spectral_series": "Series 0_89",
+      "source_finished_column": "02:53:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7250975482,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "1:10:46",
+      "combined_kills": 78,
+      "spectral_series": "Series 0_88",
+      "source_finished_column": "03:21:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7250975592,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "32:06",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_87",
+      "source_finished_column": "03:16:02 21 Jul 2023"
+    },
+    {
+      "match_id": 7251017908,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "PSG.LGD (PSG.LGD)",
+      "duration_display": "30:34",
+      "combined_kills": 31,
+      "spectral_series": "Series 0_92",
+      "source_finished_column": "03:52:43 21 Jul 2023"
+    },
+    {
+      "match_id": 7251044822,
+      "radiant_label": "Evil Geniuses (EG)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "40:37",
+      "combined_kills": 52,
+      "spectral_series": "Series 0_89",
+      "source_finished_column": "04:10:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7251097636,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "53:41",
+      "combined_kills": 63,
+      "spectral_series": "Series 0_94",
+      "source_finished_column": "04:45:06 21 Jul 2023"
+    },
+    {
+      "match_id": 7251113372,
+      "radiant_label": "PSG.LGD (PSG.LGD)",
+      "dire_label": "Gaimin Gladiators (GG)",
+      "duration_display": "47:21",
+      "combined_kills": 56,
+      "spectral_series": "Series 0_92",
+      "source_finished_column": "04:56:00 21 Jul 2023"
+    },
+    {
+      "match_id": 7251135154,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "Shopify Rebellion (SR)",
+      "duration_display": "33:56",
+      "combined_kills": 32,
+      "spectral_series": "Series 0_96",
+      "source_finished_column": "05:22:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7251168778,
+      "radiant_label": "Talon (TLN)",
+      "dire_label": "Tundra Esports (Tundra)",
+      "duration_display": "38:55",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_97",
+      "source_finished_column": "05:45:00 21 Jul 2023"
+    },
+    {
+      "match_id": 7251201386,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "28:16",
+      "combined_kills": 28,
+      "spectral_series": "Series 0_94",
+      "source_finished_column": "06:14:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7251230749,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "1:08:51",
+      "combined_kills": 72,
+      "spectral_series": "Series 0_99",
+      "source_finished_column": "06:44:02 21 Jul 2023"
+    },
+    {
+      "match_id": 7251243036,
+      "radiant_label": "Shopify Rebellion (SR)",
+      "dire_label": "BetBoom (BB)",
+      "duration_display": "42:02",
+      "combined_kills": 61,
+      "spectral_series": "Series 0_96",
+      "source_finished_column": "06:37:00 21 Jul 2023"
+    },
+    {
+      "match_id": 7251258386,
+      "radiant_label": "Tundra Esports (Tundra)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "36:01",
+      "combined_kills": 39,
+      "spectral_series": "Series 0_97",
+      "source_finished_column": "06:58:01 21 Jul 2023"
+    },
+    {
+      "match_id": 7251364272,
+      "radiant_label": "Team Secret (Secret)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "40:10",
+      "combined_kills": 31,
+      "spectral_series": "Series 0_99",
+      "source_finished_column": "08:34:00 21 Jul 2023"
+    },
+    {
+      "match_id": 7251919750,
+      "radiant_label": "OG (OG)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "49:21",
+      "combined_kills": 56,
+      "spectral_series": "Series 0_103",
+      "source_finished_column": "09:02:08 22 Jul 2023"
+    },
+    {
+      "match_id": 7251927063,
+      "radiant_label": "PSG.LGD (PSG.LGD)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "42:05",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_104",
+      "source_finished_column": "09:00:06 22 Jul 2023"
+    },
+    {
+      "match_id": 7251929921,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "35:31",
+      "combined_kills": 43,
+      "spectral_series": "Series 0_105",
+      "source_finished_column": "09:00:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7251930356,
+      "radiant_label": "Evil Geniuses (EG)",
+      "dire_label": "Gaimin Gladiators (GG)",
+      "duration_display": "38:18",
+      "combined_kills": 47,
+      "spectral_series": "Series 0_106",
+      "source_finished_column": "09:00:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7251995865,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "39:02",
+      "combined_kills": 54,
+      "spectral_series": "Series 0_105",
+      "source_finished_column": "10:10:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252001940,
+      "radiant_label": "PSG.LGD (PSG.LGD)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "50:08",
+      "combined_kills": 65,
+      "spectral_series": "Series 0_104",
+      "source_finished_column": "10:13:03 22 Jul 2023"
+    },
+    {
+      "match_id": 7252002845,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Evil Geniuses (EG)",
+      "duration_display": "29:10",
+      "combined_kills": 44,
+      "spectral_series": "Series 0_106",
+      "source_finished_column": "10:12:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252021353,
+      "radiant_label": "9Pandas (9Pandas)",
+      "dire_label": "OG (OG)",
+      "duration_display": "39:41",
+      "combined_kills": 57,
+      "spectral_series": "Series 0_103",
+      "source_finished_column": "10:24:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252089037,
+      "radiant_label": "Talon (TLN)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "39:06",
+      "combined_kills": 44,
+      "spectral_series": "Series 0_111",
+      "source_finished_column": "11:33:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252099112,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "BetBoom (BB)",
+      "duration_display": "35:55",
+      "combined_kills": 34,
+      "spectral_series": "Series 0_112",
+      "source_finished_column": "11:41:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252117797,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "33:35",
+      "combined_kills": 33,
+      "spectral_series": "Series 0_113",
+      "source_finished_column": "11:54:02 22 Jul 2023"
+    },
+    {
+      "match_id": 7252123731,
+      "radiant_label": "Tundra Esports (Tundra)",
+      "dire_label": "Shopify Rebellion (SR)",
+      "duration_display": "30:01",
+      "combined_kills": 38,
+      "spectral_series": "Series 0_114",
+      "source_finished_column": "12:03:15 22 Jul 2023"
+    },
+    {
+      "match_id": 7252183532,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "1:08:32",
+      "combined_kills": 51,
+      "spectral_series": "Series 0_111",
+      "source_finished_column": "12:45:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252184388,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "32:19",
+      "combined_kills": 59,
+      "spectral_series": "Series 0_112",
+      "source_finished_column": "12:48:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252197438,
+      "radiant_label": "Team Secret (Secret)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "25:08",
+      "combined_kills": 30,
+      "spectral_series": "Series 0_113",
+      "source_finished_column": "12:58:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252253367,
+      "radiant_label": "Shopify Rebellion (SR)",
+      "dire_label": "Tundra Esports (Tundra)",
+      "duration_display": "43:26",
+      "combined_kills": 35,
+      "spectral_series": "Series 0_114",
+      "source_finished_column": "01:27:34 22 Jul 2023"
+    },
+    {
+      "match_id": 7252308976,
+      "radiant_label": "Xtreme Gaming (XG)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "31:07",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_119",
+      "source_finished_column": "02:15:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252319826,
+      "radiant_label": "Evil Geniuses (EG)",
+      "dire_label": "OG (OG)",
+      "duration_display": "29:32",
+      "combined_kills": 34,
+      "spectral_series": "Series 0_120",
+      "source_finished_column": "02:19:06 22 Jul 2023"
+    },
+    {
+      "match_id": 7252365500,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "44:11",
+      "combined_kills": 40,
+      "spectral_series": "Series 0_121",
+      "source_finished_column": "02:54:00 22 Jul 2023"
+    },
+    {
+      "match_id": 7252370103,
+      "radiant_label": "PSG.LGD (PSG.LGD)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "1:06:13",
+      "combined_kills": 73,
+      "spectral_series": "Series 0_122",
+      "source_finished_column": "02:56:52 22 Jul 2023"
+    },
+    {
+      "match_id": 7252410202,
+      "radiant_label": "9Pandas (9Pandas)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "41:51",
+      "combined_kills": 68,
+      "spectral_series": "Series 0_119",
+      "source_finished_column": "03:18:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252416855,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Evil Geniuses (EG)",
+      "duration_display": "31:08",
+      "combined_kills": 35,
+      "spectral_series": "Series 0_120",
+      "source_finished_column": "03:22:06 22 Jul 2023"
+    },
+    {
+      "match_id": 7252482083,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "Gaimin Gladiators (GG)",
+      "duration_display": "51:27",
+      "combined_kills": 52,
+      "spectral_series": "Series 0_121",
+      "source_finished_column": "04:12:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252532245,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "PSG.LGD (PSG.LGD)",
+      "duration_display": "42:34",
+      "combined_kills": 42,
+      "spectral_series": "Series 0_122",
+      "source_finished_column": "04:34:04 22 Jul 2023"
+    },
+    {
+      "match_id": 7252534301,
+      "radiant_label": "Team Secret (Secret)",
+      "dire_label": "BetBoom (BB)",
+      "duration_display": "46:09",
+      "combined_kills": 47,
+      "spectral_series": "Series 0_127",
+      "source_finished_column": "04:45:04 22 Jul 2023"
+    },
+    {
+      "match_id": 7252549969,
+      "radiant_label": "Shopify Rebellion (SR)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "42:48",
+      "combined_kills": 28,
+      "spectral_series": "Series 0_128",
+      "source_finished_column": "04:53:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252626819,
+      "radiant_label": "Tundra Esports (Tundra)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "31:46",
+      "combined_kills": 30,
+      "spectral_series": "Series 0_129",
+      "source_finished_column": "05:57:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252642798,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "27:48",
+      "combined_kills": 42,
+      "spectral_series": "Series 0_127",
+      "source_finished_column": "06:06:04 22 Jul 2023"
+    },
+    {
+      "match_id": 7252645785,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "37:48",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_131",
+      "source_finished_column": "06:14:04 22 Jul 2023"
+    },
+    {
+      "match_id": 7252648453,
+      "radiant_label": "Shopify Rebellion (SR)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "34:42",
+      "combined_kills": 38,
+      "spectral_series": "Series 0_128",
+      "source_finished_column": "06:09:01 22 Jul 2023"
+    },
+    {
+      "match_id": 7252703129,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "Tundra Esports (Tundra)",
+      "duration_display": "26:26",
+      "combined_kills": 24,
+      "spectral_series": "Series 0_129",
+      "source_finished_column": "07:01:00 22 Jul 2023"
+    },
+    {
+      "match_id": 7252732224,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "24:43",
+      "combined_kills": 29,
+      "spectral_series": "Series 0_131",
+      "source_finished_column": "07:28:09 22 Jul 2023"
+    },
+    {
+      "match_id": 7253395555,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "Evil Geniuses (EG)",
+      "duration_display": "26:15",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_135",
+      "source_finished_column": "09:00:21 23 Jul 2023"
+    },
+    {
+      "match_id": 7253408154,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "35:13",
+      "combined_kills": 45,
+      "spectral_series": "Series 0_136",
+      "source_finished_column": "09:04:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253411133,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "41:09",
+      "combined_kills": 54,
+      "spectral_series": "Series 0_137",
+      "source_finished_column": "09:00:02 23 Jul 2023"
+    },
+    {
+      "match_id": 7253411629,
+      "radiant_label": "PSG.LGD (PSG.LGD)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "38:21",
+      "combined_kills": 50,
+      "spectral_series": "Series 0_138",
+      "source_finished_column": "09:00:03 23 Jul 2023"
+    },
+    {
+      "match_id": 7253475314,
+      "radiant_label": "Evil Geniuses (EG)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "40:46",
+      "combined_kills": 47,
+      "spectral_series": "Series 0_135",
+      "source_finished_column": "09:56:03 23 Jul 2023"
+    },
+    {
+      "match_id": 7253479099,
+      "radiant_label": "PSG.LGD (PSG.LGD)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "33:08",
+      "combined_kills": 43,
+      "spectral_series": "Series 0_138",
+      "source_finished_column": "10:08:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253488157,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "36:31",
+      "combined_kills": 50,
+      "spectral_series": "Series 0_136",
+      "source_finished_column": "10:12:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253504806,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "OG (OG)",
+      "duration_display": "38:59",
+      "combined_kills": 54,
+      "spectral_series": "Series 0_137",
+      "source_finished_column": "10:16:09 23 Jul 2023"
+    },
+    {
+      "match_id": 7253569024,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "48:26",
+      "combined_kills": 58,
+      "spectral_series": "Series 0_143",
+      "source_finished_column": "11:32:03 23 Jul 2023"
+    },
+    {
+      "match_id": 7253573186,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "1:00:13",
+      "combined_kills": 66,
+      "spectral_series": "Series 0_144",
+      "source_finished_column": "11:31:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253603921,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Tundra Esports (Tundra)",
+      "duration_display": "30:35",
+      "combined_kills": 50,
+      "spectral_series": "Series 0_145",
+      "source_finished_column": "11:44:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253605315,
+      "radiant_label": "Shopify Rebellion (SR)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "24:59",
+      "combined_kills": 28,
+      "spectral_series": "Series 0_146",
+      "source_finished_column": "12:00:12 23 Jul 2023"
+    },
+    {
+      "match_id": 7253685856,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "43:54",
+      "combined_kills": 67,
+      "spectral_series": "Series 0_143",
+      "source_finished_column": "12:49:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253688840,
+      "radiant_label": "Tundra Esports (Tundra)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "39:56",
+      "combined_kills": 60,
+      "spectral_series": "Series 0_145",
+      "source_finished_column": "12:47:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253700182,
+      "radiant_label": "Shopify Rebellion (SR)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "37:29",
+      "combined_kills": 26,
+      "spectral_series": "Series 0_146",
+      "source_finished_column": "12:58:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253716952,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "35:15",
+      "combined_kills": 33,
+      "spectral_series": "Series 0_144",
+      "source_finished_column": "01:08:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253824749,
+      "radiant_label": "PSG.LGD (PSG.LGD)",
+      "dire_label": "Evil Geniuses (EG)",
+      "duration_display": "35:36",
+      "combined_kills": 42,
+      "spectral_series": "Series 0_151",
+      "source_finished_column": "02:18:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253831446,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "53:16",
+      "combined_kills": 81,
+      "spectral_series": "Series 0_152",
+      "source_finished_column": "02:29:51 23 Jul 2023"
+    },
+    {
+      "match_id": 7253840344,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "20:17",
+      "combined_kills": 23,
+      "spectral_series": "Series 0_153",
+      "source_finished_column": "02:27:03 23 Jul 2023"
+    },
+    {
+      "match_id": 7253857671,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "OG (OG)",
+      "duration_display": "41:04",
+      "combined_kills": 60,
+      "spectral_series": "Series 0_154",
+      "source_finished_column": "02:37:03 23 Jul 2023"
+    },
+    {
+      "match_id": 7253924525,
+      "radiant_label": "Evil Geniuses (EG)",
+      "dire_label": "PSG.LGD (PSG.LGD)",
+      "duration_display": "38:02",
+      "combined_kills": 44,
+      "spectral_series": "Series 0_151",
+      "source_finished_column": "03:22:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253931818,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "40:48",
+      "combined_kills": 46,
+      "spectral_series": "Series 0_153",
+      "source_finished_column": "03:22:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7253965918,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "32:46",
+      "combined_kills": 39,
+      "spectral_series": "Series 0_154",
+      "source_finished_column": "03:48:02 23 Jul 2023"
+    },
+    {
+      "match_id": 7253978676,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "44:48",
+      "combined_kills": 40,
+      "spectral_series": "Series 0_152",
+      "source_finished_column": "03:54:29 23 Jul 2023"
+    },
+    {
+      "match_id": 7254038790,
+      "radiant_label": "Shopify Rebellion (SR)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "31:22",
+      "combined_kills": 36,
+      "spectral_series": "Series 0_159",
+      "source_finished_column": "04:48:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7254061773,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Tundra Esports (Tundra)",
+      "duration_display": "35:08",
+      "combined_kills": 33,
+      "spectral_series": "Series 0_160",
+      "source_finished_column": "04:57:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7254073428,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "BetBoom (BB)",
+      "duration_display": "1:04:46",
+      "combined_kills": 48,
+      "spectral_series": "Series 0_161",
+      "source_finished_column": "05:11:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7254103121,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "18:06",
+      "combined_kills": 29,
+      "spectral_series": "Series 0_162",
+      "source_finished_column": "05:40:08 23 Jul 2023"
+    },
+    {
+      "match_id": 7254120737,
+      "radiant_label": "Talon (TLN)",
+      "dire_label": "Shopify Rebellion (SR)",
+      "duration_display": "20:49",
+      "combined_kills": 32,
+      "spectral_series": "Series 0_159",
+      "source_finished_column": "05:52:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7254138396,
+      "radiant_label": "Tundra Esports (Tundra)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "34:59",
+      "combined_kills": 38,
+      "spectral_series": "Series 0_160",
+      "source_finished_column": "06:05:01 23 Jul 2023"
+    },
+    {
+      "match_id": 7254175177,
+      "radiant_label": "Team Secret (Secret)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "41:58",
+      "combined_kills": 42,
+      "spectral_series": "Series 0_162",
+      "source_finished_column": "06:28:04 23 Jul 2023"
+    },
+    {
+      "match_id": 7254189995,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "27:59",
+      "combined_kills": 26,
+      "spectral_series": "Series 0_161",
+      "source_finished_column": "06:54:09 23 Jul 2023"
+    },
+    {
+      "match_id": 7254789702,
+      "radiant_label": "PSG.LGD (PSG.LGD)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "39:08",
+      "combined_kills": 45,
+      "spectral_series": "Series 0_167",
+      "source_finished_column": "09:00:44 24 Jul 2023"
+    },
+    {
+      "match_id": 7254792846,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "40:50",
+      "combined_kills": 43,
+      "spectral_series": "Series 0_168",
+      "source_finished_column": "09:00:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7254795299,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "OG (OG)",
+      "duration_display": "35:00",
+      "combined_kills": 24,
+      "spectral_series": "Series 0_169",
+      "source_finished_column": "09:00:02 24 Jul 2023"
+    },
+    {
+      "match_id": 7254796354,
+      "radiant_label": "Evil Geniuses (EG)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "54:28",
+      "combined_kills": 58,
+      "spectral_series": "Series 0_170",
+      "source_finished_column": "09:08:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7254853024,
+      "radiant_label": "OG (OG)",
+      "dire_label": "Gaimin Gladiators (GG)",
+      "duration_display": "18:04",
+      "combined_kills": 32,
+      "spectral_series": "Series 0_169",
+      "source_finished_column": "10:10:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7254853209,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "53:08",
+      "combined_kills": 62,
+      "spectral_series": "Series 0_168",
+      "source_finished_column": "10:14:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7254853706,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "PSG.LGD (PSG.LGD)",
+      "duration_display": "37:12",
+      "combined_kills": 35,
+      "spectral_series": "Series 0_167",
+      "source_finished_column": "10:06:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7254870442,
+      "radiant_label": "Evil Geniuses (EG)",
+      "dire_label": "Xtreme Gaming (XG)",
+      "duration_display": "43:14",
+      "combined_kills": 56,
+      "spectral_series": "Series 0_170",
+      "source_finished_column": "10:32:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7254934266,
+      "radiant_label": "Talon (TLN)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "45:17",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_175",
+      "source_finished_column": "11:46:08 24 Jul 2023"
+    },
+    {
+      "match_id": 7254944165,
+      "radiant_label": "Tundra Esports (Tundra)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "26:28",
+      "combined_kills": 25,
+      "spectral_series": "Series 0_176",
+      "source_finished_column": "11:45:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7254960654,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "BetBoom (BB)",
+      "duration_display": "27:50",
+      "combined_kills": 46,
+      "spectral_series": "Series 0_177",
+      "source_finished_column": "11:59:02 24 Jul 2023"
+    },
+    {
+      "match_id": 7254961789,
+      "radiant_label": "Shopify Rebellion (SR)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "49:26",
+      "combined_kills": 64,
+      "spectral_series": "Series 0_178",
+      "source_finished_column": "12:08:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7255010550,
+      "radiant_label": "Team Secret (Secret)",
+      "dire_label": "Tundra Esports (Tundra)",
+      "duration_display": "49:47",
+      "combined_kills": 58,
+      "spectral_series": "Series 0_176",
+      "source_finished_column": "12:46:03 24 Jul 2023"
+    },
+    {
+      "match_id": 7255033879,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "47:57",
+      "combined_kills": 56,
+      "spectral_series": "Series 0_177",
+      "source_finished_column": "12:59:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7255047651,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "48:33",
+      "combined_kills": 44,
+      "spectral_series": "Series 0_175",
+      "source_finished_column": "01:02:02 24 Jul 2023"
+    },
+    {
+      "match_id": 7255068259,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "Shopify Rebellion (SR)",
+      "duration_display": "40:44",
+      "combined_kills": 40,
+      "spectral_series": "Series 0_178",
+      "source_finished_column": "01:29:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7255208670,
+      "radiant_label": "Evil Geniuses (EG)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "37:11",
+      "combined_kills": 40,
+      "spectral_series": "Series 0_183",
+      "source_finished_column": "02:58:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7255243691,
+      "radiant_label": "TSM (TSM)",
+      "dire_label": "Shopify Rebellion (SR)",
+      "duration_display": "24:03",
+      "combined_kills": 29,
+      "spectral_series": "Series 0_184",
+      "source_finished_column": "03:26:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7255297569,
+      "radiant_label": "PSG.LGD (PSG.LGD)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "56:01",
+      "combined_kills": 49,
+      "spectral_series": "Series 0_185",
+      "source_finished_column": "04:06:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7255318771,
+      "radiant_label": "Tundra Esports (Tundra)",
+      "dire_label": "TSM (TSM)",
+      "duration_display": "44:12",
+      "combined_kills": 55,
+      "spectral_series": "Series 0_186",
+      "source_finished_column": "04:21:02 24 Jul 2023"
+    },
+    {
+      "match_id": 7255412458,
+      "radiant_label": "Shopify Rebellion (SR)",
+      "dire_label": "Tundra Esports (Tundra)",
+      "duration_display": "35:48",
+      "combined_kills": 36,
+      "spectral_series": "Series 0_187",
+      "source_finished_column": "05:38:01 24 Jul 2023"
+    },
+    {
+      "match_id": 7256043942,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "52:44",
+      "combined_kills": 55,
+      "spectral_series": "Series 0_188",
+      "source_finished_column": "08:04:30 25 Jul 2023"
+    },
+    {
+      "match_id": 7256105852,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "38:09",
+      "combined_kills": 39,
+      "spectral_series": "Series 0_188",
+      "source_finished_column": "09:29:05 25 Jul 2023"
+    },
+    {
+      "match_id": 7256165913,
+      "radiant_label": "Talon (TLN)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "58:39",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_188",
+      "source_finished_column": "10:35:04 25 Jul 2023"
+    },
+    {
+      "match_id": 7256277256,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Gaimin Gladiators (GG)",
+      "duration_display": "42:18",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_191",
+      "source_finished_column": "12:34:31 25 Jul 2023"
+    },
+    {
+      "match_id": 7256414790,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "39:19",
+      "combined_kills": 51,
+      "spectral_series": "Series 0_191",
+      "source_finished_column": "01:59:01 25 Jul 2023"
+    },
+    {
+      "match_id": 7256512720,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Gaimin Gladiators (GG)",
+      "duration_display": "42:58",
+      "combined_kills": 55,
+      "spectral_series": "Series 0_191",
+      "source_finished_column": "03:10:30 25 Jul 2023"
+    },
+    {
+      "match_id": 7256657251,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "39:37",
+      "combined_kills": 31,
+      "spectral_series": "Series 0_194",
+      "source_finished_column": "04:53:15 25 Jul 2023"
+    },
+    {
+      "match_id": 7256735202,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "25:10",
+      "combined_kills": 19,
+      "spectral_series": "Series 0_194",
+      "source_finished_column": "06:04:02 25 Jul 2023"
+    },
+    {
+      "match_id": 7256848028,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "1:00:14",
+      "combined_kills": 70,
+      "spectral_series": "Series 0_196",
+      "source_finished_column": "07:44:02 25 Jul 2023"
+    },
+    {
+      "match_id": 7256935330,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "38:52",
+      "combined_kills": 38,
+      "spectral_series": "Series 0_196",
+      "source_finished_column": "07:15:10 25 Jul 2023"
+    },
+    {
+      "match_id": 7256984808,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "36:53",
+      "combined_kills": 50,
+      "spectral_series": "Series 0_198",
+      "source_finished_column": "10:23:49 25 Jul 2023"
+    },
+    {
+      "match_id": 7257347067,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "PSG.LGD (PSG.LGD)",
+      "duration_display": "33:23",
+      "combined_kills": 36,
+      "spectral_series": "Series 0_199",
+      "source_finished_column": "09:01:33 26 Jul 2023"
+    },
+    {
+      "match_id": 7257416335,
+      "radiant_label": "PSG.LGD (PSG.LGD)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "35:19",
+      "combined_kills": 28,
+      "spectral_series": "Series 0_199",
+      "source_finished_column": "10:02:01 26 Jul 2023"
+    },
+    {
+      "match_id": 7257614691,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Tundra Esports (Tundra)",
+      "duration_display": "58:34",
+      "combined_kills": 58,
+      "spectral_series": "Series 0_201",
+      "source_finished_column": "12:54:01 26 Jul 2023"
+    },
+    {
+      "match_id": 7257751197,
+      "radiant_label": "Tundra Esports (Tundra)",
+      "dire_label": "Gaimin Gladiators (GG)",
+      "duration_display": "33:53",
+      "combined_kills": 31,
+      "spectral_series": "Series 0_201",
+      "source_finished_column": "02:33:56 26 Jul 2023"
+    },
+    {
+      "match_id": 7257852466,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Tundra Esports (Tundra)",
+      "duration_display": "1:01:04",
+      "combined_kills": 57,
+      "spectral_series": "Series 0_201",
+      "source_finished_column": "03:40:21 26 Jul 2023"
+    },
+    {
+      "match_id": 7258005870,
+      "radiant_label": "Evil Geniuses (EG)",
+      "dire_label": "Team Aster (Aster)",
+      "duration_display": "42:54",
+      "combined_kills": 42,
+      "spectral_series": "Series 0_204",
+      "source_finished_column": "05:40:17 26 Jul 2023"
+    },
+    {
+      "match_id": 7258085348,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "Evil Geniuses (EG)",
+      "duration_display": "38:21",
+      "combined_kills": 50,
+      "spectral_series": "Series 0_204",
+      "source_finished_column": "06:51:03 26 Jul 2023"
+    },
+    {
+      "match_id": 7258681611,
+      "radiant_label": "Team Secret (Secret)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "34:03",
+      "combined_kills": 40,
+      "spectral_series": "Series 0_206",
+      "source_finished_column": "09:01:46 27 Jul 2023"
+    },
+    {
+      "match_id": 7258729053,
+      "radiant_label": "9Pandas (9Pandas)",
+      "dire_label": "Team Secret (Secret)",
+      "duration_display": "38:58",
+      "combined_kills": 42,
+      "spectral_series": "Series 0_206",
+      "source_finished_column": "10:04:08 27 Jul 2023"
+    },
+    {
+      "match_id": 7258880345,
+      "radiant_label": "Talon (TLN)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "42:29",
+      "combined_kills": 40,
+      "spectral_series": "Series 0_208",
+      "source_finished_column": "12:35:46 27 Jul 2023"
+    },
+    {
+      "match_id": 7259007705,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "48:43",
+      "combined_kills": 61,
+      "spectral_series": "Series 0_208",
+      "source_finished_column": "01:50:01 27 Jul 2023"
+    },
+    {
+      "match_id": 7259126761,
+      "radiant_label": "Talon (TLN)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "1:00:01",
+      "combined_kills": 50,
+      "spectral_series": "Series 0_208",
+      "source_finished_column": "03:09:01 27 Jul 2023"
+    },
+    {
+      "match_id": 7259277705,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "BetBoom (BB)",
+      "duration_display": "44:36",
+      "combined_kills": 38,
+      "spectral_series": "Series 0_211",
+      "source_finished_column": "05:07:44 27 Jul 2023"
+    },
+    {
+      "match_id": 7259371344,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "44:06",
+      "combined_kills": 46,
+      "spectral_series": "Series 0_211",
+      "source_finished_column": "06:21:04 27 Jul 2023"
+    },
+    {
+      "match_id": 7259457478,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "1:12:11",
+      "combined_kills": 56,
+      "spectral_series": "Series 0_211",
+      "source_finished_column": "07:38:33 27 Jul 2023"
+    },
+    {
+      "match_id": 7260006364,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Quest Esports (Quest)",
+      "duration_display": "50:43",
+      "combined_kills": 43,
+      "spectral_series": "Series 0_214",
+      "source_finished_column": "09:03:41 28 Jul 2023"
+    },
+    {
+      "match_id": 7260172521,
+      "radiant_label": "Quest Esports (Quest)",
+      "dire_label": "Gaimin Gladiators (GG)",
+      "duration_display": "1:01:15",
+      "combined_kills": 59,
+      "spectral_series": "Series 0_214",
+      "source_finished_column": "11:51:08 28 Jul 2023"
+    },
+    {
+      "match_id": 7260344376,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "30:21",
+      "combined_kills": 29,
+      "spectral_series": "Series 0_216",
+      "source_finished_column": "01:50:53 28 Jul 2023"
+    },
+    {
+      "match_id": 7260418930,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "35:12",
+      "combined_kills": 39,
+      "spectral_series": "Series 0_216",
+      "source_finished_column": "02:48:00 28 Jul 2023"
+    },
+    {
+      "match_id": 7260520464,
+      "radiant_label": "Team Aster (Aster)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "43:05",
+      "combined_kills": 46,
+      "spectral_series": "Series 0_216",
+      "source_finished_column": "03:49:01 28 Jul 2023"
+    },
+    {
+      "match_id": 7260671379,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "Gaimin Gladiators (GG)",
+      "duration_display": "38:29",
+      "combined_kills": 44,
+      "spectral_series": "Series 0_219",
+      "source_finished_column": "05:33:16 28 Jul 2023"
+    },
+    {
+      "match_id": 7260749992,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "BetBoom (BB)",
+      "duration_display": "38:38",
+      "combined_kills": 26,
+      "spectral_series": "Series 0_219",
+      "source_finished_column": "06:42:06 28 Jul 2023"
+    },
+    {
+      "match_id": 7260834118,
+      "radiant_label": "BetBoom (BB)",
+      "dire_label": "Gaimin Gladiators (GG)",
+      "duration_display": "39:51",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_219",
+      "source_finished_column": "07:50:41 28 Jul 2023"
+    },
+    {
+      "match_id": 7261513228,
+      "radiant_label": "Talon (TLN)",
+      "dire_label": "9Pandas (9Pandas)",
+      "duration_display": "1:00:02",
+      "combined_kills": 53,
+      "spectral_series": "Series 0_222",
+      "source_finished_column": "07:25:17 29 Jul 2023"
+    },
+    {
+      "match_id": 7261599919,
+      "radiant_label": "9Pandas (9Pandas)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "30:11",
+      "combined_kills": 32,
+      "spectral_series": "Series 0_222",
+      "source_finished_column": "08:44:35 29 Jul 2023"
+    },
+    {
+      "match_id": 7261721075,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "49:26",
+      "combined_kills": 34,
+      "spectral_series": "Series 0_224",
+      "source_finished_column": "10:38:53 29 Jul 2023"
+    },
+    {
+      "match_id": 7261906286,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "54:00",
+      "combined_kills": 43,
+      "spectral_series": "Series 0_224",
+      "source_finished_column": "12:52:07 29 Jul 2023"
+    },
+    {
+      "match_id": 7262034121,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "32:19",
+      "combined_kills": 26,
+      "spectral_series": "Series 0_224",
+      "source_finished_column": "02:26:33 29 Jul 2023"
+    },
+    {
+      "match_id": 7262210509,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "50:45",
+      "combined_kills": 49,
+      "spectral_series": "Series 0_227",
+      "source_finished_column": "04:30:45 29 Jul 2023"
+    },
+    {
+      "match_id": 7262318315,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "47:52",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_227",
+      "source_finished_column": "05:59:20 29 Jul 2023"
+    },
+    {
+      "match_id": 7262424077,
+      "radiant_label": "Gaimin Gladiators (GG)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "52:52",
+      "combined_kills": 41,
+      "spectral_series": "Series 0_227",
+      "source_finished_column": "07:39:20 29 Jul 2023"
+    },
+    {
+      "match_id": 7263116991,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "33:59",
+      "combined_kills": 27,
+      "spectral_series": "Series 0_230",
+      "source_finished_column": "08:47:30 30 Jul 2023"
+    },
+    {
+      "match_id": 7263223087,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Talon (TLN)",
+      "duration_display": "22:13",
+      "combined_kills": 23,
+      "spectral_series": "Series 0_230",
+      "source_finished_column": "10:03:21 30 Jul 2023"
+    },
+    {
+      "match_id": 7263486698,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "33:15",
+      "combined_kills": 45,
+      "spectral_series": "Series 0_232",
+      "source_finished_column": "12:50:51 30 Jul 2023"
+    },
+    {
+      "match_id": 7263597757,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "50:54",
+      "combined_kills": 65,
+      "spectral_series": "Series 0_232",
+      "source_finished_column": "02:02:13 30 Jul 2023"
+    },
+    {
+      "match_id": 7263702415,
+      "radiant_label": "Team Spirit (TSpirit)",
+      "dire_label": "Team Liquid (Liquid)",
+      "duration_display": "46:33",
+      "combined_kills": 51,
+      "spectral_series": "Series 0_232",
+      "source_finished_column": "03:21:26 30 Jul 2023"
+    },
+    {
+      "match_id": 7263801942,
+      "radiant_label": "Team Liquid (Liquid)",
+      "dire_label": "Team Spirit (TSpirit)",
+      "duration_display": "42:27",
+      "combined_kills": 49,
+      "spectral_series": "Series 0_232",
+      "source_finished_column": "04:42:23 30 Jul 2023"
+    }
+  ]
+}
