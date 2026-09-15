@@ -1,0 +1,1088 @@
+[
+  {
+    "slug": "aries-xg-winter",
+    "title": "Aries—XG，冬季A级",
+    "selection_type": "对照",
+    "teaching_question": "初入职业的真实强度：同级与晋级队伍",
+    "requested_match_ids": [
+      6318181592,
+      6318234034
+    ],
+    "exported_match_ids": [
+      6318181592,
+      6318234034
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "pit5-final",
+    "title": "Tundra—Spirit，Dota PIT第5赛季决赛",
+    "selection_type": "对照",
+    "teaching_question": "TI10后早期版本的强队交锋，避免只拿2023当教材",
+    "requested_match_ids": [
+      6331896376,
+      6332020917,
+      6332139754,
+      6332245360
+    ],
+    "exported_match_ids": [
+      6331896376,
+      6332020917,
+      6332139754,
+      6332245360
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "lgd-aster-winter",
+    "title": "LGD—Aster，冬季S级",
+    "selection_type": "对照",
+    "teaching_question": "中单与双辅助的职业配合基准",
+    "requested_match_ids": [
+      6356694527,
+      6356788698,
+      6356868459
+    ],
+    "exported_match_ids": [
+      6356694527,
+      6356788698,
+      6356868459
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "iwo-lgd-aster",
+    "title": "LGD—Aster，IWO北京站",
+    "selection_type": "对照",
+    "teaching_question": "同版本重复对抗：比较变化而非只看输赢",
+    "requested_match_ids": [
+      6390424153,
+      6390481538,
+      6390571192
+    ],
+    "exported_match_ids": [
+      6390424153,
+      6390481538,
+      6390571192
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "weu-winter-final",
+    "title": "GG—Liquid，西欧冬季地区决赛",
+    "selection_type": "对照",
+    "teaching_question": "新队成名的整轮系列赛，不以单个反杀解释成功",
+    "requested_match_ids": [
+      6430229342,
+      6430334629,
+      6430424062,
+      6430522522
+    ],
+    "exported_match_ids": [
+      6430229342,
+      6430334629,
+      6430424062,
+      6430522522
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cn-winter-final",
+    "title": "LGD—RNG，中国冬季地区决赛",
+    "selection_type": "对照",
+    "teaching_question": "国内顶尖对抗与连续调整；修正平台拆分的系列ID",
+    "requested_match_ids": [
+      6440951394,
+      6441031610,
+      6441125886,
+      6441263629
+    ],
+    "exported_match_ids": [
+      6440951394,
+      6441031610,
+      6441125886,
+      6441263629
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "dubai-final",
+    "title": "BOOM—Tundra，迪拜决赛",
+    "selection_type": "对照",
+    "teaching_question": "五局比赛中的变化与英雄池",
+    "requested_match_ids": [
+      6463558810,
+      6463683911,
+      6463778395,
+      6463870718,
+      6463952563
+    ],
+    "exported_match_ids": [
+      6463558810,
+      6463683911,
+      6463778395,
+      6463870718,
+      6463952563
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "aries-dec",
+    "title": "Aries—DEC，春季A级",
+    "selection_type": "对照",
+    "teaching_question": "晋级赛季的失利样本：防止把对手写成陪练",
+    "requested_match_ids": [
+      6481319135,
+      6481353456
+    ],
+    "exported_match_ids": [
+      6481319135,
+      6481353456
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "aries-ig",
+    "title": "Aries—iG，春季A级",
+    "selection_type": "对照",
+    "teaching_question": "职业起点素材；三局而非孤立一场",
+    "requested_match_ids": [
+      6528301524,
+      6528354531,
+      6528431121
+    ],
+    "exported_match_ids": [
+      6528301524,
+      6528354531,
+      6528431121
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cn-spring-final",
+    "title": "LGD—Aster，中国春季地区决赛",
+    "selection_type": "对照",
+    "teaching_question": "优势方怎样连续取胜，不先假设每局均势",
+    "requested_match_ids": [
+      6560731135,
+      6560862720,
+      6560977239
+    ],
+    "exported_match_ids": [
+      6560731135,
+      6560862720,
+      6560977239
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "stockholm-final",
+    "title": "TSM—OG，斯德哥尔摩决赛",
+    "selection_type": "对照",
+    "teaching_question": "人员背景与比赛执行；替补条件须随局核验",
+    "requested_match_ids": [
+      6582012262,
+      6582140888,
+      6582249405,
+      6582379623
+    ],
+    "exported_match_ids": [
+      6582012262,
+      6582140888,
+      6582249405,
+      6582379623
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "aries-aster-summer",
+    "title": "Aries—Aster，夏季S级",
+    "selection_type": "对照",
+    "teaching_question": "从次级到顶级对手的真实差距与同门交锋",
+    "requested_match_ids": [
+      6605582209,
+      6605630445
+    ],
+    "exported_match_ids": [
+      6605582209,
+      6605630445
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "aries-lgd-summer",
+    "title": "Aries—LGD，夏季S级",
+    "selection_type": "对照",
+    "teaching_question": "强队稳定取胜教材，不给常规处理虚加光环",
+    "requested_match_ids": [
+      6632414079,
+      6632461072
+    ],
+    "exported_match_ids": [
+      6632414079,
+      6632461072
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "riyadh22-final",
+    "title": "LGD—Spirit，利雅得2022决赛",
+    "selection_type": "对照",
+    "teaching_question": "与阿灵顿同对手的前后比较",
+    "requested_match_ids": [
+      6676393091,
+      6676488286
+    ],
+    "exported_match_ids": [
+      6676393091,
+      6676488286
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "arlington-upper-final",
+    "title": "LGD—Spirit，阿灵顿胜者组决赛",
+    "selection_type": "对照",
+    "teaching_question": "与次日决赛成对保存：同一批选手的有效解法与再应对",
+    "requested_match_ids": [
+      6705859209,
+      6705943008
+    ],
+    "exported_match_ids": [
+      6705859209,
+      6705943008
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "arlington-final",
+    "title": "LGD—Spirit，阿灵顿决赛",
+    "selection_type": "名局",
+    "teaching_question": "75分钟拉锯及此后三局关系；胜者组与决赛反转",
+    "requested_match_ids": [
+      6707542480,
+      6707633683,
+      6707714718,
+      6707754788
+    ],
+    "exported_match_ids": [
+      6707542480,
+      6707633683,
+      6707714718,
+      6707754788
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "malaysia-final",
+    "title": "Aster—OG，马来西亚决赛",
+    "selection_type": "对照",
+    "teaching_question": "领先赛事进程与赢下最终系列是两件事",
+    "requested_match_ids": [
+      6728333090,
+      6728463079,
+      6728572058
+    ],
+    "exported_match_ids": [
+      6728333090,
+      6728463079,
+      6728572058
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-fusion-saiyan",
+    "title": "Fusion—Saiyan，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "预选首轮BO1：小队对抗也保留真实样本",
+    "requested_match_ids": [
+      6746385664
+    ],
+    "exported_match_ids": [
+      6746385664
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-rng-ybb",
+    "title": "RNG—Ybb，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "头号队伍的第一轮，不默认小队毫无抵抗",
+    "requested_match_ids": [
+      6746425134,
+      6746471021
+    ],
+    "exported_match_ids": [
+      6746425134,
+      6746471021
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-vg-aries",
+    "title": "VG—Aries，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "Aries真实晋级首轮：63分钟长局与35分钟次局",
+    "requested_match_ids": [
+      6746509252,
+      6746573621
+    ],
+    "exported_match_ids": [
+      6746509252,
+      6746573621
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-cdec-ehome",
+    "title": "CDEC—EHOME，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "预选中段队伍的有效竞争",
+    "requested_match_ids": [
+      6746620244,
+      6746684278
+    ],
+    "exported_match_ids": [
+      6746620244,
+      6746684278
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-xg-ig",
+    "title": "XG—iG，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "XG胜者组起点，与最终决赛合读",
+    "requested_match_ids": [
+      6746739403,
+      6746805851
+    ],
+    "exported_match_ids": [
+      6746739403,
+      6746805851
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-magma-ybb",
+    "title": "Magma—Ybb，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "败者组三局：保留同层队伍的反制",
+    "requested_match_ids": [
+      6748032069,
+      6748095913,
+      6748146454
+    ],
+    "exported_match_ids": [
+      6748032069,
+      6748095913,
+      6748146454
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-fusion-vg",
+    "title": "Fusion—VG，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "VG败者组起点",
+    "requested_match_ids": [
+      6748208449,
+      6748244943
+    ],
+    "exported_match_ids": [
+      6748208449,
+      6748244943
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-sz-ehome",
+    "title": "深圳—EHOME，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "长局胜利后的系列兑现",
+    "requested_match_ids": [
+      6748294251,
+      6748362878
+    ],
+    "exported_match_ids": [
+      6748294251,
+      6748362878
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-lbzs-ig",
+    "title": "LBZS—iG，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "iG三局生存战，与随后击败Aries比较",
+    "requested_match_ids": [
+      6748448382,
+      6748544248,
+      6748621592
+    ],
+    "exported_match_ids": [
+      6748448382,
+      6748544248,
+      6748621592
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-rng-aries",
+    "title": "RNG—Aries，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "Aries对直接晋级队伍的现实检验",
+    "requested_match_ids": [
+      6749824546,
+      6749870836
+    ],
+    "exported_match_ids": [
+      6749824546,
+      6749870836
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-cdec-xg",
+    "title": "CDEC—XG，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "XG进入胜者组决赛的真实过程",
+    "requested_match_ids": [
+      6749931110,
+      6749988311
+    ],
+    "exported_match_ids": [
+      6749931110,
+      6749988311
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-ybb-vg",
+    "title": "Ybb—VG，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "VG连续淘汰赛的阵容变化",
+    "requested_match_ids": [
+      6750060151,
+      6750140853
+    ],
+    "exported_match_ids": [
+      6750060151,
+      6750140853
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-sz-ig",
+    "title": "深圳—iG，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "iG对Aries之前的两局基准",
+    "requested_match_ids": [
+      6750250583,
+      6750314405
+    ],
+    "exported_match_ids": [
+      6750250583,
+      6750314405
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-cdec-vg",
+    "title": "CDEC—VG，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "VG打进关键资格对抗的前一轮",
+    "requested_match_ids": [
+      6751775817,
+      6751834824
+    ],
+    "exported_match_ids": [
+      6751775817,
+      6751834824
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-ig-aries",
+    "title": "iG—Aries，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "Aries真实淘汰点：小说改写资格路径的直接对照",
+    "requested_match_ids": [
+      6751890098,
+      6751948451,
+      6752024325
+    ],
+    "exported_match_ids": [
+      6751890098,
+      6751948451,
+      6752024325
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-upper-final",
+    "title": "XG—RNG，TI11中国预选胜者组决赛",
+    "selection_type": "对照",
+    "teaching_question": "与次日总决赛配对：XG曾取得一局的有效方案",
+    "requested_match_ids": [
+      6752116128,
+      6752195021,
+      6752271552
+    ],
+    "exported_match_ids": [
+      6752116128,
+      6752195021,
+      6752271552
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-ig-vg",
+    "title": "iG—VG，TI11中国预选",
+    "selection_type": "对照",
+    "teaching_question": "锁定前三与LCQ资格的比赛",
+    "requested_match_ids": [
+      6752392642,
+      6752498546
+    ],
+    "exported_match_ids": [
+      6752392642,
+      6752498546
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-lower-final",
+    "title": "XG—VG，TI11中国预选败者组决赛",
+    "selection_type": "对照",
+    "teaching_question": "争取直通TI的最后机会，不混同LCQ资格战",
+    "requested_match_ids": [
+      6753802120,
+      6753851077
+    ],
+    "exported_match_ids": [
+      6753802120,
+      6753851077
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "cnq-final",
+    "title": "RNG—XG，TI11中国预选总决赛",
+    "selection_type": "对照",
+    "teaching_question": "中单强表现的团队条件；3:0不等于三局同一种赢法",
+    "requested_match_ids": [
+      6753917157,
+      6753967144,
+      6754052082
+    ],
+    "exported_match_ids": [
+      6753917157,
+      6753967144,
+      6754052082
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "lcq-xg-liquid",
+    "title": "XG—Liquid，TI11最终突围赛",
+    "selection_type": "对照",
+    "teaching_question": "中国队被淘汰的具体对抗，避免抽象归因",
+    "requested_match_ids": [
+      6800460632,
+      6800515392
+    ],
+    "exported_match_ids": [
+      6800460632,
+      6800515392
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "lcq-vg-liquid",
+    "title": "VG—Liquid，TI11最终突围赛",
+    "selection_type": "对照",
+    "teaching_question": "争夺出线前的三局压力与适应",
+    "requested_match_ids": [
+      6801647391,
+      6801689673,
+      6801743954
+    ],
+    "exported_match_ids": [
+      6801647391,
+      6801689673,
+      6801743954
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti11-rng-entity",
+    "title": "RNG—Entity，TI11淘汰赛",
+    "selection_type": "名局",
+    "teaching_question": "107分钟守高与终结；巨大经济差为何不等于立即获胜",
+    "requested_match_ids": [
+      6814073054
+    ],
+    "exported_match_ids": [
+      6814073054
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti11-bc-lgd",
+    "title": "beastcoast—LGD，TI11淘汰赛",
+    "selection_type": "对照",
+    "teaching_question": "连续三局取舍及Ame团队角色",
+    "requested_match_ids": [
+      6818469926,
+      6818528391,
+      6818576227
+    ],
+    "exported_match_ids": [
+      6818469926,
+      6818528391,
+      6818576227
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti11-lgd-aster",
+    "title": "LGD—Aster，TI11淘汰赛",
+    "selection_type": "对照",
+    "teaching_question": "中国强队之间的有效压制；不靠国籍替代分析",
+    "requested_match_ids": [
+      6818781180,
+      6818876789
+    ],
+    "exported_match_ids": [
+      6818781180,
+      6818876789
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti11-ta-liquid",
+    "title": "Thunder Awaken—Liquid，TI11淘汰赛",
+    "selection_type": "名局",
+    "teaching_question": "一血救援、买活与拆家期限：个人和团队价值同时成立",
+    "requested_match_ids": [
+      6818958825,
+      6819093598,
+      6819203954
+    ],
+    "exported_match_ids": [
+      6818958825,
+      6819093598,
+      6819203954
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti11-liquid-aster",
+    "title": "Liquid—Aster，TI11淘汰赛",
+    "selection_type": "对照",
+    "teaching_question": "系列BP与核心英雄变化",
+    "requested_match_ids": [
+      6829184970,
+      6829266295,
+      6829345218
+    ],
+    "exported_match_ids": [
+      6829184970,
+      6829266295,
+      6829345218
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti11-upper-final",
+    "title": "Secret—Tundra，TI11胜者组决赛",
+    "selection_type": "对照",
+    "teaching_question": "与总决赛合读，保留双方此前有效的解法",
+    "requested_match_ids": [
+      6829521976,
+      6829692346,
+      6829836531
+    ],
+    "exported_match_ids": [
+      6829521976,
+      6829692346,
+      6829836531
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti11-final",
+    "title": "Tundra—Secret，TI11总决赛",
+    "selection_type": "对照",
+    "teaching_question": "稳定冠军打法：地图、阵容与结束比赛的条件",
+    "requested_match_ids": [
+      6832008209,
+      6832140410,
+      6832287527
+    ],
+    "exported_match_ids": [
+      6832008209,
+      6832140410,
+      6832287527
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "lima-final",
+    "title": "Liquid—GG，利马决赛",
+    "selection_type": "对照",
+    "teaching_question": "跨赛事比较GG；必须记录Liquid替补背景",
+    "requested_match_ids": [
+      7046266928,
+      7046340157,
+      7046378132
+    ],
+    "exported_match_ids": [
+      7046266928,
+      7046340157,
+      7046378132
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "dl19-final",
+    "title": "GG—Liquid，DreamLeague19决赛",
+    "selection_type": "对照",
+    "teaching_question": "五局调整及7.33发布后的适应；赛事客户端另核",
+    "requested_match_ids": [
+      7121740499,
+      7121895328,
+      7122028845,
+      7122163122,
+      7122259749
+    ],
+    "exported_match_ids": [
+      7121740499,
+      7121895328,
+      7122028845,
+      7122163122,
+      7122259749
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "berlin-final",
+    "title": "GG—Liquid，柏林决赛",
+    "selection_type": "对照",
+    "teaching_question": "7.33新地图后的重建能力；旧版本解法不能直接沿用",
+    "requested_match_ids": [
+      7143520855,
+      7143645211,
+      7143762860,
+      7143863711
+    ],
+    "exported_match_ids": [
+      7143520855,
+      7143645211,
+      7143762860,
+      7143863711
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "dl20-lgd-gg",
+    "title": "GG—LGD，DreamLeague20淘汰赛",
+    "selection_type": "对照",
+    "teaching_question": "2023中国队与冠军队伍的直接对话",
+    "requested_match_ids": [
+      7215158468,
+      7215250692,
+      7215341696
+    ],
+    "exported_match_ids": [
+      7215158468,
+      7215250692,
+      7215341696
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "dl20-final",
+    "title": "BB—GG，DreamLeague20决赛",
+    "selection_type": "对照",
+    "teaching_question": "另一对手如何与GG打满五局",
+    "requested_match_ids": [
+      7215525382,
+      7215645607,
+      7215744447,
+      7215817409,
+      7215906831
+    ],
+    "exported_match_ids": [
+      7215525382,
+      7215645607,
+      7215744447,
+      7215817409,
+      7215906831
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "bali-final",
+    "title": "GG—Liquid，巴厘岛决赛",
+    "selection_type": "对照",
+    "teaching_question": "反复交手后的适应与冠军连续性",
+    "requested_match_ids": [
+      7234263112,
+      7234394896,
+      7234512983,
+      7234584339
+    ],
+    "exported_match_ids": [
+      7234263112,
+      7234394896,
+      7234512983,
+      7234584339
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "riyadh23-talon-liquid",
+    "title": "Talon—Liquid，利雅得2023胜者组",
+    "selection_type": "名局",
+    "teaching_question": "正面团战与拆家竞速的两个胜负目标",
+    "requested_match_ids": [
+      7258880345,
+      7259007705,
+      7259126761
+    ],
+    "exported_match_ids": [
+      7258880345,
+      7259007705,
+      7259126761
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "riyadh23-bb-spirit",
+    "title": "BB—Spirit，利雅得2023胜者组",
+    "selection_type": "名局",
+    "teaching_question": "两次大逆转候选：核对经济曲线与真正转折",
+    "requested_match_ids": [
+      7259277705,
+      7259371344,
+      7259457478
+    ],
+    "exported_match_ids": [
+      7259277705,
+      7259371344,
+      7259457478
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "riyadh23-aster-9p",
+    "title": "Aster—9Pandas，利雅得2023",
+    "selection_type": "对照",
+    "teaching_question": "中单变化后的中国队样本，关系与指挥另核",
+    "requested_match_ids": [
+      7260344376,
+      7260418930,
+      7260520464
+    ],
+    "exported_match_ids": [
+      7260344376,
+      7260418930,
+      7260520464
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "dl21-final",
+    "title": "Spirit—Shopify，DreamLeague21决赛",
+    "selection_type": "对照",
+    "teaching_question": "TI12前的稳定胜利，对照高波动名局",
+    "requested_match_ids": [
+      7350256732,
+      7350448037,
+      7350558475
+    ],
+    "exported_match_ids": [
+      7350256732,
+      7350448037,
+      7350558475
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti12-talon-bb",
+    "title": "Talon—BB，TI12淘汰赛",
+    "selection_type": "对照",
+    "teaching_question": "重复对手之外的淘汰赛形态",
+    "requested_match_ids": [
+      7395201088,
+      7395260041,
+      7395312177
+    ],
+    "exported_match_ids": [
+      7395201088,
+      7395260041,
+      7395312177
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti12-spirit-liquid",
+    "title": "Spirit—Liquid，TI12淘汰赛",
+    "selection_type": "对照",
+    "teaching_question": "冠军队如何应对顶尖团队的三局挑战",
+    "requested_match_ids": [
+      7402900929,
+      7402943509,
+      7402993316
+    ],
+    "exported_match_ids": [
+      7402900929,
+      7402943509,
+      7402993316
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti12-bb-ar",
+    "title": "BB—Azure Ray，TI12淘汰赛",
+    "selection_type": "对照",
+    "teaching_question": "老将三人组在高水平淘汰赛中的不同职责",
+    "requested_match_ids": [
+      7404577536,
+      7404668056,
+      7404713057
+    ],
+    "exported_match_ids": [
+      7404577536,
+      7404668056,
+      7404713057
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti12-upper-final",
+    "title": "LGD—Spirit，TI12胜者组决赛",
+    "selection_type": "对照",
+    "teaching_question": "换人后的LGD与Spirit：不能照搬2022人物分工",
+    "requested_match_ids": [
+      7404763579,
+      7404828649
+    ],
+    "exported_match_ids": [
+      7404763579,
+      7404828649
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti12-gg-ar",
+    "title": "GG—Azure Ray，TI12淘汰赛",
+    "selection_type": "对照",
+    "teaching_question": "同一队伍能赢下一轮却在下一轮受限",
+    "requested_match_ids": [
+      7404889653,
+      7404938247
+    ],
+    "exported_match_ids": [
+      7404889653,
+      7404938247
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti12-lower-final",
+    "title": "GG—LGD，TI12败者组决赛",
+    "selection_type": "对照",
+    "teaching_question": "打穿不同对手所需的团队执行",
+    "requested_match_ids": [
+      7406129687,
+      7406249246
+    ],
+    "exported_match_ids": [
+      7406129687,
+      7406249246
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  },
+  {
+    "slug": "ti12-final",
+    "title": "GG—Spirit，TI12总决赛",
+    "selection_type": "对照",
+    "teaching_question": "三连冠Major队与TI冠军的直接对抗，不以结局倒推全程",
+    "requested_match_ids": [
+      7406424070,
+      7406482053,
+      7406531302
+    ],
+    "exported_match_ids": [
+      7406424070,
+      7406482053,
+      7406531302
+    ],
+    "series_order_basis": "显式选局；按start_time排序；上游series_id仅保留不作权威分组",
+    "vod_status": "not_watched"
+  }
+]

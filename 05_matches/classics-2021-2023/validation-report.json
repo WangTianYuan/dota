@@ -1,0 +1,141 @@
+{
+  "checked_at_utc": "2026-09-15T11:47:17.589996+00:00",
+  "result": "passed",
+  "scope": "实际数据完整性、原响应保真及文档数值锚点；不是视频内容/战术因果/小说质量验证",
+  "selected_matches": 171,
+  "selected_series": 62,
+  "cross_source_findings": {
+    "cnq_score_disagreements": [
+      {
+        "match_id": 6746425134,
+        "spectral_combined_kills": 41,
+        "opendota_combined_score": 43
+      },
+      {
+        "match_id": 6753917157,
+        "spectral_combined_kills": 61,
+        "opendota_combined_score": 62
+      },
+      {
+        "match_id": 6746805851,
+        "spectral_combined_kills": 43,
+        "opendota_combined_score": 45
+      },
+      {
+        "match_id": 6748544248,
+        "spectral_combined_kills": 65,
+        "opendota_combined_score": 66
+      },
+      {
+        "match_id": 6748095913,
+        "spectral_combined_kills": 54,
+        "opendota_combined_score": 55
+      },
+      {
+        "match_id": 6746620244,
+        "spectral_combined_kills": 58,
+        "opendota_combined_score": 59
+      },
+      {
+        "match_id": 6749824546,
+        "spectral_combined_kills": 32,
+        "opendota_combined_score": 33
+      },
+      {
+        "match_id": 6746385664,
+        "spectral_combined_kills": 32,
+        "opendota_combined_score": 33
+      },
+      {
+        "match_id": 6753851077,
+        "spectral_combined_kills": 26,
+        "opendota_combined_score": 27
+      },
+      {
+        "match_id": 6749988311,
+        "spectral_combined_kills": 48,
+        "opendota_combined_score": 50
+      },
+      {
+        "match_id": 6751775817,
+        "spectral_combined_kills": 53,
+        "opendota_combined_score": 55
+      },
+      {
+        "match_id": 6750314405,
+        "spectral_combined_kills": 44,
+        "opendota_combined_score": 46
+      },
+      {
+        "match_id": 6746509252,
+        "spectral_combined_kills": 65,
+        "opendota_combined_score": 68
+      },
+      {
+        "match_id": 6754052082,
+        "spectral_combined_kills": 50,
+        "opendota_combined_score": 51
+      },
+      {
+        "match_id": 6751948451,
+        "spectral_combined_kills": 53,
+        "opendota_combined_score": 54
+      },
+      {
+        "match_id": 6748146454,
+        "spectral_combined_kills": 52,
+        "opendota_combined_score": 55
+      },
+      {
+        "match_id": 6748294251,
+        "spectral_combined_kills": 50,
+        "opendota_combined_score": 51
+      }
+    ],
+    "cnq_score_disagreement_note": "来源间差异，不在没有转播证据时挑选一个充作真实记分牌",
+    "riyadh_common_matches": 220,
+    "riyadh_spectral_only": 15,
+    "riyadh_api_only": 16,
+    "riyadh_supplement_detail_status": "15局均为已核404；决赛4局仅另存基础阵容"
+  },
+  "checks": {
+    "unique_inventory": 1,
+    "unique_selection": 1,
+    "selection_in_inventory": 1,
+    "export_file_set": 1,
+    "identity": 171,
+    "source_hash": 171,
+    "time_window": 171,
+    "ten_distinct_slots": 171,
+    "match_fields_preserved": 171,
+    "player_fields_preserved": 119700,
+    "unrelated_profile_fields_excluded": 1710,
+    "hero_translated": 1710,
+    "draft_matches_players": 171,
+    "minute_curve_length": 342,
+    "no_false_vod_claim": 171,
+    "patch_precision_honest": 171,
+    "same_series_opponents": 62,
+    "same_series_league": 62,
+    "series_game_order": 62,
+    "manual_card_numeric_anchor": 6,
+    "cnq_cross_source_ids": 1,
+    "cnq_cross_source_duration": 42,
+    "cnq_cross_source_series": 1,
+    "riyadh_spectral_unique": 1,
+    "riyadh_exact_supplement_difference": 1,
+    "supplement_not_mislabeled_as_api_inventory": 1,
+    "supplement_api_404_recorded": 1,
+    "supplement_api_check_cache": 1,
+    "riyadh_final_result": 1,
+    "riyadh_final_ten_heroes": 4,
+    "riyadh_final_card_list_score": 4,
+    "supplement_evidence_limits": 1,
+    "second_pass_kda_anchor": 3,
+    "aries_win_while_sample_behind": 1,
+    "local_markdown_link": 293,
+    "coverage_count": 1,
+    "collection_finished": 1
+  },
+  "errors": []
+}
