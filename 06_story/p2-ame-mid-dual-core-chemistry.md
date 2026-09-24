@@ -2,7 +2,7 @@
 
 ID: story-research:p2-ame-mid-dual-core-chemistry
 更新：2026-09-12
-状态：锁位前方法论与现实样本；不锁最终3/4/5人选。
+状态：历史锁位前方法论与现实样本；长期2号位现已锁，见[决策D11](locked-decisions.md)，最终3/4/5人选仍未锁。
 
 ## 结论
 

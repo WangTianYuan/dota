@@ -2,7 +2,7 @@
 
 ID: story-research:protagonist-position-backsolve
 更新：2026-09-11
-状态：阶段性比较；不锁最终位置。
+状态：历史位置比较，已结束；当前长期2号位、首队Aster.Aries已锁，见[决策D11/D12](locked-decisions.md)。下文候选不重新开放位置选择。
 
 ## 反推起点
 

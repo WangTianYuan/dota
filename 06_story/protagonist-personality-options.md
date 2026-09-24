@@ -1,7 +1,7 @@
 # 主角性格方案：用场景而不是标签做选择
 
 ID: story:protagonist-personality-options
-状态：讨论中，未锁定
+状态：历史性格选项；作者已选C+A+D，见[人格基线](protagonist-personality-cad.md)与[决策D18](locked-decisions.md)。下文只作比较记录，不再次要求选择人格。
 更新：2026-09-13
 
 ## 目标
