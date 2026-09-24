@@ -22,7 +22,7 @@ ID: story:character-writing-cards
 
 ## 主角｜2021年10月至首次职业机会
 
-**依据：** [C+A+D已锁基线](protagonist-personality-cad.md)、[已锁决策](locked-decisions.md)D03/D15/D18/D23。姓名、ID未选。
+**依据：** [C+A+D已锁基线](protagonist-personality-cad.md)、[已锁决策](locked-decisions.md)D03/D15/D18/D23/D30。姓名陈越，游戏ID为Loop；称呼按人物关系自然使用。
 
 - **自身目标：** 喜欢赢，也想弄明白一个处理到底能做到哪一步；职业念头逐渐变成主动争取高质量对局和机会。系统不是替他制定人生的人。
 - **注意点：** 局面里一处可改的处理、别人说法中的具体条件。游戏外未必同样敏感，可能没意识到同伴已经等烦。
