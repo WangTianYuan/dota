@@ -2,7 +2,7 @@
 
 面向长期电竞小说创作。真实历史、当事人说法、研究推断和小说世界线分别维护；人物和机制都具有时间范围。
 
-**2026-09-23最新决定与研究：** 作者采用[火猫守魂陷阱反制](06_story/ember-third-landing-scene-proposal.md)，确定火猫为核心英雄之一，见[已锁决策D26](06_story/locked-decisions.md#d26-火猫核心英雄与一次陷阱反制)。[技术卡](09_training/ember-flight-sleight-case.md)中的故事期输入仍待验证。按最新授权补充[蓝猫研究卡](09_training/storm-combat-cases.md)与[三个对战梗概](06_story/storm-combat-scene-proposals.md)：穿罩打断虚空输出、飞行中对莲花目标施法、截兵同时传送。蓝猫未锁入核心，三个场景未获作者采用；本轮到此停止扩展。[当前交接](00_meta/version-mid-pilot-20260923.md)保留证据与后续缺口。
+**2026-09-23最新决定与研究：** 火猫已确定为核心英雄之一，[守魂陷阱反制](06_story/ember-third-landing-scene-proposal.md)已获采用。作者又认可[蓝猫三幕](06_story/storm-combat-scene-proposals.md)作为职业级高端操作：穿罩救人、飞行中对莲花目标施法、截兵同时传送，见[已锁决策D26/D27](06_story/locked-decisions.md)。蓝猫未锁入核心。当前在原场景文件中新增“救人之后，对手改变防备”的两轮交锋工作提案；它尚未获采用，也未确定十人阵容或赛果。[研究卡](09_training/storm-combat-cases.md)补入2014官方穿罩规则记录与具体输入任务，完整故事期场景仍未实测。[当前交接](00_meta/version-mid-pilot-20260923.md)记录停止点。
 
 先前[7.30e→7.31试点](09_training/version-mid/7.30e-to-7.31-pilot.md)保留作版本资料，光法、蓝猫、獸均未锁为招牌。下方Batch 012是已合入的历史创作阶段记录；本次不恢复旧正文，不吸收另一工作树尚未提交的Batch 013稿件。
 
