@@ -5,6 +5,8 @@ ID: index:training
 
 ## 当前执行：按选中的情节补证
 
+本轮只为Zhou代表局补[拳中吹风的7.30e依据](zhou-first-match-offense-7.30e.md)，对应[一份短交锋](../06_story/zhou-first-match-offense-proposal.md)。两种局面比较后停止；没有扩展全英雄研究或实机验证。
+
 创作只从[当前情节](../06_story/current-arc.md)提出具体问题，研究时机按[写作流程](../06_story/writing-workflow.md)处理。现有技术卡供选择，不要求全部登场；本页下方主题只作资料目录，不是自动采集队列。
 
 ## 前轮停止点：进攻小筛选已收口
