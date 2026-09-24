@@ -2,7 +2,7 @@
 
 面向长期电竞小说创作。真实历史、当事人说法、研究推断和小说世界线分别维护；人物和机制都具有时间范围。
 
-**2026-09-23最新研究：** 按作者纠偏，先从火猫专精用法提出具体对抗，再回查故事期版本。本轮保留[飞魂途中改落点研究卡](09_training/ember-flight-sleight-case.md)与[守魂围捕场景提案](06_story/ember-third-landing-scene-proposal.md)：交互有2019/2022文字依据，7.30e完整场景仍待验证；不是新发现或已认可高光。另保留重复激活备选，不扩英雄池。[当前交接](00_meta/version-mid-pilot-20260923.md)已取代“下一次只补光法”的旧安排。
+**2026-09-23最新决定与研究：** 作者采用[火猫守魂陷阱反制](06_story/ember-third-landing-scene-proposal.md)，确定火猫为核心英雄之一，见[已锁决策D26](06_story/locked-decisions.md#d26-火猫核心英雄与一次陷阱反制)。[技术卡](09_training/ember-flight-sleight-case.md)中的故事期输入仍待验证。按最新授权补充[蓝猫研究卡](09_training/storm-combat-cases.md)与[三个对战梗概](06_story/storm-combat-scene-proposals.md)：穿罩打断虚空输出、飞行中对莲花目标施法、截兵同时传送。蓝猫未锁入核心，三个场景未获作者采用；本轮到此停止扩展。[当前交接](00_meta/version-mid-pilot-20260923.md)保留证据与后续缺口。
 
 先前[7.30e→7.31试点](09_training/version-mid/7.30e-to-7.31-pilot.md)保留作版本资料，光法、蓝猫、獸均未锁为招牌。下方Batch 012是已合入的历史创作阶段记录；本次不恢复旧正文，不吸收另一工作树尚未提交的Batch 013稿件。
 
