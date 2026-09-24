@@ -1,8 +1,8 @@
 # 《逐梦之旅》正文写作规则
 
 ID: story:narrative-writing-rules
-更新：2026-09-15
-状态：执行v1；当前写作阶段见[批次记录](../00_meta/batch-012.md)，工作稿不自动成为已认可风格。
+更新：2026-09-24
+状态：文字原则继续沿用；何时设计、考证、试写与审查统一按[当前执行方式](writing-workflow.md)，具体阶段见[当前情节](current-arc.md)。工作稿不自动成为已认可风格。
 关联：[执行方式](writing-workflow.md)、[人物写作卡](character-writing-cards.md)、[中文术语规范](../00_meta/dota-cn-language-style.md)、[已锁决策](locked-decisions.md)。
 
 ## 小说要给读者什么
