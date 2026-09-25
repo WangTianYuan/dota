@@ -8,7 +8,7 @@
 
 当前创作下一步仅由上述情节文件维护；[当前交接](00_meta/version-mid-pilot-20260923.md)记录本轮审查、边界和验证。旧批次中的继续指令保留作历史，不覆盖此入口。规则方法的授权不等于具体情节已被采用，提交与推送也不提升采用等级。
 
-**当前执行：** 已完成[蓝猫约局连续初稿《别追那个》](06_story/prose/first-group-match-working-draft.md)，又继续写出[TA出场与小八交流短稿《在鸟上》](06_story/prose/after-group-and-xiao8-working-draft.md)。均为X待审，未实机验证；撤下长滚必杀特写，不将常规技巧包装成独家绝活。当前需要选择[首次自播的主要看点](06_story/first-stream-entry-options.md)，四案与共用准备齐备，不再以完成稿件等待“继续”。
+**当前执行：** 作者已选首次自播A，记D35；[首播短稿《还打》](06_story/prose/first-stream-ranked-working-draft.md)已完成，正常冲分中逐渐有观众留下，不安排开播即爆红。此前[蓝猫约局](06_story/prose/first-group-match-working-draft.md)与[小八短过渡](06_story/prose/after-group-and-xiao8-working-draft.md)均保留为X待审。已继续整理[冲分至Aries试训的过渡及篇幅选择](06_story/prepro-to-trial-pace-options.md)：A收束冲分期进入试训（推荐）、B先补自播代表局、C增加短篇组织对抗。该选择待作者回答，Aries春季窗口、小八B与多英雄要求不重选。
 
 **2026-09-25最新反馈：** 作者认为[代表局连续初稿《我能回来》](06_story/prose/zhou-match-working-draft.md)整体思路没问题，局内内容以后调整。整体审读已完成，文字仍未定稿；争盾一波不要求决定全局，加好友只形成接触入口。当前已接出[关系与活动过渡的三个近处节点](06_story/current-arc.md#下一段的三个近处节点x工作提案)，不继续抠同一场团战。原有必要条件与文字自查不等于整团实机验证；机制泛搜保持停止。
 
