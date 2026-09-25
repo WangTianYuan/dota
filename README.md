@@ -8,7 +8,7 @@
 
 当前创作下一步仅由上述情节文件维护；[当前交接](00_meta/version-mid-pilot-20260923.md)记录本轮审查、边界和验证。旧批次中的继续指令保留作历史，不覆盖此入口。规则方法的授权不等于具体情节已被采用，提交与推送也不提升采用等级。
 
-**当前执行：** 已落实作者要求的[持续推进准则](06_story/writing-workflow.md#3-一次以完整情节为单位协作)，阶段完成和稿件待审不再自动暂停。已继续写完[邀请入局初稿《差个中单》](06_story/prose/first-group-invitation-working-draft.md)，下一处需要作者选择的是[首次约局的核心看点](06_story/first-group-match-direction-options.md)，四案已列齐，推荐个人进攻主导；选择前不先写定整场比赛。
+**当前执行：** 首次约局已选A个人进攻主导（D32），已从[邀请入局初稿《差个中单》](06_story/prose/first-group-invitation-working-draft.md)推进到[整局情节工作稿](06_story/first-group-match-plot-v1.md)。按作者补充核查了[小八发掘NTS及教练作用](07_sources/xiao8-talent-development-20260925.md)，新增分期人物卡；[小八与陈越的长期关系四案](06_story/xiao8-story-role-options.md)待选择，推荐关注、交流与赛场针对，不改Aries首队或默认替换NTS。局内必要核对独立继续，不恢复泛搜。
 
 **2026-09-25最新反馈：** 作者认为[代表局连续初稿《我能回来》](06_story/prose/zhou-match-working-draft.md)整体思路没问题，局内内容以后调整。整体审读已完成，文字仍未定稿；争盾一波不要求决定全局，加好友只形成接触入口。当前已接出[关系与活动过渡的三个近处节点](06_story/current-arc.md#下一段的三个近处节点x工作提案)，不继续抠同一场团战。原有必要条件与文字自查不等于整团实机验证；机制泛搜保持停止。
 
