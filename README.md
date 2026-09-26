@@ -8,7 +8,7 @@
 
 当前创作下一步仅由上述情节文件维护；[当前交接](00_meta/version-mid-pilot-20260923.md)记录本轮审查、边界和验证。旧批次中的继续指令保留作历史，不覆盖此入口。规则方法的授权不等于具体情节已被采用，提交与推送也不提升采用等级。
 
-**当前执行：** 首秀B已选（D37）：4月12日起春季后四个系列替补上阵，赛季间再登记。作者要求讲清赢球时为何换人；[试训安排](06_story/aries-first-trial-plan.md)已补连续竞技比较、磨合成本和原中单立场。已完成[首场试训连续稿《打我这里》](06_story/prose/aries-first-trial-working-draft.md)，并接出[后续试训短稿](06_story/prose/aries-trial-followup-working-draft.md)；均X待审，未写成已获首发。下一单位补一次受针对后仍有收益的交锋，再接人员决定，不重复询问首秀或恢复泛搜。
+**当前执行：** 首秀B（D37）不变，已完成[火猫后续试训](06_story/prose/aries-trial-counterfight-working-draft.md)、[录用沟通《十二号》](06_story/prose/aries-offer-working-draft.md)和[首秀共用开场](06_story/prose/aries-debut-opening-working-draft.md)，均X待审。试训到此收束；[正式比赛四案](06_story/aries-first-official-unit-options.md)已交作者，推荐C首秀短而有兑现、重点展开iG。具体英雄和普通细节自行处理，不重选首队或首秀路径。
 
 **2026-09-25最新反馈：** 作者认为[代表局连续初稿《我能回来》](06_story/prose/zhou-match-working-draft.md)整体思路没问题，局内内容以后调整。整体审读已完成，文字仍未定稿；争盾一波不要求决定全局，加好友只形成接触入口。当前已接出[关系与活动过渡的三个近处节点](06_story/current-arc.md#下一段的三个近处节点x工作提案)，不继续抠同一场团战。原有必要条件与文字自查不等于整团实机验证；机制泛搜保持停止。
 

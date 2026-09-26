@@ -5,7 +5,7 @@ ID: story:current-arc
 
 ## 这一段要检验什么
 
-**当前推进位置（2026-09-25最新）：** 首秀B已选（D37），4月12日起春季后四场替补上阵。作者要求解释原阵容赢球时为何换人；已在[试训安排](aries-first-trial-plan.md)补齐动机、比较和沟通边界，邀约稿明确登记阵容仍在打。已写[首场完整试训](prose/aries-first-trial-working-draft.md)及[后续短稿](prose/aries-trial-followup-working-draft.md)。新文字X待审，当前仅支持继续试人，没有宣布录用。下一单位选择一次受针对后的具体兑现，补足比“赢了一组”更多的竞技理由，再接队伍决定；无需重新选择首秀路径。
+**当前推进位置（2026-09-25最新）：** 首秀B（D37）不变。[首场TA试训](prose/aries-first-trial-working-draft.md)之后，已完成[火猫争盾](prose/aries-trial-counterfight-working-draft.md)、[录用沟通](prose/aries-offer-working-draft.md)和[首秀共用开场](prose/aries-debut-opening-working-draft.md)。均X待审：数日比较、队伍决定与学校咨询已接起，不声称已证明换人足够精彩或还原真实俱乐部流程。试训不再追加整局，下一段转正式比赛；[四案](aries-first-official-unit-options.md)已交作者，推荐C首秀有兑现、主篇幅给iG。等待的是新比赛单元的核心取舍，独立检查与保存照常推进。
 
 **人物核查补充：** [白学家调查](../07_sources/white-album-performance-20260925.md)支持有中路实力、2020不爱指挥的队友评价及2021大赛稳定性质疑，不支持社恐定论或一到线下必差。现实冬季Aries 4-3未升级、春季首败后换人，不能把Xwy后续连胜算给白学家。邀约稿已撤下“旧中单刚赢且发挥很好”的模型自设前提；下一局与正常人员沟通继续，D37不重选。
 
