@@ -2,7 +2,7 @@
 
 This is a Chinese-language, evidence-backed Dota novel research repository.
 
-1. Read README.md, 00_meta/source-policy.md, 00_meta/coverage.json and the latest batch report before continuing.
+1. Read README.md, 00_meta/source-policy.md, 00_meta/coverage.json and the current handoff linked from README before continuing. For creative work, use 06_story/writing-workflow.md and 06_story/current-arc.md; historical batch reports do not override those current entry points.
 2. Research cutoff and event dates are explicit. Source publication date is not automatically the event date or what the fictional protagonist knew then.
 3. Distinguish F facts, Q attributed statements, O direct observations, I inferences, H hypotheses and X fiction. Store approved fiction in 06_story.
 4. Never promote earlier chat claims to evidence. Do not invent match IDs, item timestamps, hero win rates, player psychology or team voice comms.
@@ -12,6 +12,7 @@ This is a Chinese-language, evidence-backed Dota novel research repository.
 8. Track missing data and failed source access. Do not label a full replay watched or dataset exported unless actually done.
 9. Public summaries only: no credentials, private leaks, unlicensed full articles or full video mirroring.
 10. Publish research on a branch and PR. Do not automatically merge, force-push or overwrite unrelated user changes.
-11. Prefer consequential outline decisions over micromanaging fictional ward positions or dialogue before replay verification.
+11. Prefer consequential story choices over micromanaging fictional ward positions or dialogue. Research only the selected scene's necessary dependencies; unresolved decisive mechanics remain proposals, not asserted prose. Do not require whole-period research or replay verification for every fictional scene.
 12. Before drafting or revising prose, read `06_story/narrative-writing-rules.md`, `06_story/writing-workflow.md`, the relevant entries in `06_story/character-writing-cards.md`, and the current batch state. Load each real person's period-specific evidence and the relevant recent story state as directed there; do not use later public personas as an earlier-period default.
 13. Working prose is not an author-approved style benchmark. Follow the current batch's writing phase rather than an older next-step note; keep story drafting, concrete editorial review, and state updates distinct. These writing instructions grant no additional publication or external-action authority.
+14. The author requires continuous progress within the authorized scope: after completing a work unit, begin the next available authorized step without waiting for another “继续”. A progress update, completed draft, or pending prose review is not itself a pause gate. Keep unreviewed work provisional and locally reversible; ask only for a consequential story/character/long-term choice, blocking information held by the author, or genuinely new authorization. Present all viable options and tradeoffs with a recommendation. Research and polishing limits end those activities, not all project work. Preserve the author's core-story and final-adoption rights; see 06_story/writing-workflow.md section 3.

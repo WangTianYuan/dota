@@ -2,20 +2,40 @@
 
 面向长期电竞小说创作。真实历史、当事人说法、研究推断和小说世界线分别维护；人物和机制都具有时间范围。
 
-**阶段更新：2026-09-15。Batch 012按阶段成果交付，下一阶段转入剧情设计与推演。** 本批从Batch 011合并提交`37135ebe09a7e950d31c18c5c5b662ed4f1fda78`展开；是否已合入以GitHub main及PR状态为准。全期资料、具体情节与正式正文尚未全部完成；下一步见[Batch 012→013交接](00_meta/handoff-batch-012-to-013.md)。
+**2026-09-24当前策略：** 作者已选择**方案A：短决赛夜→一次训练体验→尽快现实检验**，见[已锁决策D28](06_story/locked-decisions.md#d28-本轮开篇呈现选择a)。先读[一页故事方向](06_story/story-compass.md)，再按[当前情节](06_story/current-arc.md#当前执行方案a已选)处理已写初稿与反馈，不再询问A/B/C，不继续全量收集。八个可合并节点不是八章；A不自动批准全部细节、旧正文或具体技术动作。执行方式见[写作流程](06_story/writing-workflow.md)。
 
-**2026-09-15最新：作者选择情节D，并要求第一章一起重新设计。** 压缩普通赢局，尽快进入Zhou参与的高质量代表局；先共同决定完整情节，再由作者选择、修改或口述核心内容，随后形成初稿和有限编辑。第一章第四稿与第二章第三稿保留为历史工作稿，不再作为当前认可文本或续写事实。此情节D不恢复TI10开篇历史模拟。具体阶段以[本批进展](00_meta/batch-012.md)顶部当前执行状态和[执行方式](06_story/writing-workflow.md)为准。
+[开篇A修订稿](06_story/prose/opening-a-first-trial.md)已按作者反馈改为最后一枚魂的使用、先确认系统异常再试训练，并调整室友与队友互动。作者已选[起点B（D29）](06_story/locked-decisions.md#d29-开局能力起点选择b)：较强中单路人，尚无职业级分项；72/76/71/70为工作值，不限制快速成长。修订稿待最终审读；作者已选陈越 / Loop（D30）。当前暂时停改开篇，推进[Zhou代表局](06_story/current-arc.md#下一单位工作提案第一次值得再排一把)；作者已选[隔开神谕救援的合作进攻A](06_story/zhou-first-match-offense-proposal.md)（D31），并在收到完整流程后同意继续。代表局整体思路已获作者认可，局内内容与文字以后调整，未实机验证。
+
+当前创作下一步仅由上述情节文件维护；[当前交接](00_meta/version-mid-pilot-20260923.md)记录本轮审查、边界和验证。旧批次中的继续指令保留作历史，不覆盖此入口。规则方法的授权不等于具体情节已被采用，提交与推送也不提升采用等级。
+
+**当前执行（2026-09-26）：** 出场路径B（D37）不变，作者已选首秀叙事A（D38），指出首秀不写情绪会使节奏失真。原推荐C撤回。已重写[赛前](06_story/prose/aries-debut-opening-working-draft.md)，连续写完[首秀比赛、局间与系列首胜](06_story/prose/aries-debut-match-working-draft.md)，再接[Phoenix与iG前夜](06_story/prose/aries-after-debut-working-draft.md)。全部新文字X待审；下一处核心选择是[对iG怎样赢或是否输](06_story/current-arc.md)，不是继续压缩首秀或重选入队路径。
+
+**2026-09-25最新反馈：** 作者认为[代表局连续初稿《我能回来》](06_story/prose/zhou-match-working-draft.md)整体思路没问题，局内内容以后调整。整体审读已完成，文字仍未定稿；争盾一波不要求决定全局，加好友只形成接触入口。当前已接出[关系与活动过渡的三个近处节点](06_story/current-arc.md#下一段的三个近处节点x工作提案)，不继续抠同一场团战。原有必要条件与文字自查不等于整团实机验证；机制泛搜保持停止。
+
+**本轮已有正文试读：** [开篇A：再来一次](06_story/prose/opening-a-first-trial.md)，从短决赛夜、火猫训练写到次日现实交锋；整体方向获认可、局部已按反馈修订，尚非最终审定正文。只用一个训练问题，已纠正普通飞魂对照与放魂时序错误；技术有专精文字及7.30d配置支持，未实机复现。现在检验这段阅读效果，不继续扩充章纲或技巧库。
+
+**前轮技术筛选保持停止：** [火猫/蓝猫进攻小筛选](09_training/ember-storm-offense-shortlist.md)检查4项、保留2项，[两份梗概](06_story/ember-storm-offense-proposals.md)尚未获作者采用。不为消耗现有资料强行安排登场；此前蓝猫连续交锋草图暂停细磨。
+
+既有决定保持：火猫是核心英雄之一，[守魂陷阱反制](06_story/ember-third-landing-scene-proposal.md)已采用；[蓝猫三幕](06_story/storm-combat-scene-proposals.md)已认可为职业级高端操作，蓝猫未锁入核心，见[D26/D27](06_story/locked-decisions.md)。所有具体故事期场景均未实机验证。[当前交接](00_meta/version-mid-pilot-20260923.md)记录来源、采用范围与停止点。
+
+先前[7.30e→7.31试点](09_training/version-mid/7.30e-to-7.31-pilot.md)保留作版本资料，光法、蓝猫、獸均未锁为招牌。下方Batch 012是已合入的历史创作阶段记录；本次不恢复旧正文，不吸收另一工作树尚未提交的Batch 013稿件。
+
+**历史阶段：Batch 012。** 从Batch 011合并提交`37135ebe09a7e950d31c18c5c5b662ed4f1fda78`展开，阶段成果已合入main；不代表全期资料、具体情节与正式正文全部完成。[Batch 012→013交接](00_meta/handoff-batch-012-to-013.md)保留作当时记录，当前下一步以上方入口为准。
+
+**继续有效的既有选择：情节D。** 压缩普通赢局，尽快进入Zhou参与的高质量代表局；当前A安排这一段之前的短开场与首次兑现，两者相容。第一章第四稿与第二章第三稿均已重开，保留为历史工作稿，不再作为认可文本或续写事实，也不恢复TI10开篇历史模拟。
 
 **系统呈现已改：** 作者批准评分方案C，采用综合评分、少量分项与水平标签；[能力评分与版本适应](06_story/ability-rating-working-design.md)提供可回调标尺与初始面板。版本不固定导致扣分或受挫，实战仍完全无系统辅助。前期按作者提供的训练、天梯、活动入圈、试训主线推进。主旨是回到TI10后的节点，通过具体人物和事件改变CN Dota的问题；“挽天倾”只是读者对照真实历史时自然获得的感受，不是主角的救世任务。
 
-本批入口：[Batch 012进展](00_meta/batch-012.md)、[方案C与比较记录](06_story/batch-012-opening-revision-options.md)、[前30章骨架](06_story/batch-012-opening-outline.md)、[第一章](06_story/prose/chapter-001-working-draft.md)、[第二章工作稿](06_story/prose/chapter-002-working-draft.md)、[第三章比赛片段](06_story/prose/chapter-003-highlight-sample.md)、[身份/校园工作稿](06_story/batch-012-identity-campus-working-draft.md)。作者已选择C：TI10完整模拟移出开篇，先写专项训练惊喜和现实中单兑现；相关设定已在本分支同步，具体正文仍是工作稿。[TI10接管证据](05_matches/ti10-gf-g5/batch-012-entry-state.md)保留为素材，完整核片不阻塞开篇。
+历史材料入口：[Batch 012进展](00_meta/batch-012.md)、[开篇方案C比较记录](06_story/batch-012-opening-revision-options.md)、[旧30章骨架](06_story/batch-012-opening-outline.md)、[旧第一章](06_story/prose/chapter-001-working-draft.md)、[旧第二章](06_story/prose/chapter-002-working-draft.md)、[旧第三章片段](06_story/prose/chapter-003-highlight-sample.md)、[身份/校园工作稿](06_story/batch-012-identity-campus-working-draft.md)。开篇方案C已将完整TI10模拟移出开篇，与本次呈现A、能力评分C是不同决策。[TI10接管证据](05_matches/ti10-gf-g5/batch-012-entry-state.md)保留为素材，完整核片不阻塞开篇。
 
 ## 从这里开始
 
 | 入口 | 内容 |
 |---|---|
-| [建设与执行规则](00_meta/research-plan.md) | 全期索引先行、跨时期深挖、场景补证 |
-| [本批交付及缺口](00_meta/batch-012.md) | 当前进展、正文小样与剩余事项；历史批次另存 |
+| [一页故事方向](06_story/story-compass.md) | 已锁方向摘要；不新增设定 |
+| [当前情节](06_story/current-arc.md) | 滚动提案、当前选择与必要待查项 |
+| [建设与执行规则](00_meta/research-plan.md) | 历史研究计划；当前只为选定情节补证 |
+| [Batch 012交付及缺口](00_meta/batch-012.md) | 已合入阶段成果、旧稿与缺口；当前执行见顶部交接 |
 | [来源政策](00_meta/source-policy.md) | 事实、公开说法、观察、推断、虚构的边界 |
 | [来源登记](07_sources/register.md) | 原始出处、公开时间、读取状态与限制 |
 | [版本索引](01_versions/index.md) | 7.30d至7.41e，51条官方索引记录 |
@@ -36,7 +56,7 @@
 
 ## 使用顺序
 
-先查场景日期，再查版本和参赛资格，然后读取人物时期、对局证据及小说分歧。作者知道的后续历史，不等于角色当时已经知道。
+先明确当前情节想写什么，再按实际采用的内容查场景日期、版本、资格和人物时期；已有结论按需复用。决定因果的缺口在写成具体正文前解决，非关键细节暂存当前情节的待查表；不先做全期考证。作者知道的后续历史，不等于角色当时已经知道。
 
 `01`至`05`和`08`、`09`保存研究；`06_story`保存创作；`07_sources`保存来源。数据表必须说明样本和过滤条件。没有统计就留空，不用印象补数字。
 

@@ -2,7 +2,7 @@
 
 ID: story-research:p2-p3-eight-node-pressure-test
 更新：2026-09-12
-状态：阶段性比较，不锁最终位置/首队/TI11名次。
+状态：历史比较，P2已经选定；长期2号位、首队Aries与TI11资格路径见[已锁决策D11/D12/D14](locked-decisions.md)。P3不再是并行主线，TI11最终名次仍未锁。
 
 ## 评估前提
 

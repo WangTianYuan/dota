@@ -2,7 +2,7 @@
 
 ID: research:aster-aries-mid-route
 更新：2026-09-10
-状态：高价值候选；不锁主角最终位置。
+状态：历史路线研究；首队与位置已由[已锁决策D11/D12](../06_story/locked-decisions.md)确定为Aries二号位，下文旧候选比较不再构成待选事项。2026-09-25校准入口；具体首秀见[当前试训安排](../06_story/aries-first-trial-plan.md)，成长速度等叙事边界以最新已锁决策为准。
 
 ## 为什么重新进入候选
 
