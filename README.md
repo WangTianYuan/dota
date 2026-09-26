@@ -8,7 +8,7 @@
 
 当前创作下一步仅由上述情节文件维护；[当前交接](00_meta/version-mid-pilot-20260923.md)记录本轮审查、边界和验证。旧批次中的继续指令保留作历史，不覆盖此入口。规则方法的授权不等于具体情节已被采用，提交与推送也不提升采用等级。
 
-**当前执行：** 首秀B（D37）不变，已完成[火猫后续试训](06_story/prose/aries-trial-counterfight-working-draft.md)、[录用沟通《十二号》](06_story/prose/aries-offer-working-draft.md)和[首秀共用开场](06_story/prose/aries-debut-opening-working-draft.md)，均X待审。试训到此收束；[正式比赛四案](06_story/aries-first-official-unit-options.md)已交作者，推荐C首秀短而有兑现、重点展开iG。具体英雄和普通细节自行处理，不重选首队或首秀路径。
+**当前执行（2026-09-26）：** 出场路径B（D37）不变，作者已选首秀叙事A（D38），指出首秀不写情绪会使节奏失真。原推荐C撤回。已重写[赛前](06_story/prose/aries-debut-opening-working-draft.md)，连续写完[首秀比赛、局间与系列首胜](06_story/prose/aries-debut-match-working-draft.md)，再接[Phoenix与iG前夜](06_story/prose/aries-after-debut-working-draft.md)。全部新文字X待审；下一处核心选择是[对iG怎样赢或是否输](06_story/current-arc.md)，不是继续压缩首秀或重选入队路径。
 
 **2026-09-25最新反馈：** 作者认为[代表局连续初稿《我能回来》](06_story/prose/zhou-match-working-draft.md)整体思路没问题，局内内容以后调整。整体审读已完成，文字仍未定稿；争盾一波不要求决定全局，加好友只形成接触入口。当前已接出[关系与活动过渡的三个近处节点](06_story/current-arc.md#下一段的三个近处节点x工作提案)，不继续抠同一场团战。原有必要条件与文字自查不等于整团实机验证；机制泛搜保持停止。
 
