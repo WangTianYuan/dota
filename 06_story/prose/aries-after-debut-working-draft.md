@@ -1,6 +1,6 @@
 # 首秀后的短衔接：明天是iG
 
-状态：2026-09-26，X可逆续写，接[首秀A](aries-debut-match-working-draft.md)。4月16日Phoenix暂取现实2-0的外壳，过程不借真实选手名替换；4月17日iG的比赛结果与主要对抗尚未选择。Phoenix身份依据见[试训与首秀来源补充](../../07_sources/aries-first-trial-20260925.md)。不压缩首秀本身，只压缩随后未选为主戏的比赛。
+状态：2026-09-26写成，2026-10-02同步后续；X可逆续写，接[首秀A](aries-debut-match-working-draft.md)。4月16日Phoenix暂取现实2-0的外壳，过程不借真实选手名替换；作者现已选4月17日iG的B，接[2-1连续稿](aries-ig-series-working-draft.md)。Phoenix身份依据见[试训与首秀来源补充](../../07_sources/aries-first-trial-20260925.md)。不压缩首秀本身，只压缩随后未选为主戏的比赛。
 
 ---
 
