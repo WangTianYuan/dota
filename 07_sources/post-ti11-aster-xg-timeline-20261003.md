@@ -1,7 +1,7 @@
 # TI11后去向：Aster报道、TI年份与XG时间线
 
 ID: sources:post-ti11-aster-xg-timeline-20261003
-检索：2026-10-03。范围：回答作者当前三个问题及判断XG是否能在2022年底进入剧情；不是全量投资史或欠款调查。
+检索：2026-10-03。范围：TI11后去向、TI年份及杨一清支持多队的时间线；不是全量投资史或欠款调查。
 
 ## 本轮结论与证据边界
 
@@ -47,3 +47,25 @@ ID: sources:post-ti11-aster-xg-timeline-20261003
 ## 未完成与不采用
 
 未核杨一清精确首次出资日期、合同、转会金额、完整股权变动，也未做真人财务责任判断。未观看视频、解析Replay或游戏测试。搜索中有把AR混同Aster.Aries、把Ame提前放进2021阵容的低质量页面，未采用。官方TI12网页英文入口访问失败后，已改用国服官网核年份；不声称初期公告就是最终赛程。
+
+## 多队时间线补查：XG、Ybb、AR、Team Zero
+
+作者提出可考虑多个队伍。本节核组织与阵容的公开沿革，不将“同一支持者”“二队称呼”“工商同一所有权”“可以共同参加任何赛事”混为一项事实。下列月份足以支持当前路线比较，精确日期区分队史记录与公开官宣。
+
+| 时间 | 已取得的证据与结论 | 取得层级及限制 |
+|---|---|---|
+| 2021年1月 | XG队史将2021-01-16列为建立/初阵容日期 | 复用上文队史搜索返回；不是杨老板首笔出资日，也不是游戏内战队ID创建日 |
+| 2021年11月底 | Ybb已组队并参加DPC海选；队史记11月27日官宣，引用XG官博 | [Ybb队史](https://liquipedia.net/dota2/Ybb_Gaming)搜索返回；[2021-12-07国服官网lou采访](https://www.dota2.com.cn/article/details/20211207/220164.html)直接打开并取得该队参加联赛的正文，交叉支持它在2021已存在。队史导语另写2022年8月成立，与自身时间线冲突，不能照抄为首次建队日 |
+| 2022年8月 | 原DEC五人加入Ybb，经理为叶孤城，阵容公告由XG官博发布 | [新浪8月18日公告转录](https://games.sina.cn/gz/dt/2022-08-18/details-imizmscv6797460.d.html)正文直读；队史记事件8月15日，转录发表18日。至少在TI11前已经存在XG管理另一阵容的直接公开依据 |
+| 2022年11月24日 | Ybb再次重组：Summer、zc、SJ及教练Jiumi合同结束离队；lou、7e、Beyond、天命、zzq为公布阵容，7e/zzq从EHOME转入 | [当日新浪公告转录](https://games.sina.cn/gz/dt/2022-11-24/details-imqmmthc5886593.d.html)正文直读，支持真实转会窗口及中路调整。原[微博](https://weibo.com/7720945580/Mgwlf2Gz2)打开受限；不等于无主的位置可任意占用 |
+| 2023年5月9日 | Ybb重组并更名为Azure Ray，阵容为lou、Somnus、Chalice、fy、天命，教练LaNm | 队史与[百科引用页](https://moegirl.uk/XtremeGaming电子竞技俱乐部)列当日公告，后者正文已读；[原公告](https://weibo.com/7837993741/MFMyNfwsM)打开受限，未直读原微博。AR不是与原Ybb始终并列的额外一队 |
+| 2023年5月；5月17日官宣记录 | Team Zero组建，Cty、7e、Beyond、iceice、zzq，教练bLink；7e、Beyond、zzq来自重组前Ybb | [Team Zero队史](https://liquipedia.net/dota2/Team_Zero)搜索返回与百科公告引用记17日；[2024年Esports.gg回顾](https://esports.gg/news/dota-2/who-team-zero-dota-blink-poyoyo/)相关段落直读，说明杨老板支持新阵容及海选至A级的路径。[原官宣](https://weibo.com/7720945580/N11xVgaHB)受限；游戏内记录另有5月9日，不能据官宣日断言17日前队伍不存在 |
+| 2023年11月25日 | 官方机构报道将杨一清同时称为AR、XG、TZ创始人 | [相城区官方报道](https://m.thepaper.cn/newsDetail_forward_25428026)正文再次直读；这是多项目关联的强支持，不是各年持股比例及赛事所有权申报的证明 |
+
+**可用于回答作者的归纳（F/I）：** 2021年底已有XG与Ybb；2022年多阵容管理有公告依据；2023年5月Ybb转为AR，另有Team Zero，形成XG、AR、TZ三队并存的格局。四个队名并不等于四支同时存续的队伍。不能从2023才出现AR/TZ，误推杨老板2022只能支持XG一队。
+
+### 对2022年底入口的必要限制
+
+- Ybb现实2023冬季从预选进入A级（Division II），以系列7胜0负、局分14胜1负升入S级（Division I）。[联赛表](https://liquipedia.net/dota2/Dota_Pro_Circuit/2023/1/China/Division_II)与[DLTV赛季积分表](https://dltv.org/matches/405872/ybb-gaming-vs-outsiders-from-cn-dpc-2023-winter-tour-china-division-2)为搜索返回；[官方2023年2月采访索引](https://www.dota2.com.cn/news/competition/Ti3_news/index30.htm)直接说明Ybb当时参加A级。分数只作现实基线，不自动成为小说结果。
+- 因而，“2022年底加盟Ybb即可立即打S级”不成立。多队事实解决组织选择，不自动解决陈越的转会动机、参赛入口或下一届TI的安排。小说若改变阵容、席位归属或球队独立运作，另标X并在采用时定向查条件；不需要现在做全量合同与股权调查。
+- 未采用回顾文章中的恩怨/复仇心理推测、百科中错位的当前名单与个别赛事年份。只取本节所列沿革；没有观看官宣视频、采访音轨或比赛录像。
