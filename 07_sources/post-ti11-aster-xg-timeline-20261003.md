@@ -29,6 +29,14 @@ ID: sources:post-ti11-aster-xg-timeline-20261003
 - XG 2022公告转录：https://games.sina.cn/gz/dt/2022-12-07/details-imqqsmrp8922384.d.html
 - Ame官宣报道：https://www.oneesports.gg/dota2/ame-returns-pro-play-xtreme-gaming-2024/
 
+## 补查：延期发生在哪两届之间，以及拒绝者的位置
+
+- **F，官方正文直读：** Valve于2020-04-30宣布因新冠疫情推迟国际邀请赛，当时称很可能需要到2021年举行，尚未定具体日期。原博客现重定向到[官方新闻页](https://www.dota2.com/newsentry/2200515455800410421)，网页工具未取得正文；本轮通过[Steam官方新闻接口](https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=570&count=10&maxlength=0&enddate=1588377600&feeds=steam_community_announcements)取得标题为The International、时间戳1588286934的完整公告。结合实际举办年份，空档是TI9（2019）到TI10（2021），不是TI10到TI11；2020没有举行TI，届数没有跳过。延期公告本身不证明后来举办的具体日期。
+- **F/Q，官方采访稿直读：** [2021-12-07国服官网Dy采访](https://www.dota2.com.cn/article/details/20211207/220169.html)明确Paparazi由一号位转中单；Dy认为其有能力胜任两个位置，也提到节奏差异及适应过程。这支持有一号位经历，不证明2022年底愿意转回一号位。
+- **Q，采访文字转述直读：** [2021-12-14的17173采访稿](https://dota2.17173.com/news/12142021/180423627.shtml)中，Paparazi回答打中与打一哪个更爽时选择打中，并称Dy、Pyw组队缺中单而邀请了他。网页工具后续访问超时，本轮经普通HTTP读取正文取得问答；未观看采访视频。只能归因于当时表达，不能推导他永久拒绝转位置，也不能反过来说他本来就等着回一号位。
+
+**设计作用（X）：** “拒绝者一号位、陈越中单”可作有历史角色基础的小说分支，但仍需两人主动选择合作的情节。另一种是拒绝者继续打中并选择别的合作，陈越加入调整后的XG；具体新队未设计，不能把未知去向写成史实。两者都不是原阵容空缺，也不能默认任何人只替Ame看守一年位置。
+
 ## 对本书的作用（I/X，非史实）
 
 1. 作者可以因后来的公开争议而排除长期留在Aster体系，这不需要将欠款写成2022年已对陈越发生的事。初入Aries至TI11的既有选择暂保留，不自动重选第一队。
