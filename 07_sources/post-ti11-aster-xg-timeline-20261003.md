@@ -174,3 +174,14 @@ I（后续纠偏）：上表人数条件只约束地区预选；原先要求优�
 - **I，使用边界：** 合艾规模更接近本次需求，不证明Aries受邀或能夺冠。邀请、取代队伍和冠军改写均为X；出境与回程衔接未核。该类非DPC邀请赛的奖杯不产生DPC积分或TI资格，必须独立处理TI入口。
 
 停止在三个赛事比较，不扩全年度榜单。核心比赛内容、选手当期状态与虚构阵容获胜条件未验证；下一步最多取一个决赛样本辅助设计，不以当前资料称整队能力审查完成。
+
+## 继续推进：ESL中国区入口
+
+检索日2026-10-04，针对已展开的杯赛情节补必要参赛前因。前节合艾单样本建议已被作者强调顶尖对手及D45取代。
+
+- **F直读当期名单：** [2022-07-28赛程报道](https://dj.sina.com.cn/article/mizmscv3836094.shtml)列Aster、Aster.Aries、DEC、LBZS、Team Saiyan、WOLF、果果、Team Mars参加中国区预选。
+- **F搜索记录交叉：** [Aries赛事履历](https://dltv.org/teams/asteraries/events)列7月21日公开预选第一、7月28—30日封闭预选第四；[RedPanda成绩](https://liquipedia.net/dota2/RedPanda/Results)列7月29日Aries第四及末场0-2 WOLF。此处只用参加/名次，不读取未取得的逐局状态。[中国区赛事页](https://liquipedia.net/dota2/ESL_One/Malaysia/2022/China/Closed_Qualifier)搜索列Aster取得出线席位，直接打开403，未谎称正文已读。
+- **F搜索记录：** [Aster成绩](https://liquipedia.net/dota2/Team_Aster/Results)列7月30日预选决赛3-0 LBZS、8月正赛亚军。[既有ESL官方总结](https://eslfaceitgroup.com/press/its-in-the-bag-og-wins-esl-one-malaysia-2022-with-lower-bracket-buff/)支持OG/Secret正赛存在，不能照抄原签表塞入Aries。
+- **I/X：** Aries可以沿真实参赛入口改写胜负争取唯一中国区名额，不再需要虚构额外邀请；若小说Aries出线，Aster不能继续占原正赛位置。具体对Aster的系列、对Secret/OG的国际赛位置和冠军均为X，未核完整新签表、签证与行程。
+
+未观看任何上述比赛；不以来源结果证明小说主角的技术或整队实力。参赛问题已足够支撑梗概，停止继续扩大赛事检索。
