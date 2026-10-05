@@ -1,7 +1,7 @@
 # 主角性格与团队相处：行为设定草案
 
 ID: story:protagonist-personality-team-behavior-options
-状态：讨论中，未锁定
+状态：历史行为选项；高层人格与团队边界已由[决策D18](locked-decisions.md)确定，具体台词仍可试写。下文不重新开放人格或唯一指挥选择。
 更新：2026-09-13
 
 ## 目标

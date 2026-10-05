@@ -2,7 +2,7 @@
 
 ID: story-research:p2-final-gate-assessment
 更新：2026-09-12
-状态：建议进入作者决策，不自动锁设定。
+状态：历史锁位前审查；作者后来已锁长期2号位与Aries首队，见[决策D11/D12](locked-decisions.md)。下方是否锁P2的问题已经结束，不再次征询。
 
 ## 总判断
 

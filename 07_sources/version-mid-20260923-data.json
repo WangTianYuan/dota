@@ -1,0 +1,545 @@
+{
+  "id": "sources:version-mid-20260923-data",
+  "generated_at_utc": "2026-09-24T02:30:41.8618640+00:00",
+  "scope": "Selected existing match records and fresh official patch metadata; not a population sample",
+  "match_api_refetched_this_round": false,
+  "video_watched_this_round": false,
+  "raw_replay_parsed_this_round": false,
+  "game_tested_this_round": false,
+  "role_and_patch_caveats": "lane_role is not verified position; API names are not period identity proof; patch letters remain date-derived candidates",
+  "patch_reads": [
+    {
+      "version": "7.30e",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.30e&language=english",
+      "retrieved_at_utc": "2026-09-24T02:30:38.4722144+00:00",
+      "response_utf8_sha256": "729a1e4268ecfa37d0773a6044b8d854dc3d19c3415b531efc8d18b36e152718",
+      "patch_timestamp_metadata": 1635404400,
+      "timestamp_is_verified_rollout_time": false,
+      "reviewed_hero_ids": [
+        17,
+        90
+      ],
+      "reviewed_item_ability_ids": []
+    },
+    {
+      "version": "7.31",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english",
+      "retrieved_at_utc": "2026-09-24T02:30:39.2800621+00:00",
+      "response_utf8_sha256": "9a5a76422eba02b2e45bf80c81450e9c7155d1a028cc59a8cfecf9cd10fdf28a",
+      "patch_timestamp_metadata": 1645603200,
+      "timestamp_is_verified_rollout_time": false,
+      "reviewed_hero_ids": [
+        17,
+        90
+      ],
+      "reviewed_item_ability_ids": [
+        176,
+        77
+      ]
+    },
+    {
+      "version": "7.31b",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31b&language=english",
+      "retrieved_at_utc": "2026-09-24T02:30:39.8243681+00:00",
+      "response_utf8_sha256": "4eb9039f4bb4619b5a63562e4d7a64e9696393c442d53230f29cbf06ceebf969",
+      "patch_timestamp_metadata": 1646035200,
+      "timestamp_is_verified_rollout_time": false,
+      "reviewed_hero_ids": [
+        17
+      ],
+      "reviewed_item_ability_ids": []
+    },
+    {
+      "version": "7.31c",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31c&language=english",
+      "retrieved_at_utc": "2026-09-24T02:30:40.6193814+00:00",
+      "response_utf8_sha256": "a466b0d430266f86d5aec3b2c8e437e9dff994bbc57bc654c3451c37fbfeeab3",
+      "patch_timestamp_metadata": 1651474800,
+      "timestamp_is_verified_rollout_time": false,
+      "reviewed_hero_ids": [
+        17,
+        90,
+        137
+      ],
+      "reviewed_item_ability_ids": []
+    },
+    {
+      "version": "7.31d",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31d&language=english",
+      "retrieved_at_utc": "2026-09-24T02:30:41.2335743+00:00",
+      "response_utf8_sha256": "7e1c74ba750f211d1305c5deeb475e40ac597e423974ec2e898e162f7d5b074c",
+      "patch_timestamp_metadata": 1654671600,
+      "timestamp_is_verified_rollout_time": false,
+      "reviewed_hero_ids": [
+        90
+      ],
+      "reviewed_item_ability_ids": [
+        77
+      ]
+    },
+    {
+      "version": "7.32",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.32&language=english",
+      "retrieved_at_utc": "2026-09-24T02:30:41.8584177+00:00",
+      "response_utf8_sha256": "ed1e0611aaf132a4f870209250781ca31e57178c1a56b20373c3ed0404006c0d",
+      "patch_timestamp_metadata": 1661238000,
+      "timestamp_is_verified_rollout_time": false,
+      "reviewed_hero_ids": [
+        17,
+        90,
+        137
+      ],
+      "reviewed_item_ability_ids": []
+    }
+  ],
+  "examples": [
+    {
+      "match_id": 6390481538,
+      "repository_source": "05_matches/classics-2021-2023/data/6390481538.json",
+      "repository_file_sha256": "7c0e6263c439016bb27925b28dfef292f5cdd2a95a700d32730037dcc5ceeb5b",
+      "upstream_provenance": {
+        "url": "https://api.opendota.com/api/matches/6390481538",
+        "cache_file_modified_at_utc": "2026-09-15T02:52:26.052039-07:00",
+        "raw_sha256": "816a4b15aa2c7f7d72287b4ad62134333be7b9dc70c0c2a02a15cbd2c3c4fbde",
+        "raw_bytes": 317369,
+        "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+      },
+      "start_time_unix": 1642828173,
+      "start_time_utc": "2022-01-22T05:09:33.0000000+00:00",
+      "radiant": "Team Aster",
+      "dire": "LGD Gaming",
+      "patch_precision": {
+        "candidate": "7.30e",
+        "basis": "I：按官方补丁索引发布时间推定；未核赛事客户端/延期更新",
+        "event_patch_verified": false
+      },
+      "player_slot": 129,
+      "account_id": 173978074,
+      "api_name": "NothingToSay",
+      "period_identity_independently_verified": false,
+      "hero_id": 17,
+      "hero_name_zh": "风暴之灵",
+      "lane_role": 2,
+      "last_hits_at_600": 49,
+      "selected_purchases": [
+        {
+          "time": 846,
+          "key": "kaya"
+        },
+        {
+          "time": 1339,
+          "key": "black_king_bar"
+        }
+      ]
+    },
+    {
+      "match_id": 6332139754,
+      "repository_source": "05_matches/classics-2021-2023/data/6332139754.json",
+      "repository_file_sha256": "63f09df0b2a2206261efc2c8caa3073b526068d9efbdede11dc22132e90fc4d1",
+      "upstream_provenance": {
+        "url": "https://api.opendota.com/api/matches/6332139754",
+        "cache_file_modified_at_utc": "2026-09-15T02:52:06.597972-07:00",
+        "raw_sha256": "764627c15bfbbdc297a753ff86795817e1272a2438aca406dd413e8613327029",
+        "raw_bytes": 238658,
+        "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+      },
+      "start_time_unix": 1640024622,
+      "start_time_utc": "2021-12-20T18:23:42.0000000+00:00",
+      "radiant": "Tundra Esports",
+      "dire": "Team Spirit",
+      "patch_precision": {
+        "candidate": "7.30e",
+        "basis": "I：按官方补丁索引发布时间推定；未核赛事客户端/延期更新",
+        "event_patch_verified": false
+      },
+      "player_slot": 130,
+      "account_id": 431770905,
+      "api_name": "TORONTOTOKYO",
+      "period_identity_independently_verified": false,
+      "hero_id": 106,
+      "hero_name_zh": "灰烬之灵",
+      "lane_role": 2,
+      "last_hits_at_600": 55,
+      "selected_purchases": []
+    },
+    {
+      "match_id": 6390571192,
+      "repository_source": "05_matches/classics-2021-2023/data/6390571192.json",
+      "repository_file_sha256": "54ed31f71bd4cfdbbef52e7566187db879eeb27c9b0e44211ba90367f8a9396a",
+      "upstream_provenance": {
+        "url": "https://api.opendota.com/api/matches/6390571192",
+        "cache_file_modified_at_utc": "2026-09-15T02:52:29.036583-07:00",
+        "raw_sha256": "e39456d5fa7c1399cacef2f0bf0ae7bd9a4b474cda59bdd9754d536597c54bc7",
+        "raw_bytes": 266710,
+        "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+      },
+      "start_time_unix": 1642833138,
+      "start_time_utc": "2022-01-22T06:32:18.0000000+00:00",
+      "radiant": "Team Aster",
+      "dire": "LGD Gaming",
+      "patch_precision": {
+        "candidate": "7.30e",
+        "basis": "I：按官方补丁索引发布时间推定；未核赛事客户端/延期更新",
+        "event_patch_verified": false
+      },
+      "player_slot": 129,
+      "account_id": 173978074,
+      "api_name": "NothingToSay",
+      "period_identity_independently_verified": false,
+      "hero_id": 23,
+      "hero_name_zh": "昆卡",
+      "lane_role": 2,
+      "last_hits_at_600": 83,
+      "selected_purchases": [
+        {
+          "time": 970,
+          "key": "black_king_bar"
+        }
+      ]
+    },
+    {
+      "match_id": 6390481538,
+      "repository_source": "05_matches/classics-2021-2023/data/6390481538.json",
+      "repository_file_sha256": "7c0e6263c439016bb27925b28dfef292f5cdd2a95a700d32730037dcc5ceeb5b",
+      "upstream_provenance": {
+        "url": "https://api.opendota.com/api/matches/6390481538",
+        "cache_file_modified_at_utc": "2026-09-15T02:52:26.052039-07:00",
+        "raw_sha256": "816a4b15aa2c7f7d72287b4ad62134333be7b9dc70c0c2a02a15cbd2c3c4fbde",
+        "raw_bytes": 317369,
+        "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+      },
+      "start_time_unix": 1642828173,
+      "start_time_utc": "2022-01-22T05:09:33.0000000+00:00",
+      "radiant": "Team Aster",
+      "dire": "LGD Gaming",
+      "patch_precision": {
+        "candidate": "7.30e",
+        "basis": "I：按官方补丁索引发布时间推定；未核赛事客户端/延期更新",
+        "event_patch_verified": false
+      },
+      "player_slot": 4,
+      "account_id": 107803494,
+      "api_name": "Ori",
+      "period_identity_independently_verified": false,
+      "hero_id": 52,
+      "hero_name_zh": "拉席克",
+      "lane_role": 2,
+      "last_hits_at_600": 70,
+      "selected_purchases": [
+        {
+          "time": 210,
+          "key": "null_talisman"
+        },
+        {
+          "time": 1200,
+          "key": "black_king_bar"
+        },
+        {
+          "time": 1399,
+          "key": "kaya"
+        }
+      ]
+    },
+    {
+      "match_id": 6356868459,
+      "repository_source": "05_matches/classics-2021-2023/data/6356868459.json",
+      "repository_file_sha256": "abf2c7267426d1d80cad367dcf02967a0c6714e0f9f2aed3352698f9e0e5ad53",
+      "upstream_provenance": {
+        "url": "https://api.opendota.com/api/matches/6356868459",
+        "cache_file_modified_at_utc": "2026-09-15T02:52:19.995775-07:00",
+        "raw_sha256": "cf6872ab3099de774181231616f187842486e18a5bec49d92dcaf771e1875b0a",
+        "raw_bytes": 317016,
+        "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+      },
+      "start_time_unix": 1641205306,
+      "start_time_utc": "2022-01-03T10:21:46.0000000+00:00",
+      "radiant": "LGD Gaming",
+      "dire": "Team Aster",
+      "patch_precision": {
+        "candidate": "7.30e",
+        "basis": "I：按官方补丁索引发布时间推定；未核赛事客户端/延期更新",
+        "event_patch_verified": false
+      },
+      "player_slot": 131,
+      "account_id": 107803494,
+      "api_name": "Ori",
+      "period_identity_independently_verified": false,
+      "hero_id": 25,
+      "hero_name_zh": "莉娜",
+      "lane_role": 2,
+      "last_hits_at_600": 76,
+      "selected_purchases": [
+        {
+          "time": 396,
+          "key": "null_talisman"
+        },
+        {
+          "time": 1160,
+          "key": "black_king_bar"
+        }
+      ]
+    },
+    {
+      "match_id": 6332020917,
+      "repository_source": "05_matches/classics-2021-2023/data/6332020917.json",
+      "repository_file_sha256": "1846f608784e6e73a6da9bda19ad88a4799488a08e722720bf2491025ca52280",
+      "upstream_provenance": {
+        "url": "https://api.opendota.com/api/matches/6332020917",
+        "cache_file_modified_at_utc": "2026-09-15T02:52:03.851236-07:00",
+        "raw_sha256": "68d065d01a545abeada6141a5a77264144bf6c3b1836dffeb292f888e0c82466",
+        "raw_bytes": 270715,
+        "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+      },
+      "start_time_unix": 1640020210,
+      "start_time_utc": "2021-12-20T17:10:10.0000000+00:00",
+      "radiant": "Team Spirit",
+      "dire": "Tundra Esports",
+      "patch_precision": {
+        "candidate": "7.30e",
+        "basis": "I：按官方补丁索引发布时间推定；未核赛事客户端/延期更新",
+        "event_patch_verified": false
+      },
+      "player_slot": 2,
+      "account_id": 431770905,
+      "api_name": "TORONTOTOKYO",
+      "period_identity_independently_verified": false,
+      "hero_id": 49,
+      "hero_name_zh": "龙骑士",
+      "lane_role": 2,
+      "last_hits_at_600": 67,
+      "selected_purchases": [
+        {
+          "time": 1148,
+          "key": "black_king_bar"
+        }
+      ]
+    },
+    {
+      "match_id": 6441263629,
+      "repository_source": "05_matches/classics-2021-2023/data/6441263629.json",
+      "repository_file_sha256": "2f6e1bea9ae712060c3b48b625ed7112fa29c3c6792bb18874749f0f6ef0f88f",
+      "upstream_provenance": {
+        "url": "https://api.opendota.com/api/matches/6441263629",
+        "cache_file_modified_at_utc": "2026-09-15T02:52:54.225897-07:00",
+        "raw_sha256": "d0030b2b75269cafc3ed607c1aadd81af6714f11aaea2c9eb700f280481e36d9",
+        "raw_bytes": 260022,
+        "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+      },
+      "start_time_unix": 1645360483,
+      "start_time_utc": "2022-02-20T12:34:43.0000000+00:00",
+      "radiant": "Antarctic Penguins",
+      "dire": "LGD Gaming",
+      "patch_precision": {
+        "candidate": "7.30e",
+        "basis": "I：按官方补丁索引发布时间推定；未核赛事客户端/延期更新",
+        "event_patch_verified": false
+      },
+      "player_slot": 129,
+      "account_id": 173978074,
+      "api_name": "NothingToSay",
+      "period_identity_independently_verified": false,
+      "hero_id": 13,
+      "hero_name_zh": "帕克",
+      "lane_role": 2,
+      "last_hits_at_600": 64,
+      "selected_purchases": [
+        {
+          "time": 378,
+          "key": "null_talisman"
+        },
+        {
+          "time": 509,
+          "key": "null_talisman"
+        }
+      ]
+    },
+    {
+      "match_id": 6356788698,
+      "repository_source": "05_matches/classics-2021-2023/data/6356788698.json",
+      "repository_file_sha256": "4a4cb3af3d9ebea9e0d78d766023b1f7cea67e17dc710345f4834b362272fa69",
+      "upstream_provenance": {
+        "url": "https://api.opendota.com/api/matches/6356788698",
+        "cache_file_modified_at_utc": "2026-09-15T02:52:16.529279-07:00",
+        "raw_sha256": "4ce986f2f79d31e1d8ffd552a670e8230dc9567f04af1ec54cc9ef96cd63a882",
+        "raw_bytes": 246081,
+        "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+      },
+      "start_time_unix": 1641201597,
+      "start_time_utc": "2022-01-03T09:19:57.0000000+00:00",
+      "radiant": "Team Aster",
+      "dire": "LGD Gaming",
+      "patch_precision": {
+        "candidate": "7.30e",
+        "basis": "I：按官方补丁索引发布时间推定；未核赛事客户端/延期更新",
+        "event_patch_verified": false
+      },
+      "player_slot": 4,
+      "account_id": 107803494,
+      "api_name": "Ori",
+      "period_identity_independently_verified": false,
+      "hero_id": 39,
+      "hero_name_zh": "痛苦女王",
+      "lane_role": 2,
+      "last_hits_at_600": 62,
+      "selected_purchases": [
+        {
+          "time": 122,
+          "key": "null_talisman"
+        },
+        {
+          "time": 892,
+          "key": "black_king_bar"
+        },
+        {
+          "time": 1305,
+          "key": "kaya"
+        },
+        {
+          "time": 1552,
+          "key": "kaya_and_sange"
+        }
+      ]
+    },
+    {
+      "match_id": 6582379623,
+      "repository_source": "05_matches/classics-2021-2023/data/6582379623.json",
+      "repository_file_sha256": "88bb77f0c3bc0dd19849ba080fd36453dd22bc6a5c21d36e21c1d3ac4dcc569e",
+      "upstream_provenance": {
+        "url": "https://api.opendota.com/api/matches/6582379623",
+        "cache_file_modified_at_utc": "2026-09-15T02:53:50.028046-07:00",
+        "raw_sha256": "c8edd219d01d040d13d4b1c593e938d8bfd39fa9a928945170af0600943d4812",
+        "raw_bytes": 253108,
+        "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+      },
+      "start_time_unix": 1653242352,
+      "start_time_utc": "2022-05-22T17:59:12.0000000+00:00",
+      "radiant": "TSM",
+      "dire": "OG",
+      "patch_precision": {
+        "candidate": "7.31c",
+        "basis": "I：按官方补丁索引发布时间推定；未核赛事客户端/延期更新",
+        "event_patch_verified": false
+      },
+      "player_slot": 131,
+      "account_id": 93618577,
+      "api_name": "bzm",
+      "period_identity_independently_verified": false,
+      "hero_id": 17,
+      "hero_name_zh": "风暴之灵",
+      "lane_role": 2,
+      "last_hits_at_600": 89,
+      "selected_purchases": [
+        {
+          "time": 208,
+          "key": "null_talisman"
+        },
+        {
+          "time": 282,
+          "key": "null_talisman"
+        },
+        {
+          "time": 534,
+          "key": "null_talisman"
+        },
+        {
+          "time": 1020,
+          "key": "black_king_bar"
+        },
+        {
+          "time": 1538,
+          "key": "null_talisman"
+        },
+        {
+          "time": 1777,
+          "key": "null_talisman"
+        },
+        {
+          "time": 1913,
+          "key": "null_talisman"
+        }
+      ]
+    },
+    {
+      "match_id": 6705943008,
+      "repository_source": "05_matches/classics-2021-2023/data/6705943008.json",
+      "repository_file_sha256": "18d56e4487b28e12bf5bf7820b26a319b3f8999a4131c349353128428c0db722",
+      "upstream_provenance": {
+        "url": "https://api.opendota.com/api/matches/6705943008",
+        "cache_file_modified_at_utc": "2026-09-15T02:58:46.481575-07:00",
+        "raw_sha256": "76ac48a09c67bf22a2d63e2bcde6594bbc233c9abfa3d6f36cbd8ceae002d2a3",
+        "raw_bytes": 280193,
+        "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+      },
+      "start_time_unix": 1660422523,
+      "start_time_utc": "2022-08-13T20:28:43.0000000+00:00",
+      "radiant": "LGD Gaming",
+      "dire": "Team Spirit",
+      "patch_precision": {
+        "candidate": "7.31d",
+        "basis": "I：按官方补丁索引发布时间推定；未核赛事客户端/延期更新",
+        "event_patch_verified": false
+      },
+      "player_slot": 1,
+      "account_id": 173978074,
+      "api_name": "NothingToSay",
+      "period_identity_independently_verified": false,
+      "hero_id": 17,
+      "hero_name_zh": "风暴之灵",
+      "lane_role": 2,
+      "last_hits_at_600": 80,
+      "selected_purchases": [
+        {
+          "time": 779,
+          "key": "kaya"
+        },
+        {
+          "time": 1015,
+          "key": "kaya_and_sange"
+        },
+        {
+          "time": 1467,
+          "key": "black_king_bar"
+        }
+      ]
+    },
+    {
+      "match_id": 6707633683,
+      "repository_source": "05_matches/classics-2021-2023/data/6707633683.json",
+      "repository_file_sha256": "c4a152a64dffdf618f5f1108c6e9f354ad4eca771f38eee9fbee11ec1b1a425e",
+      "upstream_provenance": {
+        "url": "https://api.opendota.com/api/matches/6707633683",
+        "cache_file_modified_at_utc": "2026-09-15T02:54:15.709408-07:00",
+        "raw_sha256": "d0f0bc68d6f2bf75684f9c67da17be218f875523f942ee125dfe37eb80ef992a",
+        "raw_bytes": 339588,
+        "cache_timestamp_note": "本地缓存文件时间，不是比赛时间或上游最后解析时间"
+      },
+      "start_time_unix": 1660510145,
+      "start_time_utc": "2022-08-14T20:49:05.0000000+00:00",
+      "radiant": "Team Spirit",
+      "dire": "LGD Gaming",
+      "patch_precision": {
+        "candidate": "7.31d",
+        "basis": "I：按官方补丁索引发布时间推定；未核赛事客户端/延期更新",
+        "event_patch_verified": false
+      },
+      "player_slot": 129,
+      "account_id": 173978074,
+      "api_name": "NothingToSay",
+      "period_identity_independently_verified": false,
+      "hero_id": 90,
+      "hero_name_zh": "光之守卫",
+      "lane_role": 2,
+      "last_hits_at_600": 66,
+      "selected_purchases": [
+        {
+          "time": 815,
+          "key": "spirit_vessel"
+        },
+        {
+          "time": 1334,
+          "key": "black_king_bar"
+        }
+      ]
+    }
+  ]
+}

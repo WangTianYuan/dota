@@ -2,7 +2,7 @@
 
 ID: story-research:ig-route-transition
 研究截止：2026-09-08
-状态：候选路线研究，不是已锁大纲。
+状态：未选中的历史路线研究，不是当前候选或已锁大纲；位置与首队已由[D11/D12](../06_story/locked-decisions.md)确定为二号位、Aries。
 
 ## 1. 为什么单独研究iG
 
