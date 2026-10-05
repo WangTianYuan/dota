@@ -272,3 +272,13 @@ H：未核Dy/天命当期谁更强，未取得私下转会同意，未观看相�
 - **边界：** 未核改写后的全积分、阿灵顿席位和完整签表，未观看录像或实测技术。RNG等去向、队内交流与亚运伏笔属于X；不把一次虚构预选失利写成真人退役、伤病或性格变化的事实原因。
 
 本轮停止赛事泛搜。当前剩余的是夏季Major是否出场的故事篇幅选择，不是重新讨论Aries如何进TI。
+
+## D53采用后：OG两站交锋与积分
+
+检索日2026-10-05，仅核宏观路线。
+
+- F直读：[阿灵顿赛果与积分](https://www.dexerto.com/dota2/pgl-dota-2-major-2022-arlington-stream-results-schedule-1785485/)支持5—6名515分；现实OG在败者组第三轮2—1淘汰beastcoast，后者5—6名。[淘汰赛数据库](https://escorenews.com/en/dota-2/pgl-major-arlington-2022/playoff)搜索数据直接列轮次与名次，不证明虚构Aries可不改签表原位插入。
+- F直读：[中国第三巡回](https://cyberscore.live/en/tournaments/dpc-cn-2021-2022-tour-3-division-i/)列前五500/300/200/100/50积分。页面赛期6月6日起，不能替代既有北京时间6月7日首场记录。
+- F当期报道搜索交叉：[官方排名报道](https://esports.inquirer.net/30783/valve-dpc-ruling-fnatic-qualify-for-ti11-ahead-of-outsiders)与[同期Gosu报道](https://www.gosugamers.net/dota2/news/59573-fnatic-or-outsiders-valves-dpc-website-paints-a-different-picture)支持现实Fnatic第十二、1020分，Outsiders1019；1020不是小说固定门槛。200＋515＝715仅是当前工作排名下的算术，不认证全部改写积分。
+- F俱乐部公告本轮正文取得，后续定位请求失败：[OG说明](https://ogs.gg/mishas-long-road-to-ti/)支持阿灵顿Ceb、马来西亚Chuvash替补Misha；[ESL官方总结](https://eslfaceitgroup.com/press/its-in-the-bag-og-wins-esl-one-malaysia-2022-with-lower-bracket-buff/)支持后者实际出场夺冠。不能由换替补推出OG变弱或复仇无价值。
+- H：完整新签表、全球积分及旅行未闭合；没有录像、Replay或实机。失利和复仇原因在06_story属于X，不是已验证的OG真实战术结论。
