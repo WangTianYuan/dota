@@ -162,3 +162,15 @@ I（后续纠偏）：上表人数条件只约束地区预选；原先要求优�
 - **I研究判断：** 提前五人的难点是当前具体因果尚不足，不是发现法律或赛制禁止该五人合作。把起点改成不同的TI10后转会可写通，代价是重做首队；推荐保留Aries的独立冠军属于编辑取舍。所有新转会、冠军、LGD/Spirit虚构淘汰赛位置均在06_story，不升级为F。
 
 未做签证或内部合同调查，未核虚构积分与全签表，无视频/Replay/实机。停止泛查球队变动；下一步只为采用的代表情节补必要证据。
+
+## 补核：较小规模国际杯赛
+
+检索日2026-10-04；作者要求首冠考虑队友实力与状态，非Major不自动等于弱赛事。
+
+- **F，赛事资料搜索正文及报道相关段落：** [合艾赛事记录](https://liquipedia.net/dota2/GAMERS_GALAXY/Invitational_Series/Thailand/2022)列2022-08-18至20、线下、八队、15万美元奖金、7.31d，站点分类Tier 2。两组BO1、前二进入单败，半决赛BO3、决赛BO5；BOOM冠军、Polaris亚军。[当期邀请名单报道](https://esports.gg/news/dota-2/here-are-all-the-invited-teams-for-the-gamers-galaxy-invitational-hatyai/)（发布8月7日）与[赛事报道](https://esports.gg/news/dota-2/gamers-galaxy-dota-2-invitational-hatyai-full-preview-and-schedule/)确认八队来自东南亚。含BOOM、Fnatic、Talon、SMG、Polaris、RSG、Execration、Army Geniuses，没有Aries或其他中国队。分级为资料站标签，不是官方统一强度评级；本轮未核原始邀请规则是否限制赛区，不能由名单推出中国队被规则禁止。
+- **F，成绩记录搜索：** [BOOM成绩](https://liquipedia.net/dota2/BOOM_Esports/Results)列合艾决赛3-2 Polaris。只支持真实系列结果，不支持逐局战术、声音、状态或虚构Aries能赢。未观看该系列。
+- **F，主办方发布内容搜索取得：** [ESL官方马来西亚总结](https://eslfaceitgroup.com/press/its-in-the-bag-og-wins-esl-one-malaysia-2022-with-lower-bracket-buff/)（8月29日发布，8月28日决赛）确认12队、40万美元奖金，OG冠军、Aster亚军、Secret第三；存在强队集中对抗。I：不能拿“不是Major”作为降低整队夺冠难度的证据。
+- **F，主办方视频文字简介取得，未观看视频：** [Galaxy Racer迪拜首日官方VOD](https://www.youtube.com/watch?v=mSmJ45l-JPE)列3月2—6日及参赛名单，有Spirit、Tundra、Secret、OG等。日期早于当前D37四月首秀，故不作为不改首秀的首冠事件。
+- **I，使用边界：** 合艾规模更接近本次需求，不证明Aries受邀或能夺冠。邀请、取代队伍和冠军改写均为X；出境与回程衔接未核。该类非DPC邀请赛的奖杯不产生DPC积分或TI资格，必须独立处理TI入口。
+
+停止在三个赛事比较，不扩全年度榜单。核心比赛内容、选手当期状态与虚构阵容获胜条件未验证；下一步最多取一个决赛样本辅助设计，不以当前资料称整队能力审查完成。
