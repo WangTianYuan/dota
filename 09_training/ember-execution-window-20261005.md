@@ -62,6 +62,8 @@ ID: training:ember-execution-window-20261005
 
 ## 来源与访问
 
+作者同意继续后，新增研究见[续查](execution-window-followup-20261005.md)：莲花反射、拳中取物及一项组合假设；祈求者/帕克仅作有限对照。前轮三项的证据等级不因续查自动提高。
+
 - S1：[SlashStrike，7.22c火猫指南，2019-06-12](https://slashstrikedota.wordpress.com/2019/06/12/slashstrikes-guide-to-ember-spirit-7-22c/)。本轮直读无影拳及吹风段，非转载；不沿用2019出装推荐和数值。
 - S2：[wickeddota，10 Ember Spirit Tricks，2019-11-12](https://www.reddit.com/r/learndota2/comments/dv9bsa/10_ember_spirit_tricks/)。本轮直读第3、6项；日期由页面对应的2019-11-12存档入口支持，未核原视频。
 - S3：[msp26，Every single ember trick，2022-12-11](https://www.reddit.com/r/DotA2/comments/zizba6/every_single_ember_trick/)。本轮直读Items with Sleight and Remnant及攻击顺序/间隔段；2022材料不单独证明7.30e所有交互。
