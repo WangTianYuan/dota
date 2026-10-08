@@ -1,0 +1,358 @@
+{
+  "id": "sources:mid-value-method-20261008",
+  "as_of_local": "2026-10-08 America/Los_Angeles",
+  "scope": "竞技价值方法试点；7.30e字段基线，7.31/7.31d/7.32定向迁移，不是2021—2023完整版本或英雄排行",
+  "claim_types": {
+    "F": "官方补丁或历史文件字段/说明；不证明运行交互",
+    "O": "本轮读取仓内数据；未重新请求比赛API",
+    "I": "条件性竞技价值推断",
+    "H": "未验证比较或完整收益"
+  },
+  "history": {
+    "commit_metadata": {
+      "url": "https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/commits/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529",
+      "response_sha256": "947b05c776f701bd51cf33701876c73ea6e0ec105073cb81270f1b91a116ce67",
+      "sha": "cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529",
+      "date": "2021-11-01T23:49:31Z",
+      "message": "5077 | 6 files | M game/bin/built_from_cl.txt,  M game/dota/pak01_dir.txt,  M game/dota/scripts/npc/npc_abilities.txt,  M game/dota/scripts/npc/npc_heroes.txt,  M game/dota/scripts/npc/npc_units.txt,  M game/dota/steam.inf\n\nhttps://steamdb.info/patchnotes/7639503/"
+    },
+    "engine_execution_verified": false,
+    "build_mapping": "历史镜像提交元数据为5077，日期在7.30e区间；不证明特定比赛运行这一构建",
+    "ability_file": {
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "retrieved_at_utc": "2026-10-08T12:14:36.784257+00:00",
+      "response_sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "reviewed_abilities": [
+        "storm_spirit_static_remnant",
+        "storm_spirit_electric_vortex",
+        "storm_spirit_overload",
+        "storm_spirit_ball_lightning",
+        "templar_assassin_refraction",
+        "templar_assassin_meld",
+        "templar_assassin_psi_blades",
+        "templar_assassin_psionic_trap",
+        "dragon_knight_breathe_fire",
+        "dragon_knight_dragon_tail",
+        "dragon_knight_dragon_blood",
+        "dragon_knight_elder_dragon_form"
+      ]
+    },
+    "localization_file": {
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "retrieved_at_utc": "2026-10-08T12:15:36.350828+00:00",
+      "response_sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "read_scope": "蓝猫球状闪电、TA折光/灵能之刃、龙骑士变龙/神龙摆尾/龙族血统的描述和注释"
+    },
+    "retained_rule_facts": {
+      "storm": {
+        "remnant_mana_cost": [
+          70,
+          80,
+          90,
+          100
+        ],
+        "remnant_cooldown": 3.5,
+        "vortex_cooldown": [
+          22,
+          20,
+          18,
+          16
+        ],
+        "vortex_cast_range": 300,
+        "ball_lightning_behavior_contains_root_disables": true,
+        "ball_initial_mana_percentage": 7.5,
+        "ball_travel_cost_percent": 0.65,
+        "ball_fields_are_not_a_verified_total_cost_formula": true,
+        "description_zh": "大招位移消耗法力，飞行中可用技能和物品，说明称飞行中无敌；不证明无限连续无敌"
+      },
+      "templar_assassin": {
+        "refraction_instances": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "refraction_bonus_damage": [
+          25,
+          50,
+          75,
+          100
+        ],
+        "psi_blades_bonus_attack_range": [
+          80,
+          130,
+          180,
+          230
+        ],
+        "psi_blades_attack_spill_range_field": 1.5,
+        "psi_blades_spill_penalty_field": 5,
+        "meld_armor_change": [
+          -5,
+          -6,
+          -7,
+          -8
+        ],
+        "description_zh": "折光增伤与伤害避免各自有限次数；灵能之刃可伤害主目标后方单位；复杂结算仍需另核"
+      },
+      "dragon_knight": {
+        "dragon_blood_armor": [
+          3,
+          6,
+          9,
+          12
+        ],
+        "dragon_blood_health_regen": [
+          3,
+          6,
+          9,
+          12
+        ],
+        "dragon_tail_cast_range": 150,
+        "dragon_tail_dragon_cast_range": 400,
+        "dragon_form_duration": 60,
+        "dragon_form_cooldown_field": [
+          115,
+          110,
+          105,
+          100
+        ],
+        "description_zh": "龙族血统提供护甲和生命恢复；变龙扩展控制距离，第一级腐蚀吐息可作用建筑；字段不证明一次变龙必推掉塔"
+      }
+    }
+  },
+  "patch_reads": [
+    {
+      "version": "7.30e",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.30e&language=english",
+      "retrieved_at_utc": "2026-10-08T12:14:38.674702+00:00",
+      "response_sha256": "729a1e4268ecfa37d0773a6044b8d854dc3d19c3415b531efc8d18b36e152718",
+      "reviewed_hero_ids": [
+        17,
+        46,
+        49
+      ],
+      "reviewed_item_ability_ids": [],
+      "retained_facts_zh": [
+        "蓝猫基础伤害降低2；电子涡流冷却由16改为22/20/18/16。未列某英雄不证明没有其他规则变化。"
+      ]
+    },
+    {
+      "version": "7.31",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english",
+      "retrieved_at_utc": "2026-10-08T12:14:39.617632+00:00",
+      "response_sha256": "9a5a76422eba02b2e45bf80c81450e9c7155d1a028cc59a8cfecf9cd10fdf28a",
+      "reviewed_hero_ids": [
+        17,
+        46,
+        49
+      ],
+      "reviewed_item_ability_ids": [
+        77
+      ],
+      "retained_facts_zh": [
+        "挂件由3%法强改为4%减蓝耗，25分钟后加成翻倍；不推定多件叠加或完整滚动成本。",
+        "TA溅射距离由攻击距离的1.5倍改为550/600/650/700；15级相应天赋调整。",
+        "龙骑士喷火伤害由90/170/240/300改为80/160/240/320；不推定一波兵能否单技能清完。"
+      ]
+    },
+    {
+      "version": "7.31d",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31d&language=english",
+      "retrieved_at_utc": "2026-10-08T12:14:40.377651+00:00",
+      "response_sha256": "7e1c74ba750f211d1305c5deeb475e40ac597e423974ec2e898e162f7d5b074c",
+      "reviewed_hero_ids": [
+        17,
+        46,
+        49
+      ],
+      "reviewed_item_ability_ids": [
+        77
+      ],
+      "retained_facts_zh": [
+        "挂件取消4%减蓝耗，改为3%最大魔量，回蓝0.6提高到0.75；不把最大魔量与减蓝耗视为同一种收益。"
+      ]
+    },
+    {
+      "version": "7.32",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.32&language=english",
+      "retrieved_at_utc": "2026-10-08T12:14:41.174470+00:00",
+      "response_sha256": "ed1e0611aaf132a4f870209250781ca31e57178c1a56b20373c3ed0404006c0d",
+      "reviewed_hero_ids": [
+        17,
+        46,
+        49
+      ],
+      "reviewed_item_ability_ids": [],
+      "retained_general_facts_zh": [
+        "移除中路附近小野点。",
+        "调整各等级所需经验；六级这一次升级需求600变680，不等于固定推迟某英雄若干秒。",
+        "被动金钱每分钟减少15%。"
+      ]
+    }
+  ],
+  "match_extracts_read_at_utc": "2026-10-08T12:17:04.758085+00:00",
+  "match_extracts": [
+    {
+      "match_id": 6390481538,
+      "hero_id": 17,
+      "source_file": "05_matches/classics-2021-2023/data/6390481538.json",
+      "file_sha256": "7c0e6263c439016bb27925b28dfef292f5cdd2a95a700d32730037dcc5ceeb5b",
+      "patch_precision": {
+        "candidate": "7.30e",
+        "event_patch_verified": false,
+        "basis_zh": "按日期推定；未核赛事客户端或未编号热修"
+      },
+      "match": {
+        "match_id": 6390481538,
+        "start_time": 1642828173,
+        "duration": 3397,
+        "radiant_win": true,
+        "radiant_team": null,
+        "dire_team": null
+      },
+      "player": {
+        "player_slot": 129,
+        "lane_role": 2,
+        "position_est": 2,
+        "is_roaming": false,
+        "api_name": "NothingToSay",
+        "player_name_period_verified": false,
+        "side": "dire"
+      },
+      "at_600_seconds": {
+        "gold_t": 3164,
+        "xp_t": 3554,
+        "lh_t": 49
+      },
+      "purchase_events": [
+        {
+          "time": 1339,
+          "key": "black_king_bar"
+        }
+      ]
+    },
+    {
+      "match_id": 6332020917,
+      "hero_id": 49,
+      "source_file": "05_matches/classics-2021-2023/data/6332020917.json",
+      "file_sha256": "1846f608784e6e73a6da9bda19ad88a4799488a08e722720bf2491025ca52280",
+      "patch_precision": {
+        "candidate": "7.30e",
+        "event_patch_verified": false,
+        "basis_zh": "按日期推定；未核赛事客户端或未编号热修"
+      },
+      "match": {
+        "match_id": 6332020917,
+        "start_time": 1640020210,
+        "duration": 2307,
+        "radiant_win": false,
+        "radiant_team": null,
+        "dire_team": null
+      },
+      "player": {
+        "player_slot": 2,
+        "lane_role": 2,
+        "position_est": 2,
+        "is_roaming": false,
+        "api_name": "TORONTOTOKYO",
+        "player_name_period_verified": false,
+        "side": "radiant"
+      },
+      "at_600_seconds": {
+        "gold_t": 4042,
+        "xp_t": 5095,
+        "lh_t": 67
+      },
+      "purchase_events": [
+        {
+          "time": 735,
+          "key": "blink"
+        },
+        {
+          "time": 1148,
+          "key": "black_king_bar"
+        }
+      ]
+    },
+    {
+      "match_id": 6463870718,
+      "hero_id": 46,
+      "source_file": "05_matches/classics-2021-2023/data/6463870718.json",
+      "file_sha256": "42ea6b7ecf205cc2a2c802d61b732d1ce2bc3c66db62798d5160db78f27b6211",
+      "patch_precision": {
+        "candidate": "7.31b",
+        "event_patch_verified": false,
+        "basis_zh": "按日期推定；未核赛事客户端或未编号热修"
+      },
+      "match": {
+        "match_id": 6463870718,
+        "start_time": 1646590928,
+        "duration": 1695,
+        "radiant_win": false,
+        "radiant_team": null,
+        "dire_team": null
+      },
+      "player": {
+        "player_slot": 130,
+        "lane_role": 2,
+        "position_est": 2,
+        "is_roaming": false,
+        "api_name": "Yopaj-",
+        "player_name_period_verified": false,
+        "side": "dire"
+      },
+      "at_600_seconds": {
+        "gold_t": 4397,
+        "xp_t": 5780,
+        "lh_t": 89
+      },
+      "purchase_events": [
+        {
+          "time": 805,
+          "key": "blink"
+        },
+        {
+          "time": 1086,
+          "key": "black_king_bar"
+        },
+        {
+          "time": 1334,
+          "key": "desolator"
+        }
+      ]
+    }
+  ],
+  "corpus_filter": {
+    "directory": "05_matches/classics-2021-2023/data",
+    "files_read": 171,
+    "TA_filter": {
+      "hero_id": 46,
+      "lane_role": 2,
+      "position_est": 2,
+      "patch_candidates": [
+        "7.30e",
+        "7.31b",
+        "7.31c"
+      ]
+    },
+    "TA_matching_file_ids": [
+      6463870718,
+      6463952563,
+      6560977239
+    ],
+    "limitation_zh": "精选语料，不是完整人口分布；本轮选一条TA记录作入口。7.30e筛选为空只描述本库，不说明当期TA不能打中。"
+  },
+  "unperformed": {
+    "match_api_refetch": false,
+    "video_watching": false,
+    "raw_replay_parsing": false,
+    "game_execution": false,
+    "success_rate_measurement": false,
+    "role_identity_verification": false,
+    "event_patch_verification": false
+  },
+  "access_notes": [
+    "网页工具读取7.32官方接口失败；本地公开HTTP读取成功，记录实际响应哈希。",
+    "首轮文件检索的Windows通配路径参数错误，已改用rg的文件类型过滤；不影响来源内容。"
+  ]
+}
