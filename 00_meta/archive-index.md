@@ -1,31 +1,58 @@
-# 过程与专题资料目录
+# 仓库资料分类与维护边界
 
-更新：2026-10-08。当前方案只读[PROJECT](../PROJECT.md)，当前技巧取舍读[总库](../09_training/technique-catalog.md)。下列是本次整合时全部Markdown资料的分类清单；本目录与[工作记录](work-state.md)是维护文件，单列于此，不重复放进历史清单。
+更新：2026-10-08。先读[项目总览与推进事项](../PROJECT.md)，再按任务读取现行维度；本页用于回查原文，不要求逐次通读。目录覆盖266份Markdown，另将本目录与[工作记录](work-state.md)单列。资料按职责区分，保留原路径以兼容既有引用。
 
-原路径保留以兼容既有引用，不将整仓搬家。历史方案/过程中的“当前、下一步、停止”只表示当时安排；事实与来源原卡仍按其年代和具体主张有效，不能因为归档就把证据废除。待审正文不等于已发生的小说，也不是获认可的文风。
+## 为什么采用总览加维度
 
-| 层次 | 如何使用 |
+完整的标准是能找到唯一现行答案，不是把每份来源全文塞进同一文件。固定设定、时期人物、剧情与正文、写作方法更新频率不同，因此各保留一份完整当前页；PROJECT只维护全局状态与待办。按每章、每人、每轮又新建“当前方案”会重新分散，不这样拆。
+
+| 内容性质 | 维护方式 |
 |---|---|
-| 当前入口 | 日常恢复，不串读旧增量 |
-| 决策审计 | 出现采用状态冲突时，回查作者选择与替代关系 |
-| 创作专题参考 | 需要详细系统、人物或语言规则时读取；阶段与当前取值由PROJECT维护 |
-| 历史方案与过程 | 查询为什么改、以前比较过什么；不执行其旧任务 |
-| 原始专题依据 | 研究特定版本、赛事、队伍、人物或技巧时取用 |
-| 待审/历史正文 | 作者审稿或有限编辑时使用，不默认为正式作品 |
+| 现行创作内容 | 设定、人物、剧情/正文状态、写作方法各一处；改动直接替换所属段落 |
+| 项目状态与执行 | PROJECT管全项目优先级；work-state只记本轮执行与验证 |
+| 当前研究材料 | research-status说明跨领域成熟度；技巧总库按英雄汇总；比赛库等复用现有入口 |
+| 作者决定 | 决策日志记录选择和替代关系，不另发任务，不把工作建议升为已定 |
+| 历史过程 | 旧选项、交接、基线和工作稿保留原因与例子；其中当前/下一步/待决不再生效 |
+| 事实证据 | 按来源、日期和具体主张有效；不能因为所属旧方案不用就废掉正确事实 |
+| 正文资产 | 有文件、流程认可、文字认可和风格标杆分别记录，完整列表见剧情页 |
 
-仓库数据（JSON/CSV等）仍留在所属专题旁边：覆盖状态见[coverage](coverage.json)，比赛数据入口见[素材库](../05_matches/classics-2021-2023/README.md)，来源入口见[来源登记](../07_sources/register.md)。未逐个重核全部历史事实，也未观看所有对局。
+## 文件与资料范围
+
+本轮整理后458文件：268 Markdown、184 JSON及6个代码/依赖文件。机器数据不逐个展开在本Markdown目录，使用下列原有集合入口；“全仓清点”不意味着全外部来源重核或全对局看完。
+
+| 目录 | 文件数 | 主要角色 |
+|---|---:|---|
+| 00_meta | 24 | 全局状态、来源政策、历史过程与覆盖 |
+| 01_versions | 6 | 版本索引与规则摘录 |
+| 02_tournaments | 5 | 赛事制度和资格底图 |
+| 03_teams | 10 | 公开阵容、组织与历史路线分析 |
+| 04_players | 13 | 真人时期证据 |
+| 05_matches | 252 | 比赛数据、系列卡与人工研究 |
+| 06_story | 76 | 四个当前创作维度及历史/待审作品 |
+| 07_sources | 33 | 来源记录与取数方法 |
+| 08_ecosystem | 5 | 年龄、直播、主播与圈层生态 |
+| 09_training | 30 | 技巧总库与原始研究卡 |
+| 根目录 | 3 | 导航和项目规则 |
+| templates | 1 | 证据记录模板 |
+
+JSON现状见[资料概况](research-status.md)、[比赛索引](../05_matches/classics-2021-2023/match-inventory.json)、[选局清单](../05_matches/classics-2021-2023/selection.json)、[版本索引](../01_versions/patch-index.json)、[覆盖历史](coverage.json)。完整Replay与API缓存不在仓内；本地根目录作者附件也不是自动纳入的当前事实。
 
 ## 当前入口
 
-6份。
+11份。
 
 | 文件 | 内容 |
 |---|---|
+| [00_meta/research-status.md](../00_meta/research-status.md) | 事实资料 当前覆盖与使用范围 |
+| [06_story/character-writing-cards.md](../06_story/character-writing-cards.md) | 人物与关系 当前完整方案 |
+| [06_story/current-plot.md](../06_story/current-plot.md) | 剧情路线与正文状态 当前完整方案 |
+| [06_story/current-setting.md](../06_story/current-setting.md) | 设定与系统 当前完整方案 |
+| [06_story/narrative-writing-rules.md](../06_story/narrative-writing-rules.md) | 写作与研究方法 当前完整规则 |
 | [06_story/story-compass.md](../06_story/story-compass.md) | 故事方向入口 |
 | [09_training/index.md](../09_training/index.md) | 训练与技巧资料入口 |
 | [09_training/technique-catalog.md](../09_training/technique-catalog.md) | 中单技巧总库 |
 | [AGENTS.md](../AGENTS.md) | Repository instructions |
-| [PROJECT.md](../PROJECT.md) | 逐梦之旅 当前完整方案 |
+| [PROJECT.md](../PROJECT.md) | 逐梦之旅 项目总览与推进事项 |
 | [README.md](../README.md) | 逐梦之旅 |
 
 ## 决策审计
@@ -36,40 +63,43 @@
 |---|---|
 | [06_story/locked-decisions.md](../06_story/locked-decisions.md) | 已锁定创作决策 |
 
-## 创作专题参考
+## 政策与纠错依据
 
-8份。
+3份。
 
 | 文件 | 内容 |
 |---|---|
+| [00_meta/corrections.md](../00_meta/corrections.md) | 旧说法纠错与风险账本 |
+| [00_meta/dota-cn-language-style.md](../00_meta/dota-cn-language-style.md) | Dota正文中文术语规范 |
+| [00_meta/source-policy.md](../00_meta/source-policy.md) | 来源与主张政策 |
+
+## 历史方案与故事素材
+
+55份。
+
+| 文件 | 内容 |
+|---|---|
+| [03_teams/2022-first-team-window-matrix.md](../03_teams/2022-first-team-window-matrix.md) | 2022第一支职业队：候选窗口矩阵（未决策） |
+| [03_teams/2022-first-year-ti11-pressure-test.md](../03_teams/2022-first-year-ti11-pressure-test.md) | 2022首队压力测试：首年进入TI11最少需要改写多少历史？ |
+| [03_teams/2022-pos3-entry-scan.md](../03_teams/2022-pos3-entry-scan.md) | 2022中国队伍三号位入口扫描 |
+| [03_teams/aster-aries-mid-route.md](../03_teams/aster-aries-mid-route.md) | Aster.Aries中单路线：2022长期2号位候选路径 |
+| [03_teams/aster-contract-promotion-gate.md](../03_teams/aster-contract-promotion-gate.md) | Aster / Aster.Aries 合同、上调与转会门槛审查 |
+| [03_teams/ig-route-transition-analysis.md](../03_teams/ig-route-transition-analysis.md) | iG 4号位首队路线：从2022出道到TI11后转场的压力测试 |
+| [06_story/2021-10_to_2022-ti11-first-year-path.md](../06_story/2021-10_to_2022-ti11-first-year-path.md) | 历史材料 主角第一职业年宏观路径：TI10结束 → TI11 |
 | [06_story/ability-rating-working-design.md](../06_story/ability-rating-working-design.md) | 主角能力评分与版本适应：工作设计 |
-| [06_story/character-writing-cards.md](../06_story/character-writing-cards.md) | 近期出场人物：写作卡与设计方法 |
-| [06_story/competitive-highlights-and-growth.md](../06_story/competitive-highlights-and-growth.md) | 高光与共同成长：比赛选戏依据 |
-| [06_story/match-innovation-rules.md](../06_story/match-innovation-rules.md) | 比赛创新、冷门英雄与原创打法规则 |
-| [06_story/narrative-writing-rules.md](../06_story/narrative-writing-rules.md) | 《逐梦之旅》正文写作规则 |
-| [06_story/protagonist-personality-cad.md](../06_story/protagonist-personality-cad.md) | 主角性格基线：C+A+D |
-| [06_story/system-training-baseline.md](../06_story/system-training-baseline.md) | 系统训练与反馈基线 |
-| [06_story/writing-workflow.md](../06_story/writing-workflow.md) | 写作执行：按当前情节推进 |
-
-## 历史方案与情节素材
-
-43份。
-
-| 文件 | 内容 |
-|---|---|
-| [06_story/2021-10_to_2022-ti11-first-year-path.md](../06_story/2021-10_to_2022-ti11-first-year-path.md) | 主角第一职业年宏观路径：TI10结束 → TI11 |
 | [06_story/age-options.md](../06_story/age-options.md) | 年龄修订记录：TI10时已满18岁 |
 | [06_story/aries-first-official-unit-options.md](../06_story/aries-first-official-unit-options.md) | 第一段正式比赛：已选A，首秀情绪不能省略 |
 | [06_story/aries-first-trial-plan.md](../06_story/aries-first-trial-plan.md) | Aries首次试训：首秀B与赢球时的换人动机 |
 | [06_story/batch-012-design-audit.md](../06_story/batch-012-design-audit.md) | Batch 012：当前设计的第一性原理审查 |
 | [06_story/batch-012-first-simulation-working-draft.md](../06_story/batch-012-first-simulation-working-draft.md) | Batch 012：首次历史模拟设计工作稿 |
 | [06_story/batch-012-identity-campus-working-draft.md](../06_story/batch-012-identity-campus-working-draft.md) | Batch 012：身份与最小校园背景 |
-| [06_story/batch-012-opening-outline.md](../06_story/batch-012-opening-outline.md) | Batch 012：前期情节骨架与旧章纲留档 |
+| [06_story/batch-012-opening-outline.md](../06_story/batch-012-opening-outline.md) | 历史材料 Batch 012：前期情节骨架与旧章纲留档 |
 | [06_story/batch-012-opening-revision-options.md](../06_story/batch-012-opening-revision-options.md) | Batch 012：按小说阅读效果重排开篇 |
 | [06_story/batch-012-second-chapter-highlight-review.md](../06_story/batch-012-second-chapter-highlight-review.md) | 第二章高光重审：常规配合不宜承担首次实力兑现 |
-| [06_story/canon.md](../06_story/canon.md) | 小说设定基线 |
+| [06_story/canon.md](../06_story/canon.md) | 历史材料 小说设定基线 |
 | [06_story/chapter-002-fight-design.md](../06_story/chapter-002-fight-design.md) | 第二章交锋重设计：先断反手，再回正面 |
-| [06_story/current-arc.md](../06_story/current-arc.md) | 当前情节：从职业起步到改变强队的比赛 |
+| [06_story/competitive-highlights-and-growth.md](../06_story/competitive-highlights-and-growth.md) | 高光与共同成长：比赛选戏依据 |
+| [06_story/current-arc.md](../06_story/current-arc.md) | 历史材料 当前情节：从职业起步到改变强队的比赛 |
 | [06_story/early-arc-risk-guardrails.md](../06_story/early-arc-risk-guardrails.md) | 早期剧情偏离审查规则 |
 | [06_story/early-arc-working-draft-ti10-to-winter.md](../06_story/early-arc-working-draft-ti10-to-winter.md) | TI10后至寒假前：早期剧情工作稿 |
 | [06_story/early-system-growth-baseline.md](../06_story/early-system-growth-baseline.md) | 系统出现后的早期成长节奏基线 |
@@ -80,6 +110,7 @@
 | [06_story/first-group-match-plot-v1.md](../06_story/first-group-match-plot-v1.md) | 首次约局：个人进攻与再次被叫上 |
 | [06_story/first-stream-entry-options.md](../06_story/first-stream-entry-options.md) | 首次自播选择：A已采用 |
 | [06_story/first-stream-understanding-breakout-scene.md](../06_story/first-stream-understanding-breakout-scene.md) | 第一次直播“理解型出圈”场景工作稿 |
+| [06_story/match-innovation-rules.md](../06_story/match-innovation-rules.md) | 比赛创新、冷门英雄与原创打法规则 |
 | [06_story/opening-hero-allocation.md](../06_story/opening-hero-allocation.md) | 开篇英雄安排：先选眼前剧情，再看谁长成招牌 |
 | [06_story/opening-match-payoffs-20261008.md](../06_story/opening-match-payoffs-20261008.md) | 开篇三段比赛：关键选择与结果 |
 | [06_story/p2-ame-mid-dual-core-chemistry.md](../06_story/p2-ame-mid-dual-core-chemistry.md) | P2核心审查：主角2号位 + Ame 1号位的双核化学反应 |
@@ -88,20 +119,23 @@
 | [06_story/prepro-to-trial-pace-options.md](../06_story/prepro-to-trial-pace-options.md) | 首播之后，怎样收束职业前这一段 |
 | [06_story/protagonist-2021-10_to_2022-spring-life-path.md](../06_story/protagonist-2021-10_to_2022-spring-life-path.md) | 主角从系统触发到职业试训的现实生活路径 |
 | [06_story/protagonist-foundation-options.md](../06_story/protagonist-foundation-options.md) | 主角个人底盘：决策草案 |
+| [06_story/protagonist-personality-cad.md](../06_story/protagonist-personality-cad.md) | 主角性格基线：C+A+D |
 | [06_story/protagonist-personality-options.md](../06_story/protagonist-personality-options.md) | 主角性格方案：用场景而不是标签做选择 |
 | [06_story/protagonist-personality-team-behavior-options.md](../06_story/protagonist-personality-team-behavior-options.md) | 主角性格与团队相处：行为设定草案 |
 | [06_story/protagonist-position-backsolve.md](../06_story/protagonist-position-backsolve.md) | 主角最终位置反推：从Ame + XinQ向前倒推2022职业路径 |
 | [06_story/roster-constraints.md](../06_story/roster-constraints.md) | 主队组建硬约束（动态） |
-| [06_story/setting-roadmap.md](../06_story/setting-roadmap.md) | 长期设定与正文启动路线图 |
+| [06_story/setting-roadmap.md](../06_story/setting-roadmap.md) | 历史材料 长期设定与正文启动路线图 |
 | [06_story/storm-combat-scene-proposals.md](../06_story/storm-combat-scene-proposals.md) | 蓝猫的三段对抗：先留场景，再决定放进哪局 |
 | [06_story/storm-puck-application-scenes-20261005.md](../06_story/storm-puck-application-scenes-20261005.md) | 蓝猫、帕克：连续交锋提案 |
 | [06_story/streaming-system-task-design.md](../06_story/streaming-system-task-design.md) | 直播作为第二叙事场：系统任务与剧情功能设计 |
+| [06_story/system-training-baseline.md](../06_story/system-training-baseline.md) | 系统训练与反馈基线 |
 | [06_story/ti11-placement-options.md](../06_story/ti11-placement-options.md) | TI11首年成绩区间比较 |
+| [06_story/writing-workflow.md](../06_story/writing-workflow.md) | 写作执行：按当前情节推进 |
 | [06_story/xiao8-story-role-options.md](../06_story/xiao8-story-role-options.md) | 小八如何进入陈越的职业线 |
 | [06_story/zhou-first-match-offense-proposal.md](../06_story/zhou-first-match-offense-proposal.md) | Zhou代表局：先让救人的那个人离场 |
 | [06_story/zhou-match-plot-v1.md](../06_story/zhou-match-plot-v1.md) | Zhou代表局：从一次配合到愿意继续同局 |
 
-## 待审或历史正文
+## 待审与历史正文
 
 21份。
 
@@ -129,16 +163,6 @@
 | [06_story/prose/zhou-match-first-exchange-trial.md](../06_story/prose/zhou-match-first-exchange-trial.md) | Zhou代表局首段试写：先别跳 |
 | [06_story/prose/zhou-match-working-draft.md](../06_story/prose/zhou-match-working-draft.md) | Zhou代表局连续初稿：我能回来 |
 
-## 政策与纠错依据
-
-3份。
-
-| 文件 | 内容 |
-|---|---|
-| [00_meta/corrections.md](../00_meta/corrections.md) | 旧说法纠错与风险账本 |
-| [00_meta/dota-cn-language-style.md](../00_meta/dota-cn-language-style.md) | Dota正文中文术语规范 |
-| [00_meta/source-policy.md](../00_meta/source-policy.md) | 来源与主张政策 |
-
 ## 历史批次与研究过程
 
 17份。
@@ -160,8 +184,8 @@
 | [00_meta/git-status.md](../00_meta/git-status.md) | 仓库操作记录（初始化阶段历史） |
 | [00_meta/handoff-batch-011-to-012.md](../00_meta/handoff-batch-011-to-012.md) | Handoff：Batch 011 → Batch 012 |
 | [00_meta/handoff-batch-012-to-013.md](../00_meta/handoff-batch-012-to-013.md) | Batch 012 → 013：从资料准备转向剧情设计 |
-| [00_meta/research-plan.md](../00_meta/research-plan.md) | 建设方案：批准方案的执行摘要 |
-| [00_meta/version-mid-pilot-20260923.md](../00_meta/version-mid-pilot-20260923.md) | 当前交接：继续技巧搜索与推演，保留收益和反制问题 |
+| [00_meta/research-plan.md](../00_meta/research-plan.md) | 历史材料 建设方案：批准方案的执行摘要 |
+| [00_meta/version-mid-pilot-20260923.md](../00_meta/version-mid-pilot-20260923.md) | 历史材料 当前交接：继续技巧搜索与推演，保留收益和反制问题 |
 
 ## 技巧与训练原卡
 
@@ -200,12 +224,12 @@
 
 ## 事实与来源专题
 
-135份。
+129份。
 
 | 文件 | 内容 |
 |---|---|
 | [01_versions/2022-meta-evolution.md](../01_versions/2022-meta-evolution.md) | 2022版本与职业Meta演化：7.31 → 7.31d → 7.32 |
-| [01_versions/index.md](../01_versions/index.md) | 全时段版本索引：第一批 |
+| [01_versions/index.md](../01_versions/index.md) | 版本资料索引与当前覆盖 |
 | [01_versions/mechanism-lifecycles.md](../01_versions/mechanism-lifecycles.md) | 机制生命周期：第一批 |
 | [01_versions/pos4-evolution-2022.md](../01_versions/pos4-evolution-2022.md) | 2022四号位演化：从春季到TI11 |
 | [01_versions/priority-notes.md](../01_versions/priority-notes.md) | 首批版本研究摘记 |
@@ -213,17 +237,11 @@
 | [02_tournaments/2022-aries-ti11-path.md](../02_tournaments/2022-aries-ti11-path.md) | 2022 Aster.Aries → TI11 资格路径研究 |
 | [02_tournaments/2022-meta-event-map.md](../02_tournaments/2022-meta-event-map.md) | 2022赛事—版本—Meta映射 |
 | [02_tournaments/2022-summer-international-options.md](../02_tournaments/2022-summer-international-options.md) | 2022夏季国际赛事：入口、参赛队与小说取舍 |
-| [02_tournaments/index.md](../02_tournaments/index.md) | 赛事全期底图：首批锚点与缺口 |
+| [02_tournaments/index.md](../02_tournaments/index.md) | 赛事资料索引与当前覆盖 |
 | [03_teams/2022-candidate-team-culture.md](../03_teams/2022-candidate-team-culture.md) | 2022首队候选：队伍文化、沟通与“带新人”环境 |
 | [03_teams/2022-cn-roster-ledger.md](../03_teams/2022-cn-roster-ledger.md) | 2022中国区主要队伍阵容变动账本 |
-| [03_teams/2022-first-team-window-matrix.md](../03_teams/2022-first-team-window-matrix.md) | 2022第一支职业队：候选窗口矩阵（未决策） |
-| [03_teams/2022-first-year-ti11-pressure-test.md](../03_teams/2022-first-year-ti11-pressure-test.md) | 2022首队压力测试：首年进入TI11最少需要改写多少历史？ |
-| [03_teams/2022-pos3-entry-scan.md](../03_teams/2022-pos3-entry-scan.md) | 2022中国队伍三号位入口扫描 |
-| [03_teams/aster-aries-mid-route.md](../03_teams/aster-aries-mid-route.md) | Aster.Aries中单路线：2022长期2号位候选路径 |
-| [03_teams/aster-contract-promotion-gate.md](../03_teams/aster-contract-promotion-gate.md) | Aster / Aster.Aries 合同、上调与转会门槛审查 |
-| [03_teams/ig-route-transition-analysis.md](../03_teams/ig-route-transition-analysis.md) | iG 4号位首队路线：从2022出道到TI11后转场的压力测试 |
 | [03_teams/post-ti11-cn-market.md](../03_teams/post-ti11-cn-market.md) | TI11后中国职业圈人员市场：2022-11至2023赛季起点 |
-| [03_teams/research-board.md](../03_teams/research-board.md) | 队伍与阵容研究板 |
+| [03_teams/research-board.md](../03_teams/research-board.md) | 队伍资料索引与当前覆盖 |
 | [04_players/ame/index.md](../04_players/ame/index.md) | Ame：时间化人物档案入口 |
 | [04_players/ame/periods/2018-2019.md](../04_players/ame/periods/2018-2019.md) | Ame时期档案：2018—2019 PSG.LGD争冠期 |
 | [04_players/ame/periods/2021-10_to_2022-11.md](../04_players/ame/periods/2021-10_to_2022-11.md) | Ame时期档案：TI10后至TI11结束 |
@@ -346,4 +364,4 @@
 
 | 文件 | 内容 |
 |---|---|
-| [templates/record.md](../templates/record.md) | --- |
+| [templates/record.md](../templates/record.md) | 条目标题 |

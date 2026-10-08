@@ -1,5 +1,7 @@
 # Dota正文中文术语规范
 
+> 资料用途：保留历史分析、例子与原始证据；完整现行内容见[对应维度](../06_story/narrative-writing-rules.md)。下文“当前／下一步／待决”只表示原写作时期，不自动成为新任务；原始事实仍按来源与年代取用。
+
 ID: meta:dota-cn-language-style
 更新：2026-09-14
 状态：中文优先为作者已确认的长期规范；解释顺序与口语例外按Batch 012正文反馈澄清。叙事写法另见[正文写作规则](../06_story/narrative-writing-rules.md)。

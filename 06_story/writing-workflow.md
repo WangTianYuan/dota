@@ -1,5 +1,7 @@
 # 写作执行：按当前情节推进
 
+> 资料用途：保留历史分析、例子与原始证据；完整现行内容见[对应维度](narrative-writing-rules.md)。下文“当前／下一步／待决”只表示原写作时期，不自动成为新任务；原始事实仍按来源与年代取用。
+
 ID: story:writing-workflow
 更新：2026-10-08。状态：沿用滚动规划与共同创作、持续推进准则；当前阶段统一由PROJECT.md维护。
 入口：[当前完整方案](../PROJECT.md)。本页是写作方法的详细说明，不独立维护阶段任务；旧story-compass/current-arc与批次交接已归为历史参考。作者选择可回查[决策审计](locked-decisions.md)，事实边界见[来源政策](../00_meta/source-policy.md)，执行与检查见[工作记录](../00_meta/work-state.md)。

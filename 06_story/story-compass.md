@@ -1,5 +1,5 @@
 # 故事方向入口
 
-原来的一页摘要已整合进[当前完整方案](../PROJECT.md)，本页不再独立维护剧情、赛事与当前阶段。
+先读[项目总览与推进事项](../PROJECT.md)，再按任务读取四个完整创作维度。本页只兼容旧链接，不独立维护剧情、赛事或当前阶段。
 
-主角陈越／Loop从TI10后成长为顶尖二号位，通过真实合作改变CN Dota走向。当前完整人物、系统、第一年与第二年路线、未定项和写作边界均在上述方案中；旧摘要中的“夏季Major待选”等过期状态已撤下。具体作者选择可回查[决策记录](locked-decisions.md)。
+完整内容：[设定与系统](current-setting.md)、[人物与关系](character-writing-cards.md)、[剧情与正文状态](current-plot.md)、[写作与研究方法](narrative-writing-rules.md)。作者选择可回查[决策记录](locked-decisions.md)，实际采用程度以各维度与原始决定一致为准。
