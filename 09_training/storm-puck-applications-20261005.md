@@ -109,6 +109,7 @@ L2表示有直接玩家文字的可信线索，不表示项目完成复现。下
 
 - **S1，Q/L2，维护日期不明，相关段落已读：** [How Do I Play：Storm Spirit](https://howdoiplay.com/tips/storm_spirit.html)。网页读取返回403，公开HTTP无扩展名路径成功取得正文。支持连续短滚、飞行施法/攻击、飞行补超负荷、规避不可侵犯、末段起手下一段与重复启动费用；当前页面包含后期机制，不能整页视为7.30e。
 - **S2，L1，仅搜索相关评论，2023-09：** [Storm tips讨论](https://www.reddit.com/r/TrueDoTA2/comments/16bqv86/)。直接打开失败，仅用于补充“滚到身后逼转身”的线索，不作本轮专精玩家资历或历史时序证明。
+- **S3，2026-10-08定向补读，Q/L2，2019-07-20：** [Storm Spirit Midgame原帖](https://www.reddit.com/r/learndota2/comments/cfgar8/storm_spirit_midgame/)中ScarredBlood第5/6点明确建议将航线放在目标身后，在球状闪电飞行中攻击，再在落地后接输出；提问者回应自己此前没想到第5点。只支持飞行攻击在TI10前已有玩家文字认知，不认证评论者职业水平、普及率或2021完整组合。未采用其出装、天赋、“足以击杀”等泛化建议。飞行内再次R补超负荷、零额外启动费和精确多次攻击时窗仍没有被这条旧期文字证明；Steam攻略352762246本轮正文读取超时，不用搜索摘要补作已读正文。未观看视频或测试。
 - **P1，Q/L2，2020，相关正文和纠错评论已读：** [JenghisChan：Some tips and tricks to playing Puck](https://www.reddit.com/r/TrueDoTA2/comments/k3z7m5/some_tips_and_tricks_to_playing_puck/)。取双路线、死前出球买活接球及缠绕攻击段；不采用秘法符单独使相位无冷却、所有控制都被断绳穿魔免、任意技能都可点相位后立刻出来等夸大表述。
 - **未新增证据：** 2020蓝猫讨论`fljai6`、2021蓝猫讨论`og62y1`搜索取得相关摘要，但正文打开超时；不拿它们补成已读实战记录。没有观看Captain Iceblock视频，也没有因链接失败设置新环境。
 
