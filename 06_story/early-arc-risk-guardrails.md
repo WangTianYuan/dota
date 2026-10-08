@@ -1,5 +1,7 @@
 # 早期剧情偏离审查规则
 
+> 资料用途：保留历史分析、例子与原始证据；完整现行内容见[对应维度](narrative-writing-rules.md)。下文“当前／下一步／待决”只表示原写作时期，不自动成为新任务；原始事实仍按来源与年代取用。
+
 ID: story:early-arc-risk-guardrails
 更新：2026-09-14
 状态：早期风险参考，2026-09-24已校准；按具体问题取用，不另设逐场审批门槛。审查时机以[当前流程](writing-workflow.md)为准，文字取舍以[正文规则](narrative-writing-rules.md)为准。

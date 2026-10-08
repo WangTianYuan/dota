@@ -2,7 +2,7 @@
 
 更新：2026-09-08
 
-当前说明：本页记录初始化阶段的权限和分支状态；下文kb/bootstrap及main只有README不代表现在。当前分支/PR与交接见[当前任务](version-mid-pilot-20260923.md)，实际权限与Git状态仍以新鲜工具结果为准，不从此旧记录推导需要用户重新授权。
+当前说明：本页记录初始化阶段的权限和分支状态；下文kb/bootstrap及main只有README不代表现在。项目状态见[总览](../PROJECT.md)，本轮执行见[工作记录](work-state.md)；实际权限与Git状态仍以新鲜工具结果为准，不从此旧记录推导需要用户重新授权。
 
 前轮创建文件曾返回403 Resource not accessible by integration。本轮重新实测成功，不再要求用户重复授权。
 

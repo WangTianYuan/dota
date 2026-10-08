@@ -85,7 +85,7 @@ TI10阵容为flyfly / Emo / JT- / Kaka / Oli。2021-11-21 Kaka合同到期离队
 
 2021末主力：Ulu / White丶Album / 生死 / TK / RedPanda。2022-05-18中单“一”加入，White丶Album离开；第三Tour升入S级并最终第5。8月4号位又发生调整。
 
-**现实可插入窗口：2号位（5月）。** 优点是Aster体系正规、第三Tour可立即打S级；缺点是主角直到5月才进入正式一线，前半年的职业兑现偏晚，除非前面OB/杯赛内容足够有强度。
+**入口纠偏：不能由5月正式加入推成5月才有中路窗口。** 后续[春季试训与替补资料](../07_sources/aries-first-trial-20260925.md)已补春季接口；小说按D37从4月12日起参加后四个系列，赛季间登记。具体工作路线见[剧情方案](../06_story/current-plot.md)，不再沿旧推断把职业兑现强制推迟到5月。
 
 来源：https://liquipedia.net/dota2/Aster.Aries
 

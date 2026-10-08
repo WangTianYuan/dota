@@ -1,5 +1,7 @@
 # Zhou代表局第一段进攻：7.30e定向核对
 
+> 专题与过程原卡。当前项目阶段见[完整方案](../PROJECT.md), 当前技巧取舍见[总库](technique-catalog.md)。本卡保留来源、年代和推演；旧下一步/停止点不自动执行，归档不代表全部事实失效。
+
 ID: training:zhou-first-match-offense
 日期：2026-09-24。范围仅服务[拳中吹神谕的交锋提案](../06_story/zhou-first-match-offense-proposal.md)。没有视频观察、Replay解析或游戏测试；L2文字依据与历史字段，不是完整场景已复现。
 
