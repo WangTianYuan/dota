@@ -1,0 +1,535 @@
+{
+  "id": "sources:opening-mid-ecology-20261007",
+  "as_of_local": "2026-10-07 America/Los_Angeles",
+  "baseline_main": "4e6aa68cb504fe578d22846261470cf2e49c4e93",
+  "scope": "2021 November opening-arc ecology; later 7.30e records are corroboration only, not an early-November population sample or protagonist future knowledge",
+  "patch_read": {
+    "url": "https://www.dota2.com/datafeed/patchnotes?version=7.30e&language=english",
+    "retrieved_at_utc": "2026-10-08T06:48:58.0143490+00:00",
+    "response_utf8_sha256": "729a1e4268ecfa37d0773a6044b8d854dc3d19c3415b531efc8d18b36e152718",
+    "patch_timestamp_metadata": 1635404400,
+    "metadata_utc_date": "2021-10-28",
+    "client_rollout_instant_verified": false,
+    "reviewed_hero_ids": [
+      17,
+      25,
+      34,
+      71,
+      76,
+      106,
+      126
+    ],
+    "summary_zh": {
+      "ember": "激活残焰前摇0→0.1秒；神杖不再降低耗蓝",
+      "storm": "基础攻击-2；电子涡流冷却16→22/20/18/16秒",
+      "lina": "龙破斩冷却8→9秒；炽魂每层移速5/6/7/8%→4/5/6/7%；10级天赋调整",
+      "tinker": "导弹低级耗蓝提高；神杖激光额外距离300→200",
+      "outworld_destroyer": "精华变迁回蓝20/30/40/50%→30/40/50/60%；10级攻速天赋15→20",
+      "spirit_breaker": "基础力量+1、移速290→295；幽冥一击伤害100/175/250→125/200/275",
+      "void_spirit": "异化前摇0.2→0.3秒；魔晶伤害与天赋调整"
+    },
+    "general_zh": [
+      "小野经验降低10%",
+      "魔瓶储符时间120→90秒"
+    ]
+  },
+  "contemporary_discussion": {
+    "url": "https://www.reddit.com/r/learndota2/comments/qnlkwt/730_e_mid_meta/",
+    "published_date": "2021-11-05",
+    "evidence": "Q: original player discussion, not rank-verified panel or population statistics",
+    "reported_candidates": [
+      "殁境神蚀者",
+      "修补匠",
+      "蝙蝠骑士",
+      "灰烬之灵",
+      "风暴之灵",
+      "虚无之灵",
+      "祈求者",
+      "风行者",
+      "痛苦女王",
+      "莉娜",
+      "帕克",
+      "昆卡"
+    ],
+    "limitations": [
+      "作者自报约5300分，不核实评论者实力",
+      "存在观点冲突",
+      "不能据推荐次数计算选率",
+      "玛西天梯可用不等于当时进入队长模式"
+    ]
+  },
+  "dated_followup": {
+    "url": "https://www.dotabuff.com/topics/2021-11-11-best-midlane-heroes-of-730e",
+    "published_date": "2021-11-11",
+    "evidence": "Q: original forum recommendations only",
+    "early_recommendations": [
+      "修补匠",
+      "蝙蝠骑士",
+      "昆卡",
+      "圣堂刺客"
+    ],
+    "limitations": [
+      "含玩笑回复",
+      "12月3日哈斯卡评论不视为11月11日信息",
+      "未认证评论者冠绝一世身份"
+    ]
+  },
+  "first_dpc_week": {
+    "url": "https://www.reddit.com/r/DotA2/comments/rb4cln/dpc_hero_picks_by_role_statistics_week_1/",
+    "published_date": "2021-12-07",
+    "evidence": "Q: original compiler's reported counts; not locally re-exported or fully independently checked",
+    "series_reported": 60,
+    "matches_reported": 135,
+    "pos2_pick_denominator": 270,
+    "role_method_reported": "作者从Datdota取比赛，再逐局查Dotabuff分路；将中路核心归为2号位，换路有误差",
+    "counts_reported": [
+      {
+        "hero": "虚无之灵",
+        "count": 31
+      },
+      {
+        "hero": "痛苦女王",
+        "count": 30
+      },
+      {
+        "hero": "灰烬之灵",
+        "count": 29
+      },
+      {
+        "hero": "风暴之灵",
+        "count": 17
+      },
+      {
+        "hero": "祈求者",
+        "count": 16
+      },
+      {
+        "hero": "莉娜",
+        "count": 16
+      },
+      {
+        "hero": "殁境神蚀者",
+        "count": 13
+      },
+      {
+        "hero": "帕克",
+        "count": 13
+      },
+      {
+        "hero": "昆卡",
+        "count": 12
+      },
+      {
+        "hero": "拉席克",
+        "count": 11
+      }
+    ],
+    "limitations": [
+      "覆盖六赛区Div I/II首周，不是中国高分天梯",
+      "没有把原始135局重新逐局核验",
+      "不倒填成11月初已形成的固定Meta",
+      "滚滚在该文三号位统计出现26次，不由总出场数认定中单地位"
+    ]
+  },
+  "local_corroboration": {
+    "evidence": "O: fresh aggregation of existing third-party parsed records, not new replay observation",
+    "all_local_match_files_read": 171,
+    "filter": "patch_precision.candidate=7.30e; lane_role=2; position_est=2; not is_roaming",
+    "match_count": 20,
+    "mid_records": 40,
+    "hero_types": 14,
+    "date_utc_from": "2021-12-13",
+    "date_utc_to": "2022-02-20",
+    "role_verified": false,
+    "event_patch_verified": false,
+    "counts": [
+      {
+        "hero": "痛苦女王",
+        "count": 9,
+        "hero_id": 39
+      },
+      {
+        "hero": "灰烬之灵",
+        "count": 6,
+        "hero_id": 106
+      },
+      {
+        "hero": "莉娜",
+        "count": 5,
+        "hero_id": 25
+      },
+      {
+        "hero": "风暴之灵",
+        "count": 3,
+        "hero_id": 17
+      },
+      {
+        "hero": "剃刀",
+        "count": 3,
+        "hero_id": 15
+      },
+      {
+        "hero": "虚无之灵",
+        "count": 3,
+        "hero_id": 126
+      },
+      {
+        "hero": "昆卡",
+        "count": 2,
+        "hero_id": 23
+      },
+      {
+        "hero": "拉席克",
+        "count": 2,
+        "hero_id": 52
+      },
+      {
+        "hero": "殁境神蚀者",
+        "count": 2,
+        "hero_id": 76
+      },
+      {
+        "hero": "龙骑士",
+        "count": 1,
+        "hero_id": 49
+      },
+      {
+        "hero": "帕克",
+        "count": 1,
+        "hero_id": 13
+      },
+      {
+        "hero": "祈求者",
+        "count": 1,
+        "hero_id": 74
+      },
+      {
+        "hero": "死亡先知",
+        "count": 1,
+        "hero_id": 43
+      },
+      {
+        "hero": "修补匠",
+        "count": 1,
+        "hero_id": 34
+      }
+    ],
+    "match_ids": [
+      6318181592,
+      6318234034,
+      6331896376,
+      6332020917,
+      6332139754,
+      6332245360,
+      6356694527,
+      6356788698,
+      6356868459,
+      6390424153,
+      6390481538,
+      6390571192,
+      6430229342,
+      6430334629,
+      6430424062,
+      6430522522,
+      6440951394,
+      6441031610,
+      6441125886,
+      6441263629
+    ],
+    "records": [
+      {
+        "match_id": 6318181592,
+        "date_utc": "2021-12-13",
+        "hero_id": 39,
+        "hero_zh": "痛苦女王",
+        "source": "https://api.opendota.com/api/matches/6318181592"
+      },
+      {
+        "match_id": 6318181592,
+        "date_utc": "2021-12-13",
+        "hero_id": 76,
+        "hero_zh": "殁境神蚀者",
+        "source": "https://api.opendota.com/api/matches/6318181592"
+      },
+      {
+        "match_id": 6318234034,
+        "date_utc": "2021-12-13",
+        "hero_id": 25,
+        "hero_zh": "莉娜",
+        "source": "https://api.opendota.com/api/matches/6318234034"
+      },
+      {
+        "match_id": 6318234034,
+        "date_utc": "2021-12-13",
+        "hero_id": 43,
+        "hero_zh": "死亡先知",
+        "source": "https://api.opendota.com/api/matches/6318234034"
+      },
+      {
+        "match_id": 6331896376,
+        "date_utc": "2021-12-20",
+        "hero_id": 15,
+        "hero_zh": "剃刀",
+        "source": "https://api.opendota.com/api/matches/6331896376"
+      },
+      {
+        "match_id": 6331896376,
+        "date_utc": "2021-12-20",
+        "hero_id": 25,
+        "hero_zh": "莉娜",
+        "source": "https://api.opendota.com/api/matches/6331896376"
+      },
+      {
+        "match_id": 6332020917,
+        "date_utc": "2021-12-20",
+        "hero_id": 39,
+        "hero_zh": "痛苦女王",
+        "source": "https://api.opendota.com/api/matches/6332020917"
+      },
+      {
+        "match_id": 6332020917,
+        "date_utc": "2021-12-20",
+        "hero_id": 49,
+        "hero_zh": "龙骑士",
+        "source": "https://api.opendota.com/api/matches/6332020917"
+      },
+      {
+        "match_id": 6332139754,
+        "date_utc": "2021-12-20",
+        "hero_id": 15,
+        "hero_zh": "剃刀",
+        "source": "https://api.opendota.com/api/matches/6332139754"
+      },
+      {
+        "match_id": 6332139754,
+        "date_utc": "2021-12-20",
+        "hero_id": 106,
+        "hero_zh": "灰烬之灵",
+        "source": "https://api.opendota.com/api/matches/6332139754"
+      },
+      {
+        "match_id": 6332245360,
+        "date_utc": "2021-12-20",
+        "hero_id": 39,
+        "hero_zh": "痛苦女王",
+        "source": "https://api.opendota.com/api/matches/6332245360"
+      },
+      {
+        "match_id": 6332245360,
+        "date_utc": "2021-12-20",
+        "hero_id": 106,
+        "hero_zh": "灰烬之灵",
+        "source": "https://api.opendota.com/api/matches/6332245360"
+      },
+      {
+        "match_id": 6356694527,
+        "date_utc": "2022-01-03",
+        "hero_id": 106,
+        "hero_zh": "灰烬之灵",
+        "source": "https://api.opendota.com/api/matches/6356694527"
+      },
+      {
+        "match_id": 6356694527,
+        "date_utc": "2022-01-03",
+        "hero_id": 126,
+        "hero_zh": "虚无之灵",
+        "source": "https://api.opendota.com/api/matches/6356694527"
+      },
+      {
+        "match_id": 6356788698,
+        "date_utc": "2022-01-03",
+        "hero_id": 23,
+        "hero_zh": "昆卡",
+        "source": "https://api.opendota.com/api/matches/6356788698"
+      },
+      {
+        "match_id": 6356788698,
+        "date_utc": "2022-01-03",
+        "hero_id": 39,
+        "hero_zh": "痛苦女王",
+        "source": "https://api.opendota.com/api/matches/6356788698"
+      },
+      {
+        "match_id": 6356868459,
+        "date_utc": "2022-01-03",
+        "hero_id": 25,
+        "hero_zh": "莉娜",
+        "source": "https://api.opendota.com/api/matches/6356868459"
+      },
+      {
+        "match_id": 6356868459,
+        "date_utc": "2022-01-03",
+        "hero_id": 34,
+        "hero_zh": "修补匠",
+        "source": "https://api.opendota.com/api/matches/6356868459"
+      },
+      {
+        "match_id": 6390424153,
+        "date_utc": "2022-01-22",
+        "hero_id": 25,
+        "hero_zh": "莉娜",
+        "source": "https://api.opendota.com/api/matches/6390424153"
+      },
+      {
+        "match_id": 6390424153,
+        "date_utc": "2022-01-22",
+        "hero_id": 39,
+        "hero_zh": "痛苦女王",
+        "source": "https://api.opendota.com/api/matches/6390424153"
+      },
+      {
+        "match_id": 6390481538,
+        "date_utc": "2022-01-22",
+        "hero_id": 17,
+        "hero_zh": "风暴之灵",
+        "source": "https://api.opendota.com/api/matches/6390481538"
+      },
+      {
+        "match_id": 6390481538,
+        "date_utc": "2022-01-22",
+        "hero_id": 52,
+        "hero_zh": "拉席克",
+        "source": "https://api.opendota.com/api/matches/6390481538"
+      },
+      {
+        "match_id": 6390571192,
+        "date_utc": "2022-01-22",
+        "hero_id": 23,
+        "hero_zh": "昆卡",
+        "source": "https://api.opendota.com/api/matches/6390571192"
+      },
+      {
+        "match_id": 6390571192,
+        "date_utc": "2022-01-22",
+        "hero_id": 39,
+        "hero_zh": "痛苦女王",
+        "source": "https://api.opendota.com/api/matches/6390571192"
+      },
+      {
+        "match_id": 6430229342,
+        "date_utc": "2022-02-13",
+        "hero_id": 39,
+        "hero_zh": "痛苦女王",
+        "source": "https://api.opendota.com/api/matches/6430229342"
+      },
+      {
+        "match_id": 6430229342,
+        "date_utc": "2022-02-13",
+        "hero_id": 106,
+        "hero_zh": "灰烬之灵",
+        "source": "https://api.opendota.com/api/matches/6430229342"
+      },
+      {
+        "match_id": 6430334629,
+        "date_utc": "2022-02-13",
+        "hero_id": 39,
+        "hero_zh": "痛苦女王",
+        "source": "https://api.opendota.com/api/matches/6430334629"
+      },
+      {
+        "match_id": 6430334629,
+        "date_utc": "2022-02-13",
+        "hero_id": 74,
+        "hero_zh": "祈求者",
+        "source": "https://api.opendota.com/api/matches/6430334629"
+      },
+      {
+        "match_id": 6430424062,
+        "date_utc": "2022-02-13",
+        "hero_id": 17,
+        "hero_zh": "风暴之灵",
+        "source": "https://api.opendota.com/api/matches/6430424062"
+      },
+      {
+        "match_id": 6430424062,
+        "date_utc": "2022-02-13",
+        "hero_id": 52,
+        "hero_zh": "拉席克",
+        "source": "https://api.opendota.com/api/matches/6430424062"
+      },
+      {
+        "match_id": 6430522522,
+        "date_utc": "2022-02-13",
+        "hero_id": 17,
+        "hero_zh": "风暴之灵",
+        "source": "https://api.opendota.com/api/matches/6430522522"
+      },
+      {
+        "match_id": 6430522522,
+        "date_utc": "2022-02-13",
+        "hero_id": 106,
+        "hero_zh": "灰烬之灵",
+        "source": "https://api.opendota.com/api/matches/6430522522"
+      },
+      {
+        "match_id": 6440951394,
+        "date_utc": "2022-02-20",
+        "hero_id": 39,
+        "hero_zh": "痛苦女王",
+        "source": "https://api.opendota.com/api/matches/6440951394"
+      },
+      {
+        "match_id": 6440951394,
+        "date_utc": "2022-02-20",
+        "hero_id": 126,
+        "hero_zh": "虚无之灵",
+        "source": "https://api.opendota.com/api/matches/6440951394"
+      },
+      {
+        "match_id": 6441031610,
+        "date_utc": "2022-02-20",
+        "hero_id": 15,
+        "hero_zh": "剃刀",
+        "source": "https://api.opendota.com/api/matches/6441031610"
+      },
+      {
+        "match_id": 6441031610,
+        "date_utc": "2022-02-20",
+        "hero_id": 76,
+        "hero_zh": "殁境神蚀者",
+        "source": "https://api.opendota.com/api/matches/6441031610"
+      },
+      {
+        "match_id": 6441125886,
+        "date_utc": "2022-02-20",
+        "hero_id": 106,
+        "hero_zh": "灰烬之灵",
+        "source": "https://api.opendota.com/api/matches/6441125886"
+      },
+      {
+        "match_id": 6441125886,
+        "date_utc": "2022-02-20",
+        "hero_id": 126,
+        "hero_zh": "虚无之灵",
+        "source": "https://api.opendota.com/api/matches/6441125886"
+      },
+      {
+        "match_id": 6441263629,
+        "date_utc": "2022-02-20",
+        "hero_id": 13,
+        "hero_zh": "帕克",
+        "source": "https://api.opendota.com/api/matches/6441263629"
+      },
+      {
+        "match_id": 6441263629,
+        "date_utc": "2022-02-20",
+        "hero_id": 25,
+        "hero_zh": "莉娜",
+        "source": "https://api.opendota.com/api/matches/6441263629"
+      }
+    ],
+    "limitations": [
+      "经典对局有选择偏差；不是随机抽样或职业总体",
+      "补丁字母按日期候选，不是赛事客户端核验",
+      "位置算法不等同逐局确认二号位",
+      "API现昵称不作为当期人物身份",
+      "这20局全部晚于11月首段剧情"
+    ]
+  },
+  "observations": {
+    "vod_watched": false,
+    "replay_parsed": false,
+    "game_tested": false,
+    "new_hero_signature_locked": false
+  }
+}
