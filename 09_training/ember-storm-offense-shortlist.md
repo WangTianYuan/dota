@@ -1,5 +1,7 @@
 # 火猫、蓝猫进攻素材：有限筛选结果
 
+> 专题与过程原卡。当前项目阶段见[完整方案](../PROJECT.md), 当前技巧取舍见[总库](technique-catalog.md)。本卡保留来源、年代和推演；旧下一步/停止点不自动执行，归档不代表全部事实失效。
+
 ID: training:ember-storm-offense-shortlist-20260924
 日期：2026-09-24。状态：本轮筛选已收口；4个具体方向中保留2个场景候选，未获作者采用。没有新增已锁招牌，没有录像观察、Replay解析或实机测试。小说构造另见[进攻场景梗概](../06_story/ember-storm-offense-proposals.md)。
 

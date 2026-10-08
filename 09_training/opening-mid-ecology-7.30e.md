@@ -1,5 +1,7 @@
 # 开篇7.30e：中单环境与可用英雄
 
+> 专题与过程原卡。当前项目阶段见[完整方案](../PROJECT.md), 当前技巧取舍见[总库](technique-catalog.md)。本卡保留来源、年代和推演；旧下一步/停止点不自动执行，归档不代表全部事实失效。
+
 ID: training:opening-mid-ecology-20261007
 日期：2026-10-07。状态：当期环境研究，不是英雄排名或招牌锁定。
 数据与原始入口见[本轮摘录](../07_sources/opening-mid-ecology-20261007.json)；剧情取舍另见[开篇英雄安排](../06_story/opening-hero-allocation.md)。

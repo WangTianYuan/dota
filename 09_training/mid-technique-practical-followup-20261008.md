@@ -1,5 +1,7 @@
 # 中单技巧续查：保留有收益的奇招，把问题摆出来
 
+> 专题与过程原卡。当前项目阶段见[完整方案](../PROJECT.md), 当前技巧取舍见[总库](technique-catalog.md)。本卡保留来源、年代和推演；旧下一步/停止点不自动执行，归档不代表全部事实失效。
+
 ID: training:mid-technique-practical-followup-20261008
 日期：2026-10-08。状态：研究与理论候选，非正文或已采用比赛。承接[前轮28分支](mid-technique-families-20261008.md)。
 
