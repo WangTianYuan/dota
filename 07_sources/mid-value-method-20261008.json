@@ -4,6 +4,7 @@
   "scope": "竞技价值方法试点；7.30e字段基线，7.31/7.31d/7.32定向迁移，不是2021—2023完整版本或英雄排行",
   "claim_types": {
     "F": "官方补丁或历史文件字段/说明；不证明运行交互",
+    "Q": "公开玩家文字；证明有该说法，不证明普及、稳定执行或完整规则",
     "O": "本轮读取仓内数据；未重新请求比赛API",
     "I": "条件性竞技价值推断",
     "H": "未验证比较或完整收益"
@@ -341,6 +342,46 @@
       6560977239
     ],
     "limitation_zh": "精选语料，不是完整人口分布；本轮选一条TA记录作入口。7.30e筛选为空只描述本库，不说明当期TA不能打中。"
+  },
+  "followup_review": {
+    "reviewed_on_local": "2026-10-08",
+    "scope": "作者要求整理基础/进阶与当期未知的分层；公开来源不是淘汰条件，未做采用频率或稳定执行统计",
+    "public_text_reads": [
+      {
+        "url": "https://www.reddit.com/r/DotA2/comments/zizba6/every_single_ember_trick/",
+        "read_scope": "无影拳朝向与后续位移覆盖段，网页文字重读；其他拳中放魂说明按既有FE1原卡复核",
+        "claim_type": "Q",
+        "limitation": "已公开不证明当期普及，未观看嵌入演示或认证2021完整链"
+      },
+      {
+        "url": "https://www.reddit.com/r/learndota2/comments/cfgar8/storm_spirit_midgame/",
+        "read_scope": "ScarredBlood回复第5/6点的越过目标飞行与飞行攻击段",
+        "claim_type": "Q",
+        "limitation": "不采用其最优、必杀或当期构筑建议；末段再起手按SS2既有来源复核，未重新取该攻略"
+      },
+      {
+        "url": "https://www.reddit.com/r/learndota2/comments/l78kty/",
+        "read_scope": "灵能之刃主目标护甲、构筑/控制与地图窗口段",
+        "claim_type": "Q",
+        "limitation": "命中前改位置按TA5既有攻略来源复核；不采用绝对措辞，不据此判定普及或最优"
+      }
+    ],
+    "force_staff": {
+      "item_file_url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "item_file_sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "localization_url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "localization_sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "read_scope": "完整item_force_staff物品块与说明/注释，非全物品规则审查",
+      "F": {
+        "push_length_field": 600,
+        "description_zh": "沿受术者面对的方向推动，不由施术者指定任意方向",
+        "notes_zh": "说明称不打断目标动作；注明时空结界、决斗、黑洞内不生效"
+      },
+      "I": "若TA发射后朝向未变、主目标静止、推后未越过主目标，本体位移仍在原攻击轴上，不能据此横向修正溅射；撤回这个最简推荐",
+      "limits": "几何理由，不证明具体受控状态可被推、命中时取样或完整收益；移动目标、控制前转向与其他位移属不同条件，越过目标的反向分支未验证"
+    },
+    "reviewed_existing_ids": ["FE1", "FE4", "SS2", "TA4", "TA5"],
+    "classification_result": "均有部分公开文字支持；当期采用与稳定执行层级未核，不直接判为基础，也不宣称首次发现。三英雄宏观试点仅为方法基线。"
   },
   "unperformed": {
     "match_api_refetch": false,
