@@ -1,6 +1,6 @@
 # 当前执行与交接
 
-id：mid-value-method-20261008。协调者：本聊天主任务。记录位置：00_meta/work-state.md。更新：2026-10-12。状态：新版Word分析手册已生成，13页内容/排版及来源保护检查通过，待按持续授权更新[草稿PR #17](https://github.com/WangTianYuan/dota/pull/17)。三英雄试点仍为方法基线，无新英雄实测。
+id：mid-value-method-20261008。协调者：本聊天主任务。记录位置：00_meta/work-state.md。更新：2026-10-12。状态：新版Word分析手册已生成并验证，现行方法和渠道记录已更新至[草稿PR #17](https://github.com/WangTianYuan/dota/pull/17)，保持未合并。三英雄试点仍为方法基线，无新英雄实测。
 
 ## 目标与验收
 
@@ -48,10 +48,12 @@ technique-catalog维护方法、蓝猫再行动、TA资源窗口、龙骑士稳�
 
 渲染采用所配Node/Python，artifact开始标记仅一次；打包render_docx.py日志表明缺LibreOffice，未安装或使用桌面LibreOffice。改用Word独立隐藏实例只读导出PDF，再由打包rasterize流程配合所配PyMuPDF生成页面图；仅关闭本次独立实例，参考源文件不变。首次报告的23 Markdown是顶层口径，递归复核为24，覆盖表沿递归口径。排版与逻辑反例均不充当游戏或全站验证。
 
+手册轮提交593719e已推送，#17标题/正文已更新；新鲜读取确认OPEN/DRAFT、比较基线仍为planning/research-dependencies-20261008、远端头与593719e一致。发布前精确暂存5个本轮文件、差异与凭据模式检查通过，导出/总库哈希及8条HTTP记录的状态一致。Word留根目录、未纳入Git，原六份输入保持哈希不变。
+
 发布前精确暂存仅5个修订文件，分支相对前置共6个文件，差异及凭据文件/常见密钥模式检查通过；提交c58ce53与746ec44已推送。创建后新鲜核PR为OPEN/DRAFT、base为planning/research-dependencies-20261008、head为research/mid-value-method-20261008，远端头与746ec44一致；已用附件工具关联本聊天。后续交接状态提交不改变研究结论。
 
 ## 下一步
 
-完成精确暂存与凭据检查后按持续授权更新同一草稿PR；10月12日新鲜确认#16及#17仍OPEN，#17为DRAFT且比较基线仍是planning/research-dependencies-20261008，Word附件留根目录不自动上传Git。之后下一研究单元按FE1/FE4/SS2/TA4/TA5初筛与决定性证据选择重点，尚未开始；不自动合并。主任务曾误将公开说明作为淘汰条件，已按作者纠正。TA5指定静止场景反证只撤回该分支，不扩大到其他位移。没有人物外采、正文或新实机任务从手册自动启动。
+手册与渠道更新已交付；#16及#17仍OPEN，#17为DRAFT且比较基线仍是planning/research-dependencies-20261008，不自动合并，Word附件留根目录。下一研究单元按FE1/FE4/SS2/TA4/TA5初筛与决定性证据选择重点，尚未开始；按当次所需功能重核路径，不从旧成功或本轮失败推全站状态。主任务曾误将公开说明作为淘汰条件，已按作者纠正。TA5指定静止场景反证只撤回该分支，不扩大到其他位移。没有人物外采、正文或新实机任务从手册自动启动。
 
 前轮PR #15合并、附件/依赖整理记录在f5585aa历史版本；PROJECT和research-status成果保留，历史执行记录不当新任务。
