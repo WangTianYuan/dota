@@ -1,0 +1,216 @@
+{
+  "id": "sources:mid-analysis-channels-20261012",
+  "as_of_client": "2026-10-12 America/Los_Angeles",
+  "purpose": "中单竞技价值分析手册的来源渠道与参考文件审查；不是英雄实测或全平台验收",
+  "input_files": [
+    {
+      "path": "逐梦之旅_DOTA2现实人物研究执行手册_v2.1.docx",
+      "sha256": "686bc50e387761be1eea4ff0a9e1c2a44451c9ffd14a248cc00712ef1f531035",
+      "bytes": 63171
+    },
+    {
+      "path": "执行手册v2第一性原理与对抗审查_20261012.txt",
+      "sha256": "ef136d81432ad6c582f4098b88ffd61b66fa5df4d0ca0e854f5166f967be456d",
+      "bytes": 21413
+    },
+    {
+      "path": "逐梦之旅_渠道访问测试与协助清单_20261008.docx",
+      "sha256": "a7df2124dab56fd5619e3084706d61058ba659a89fc8dffef668fb78e98e1200",
+      "bytes": 46926
+    },
+    {
+      "path": "渠道测试续测记录_20261008.json",
+      "sha256": "457d09ed04b3ec0dc8ade646a66b066337b8f07ddb84e3fd938811198a3b1b57",
+      "bytes": 4216
+    },
+    {
+      "path": "渠道排查记录_20261009.json",
+      "sha256": "7706a5ec238e7d4498aa4217d99a75002cb3263287bc9671fed79e8abf95d0a3",
+      "bytes": 32181
+    },
+    {
+      "path": "渠道排查与恢复操作_20261009.txt",
+      "sha256": "0d7a7a63074f82e50215cd4321f8531a23856b28b7f498985c11244e3ee062cc",
+      "bytes": 31771
+    }
+  ],
+  "input_read_scope": "主任务完整提取v2.1正文与表格文本并核批注/超链接；只读审查者完整读取渠道附件、JSON和恢复记录；v2.0只作版本/结构对照",
+  "existing_access_record": {
+    "file": "../../渠道排查记录_20261009.json",
+    "updated_at_utc": "2026-10-12 07:00:17 UTC",
+    "limitation": "文件名和更新时间不等于各项样本时间；逐项沿用原日期/路径/范围，不升级全站当前状态"
+  },
+  "new_http_checks": [
+    {
+      "id": "valve_patch",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.30e&language=english",
+      "checked_on_client": "2026-10-12",
+      "method": "public HTTP GET via urllib default routing",
+      "scope": "JSON response parsed and root keys inspected; no new mechanics certified",
+      "status": 200,
+      "final_url": "https://www.dota2.com/datafeed/patchnotes?version=7.30e&language=english",
+      "sha256": "729a1e4268ecfa37d0773a6044b8d854dc3d19c3415b531efc8d18b36e152718",
+      "bytes": 13040,
+      "observed": {
+        "root_keys": [
+          "patch_number",
+          "patch_name",
+          "patch_timestamp",
+          "general_notes",
+          "items",
+          "heroes",
+          "success"
+        ]
+      }
+    },
+    {
+      "id": "opendota_match",
+      "url": "https://api.opendota.com/api/matches/6227492909",
+      "checked_on_client": "2026-10-12",
+      "method": "public HTTP GET via urllib default routing",
+      "scope": "specific response only",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "opendota_docs",
+      "url": "https://docs.opendota.com/",
+      "checked_on_client": "2026-10-12",
+      "method": "public HTTP GET via urllib default routing",
+      "scope": "specific response only",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "howdoiplay",
+      "url": "https://howdoiplay.com/tips/storm_spirit",
+      "checked_on_client": "2026-10-12",
+      "method": "public HTTP GET via urllib default routing",
+      "scope": "specific response only",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "game_history",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "checked_on_client": "2026-10-12",
+      "method": "public HTTP GET via urllib default routing",
+      "scope": "immutable file retrieved; exact item name string located only; not a complete definition read or engine test",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "bytes": 621009,
+      "observed": {
+        "force_staff_string_present": true
+      }
+    },
+    {
+      "id": "opendota_match",
+      "url": "https://api.opendota.com/api/matches/6227492909",
+      "checked_on_client": "2026-10-12",
+      "method": "public HTTP GET with request-level ProxyHandler empty; no global proxy change",
+      "status": "failed",
+      "error_type": "URLError",
+      "error": "<urlopen error [Errno 11002] getaddrinfo failed>",
+      "scope": "no target content obtained"
+    },
+    {
+      "id": "opendota_docs",
+      "url": "https://docs.opendota.com/",
+      "checked_on_client": "2026-10-12",
+      "method": "public HTTP GET with request-level ProxyHandler empty; no global proxy change",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 403: Forbidden",
+      "scope": "no target content obtained"
+    },
+    {
+      "id": "howdoiplay",
+      "url": "https://howdoiplay.com/tips/storm_spirit",
+      "checked_on_client": "2026-10-12",
+      "method": "public HTTP GET with request-level ProxyHandler empty; no global proxy change",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 403: Forbidden",
+      "scope": "no target content obtained"
+    }
+  ],
+  "web_read_scope": [
+    {
+      "url": "https://docs.opendota.com/",
+      "result": "网页工具页面壳无正文；官方站点检索侧显示GET matches及API来源描述，未读在线完整文档"
+    },
+    {
+      "url": "https://github.com/odota/core",
+      "result": "读取官方项目Overview，原始数据来自Valve WebAPI和自动解析；未运行采集器"
+    },
+    {
+      "url": "https://www.dota2.com/patches",
+      "result": "页面壳无正文；通过定向官方响应验证文件取得"
+    },
+    {
+      "url": "https://github.com/SteamDatabase/GameTracking-Dota2",
+      "final_url": "https://github.com/SteamTracking/GameTracking-Dota2",
+      "result": "GitHub入口重定向已见；固定旧资源仍以原不可变提交读取"
+    },
+    {
+      "url": "https://stratz.com/api",
+      "result": "仅页面元数据；未申请权限、获得token或执行API查询"
+    },
+    {
+      "url": "https://howdoiplay.com/tips/storm_spirit",
+      "result": "网页工具失败；本机默认及请求级直连HTTP403"
+    },
+    {
+      "url": "https://www.datdota.com/",
+      "result": "网页工具失败；未取得具体数据"
+    }
+  ],
+  "unchanged_boundaries": {
+    "no_video_playback": true,
+    "no_replay_download_or_parse": true,
+    "no_game_test": true,
+    "no_new_hero_value_conclusion": true,
+    "no_global_proxy_change": true,
+    "no_credentials_requested": true
+  },
+  "inference_limits": [
+    "403不单独证明登录或代理根因",
+    "请求级直连DNS失败不证明平台永久不可用",
+    "HTTP200/文件哈希一致不证明运行机制或当前全部功能",
+    "旧成功保留且本轮失败单独记录"
+  ],
+  "manual_export": {
+    "root_filename": "逐梦之旅_DOTA2中单竞技价值分析手册_v1.0.docx",
+    "format": "docx",
+    "pages": 13,
+    "sections": 12,
+    "tables": 7,
+    "sha256": "f88c2dd141d093d1f197268b39c0f2a1135caf4b43ee7d8abf452d188b7459bb",
+    "canonical_method_file": "09_training/technique-catalog.md",
+    "canonical_file_sha256": "3d17bdb66cdef3dfbddbd5bc4cf0c7f1748e8f71269c5088937c9d540350646e",
+    "ownership": "根目录Word为阅读导出，现行判断仍在总库；Word附件不自动上传Git"
+  },
+  "adversarial_review": {
+    "scope": "两名只读审查者核实际方法和渠道底稿；主任务检查原文、差异与成稿，未复测游戏或全部平台",
+    "corrections": [
+      "证据类型按主张判断，官方规则正文不一概降为Q",
+      "纪录片完整发布不等于完整对局录像",
+      "保留B站评论失败及样本公开字幕列表为空的功能限制"
+    ],
+    "logic_cases": 10,
+    "cases_are_not_match_observations": true
+  },
+  "document_validation": {
+    "markdown_local_links": 184,
+    "docx_local_links": 12,
+    "reference_inputs_unchanged": 6,
+    "visual_review": "13页均经原尺寸检查；最终10页与已核第二稿逐像素一致，变更1/11/13页重新打开核验",
+    "render_backend": "打包render_docx.py因缺少LibreOffice失败后，使用Word独立隐藏实例只读导出PDF，再由打包rasterize流程及所配PyMuPDF生成PNG",
+    "initial_layout_fixes": "移除Title样式内蓝色边框，压缩来源链接的自然段间距，消除末页仅一条工具链接",
+    "limits": "排版/结构验证不证明渠道持续可用、操作成立、当期普及或竞技收益"
+  }
+}
