@@ -1,0 +1,1035 @@
+{
+  "id": "sources:mid-late-choice-research-20261013",
+  "as_of_client": "2026-10-13 America/Los_Angeles",
+  "purpose": "第25—28单元：米波/伐木机晚信息接口，风行/光法几何与资源反证；当前判断由总库维护",
+  "version_scope": {
+    "fixed_commit": "cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529",
+    "baseline": "7.30e；没有取得全部2021—2023补丁运行快照",
+    "limitations": "字段/旧说明F，玩家Q与完整链H分开；无客户端、比赛或正文采用认证"
+  },
+  "raw_sources": [
+    {
+      "id": "LC-abilities",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "bytes": 3099817,
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "acquisition": "复用固定响应；本轮重读限定字段/说明",
+      "claim_type": "F：定义和文本，不认证完整引擎交互或赛事客户端"
+    },
+    {
+      "id": "LC-localization",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "bytes": 1235305,
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "acquisition": "复用固定响应；本轮重读限定字段/说明",
+      "claim_type": "F：定义和文本，不认证完整引擎交互或赛事客户端"
+    },
+    {
+      "id": "LC-items",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "bytes": 621009,
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "acquisition": "复用固定响应；本轮重读限定字段/说明",
+      "claim_type": "F：定义和文本，不认证完整引擎交互或赛事客户端"
+    }
+  ],
+  "saved_public_sources": [
+    {
+      "name": "meepo-tips",
+      "url": "https://howdoiplay.com/tips/meepo.html",
+      "retrieved_at": "2026-10-13T12:30:06.596170+00:00",
+      "status": 200,
+      "final_url": "https://howdoiplay.com/tips/meepo.html",
+      "bytes": 7782,
+      "sha256": "ac3b6291fdfeb77d3854d3d9fe01e523e61ba6fbb3ec219863310e6db5a5dbbe",
+      "file": "meepo-tips.html",
+      "read_scope": "Q：可忽悠到己方或队友拥有的同英雄幻象；起点/终点伤害；单体受控与任一米波死亡是反制。后来的超级米波和当前经验说法不用于旧期。",
+      "published_at": null,
+      "event_time": null,
+      "time_precision": "现行可变页；不能当2021已公开时间"
+    },
+    {
+      "name": "timbersaw-tips",
+      "url": "https://howdoiplay.com/tips/timbersaw.html",
+      "retrieved_at": "2026-10-13T12:30:06.597168+00:00",
+      "status": 200,
+      "final_url": "https://howdoiplay.com/tips/timbersaw.html",
+      "bytes": 9209,
+      "sha256": "f38eacffb1fe296bb3263ae52b9d7d1363e487e09aaa5b9364784af5dd34e35d",
+      "file": "timbersaw-tips.html",
+      "read_scope": "Q：钩链在途后跳刀/自吹风；队友种铁树枝可以提供钩链目标。未读到本项目晚信息短/长终点模型的完整认证；现行先天与神杖不前移。",
+      "published_at": null,
+      "event_time": null,
+      "time_precision": "现行可变页；不能当2021已公开时间"
+    },
+    {
+      "name": "windranger-tips",
+      "url": "https://howdoiplay.com/tips/windranger.html",
+      "retrieved_at": "2026-10-13T12:30:06.597168+00:00",
+      "status": 200,
+      "final_url": "https://howdoiplay.com/tips/windranger.html",
+      "bytes": 8231,
+      "sha256": "989524e0e9285f87af454f462bd3ad5eb2c26e544f20c33210cd12cba8a103c1",
+      "file": "windranger-tips.html",
+      "read_scope": "Q：束缚角度取原施放位置，第二单位不优先英雄，单位先于树；雾内/隐形第二目标、背向凝视移动攻击分别限定。当前处决天赋不前移。",
+      "published_at": null,
+      "event_time": null,
+      "time_precision": "现行可变页；不能当2021已公开时间"
+    },
+    {
+      "name": "keeper-tips",
+      "url": "https://howdoiplay.com/tips/keeper_of_the_light.html",
+      "retrieved_at": "2026-10-13T12:30:06.598165+00:00",
+      "status": 200,
+      "final_url": "https://howdoiplay.com/tips/keeper_of_the_light.html",
+      "bytes": 6300,
+      "sha256": "f56e2b79d7f58c42fe7664be30397cf72f3137a0c98cb1dfe4092d141225a37f",
+      "file": "keeper-tips.html",
+      "read_scope": "Q：早放光波、灵魂形态到期中断在蓄光波；查克拉不减普通大招，充能/派生技能说法只作线索，不套所有旧技能。现行先天/太阳之缚魔晶/反向召回不前移。",
+      "published_at": null,
+      "event_time": null,
+      "time_precision": "现行可变页；不能当2021已公开时间"
+    }
+  ],
+  "source_failures": [
+    {
+      "name": "timbersaw-old-guide",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=676587959",
+      "retrieved_at": "2026-10-13T12:30:07.248915+00:00",
+      "error": "HTTP Error 429: Too Many Requests",
+      "consequence": "本轮未重取旧攻略正文；历史TM1/TM2的既有Q仍从原卡追溯，不当本轮新读或独立印证。"
+    },
+    {
+      "path": "Web读取Timbersaw/Windranger .html技巧页",
+      "status": 403,
+      "fallback": "同URL HTTP读取200并保存；只是读取路径差异，不判页面或平台永久受阻"
+    }
+  ],
+  "source_independence": "三固定文件同一快照；四技巧页同作者站，不能当四个独立见证。旧Steam指南重取429，不把历史Q视作本轮新增阅读。未见同款只描述检索范围，不证明首次或当期无人会用。",
+  "components": {
+    "meepo_poof": {
+      "fields": {
+        "ID": "5431",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "AbilityCastPoint": "1.5",
+        "AbilityChannelTime": "0.0",
+        "AbilityCooldown": "12 10 8 6",
+        "AbilityManaCost": "80",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "400"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "poof_damage": "45 60 75 90",
+            "LinkedSpecialBonus": "special_bonus_unique_meepo_2"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_meepo_poof_description": "Drawing mystical energies from the earth, a Meepo can teleport to another Meepo or itself after channeling for %abilitycastpoint% seconds, dealing damage in both the departure and arrival locations.",
+        "dota_tooltip_ability_meepo_poof_abilitydraft_note": "In AD, can poof to any friendly unit within 2000 range.",
+        "dota_tooltip_ability_meepo_poof_note0": "Can be cast through the minimap.",
+        "dota_tooltip_ability_meepo_poof_note1": "Can teleport to Meepo illusions."
+      }
+    },
+    "meepo_earthbind": {
+      "fields": {
+        "ID": "5430",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+        "AbilityCastRange": "500 750 1000 1250",
+        "AbilityCastPoint": "0.3",
+        "AbilityCooldown": "20 16 12 8",
+        "AbilityManaCost": "100",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "2.0"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "220"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "speed": "900"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "abilitycastrange": "",
+            "LinkedSpecialBonus": "special_bonus_unique_meepo_4"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_meepo_earthbind_description": "Tosses a net at the target point, rooting down all enemy units in an area around it.",
+        "dota_tooltip_ability_meepo_earthbind_note0": "Affects invisible units, revealing them.",
+        "dota_tooltip_ability_meepo_earthbind_note1": "Does not work on Spell Immune units or Roshan."
+      }
+    },
+    "meepo_divided_we_stand": {
+      "fields": {
+        "ID": "5433",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+        "RequiredLevel": "4",
+        "HasShardUpgrade": "1",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+        "AbilityCastRange": "900",
+        "AbilityCastPoint": "0.2 0.2 0.2 0.2",
+        "AbilityCooldown": "18 16 14",
+        "AbilityDamage": "100",
+        "AbilityManaCost": "0",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "tooltip_clones": "1 2 3",
+            "LinkedSpecialBonus": "special_bonus_unique_meepo_5"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "tooltip_share_percentage": "20"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "tooltip_share_percentage_scepter": "100"
+          },
+          "04": {
+            "var_type": "FIELD_FLOAT",
+            "respawn": "0.0"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "tooltip_respawn": "20"
+          },
+          "06": {
+            "var_type": "FIELD_INTEGER",
+            "movement_slow": "-50"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_meepo_divided_we_stand_shard_description": "Divided we Stand can be cast as long as there's a Meepo within 300 radius of yourself. Causes that Meepo to fling you towards a target within a 900 AoE, dealing 100 damage and slowing their movement speed by 50%. Cooldown 18/16/14s Mana Cost: 100",
+        "dota_tooltip_ability_meepo_divided_we_stand_description": "Meepo summons an imperfect, semi-autonomous duplicate of himself, which can gain gold and experience as he does and shares his experience, attributes and abilities. However, the clones cannot wield any items but the boots that Meepo himself wears.  If any of the clones die, they all die.",
+        "dota_tooltip_ability_meepo_divided_we_stand_note0": "Clones can't use Arcane Boots, Guardian Greaves."
+      }
+    },
+    "shredder_timber_chain": {
+      "fields": {
+        "ID": "5525",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+        "AbilityCastRange": "800 950 1100 1250",
+        "AbilityCooldown": "4",
+        "AbilityManaCost": "60 70 80 90",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "chain_radius": "90 90 90 90"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "range": "800 950 1100 1250",
+            "LinkedSpecialBonus": "special_bonus_unique_timbersaw_3"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "225 225 225 225"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "speed": "2200 2400 2600 2800"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "damage": "70 120 170 220"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_shredder_timber_chain_description": "Timbersaw fires a chain that embeds itself in the first tree it hits, pulling him towards it.  Any enemy in the path takes damage."
+      }
+    },
+    "shredder_chakram": {
+      "fields": {
+        "ID": "5527",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+        "HasScepterUpgrade": "1",
+        "AbilityCastRange": "1200 1200 1200",
+        "AbilityCastPoint": "0.15",
+        "AbilityCooldown": "8.0 8.0 8.0",
+        "AbilityManaCost": "80 140 200",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "speed": "900.0"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "200"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "pass_damage": "110 155 200"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "damage_per_second": "50 75 100"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "slow": "5",
+            "LinkedSpecialBonus": "special_bonus_unique_timbersaw_4"
+          },
+          "06": {
+            "var_type": "FIELD_FLOAT",
+            "damage_interval": "0.5"
+          },
+          "07": {
+            "var_type": "FIELD_FLOAT",
+            "break_distance": "2000.0"
+          },
+          "08": {
+            "var_type": "FIELD_FLOAT",
+            "mana_per_second": "16 23 30"
+          },
+          "09": {
+            "var_type": "FIELD_FLOAT",
+            "pass_slow_duration": "0.5"
+          },
+          "10": {
+            "var_type": "FIELD_INTEGER",
+            "slow_health_percentage": "5"
+          },
+          "11": {
+            "var_type": "FIELD_FLOAT",
+            "castpoint_scepter": "0.1",
+            "RequiresScepter": "1"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_shredder_chakram_description": "Fires Timbersaw's main saw blade at the target location where it will spin in place, dealing damage in an area around it.  Enemies caught in the saw blade will move more slowly for every %slow_health_percentage%%% of health missing. The blade deals damage and cuts down trees in its path when fired and retracted.  While active the ability costs mana, and Timbersaw loses the ability to attack.",
+        "dota_tooltip_ability_shredder_chakram_note0": "The Chakram will return if Timbersaw runs out of mana or moves over %break_distance% distance away.",
+        "dota_tooltip_ability_shredder_chakram_2_description": "Fires a secondary saw blade at the target location where it will spin in place, dealing damage in an area around it.  Additionally, for each 5% of health missing, enemies caught in the saw blade move more slowly. The blade deals damage and cuts down trees in its path when fired and retracted.  While active the ability costs mana, and Timbersaw loses the ability to attack.",
+        "dota_tooltip_ability_shredder_chakram_2_note0": "The Chakram will return if Timbersaw runs out of mana or moves over %break_distance% distance away.",
+        "dota_tooltip_ability_shredder_chakram_2_note1": "Slow effects from two chakrams do not stack."
+      }
+    },
+    "windrunner_shackleshot": {
+      "fields": {
+        "ID": "5130",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+        "AbilityCastRange": "800",
+        "AbilityCastPoint": "0.15",
+        "AbilityCooldown": "16 14 12 10",
+        "AbilityDamage": "0 0 0 0",
+        "AbilityManaCost": "70 80 90 100",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "fail_stun_duration": "0.75 0.75 0.75 0.75"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "stun_duration": "2.0 2.6 3.2 3.8",
+            "LinkedSpecialBonus": "special_bonus_unique_windranger_6"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "shackle_distance": "575"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "arrow_speed": "1650"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "shackle_count": "1"
+          },
+          "06": {
+            "var_type": "FIELD_FLOAT",
+            "shackle_angle": "23"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_windrunner_shackleshot_description": "Shackles the target to an enemy unit or tree in a line directly behind it.  If no unit or tree is present, the stun duration is reduced to %fail_stun_duration%.",
+        "dota_tooltip_ability_windrunner_shackleshot_note0": "This spell can shackle two enemies together, stunning them both.",
+        "dota_tooltip_ability_windrunner_shackleshot_note1": "Can shackle the target to an enemy unit or tree at most %shackle_distance% behind the target.",
+        "dota_tooltip_ability_windrunner_shackleshot_note2": "Shackleshot can be disjointed."
+      }
+    },
+    "windrunner_focusfire": {
+      "fields": {
+        "ID": "5133",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING",
+        "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+        "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+        "AbilityCastRange": "600",
+        "AbilityCastPoint": "0",
+        "AbilityCooldown": "70 50 30",
+        "AbilityDuration": "20.0",
+        "AbilityManaCost": "75 100 125",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_attack_speed": "475"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "focusfire_damage_reduction": "-50 -40 -30",
+            "LinkedSpecialBonus": "special_bonus_unique_windranger_8"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "focusfire_fire_on_the_move": "1"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_windrunner_focusfire_description": "Windranger channels the wind to gain %bonus_attack_speed% additional attack speed against a single enemy unit or structure, though with a reduction to her attack damage.  Extra damage from secondary item effects is not reduced.",
+        "dota_tooltip_ability_windrunner_focusfire_note0": "Issuing a Hold Position command will pause Windranger's attacks.",
+        "dota_tooltip_ability_windrunner_focusfire_note1": "Windranger can move while attacking.",
+        "dota_tooltip_ability_windrunner_focusfire_cancel_description": "End your Focus Fire early."
+      }
+    },
+    "keeper_of_the_light_illuminate": {
+      "fields": {
+        "ID": "5471",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "AbilityCastRange": "1800",
+        "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+        "AbilityCooldown": "13",
+        "AbilityChannelTime": "3",
+        "AbilityManaCost": "100 125 150 175",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "total_damage": "200 300 400 500",
+            "LinkedSpecialBonus": "special_bonus_unique_keeper_of_the_light"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "max_channel_time": "3"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "375"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "range": "1550"
+          },
+          "05": {
+            "var_type": "FIELD_FLOAT",
+            "speed": "900.0"
+          },
+          "06": {
+            "var_type": "FIELD_INTEGER",
+            "vision_radius": "800 800 800 800"
+          },
+          "07": {
+            "var_type": "FIELD_FLOAT",
+            "vision_duration": "3.34 3.34 3.34 3.34"
+          },
+          "08": {
+            "var_type": "FIELD_INTEGER",
+            "channel_vision_radius": "375"
+          },
+          "09": {
+            "var_type": "FIELD_FLOAT",
+            "channel_vision_interval": "0.5"
+          },
+          "10": {
+            "var_type": "FIELD_FLOAT",
+            "channel_vision_duration": "10.34"
+          },
+          "11": {
+            "var_type": "FIELD_INTEGER",
+            "channel_vision_step": "150"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_keeper_of_the_light_illuminate_description": "Channels light energy, building power the longer it's channeled.  Once released, a wave is sent forth that deals damage and gives vision in its path.  The longer it is channeled, the more damage is dealt.",
+        "dota_tooltip_ability_keeper_of_the_light_illuminate_shard_description": "Causes Illuminate to heal for 40% of its damage during daytime.",
+        "dota_tooltip_ability_keeper_of_the_light_illuminate_note0": "Gives increasing vision over the channeling time.",
+        "dota_tooltip_ability_keeper_of_the_light_illuminate_end_description": "Release the channel early."
+      }
+    },
+    "keeper_of_the_light_spirit_form_illuminate": {
+      "fields": {
+        "ID": "5479",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "HasShardUpgrade": "1",
+        "AbilityCastRange": "1800",
+        "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+        "AbilityCooldown": "13",
+        "AbilityManaCost": "100 125 150 175",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "total_damage": "200 300 400 500",
+            "LinkedSpecialBonus": "special_bonus_unique_keeper_of_the_light"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "max_channel_time": "3"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "375"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "range": "1550"
+          },
+          "05": {
+            "var_type": "FIELD_FLOAT",
+            "speed": "1050.0"
+          },
+          "06": {
+            "var_type": "FIELD_INTEGER",
+            "vision_radius": "800 800 800 800"
+          },
+          "07": {
+            "var_type": "FIELD_FLOAT",
+            "vision_duration": "3.34 3.34 3.34 3.34"
+          },
+          "08": {
+            "var_type": "FIELD_INTEGER",
+            "channel_vision_radius": "375"
+          },
+          "09": {
+            "var_type": "FIELD_FLOAT",
+            "channel_vision_interval": "0.5"
+          },
+          "10": {
+            "var_type": "FIELD_FLOAT",
+            "channel_vision_duration": "10.34"
+          },
+          "11": {
+            "var_type": "FIELD_INTEGER",
+            "channel_vision_step": "150"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_keeper_of_the_light_spirit_form_illuminate_description": "Channels light energy, building power the longer it's channeled.  Once released, a wave is sent forth that deals damage and gives vision in its path.  The longer it is channeled, the more damage is dealt.",
+        "dota_tooltip_ability_keeper_of_the_light_spirit_form_illuminate_note0": "Gives increasing vision over the channeling time.",
+        "dota_tooltip_ability_keeper_of_the_light_spirit_form_illuminate_end_description": "Release the channel early."
+      }
+    },
+    "keeper_of_the_light_chakra_magic": {
+      "fields": {
+        "ID": "5473",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+        "AbilityCastRange": "900 900 900 900",
+        "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+        "AbilityCooldown": "18 16 14 12",
+        "AbilityManaCost": "0",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "mana_restore": "100 180 260 340",
+            "LinkedSpecialBonus": "special_bonus_unique_keeper_of_the_light_2"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "cooldown_reduction": "3 4 5 6"
+          },
+          "03": {
+            "var_type": "FIELD_FLOAT",
+            "mana_leak_pct": "4.5 5 5.5 6.0"
+          },
+          "04": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "5"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_keeper_of_the_light_chakra_magic_description": "Restores mana to the target unit and reduces cooldowns of all abilities currently on cooldown by a fixed amount.",
+        "dota_tooltip_ability_keeper_of_the_light_chakra_magic_note0": "Chakra Magic does not reduce the cooldown of Ultimate abilities"
+      }
+    },
+    "keeper_of_the_light_spirit_form": {
+      "fields": {
+        "ID": "5474",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+        "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+        "AbilityCooldown": "70",
+        "AbilityManaCost": "75 125 175",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "40.0 40.0 40.0",
+            "LinkedSpecialBonus": "special_bonus_unique_keeper_of_the_light_11"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "movement_speed": "15 20 25"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "cast_range": "125 250 375"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "illuminate_heal": "40 50 60"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_keeper_of_the_light_spirit_form_description": "Ezalor temporarily turns his body luminescent, gaining bonus movement speed, cast range, grants the Blinding Light ability, and allows Illuminate to be channeled by a separate spirit and heal allies.",
+        "dota_tooltip_ability_keeper_of_the_light_spirit_form_illuminate_description": "Channels light energy, building power the longer it's channeled.  Once released, a wave is sent forth that deals damage and gives vision in its path.  The longer it is channeled, the more damage is dealt.",
+        "dota_tooltip_ability_keeper_of_the_light_spirit_form_illuminate_note0": "Gives increasing vision over the channeling time.",
+        "dota_tooltip_ability_keeper_of_the_light_spirit_form_illuminate_end_description": "Release the channel early."
+      }
+    },
+    "keeper_of_the_light_blinding_light": {
+      "fields": {
+        "ID": "5476",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+        "MaxLevel": "1",
+        "AbilityCastRange": "600",
+        "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+        "AbilityCooldown": "18",
+        "AbilityManaCost": "150",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "miss_rate": "40",
+            "LinkedSpecialBonus": "special_bonus_unique_keeper_of_the_light_8"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "4"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "600"
+          },
+          "05": {
+            "var_type": "FIELD_FLOAT",
+            "knockback_duration": "0.4"
+          },
+          "06": {
+            "var_type": "FIELD_FLOAT",
+            "knockback_distance": "400"
+          },
+          "07": {
+            "var_type": "FIELD_INTEGER",
+            "damage": "100"
+          },
+          "08": {
+            "var_type": "FIELD_INTEGER",
+            "AbilityCharges": "",
+            "LinkedSpecialBonus": "special_bonus_unique_keeper_of_the_light_12"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_keeper_of_the_light_blinding_light_description": "A blinding light flashes over the targeted area, knocking back and blinding the units in the area, causing them to miss some attacks. Knockback is %knockback_distance% range over %knockback_duration% seconds,",
+        "dota_tooltip_ability_keeper_of_the_light_blinding_light_note0": "Upon landing, units will destroy trees in a 150 radius."
+      }
+    },
+    "item_branches": {
+      "fields": {
+        "ID": "16",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+        "AbilityCastRange": "400",
+        "AbilityCastPoint": "0.0",
+        "AbilityCooldown": "0.0",
+        "ItemCost": "50",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_all_stats": "1"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "tree_duration": "20"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_item_branches_description": "<h1>Use: Plant Tree</h1> Targets the ground to plant a happy little tree that lasts for %tree_duration% seconds.<br><br>Range: %abilitycastrange%"
+      }
+    },
+    "item_blink": {
+      "fields": {
+        "ID": "1",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+        "AbilityCastRange": "0",
+        "AbilityCastPoint": "0.0",
+        "AbilityCooldown": "15.0",
+        "AbilityManaCost": "0",
+        "ItemCost": "2250",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "blink_range": "1200"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "blink_damage_cooldown": "3.0"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "blink_range_clamp": "960"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_item_blink_description": "<h1>Active: Blink</h1> Teleport to a target point up to %blink_range% units away. <br><br>Blink Dagger cannot be used for %blink_damage_cooldown% seconds after taking damage from an enemy hero or Roshan.",
+        "dota_tooltip_ability_item_blink_note0": "Self-casting will cause you to teleport in the direction of your team's fountain.",
+        "dota_tooltip_ability_item_blink_note1": "If you used Blink to teleport to a distance over the maximum range, you'll be teleported 4/5 of the maximum range instead."
+      }
+    }
+  },
+  "component_read_count": {
+    "skill_blocks": 12,
+    "item_blocks": 2
+  },
+  "text_quote_policy": "固定客户端必要字段和说明；公开攻略仅有限转述/哈希/已读范围，不镜像全文，临时网页缓存不提交。",
+  "models": {
+    "25-meepo": {
+      "classification": "I/H：既有MP1的晚信息任务推演；条件设计第9组，不增加公开专项/N编号或独立机制数",
+      "setup": {
+        "primary": [
+          0,
+          0
+        ],
+        "clone": [
+          -2200,
+          0
+        ],
+        "illusion_initial": [
+          600,
+          0
+        ],
+        "illusion_destinations": [
+          [
+            600,
+            210
+          ],
+          [
+            600,
+            -210
+          ]
+        ],
+        "illusion_move_speed_assumed": 350,
+        "illusion_expiry_after_assumed": 2.0,
+        "initial_poof_start": 0.0,
+        "poof_cast_point": 1.5,
+        "information_time": 0.7,
+        "input_delay_assumed": 0.1,
+        "enemy_hazard_center": [
+          600,
+          0
+        ],
+        "hazard_radius_assumed": 125,
+        "arrival_offset_bound_assumed": 20,
+        "task_deadline": 1.8,
+        "enemy_current_hp_assumed": 60,
+        "enemy_position_upper_branch": [
+          820,
+          210
+        ]
+      },
+      "calculations": {
+        "illusion_movement_start": 0.8,
+        "illusion_movement_duration": 0.6,
+        "illusion_arrival": 1.4,
+        "poof_finish": 1.5,
+        "hazard_separation_min": 190,
+        "target_distance_with_offset_max": 240,
+        "wait_then_poof_finish": 2.3,
+        "max_poof_level4_arrival_damage": 90,
+        "net_level1_plus_poof_mana": 180
+      },
+      "required_H": [
+        "忽悠完成时读取仍活着的指定幻象位置，而非起施位置；文本支持目标类别，不认证取样时刻。",
+        "幻象所有者/同英雄身份合法，普通移动未被拦，至少活到1.5；选择已经看到的两条路径之一。",
+        "落地偏移至多20只为模型假设；敌人在真实视野内，目标非魔免/无敌且没有足够减免。",
+        "分身可施法且不受缠绕/沉默/打断；当前使用的不是后来自动忽悠等接口。"
+      ],
+      "strong_baselines": [
+        "已知正确位置时提前把幻象放好。",
+        "已有安全主身/分身在那里则直接忽悠到它；可用跳刀主身改落点也可能更强。",
+        "不需赶1.8时，晚见信息后才开始忽悠。"
+      ],
+      "counterexamples": {
+        "snapshot_at_start_end_distance_to_hazard": 0,
+        "illusion_blocked_or_killed": "核心条件失效；不编造自动改投安全身体或免费返蓝。",
+        "information_time_1_1": {
+          "movement_start": 1.2,
+          "full_move_end": 1.8,
+          "poof_finish": 1.5,
+          "max_distance_moved": 105.00000000000001
+        },
+        "hazard_too_wide": "假定125改为250，210-20不足，不能沿用安全结论。"
+      },
+      "costs": "每个忽悠者各付80蓝、6秒W4冷却及1.5秒准备；幻象来源/寿命/控制占用不是免费，分身不能使用主身的跳刀。示例W4需7级；R1可4级但额外技能槽残留不作普攻主动。"
+    },
+    "26-timbersaw": {
+      "classification": "I/H：首棵树接口的晚信息短/长终点推演；条件设计第10组，旧TM1/TM2及公开种树Q不重复算新专项",
+      "setup": {
+        "timber_position": [
+          0,
+          0
+        ],
+        "old_tree": [
+          1200,
+          0
+        ],
+        "new_tree": [
+          850,
+          0
+        ],
+        "ally_position": [
+          850,
+          300
+        ],
+        "enemy_in_damage_path": [
+          650,
+          0
+        ],
+        "chain_level": 4,
+        "cast_point": 0.3,
+        "projectile_speed_field": 2800,
+        "chain_contact_radius_field": 90,
+        "damage_radius_field": 225,
+        "range_field": 1250,
+        "late_information_time": 0.4,
+        "communication_input_delay_assumed": 0.04,
+        "tree_exists_time_assumed": 0.44,
+        "plant_range_field": 400,
+        "hook_attachment_deadline_assumed": 0.8
+      },
+      "calculations": {
+        "new_tree_front_contact": 0.5714285714285714,
+        "new_tree_center_contact": 0.6035714285714285,
+        "old_tree_front_contact": 0.6964285714285714,
+        "old_tree_center_contact": 0.7285714285714285,
+        "wait_then_new_tree_front_contact": 0.9714285714285713,
+        "wait_then_new_tree_center_contact": 1.0035714285714286,
+        "plant_distance": 300,
+        "range_saved": 350,
+        "chain_mana": 90,
+        "branch_gold": 50,
+        "branch_life_field": 20,
+        "late_new_tree_time_counterexample": 0.66
+      },
+      "required_H": [
+        "在途钩链逐步检查当时存在的树；新种树在首棵树搜索中与普通树一样合法，未在起施预锁终点。既有说明与现行种树Q提供相容组件。",
+        "90用于前沿接触只是字段解释分支；同时列树中心到达，不把字段名认证为碰撞算法。",
+        "友军在场、可施物品、收到信息并在0.44种下，路径没有更近树；树未被砍，伐木机没有被打断/定身。",
+        "拉行速度、到树的偏移、受控优先级未知：0.8只比较钩链接树，不认证全部脱离/伤害在0.8内完成。"
+      ],
+      "strong_baselines": [
+        "提前种850树能常规走短路线，但会放弃无坏消息时去1200的原计划。",
+        "已有安全850树则无需本模型。",
+        "原来就需要且可用2250跳刀，可直接改落点或采用旧TM1；普通走位/不进入也须比较。"
+      ],
+      "counterexamples": {
+        "tree_at_0_66": "已晚于0.603571树中心通过；不能倒追当已过去的链。",
+        "tree_off_ray_200": "超过90字段的前沿假设，不自动拐弯找它。",
+        "closer_tree": "首树规则会截获。",
+        "chakram_cutting_branch": "旧说明飞锯发出/回收会砍树；不要把链和切树路径未经检查拼成一套。",
+        "after_hook_attack_constraint": "若飞锯在外，本体不能普攻，不能多算补刀。"
+      },
+      "costs": "90蓝、4秒钩链冷却、队友一根50金铁树枝及其在场/输入/视野成本；无免费再次出链或无条件脱控。"
+    },
+    "27-windranger": {
+      "classification": "I/H：旧WR1/WR2的几何与资源反证，非新条件设计或公开专项",
+      "setup": {
+        "caster_original": [
+          0,
+          0
+        ],
+        "primary_creep_assumed_stationary": [
+          500,
+          0
+        ],
+        "secondary_hero_initial": [
+          900,
+          160
+        ],
+        "hero_speed_y_assumed": 350,
+        "cast_point": 0.15,
+        "projectile_speed": 1650,
+        "shackle_distance": 575,
+        "angle_field": 23,
+        "shackle_level": 4,
+        "focus_level": 1
+      },
+      "calculations": {
+        "impact_center_estimate": 0.453030303030303,
+        "initial_second_distance": 430.8131845707603,
+        "initial_angle_degrees": 21.80140948635181,
+        "moving_hero_y_at_estimated_impact": 318.56060606060606,
+        "moving_angle_degrees": 38.533869098890094,
+        "q4_r1_mana": 175,
+        "failed_stun": 0.75,
+        "latched_stun": 3.8,
+        "focus_duration": 20,
+        "focus_damage_multiplier_base": 0.5
+      },
+      "required_H": [
+        "23是否为半锥角以及取样时刻仍H；模型只展示运动可超过该角度，不认证完备搜索。",
+        "500飞行距离按静止主目标中心估算；真实碰撞/追踪/单位移动会改时间。",
+        "隐形/雾内第二目标Q不授予其事前坐标；必须有可得线索。"
+      ],
+      "counterexamples": [
+        "后方英雄侧移导致21.80度变38.53度；不把点兵当保证束缚。",
+        "另一合法单位更近时，现行Q说不优先英雄；不能把575/23代替对象选择。",
+        "弹道可躲避/树可砍/强驱散或魔免改变效果。",
+        "后来跳刀不重算原施放点；停/保持位置会停止旧描述中的自动攻击。"
+      ],
+      "strong_baselines": [
+        "已有稳定树线或队友硬控时普通点英雄；需要自己换角度则先换后施。",
+        "常规集中火力输出强；475攻速不等于20秒始终命中，也不能忽略一级50%基础攻击减伤。"
+      ],
+      "costs": "示例Q4/R1共175蓝，Q4须7级；Q4加其余两普通技能各1/R1需7点。装备/目标可见性/射程/可攻击状态另计，不给每次普攻全额伤害。"
+    },
+    "28-keeper": {
+      "classification": "I/H：KO1与提前释放的任务/预算深化；不加新设计或专项",
+      "setup": {
+        "q_level": 4,
+        "e_level": 4,
+        "r_level": 1,
+        "q_damage_max": 500,
+        "charge_max": 3,
+        "cast_point": 0.3,
+        "target_distance": 450,
+        "normal_speed": 900,
+        "spirit_speed": 1050,
+        "target_hp_assumed": 270,
+        "target_magic_resistance_assumed": 0.25,
+        "target_leaves_path_time_assumed": 3.1,
+        "chosen_charge_time_assumed": 2.2,
+        "early_charge_time_counterexample": 2.0,
+        "mana_capacity_assumed": 600,
+        "initial_mana_assumed": 425
+      },
+      "calculations": {
+        "chosen_damage_if_linear_H": 275.0,
+        "too_early_damage_if_linear_H": 250.0,
+        "chosen_normal_center_arrival": 3.0,
+        "chosen_spirit_center_arrival": 2.9285714285714284,
+        "full_normal_center_arrival": 3.8,
+        "full_spirit_center_arrival": 3.728571428571428,
+        "e_reduction": 6,
+        "e_restore": 340,
+        "two_q_plus_r_mana": 425,
+        "nine_skill_points": 9,
+        "spirit_40_seconds": 40,
+        "chakra_finish_after_release_assumed": 2.9,
+        "next_q_ready_cooldown_start_branches": {
+          "cast_start_0": 7.0,
+          "charge_start_0_3": 7.3,
+          "release_2_5": 9.5
+        },
+        "with_e_before_q_cooldown_reduction": 0,
+        "r_cooldown_not_reduced": 70,
+        "pool_after_r_first_q": 175,
+        "pool_after_e_cap": 515,
+        "pool_after_second_q": 340
+      },
+      "required_H": [
+        "蓄力按时间线性增长、中心碰撞时间及目标离开3.1是显式简化；375半径/实际前沿和伤害阈值要看同一条路径，不能把当前速度换进去。",
+        "冷却开始时刻未由字段认证，查克拉须在界面已显示冷却时施放；示例2.9仍在三个分支的冷却中。",
+        "灵魂形态剩余须覆盖当前蓄力；可独立蓄力不等于身体能把既定光波转向，不能越过位移/失效条件。"
+      ],
+      "strong_baselines": [
+        "2.2提前放是公开基础操作；完整蓄力/普通清线在没有离路期限时更强。",
+        "只需要队友再施法时辅助光法给E，别把辅助补给包装成中路独占。"
+      ],
+      "counterexamples": [
+        "2.0蓄力只算250，小于270；提前放不能无条件替代满光。",
+        "若冷却在释放才开始，则9.5晚于8秒再行动要求；不能承诺7秒双光。",
+        "现行先天不失蓝、反向召回、所有充能减冷却及新魔晶均不能凭旧残留字段前移。",
+        "风/光消耗不同：R1+Q4+致盲150共400蓝，不是仅175；致盲非眩晕的旧描述不认证所有移位打断。"
+      ],
+      "costs": "Q4/E4/R1要9技能点、放弃太阳之缚点数；425是两Q与开形态总支出，补蓝340不取消初始法力与容量限制。普通Q自引导，形态Q独立蓄；两者飞行速度分别读。"
+    }
+  },
+  "position_comparison": [
+    {
+      "unit": 25,
+      "task": "晚信息换同英雄幻象落点",
+      "mid_increment": "早独享等级带W4/R克隆；不是幻象接口独占",
+      "strong_other_role": "一号位米波也有同一接口，队友已有安全锚时普通Poof更强",
+      "status": "I/H"
+    },
+    {
+      "unit": 26,
+      "task": "保留长路线，在坏消息后由队友短接首树",
+      "mid_increment": "更早链等级/抗压装支撑清线到入场；模型没证明中路必须出跳",
+      "strong_other_role": "三号位伐木机同样可链，辅助付种树/信息成本",
+      "status": "I/H"
+    },
+    {
+      "unit": 27,
+      "task": "可靠束缚后兑现物理输出",
+      "mid_increment": "输出装与集中火力，而不是575/23本身",
+      "strong_other_role": "辅助可供束缚；其他核心承接经济/伤害可能更强",
+      "status": "I/H"
+    },
+    {
+      "unit": 28,
+      "task": "清线转连续法术与再行动补给",
+      "mid_increment": "早Q4/E4/R1带独立蓄光及自身清线；9点是实际牺牲",
+      "strong_other_role": "辅助给E可使原中单更强；不能把充能线索推成所有技能可减",
+      "status": "I/H"
+    }
+  ],
+  "status": {
+    "cumulative_units": 28,
+    "cumulative_conditional_designs": 10,
+    "cumulative_public_specials": 3,
+    "new_conditional_designs": 2,
+    "new_public_specials": 0,
+    "new_N_families": 0,
+    "firstscreen_count": 124,
+    "game_engine_tested": false,
+    "new_recorded_match": false,
+    "novel_final_adoption": false,
+    "method_semantics_changed": false
+  }
+}
