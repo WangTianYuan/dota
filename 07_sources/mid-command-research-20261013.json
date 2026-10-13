@@ -1,0 +1,516 @@
+{
+  "id": "sources:mid-command-research-20261013",
+  "as_of_client": "2026-10-13 America/Los_Angeles",
+  "purpose": "第18单元：维萨吉命令入口与受控单位分工；校正VI1时期与Bug分支，整理已有六组设计的选用对照",
+  "version_scope": {
+    "fixed_commit": "cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529",
+    "target": "7.30e；2019修复与7.37b作者说法单独登记",
+    "limits": "无全期认证、原始运行代码、实机或录像",
+    "fiction_limit": "针对已修复本体入口的反证不覆盖全部直接入口；后来直接入口Q可启发相容旧期H/X，研究状态不升级"
+  },
+  "raw_sources": [
+    {
+      "id": "VC-abilities",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "bytes": 3099817,
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "read_scope": "本轮限定技能/物品字段及说明；复用响应，字段不是运行认证"
+    },
+    {
+      "id": "VC-localization",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "bytes": 1235305,
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "read_scope": "本轮限定技能/物品字段及说明；复用响应，字段不是运行认证"
+    },
+    {
+      "id": "VC-items",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "bytes": 621009,
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "read_scope": "本轮限定技能/物品字段及说明；复用响应，字段不是运行认证"
+    }
+  ],
+  "public_saved_sources": [
+    {
+      "file": "summer-scrub.html",
+      "url": "https://www.dota2.com/summerscrub?l=english",
+      "requested_at": "2026-10-13T10:40:33.875659+00:00",
+      "status": 200,
+      "resolved_url": "https://www.dota2.com/summerscrub?l=english",
+      "bytes": 26196,
+      "sha256": "907a2bb45f9fac643bea7b41a611b90bf518ac046a40dbfe34704b522f87f0ba",
+      "read_scope": "2019 Summer Scrub标题与Visage一条修复，不称全篇已审",
+      "claim_type": "F：Valve限定修复条目，不认证随后每个客户端",
+      "source_date_label": "2019 Summer Scrub正文标签；未补发布日期UTC"
+    },
+    {
+      "file": "visage-vade-mecum.html",
+      "url": "https://gitgudgaming.gg/guides/visage-vade-mecum",
+      "requested_at": "2026-10-13T10:40:34.655636+00:00",
+      "status": 200,
+      "resolved_url": "https://gitgudgaming.gg/guides/visage-vade-mecum",
+      "bytes": 28443,
+      "sha256": "85835931078962d717fcf6a3fe2ce85c07969f48e82dc935471ce5d0c01be95e",
+      "read_scope": "标题、7.37b标签及8.7两段；不采全篇出装、命石、主观场数/胜率或现行召回",
+      "claim_type": "Q：原作者后来时期的用法，不作2021运行事实"
+    }
+  ],
+  "primary_q_reads": [
+    {
+      "url": "https://www.reddit.com/r/DotA2/comments/cmh4pm/",
+      "author": "mrfoseptik",
+      "published_label": "旧卡登记2019-08-05；本轮页面相对7y，创建UTC未核",
+      "read_scope": "标题与主楼17—23；GIF未看",
+      "supports": "作者报告直接鸟入口不能但本体入口能越过嘲讽；随后2019官方修复同一问题，不能当2021默认证据",
+      "claim_type": "Q"
+    },
+    {
+      "url": "https://www.reddit.com/r/DotA2/comments/qc0j98/",
+      "author": "several_killer",
+      "published_label": "检索2021-10-20日级标签，原帖上下文7.30c；创建UTC未核",
+      "read_scope": "作者95—102的单位选择/本体受晕时手控鸟段，233—242仅版本语境；未看截图、导出账号或采用任意位置最强的主观评价",
+      "supports": "本体受控与独立鸟能否行动分开；不支持鸟自己受同一种控制也可施法",
+      "claim_type": "Q"
+    },
+    {
+      "url": "https://www.reddit.com/r/DotA2/comments/ss4wtt/",
+      "author": "DontKillProp22",
+      "published_label": "检索2022-02-19日级标签；原帖包含Turbo情境，创建UTC未核",
+      "read_scope": "69—78原失败条件与127—136作者撤回：未留意伤害源/身体越出范围；未看比赛6431077945或Replay",
+      "supports": "同类失败可能是边界/伤害来源而非Bug；不采用100%减伤公式或移植Turbo结果",
+      "claim_type": "Q"
+    }
+  ],
+  "pointer_only": [
+    {
+      "url": "https://liquipedia.net/dota2/Visage/Changelogs",
+      "scope": "检索指针给出2019修复及2022-10-01修复线索；仅据前者定位官方，不以二手年表认证2022操作",
+      "claim_type": "未用作技术结论依据"
+    }
+  ],
+  "access_and_tool_limits": [
+    "SummerScrub英语页Web内部错误，公开HTTP成功取得同一官方正文；未要求作者登录",
+    "2022-10-02截止的Steam oldnews入口Web内部错误；没有取得所称2022-10-01修复原公告，保留缺口，不继续无界搜索",
+    "Visage技巧页Web内部错误，未追加HTTP；其他原作者/官方资料已足够收窄当前主张",
+    "只读检索曾给不存在的卡路径、错误工作目录及空结果匹配，改用已定位文件/实际目录；不当资料缺失或机制失败",
+    "第一次汇总Web字符串误当对象展开造成截断输出，后续按字符串读取限定段，不称首次全文已审",
+    "上一轮提交推送成功后PR说明更新TLS超时，重读确认说明未更新，再用相同文件更新成功；不重复提交或扩大权限",
+    "生成补丁首次因PROJECT实际链接标签不同而停在临时准备阶段；读取实际段后重做，未部分修改仓库"
+  ],
+  "component_fields": {
+    "visage_summon_familiars": {
+      "ID": "5483",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+      "HasScepterUpgrade": "1",
+      "AbilityCastPoint": "0 0 0",
+      "AbilityCooldown": "130 120 110",
+      "AbilityManaCost": "150 150 150",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "familiar_hp": "500 600 700"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "familiar_armor": "0 2 4"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "familiar_speed": "430",
+          "LinkedSpecialBonus": "special_bonus_unique_visage_2"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "familiar_attack_damage": "25 50 75"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "tooltip_scepter_total_familiars": "3",
+          "LinkedSpecialBonus": "special_bonus_unique_visage_6",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "visage_stone_form_self_cast": {
+      "ID": "7116",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "0.0",
+      "AbilityManaCost": "0",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "stun_radius": "350"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "stun_delay": "0.55"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "stun_damage": "60 100 140"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "stun_duration": "1.0 1.25 1.5"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "stone_duration": "6.0"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "hp_regen": "150 175 200"
+        }
+      }
+    },
+    "visage_summon_familiars_stone_form": {
+      "ID": "5484",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+      "AbilityCastRange": "160",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "14.0",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "stun_radius": "350"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "stun_delay": "0.55"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "stun_damage": "60 100 140"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "stun_duration": "1.0 1.25 1.5"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "stone_duration": "6.0"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "hp_regen": "150 175 200"
+        }
+      }
+    },
+    "visage_gravekeepers_cloak": {
+      "ID": "5482",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "HasShardUpgrade": "1",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "max_layers": "4",
+          "LinkedSpecialBonus": "special_bonus_unique_visage_5"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "damage_reduction": "8 12 16 20"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "recovery_time": "6 5 4 3"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "minimum_damage": "40"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "1200"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "max_damage_reduction": "80"
+        }
+      }
+    },
+    "visage_grave_chill": {
+      "ID": "5480",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastPoint": "0.2 0.2 0.2 0.2",
+      "AbilityCooldown": "16 14 12 10",
+      "AbilityManaCost": "90",
+      "AbilityCastRange": "625",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "chill_duration": "6",
+          "LinkedSpecialBonus": "special_bonus_unique_visage_7"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "movespeed_bonus": "15 20 25 30"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "attackspeed_bonus": "34 46 58 70"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "900"
+        }
+      }
+    },
+    "axe_berserkers_call": {
+      "ID": "5007",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "HasScepterUpgrade": "1",
+      "AbilityCastPoint": "0.4",
+      "AbilityCooldown": "17 15 13 11",
+      "AbilityDamage": "0 0 0 0",
+      "AbilityManaCost": "80 90 100 110",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "300",
+          "LinkedSpecialBonus": "special_bonus_unique_axe_2"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_armor": "30"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "2.0 2.4 2.8 3.2"
+        }
+      }
+    },
+    "winter_wyvern_winters_curse": {
+      "ID": "5654",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "AbilityCastRange": "700",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityCooldown": "90 85 80",
+      "AbilityManaCost": "250",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "525"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "damage_reduction": "100"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "damage_amplification": "0"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_attack_speed": "65"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "4.5 5 5.5",
+          "LinkedSpecialBonus": "special_bonus_unique_winter_wyvern_3"
+        }
+      }
+    }
+  },
+  "component_texts": {
+    "visage_summon_familiars": {
+      "dota_tooltip_ability_visage_summon_familiars_description": "Conjures two blind Familiars to fight for Visage.  Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing.  While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health.  Familiars grant high bounty when killed.",
+      "dota_tooltip_ability_visage_summon_familiars_note0": "Casting Summon Familiars will replace any existing Familiars.",
+      "dota_tooltip_ability_visage_summon_familiars_note1": "Familiars within range of Visage will receive bonuses from Gravekeeper's Cloak and Grave Chill.",
+      "dota_tooltip_ability_visage_summon_familiars_stone_form_description": "After a short delay, the Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area.  The Familiar becomes invulnerable, and will regain its health very rapidly.  After %stone_duration% seconds, the Familiar will automatically leave Stone Form."
+    },
+    "visage_stone_form_self_cast": {
+      "dota_tooltip_ability_visage_stone_form_self_cast_description": "After a short delay, the nearest Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area.  The Familiar becomes invulnerable, and will regain its health very rapidly.  After %stone_duration% seconds, the Familiar will automatically leave Stone Form.",
+      "dota_tooltip_ability_visage_stone_form_self_cast_note0": "While Stone Form is not dispellable, the stun can be removed by strong dispells."
+    },
+    "visage_summon_familiars_stone_form": {
+      "dota_tooltip_ability_visage_summon_familiars_stone_form_description": "After a short delay, the Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area.  The Familiar becomes invulnerable, and will regain its health very rapidly.  After %stone_duration% seconds, the Familiar will automatically leave Stone Form."
+    },
+    "visage_gravekeepers_cloak": {
+      "dota_tooltip_ability_visage_gravekeepers_cloak_description": "Visage generates a layered barrier that protects him from damage.  If he receives damage from a player, one layer is removed, and takes time to recover.",
+      "dota_tooltip_ability_visage_gravekeepers_cloak_shard_description": "Grants Visage the ability to cast Stone Form. Restores up to 35% of your health. Cooldown: 60. Manacost: 125.",
+      "dota_tooltip_ability_visage_gravekeepers_cloak_note0": "Each time Visage receives damage greater than the Minimum Damage that was not self-inflicted and was from a player owned source, a layer is removed.",
+      "dota_tooltip_ability_visage_gravekeepers_cloak_note1": "Familiars within %radius% range of Visage will receive the current damage reduction from Gravekeeper's Cloak."
+    },
+    "visage_grave_chill": {
+      "dota_tooltip_ability_visage_grave_chill_description": "Visage drains the movement and attack speed of the targeted unit, gaining it for itself and nearby familiars.",
+      "dota_tooltip_ability_visage_grave_chill_note0": "The two buffs can be removed separately by purge.",
+      "dota_tooltip_ability_visage_grave_chill_note1": "The speed gained is independent of the speed lost on the target.",
+      "dota_tooltip_ability_visage_grave_chill_note2": "Familiars within %radius% range of Visage will also receive bonuses from Grave Chill."
+    },
+    "axe_berserkers_call": {
+      "dota_tooltip_ability_axe_berserkers_call_description": "Axe taunts nearby enemy units, forcing them to attack him, while he gains bonus armor during the duration.",
+      "dota_tooltip_ability_axe_berserkers_call_scepter_description": "Berserker's Call applies Battle Hunger to affected units. Battle Hunger also reduces enemy armor by 7 and grants Axe 7 armor per affected target. \\n\\nReduces Berserker's Call cooldown by 3.",
+      "dota_tooltip_ability_axe_berserkers_call_abilitydraft_note": "Must draft Battle Hunger for Scepter upgrade to work."
+    },
+    "winter_wyvern_winters_curse": {
+      "dota_tooltip_ability_winter_wyvern_winters_curse_description": "Winter Wyvern freezes an enemy in place while striking those nearby with a maddening curse which causes them to attack their frozen ally with increased attack speed. The frozen ally and those cursed to attack their ally are immune to all damage from their enemies with the exception of Winter Wyvern or her controlled units.",
+      "dota_tooltip_ability_winter_wyvern_winters_curse_note0": "If the target dies to its allies, Winter Wyvern will receive credit for the kill.",
+      "dota_tooltip_ability_winter_wyvern_winters_curse_note1": "Will only pierce the spell immunity of the primary target, not the target's surrounding allies."
+    },
+    "item_force_staff": {
+      "dota_tooltip_ability_item_force_staff_description": "<h1>Active: Force</h1>Pushes any target unit %push_length% units in the direction it is facing.<br><br>Range: %abilitycastrange%",
+      "dota_tooltip_ability_item_force_staff_note0": "Self-cast will cause you to use Force on yourself.",
+      "dota_tooltip_ability_item_force_staff_note1": "Force Staff doesn't interrupt the target's actions.",
+      "dota_tooltip_ability_item_force_staff_note2": "Will not work on a unit inside Chronosphere, Duel, or Black Hole."
+    }
+  },
+  "selected_item_fields": {
+    "item_force_staff": {
+      "ID": "102",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CUSTOM",
+      "AbilityCastRange": "550",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "23.0",
+      "AbilityManaCost": "100",
+      "ItemCost": "2200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_intellect": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_health": "150"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "push_length": "600"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "enemy_cast_range": "850"
+        }
+      }
+    }
+  },
+  "models": {
+    "free_bird_outer_ring": {
+      "type": "I：普通保护分工的边界模型，不新增进阶设计",
+      "C": [
+        0,
+        0
+      ],
+      "V": [
+        200,
+        0
+      ],
+      "A": [
+        330,
+        0
+      ],
+      "B": [
+        -330,
+        0
+      ],
+      "call_radius": 300,
+      "stone_radius": 350,
+      "safe_radial_band": [
+        300,
+        350
+      ],
+      "band_width": 50,
+      "call_duration_l4": 3.2,
+      "human_input_assumed": 0.1,
+      "stone_delay": 0.55,
+      "land_time_assumed": 0.65,
+      "stone_duration": 6,
+      "bird_cooldown": 14,
+      "summon_mana": 150,
+      "summon_cooldown_l1": 130,
+      "C_late_counter": [
+        -40,
+        0
+      ],
+      "miss_distance": 370,
+      "curse_radius_comparison": 525,
+      "H": [
+        "鸟在吼实际施加前已站圈外且没有其他控制；本体与鸟的状态分开",
+        "直接选鸟命令可用，事件前坐标保持在对应范围",
+        "落地按模型时刻才取得保护，不保证0.55秒前无敌",
+        "晕斧王不自动解除本体既有嘲讽，不保证停掉全部被动/外部伤害",
+        "350/300为无范围天赋/装备修正分支；边缘与命令顺序未运行核验"
+      ],
+      "counters": [
+        "对方移40使落地超范围",
+        "两鸟也在300内不能默认脱控",
+        "双方新增范围修正改变50窗口",
+        "诅咒圈以主目标为中心，不是飞龙位置；525大于落地350，不能复制同中心几何",
+        "两鸟落地六秒内会失去空中攻击/任务"
+      ],
+      "classification": "基础处理与资源对照；可表达判断/失败，未得到超出常规单位分工的独特增量"
+    }
+  },
+  "existing_design_selection": [
+    {
+      "unit": 7,
+      "task": "先留住A，再按晚出现的C换第二连接",
+      "strong_alternative": "先推后绑",
+      "stop": "A无逃走机会或共同重配前提不成立"
+    },
+    {
+      "unit": 8,
+      "task": "场外引导者在敌宿主壳范围内，己方被控者够不到",
+      "strong_alternative": "可用真空/直接控制引导者",
+      "stop": "被救者撑不到效果兑现或宿主可离开"
+    },
+    {
+      "unit": 10,
+      "task": "晚信息改变二段路线，使新增目标处于途经路径",
+      "strong_alternative": "原路线或直接爆在重要目标",
+      "stop": "没有正常信息或新路线丢失原核心目标"
+    },
+    {
+      "unit": 11,
+      "task": "有限爆炸反馈缩小候选方向后预先拦截",
+      "strong_alternative": "已有视野/粉/稳定控制/预站位",
+      "stop": "反馈不唯一或识别加施法来不及"
+    },
+    {
+      "unit": 16,
+      "task": "返程后新信息仍能改变去留",
+      "strong_alternative": "提前断缆/安全等待",
+      "stop": "消息太晚、有效落点已过或任务已失败"
+    },
+    {
+      "unit": 17,
+      "task": "需保本体同时继续链接，关目标提供合法换位窗",
+      "strong_alternative": "普通眩晕保留攻击资格",
+      "stop": "免疫资格不符、离开链接圆或直接攻击损失更大"
+    }
+  ],
+  "status": {
+    "new_focused_units": 1,
+    "cumulative_focused_units": 18,
+    "new_conditional_designs": 0,
+    "cumulative_interface_conditional_designs": 6,
+    "new_public_specialized_candidates": 0,
+    "cumulative_public_specialized_candidates": 2,
+    "VI1_corrected": true,
+    "new_technique_family_ids": 0,
+    "new_verified_discoveries": 0,
+    "game_test": false,
+    "replay_or_video": false,
+    "new_match_scan": false,
+    "new_prose_adoption": false,
+    "historical_prevalence_verified": false
+  }
+}
