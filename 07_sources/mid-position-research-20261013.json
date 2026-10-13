@@ -1,7 +1,7 @@
 {
   "id": "sources:mid-position-research-20261013",
   "as_of_client": "2026-10-13 America/Los_Angeles",
-  "purpose": "全英雄首筛后的第10—12定向单元：冰魂二段路径、拉席克反馈拦截、昆卡持续效果换中心的强对照；当前判断在总库",
+  "purpose": "全英雄首筛后的第10—14定向单元：二段路径、反馈、持续效果中心与承载者/对象资格；当前判断在总库",
   "version_scope": {
     "target": "7.30e固定起点",
     "commit": "cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529",
@@ -78,7 +78,7 @@
       "sha256": "24563b7d52730c9426972706ad8113554a8fa38fc70763c45e0fffd8af0b377a",
       "acquisition": "复用前轮公开HTTP响应，本轮新读冰魂/拉席克/昆卡相关技能段；相关说明与后期数值分开",
       "claim_type": "Q：原作者可变指南，标题7.41d，非故事期归档",
-      "read_scope": "本轮定点读取Ice Blast、Diabolic Edict与Leshrac段、Kunkka段及相邻说明；没有看媒体或全篇",
+      "read_scope": "本轮定点读取Ice Blast、Diabolic Edict与Leshrac段、Kunkka段及相邻说明；没有看媒体或全篇；随后再读Bane相关段、Spell Steal普通幻象拒绝和泉水报点段",
       "limits": "不搬新魔晶、先天、双船和现行数值，未把与技巧页可能共享的信息当独立验证"
     }
   ],
@@ -91,15 +91,48 @@
       "selected_paraphrase": "回复建议基地发射后传送到战场再释放，争取较大冰球；不证明本轮调整沿途目标整链或2021运行",
       "claim_type": "Q",
       "source_independence": "不认定与公开技巧页独立；不能作为两个独立实验"
+    },
+    {
+      "id": "PS-bane-july",
+      "url": "https://www.reddit.com/r/DotA2/comments/odcz6l",
+      "period": "检索侧2021-07-04及06/07评论，UTC未核",
+      "read_scope": "检索主楼摘要，Web相关评论82—98；没有看媒体或全评论",
+      "claim_type": "Q：玩家自述Bug/测试，不是本项目实测",
+      "use": "借用握分身不能直接继承原版所有行为，旧伤害类型异常不作收益依据"
+    },
+    {
+      "id": "PS-bane-november",
+      "url": "https://www.reddit.com/r/DotA2/comments/r3oa67",
+      "period": "检索侧2021-11-27/28；UTC未核",
+      "read_scope": "主楼媒体未看；Web53—85普通技能集合/借用分身相关回复；不全读",
+      "claim_type": "Q",
+      "use": "复制普通技能集合与当前借用技能集合不同；不靠旧Bug让对手必然失效"
+    },
+    {
+      "id": "PS-unit-records",
+      "url": "https://www.reddit.com/r/DotA2/comments/ssco4d",
+      "period": "2022-02的7.31前原帖时间线；日/创建UTC未核",
+      "read_scope": "相关主楼检索摘要，Web344—377的握修复/普通不能施法幻象及per-unit回复；未看媒体或全121英雄",
+      "claim_type": "Q：TheZett相关回复，修复时间未作官方认证",
+      "use": "不把per-player/per-unit混同，普通不可施法幻象不自动覆盖正在引导者；没有把121英雄查完当本项目成果"
+    },
+    {
+      "id": "PS-rubick-bug-report",
+      "url": "https://github.com/ValveSoftware/Dota2-Gameplay/issues/561",
+      "period": "原始首发与每个条目更新日未核",
+      "read_scope": "Web429—434及相邻Venge条目作为借用分身/对象异常线索；未全读或复现",
+      "claim_type": "Q：原始社区Bug报告，托管在Valve仓库不代表Valve确认",
+      "use": "不以一个分身/技能正常推导全部分身；不支持直接偷祸乱握分身的F结论"
     }
   ],
   "bounded_search": {
     "topics": [
       "昆卡X与滚动/持续效果位置",
       "冰魂释放位置/传送/跳刀",
-      "敕令在放逐中是否继续"
+      "敕令在放逐中是否继续",
+      "祸乱之源本体盖技、施法分身与窃取对象；普通幻象的拒绝反馈"
     ],
-    "result_scope": "只有所列公开页和原帖相关范围进入依据；其他检索返回原帖片段仅作线索。敕令放逐查询主要返回二手同源整理，未取得独立原始主张，未晋升为本轮设计",
+    "result_scope": "只有所列公开页和原帖相关范围进入依据；其他检索返回原帖片段仅作线索。敕令放逐查询主要返回二手同源整理，未取得独立原始主张，未晋升为本轮设计；二手表可偷握分身仅作为排查指针，未作机制证据。新增原始社区回复/报告限定范围；原作者指南的泉水用法作为公开专项Q。",
     "limits": "两次定向补查仍无新增正面证据时转条件模型/普通对照；不证明不存在或全球首创。没有看片、比赛扫描、Replay或游戏测试",
     "access": "Web打开AA技巧页内部错误，公开HTTP取得正文；Valve补丁Web页无正文，公开JSON取得限定条目"
   },
@@ -527,6 +560,201 @@
           "RequiresScepter": "1"
         }
       }
+    },
+    "bane_fiends_grip": {
+      "ID": "5013",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+      "HasScepterUpgrade": "1",
+      "AbilityCastRange": "625",
+      "AbilityCastPoint": "0.2",
+      "AbilityChannelTime": "6.0 6.0 6.0",
+      "AbilityCooldown": "120 110 100",
+      "AbilityManaCost": "200 300 400",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "fiend_grip_tick_interval": "0.5"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "fiend_grip_mana_drain": "5",
+          "LinkedSpecialBonus": "special_bonus_unique_bane_9"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "abilitychanneltime": "",
+          "LinkedSpecialBonus": "special_bonus_unique_bane_3"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "fiend_grip_damage": "80 120 160"
+        }
+      }
+    },
+    "bane_brain_sap": {
+      "ID": "5011",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "HasShardUpgrade": "1",
+      "AbilityCastPoint": "0.2",
+      "AbilityCastRange": "625",
+      "AbilityCooldown": "17 15 13 11",
+      "AbilityManaCost": "100 120 140 160",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "brain_sap_damage": "75 150 225 300",
+          "LinkedSpecialBonus": "special_bonus_unique_bane_2"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "cooldown_scepter": "1.5",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "bane_nightmare": {
+      "ID": "5014",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastRange": "425 500 575 650",
+      "AbilityCastPoint": "0.4",
+      "AbilityCooldown": "24 21 18 15",
+      "AbilityDuration": "4.0 5.0 6.0 7.0",
+      "AbilityManaCost": "165",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "nightmare_invuln_time": "1.0"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "4.0 5.0 6.0 7.0"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "animation_rate": "0.2 0.2 0.2 0.2"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "nightmare_tick_damage": "5 15 25 35"
+        }
+      }
+    },
+    "rubick_spell_steal": {
+      "ID": "5452",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "HasScepterUpgrade": "1",
+      "AbilityCastPoint": "0.1 0.1 0.1 0.1",
+      "AbilityCooldown": "20 15 10",
+      "AbilityManaCost": "25 25 25",
+      "AbilityCastRange": "1000 1000 1000",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "180.0 240.0 300.0"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "projectile_speed": "1200"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "cast_range_scepter": "1400",
+          "RequiresScepter": "1"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "cooldown_scepter": "6 4 2",
+          "RequiresScepter": "1"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "stolen_debuff_amp": "10 20 30"
+        }
+      }
+    },
+    "rubick_arcane_supremacy": {
+      "ID": "7320",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "cast_range": "100 150 200 250"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "spell_amp": "14 18 22 26"
+        }
+      }
+    },
+    "phantom_lancer_doppelwalk": {
+      "ID": "5066",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "AbilityCastRange": "575",
+      "AbilityCastPoint": "0.1",
+      "AbilityCooldown": "25 20 15 10",
+      "AbilityManaCost": "50",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "illusion_1_damage_out_pct": "-100",
+          "CalculateSpellDamageTooltip": "0"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "illusion_1_damage_in_pct": "0",
+          "CalculateSpellDamageTooltip": "0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "illusion_2_damage_out_pct": "-80",
+          "CalculateSpellDamageTooltip": "0"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "illusion_2_damage_in_pct": "500",
+          "CalculateSpellDamageTooltip": "0"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "target_aoe": "325"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "search_radius": "900"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "delay": "1"
+        },
+        "08": {
+          "var_type": "FIELD_FLOAT",
+          "illusion_duration": "8"
+        },
+        "09": {
+          "var_type": "FIELD_FLOAT",
+          "illusion_extended_duration": "2"
+        }
+      }
     }
   },
   "selected_item_fields": {
@@ -603,6 +831,15 @@
         "普通洪流225半径/1.6延迟",
         "友军X8秒/50蓝，返回0.4前摇；后开免疫的返回例外",
         "普通自X补瓶是公开强对照；新双船不前移"
+      ]
+    },
+    "Bane/Rubick": {
+      "type": "F：字段/说明；对象与判定顺序仍H",
+      "reads": [
+        "握625/0.2前摇/6秒引导，神杖45秒冷却减免、两不可控分身、700%承伤、伤害不叠加",
+        "吸脑625/0.2/四级160蓝；不由旧cooldown_scepter字段认证当前升级",
+        "偷取1000，旧神杖1400，25蓝；奥术至尊100/150/200/250距离，不能误用240",
+        "神出鬼没有承受正常伤害的普通幻象，不能凭正常受伤确定真身"
       ]
     }
   },
@@ -777,20 +1014,78 @@
         "移动源中心有依据的H，但普通开风暴/退回尚无足够新任务增量"
       ],
       "fiction_eligibility": "不禁止以后条件设计；本轮只留基础组合/资源对照，不计新进阶"
+    },
+    "bane": {
+      "claim_type": "I：仅本体侧时间；独立引导与可偷分身H",
+      "body_position_assumed": [0, 0],
+      "target_position_assumed": [500, 0],
+      "grip_started": 0,
+      "independent_illusion_channel_by_assumed": 0.1,
+      "body_cancel_assumed": 0.1,
+      "sap_cast_point": 0.2,
+      "body_last_spell_updated_assumed": 0.3,
+      "rubick_distance_assumed": 1250,
+      "rubick_speed_assumed": 350,
+      "base_steal_range": 1000,
+      "base_walk_to_range_model": 0.7142857142857143,
+      "arcane_supremacy_unlearned_in_base_model": true,
+      "supremacy_l4_bonus": 250,
+      "with_supremacy_range": 1250,
+      "with_supremacy_walk_time": 0,
+      "steal_cast_point": 0.1,
+      "scepter_cost": 4200,
+      "grip_l1_mana": 200,
+      "sap_l4_mana": 160,
+      "combined_mana": 360,
+      "decisive_H": [
+        "中止本体前分身已独立接续；本体新的有效施法更新自身记录",
+        "其他实际施法承载者的窃取目标资格不能从普通幻象概括决定"
+      ],
+      "counterexamples": [
+        "拉比克已在普通范围",
+        "四级被动即使没有距离装备也抹去示例窗口",
+        "对方可偷分身/提前发出偷取",
+        "分身被打断或清除"
+      ],
+      "status": "对象资格反证/基础收益；不增加原创条件设计"
+    },
+    "rubick_identity": {
+      "claim_type": "Q：原作者公开专项；旧期完整链H",
+      "all_candidates_minimum_distance_assumed": 5000,
+      "steal_range_base": 1000,
+      "scepter_steal_range": 1400,
+      "supremacy_l4_bonus": 250,
+      "range_without_scepter": 1250,
+      "range_with_scepter": 1650,
+      "minimum_mana_ready": 25,
+      "decisive_H": [
+        "非法目标/无记录判断先于走近到施法范围",
+        "所有候选在本方视野，普通幻象无独立可偷记录，真身刚用过可偷技能",
+        "技能就绪/足够法力，识别拒绝原因，及时取消可能的行走指令，信息仍新鲜"
+      ],
+      "counterexamples": [
+        "先走到范围内再检查则无泉水即时识别",
+        "同一拒绝提示有其他原因",
+        "可施法分身例外",
+        "误点范围内真身会消耗蓝和冷却",
+        "目标换位/幻象消失使报点过期"
+      ],
+      "status": "公开专项候选，不算本轮原创/普及认证；有前提可设计X"
     }
   },
   "status": {
-    "new_focused_units": 3,
-    "cumulative_focused_units": 12,
+    "new_focused_units": 5,
+    "cumulative_focused_units": 14,
     "new_conditional_designs": 2,
     "cumulative_interface_conditional_designs": 4,
-    "base_comparison_only": 1,
+    "base_comparison_only": 2,
     "new_technique_family_ids": 0,
     "new_verified_discoveries": 0,
     "game_test": false,
     "replay_or_video": false,
     "new_match_scan": false,
     "new_prose_adoption": false,
-    "global_novelty_or_historical_prevalence_verified": false
+    "global_novelty_or_historical_prevalence_verified": false,
+    "public_specialized_candidates": 1
   }
 }
