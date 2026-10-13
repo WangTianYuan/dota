@@ -1,0 +1,796 @@
+{
+  "id": "sources:mid-position-research-20261013",
+  "as_of_client": "2026-10-13 America/Los_Angeles",
+  "purpose": "全英雄首筛后的第10—12定向单元：冰魂二段路径、拉席克反馈拦截、昆卡持续效果换中心的强对照；当前判断在总库",
+  "version_scope": {
+    "target": "7.30e固定起点",
+    "commit": "cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529",
+    "limits": "后期Q只启发组件/有限查重，后续规则不前移。普及、人物当时知识、场景资格与现实运行分开"
+  },
+  "raw_sources": [
+    {
+      "id": "PS-abilities",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "bytes": 3099817,
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "acquisition": "复用固定响应，重新读取所选字段/说明并核哈希",
+      "claim_type": "F：配置/说明，不是引擎或赛事客户端认证"
+    },
+    {
+      "id": "PS-items",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "bytes": 621009,
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "acquisition": "复用固定响应，重新读取所选字段/说明并核哈希",
+      "claim_type": "F：配置/说明，不是引擎或赛事客户端认证"
+    },
+    {
+      "id": "PS-localization",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "bytes": 1235305,
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "acquisition": "复用固定响应，重新读取所选字段/说明并核哈希",
+      "claim_type": "F：配置/说明，不是引擎或赛事客户端认证"
+    }
+  ],
+  "public_saved_sources": [
+    {
+      "name": "aa-tips.html",
+      "url": "https://howdoiplay.com/tips/ancient_apparition.html",
+      "bytes": 4510,
+      "sha256": "f1c7d3896168d892ec1692ebb017f3af397e518d2280ed988ecc012f51859c27",
+      "retrieved_at": "2026-10-13T08:56:26.498847+00:00",
+      "read_scope": "实际读取本页Tips及Counters；采用沿途冰冻与仅途经也可封跳的公开组件，生命重设例外保留，不迁移页面中后期物品",
+      "claim_type": "Q：公开技巧页；维护/首发日不明，不称独立实测或2021归档"
+    },
+    {
+      "name": "leshrac-tips.html",
+      "url": "https://howdoiplay.com/tips/leshrac.html",
+      "bytes": 6155,
+      "sha256": "5a6fd392502796a16f2ad5ed7c1bdfa0299533bc34382de5ccb05049f8158ef9",
+      "retrieved_at": "2026-10-13T08:56:27.058303+00:00",
+      "read_scope": "实际读取本页Tips及Counters；采用爆炸反馈/尸体位置持续/隐身及雾内目标的公开线索。新神杖和现行免疫措辞不作7.30e依据",
+      "claim_type": "Q：公开技巧页；维护/首发日不明，不称独立实测或2021归档"
+    },
+    {
+      "name": "patch-7.36.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.36&language=english",
+      "bytes": 273900,
+      "sha256": "553f3b825b4989aa25263a91796822ec849715eb8792eaeb13f2e662c3780845",
+      "retrieved_at": "2026-10-13T08:56:28.228401+00:00",
+      "read_scope": "仅解析并读取hero_id=52完整条目：半径改为450/500等后期变化；不当故事期规则或全补丁研究",
+      "claim_type": "F：Valve限定补丁条目"
+    },
+    {
+      "name": "kunkka-tips.html",
+      "url": "https://howdoiplay.com/tips/kunkka.html",
+      "bytes": 8812,
+      "sha256": "729b6d27d9f0d514a5b433aac4f7498e8ec3f9028194ad3af9895bf8c236a597",
+      "retrieved_at": "2026-10-13T08:57:23.075886+00:00",
+      "read_scope": "实际读取本页Tips及Counters；只用于已公开自X补瓶/返回与时期例外区分。不搬当前双船、先天或当前免疫许可",
+      "claim_type": "Q：公开技巧页；维护/首发日不明，不称独立实测或2021归档"
+    },
+    {
+      "id": "PS-rubick-guide",
+      "name": "rubickopedia.html",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2982701048&l=english",
+      "bytes": 1490178,
+      "sha256": "24563b7d52730c9426972706ad8113554a8fa38fc70763c45e0fffd8af0b377a",
+      "acquisition": "复用前轮公开HTTP响应，本轮新读冰魂/拉席克/昆卡相关技能段；相关说明与后期数值分开",
+      "claim_type": "Q：原作者可变指南，标题7.41d，非故事期归档",
+      "read_scope": "本轮定点读取Ice Blast、Diabolic Edict与Leshrac段、Kunkka段及相邻说明；没有看媒体或全篇",
+      "limits": "不搬新魔晶、先天、双船和现行数值，未把与技巧页可能共享的信息当独立验证"
+    }
+  ],
+  "primary_q_reads": [
+    {
+      "id": "PS-aa-reposition",
+      "url": "https://www.reddit.com/r/TrueDoTA2/comments/1jp8ymi",
+      "published_at_search_label": "2025-04-01，检索返回的日级标签；未取得原始创建UTC时间，页面正文只显示相对时间",
+      "read_scope": "Web打开后读取主楼及第一组建议、先从基地发射/TP后释放和守高地的相邻回复；未看附带视频或全评论",
+      "selected_paraphrase": "回复建议基地发射后传送到战场再释放，争取较大冰球；不证明本轮调整沿途目标整链或2021运行",
+      "claim_type": "Q",
+      "source_independence": "不认定与公开技巧页独立；不能作为两个独立实验"
+    }
+  ],
+  "bounded_search": {
+    "topics": [
+      "昆卡X与滚动/持续效果位置",
+      "冰魂释放位置/传送/跳刀",
+      "敕令在放逐中是否继续"
+    ],
+    "result_scope": "只有所列公开页和原帖相关范围进入依据；其他检索返回原帖片段仅作线索。敕令放逐查询主要返回二手同源整理，未取得独立原始主张，未晋升为本轮设计",
+    "limits": "两次定向补查仍无新增正面证据时转条件模型/普通对照；不证明不存在或全球首创。没有看片、比赛扫描、Replay或游戏测试",
+    "access": "Web打开AA技巧页内部错误，公开HTTP取得正文；Valve补丁Web页无正文，公开JSON取得限定条目"
+  },
+  "component_fields": {
+    "ancient_apparition_ice_blast": {
+      "ID": "5348",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastPoint": "0.01 0.01 0.01",
+      "AbilityCastRange": "0",
+      "AbilityCooldown": "60.0 50.0 40.0",
+      "AbilityManaCost": "175",
+      "AbilityDamage": "250 325 400",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius_min": "275"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "radius_grow": "50.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "radius_max": "1000"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "path_radius": "275"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "frostbite_duration": "10 11 12"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "dot_damage": "12.5 20.0 32.0"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "speed": "1500 1500 1500 1500"
+        },
+        "08": {
+          "var_type": "FIELD_FLOAT",
+          "kill_pct": "12 13 14",
+          "LinkedSpecialBonus": "special_bonus_unique_ancient_apparition_5"
+        },
+        "09": {
+          "var_type": "FIELD_INTEGER",
+          "target_sight_radius": "500 500 500"
+        }
+      }
+    },
+    "ancient_apparition_ice_blast_release": {
+      "ID": "5349",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityCastPoint": "0 0 0",
+      "AbilityCooldown": "1.0 1.0 1.0"
+    },
+    "leshrac_diabolic_edict": {
+      "ID": "5242",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastPoint": "0.5",
+      "AbilityCooldown": "22 22 22 22",
+      "AbilityManaCost": "95 120 135 155",
+      "AbilityDamage": "7 14 21 28",
+      "AbilityDuration": "10",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "num_explosions": "40",
+          "LinkedSpecialBonus": "special_bonus_unique_leshrac_1"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "500"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "tower_bonus": "0"
+        }
+      }
+    },
+    "leshrac_split_earth": {
+      "ID": "5241",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+      "HasShardUpgrade": "1",
+      "AbilityCastRange": "650",
+      "AbilityCastPoint": "0.7 0.7 0.7 0.7",
+      "AbilityCooldown": "9 9 9 9",
+      "AbilityManaCost": "80 100 120 140",
+      "AbilityDamage": "120 180 240 300",
+      "AbilityDuration": "2",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "delay": "0.35"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "150 175 200 225",
+          "LinkedSpecialBonus": "special_bonus_unique_leshrac_5"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "2"
+        }
+      }
+    },
+    "leshrac_pulse_nova": {
+      "ID": "5244",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastPoint": "0 0 0 0",
+      "AbilityCooldown": "1.0 1.0 1.0 1.0",
+      "AbilityManaCost": "70",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "mana_cost_per_second": "20 40 60"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "525",
+          "LinkedSpecialBonus": "special_bonus_unique_leshrac_4"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "100 150 200",
+          "LinkedSpecialBonus": "special_bonus_unique_leshrac_3"
+        }
+      }
+    },
+    "kunkka_torrent_storm": {
+      "ID": "319",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "HasScepterUpgrade": "1",
+      "AbilityCastPoint": "0.4",
+      "AbilityCooldown": "70",
+      "AbilityManaCost": "250",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "torrent_interval": "0.25",
+          "RequiresScepter": "1"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "torrent_duration": "5.0",
+          "RequiresScepter": "1"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "torrent_min_distance": "300",
+          "RequiresScepter": "1"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "torrent_max_distance": "1100",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "kunkka_torrent": {
+      "ID": "5031",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "HasScepterUpgrade": "1",
+      "AbilityCastRange": "1300",
+      "AbilityCastPoint": "0.4",
+      "AbilityCooldown": "16 14 12 10",
+      "AbilityManaCost": "90 100 110 120",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "225",
+          "LinkedSpecialBonus": "special_bonus_unique_kunkka"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "movespeed_bonus": "-25 -30 -35 -40"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "slow_duration": "1 2 3 4"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "stun_duration": "1.6",
+          "LinkedSpecialBonus": "special_bonus_unique_kunkka_7"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "delay": "1.6 1.6 1.6 1.6"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "torrent_damage": "75 150 225 300",
+          "LinkedSpecialBonus": "special_bonus_unique_kunkka_2"
+        }
+      }
+    },
+    "kunkka_x_marks_the_spot": {
+      "ID": "5033",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastRange": "400 600 800 1000",
+      "AbilityCastPoint": "0.4 0.4 0.4 0.4",
+      "AbilityCooldown": "24 20 16 12",
+      "AbilityManaCost": "50",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "4.0"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "allied_duration": "8.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "fow_range": "400"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "fow_duration": "5.94"
+        }
+      }
+    },
+    "kunkka_return": {
+      "ID": "5034",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "AbilityCastPoint": "0.4 0.4 0.4 0.4",
+      "AbilityCooldown": "1.0",
+      "AbilityManaCost": "0"
+    },
+    "kunkka_ghostship": {
+      "ID": "5035",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastRange": "1000",
+      "AbilityCastPoint": "0.3",
+      "AbilityCooldown": "80 70 60",
+      "AbilityDamage": "400 500 600",
+      "AbilityManaCost": "125 175 225",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "tooltip_delay": "3.1"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "ghostship_distance": "2000"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "ghostship_width": "425 425 425"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "movespeed_bonus": "12"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "buff_duration": "10"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "stun_duration": "1.4 1.4 1.4"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "ghostship_speed": "650"
+        },
+        "08": {
+          "var_type": "FIELD_FLOAT",
+          "ghostship_absorb": "40"
+        }
+      }
+    },
+    "death_prophet_exorcism": {
+      "ID": "5093",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "HasScepterUpgrade": "1",
+      "AbilityCastPoint": "0.5 0.5 0.5",
+      "AbilityCooldown": "150.0",
+      "AbilityDuration": "35",
+      "AbilityManaCost": "250 350 450",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "700 700 700"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "spirits": "8 16 24",
+          "LinkedSpecialBonus": "special_bonus_unique_death_prophet"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "spirit_speed": "525"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "max_distance": "2000 2000 2000"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "give_up_distance": "1200 1200 1200"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "min_damage": "59"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "max_damage": "64"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "heal_percent": "25 25 25"
+        },
+        "09": {
+          "var_type": "FIELD_INTEGER",
+          "average_damage": "61"
+        },
+        "10": {
+          "var_type": "FIELD_FLOAT",
+          "ghost_spawn_rate": "0.35"
+        },
+        "11": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_movespeed_slow": "100",
+          "RequiresScepter": "1"
+        },
+        "12": {
+          "var_type": "FIELD_FLOAT",
+          "scepter_movespeed_debuff_duration": "0.3",
+          "RequiresScepter": "1"
+        },
+        "13": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_spirit_life_duration": "20",
+          "RequiresScepter": "1"
+        },
+        "14": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_spirit_bonus_damage": "50",
+          "RequiresScepter": "1",
+          "CalculateSpellDamageTooltip": "0"
+        },
+        "15": {
+          "var_type": "FIELD_INTEGER",
+          "movement_bonus": "16 18 20"
+        }
+      }
+    },
+    "pugna_life_drain": {
+      "ID": "5189",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "HasShardUpgrade": "1",
+      "HasScepterUpgrade": "1",
+      "AbilityCastRange": "700",
+      "AbilityCastPoint": "0.2 0.2 0.2",
+      "AbilityChannelTime": "10.0",
+      "AbilityCooldown": "7",
+      "AbilityManaCost": "125 175 225",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "health_drain": "150 225 300",
+          "CalculateSpellDamageTooltip": "1"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_health_drain": "250 325 400",
+          "RequiresScepter": "1"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "tick_rate": "0.25 0.25 0.25"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "drain_buffer": "200"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_cooldown": "0",
+          "RequiresScepter": "1"
+        }
+      }
+    }
+  },
+  "selected_item_fields": {
+    "item_blink": {
+      "ID": "1",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "AbilityCastRange": "0",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "15.0",
+      "AbilityManaCost": "0",
+      "ItemCost": "2250",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "blink_range": "1200"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "blink_damage_cooldown": "3.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "blink_range_clamp": "960"
+        }
+      }
+    },
+    "item_ultimate_scepter": {
+      "ID": "108",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
+      "AbilityCastRange": "600",
+      "ItemCost": "4200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_all_stats": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_health": "175"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_mana": "175"
+        }
+      }
+    }
+  },
+  "component_claims": {
+    "AA": {
+      "type": "F：旧字段/说明",
+      "reads": [
+        "示踪速度1500；释放时标记示踪位置",
+        "半径275+50*示踪飞行时间，最多1000；沿途范围275",
+        "一级状态10秒；175蓝；生命重设例外",
+        "后续冰球速度/起飞点不由speed字段认证"
+      ]
+    },
+    "Leshrac": {
+      "type": "F：旧字段/说明；粒子提示另为Q",
+      "reads": [
+        "敕令10秒/40爆炸/500范围，伤隐身，死亡后继续",
+        "敕令AbilityDamage7/14/21/28、纯粹字段与说明实际存在，但没有据此发布实机伤害预算",
+        "撕裂范围650、前摇0.7+延迟0.35，四级半径225，不误用现行240",
+        "四级敕令155蓝，四级撕裂140蓝；新星/驱使恶灵寿命不从敕令推广"
+      ]
+    },
+    "Kunkka": {
+      "type": "F：旧字段/说明；移动取样/独立产物为H",
+      "reads": [
+        "风暴5秒/0.25秒事件/300—1100落点字段/250蓝/0.4前摇",
+        "普通洪流225半径/1.6延迟",
+        "友军X8秒/50蓝，返回0.4前摇；后开免疫的返回例外",
+        "普通自X补瓶是公开强对照；新双船不前移"
+      ]
+    }
+  },
+  "models": {
+    "aa": {
+      "claim_type": "I：几何/条件时间；完整链H",
+      "O": [
+        0,
+        0
+      ],
+      "P": [
+        0,
+        750
+      ],
+      "A": [
+        4500,
+        0
+      ],
+      "B": [
+        1500,
+        500
+      ],
+      "tracer_speed_field": 1500,
+      "release_tracer_age": 3,
+      "explosion_radius": 425,
+      "path_radius": 275,
+      "late_information_time": 2.8,
+      "remaining_adjustment_window_assumed": 0.2,
+      "blink_distance": 750,
+      "B_fraction_along_new_path": 0.3333333333333333,
+      "B_distance_from_old_path": 500,
+      "B_distance_from_new_path": 0,
+      "B_distance_from_endpoint": 3041.38126514911,
+      "final_flight_duration_assumed": 2,
+      "final_flight_uniform_assumed": true,
+      "B_contact_model": 3.6666666666666665,
+      "A_contact_model": 5,
+      "blink_cost": 2250,
+      "mana": 175,
+      "decisive_H": [
+        "后续冰球从释放时本体起飞、位移不取消可用释放、该段按直线传播",
+        "到达时A/B还在各自范围内，任务未过期；0.2秒输入链实际合格且跳刀可用"
+      ],
+      "strong_alternatives": [
+        "提前站P再放同样达成",
+        "时间足够走过去不用跳刀",
+        "伙伴禁疗/只处理A或B"
+      ],
+      "counterexamples": [
+        "起点仍为O则B不在路径",
+        "B任务期限3.2早于模型3.667",
+        "A离开/免疫/生命重设例外",
+        "跳刀刚受伤封禁或输入超过0.2"
+      ],
+      "mid_attribution": "资源提前仅可能有增量；不证明中路优于同装辅助",
+      "fiction_eligibility": "符合组件与共同H时可带条件设计；不是具体场景采用"
+    },
+    "leshrac": {
+      "claim_type": "I：条件预判；旧期反馈识别完整链H",
+      "L": [
+        0,
+        0
+      ],
+      "E": [
+        380,
+        0
+      ],
+      "C": [
+        600,
+        0
+      ],
+      "recognition_input_delay_assumed": 0.1,
+      "cast_point": 0.7,
+      "effect_delay": 0.35,
+      "impact_time": 1.15,
+      "target_speed_assumed": 350,
+      "target_impact_x": 782.5,
+      "radius_l4": 225,
+      "distance_from_old_point": 402.5,
+      "distance_from_new_point": 182.5,
+      "remaining_radius_margin": 42.5,
+      "faster_counter_speed": 450,
+      "faster_impact_x": 897.5,
+      "faster_distance_from_C": 297.5,
+      "edict_l4_mana": 155,
+      "split_l4_mana": 140,
+      "combined_mana": 295,
+      "skill_points_with_ult": 9,
+      "decisive_H": [
+        "反馈真实可见且确属所追目标，不与其他合格单位混淆",
+        "0.1秒识别/输入与当前朝向合格，目标按本分支继续逃；不是已核成功率"
+      ],
+      "strong_alternatives": [
+        "有粉/哨岗和正常视野就直接处理",
+        "唯一路口预先封堵可无需反馈",
+        "伙伴报点或已有控制"
+      ],
+      "counterexamples": [
+        "450速度越过作用区",
+        "回头/侧向/位移",
+        "反馈来自别的单位",
+        "伤害未必持续封跳"
+      ],
+      "mid_attribution": "独享技能点可较早兼顾，但失去其他技能点及站场机会；不是专属中单",
+      "fiction_eligibility": "可带条件设计；公开位置反馈组件不作首次发现"
+    },
+    "kunkka": {
+      "claim_type": "I：显式事件表；动态取样和产物寿命H",
+      "A": [
+        0,
+        0
+      ],
+      "B": [
+        1200,
+        0
+      ],
+      "F": [
+        -900,
+        0
+      ],
+      "G": [
+        2100,
+        0
+      ],
+      "X_cast_start_model": -0.8,
+      "X_effect_model": -0.4,
+      "blink_model": -0.4,
+      "storm_cast_start_model": -0.4,
+      "storm_effect_model": 0,
+      "return_cast_start_model": 1.6,
+      "return_effect_model": 2,
+      "X_expire_model": 7.6,
+      "storm_duration": 5,
+      "interval": 0.25,
+      "placement_min_field": 300,
+      "placement_max_field": 1100,
+      "torrent_radius": 225,
+      "torrent_delay": 1.6,
+      "event_table_assumed": [
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.25,
+        1.5,
+        1.75,
+        2.0,
+        2.25,
+        2.5,
+        2.75,
+        3.0,
+        3.25,
+        3.5,
+        3.75,
+        4.0,
+        4.25,
+        4.5,
+        4.75,
+        5.0
+      ],
+      "switch_boundary_old_zone_assumed": true,
+      "old_zone_events_model": 8,
+      "new_zone_events_model": 12,
+      "last_old_event_due_model": 3.6,
+      "target_separation": 3000,
+      "single_center_diameter_model": 2650,
+      "item_cost": 6450,
+      "mana": 300,
+      "limits": [
+        "随机分布未知，合法距离不等于命中",
+        "生成事件与落地时间不同，旧产物能否独立继续另核",
+        "移动源中心有依据的H，但普通开风暴/退回尚无足够新任务增量"
+      ],
+      "fiction_eligibility": "不禁止以后条件设计；本轮只留基础组合/资源对照，不计新进阶"
+    }
+  },
+  "status": {
+    "new_focused_units": 3,
+    "cumulative_focused_units": 12,
+    "new_conditional_designs": 2,
+    "cumulative_interface_conditional_designs": 4,
+    "base_comparison_only": 1,
+    "new_technique_family_ids": 0,
+    "new_verified_discoveries": 0,
+    "game_test": false,
+    "replay_or_video": false,
+    "new_match_scan": false,
+    "new_prose_adoption": false,
+    "global_novelty_or_historical_prevalence_verified": false
+  }
+}
