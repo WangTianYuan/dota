@@ -1,0 +1,63 @@
+{
+  "id": "sources:mid-ta-proxy-20261012",
+  "as_of_local": "2026-10-12 America/Los_Angeles",
+  "scope": "原TA4低甲弹板的命中数、强对照和团队减甲分配边界；7.30e背景的条件推导，不新增用途族或实机认证",
+  "generation": "深化已知原则而非重新发现；从目标伤害、有限攻击窗口和队友机会成本推导使用/放弃条件",
+  "claim_types": {"F": "公告及固定镜像的字段/文字", "Q": "原作者公开教学说法", "I": "有明确前提的数学比较与反例", "H": "完整运行交互、实际净收益和当期采用未知"},
+  "official_reads": [
+    {
+      "id": "T01",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.27&language=english",
+      "retrieved_at_utc": "2026-10-13T04:06:55.922601+00:00",
+      "status": 200,
+      "bytes": 27798,
+      "sha256": "5bf88ab3380f727b54739eb5b1a409ab8113d02d73d27f3ab3f4a4e62a17e1c9",
+      "read_scope": "只核general_notes[0].generic[28].note的护甲公式及根结构；非全补丁审读",
+      "formula_note": "Armor formula is now ( Armor * 0.06 / ( 1 + Armor * 0.06 )",
+      "use": "条件模型仅用非负有效护甲M(A)=1/(1+0.06A)；官方原句缺闭括号，没有负甲绝对值标记，未补写成直读事实",
+      "limits": "公告不认证客户端实现或后续每版均未改；没有用7.20的旧系数解释2021模型"
+    },
+    {
+      "id": "T02",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.30&language=english",
+      "retrieved_at_utc": "2026-10-13T04:06:56.559372+00:00",
+      "status": 200,
+      "bytes": 82295,
+      "sha256": "19e8b45247517db57af70f85510c7dd6355b7a93fde92a85d469e5b9ac59b2bd",
+      "read_scope": "hero_id46的TA条目，重点ability_id5196；非全补丁",
+      "retained_facts": {"spill_range_multiplier_change": [2, 1.5], "successive_enemy_spill_reduction_percent": 5},
+      "limits": "公告有after the first one表述；没有仅据此认证引擎目标排序、第一后排系数或线性/连乘实现；示例S=0.95仍为假设"
+    }
+  ],
+  "cached_rule_reads": [
+    {"id": "T03", "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt", "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb", "bytes": 3099817, "acquisition": "复用此前原响应，未重新联网取技能文件", "read_scope": "完整templar_assassin_psi_blades及templar_assassin_meld两个块", "retained_fields": {"psi_damage_type": "DAMAGE_TYPE_PURE", "spill_range": 1.5, "spill_width": 90, "spill_percent": 100, "spill_penalty": 5, "meld_bonus_damage": [80, 120, 160, 200], "meld_armor_change": [-5, -6, -7, -8], "meld_duration": 12, "meld_damage_type": "DAMAGE_TYPE_PHYSICAL"}},
+    {"id": "T04", "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt", "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8", "bytes": 621009, "acquisition": "复用此前原响应，未重新联网取物品文件", "read_scope": "完整item_desolator块", "retained_fields": {"bonus_damage": 55, "armor_change": -6, "duration": 7, "cost": 3500}, "limits": "不据字段认定本次攻击先施加还是后施加减甲，模型用已经存在的效果"},
+    {"id": "T05", "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt", "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22", "bytes": 1235305, "acquisition": "复用此前原响应", "read_scope": "上述三者说明/注释；排除名称相近的Stygian Desolator条目", "retained_facts_zh": ["灵能之刃伤害主目标后方单位，说明有逐目标衰减与攻击效果只作用主目标的注释", "隐匿攻击有额外物理伤害与主目标减甲", "普通黯灭的攻击减甲说明"], "limits": "镜像5077元数据按既有来源复用，非新鲜赛事客户端认证；说明不是完整结算代码"}
+  ],
+  "firsthand_text": {
+    "id": "T06",
+    "url": "https://www.reddit.com/r/learndota2/comments/l78kty/",
+    "author": "monalisa_gamejitsu；正文署名教练Hoong",
+    "published_date_locator": "搜索返回标2021-01-28；非比赛发生时间，网页现文可能有编辑",
+    "retrieved_on_local": "2026-10-12 America/Los_Angeles",
+    "read_scope": "正文21—44行主目标护甲、直接攻击与站位；48—55行构筑/隐匿；83行署名；未看图片或关联录像",
+    "claim_type": "Q",
+    "retained_claims_zh": ["按主目标受伤害形成溅射", "低甲主目标可能比直接打高甲目标输出高", "不建议为对齐走到会被惩罚的位置，可先直接攻击"],
+    "limits": "不采always等绝对措辞；自述分数未认证，不认证普及、稳定执行或这段文字在首发日已存在；不迁移年初装备/天赋数值"
+  },
+  "conditional_model": {
+    "variables": {"D": "护甲前普通攻击伤害，含已存在装备/折光，不含另列的隐匿附加伤害；两路线不同则逐次分别取值", "A": "本次有效护甲，计入已存在减甲，仅A>=0", "M": "1/(1+0.06A)，7.27公告公式的条件运用", "S": "目标实际溅射比例，包含顺序和适用修正，不由本轮认证", "n": "同一窗口实际有效命中次数"},
+    "comparison": "n_spill*D*M(A_proxy)*S > n_direct*D*M(A_hero)",
+    "inputs_are_hypothetical": true,
+    "inputs": {"D": 200, "S": 0.95, "proxy_armor": 0, "hero_armor": 14},
+    "outputs": {"spill_one_hit": 190, "direct_one_hit": 108.69565217391306, "minimum_spill_to_direct_hit_ratio_exclusive": 0.5720823798627003, "one_spill_vs_two_direct": [190, 217.39130434782612], "two_spill_vs_three_direct": [380, 326.0869565217392], "direct_at_armor_2": 178.57142857142856, "direct_at_armor_0": 200},
+    "strong_meld_counterfactual": {"additional_damage_assumed_from_level4_field": 200, "effective_armor_for_both_physical_components_assumed_between": [6, 14], "direct_first_hit_damage_range": [217.39130434782612, 294.11764705882354], "limits": "条件范围不是已确认运行顺序，不推隐匿附加伤害参与溅射，也不赋予后排减甲"},
+    "team_allocation": {"comparison_scope": "TA仍保持同一普通溅射、同一命中数；只隔离一个合法等成本单体减甲放在哪，未绑定实际队友技能", "armor_reduction_assumed": 6, "proxy_before_after": [6, 0], "hero_before_after": [20, 14], "extra_ta_spill_per_hit": 50.29411764705881, "extra_ally_damage_per_raw_physical_damage": 0.08893280632411077, "ally_raw_damage_threshold": 565.5294117647052, "ally_extra_at_500_and_600": [44.466403162055386, 53.35968379446646], "limits": "不是通用阈值或具体合法组合证明；次数、技能成本、目标可达性或队友伤害类型不同需重算；直接减核心还可能改善TA直打"},
+    "required_conditions": ["双方路线合法可达且目标可被伤害", "原始伤害及已存在减甲相同或明确分别计算", "弹板生命足够且攻击没有闪避/特殊抵挡", "没有反补、幻象、建筑或致死过量伤害混入", "S和实际命中数能够被后续证据确定"],
+    "unresolved": ["7.30e实际引擎伤害转递与衰减顺序", "隐匿/减甲施加时序及与溅射的交互", "实际站位容错与稳定命中", "目标伤害怎样兑现成竞技任务", "当期采用和中路增量"]
+  },
+  "adversarial_review": {"mode": "主任务定向反证；没有新独立或异构审查", "results": ["原甲不能代替有效甲", "单刀优势不代替攻击次数", "强对照需保留直接隐匿", "弹板减甲不等于核心得到减甲或全队最优", "低甲兵死亡和追求对齐导致暴露会缩小用途", "公开原则不认证普及，条件推导不认证可操作"], "outcome": "保留TA4并收窄其使用条件，非新增可用技巧认证"},
+  "execution": {"new_match_scan": false, "match_api_refetch": false, "video_watched": false, "replay_parsed": false, "game_test": false, "success_rate_measured": false, "new_candidate_family": false, "new_verified_discovery": false, "novel_adoption": false, "new_delegation": false, "manual_docx_changed": false},
+  "access_limits": ["Web读取7.27/7.30现代补丁页仅页面壳；旧727 URL不可访问；7.27数据接口Web不可访问，但本地公开HTTP取得200原JSON。", "7.20官方旧页面取得，只用于避免误沿旧系数，未作为2021模型依据。", "广义护甲搜索含二手结果及无关同词页面，没有据其认证2021规则；主模型只用官方公告、固定字段与原作者说法。"],
+  "validation": {"state": "原响应/公式反例/文件结构已核；Git发布结果另以远端状态为准", "raw_response_hashes_and_bytes": 5, "selected_rule_blocks": 3, "conditional_counterexamples_checked": 4, "markdown_files": 5, "local_links": 195, "source_markdown_recursive": 24, "source_json_recursive": 8, "old_v1_1_hash_unchanged": true, "initial_check_note": "临时计算校核先对浮点结果使用精确相等而失败，改为1e-12容差后重跑；未改推导或采用失败结果", "engine_certification": false}
+}
