@@ -1,0 +1,4925 @@
+{
+  "id": "sources:mid-all-hero-screen-20261013",
+  "as_of_client": "2026-10-13 America/Los_Angeles",
+  "purpose": "2021—2023全英雄首筛的名单/组件依据、读取范围及定向条件推演；当前判断唯一维护于technique-catalog",
+  "baseline": {
+    "patch_scope": "7.30e快照起点，后续版本按具体机制迁移",
+    "commit": "cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529",
+    "snapshot_date_utc": "2021-11-01T23:49:31Z",
+    "enabled_hero_count": 122,
+    "disabled_target_dummy_excluded": true,
+    "late_hero_count": 2,
+    "union_count": 124,
+    "old_entrances": 68,
+    "new_entrances": 56,
+    "limits": "镜像字段/说明是F，不是运行实现或特定赛事客户端；7.30e快照覆盖玛西，不能前移至TI10。"
+  },
+  "sources": [
+    {
+      "id": "AR-heroes",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_heroes.txt",
+      "retrieved": "复用10月12日原响应并重新解析/核哈希",
+      "bytes": 634652,
+      "sha256": "c53ff35869b5678a9ef4c5b032643be379eefa536695644dbf989644c851b181"
+    },
+    {
+      "id": "AR-abilities",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "retrieved": "复用10月12日原响应并重新解析/核哈希",
+      "bytes": 3099817,
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb"
+    },
+    {
+      "id": "AR-localization",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "retrieved": "复用10月12日原响应并重新解析/核哈希",
+      "bytes": 1235305,
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22"
+    },
+    {
+      "id": "AR-7.31",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english",
+      "bytes": 130214,
+      "sha256": "9a5a76422eba02b2e45bf80c81450e9c7155d1a028cc59a8cfecf9cd10fdf28a",
+      "timestamp": 1645603200,
+      "retrieved_at_saved_file": "2026-10-13T06:51:25.999178+00:00",
+      "read_scope": "推出版本/CM准入及137/138对应条目；并非补丁全量机制审读"
+    },
+    {
+      "id": "AR-7.32",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.32&language=english",
+      "bytes": 92953,
+      "sha256": "ed1e0611aaf132a4f870209250781ca31e57178c1a56b20373c3ed0404006c0d",
+      "timestamp": 1661238000,
+      "retrieved_at_saved_file": "2026-10-13T06:51:26.891060+00:00",
+      "read_scope": "推出版本/CM准入及137/138对应条目；并非补丁全量机制审读"
+    },
+    {
+      "id": "AR-7.32e",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.32e&language=english",
+      "bytes": 21867,
+      "sha256": "cc3280d7c1469938d44f44b7095c8a8f64b3928ed63b97ebc57928152cb4a001",
+      "timestamp": 1678089600,
+      "retrieved_at_saved_file": "2026-10-13T06:51:27.624319+00:00",
+      "read_scope": "推出版本/CM准入及137/138对应条目；并非补丁全量机制审读"
+    },
+    {
+      "id": "AR-7.33",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english",
+      "bytes": 169457,
+      "sha256": "b65cb135d43236e8816546e661a58aaf30de3ec7f737a201905590e041f17d04",
+      "timestamp": 1681974000,
+      "retrieved_at_saved_file": "2026-10-13T06:51:28.449484+00:00",
+      "read_scope": "推出版本/CM准入及137/138对应条目；并非补丁全量机制审读"
+    },
+    {
+      "id": "AR-later-commit",
+      "url": "https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/commits?until=2023-03-08T23:59:59Z&per_page=1",
+      "bytes": 5145,
+      "sha256": "5429c7a0a7b98785fbf77032351d3749d6cd2a51f62b51cd99ca839ff7f8536e",
+      "commit": "0f10d8a96d5a49e20be7f8c45dc5d1d126f1490d",
+      "commit_date": "2023-03-08T21:42:34Z",
+      "read_scope": "一次固定截止提交及树定位，未据此认证后发英雄完整规则"
+    },
+    {
+      "id": "AR-later-tree",
+      "url": "https://api.github.com/repos/SteamTracking/GameTracking-Dota2/git/trees/8c2a2a0994eb0a33e39c58ad1470898f84e8b20d?recursive=1",
+      "bytes": 2992755,
+      "sha256": "628412dfa75e14b83a58344f58b493073a1c88868f9529012002974956e630db",
+      "truncated": false,
+      "read_scope": "目录路径全量检索，不审读其他文件",
+      "result": "核心npc英雄/技能/英文说明旧路径本轮未取得；非截断目录未列这些路径，改用Valve固定版本补丁进行新增英雄初筛，不把同名自定义小游戏文件当标准英雄规则。",
+      "hash_scope": "本轮从API对象重新序列化的保存JSON，非原始响应字节"
+    },
+    {
+      "id": "AR-7.31d",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31d&language=english",
+      "bytes": 16153,
+      "sha256": "7e1c74ba750f211d1305c5deeb475e40ac597e423974ec2e898e162f7d5b074c",
+      "retrieved_at_saved_file": "2026-10-13T07:09:40.904812+00:00",
+      "read_scope": "general_notes中玛西加入CM条目",
+      "claim_type": "F：官方补丁条目"
+    },
+    {
+      "id": "AR-name",
+      "url": "https://www.dota2.com/datafeed/herolist?language=schinese",
+      "bytes": 16538,
+      "sha256": "c3d7e9ac5b145aa066857645dd89612f51643dd8b3354d2beccf41ddebb0f054",
+      "retrieved_at_saved_file": "2026-10-13T07:15:48.124948+00:00",
+      "read_scope": "仅124个既定ID的内部键/中文和英文名映射；现代属性、复杂度与新增英雄不用于旧时期筛查",
+      "claim_type": "F：本次名称映射"
+    },
+    {
+      "title": "The Primal Beast & 7.31 Gameplay Update",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4246335832505905090",
+      "date_epoch": 1645655724,
+      "api_url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=570&count=10&maxlength=0&enddate=1645747200&feeds=steam_community_announcements",
+      "bytes": 30820,
+      "sha256": "10248dad0581b5bc8903ebc38c085337e5372701d92d5a75f01ce7e23589780f",
+      "id": "AR-release-1",
+      "read_scope": "兽的新英雄/7.31首段；Muerta推出首段及7.32e末段，其他技术/饰品内容不用于机制结论",
+      "claim_type": "F：Valve发布消息"
+    },
+    {
+      "title": "The Dead Reckoning Update",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5070528176578217258",
+      "date_epoch": 1678144026,
+      "api_url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=570&count=10&maxlength=0&enddate=1678233600&feeds=steam_community_announcements",
+      "bytes": 21713,
+      "sha256": "a41c6f80cbcd3104a8e9cdffc16b42789c44baf42de08129fa046ee3a9cbdda8",
+      "id": "AR-release-2",
+      "read_scope": "兽的新英雄/7.31首段；Muerta推出首段及7.32e末段，其他技术/饰品内容不用于机制结论",
+      "claim_type": "F：Valve发布消息"
+    }
+  ],
+  "eligibility": {
+    "marci": {
+      "id": 136,
+      "7.30e_cm_field": "0",
+      "cm_added_patch": "7.31d",
+      "cm_source": "AR-7.31d"
+    },
+    "primal_beast": {
+      "id": 137,
+      "released_patch": "7.31",
+      "release_source": "AR-release-1",
+      "cm_added_patch": "7.32",
+      "cm_source": "AR-7.32",
+      "rules_read": "7.32/7.33相关条目，不是7.31首发全规则"
+    },
+    "muerta": {
+      "id": 138,
+      "released_patch": "7.32e",
+      "release_source": "AR-release-2",
+      "cm_added_patch": "7.33",
+      "cm_source": "AR-7.33",
+      "rules_read": "本轮只用7.33相关条目，不认证7.32e首发魂体分离"
+    },
+    "event_limits": "CM加入不自动证明所有赛事/自定义规则可选；开篇故事日期须晚于对应推出日期"
+  },
+  "read_scope": {
+    "baseline_hero_definitions": "全量122启用HeroID、Enabled、CMEnabled、Ability1—32非天赋槽解析；base/禁用dummy排除",
+    "ability_definitions": "按上述槽定位并提取字段，初筛人工读技能键/描述前125字及必要续段；不是所有字段/天赋/派生单位全文审读",
+    "focused_read": "六单元17个直接相关技能的字段/Description/Note/Scepter说明完整相关段；另读墨客、艾欧、破晓运输说明用作对照",
+    "ability_special_limits": "配置Special字段与CUSTOM行为不当引擎证明；隐藏槽/空占位不等于无升级即可施放",
+    "late_heroes": "首发消息与固定补丁英雄条目，快照核心文件读取受阻后转替代",
+    "local_processing_error": "首次后发快照旧路径均未取得，脚本对缺heroes映射产生KeyError；查非截断树后不再重试同路径，改为官方限定条目，未采纳失败名单"
+  },
+  "roster": [
+    {
+      "id": 1,
+      "key": "npc_dota_hero_antimage",
+      "chinese_name_for_lookup": "敌法师",
+      "english_name_for_lookup": "Anti-Mage",
+      "old_entrance": "H61",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "antimage_mana_break"
+        },
+        {
+          "slot": 2,
+          "key": "antimage_blink"
+        },
+        {
+          "slot": 3,
+          "key": "antimage_counterspell"
+        },
+        {
+          "slot": 4,
+          "key": "antimage_mana_overload"
+        },
+        {
+          "slot": 6,
+          "key": "antimage_mana_void"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "npc_dota_hero_axe",
+      "chinese_name_for_lookup": "斧王",
+      "english_name_for_lookup": "Axe",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "axe_berserkers_call"
+        },
+        {
+          "slot": 2,
+          "key": "axe_battle_hunger"
+        },
+        {
+          "slot": 3,
+          "key": "axe_counter_helix"
+        },
+        {
+          "slot": 6,
+          "key": "axe_culling_blade"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "npc_dota_hero_bane",
+      "chinese_name_for_lookup": "祸乱之源",
+      "english_name_for_lookup": "Bane",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "bane_enfeeble"
+        },
+        {
+          "slot": 2,
+          "key": "bane_brain_sap"
+        },
+        {
+          "slot": 3,
+          "key": "bane_nightmare"
+        },
+        {
+          "slot": 6,
+          "key": "bane_fiends_grip"
+        },
+        {
+          "slot": 7,
+          "key": "bane_nightmare_end"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "key": "npc_dota_hero_bloodseeker",
+      "chinese_name_for_lookup": "血魔",
+      "english_name_for_lookup": "Bloodseeker",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "bloodseeker_bloodrage"
+        },
+        {
+          "slot": 2,
+          "key": "bloodseeker_blood_bath"
+        },
+        {
+          "slot": 3,
+          "key": "bloodseeker_thirst"
+        },
+        {
+          "slot": 6,
+          "key": "bloodseeker_rupture"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "key": "npc_dota_hero_crystal_maiden",
+      "chinese_name_for_lookup": "水晶室女",
+      "english_name_for_lookup": "Crystal Maiden",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "crystal_maiden_crystal_nova"
+        },
+        {
+          "slot": 2,
+          "key": "crystal_maiden_frostbite"
+        },
+        {
+          "slot": 3,
+          "key": "crystal_maiden_brilliance_aura"
+        },
+        {
+          "slot": 6,
+          "key": "crystal_maiden_freezing_field"
+        },
+        {
+          "slot": 7,
+          "key": "crystal_maiden_freezing_field_stop"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "key": "npc_dota_hero_drow_ranger",
+      "chinese_name_for_lookup": "卓尔游侠",
+      "english_name_for_lookup": "Drow Ranger",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "drow_ranger_frost_arrows"
+        },
+        {
+          "slot": 2,
+          "key": "drow_ranger_wave_of_silence"
+        },
+        {
+          "slot": 3,
+          "key": "drow_ranger_multishot"
+        },
+        {
+          "slot": 6,
+          "key": "drow_ranger_marksmanship"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "key": "npc_dota_hero_earthshaker",
+      "chinese_name_for_lookup": "撼地者",
+      "english_name_for_lookup": "Earthshaker",
+      "old_entrance": "H44",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "earthshaker_fissure"
+        },
+        {
+          "slot": 2,
+          "key": "earthshaker_enchant_totem"
+        },
+        {
+          "slot": 3,
+          "key": "earthshaker_aftershock"
+        },
+        {
+          "slot": 6,
+          "key": "earthshaker_echo_slam"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "key": "npc_dota_hero_juggernaut",
+      "chinese_name_for_lookup": "主宰",
+      "english_name_for_lookup": "Juggernaut",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "juggernaut_blade_fury"
+        },
+        {
+          "slot": 2,
+          "key": "juggernaut_healing_ward"
+        },
+        {
+          "slot": 3,
+          "key": "juggernaut_blade_dance"
+        },
+        {
+          "slot": 4,
+          "key": "juggernaut_swift_slash"
+        },
+        {
+          "slot": 6,
+          "key": "juggernaut_omni_slash"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "key": "npc_dota_hero_mirana",
+      "chinese_name_for_lookup": "米拉娜",
+      "english_name_for_lookup": "Mirana",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "mirana_starfall"
+        },
+        {
+          "slot": 2,
+          "key": "mirana_arrow"
+        },
+        {
+          "slot": 3,
+          "key": "mirana_leap"
+        },
+        {
+          "slot": 6,
+          "key": "mirana_invis"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "key": "npc_dota_hero_morphling",
+      "chinese_name_for_lookup": "变体精灵",
+      "english_name_for_lookup": "Morphling",
+      "old_entrance": "H17",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "morphling_waveform"
+        },
+        {
+          "slot": 2,
+          "key": "morphling_adaptive_strike_agi"
+        },
+        {
+          "slot": 3,
+          "key": "morphling_adaptive_strike_str"
+        },
+        {
+          "slot": 4,
+          "key": "morphling_morph_agi"
+        },
+        {
+          "slot": 5,
+          "key": "morphling_morph_str"
+        },
+        {
+          "slot": 6,
+          "key": "morphling_replicate"
+        },
+        {
+          "slot": 7,
+          "key": "morphling_morph_replicate"
+        },
+        {
+          "slot": 8,
+          "key": "morphling_morph"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "key": "npc_dota_hero_nevermore",
+      "chinese_name_for_lookup": "影魔",
+      "english_name_for_lookup": "Shadow Fiend",
+      "old_entrance": "H20",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "nevermore_shadowraze1"
+        },
+        {
+          "slot": 2,
+          "key": "nevermore_shadowraze2"
+        },
+        {
+          "slot": 3,
+          "key": "nevermore_shadowraze3"
+        },
+        {
+          "slot": 4,
+          "key": "nevermore_necromastery"
+        },
+        {
+          "slot": 5,
+          "key": "nevermore_dark_lord"
+        },
+        {
+          "slot": 6,
+          "key": "nevermore_requiem"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "key": "npc_dota_hero_phantom_lancer",
+      "chinese_name_for_lookup": "幻影长矛手",
+      "english_name_for_lookup": "Phantom Lancer",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "phantom_lancer_spirit_lance"
+        },
+        {
+          "slot": 2,
+          "key": "phantom_lancer_doppelwalk"
+        },
+        {
+          "slot": 3,
+          "key": "phantom_lancer_phantom_edge"
+        },
+        {
+          "slot": 6,
+          "key": "phantom_lancer_juxtapose"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "key": "npc_dota_hero_puck",
+      "chinese_name_for_lookup": "帕克",
+      "english_name_for_lookup": "Puck",
+      "old_entrance": "H14",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "puck_illusory_orb"
+        },
+        {
+          "slot": 2,
+          "key": "puck_waning_rift"
+        },
+        {
+          "slot": 3,
+          "key": "puck_phase_shift"
+        },
+        {
+          "slot": 4,
+          "key": "puck_ethereal_jaunt"
+        },
+        {
+          "slot": 6,
+          "key": "puck_dream_coil"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "key": "npc_dota_hero_pudge",
+      "chinese_name_for_lookup": "帕吉",
+      "english_name_for_lookup": "Pudge",
+      "old_entrance": "H43",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "pudge_meat_hook"
+        },
+        {
+          "slot": 2,
+          "key": "pudge_rot"
+        },
+        {
+          "slot": 3,
+          "key": "pudge_flesh_heap"
+        },
+        {
+          "slot": 4,
+          "key": "pudge_eject"
+        },
+        {
+          "slot": 6,
+          "key": "pudge_dismember"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "key": "npc_dota_hero_razor",
+      "chinese_name_for_lookup": "剃刀",
+      "english_name_for_lookup": "Razor",
+      "old_entrance": "H33",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "razor_plasma_field"
+        },
+        {
+          "slot": 2,
+          "key": "razor_static_link"
+        },
+        {
+          "slot": 3,
+          "key": "razor_unstable_current"
+        },
+        {
+          "slot": 6,
+          "key": "razor_eye_of_the_storm"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "key": "npc_dota_hero_sand_king",
+      "chinese_name_for_lookup": "沙王",
+      "english_name_for_lookup": "Sand King",
+      "old_entrance": "H56",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "sandking_burrowstrike"
+        },
+        {
+          "slot": 2,
+          "key": "sandking_sand_storm"
+        },
+        {
+          "slot": 3,
+          "key": "sandking_caustic_finale"
+        },
+        {
+          "slot": 6,
+          "key": "sandking_epicenter"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "key": "npc_dota_hero_storm_spirit",
+      "chinese_name_for_lookup": "风暴之灵",
+      "english_name_for_lookup": "Storm Spirit",
+      "old_entrance": "H18",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "storm_spirit_static_remnant"
+        },
+        {
+          "slot": 2,
+          "key": "storm_spirit_electric_vortex"
+        },
+        {
+          "slot": 3,
+          "key": "storm_spirit_overload"
+        },
+        {
+          "slot": 6,
+          "key": "storm_spirit_ball_lightning"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "key": "npc_dota_hero_sven",
+      "chinese_name_for_lookup": "斯温",
+      "english_name_for_lookup": "Sven",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "sven_storm_bolt"
+        },
+        {
+          "slot": 2,
+          "key": "sven_great_cleave"
+        },
+        {
+          "slot": 3,
+          "key": "sven_warcry"
+        },
+        {
+          "slot": 6,
+          "key": "sven_gods_strength"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "key": "npc_dota_hero_tiny",
+      "chinese_name_for_lookup": "小小",
+      "english_name_for_lookup": "Tiny",
+      "old_entrance": "H21",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "tiny_avalanche"
+        },
+        {
+          "slot": 2,
+          "key": "tiny_toss"
+        },
+        {
+          "slot": 3,
+          "key": "tiny_tree_grab"
+        },
+        {
+          "slot": 4,
+          "key": "tiny_tree_channel"
+        },
+        {
+          "slot": 6,
+          "key": "tiny_grow"
+        },
+        {
+          "slot": 7,
+          "key": "tiny_toss_tree"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "key": "npc_dota_hero_vengefulspirit",
+      "chinese_name_for_lookup": "复仇之魂",
+      "english_name_for_lookup": "Vengeful Spirit",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "vengefulspirit_magic_missile"
+        },
+        {
+          "slot": 2,
+          "key": "vengefulspirit_wave_of_terror"
+        },
+        {
+          "slot": 3,
+          "key": "vengefulspirit_command_aura"
+        },
+        {
+          "slot": 6,
+          "key": "vengefulspirit_nether_swap"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "key": "npc_dota_hero_windrunner",
+      "chinese_name_for_lookup": "风行者",
+      "english_name_for_lookup": "Windranger",
+      "old_entrance": "H35",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "windrunner_shackleshot"
+        },
+        {
+          "slot": 2,
+          "key": "windrunner_powershot"
+        },
+        {
+          "slot": 3,
+          "key": "windrunner_windrun"
+        },
+        {
+          "slot": 4,
+          "key": "windrunner_gale_force"
+        },
+        {
+          "slot": 6,
+          "key": "windrunner_focusfire"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "key": "npc_dota_hero_zuus",
+      "chinese_name_for_lookup": "宙斯",
+      "english_name_for_lookup": "Zeus",
+      "old_entrance": "H27",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "zuus_arc_lightning"
+        },
+        {
+          "slot": 2,
+          "key": "zuus_lightning_bolt"
+        },
+        {
+          "slot": 3,
+          "key": "zuus_static_field"
+        },
+        {
+          "slot": 4,
+          "key": "zuus_cloud"
+        },
+        {
+          "slot": 5,
+          "key": "zuus_heavenly_jump"
+        },
+        {
+          "slot": 6,
+          "key": "zuus_thundergods_wrath"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "key": "npc_dota_hero_kunkka",
+      "chinese_name_for_lookup": "昆卡",
+      "english_name_for_lookup": "Kunkka",
+      "old_entrance": "H09",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "kunkka_torrent"
+        },
+        {
+          "slot": 2,
+          "key": "kunkka_tidebringer"
+        },
+        {
+          "slot": 3,
+          "key": "kunkka_x_marks_the_spot"
+        },
+        {
+          "slot": 4,
+          "key": "kunkka_torrent_storm"
+        },
+        {
+          "slot": 5,
+          "key": "kunkka_tidal_wave"
+        },
+        {
+          "slot": 6,
+          "key": "kunkka_ghostship"
+        },
+        {
+          "slot": 7,
+          "key": "kunkka_return"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "key": "npc_dota_hero_lina",
+      "chinese_name_for_lookup": "莉娜",
+      "english_name_for_lookup": "Lina",
+      "old_entrance": "H25",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "lina_dragon_slave"
+        },
+        {
+          "slot": 2,
+          "key": "lina_light_strike_array"
+        },
+        {
+          "slot": 3,
+          "key": "lina_fiery_soul"
+        },
+        {
+          "slot": 6,
+          "key": "lina_laguna_blade"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "key": "npc_dota_hero_lion",
+      "chinese_name_for_lookup": "莱恩",
+      "english_name_for_lookup": "Lion",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "lion_impale"
+        },
+        {
+          "slot": 2,
+          "key": "lion_voodoo"
+        },
+        {
+          "slot": 3,
+          "key": "lion_mana_drain"
+        },
+        {
+          "slot": 6,
+          "key": "lion_finger_of_death"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "key": "npc_dota_hero_shadow_shaman",
+      "chinese_name_for_lookup": "暗影萨满",
+      "english_name_for_lookup": "Shadow Shaman",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "shadow_shaman_ether_shock"
+        },
+        {
+          "slot": 2,
+          "key": "shadow_shaman_voodoo"
+        },
+        {
+          "slot": 3,
+          "key": "shadow_shaman_shackles"
+        },
+        {
+          "slot": 6,
+          "key": "shadow_shaman_mass_serpent_ward"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "key": "npc_dota_hero_slardar",
+      "chinese_name_for_lookup": "斯拉达",
+      "english_name_for_lookup": "Slardar",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "slardar_sprint"
+        },
+        {
+          "slot": 2,
+          "key": "slardar_slithereen_crush"
+        },
+        {
+          "slot": 3,
+          "key": "slardar_bash"
+        },
+        {
+          "slot": 6,
+          "key": "slardar_amplify_damage"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "key": "npc_dota_hero_tidehunter",
+      "chinese_name_for_lookup": "潮汐猎人",
+      "english_name_for_lookup": "Tidehunter",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "tidehunter_gush"
+        },
+        {
+          "slot": 2,
+          "key": "tidehunter_kraken_shell"
+        },
+        {
+          "slot": 3,
+          "key": "tidehunter_anchor_smash"
+        },
+        {
+          "slot": 6,
+          "key": "tidehunter_ravage"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "key": "npc_dota_hero_witch_doctor",
+      "chinese_name_for_lookup": "巫医",
+      "english_name_for_lookup": "Witch Doctor",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "witch_doctor_paralyzing_cask"
+        },
+        {
+          "slot": 2,
+          "key": "witch_doctor_voodoo_restoration"
+        },
+        {
+          "slot": 3,
+          "key": "witch_doctor_maledict"
+        },
+        {
+          "slot": 4,
+          "key": "witch_doctor_voodoo_switcheroo"
+        },
+        {
+          "slot": 6,
+          "key": "witch_doctor_death_ward"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "key": "npc_dota_hero_lich",
+      "chinese_name_for_lookup": "巫妖",
+      "english_name_for_lookup": "Lich",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "lich_frost_nova"
+        },
+        {
+          "slot": 2,
+          "key": "lich_frost_shield"
+        },
+        {
+          "slot": 3,
+          "key": "lich_sinister_gaze"
+        },
+        {
+          "slot": 4,
+          "key": "lich_ice_spire"
+        },
+        {
+          "slot": 6,
+          "key": "lich_chain_frost"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "key": "npc_dota_hero_riki",
+      "chinese_name_for_lookup": "力丸",
+      "english_name_for_lookup": "Riki",
+      "old_entrance": "H42",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "riki_smoke_screen"
+        },
+        {
+          "slot": 2,
+          "key": "riki_blink_strike"
+        },
+        {
+          "slot": 3,
+          "key": "riki_tricks_of_the_trade"
+        },
+        {
+          "slot": 4,
+          "key": "riki_poison_dart"
+        },
+        {
+          "slot": 6,
+          "key": "riki_backstab"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "key": "npc_dota_hero_enigma",
+      "chinese_name_for_lookup": "谜团",
+      "english_name_for_lookup": "Enigma",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "enigma_malefice"
+        },
+        {
+          "slot": 2,
+          "key": "enigma_demonic_conversion"
+        },
+        {
+          "slot": 3,
+          "key": "enigma_midnight_pulse"
+        },
+        {
+          "slot": 6,
+          "key": "enigma_black_hole"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "key": "npc_dota_hero_tinker",
+      "chinese_name_for_lookup": "修补匠",
+      "english_name_for_lookup": "Tinker",
+      "old_entrance": "H11",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "tinker_laser"
+        },
+        {
+          "slot": 2,
+          "key": "tinker_heat_seeking_missile"
+        },
+        {
+          "slot": 3,
+          "key": "tinker_defense_matrix"
+        },
+        {
+          "slot": 4,
+          "key": "tinker_march_of_the_machines"
+        },
+        {
+          "slot": 5,
+          "key": "tinker_keen_teleport"
+        },
+        {
+          "slot": 6,
+          "key": "tinker_rearm"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "key": "npc_dota_hero_sniper",
+      "chinese_name_for_lookup": "狙击手",
+      "english_name_for_lookup": "Sniper",
+      "old_entrance": "H38",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "sniper_shrapnel"
+        },
+        {
+          "slot": 2,
+          "key": "sniper_headshot"
+        },
+        {
+          "slot": 3,
+          "key": "sniper_take_aim"
+        },
+        {
+          "slot": 4,
+          "key": "sniper_concussive_grenade"
+        },
+        {
+          "slot": 6,
+          "key": "sniper_assassinate"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "key": "npc_dota_hero_necrolyte",
+      "chinese_name_for_lookup": "瘟疫法师",
+      "english_name_for_lookup": "Necrophos",
+      "old_entrance": "H36",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "necrolyte_death_pulse"
+        },
+        {
+          "slot": 2,
+          "key": "necrolyte_sadist"
+        },
+        {
+          "slot": 3,
+          "key": "necrolyte_heartstopper_aura"
+        },
+        {
+          "slot": 4,
+          "key": "necrolyte_death_seeker"
+        },
+        {
+          "slot": 6,
+          "key": "necrolyte_reapers_scythe"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "key": "npc_dota_hero_warlock",
+      "chinese_name_for_lookup": "术士",
+      "english_name_for_lookup": "Warlock",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "warlock_fatal_bonds"
+        },
+        {
+          "slot": 2,
+          "key": "warlock_shadow_word"
+        },
+        {
+          "slot": 3,
+          "key": "warlock_upheaval"
+        },
+        {
+          "slot": 6,
+          "key": "warlock_rain_of_chaos"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "key": "npc_dota_hero_beastmaster",
+      "chinese_name_for_lookup": "兽王",
+      "english_name_for_lookup": "Beastmaster",
+      "old_entrance": "H63",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "beastmaster_wild_axes"
+        },
+        {
+          "slot": 2,
+          "key": "beastmaster_call_of_the_wild_boar"
+        },
+        {
+          "slot": 3,
+          "key": "beastmaster_call_of_the_wild_hawk"
+        },
+        {
+          "slot": 4,
+          "key": "beastmaster_inner_beast"
+        },
+        {
+          "slot": 5,
+          "key": "beastmaster_mark_of_the_beast"
+        },
+        {
+          "slot": 6,
+          "key": "beastmaster_primal_roar"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "key": "npc_dota_hero_queenofpain",
+      "chinese_name_for_lookup": "痛苦女王",
+      "english_name_for_lookup": "Queen of Pain",
+      "old_entrance": "H24",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "queenofpain_shadow_strike"
+        },
+        {
+          "slot": 2,
+          "key": "queenofpain_blink"
+        },
+        {
+          "slot": 3,
+          "key": "queenofpain_scream_of_pain"
+        },
+        {
+          "slot": 6,
+          "key": "queenofpain_sonic_wave"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "key": "npc_dota_hero_venomancer",
+      "chinese_name_for_lookup": "剧毒术士",
+      "english_name_for_lookup": "Venomancer",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "venomancer_venomous_gale"
+        },
+        {
+          "slot": 2,
+          "key": "venomancer_poison_sting"
+        },
+        {
+          "slot": 3,
+          "key": "venomancer_plague_ward"
+        },
+        {
+          "slot": 6,
+          "key": "venomancer_poison_nova"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "key": "npc_dota_hero_faceless_void",
+      "chinese_name_for_lookup": "虚空假面",
+      "english_name_for_lookup": "Faceless Void",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "faceless_void_time_walk"
+        },
+        {
+          "slot": 2,
+          "key": "faceless_void_time_dilation"
+        },
+        {
+          "slot": 3,
+          "key": "faceless_void_time_lock"
+        },
+        {
+          "slot": 4,
+          "key": "faceless_void_time_walk_reverse"
+        },
+        {
+          "slot": 6,
+          "key": "faceless_void_chronosphere"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "key": "npc_dota_hero_skeleton_king",
+      "chinese_name_for_lookup": "冥魂大帝",
+      "english_name_for_lookup": "Wraith King",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "skeleton_king_hellfire_blast"
+        },
+        {
+          "slot": 2,
+          "key": "skeleton_king_vampiric_aura"
+        },
+        {
+          "slot": 3,
+          "key": "skeleton_king_mortal_strike"
+        },
+        {
+          "slot": 6,
+          "key": "skeleton_king_reincarnation"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "key": "npc_dota_hero_death_prophet",
+      "chinese_name_for_lookup": "死亡先知",
+      "english_name_for_lookup": "Death Prophet",
+      "old_entrance": "H30",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "death_prophet_carrion_swarm"
+        },
+        {
+          "slot": 2,
+          "key": "death_prophet_silence"
+        },
+        {
+          "slot": 3,
+          "key": "death_prophet_spirit_siphon"
+        },
+        {
+          "slot": 6,
+          "key": "death_prophet_exorcism"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "key": "npc_dota_hero_phantom_assassin",
+      "chinese_name_for_lookup": "幻影刺客",
+      "english_name_for_lookup": "Phantom Assassin",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "phantom_assassin_stifling_dagger"
+        },
+        {
+          "slot": 2,
+          "key": "phantom_assassin_phantom_strike"
+        },
+        {
+          "slot": 3,
+          "key": "phantom_assassin_blur"
+        },
+        {
+          "slot": 4,
+          "key": "phantom_assassin_fan_of_knives"
+        },
+        {
+          "slot": 6,
+          "key": "phantom_assassin_coup_de_grace"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "key": "npc_dota_hero_pugna",
+      "chinese_name_for_lookup": "帕格纳",
+      "english_name_for_lookup": "Pugna",
+      "old_entrance": "H47",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "pugna_nether_blast"
+        },
+        {
+          "slot": 2,
+          "key": "pugna_decrepify"
+        },
+        {
+          "slot": 3,
+          "key": "pugna_nether_ward"
+        },
+        {
+          "slot": 6,
+          "key": "pugna_life_drain"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "key": "npc_dota_hero_templar_assassin",
+      "chinese_name_for_lookup": "圣堂刺客",
+      "english_name_for_lookup": "Templar Assassin",
+      "old_entrance": "H04",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "templar_assassin_refraction"
+        },
+        {
+          "slot": 2,
+          "key": "templar_assassin_meld"
+        },
+        {
+          "slot": 3,
+          "key": "templar_assassin_psi_blades"
+        },
+        {
+          "slot": 4,
+          "key": "templar_assassin_trap"
+        },
+        {
+          "slot": 5,
+          "key": "templar_assassin_trap_teleport"
+        },
+        {
+          "slot": 6,
+          "key": "templar_assassin_psionic_trap"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "key": "npc_dota_hero_viper",
+      "chinese_name_for_lookup": "冥界亚龙",
+      "english_name_for_lookup": "Viper",
+      "old_entrance": "H52",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "viper_poison_attack"
+        },
+        {
+          "slot": 2,
+          "key": "viper_nethertoxin"
+        },
+        {
+          "slot": 3,
+          "key": "viper_corrosive_skin"
+        },
+        {
+          "slot": 6,
+          "key": "viper_viper_strike"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "key": "npc_dota_hero_luna",
+      "chinese_name_for_lookup": "露娜",
+      "english_name_for_lookup": "Luna",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "luna_lucent_beam"
+        },
+        {
+          "slot": 2,
+          "key": "luna_moon_glaive"
+        },
+        {
+          "slot": 3,
+          "key": "luna_lunar_blessing"
+        },
+        {
+          "slot": 6,
+          "key": "luna_eclipse"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "key": "npc_dota_hero_dragon_knight",
+      "chinese_name_for_lookup": "龙骑士",
+      "english_name_for_lookup": "Dragon Knight",
+      "old_entrance": "H31",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "dragon_knight_breathe_fire"
+        },
+        {
+          "slot": 2,
+          "key": "dragon_knight_dragon_tail"
+        },
+        {
+          "slot": 3,
+          "key": "dragon_knight_dragon_blood"
+        },
+        {
+          "slot": 4,
+          "key": "dragon_knight_fireball"
+        },
+        {
+          "slot": 6,
+          "key": "dragon_knight_elder_dragon_form"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "key": "npc_dota_hero_dazzle",
+      "chinese_name_for_lookup": "戴泽",
+      "english_name_for_lookup": "Dazzle",
+      "old_entrance": "H39",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "dazzle_poison_touch"
+        },
+        {
+          "slot": 2,
+          "key": "dazzle_shallow_grave"
+        },
+        {
+          "slot": 3,
+          "key": "dazzle_shadow_wave"
+        },
+        {
+          "slot": 6,
+          "key": "dazzle_bad_juju"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "key": "npc_dota_hero_rattletrap",
+      "chinese_name_for_lookup": "发条技师",
+      "english_name_for_lookup": "Clockwerk",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "rattletrap_battery_assault"
+        },
+        {
+          "slot": 2,
+          "key": "rattletrap_power_cogs"
+        },
+        {
+          "slot": 3,
+          "key": "rattletrap_rocket_flare"
+        },
+        {
+          "slot": 4,
+          "key": "rattletrap_overclocking"
+        },
+        {
+          "slot": 5,
+          "key": "rattletrap_jetpack"
+        },
+        {
+          "slot": 6,
+          "key": "rattletrap_hookshot"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "key": "npc_dota_hero_leshrac",
+      "chinese_name_for_lookup": "拉席克",
+      "english_name_for_lookup": "Leshrac",
+      "old_entrance": "H26",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "leshrac_split_earth"
+        },
+        {
+          "slot": 2,
+          "key": "leshrac_diabolic_edict"
+        },
+        {
+          "slot": 3,
+          "key": "leshrac_lightning_storm"
+        },
+        {
+          "slot": 4,
+          "key": "leshrac_greater_lightning_storm"
+        },
+        {
+          "slot": 6,
+          "key": "leshrac_pulse_nova"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "key": "npc_dota_hero_furion",
+      "chinese_name_for_lookup": "先知",
+      "english_name_for_lookup": "Nature's Prophet",
+      "old_entrance": "H54",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "furion_sprout"
+        },
+        {
+          "slot": 2,
+          "key": "furion_teleportation"
+        },
+        {
+          "slot": 3,
+          "key": "furion_force_of_nature"
+        },
+        {
+          "slot": 6,
+          "key": "furion_wrath_of_nature"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "key": "npc_dota_hero_life_stealer",
+      "chinese_name_for_lookup": "噬魂鬼",
+      "english_name_for_lookup": "Lifestealer",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "life_stealer_rage"
+        },
+        {
+          "slot": 2,
+          "key": "life_stealer_feast"
+        },
+        {
+          "slot": 3,
+          "key": "life_stealer_ghoul_frenzy"
+        },
+        {
+          "slot": 4,
+          "key": "life_stealer_open_wounds"
+        },
+        {
+          "slot": 6,
+          "key": "life_stealer_infest"
+        },
+        {
+          "slot": 7,
+          "key": "life_stealer_consume"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "key": "npc_dota_hero_dark_seer",
+      "chinese_name_for_lookup": "黑暗贤者",
+      "english_name_for_lookup": "Dark Seer",
+      "old_entrance": "H59",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "dark_seer_vacuum"
+        },
+        {
+          "slot": 2,
+          "key": "dark_seer_ion_shell"
+        },
+        {
+          "slot": 3,
+          "key": "dark_seer_surge"
+        },
+        {
+          "slot": 4,
+          "key": "dark_seer_normal_punch"
+        },
+        {
+          "slot": 6,
+          "key": "dark_seer_wall_of_replica"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "key": "npc_dota_hero_clinkz",
+      "chinese_name_for_lookup": "克林克兹",
+      "english_name_for_lookup": "Clinkz",
+      "old_entrance": "H62",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "clinkz_strafe"
+        },
+        {
+          "slot": 2,
+          "key": "clinkz_searing_arrows"
+        },
+        {
+          "slot": 3,
+          "key": "clinkz_wind_walk"
+        },
+        {
+          "slot": 4,
+          "key": "clinkz_burning_army"
+        },
+        {
+          "slot": 6,
+          "key": "clinkz_death_pact"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "key": "npc_dota_hero_omniknight",
+      "chinese_name_for_lookup": "全能骑士",
+      "english_name_for_lookup": "Omniknight",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "omniknight_purification"
+        },
+        {
+          "slot": 2,
+          "key": "omniknight_repel"
+        },
+        {
+          "slot": 3,
+          "key": "omniknight_degen_aura"
+        },
+        {
+          "slot": 4,
+          "key": "omniknight_hammer_of_purity"
+        },
+        {
+          "slot": 6,
+          "key": "omniknight_guardian_angel"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "key": "npc_dota_hero_enchantress",
+      "chinese_name_for_lookup": "魅惑魔女",
+      "english_name_for_lookup": "Enchantress",
+      "old_entrance": "H66",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "enchantress_impetus"
+        },
+        {
+          "slot": 2,
+          "key": "enchantress_enchant"
+        },
+        {
+          "slot": 3,
+          "key": "enchantress_natures_attendants"
+        },
+        {
+          "slot": 4,
+          "key": "enchantress_bunny_hop"
+        },
+        {
+          "slot": 6,
+          "key": "enchantress_untouchable"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "key": "npc_dota_hero_huskar",
+      "chinese_name_for_lookup": "哈斯卡",
+      "english_name_for_lookup": "Huskar",
+      "old_entrance": "H23",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "huskar_inner_fire"
+        },
+        {
+          "slot": 2,
+          "key": "huskar_burning_spear"
+        },
+        {
+          "slot": 3,
+          "key": "huskar_berserkers_blood"
+        },
+        {
+          "slot": 6,
+          "key": "huskar_life_break"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "key": "npc_dota_hero_night_stalker",
+      "chinese_name_for_lookup": "暗夜魔王",
+      "english_name_for_lookup": "Night Stalker",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "night_stalker_void"
+        },
+        {
+          "slot": 2,
+          "key": "night_stalker_crippling_fear"
+        },
+        {
+          "slot": 3,
+          "key": "night_stalker_hunter_in_the_night"
+        },
+        {
+          "slot": 6,
+          "key": "night_stalker_darkness"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "key": "npc_dota_hero_broodmother",
+      "chinese_name_for_lookup": "育母蜘蛛",
+      "english_name_for_lookup": "Broodmother",
+      "old_entrance": "H16",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "broodmother_insatiable_hunger"
+        },
+        {
+          "slot": 2,
+          "key": "broodmother_spin_web"
+        },
+        {
+          "slot": 3,
+          "key": "broodmother_silken_bola"
+        },
+        {
+          "slot": 4,
+          "key": "broodmother_sticky_snare"
+        },
+        {
+          "slot": 6,
+          "key": "broodmother_spawn_spiderlings"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "key": "npc_dota_hero_bounty_hunter",
+      "chinese_name_for_lookup": "赏金猎人",
+      "english_name_for_lookup": "Bounty Hunter",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "bounty_hunter_shuriken_toss"
+        },
+        {
+          "slot": 2,
+          "key": "bounty_hunter_jinada"
+        },
+        {
+          "slot": 3,
+          "key": "bounty_hunter_wind_walk"
+        },
+        {
+          "slot": 6,
+          "key": "bounty_hunter_track"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "key": "npc_dota_hero_weaver",
+      "chinese_name_for_lookup": "编织者",
+      "english_name_for_lookup": "Weaver",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "weaver_the_swarm"
+        },
+        {
+          "slot": 2,
+          "key": "weaver_shukuchi"
+        },
+        {
+          "slot": 3,
+          "key": "weaver_geminate_attack"
+        },
+        {
+          "slot": 6,
+          "key": "weaver_time_lapse"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "key": "npc_dota_hero_jakiro",
+      "chinese_name_for_lookup": "杰奇洛",
+      "english_name_for_lookup": "Jakiro",
+      "old_entrance": "H50",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "jakiro_dual_breath"
+        },
+        {
+          "slot": 2,
+          "key": "jakiro_ice_path"
+        },
+        {
+          "slot": 3,
+          "key": "jakiro_liquid_fire"
+        },
+        {
+          "slot": 4,
+          "key": "jakiro_liquid_ice"
+        },
+        {
+          "slot": 6,
+          "key": "jakiro_macropyre"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "key": "npc_dota_hero_batrider",
+      "chinese_name_for_lookup": "蝙蝠骑士",
+      "english_name_for_lookup": "Batrider",
+      "old_entrance": "H22",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "batrider_sticky_napalm"
+        },
+        {
+          "slot": 2,
+          "key": "batrider_flamebreak"
+        },
+        {
+          "slot": 3,
+          "key": "batrider_firefly"
+        },
+        {
+          "slot": 6,
+          "key": "batrider_flaming_lasso"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "key": "npc_dota_hero_chen",
+      "chinese_name_for_lookup": "陈",
+      "english_name_for_lookup": "Chen",
+      "old_entrance": "H67",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "chen_penitence"
+        },
+        {
+          "slot": 2,
+          "key": "chen_holy_persuasion"
+        },
+        {
+          "slot": 3,
+          "key": "chen_divine_favor"
+        },
+        {
+          "slot": 6,
+          "key": "chen_hand_of_god"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "key": "npc_dota_hero_spectre",
+      "chinese_name_for_lookup": "幽鬼",
+      "english_name_for_lookup": "Spectre",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "spectre_spectral_dagger"
+        },
+        {
+          "slot": 2,
+          "key": "spectre_desolate"
+        },
+        {
+          "slot": 3,
+          "key": "spectre_dispersion"
+        },
+        {
+          "slot": 4,
+          "key": "spectre_reality"
+        },
+        {
+          "slot": 5,
+          "key": "spectre_haunt_single"
+        },
+        {
+          "slot": 6,
+          "key": "spectre_haunt"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "key": "npc_dota_hero_ancient_apparition",
+      "chinese_name_for_lookup": "远古冰魄",
+      "english_name_for_lookup": "Ancient Apparition",
+      "old_entrance": "H45",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "ancient_apparition_cold_feet"
+        },
+        {
+          "slot": 2,
+          "key": "ancient_apparition_ice_vortex"
+        },
+        {
+          "slot": 3,
+          "key": "ancient_apparition_chilling_touch"
+        },
+        {
+          "slot": 6,
+          "key": "ancient_apparition_ice_blast"
+        },
+        {
+          "slot": 7,
+          "key": "ancient_apparition_ice_blast_release"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "key": "npc_dota_hero_doom_bringer",
+      "chinese_name_for_lookup": "末日使者",
+      "english_name_for_lookup": "Doom",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "doom_bringer_devour"
+        },
+        {
+          "slot": 2,
+          "key": "doom_bringer_scorched_earth"
+        },
+        {
+          "slot": 3,
+          "key": "doom_bringer_infernal_blade"
+        },
+        {
+          "slot": 4,
+          "key": "doom_bringer_empty1"
+        },
+        {
+          "slot": 5,
+          "key": "doom_bringer_empty2"
+        },
+        {
+          "slot": 6,
+          "key": "doom_bringer_doom"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "key": "npc_dota_hero_ursa",
+      "chinese_name_for_lookup": "熊战士",
+      "english_name_for_lookup": "Ursa",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "ursa_earthshock"
+        },
+        {
+          "slot": 2,
+          "key": "ursa_overpower"
+        },
+        {
+          "slot": 3,
+          "key": "ursa_fury_swipes"
+        },
+        {
+          "slot": 6,
+          "key": "ursa_enrage"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "key": "npc_dota_hero_spirit_breaker",
+      "chinese_name_for_lookup": "裂魂人",
+      "english_name_for_lookup": "Spirit Breaker",
+      "old_entrance": "H49",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "spirit_breaker_charge_of_darkness"
+        },
+        {
+          "slot": 2,
+          "key": "spirit_breaker_bulldoze"
+        },
+        {
+          "slot": 3,
+          "key": "spirit_breaker_greater_bash"
+        },
+        {
+          "slot": 6,
+          "key": "spirit_breaker_nether_strike"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "key": "npc_dota_hero_gyrocopter",
+      "chinese_name_for_lookup": "矮人直升机",
+      "english_name_for_lookup": "Gyrocopter",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "gyrocopter_rocket_barrage"
+        },
+        {
+          "slot": 2,
+          "key": "gyrocopter_homing_missile"
+        },
+        {
+          "slot": 3,
+          "key": "gyrocopter_flak_cannon"
+        },
+        {
+          "slot": 6,
+          "key": "gyrocopter_call_down"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "key": "npc_dota_hero_alchemist",
+      "chinese_name_for_lookup": "炼金术士",
+      "english_name_for_lookup": "Alchemist",
+      "old_entrance": "H53",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "alchemist_acid_spray"
+        },
+        {
+          "slot": 2,
+          "key": "alchemist_unstable_concoction"
+        },
+        {
+          "slot": 3,
+          "key": "alchemist_goblins_greed"
+        },
+        {
+          "slot": 4,
+          "key": "alchemist_berserk_potion"
+        },
+        {
+          "slot": 6,
+          "key": "alchemist_chemical_rage"
+        },
+        {
+          "slot": 7,
+          "key": "alchemist_unstable_concoction_throw"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "key": "npc_dota_hero_invoker",
+      "chinese_name_for_lookup": "祈求者",
+      "english_name_for_lookup": "Invoker",
+      "old_entrance": "H02",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "invoker_quas"
+        },
+        {
+          "slot": 2,
+          "key": "invoker_wex"
+        },
+        {
+          "slot": 3,
+          "key": "invoker_exort"
+        },
+        {
+          "slot": 4,
+          "key": "invoker_empty1"
+        },
+        {
+          "slot": 5,
+          "key": "invoker_empty2"
+        },
+        {
+          "slot": 6,
+          "key": "invoker_invoke"
+        },
+        {
+          "slot": 7,
+          "key": "invoker_cold_snap"
+        },
+        {
+          "slot": 8,
+          "key": "invoker_ghost_walk"
+        },
+        {
+          "slot": 9,
+          "key": "invoker_tornado"
+        },
+        {
+          "slot": 10,
+          "key": "invoker_emp"
+        },
+        {
+          "slot": 11,
+          "key": "invoker_alacrity"
+        },
+        {
+          "slot": 12,
+          "key": "invoker_chaos_meteor"
+        },
+        {
+          "slot": 13,
+          "key": "invoker_sun_strike"
+        },
+        {
+          "slot": 14,
+          "key": "invoker_forge_spirit"
+        },
+        {
+          "slot": 15,
+          "key": "invoker_ice_wall"
+        },
+        {
+          "slot": 16,
+          "key": "invoker_deafening_blast"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "key": "npc_dota_hero_silencer",
+      "chinese_name_for_lookup": "沉默术士",
+      "english_name_for_lookup": "Silencer",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "silencer_curse_of_the_silent"
+        },
+        {
+          "slot": 2,
+          "key": "silencer_glaives_of_wisdom"
+        },
+        {
+          "slot": 3,
+          "key": "silencer_last_word"
+        },
+        {
+          "slot": 6,
+          "key": "silencer_global_silence"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "key": "npc_dota_hero_obsidian_destroyer",
+      "chinese_name_for_lookup": "殁境神蚀者",
+      "english_name_for_lookup": "Outworld Destroyer",
+      "old_entrance": "H28",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "obsidian_destroyer_arcane_orb"
+        },
+        {
+          "slot": 2,
+          "key": "obsidian_destroyer_astral_imprisonment"
+        },
+        {
+          "slot": 3,
+          "key": "obsidian_destroyer_equilibrium"
+        },
+        {
+          "slot": 6,
+          "key": "obsidian_destroyer_sanity_eclipse"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "key": "npc_dota_hero_lycan",
+      "chinese_name_for_lookup": "狼人",
+      "english_name_for_lookup": "Lycan",
+      "old_entrance": "H64",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "lycan_summon_wolves"
+        },
+        {
+          "slot": 2,
+          "key": "lycan_howl"
+        },
+        {
+          "slot": 3,
+          "key": "lycan_feral_impulse"
+        },
+        {
+          "slot": 4,
+          "key": "lycan_wolf_bite"
+        },
+        {
+          "slot": 6,
+          "key": "lycan_shapeshift"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "key": "npc_dota_hero_brewmaster",
+      "chinese_name_for_lookup": "酒仙",
+      "english_name_for_lookup": "Brewmaster",
+      "old_entrance": "H58",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "brewmaster_thunder_clap"
+        },
+        {
+          "slot": 2,
+          "key": "brewmaster_cinder_brew"
+        },
+        {
+          "slot": 3,
+          "key": "brewmaster_drunken_brawler"
+        },
+        {
+          "slot": 6,
+          "key": "brewmaster_primal_split"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "key": "npc_dota_hero_shadow_demon",
+      "chinese_name_for_lookup": "暗影恶魔",
+      "english_name_for_lookup": "Shadow Demon",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "shadow_demon_disruption"
+        },
+        {
+          "slot": 2,
+          "key": "shadow_demon_soul_catcher"
+        },
+        {
+          "slot": 3,
+          "key": "shadow_demon_shadow_poison"
+        },
+        {
+          "slot": 4,
+          "key": "shadow_demon_shadow_poison_release"
+        },
+        {
+          "slot": 6,
+          "key": "shadow_demon_demonic_purge"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "key": "npc_dota_hero_lone_druid",
+      "chinese_name_for_lookup": "德鲁伊",
+      "english_name_for_lookup": "Lone Druid",
+      "old_entrance": "H07",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "lone_druid_spirit_bear"
+        },
+        {
+          "slot": 2,
+          "key": "lone_druid_spirit_link"
+        },
+        {
+          "slot": 3,
+          "key": "lone_druid_savage_roar"
+        },
+        {
+          "slot": 6,
+          "key": "lone_druid_true_form"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "key": "npc_dota_hero_chaos_knight",
+      "chinese_name_for_lookup": "混沌骑士",
+      "english_name_for_lookup": "Chaos Knight",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "chaos_knight_chaos_bolt"
+        },
+        {
+          "slot": 2,
+          "key": "chaos_knight_reality_rift"
+        },
+        {
+          "slot": 3,
+          "key": "chaos_knight_chaos_strike"
+        },
+        {
+          "slot": 6,
+          "key": "chaos_knight_phantasm"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "key": "npc_dota_hero_meepo",
+      "chinese_name_for_lookup": "米波",
+      "english_name_for_lookup": "Meepo",
+      "old_entrance": "H13",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "meepo_earthbind"
+        },
+        {
+          "slot": 2,
+          "key": "meepo_poof"
+        },
+        {
+          "slot": 3,
+          "key": "meepo_ransack"
+        },
+        {
+          "slot": 4,
+          "key": "meepo_petrify"
+        },
+        {
+          "slot": 6,
+          "key": "meepo_divided_we_stand"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "key": "npc_dota_hero_treant",
+      "chinese_name_for_lookup": "树精卫士",
+      "english_name_for_lookup": "Treant Protector",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "treant_natures_grasp"
+        },
+        {
+          "slot": 2,
+          "key": "treant_leech_seed"
+        },
+        {
+          "slot": 3,
+          "key": "treant_living_armor"
+        },
+        {
+          "slot": 4,
+          "key": "treant_eyes_in_the_forest"
+        },
+        {
+          "slot": 5,
+          "key": "treant_natures_guise"
+        },
+        {
+          "slot": 6,
+          "key": "treant_overgrowth"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "key": "npc_dota_hero_ogre_magi",
+      "chinese_name_for_lookup": "食人魔魔法师",
+      "english_name_for_lookup": "Ogre Magi",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "ogre_magi_fireblast"
+        },
+        {
+          "slot": 2,
+          "key": "ogre_magi_ignite"
+        },
+        {
+          "slot": 3,
+          "key": "ogre_magi_bloodlust"
+        },
+        {
+          "slot": 4,
+          "key": "ogre_magi_unrefined_fireblast"
+        },
+        {
+          "slot": 5,
+          "key": "ogre_magi_smash"
+        },
+        {
+          "slot": 6,
+          "key": "ogre_magi_multicast"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "key": "npc_dota_hero_undying",
+      "chinese_name_for_lookup": "不朽尸王",
+      "english_name_for_lookup": "Undying",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "undying_decay"
+        },
+        {
+          "slot": 2,
+          "key": "undying_soul_rip"
+        },
+        {
+          "slot": 3,
+          "key": "undying_tombstone"
+        },
+        {
+          "slot": 6,
+          "key": "undying_flesh_golem"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "key": "npc_dota_hero_rubick",
+      "chinese_name_for_lookup": "拉比克",
+      "english_name_for_lookup": "Rubick",
+      "old_entrance": "H03",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "rubick_telekinesis"
+        },
+        {
+          "slot": 2,
+          "key": "rubick_fade_bolt"
+        },
+        {
+          "slot": 3,
+          "key": "rubick_arcane_supremacy"
+        },
+        {
+          "slot": 4,
+          "key": "rubick_empty1"
+        },
+        {
+          "slot": 5,
+          "key": "rubick_empty2"
+        },
+        {
+          "slot": 6,
+          "key": "rubick_spell_steal"
+        },
+        {
+          "slot": 7,
+          "key": "rubick_telekinesis_land"
+        },
+        {
+          "slot": 8,
+          "key": "rubick_hidden1"
+        },
+        {
+          "slot": 9,
+          "key": "rubick_hidden2"
+        },
+        {
+          "slot": 10,
+          "key": "rubick_hidden3"
+        },
+        {
+          "slot": 11,
+          "key": "rubick_telekinesis_land_self"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "key": "npc_dota_hero_disruptor",
+      "chinese_name_for_lookup": "干扰者",
+      "english_name_for_lookup": "Disruptor",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "disruptor_thunder_strike"
+        },
+        {
+          "slot": 2,
+          "key": "disruptor_glimpse"
+        },
+        {
+          "slot": 3,
+          "key": "disruptor_kinetic_field"
+        },
+        {
+          "slot": 6,
+          "key": "disruptor_static_storm"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "key": "npc_dota_hero_nyx_assassin",
+      "chinese_name_for_lookup": "司夜刺客",
+      "english_name_for_lookup": "Nyx Assassin",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "nyx_assassin_impale"
+        },
+        {
+          "slot": 2,
+          "key": "nyx_assassin_mana_burn"
+        },
+        {
+          "slot": 3,
+          "key": "nyx_assassin_spiked_carapace"
+        },
+        {
+          "slot": 4,
+          "key": "nyx_assassin_burrow"
+        },
+        {
+          "slot": 6,
+          "key": "nyx_assassin_vendetta"
+        },
+        {
+          "slot": 7,
+          "key": "nyx_assassin_unburrow"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "key": "npc_dota_hero_naga_siren",
+      "chinese_name_for_lookup": "娜迦海妖",
+      "english_name_for_lookup": "Naga Siren",
+      "old_entrance": "H48",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "naga_siren_mirror_image"
+        },
+        {
+          "slot": 2,
+          "key": "naga_siren_ensnare"
+        },
+        {
+          "slot": 3,
+          "key": "naga_siren_rip_tide"
+        },
+        {
+          "slot": 6,
+          "key": "naga_siren_song_of_the_siren"
+        },
+        {
+          "slot": 7,
+          "key": "naga_siren_song_of_the_siren_cancel"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "key": "npc_dota_hero_keeper_of_the_light",
+      "chinese_name_for_lookup": "光之守卫",
+      "english_name_for_lookup": "Keeper of the Light",
+      "old_entrance": "H40",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "keeper_of_the_light_illuminate"
+        },
+        {
+          "slot": 2,
+          "key": "keeper_of_the_light_radiant_bind"
+        },
+        {
+          "slot": 3,
+          "key": "keeper_of_the_light_chakra_magic"
+        },
+        {
+          "slot": 4,
+          "key": "keeper_of_the_light_blinding_light"
+        },
+        {
+          "slot": 5,
+          "key": "keeper_of_the_light_will_o_wisp"
+        },
+        {
+          "slot": 6,
+          "key": "keeper_of_the_light_spirit_form"
+        },
+        {
+          "slot": 7,
+          "key": "keeper_of_the_light_illuminate_end"
+        },
+        {
+          "slot": 8,
+          "key": "keeper_of_the_light_spirit_form_illuminate"
+        },
+        {
+          "slot": 9,
+          "key": "keeper_of_the_light_spirit_form_illuminate_end"
+        },
+        {
+          "slot": 10,
+          "key": "keeper_of_the_light_recall"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "key": "npc_dota_hero_wisp",
+      "chinese_name_for_lookup": "艾欧",
+      "english_name_for_lookup": "Io",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "wisp_tether"
+        },
+        {
+          "slot": 2,
+          "key": "wisp_spirits"
+        },
+        {
+          "slot": 3,
+          "key": "wisp_overcharge"
+        },
+        {
+          "slot": 4,
+          "key": "wisp_spirits_in"
+        },
+        {
+          "slot": 5,
+          "key": "wisp_spirits_out"
+        },
+        {
+          "slot": 6,
+          "key": "wisp_relocate"
+        },
+        {
+          "slot": 7,
+          "key": "wisp_tether_break"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "key": "npc_dota_hero_visage",
+      "chinese_name_for_lookup": "维萨吉",
+      "english_name_for_lookup": "Visage",
+      "old_entrance": "H08",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "visage_grave_chill"
+        },
+        {
+          "slot": 2,
+          "key": "visage_soul_assumption"
+        },
+        {
+          "slot": 3,
+          "key": "visage_gravekeepers_cloak"
+        },
+        {
+          "slot": 4,
+          "key": "visage_stone_form_self_cast"
+        },
+        {
+          "slot": 5,
+          "key": "visage_silent_as_the_grave"
+        },
+        {
+          "slot": 6,
+          "key": "visage_summon_familiars"
+        },
+        {
+          "slot": 7,
+          "key": "visage_summon_familiars_stone_form"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "key": "npc_dota_hero_slark",
+      "chinese_name_for_lookup": "斯拉克",
+      "english_name_for_lookup": "Slark",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "slark_dark_pact"
+        },
+        {
+          "slot": 2,
+          "key": "slark_pounce"
+        },
+        {
+          "slot": 3,
+          "key": "slark_essence_shift"
+        },
+        {
+          "slot": 4,
+          "key": "slark_depth_shroud"
+        },
+        {
+          "slot": 6,
+          "key": "slark_shadow_dance"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "key": "npc_dota_hero_medusa",
+      "chinese_name_for_lookup": "美杜莎",
+      "english_name_for_lookup": "Medusa",
+      "old_entrance": "H55",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "medusa_split_shot"
+        },
+        {
+          "slot": 2,
+          "key": "medusa_mystic_snake"
+        },
+        {
+          "slot": 3,
+          "key": "medusa_mana_shield"
+        },
+        {
+          "slot": 4,
+          "key": "medusa_cold_blooded"
+        },
+        {
+          "slot": 6,
+          "key": "medusa_stone_gaze"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "key": "npc_dota_hero_troll_warlord",
+      "chinese_name_for_lookup": "巨魔战将",
+      "english_name_for_lookup": "Troll Warlord",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "troll_warlord_berserkers_rage"
+        },
+        {
+          "slot": 2,
+          "key": "troll_warlord_whirling_axes_ranged"
+        },
+        {
+          "slot": 3,
+          "key": "troll_warlord_whirling_axes_melee"
+        },
+        {
+          "slot": 4,
+          "key": "troll_warlord_fervor"
+        },
+        {
+          "slot": 5,
+          "key": "troll_warlord_rampage"
+        },
+        {
+          "slot": 6,
+          "key": "troll_warlord_battle_trance"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "key": "npc_dota_hero_centaur",
+      "chinese_name_for_lookup": "半人马战行者",
+      "english_name_for_lookup": "Centaur Warrunner",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "centaur_hoof_stomp"
+        },
+        {
+          "slot": 2,
+          "key": "centaur_double_edge"
+        },
+        {
+          "slot": 3,
+          "key": "centaur_return"
+        },
+        {
+          "slot": 6,
+          "key": "centaur_stampede"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "key": "npc_dota_hero_magnataur",
+      "chinese_name_for_lookup": "马格纳斯",
+      "english_name_for_lookup": "Magnus",
+      "old_entrance": "H10",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "magnataur_shockwave"
+        },
+        {
+          "slot": 2,
+          "key": "magnataur_empower"
+        },
+        {
+          "slot": 3,
+          "key": "magnataur_skewer"
+        },
+        {
+          "slot": 4,
+          "key": "magnataur_horn_toss"
+        },
+        {
+          "slot": 6,
+          "key": "magnataur_reverse_polarity"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "key": "npc_dota_hero_shredder",
+      "chinese_name_for_lookup": "伐木机",
+      "english_name_for_lookup": "Timbersaw",
+      "old_entrance": "H32",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "shredder_whirling_death"
+        },
+        {
+          "slot": 2,
+          "key": "shredder_timber_chain"
+        },
+        {
+          "slot": 3,
+          "key": "shredder_reactive_armor"
+        },
+        {
+          "slot": 4,
+          "key": "shredder_chakram_2"
+        },
+        {
+          "slot": 5,
+          "key": "shredder_flamethrower"
+        },
+        {
+          "slot": 6,
+          "key": "shredder_chakram"
+        },
+        {
+          "slot": 7,
+          "key": "shredder_return_chakram"
+        },
+        {
+          "slot": 8,
+          "key": "shredder_return_chakram_2"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "key": "npc_dota_hero_bristleback",
+      "chinese_name_for_lookup": "钢背兽",
+      "english_name_for_lookup": "Bristleback",
+      "old_entrance": "H57",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "bristleback_viscous_nasal_goo"
+        },
+        {
+          "slot": 2,
+          "key": "bristleback_quill_spray"
+        },
+        {
+          "slot": 3,
+          "key": "bristleback_bristleback"
+        },
+        {
+          "slot": 4,
+          "key": "bristleback_hairball"
+        },
+        {
+          "slot": 6,
+          "key": "bristleback_warpath"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "key": "npc_dota_hero_tusk",
+      "chinese_name_for_lookup": "巨牙海民",
+      "english_name_for_lookup": "Tusk",
+      "old_entrance": "H34",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "tusk_ice_shards"
+        },
+        {
+          "slot": 2,
+          "key": "tusk_snowball"
+        },
+        {
+          "slot": 3,
+          "key": "tusk_tag_team"
+        },
+        {
+          "slot": 4,
+          "key": "tusk_walrus_kick"
+        },
+        {
+          "slot": 5,
+          "key": "tusk_frozen_sigil"
+        },
+        {
+          "slot": 6,
+          "key": "tusk_walrus_punch"
+        },
+        {
+          "slot": 7,
+          "key": "tusk_launch_snowball"
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "key": "npc_dota_hero_skywrath_mage",
+      "chinese_name_for_lookup": "天怒法师",
+      "english_name_for_lookup": "Skywrath Mage",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "skywrath_mage_arcane_bolt"
+        },
+        {
+          "slot": 2,
+          "key": "skywrath_mage_concussive_shot"
+        },
+        {
+          "slot": 3,
+          "key": "skywrath_mage_ancient_seal"
+        },
+        {
+          "slot": 6,
+          "key": "skywrath_mage_mystic_flare"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "key": "npc_dota_hero_abaddon",
+      "chinese_name_for_lookup": "亚巴顿",
+      "english_name_for_lookup": "Abaddon",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "abaddon_death_coil"
+        },
+        {
+          "slot": 2,
+          "key": "abaddon_aphotic_shield"
+        },
+        {
+          "slot": 3,
+          "key": "abaddon_frostmourne"
+        },
+        {
+          "slot": 6,
+          "key": "abaddon_borrowed_time"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "key": "npc_dota_hero_elder_titan",
+      "chinese_name_for_lookup": "上古巨神",
+      "english_name_for_lookup": "Elder Titan",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "elder_titan_echo_stomp"
+        },
+        {
+          "slot": 2,
+          "key": "elder_titan_ancestral_spirit"
+        },
+        {
+          "slot": 3,
+          "key": "elder_titan_natural_order"
+        },
+        {
+          "slot": 6,
+          "key": "elder_titan_earth_splitter"
+        },
+        {
+          "slot": 7,
+          "key": "elder_titan_return_spirit"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "key": "npc_dota_hero_legion_commander",
+      "chinese_name_for_lookup": "军团指挥官",
+      "english_name_for_lookup": "Legion Commander",
+      "old_entrance": "H46",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "legion_commander_overwhelming_odds"
+        },
+        {
+          "slot": 2,
+          "key": "legion_commander_press_the_attack"
+        },
+        {
+          "slot": 3,
+          "key": "legion_commander_moment_of_courage"
+        },
+        {
+          "slot": 6,
+          "key": "legion_commander_duel"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "key": "npc_dota_hero_techies",
+      "chinese_name_for_lookup": "工程师",
+      "english_name_for_lookup": "Techies",
+      "old_entrance": "H68",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "techies_land_mines"
+        },
+        {
+          "slot": 2,
+          "key": "techies_stasis_trap"
+        },
+        {
+          "slot": 3,
+          "key": "techies_suicide"
+        },
+        {
+          "slot": 4,
+          "key": "techies_focused_detonate"
+        },
+        {
+          "slot": 5,
+          "key": "techies_minefield_sign"
+        },
+        {
+          "slot": 6,
+          "key": "techies_remote_mines"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "key": "npc_dota_hero_ember_spirit",
+      "chinese_name_for_lookup": "灰烬之灵",
+      "english_name_for_lookup": "Ember Spirit",
+      "old_entrance": "H01",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "ember_spirit_searing_chains"
+        },
+        {
+          "slot": 2,
+          "key": "ember_spirit_sleight_of_fist"
+        },
+        {
+          "slot": 3,
+          "key": "ember_spirit_flame_guard"
+        },
+        {
+          "slot": 4,
+          "key": "ember_spirit_activate_fire_remnant"
+        },
+        {
+          "slot": 6,
+          "key": "ember_spirit_fire_remnant"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "key": "npc_dota_hero_earth_spirit",
+      "chinese_name_for_lookup": "大地之灵",
+      "english_name_for_lookup": "Earth Spirit",
+      "old_entrance": "H06",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "earth_spirit_boulder_smash"
+        },
+        {
+          "slot": 2,
+          "key": "earth_spirit_rolling_boulder"
+        },
+        {
+          "slot": 3,
+          "key": "earth_spirit_geomagnetic_grip"
+        },
+        {
+          "slot": 4,
+          "key": "earth_spirit_stone_caller"
+        },
+        {
+          "slot": 5,
+          "key": "earth_spirit_petrify"
+        },
+        {
+          "slot": 6,
+          "key": "earth_spirit_magnetize"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "key": "npc_dota_hero_abyssal_underlord",
+      "chinese_name_for_lookup": "孽主",
+      "english_name_for_lookup": "Underlord",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "abyssal_underlord_firestorm"
+        },
+        {
+          "slot": 2,
+          "key": "abyssal_underlord_pit_of_malice"
+        },
+        {
+          "slot": 3,
+          "key": "abyssal_underlord_atrophy_aura"
+        },
+        {
+          "slot": 4,
+          "key": "abyssal_underlord_dark_portal"
+        },
+        {
+          "slot": 6,
+          "key": "abyssal_underlord_dark_rift"
+        },
+        {
+          "slot": 7,
+          "key": "abyssal_underlord_cancel_dark_rift"
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "key": "npc_dota_hero_terrorblade",
+      "chinese_name_for_lookup": "恐怖利刃",
+      "english_name_for_lookup": "Terrorblade",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "terrorblade_reflection"
+        },
+        {
+          "slot": 2,
+          "key": "terrorblade_conjure_image"
+        },
+        {
+          "slot": 3,
+          "key": "terrorblade_metamorphosis"
+        },
+        {
+          "slot": 4,
+          "key": "terrorblade_demon_zeal"
+        },
+        {
+          "slot": 5,
+          "key": "terrorblade_terror_wave"
+        },
+        {
+          "slot": 6,
+          "key": "terrorblade_sunder"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "key": "npc_dota_hero_phoenix",
+      "chinese_name_for_lookup": "凤凰",
+      "english_name_for_lookup": "Phoenix",
+      "old_entrance": "H65",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "phoenix_icarus_dive"
+        },
+        {
+          "slot": 2,
+          "key": "phoenix_fire_spirits"
+        },
+        {
+          "slot": 3,
+          "key": "phoenix_sun_ray"
+        },
+        {
+          "slot": 4,
+          "key": "phoenix_sun_ray_toggle_move"
+        },
+        {
+          "slot": 6,
+          "key": "phoenix_supernova"
+        },
+        {
+          "slot": 7,
+          "key": "phoenix_launch_fire_spirit"
+        },
+        {
+          "slot": 8,
+          "key": "phoenix_icarus_dive_stop"
+        },
+        {
+          "slot": 9,
+          "key": "phoenix_sun_ray_stop"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "key": "npc_dota_hero_oracle",
+      "chinese_name_for_lookup": "神谕者",
+      "english_name_for_lookup": "Oracle",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "oracle_fortunes_end"
+        },
+        {
+          "slot": 2,
+          "key": "oracle_fates_edict"
+        },
+        {
+          "slot": 3,
+          "key": "oracle_purifying_flames"
+        },
+        {
+          "slot": 6,
+          "key": "oracle_false_promise"
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "key": "npc_dota_hero_winter_wyvern",
+      "chinese_name_for_lookup": "寒冬飞龙",
+      "english_name_for_lookup": "Winter Wyvern",
+      "old_entrance": "H51",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "winter_wyvern_arctic_burn"
+        },
+        {
+          "slot": 2,
+          "key": "winter_wyvern_splinter_blast"
+        },
+        {
+          "slot": 3,
+          "key": "winter_wyvern_cold_embrace"
+        },
+        {
+          "slot": 6,
+          "key": "winter_wyvern_winters_curse"
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "key": "npc_dota_hero_arc_warden",
+      "chinese_name_for_lookup": "天穹守望者",
+      "english_name_for_lookup": "Arc Warden",
+      "old_entrance": "H12",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "arc_warden_flux"
+        },
+        {
+          "slot": 2,
+          "key": "arc_warden_magnetic_field"
+        },
+        {
+          "slot": 3,
+          "key": "arc_warden_spark_wraith"
+        },
+        {
+          "slot": 6,
+          "key": "arc_warden_tempest_double"
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "key": "npc_dota_hero_monkey_king",
+      "chinese_name_for_lookup": "齐天大圣",
+      "english_name_for_lookup": "Monkey King",
+      "old_entrance": "H15",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "monkey_king_boundless_strike"
+        },
+        {
+          "slot": 2,
+          "key": "monkey_king_tree_dance"
+        },
+        {
+          "slot": 3,
+          "key": "monkey_king_primal_spring"
+        },
+        {
+          "slot": 4,
+          "key": "monkey_king_jingu_mastery"
+        },
+        {
+          "slot": 5,
+          "key": "monkey_king_mischief"
+        },
+        {
+          "slot": 6,
+          "key": "monkey_king_wukongs_command"
+        },
+        {
+          "slot": 7,
+          "key": "monkey_king_primal_spring_early"
+        },
+        {
+          "slot": 8,
+          "key": "monkey_king_untransform"
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "key": "npc_dota_hero_dark_willow",
+      "chinese_name_for_lookup": "邪影芳灵",
+      "english_name_for_lookup": "Dark Willow",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "dark_willow_bramble_maze"
+        },
+        {
+          "slot": 2,
+          "key": "dark_willow_shadow_realm"
+        },
+        {
+          "slot": 3,
+          "key": "dark_willow_cursed_crown"
+        },
+        {
+          "slot": 4,
+          "key": "dark_willow_bedlam"
+        },
+        {
+          "slot": 6,
+          "key": "dark_willow_terrorize"
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "key": "npc_dota_hero_pangolier",
+      "chinese_name_for_lookup": "石鳞剑士",
+      "english_name_for_lookup": "Pangolier",
+      "old_entrance": "H05",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "pangolier_swashbuckle"
+        },
+        {
+          "slot": 2,
+          "key": "pangolier_shield_crash"
+        },
+        {
+          "slot": 3,
+          "key": "pangolier_lucky_shot"
+        },
+        {
+          "slot": 4,
+          "key": "pangolier_rollup"
+        },
+        {
+          "slot": 5,
+          "key": "pangolier_rollup_stop"
+        },
+        {
+          "slot": 6,
+          "key": "pangolier_gyroshell"
+        },
+        {
+          "slot": 7,
+          "key": "pangolier_gyroshell_stop"
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "key": "npc_dota_hero_grimstroke",
+      "chinese_name_for_lookup": "天涯墨客",
+      "english_name_for_lookup": "Grimstroke",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "grimstroke_dark_artistry"
+        },
+        {
+          "slot": 2,
+          "key": "grimstroke_ink_creature"
+        },
+        {
+          "slot": 3,
+          "key": "grimstroke_spirit_walk"
+        },
+        {
+          "slot": 4,
+          "key": "grimstroke_dark_portrait"
+        },
+        {
+          "slot": 6,
+          "key": "grimstroke_soul_chain"
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "key": "npc_dota_hero_hoodwink",
+      "chinese_name_for_lookup": "森海飞霞",
+      "english_name_for_lookup": "Hoodwink",
+      "old_entrance": "H37",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "hoodwink_acorn_shot"
+        },
+        {
+          "slot": 2,
+          "key": "hoodwink_bushwhack"
+        },
+        {
+          "slot": 3,
+          "key": "hoodwink_scurry"
+        },
+        {
+          "slot": 4,
+          "key": "hoodwink_decoy"
+        },
+        {
+          "slot": 5,
+          "key": "hoodwink_hunters_boomerang"
+        },
+        {
+          "slot": 6,
+          "key": "hoodwink_sharpshooter"
+        },
+        {
+          "slot": 7,
+          "key": "hoodwink_sharpshooter_release"
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "key": "npc_dota_hero_void_spirit",
+      "chinese_name_for_lookup": "虚无之灵",
+      "english_name_for_lookup": "Void Spirit",
+      "old_entrance": "H19",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "void_spirit_aether_remnant"
+        },
+        {
+          "slot": 2,
+          "key": "void_spirit_dissimilate"
+        },
+        {
+          "slot": 3,
+          "key": "void_spirit_resonant_pulse"
+        },
+        {
+          "slot": 6,
+          "key": "void_spirit_astral_step"
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "key": "npc_dota_hero_snapfire",
+      "chinese_name_for_lookup": "电炎绝手",
+      "english_name_for_lookup": "Snapfire",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "snapfire_scatterblast"
+        },
+        {
+          "slot": 2,
+          "key": "snapfire_firesnap_cookie"
+        },
+        {
+          "slot": 3,
+          "key": "snapfire_lil_shredder"
+        },
+        {
+          "slot": 4,
+          "key": "snapfire_gobble_up"
+        },
+        {
+          "slot": 5,
+          "key": "snapfire_spit_creep"
+        },
+        {
+          "slot": 6,
+          "key": "snapfire_mortimer_kisses"
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "key": "npc_dota_hero_mars",
+      "chinese_name_for_lookup": "玛尔斯",
+      "english_name_for_lookup": "Mars",
+      "old_entrance": "H41",
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "mars_spear"
+        },
+        {
+          "slot": 2,
+          "key": "mars_gods_rebuke"
+        },
+        {
+          "slot": 3,
+          "key": "mars_bulwark"
+        },
+        {
+          "slot": 6,
+          "key": "mars_arena_of_blood"
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "key": "npc_dota_hero_dawnbreaker",
+      "chinese_name_for_lookup": "破晓辰星",
+      "english_name_for_lookup": "Dawnbreaker",
+      "old_entrance": null,
+      "enabled_field": "1",
+      "cm_field_snapshot": "1",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "dawnbreaker_fire_wreath"
+        },
+        {
+          "slot": 2,
+          "key": "dawnbreaker_celestial_hammer"
+        },
+        {
+          "slot": 3,
+          "key": "dawnbreaker_luminosity"
+        },
+        {
+          "slot": 4,
+          "key": "dawnbreaker_converge"
+        },
+        {
+          "slot": 6,
+          "key": "dawnbreaker_solar_guardian"
+        },
+        {
+          "slot": 7,
+          "key": "dawnbreaker_land"
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "key": "npc_dota_hero_marci",
+      "chinese_name_for_lookup": "玛西",
+      "english_name_for_lookup": "Marci",
+      "old_entrance": "H60",
+      "enabled_field": "1",
+      "cm_field_snapshot": "0",
+      "component_source": "AR-abilities/AR-localization",
+      "ability_slots_read": [
+        {
+          "slot": 1,
+          "key": "marci_grapple"
+        },
+        {
+          "slot": 2,
+          "key": "marci_companion_run"
+        },
+        {
+          "slot": 3,
+          "key": "marci_guardian"
+        },
+        {
+          "slot": 6,
+          "key": "marci_unleash"
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "key": "npc_dota_hero_primal_beast",
+      "chinese_name_for_lookup": "兽",
+      "english_name_for_lookup": "Primal Beast",
+      "old_entrance": "H29",
+      "enabled_field": "本轮未取得后发快照字段",
+      "cm_field_snapshot": "另查官方准入条目",
+      "component_source": "AR-7.32",
+      "ability_slots_read": []
+    },
+    {
+      "id": 138,
+      "key": "npc_dota_hero_muerta",
+      "chinese_name_for_lookup": "琼英碧灵",
+      "english_name_for_lookup": "Muerta",
+      "old_entrance": null,
+      "enabled_field": "本轮未取得后发快照字段",
+      "cm_field_snapshot": "另查官方准入条目",
+      "component_source": "AR-7.33",
+      "ability_slots_read": []
+    }
+  ],
+  "focused_component_fields": {
+    "shadow_demon_disruption": {
+      "ID": "5421",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO | DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES",
+      "AbilityDuration": "2.75",
+      "AbilityCooldown": "29.0 26.0 23.0 20.0",
+      "AbilityCastRange": "650",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityManaCost": "120 120 120 120",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "disruption_duration": "2.75",
+          "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_5"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "illusion_duration": "11 12 13 14"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "illusion_outgoing_damage": "-70.0 -55.0 -40.0 -25.0"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "illusion_outgoing_tooltip": "30.0 45.0 60.0 75.0"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "illusion_incoming_damage": "200"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "tooltip_total_illusion_incoming_damage": "300"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "AbilityCharges": "",
+          "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_7"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "illusion_bounty_base": "0"
+        },
+        "09": {
+          "var_type": "FIELD_INTEGER",
+          "illusion_bounty_growth": "2"
+        }
+      }
+    },
+    "shadow_demon_shadow_poison": {
+      "ID": "5423",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityDuration": "10",
+      "AbilityCooldown": "2.5",
+      "AbilityCastRange": "1500",
+      "AbilityCastPoint": "0.25",
+      "AbilityManaCost": "45",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "stack_damage": "24 36 48 60",
+          "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_4",
+          "LinkedSpecialBonusOperation": "SPECIAL_BONUS_PERCENTAGE_ADD"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "max_multiply_stacks": "5"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "bonus_stack_damage": "50",
+          "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_4",
+          "LinkedSpecialBonusOperation": "SPECIAL_BONUS_PERCENTAGE_ADD"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "200"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "speed": "1000 1000 1000 1000"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "hit_damage": "26 34 42 50",
+          "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_4",
+          "LinkedSpecialBonusOperation": "SPECIAL_BONUS_PERCENTAGE_ADD"
+        }
+      }
+    },
+    "shadow_demon_demonic_purge": {
+      "ID": "5425",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
+      "AbilityDuration": "7.0",
+      "AbilityCooldown": "60",
+      "AbilityCastRange": "800",
+      "AbilityCastPoint": "0.3 0.3 0.3",
+      "AbilityManaCost": "150 175 200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "purge_damage": "300 400 500",
+          "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_1"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "max_charges": "3",
+          "RequiresScepter": "1"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "charge_restore_time": "60",
+          "RequiresScepter": "1"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "charge_restore_time_tooltip_scepter": "60",
+          "RequiresScepter": "1"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "max_slow": "100.0"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "min_slow": "20.0"
+        }
+      }
+    },
+    "disruptor_glimpse": {
+      "ID": "5459",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
+      "AbilityCastPoint": "0.05 0.05 0.05 0.05",
+      "AbilityCooldown": "48 38 28 18",
+      "AbilityManaCost": "100",
+      "AbilityCastRange": "600 1000 1400 1800",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "backtrack_time": "4.0 4.0 4.0 4.0"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "cast_range": "600 1000 1400 1800"
+        }
+      }
+    },
+    "disruptor_kinetic_field": {
+      "ID": "5460",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityCastPoint": "0.05 0.05 0.05 0.05",
+      "AbilityCooldown": "19 16 13 10",
+      "AbilityManaCost": "70",
+      "AbilityCastRange": "900 900 900 900",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "350"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "formation_time": "1"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "2.6 3.2 3.8 4.4",
+          "LinkedSpecialBonus": "special_bonus_unique_disruptor_5"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "damage_per_second": "0"
+        }
+      }
+    },
+    "disruptor_static_storm": {
+      "ID": "5461",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityCastPoint": "0.05 0.05 0.05 0.05",
+      "AbilityCooldown": "90 80 70",
+      "AbilityManaCost": "125 175 225",
+      "AbilityCastRange": "800 800 800 800",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "500"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "pulses": "20",
+          "LinkedSpecialBonus": "special_bonus_unique_disruptor_7",
+          "LinkedSpecialBonusField": "value2"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "damage_max": "200 275 350"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "5.0",
+          "LinkedSpecialBonus": "special_bonus_unique_disruptor_7"
+        }
+      }
+    },
+    "elder_titan_echo_stomp": {
+      "ID": "5589",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
+      "AbilityCastPoint": "0.4",
+      "AbilityCastRange": "500",
+      "AbilityCooldown": "14 13 12 11",
+      "AbilityManaCost": "100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "cast_time": "1.7"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "500"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "sleep_duration": "2 3 4 5"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "stomp_damage": "70 90 110 130",
+          "LinkedSpecialBonus": "special_bonus_unique_elder_titan_2"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "initial_stun_duration": "0.2"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "animation_rate": "0.0"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "wake_damage_limit": "50 100 150 200",
+          "LinkedSpecialBonus": "special_bonus_unique_elder_titan_4"
+        }
+      }
+    },
+    "elder_titan_ancestral_spirit": {
+      "ID": "5591",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityCastRange": "1200",
+      "AbilityCastPoint": "0.4 0.4 0.4 0.4",
+      "AbilityCooldown": "23 21 19 17",
+      "AbilityManaCost": "80 90 100 110",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "275"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "pass_damage": "50"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "spirit_duration": "10.0"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "buff_duration": "10.0"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "speed": "900"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "move_pct_creeps": "1"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "move_pct_heroes": "5 6 7 8"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "damage_creeps": "3 7 11 15",
+          "CalculateSpellDamageTooltip": "0"
+        },
+        "09": {
+          "var_type": "FIELD_INTEGER",
+          "damage_heroes": "14 36 58 80",
+          "LinkedSpecialBonus": "special_bonus_unique_elder_titan",
+          "CalculateSpellDamageTooltip": "0"
+        },
+        "10": {
+          "var_type": "FIELD_FLOAT",
+          "armor_creeps": "0.5"
+        },
+        "11": {
+          "var_type": "FIELD_FLOAT",
+          "armor_heroes": "1.5 3 4.5 6"
+        },
+        "12": {
+          "var_type": "FIELD_INTEGER",
+          "move_pct_cap": "40"
+        },
+        "13": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_magic_immune_per_hero": "2",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "elder_titan_natural_order": {
+      "ID": "5593",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "350"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "armor_reduction_pct": "40 60 80 100"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "magic_resistance_pct": "40 60 80 100"
+        }
+      }
+    },
+    "abyssal_underlord_firestorm": {
+      "ID": "5613",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
+      "AbilityCastRange": "600 625 650 675",
+      "AbilityCastPoint": "0.5",
+      "AbilityCooldown": "12.0",
+      "AbilityManaCost": "110 120 130 140",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "425",
+          "LinkedSpecialBonus": "special_bonus_unique_underlord_8"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "wave_duration": "7.0",
+          "LinkedSpecialBonus": "special_bonus_unique_underlord_7"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "wave_count": "6",
+          "LinkedSpecialBonus": "special_bonus_unique_underlord_7"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "wave_damage": "25 40 55 70",
+          "LinkedSpecialBonus": "special_bonus_unique_underlord_2"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "wave_interval": "1.0"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "burn_damage": "1 2 3 4",
+          "LinkedSpecialBonus": "special_bonus_unique_underlord_4",
+          "CalculateSpellDamageTooltip": "0"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "burn_interval": "1.0"
+        },
+        "08": {
+          "var_type": "FIELD_FLOAT",
+          "burn_duration": "2.0"
+        },
+        "09": {
+          "var_type": "FIELD_FLOAT",
+          "first_wave_delay": "0.0"
+        },
+        "10": {
+          "var_type": "FIELD_FLOAT",
+          "building_damage": "33"
+        }
+      }
+    },
+    "abyssal_underlord_dark_portal": {
+      "ID": "865",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN |DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING ",
+      "AbilityCastRange": "4000",
+      "AbilityCastPoint": "0.45 0.45 0.45 0.45",
+      "AbilityCooldown": "110",
+      "AbilityManaCost": "100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "20.0"
+        }
+      }
+    },
+    "abyssal_underlord_dark_rift": {
+      "ID": "5616",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_BUILDING | DOTA_UNIT_TARGET_CREEP",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
+      "AbilityCastRange": "0",
+      "AbilityCastPoint": "0.6",
+      "AbilityCooldown": "130 115 100",
+      "AbilityManaCost": "100 200 300",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "600"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "teleport_delay": "6.0 5.0 4.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_health_bonus": "1000 1500 2000",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "oracle_fortunes_end": {
+      "ID": "5637",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
+      "AbilityCastRange": "850",
+      "AbilityCastPoint": "0",
+      "AbilityCooldown": "15 12 9 6",
+      "AbilityManaCost": "100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "channel_time": "2.5",
+          "LinkedSpecialBonus": "special_bonus_unique_oracle_7",
+          "LinkedSpecialBonusOperation": "SPECIAL_BONUS_SUBTRACT"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "100 160 220 280"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bolt_speed": "1000"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "minimum_purge_duration": "0.5",
+          "LinkedSpecialBonus": "special_bonus_unique_oracle_2"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "maximum_purge_duration": "2.5",
+          "LinkedSpecialBonus": "special_bonus_unique_oracle_2"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "300"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_bonus_range": "800",
+          "RequiresScepter": "1"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_bonus_radius": "150",
+          "RequiresScepter": "1"
+        },
+        "09": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_stun_percentage": "50",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "oracle_fates_edict": {
+      "ID": "5638",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES",
+      "AbilityCastRange": "500 600 700 800",
+      "AbilityCastPoint": "0.3",
+      "AbilityCooldown": "16 13 10 7",
+      "AbilityManaCost": "50",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "3.0 3.5 4.0 4.5"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "magic_damage_resistance_pct_tooltip": "100"
+        }
+      }
+    },
+    "oracle_purifying_flames": {
+      "ID": "5639",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES",
+      "AbilityCastRange": "850",
+      "AbilityCastPoint": "0.15",
+      "AbilityCooldown": "2.5",
+      "AbilityManaCost": "80 85 90 95",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "90 180 270 360"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "heal_per_second": "11.0 22.0 33.0 44.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "total_heal_tooltip": "99 198 297 396"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "9.0"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "tick_rate": "1.0"
+        }
+      }
+    },
+    "snapfire_gobble_up": {
+      "ID": "6484",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_CUSTOM",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_CUSTOM",
+      "AbilityCastPoint": "0.3",
+      "AbilityManaCost": "150",
+      "AbilityCastRange": "150",
+      "AbilityCooldown": "40",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "max_time_in_belly": "3.0",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "snapfire_spit_creep": {
+      "ID": "6486",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityCastRange": "3000",
+      "AbilityCastPoint": "0.3",
+      "AbilityCooldown": "0",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "projectile_speed": "1400"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "projectile_width": "130"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "impact_radius": "400"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "projectile_vision": "500"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "burn_interval": "0.5"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "burn_damage": "100"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "move_slow_pct": "25",
+          "LinkedSpecialBonus": "special_bonus_unique_snapfire_4"
+        },
+        "09": {
+          "var_type": "FIELD_FLOAT",
+          "burn_ground_duration": "3.0"
+        },
+        "10": {
+          "var_type": "FIELD_INTEGER",
+          "min_range": "0"
+        },
+        "11": {
+          "var_type": "FIELD_FLOAT",
+          "min_lob_travel_time": "0.1"
+        },
+        "12": {
+          "var_type": "FIELD_FLOAT",
+          "max_lob_travel_time": "2.0"
+        },
+        "13": {
+          "var_type": "FIELD_FLOAT",
+          "burn_linger_duration": "1.0"
+        },
+        "14": {
+          "var_type": "FIELD_FLOAT",
+          "stun_duration": "1.5"
+        },
+        "15": {
+          "var_type": "FIELD_FLOAT",
+          "min_height_above_lowest": "150.0"
+        },
+        "16": {
+          "var_type": "FIELD_FLOAT",
+          "min_height_above_highest": "100.0"
+        },
+        "17": {
+          "var_type": "FIELD_FLOAT",
+          "min_acceleration": "1000.0"
+        },
+        "18": {
+          "var_type": "FIELD_FLOAT",
+          "max_acceleration": "2000.0"
+        }
+      }
+    }
+  },
+  "knowledge_search": {
+    "queries": [
+      "elder titan spirit return cooldown buff site:reddit.com/r/TrueDoTA2",
+      "snapfire gobble hold save site:reddit.com/r/TrueDoTA2",
+      "shadow demon mid disruption site:reddit.com/r/TrueDoTA2"
+    ],
+    "scope": "Web检索返回的原帖摘要和指定评论摘要；未完整审读原帖/评论、视频或履历，不认证普及/首创",
+    "selected_primary_q": [
+      {
+        "url": "https://www.reddit.com/r/learndota2/comments/1l8hori/how_to_actually_play_elder_titan_properly/",
+        "date_precision": "检索侧2025-06-11/12评论日期，非核验首次发布时刻",
+        "claim": "玩家描述将灵体留在法术目标附近；只能作普通用途Q线索，不迁移2025数值"
+      },
+      {
+        "url": "https://www.reddit.com/r/TrueDoTA2/comments/rqz04h",
+        "date_precision": "检索侧2021-12-29",
+        "claim": "已公开禁锢分身斧幻象保留核心打塔，不能当本轮发现"
+      },
+      {
+        "url": "https://www.reddit.com/r/DotA2/comments/k29a69",
+        "date_precision": "检索侧2020，主楼提7.27d",
+        "claim": "旧期中单/复制核心线索，不认证职业中单"
+      },
+      {
+        "url": "https://www.reddit.com/r/TrueDoTA2/comments/xbmywv",
+        "date_precision": "检索侧2022-09-11",
+        "claim": "玩家提pos2/4/5及蓝耗/技能点成本，段内mid game不等于走中"
+      },
+      {
+        "url": "https://www.reddit.com/r/DotA2/comments/1x2ku6h/shadow_demon_core/",
+        "date_precision": "检索侧2026-10-10/11，后发追述",
+        "claim": "陨星锤中单为旧用法Q，不将2026被动或自报胜率用于故事期"
+      }
+    ],
+    "negative_limits": "本次未取得Snapfire可靠同款，不等于没有；检索SD结果偏多，没有扩大成全英雄查新"
+  },
+  "identity_correction": {
+    "id123": "Hoodwink＝森海飞霞；旧H37/HW1/HW2及FE3误写电炎绝手，当前总库纠正并保留原卡键",
+    "id128": "Snapfire＝电炎绝手，本轮新增入口；不将H37误当此英雄的旧材料"
+  },
+  "screen_summary": {
+    "roster_rows": 124,
+    "disposition_counts": {
+      "资源对照": 24,
+      "专项": 57,
+      "深化": 43
+    },
+    "new_advanced_discoveries_certified": 0,
+    "focused_units": 6,
+    "new_technique_family_ids": 0,
+    "old_operation_material_heroes": 39,
+    "old_shallow_entrances": 29,
+    "old_numbered_entries": 128,
+    "candidate_families": 9,
+    "limits": "首筛和六单元不等于124全英雄深研；优先级为I，不是职业选率、排名或作者英雄池"
+  },
+  "conditional_models": {
+    "et": {
+      "first_active": 0,
+      "return_complete": 9,
+      "buff_duration": 10,
+      "next_cooldown": 17,
+      "next_cast_point": 0.4,
+      "travel_assumed": 0.6,
+      "overlap_seconds": 1,
+      "new_cast_preserves_previous_buff": "H",
+      "skill_points_for_4_4_1_1": 10
+    },
+    "sd": {
+      "first_banish_effect": 0,
+      "banish_duration": 2.75,
+      "image_lifetime": 14,
+      "default_next_cooldown": 20,
+      "cdr_assumed": 0.25,
+      "next_effect_ideal": 15,
+      "second_end_ideal": 17.75,
+      "parent_expiry": 16.75,
+      "minimum_cdr_ideal_if_parent_clock_runs": 0.3,
+      "target_expiry_during_banish": "H，明确条件分支",
+      "paired_copyable_raw_damage_assumed": 100,
+      "paired_l4_raw": 150,
+      "paired_l1_raw": 60,
+      "task_seconds_assumed": 10.25,
+      "slack_seconds": 3.75
+    },
+    "underlord": {
+      "path_assumed": 5000,
+      "speed_assumed": 350,
+      "walk_seconds": 14.285714285714286,
+      "cast_point": 0.6,
+      "l1_delay": 6,
+      "l2_delay": 5,
+      "l1_total": 6.6,
+      "l2_total": 5.6,
+      "increment_from_l1_to_l2": 1,
+      "deadline_assumed": 6.1
+    },
+    "snapfire": {
+      "swallow_cast": 0.3,
+      "spit_cast": 0.3,
+      "projectile_max_field": 2,
+      "budget_seconds": 2.6,
+      "hold_limit_field": 3,
+      "limits": "无等待的条件预算，未认证CUSTOM运行或把腹中3秒当整个最大5秒流程"
+    }
+  },
+  "execution": {
+    "new_match_api": false,
+    "existing_match_scan": false,
+    "video_watched": false,
+    "replay_parsed": false,
+    "game_test_run": false,
+    "success_rate_measured": false,
+    "global_novelty_verified": false,
+    "novel_prose_or_adoption": false,
+    "new_delegation": false,
+    "method_contract_changed": false
+  },
+  "review": {
+    "mode": "主任务定向反证＋名单/字段/条件计算机械核对；无新增独立/异构审查",
+    "focus": [
+      "同英雄其他位置与强替代",
+      "技能点共同满足",
+      "生成前后目标寿命",
+      "两个施法位置与历史取样",
+      "版本/升级资格",
+      "普通组件与待研增量分开"
+    ],
+    "limits": "计算和同源字段一致不认证引擎，未作全英雄职业采用分母或全球查新"
+  }
+}
