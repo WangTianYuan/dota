@@ -1,0 +1,458 @@
+{
+  "id": "sources:mid-2023-resource-research-20261013",
+  "as_of_client": "2026-10-13 America/Los_Angeles",
+  "purpose": "第29—31单元：2023资源循环与保护代价；当前判断在总库",
+  "saved_sources": [
+    {
+      "name": "patch-7.34.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.34&language=english",
+      "retrieved_at": "2026-10-13T12:47:19.423384+00:00",
+      "status": 200,
+      "final_url": "https://www.dota2.com/datafeed/patchnotes?version=7.34&language=english",
+      "bytes": 82566,
+      "sha256": "6b314a1c829f67f28bdcfda3572d8a4df801e41ec761a11945c425e378671740",
+      "file": "patch-7.34.json",
+      "read_scope": "官方50/137/138限定条目；邪能层分别到期/20秒、波蓝75与友敌交跳、岩命中叠层、魂体身体35%减伤。"
+    },
+    {
+      "name": "patch-7.34b.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.34b&language=english",
+      "retrieved_at": "2026-10-13T12:47:19.425615+00:00",
+      "status": 200,
+      "final_url": "https://www.dota2.com/datafeed/patchnotes?version=7.34b&language=english",
+      "bytes": 11736,
+      "sha256": "9f4b8f6efad3e0e97f6dca63884bc223f6e3314009f4518d8d59fea39f191c54",
+      "file": "patch-7.34b.json",
+      "read_scope": "官方Dazzle暗影波75/95/115/135；不作其他英雄分析。"
+    },
+    {
+      "name": "dazzle-issue-10483.json",
+      "url": "https://api.github.com/repos/ValveSoftware/Dota2-Gameplay/issues/10483",
+      "retrieved_at": "2026-10-13T12:47:19.935550+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/ValveSoftware/Dota2-Gameplay/issues/10483",
+      "bytes": 3926,
+      "sha256": "ca92a58215cefb0c6f58de028b0e83ffa6b565c9fff7900a9df9287988cd8112",
+      "file": "dazzle-issue-10483.json",
+      "read_scope": "报告与created/closed时间；报告Q不证明持续到整期。"
+    },
+    {
+      "name": "dazzle-issue-comments.json",
+      "url": "https://api.github.com/repos/ValveSoftware/Dota2-Gameplay/issues/10483/comments?per_page=100",
+      "retrieved_at": "2026-10-13T12:47:23.977608+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/ValveSoftware/Dota2-Gameplay/issues/10483/comments?per_page=100",
+      "bytes": 1732,
+      "sha256": "45baf79b372ddc2c8e222ea3742aac7c47fbe9ba5a75d74933e16bee1415e9f5",
+      "file": "dazzle-issue-comments.json",
+      "read_scope": "唯一相关修复回复及UTC时间；作者账号不代替本项目引擎测试。"
+    },
+    {
+      "name": "primal-tips.html",
+      "url": "https://howdoiplay.com/tips/primal_beast.html",
+      "retrieved_at": "2026-10-13T12:47:26.028292+00:00",
+      "status": 200,
+      "final_url": "https://howdoiplay.com/tips/primal_beast.html",
+      "bytes": 9459,
+      "sha256": "96f790b322650c5f192ecec1e36e5f0d143c1c22a4a7a24a8fa8b0874e239a68",
+      "file": "primal-tips.html",
+      "read_scope": "只读输入/移动/碎片/激昂相关；现行Q不认证旧期整链，异常自推双突不迁入。"
+    },
+    {
+      "name": "muerta-tips.html",
+      "url": "https://howdoiplay.com/tips/muerta.html",
+      "retrieved_at": "2026-10-13T12:47:26.121056+00:00",
+      "status": 200,
+      "final_url": "https://howdoiplay.com/tips/muerta.html",
+      "bytes": 8537,
+      "sha256": "f9caa4d41dc24643a8f8a22875199c1511320c2be0adc476828cf18ba7b4db33",
+      "file": "muerta-tips.html",
+      "read_scope": "只读弹射/攻击伤害与目标组件；没有用现行页面缺失的旧魂体分离补规则。"
+    },
+    {
+      "name": "root-commit-selection.json",
+      "file": "root-commit-selection.json",
+      "url": "https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/commits?until=2023-08-31T00:00:00Z&per_page=1",
+      "bytes": 4993,
+      "sha256": "b0efb1197b5cce3f4faf6bdc31fdd39e611e5cc24e615186b9d5050b9fb1e3f5",
+      "retrieved_at": "2026-10-13T13:03:26.557135+00:00",
+      "retrieval_time_precision": "本轮记录生成UTC；原脚本未在失败前保存单项返回时刻，不当原响应精确时间",
+      "read_scope": "截至2023-08-31T00:00Z的最新仓库提交：2023-08-20，仅目录定位。",
+      "routing_only": true
+    },
+    {
+      "name": "snapshot-tree.json",
+      "file": "snapshot-tree.json",
+      "url": "https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/git/trees/722db642e5cf67cdfb13c36038cd875f08ad2147?recursive=1",
+      "bytes": 2444823,
+      "sha256": "dc470a860d1f08a3a5027889b7931d1e1a93935940b810b4fc2500340a9f6110",
+      "retrieved_at": "2026-10-13T13:03:26.558132+00:00",
+      "retrieval_time_precision": "本轮记录生成UTC；原脚本未在失败前保存单项返回时刻，不当原响应精确时间",
+      "read_scope": "完整未截断树；无期望标准模式npc_abilities/items/abilities_english路径，仅自定义模式相邻文件；只限定此树，不证明所有资料不存在。",
+      "routing_only": true
+    },
+    {
+      "name": "reused-patch-7.33.json",
+      "file": "patch-7.33.json",
+      "cache_group": "mid-action-window-research-20261013",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english",
+      "bytes": 169457,
+      "sha256": "b65cb135d43236e8816546e661a58aaf30de3ec7f737a201905590e041f17d04",
+      "acquisition": "复用已保存响应，本轮新增读50/137/138限定条目",
+      "read_scope": "邪能主动重做、兽突与捶击/石头时序、Muerta CM/神杖魂体；非补丁全量审读"
+    }
+  ],
+  "source_independence": "三官方补丁同发布方，两技巧页同作者站，GitHub报告/回复同问题链；两目录定位响应不是机制印证。九保存响应不等于九个独立见证。",
+  "official_scopes": {
+    "7.33": {
+      "patch_timestamp": 1681974000,
+      "published_at_utc": "2023-04-20T07:00:00+00:00",
+      "hero_ids_read": [
+        50,
+        137,
+        138
+      ],
+      "scope": "限定条目及必要数值，不保存公告整段引语"
+    },
+    "7.34": {
+      "patch_timestamp": 1691478000,
+      "published_at_utc": "2023-08-08T07:00:00+00:00",
+      "hero_ids_read": [
+        50,
+        137,
+        138
+      ],
+      "scope": "限定条目及必要数值，不保存公告整段引语"
+    },
+    "7.34b": {
+      "patch_timestamp": 1691996400,
+      "published_at_utc": "2023-08-14T07:00:00+00:00",
+      "hero_ids_read": [
+        50
+      ],
+      "scope": "限定条目及必要数值，不保存公告整段引语"
+    },
+    "values": {
+      "7.33-dazzle": {
+        "spell_cooldown_reduction": [
+          4,
+          5,
+          6
+        ],
+        "item_cooldown_reduction": [
+          3,
+          4,
+          5
+        ],
+        "health_base_cost": [
+          75,
+          100,
+          125
+        ],
+        "health_increase_pct": 50,
+        "health_increase_seconds": [
+          30,
+          25,
+          20
+        ],
+        "r_cooldown": 3,
+        "self_cost_nonlethal": true,
+        "scepter_inverse_wave_factor": 1.5
+      },
+      "7.34-dazzle": {
+        "independent_cost_stacks": true,
+        "health_increase_seconds": 20,
+        "shadow_wave_mana": 75,
+        "scepter_cross_team_bounces": true
+      },
+      "7.34b-dazzle": {
+        "shadow_wave_heal_damage": [
+          75,
+          95,
+          115,
+          135
+        ]
+      },
+      "7.33-primal": {
+        "onslaught_cast_point": 0,
+        "max_charge_time": 2.2,
+        "time_to_max_charge": 1.7,
+        "minimum_charge_distance": 100,
+        "pulverize_stun_per_hit": 0.2,
+        "pulverize_cooldown": [
+          36,
+          32,
+          28
+        ]
+      },
+      "7.34-primal": {
+        "rock_throw_hit_hero_grants_uproar_stack": true
+      },
+      "7.33-muerta": {
+        "captains_mode_added": true,
+        "parting_duration": 4,
+        "soul_push": 150,
+        "soul_states": [
+          "untargetable",
+          "muted",
+          "disarmed",
+          "invulnerable"
+        ],
+        "body_states": [
+          "stunned"
+        ],
+        "body_damage_reduction": 0.5,
+        "return_strong_dispel": true,
+        "soul_outlasts_body_death": true,
+        "can_target_self": false,
+        "damages_allies": false,
+        "enemy_damage_value": 300,
+        "mana": 250,
+        "cooldown": 45,
+        "requires_scepter": true
+      },
+      "7.34-muerta": {
+        "body_damage_reduction": 0.35
+      }
+    }
+  },
+  "dazzle_fix_reply": {
+    "issue_url": "https://github.com/ValveSoftware/Dota2-Gameplay/issues/10483",
+    "created_at": "2023-08-09T10:57:47Z",
+    "closed_at": "2023-08-09T22:20:33Z",
+    "current_state": "closed",
+    "report_claim_type": "Q：当时不减充能，含标准点金与征召/偷技能分支",
+    "reply_url": "https://github.com/ValveSoftware/Dota2-Gameplay/issues/10483#issuecomment-1672238149",
+    "reply_account": "chrisf-valve",
+    "reply_at": "2023-08-09T22:20:33Z",
+    "reply_text_short": "This has been fixed in the latest update.",
+    "reply_claim_type": "Q：账号称修复；时间/关闭F；未认证账号正式角色、引擎或构建",
+    "consequence": "不能以初始报告证明后续整期不可能；修复不无限外推到所有充能项"
+  },
+  "web_original_Q": {
+    "url": "https://www.reddit.com/r/TrueDoTA2/comments/1654qdm/dazzle_theorycrafting_and_bad_juju_interactions/",
+    "published_at_from_prior_card": "2023-08-30，旧D1定位；本轮未新增精确发表时间核验",
+    "read_scope": "主楼与相关充能/资源机会成本评论；无视频、玩家胜率与全排名认证",
+    "claims": "玩家自述跳刀禁用空档、近连续薄葬、神杖波；相关评论称点金/吊坠充能后来可减，同时有初版不行说法；只按各说法归属，不保存全文",
+    "http_body_is_challenge_page": true,
+    "actual_read_path": "Web可读，HTTP200挑战页不当正文"
+  },
+  "period_reused_source": {
+    "source_record": "07_sources/mid-all-hero-screen-20261013.json",
+    "sha256": "01a30252ff8a0ffe458caba3a3986593eea1556c843fc5b0ffbae6bd9691c9f5",
+    "hash_basis": "UTF-8 source text with CRLF normalized to LF",
+    "read_scope": "137/138的推出/CM时间对象；Muerta7.32e推出与7.33加入CM分开"
+  },
+  "unused_acquisition_attempts": {
+    "path_filtered_commit": "3cc1ec56e87e3b65ce5bedcafe78618a8ec693c3",
+    "path_filtered_date": "2022-05-22T11:29:54Z",
+    "responses": [
+      {
+        "name": "commit-selection.json",
+        "url": "https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/commits?path=game/dota/scripts/npc/npc_abilities.txt&until=2023-08-31T00:00:00Z&per_page=1",
+        "retrieved_at": "2026-10-13T12:47:15.073804+00:00",
+        "status": 200,
+        "final_url": "https://api.github.com/repositories/76163778/commits?path=game/dota/scripts/npc/npc_abilities.txt&until=2023-08-31T00:00:00Z&per_page=1",
+        "bytes": 6707,
+        "sha256": "e2bd41dc4526cf9901f30c9c20b5fc3a6fac04e2b7bee7d2508ed0c9cea537fb",
+        "file": "commit-selection.json"
+      },
+      {
+        "name": "abilities-2023.txt",
+        "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/3cc1ec56e87e3b65ce5bedcafe78618a8ec693c3/game/dota/scripts/npc/npc_abilities.txt",
+        "retrieved_at": "2026-10-13T12:47:17.535626+00:00",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "name": "items-2023.txt",
+        "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/3cc1ec56e87e3b65ce5bedcafe78618a8ec693c3/game/dota/pak01_dir/scripts/npc/items.txt",
+        "retrieved_at": "2026-10-13T12:47:17.536630+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/3cc1ec56e87e3b65ce5bedcafe78618a8ec693c3/game/dota/pak01_dir/scripts/npc/items.txt",
+        "bytes": 612314,
+        "sha256": "ea356d7d138601eef0e726b9eede20dd5f258f66af206f35df9ffa93870db7ae",
+        "file": "items-2023.txt"
+      },
+      {
+        "name": "localization-2023.txt",
+        "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/3cc1ec56e87e3b65ce5bedcafe78618a8ec693c3/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+        "retrieved_at": "2026-10-13T12:47:17.536630+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/3cc1ec56e87e3b65ce5bedcafe78618a8ec693c3/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+        "bytes": 1318778,
+        "sha256": "c3b03eb88141310b0f0b3aa612da388b2701faafd0870da43e4441efee586631",
+        "file": "localization-2023.txt"
+      },
+      {
+        "name": "steam-2023.inf",
+        "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/3cc1ec56e87e3b65ce5bedcafe78618a8ec693c3/game/dota/steam.inf",
+        "retrieved_at": "2026-10-13T12:47:17.537315+00:00",
+        "status": 200,
+        "final_url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/3cc1ec56e87e3b65ce5bedcafe78618a8ec693c3/game/dota/steam.inf",
+        "bytes": 209,
+        "sha256": "cf62ac9f29ba5044e390286a6d68ea7a9f0bd80008c155323a954abb4c4132cb",
+        "file": "steam-2023.inf"
+      },
+      {
+        "name": "dazzle-original.html",
+        "url": "https://www.reddit.com/r/TrueDoTA2/comments/1654qdm/dazzle_theorycrafting_and_bad_juju_interactions/",
+        "retrieved_at": "2026-10-13T12:47:26.019516+00:00",
+        "status": 200,
+        "final_url": "https://www.reddit.com/r/TrueDoTA2/comments/1654qdm/dazzle_theorycrafting_and_bad_juju_interactions/",
+        "bytes": 8474,
+        "sha256": "12a9eddfe42b65d260de3779da3c8899f534da90f129f0798a6bc1fd5f911abc",
+        "file": "dazzle-original.html"
+      }
+    ],
+    "reason": "2022文件/404/HTTP挑战页不作2023定义证据；命名不赋予年代",
+    "root_commit": "722db642e5cf67cdfb13c36038cd875f08ad2147",
+    "root_date": "2023-08-20T03:45:56Z",
+    "standard_definitions_obtained": false,
+    "custom_mode_files_used": false,
+    "bounded_stop": "两次定向定位后按官方有限事实/玩家Q继续相容推演，未扩大客户端复现"
+  },
+  "models": {
+    "29-dazzle": {
+      "classification": "I/H：旧DA1/DA2资源与时期深化；不新增设计/专项",
+      "level": {
+        "r": 3,
+        "required_hero_level": 18
+      },
+      "health_cost_formula_H": "base*(1+0.5*unexpired_prior_stacks); no rounding",
+      "initial_hp_assumed": 600,
+      "effect_times_assumed": [
+        0,
+        3.5,
+        7,
+        10.5
+      ],
+      "greedy_first_three_costs": [
+        125,
+        187.5,
+        250
+      ],
+      "hp_after_three_no_heal_H": 37.5,
+      "fourth_cost_H": 312.5,
+      "self_cost_cannot_kill_F": true,
+      "following_actual_hp_damage_assumed": 40,
+      "expiry_branch": {
+        "first_effect": 0,
+        "second_effect": 3.5,
+        "first_expiry": 20,
+        "second_expiry": 23.5,
+        "third_effect": 20.5,
+        "existing_prior_stacks_H": 1,
+        "cost_if_additive_H": 187.5,
+        "cost_if_wrongly_keeps_two_stacks_H": 250,
+        "health_difference_H": 62.5
+      },
+      "counterexamples": [
+        "不能由R3强度导出低等级即时收益",
+        "动画/输入/血量取整未认证；各生效时刻是假设",
+        "治疗限制、受控与后续敌伤仍有效",
+        "修复回复不证明所有充能项或任意客户端均已修复"
+      ],
+      "strong_baselines": [
+        "普通治疗/薄葬",
+        "留到真实冷却再施",
+        "辅助负责救援而中路经济给另一核心"
+      ]
+    },
+    "30-primal": {
+      "classification": "I/H：旧PR1/PR2深化与反证；不新增设计/专项",
+      "charge_delay_model": {
+        "input_delay_H": 0.05,
+        "minimum_distance_F": 100,
+        "movement_speed_H": 1200,
+        "full_minimum_distance_time_H": 0.08333333333333333,
+        "sum_H": 0.13333333333333333,
+        "limitations": "首次接触可能更早，真实速度/输入起算未取得；不认证实机间隙或无缝。"
+      },
+      "rock_direction_model": {
+        "impact_point": [
+          0,
+          0
+        ],
+        "body_before": [
+          -600,
+          0
+        ],
+        "body_after": [
+          0,
+          -600
+        ],
+        "opposite_body_vector_before": [
+          600,
+          0
+        ],
+        "opposite_body_vector_after": [
+          0,
+          600
+        ],
+        "central_direction_change_degrees_H": 90,
+        "sampling_rule": "现行Q：首岩落地身体位置决定碎片反方向；旧期完整链H",
+        "coverage_unknown": [
+          "fragment_count",
+          "spread_angles",
+          "range",
+          "collision",
+          "old_engine_snapshot"
+        ]
+      },
+      "force_trample_Q": "现行作者说推推移动不触发践踏，吹风可触发；不能外推全部旧位移",
+      "counterexamples": [
+        "0抬手不消掉指令/移动与对手输入",
+        "异常自推二次突不前移",
+        "封跳/定身/首岩已落/原来可直接正确投掷",
+        "激昂开后无条件继续叠层不成立"
+      ],
+      "strong_baselines": [
+        "普通冲入接稳定伙伴控制",
+        "直接选已有正确石头方向",
+        "三号位同英雄承担发起"
+      ]
+    },
+    "31-muerta": {
+      "classification": "I/H：神杖保护代价与版本反证；不新增设计/专项",
+      "body_hp_assumed": 300,
+      "damage_after_other_factors_before_parting_reduction_assumed": 500,
+      "damage_7_33_H": 250.0,
+      "hp_7_33_H": 50.0,
+      "damage_7_34_H": 325.0,
+      "remaining_7_34_arithmetic_H": -25.0,
+      "duration_F": 4,
+      "costs_F": {
+        "mana": 250,
+        "cooldown": 45,
+        "requires_scepter": true
+      },
+      "counterexamples": [
+        "灵魂无敌不赋予身体无敌",
+        "结束驱散不取消之前伤害/任务损失",
+        "灵魂存续不能推出身体复活",
+        "友军身体退出4秒，灵魂继承指定技能未在本轮核全",
+        "打敌人的300与承伤减少同时比较，不算满额队伍伤害"
+      ],
+      "strong_baselines": [
+        "普通眩晕攻击者",
+        "更强无敌救援或薄葬",
+        "核心原本不进危险区",
+        "一号位输出/辅助功能分工比较"
+      ]
+    }
+  },
+  "status": {
+    "new_units": 3,
+    "cumulative_units": 31,
+    "cumulative_conditional_designs": 10,
+    "cumulative_public_specials": 3,
+    "new_designs": 0,
+    "new_public_specials": 0,
+    "new_N_families": 0,
+    "game_engine_tested": false,
+    "new_video_or_replay": false,
+    "new_match_scan": false,
+    "novel_final_adoption": false,
+    "method_semantics_changed": false
+  }
+}
