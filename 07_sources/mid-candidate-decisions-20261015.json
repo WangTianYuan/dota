@@ -1,0 +1,1209 @@
+{
+  "id": "sources:mid-candidate-decisions-20261015",
+  "read_at_utc": "2026-10-15T09:50:23.580726+00:00",
+  "scope": "2021-11-01固定7.30e镜像；余69候选的取舍引用原表，定向补读三组推演及四中路方案必要组件。非2021—2023全期逐英雄研究。",
+  "source_type": "Valve资源内容的第三方历史镜像，不是引擎实现或真实赛事客户端运行记录。",
+  "reused_fixed_sources": [
+    {
+      "id": "AW-abilities",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "bytes": 3099817,
+      "reuse": "重核既有固定响应哈希；非本轮重新下载",
+      "path": "mid-companion-research-20261014\\fresh-AW-abilities.txt"
+    },
+    {
+      "id": "AW-localization",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "bytes": 1235305,
+      "reuse": "重核既有固定响应哈希；非本轮重新下载",
+      "path": "mid-companion-research-20261014\\fresh-AW-localization.txt"
+    },
+    {
+      "id": "AW-items",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "bytes": 621009,
+      "reuse": "重核既有固定响应哈希；非本轮重新下载",
+      "path": "mid-companion-research-20261014\\fresh-AW-items.txt"
+    },
+    {
+      "id": "AR-heroes",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_heroes.txt",
+      "sha256": "c53ff35869b5678a9ef4c5b032643be379eefa536695644dbf989644c851b181",
+      "bytes": 634652,
+      "reuse": "重核既有固定响应哈希；非本轮重新下载",
+      "path": "mid-persistent-units-20261012\\npc_heroes.txt"
+    }
+  ],
+  "blocks_read": {
+    "warlock_upheaval": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_AOE",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+        "AbilityCastPoint": "0.4",
+        "AbilityChannelTime": "10 12 14 16",
+        "AbilityCooldown": "35",
+        "AbilityDamage": "0 0 0 0",
+        "AbilityManaCost": "70 90 110 130",
+        "AbilityCastRange": "1200",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "aoe": "500 550 600 650"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "slow_per_second": "12 17 22 27"
+          },
+          "03": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "3.0"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "max_slow": "40 60 80 100"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "aspd_per_second": "10"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_warlock_upheaval_description": "CHANNELED - A powerful slowing current that grows stronger as it's channelled. Lasts up to %abilitychanneltime% seconds.  Enemies are slowed for %duration% seconds after leaving the area or the spell ends.",
+        "dota_tooltip_ability_warlock_upheaval_note0": "The slow increase is based on length of the channel, not the duration an enemy was standing in the area."
+      }
+    },
+    "warlock_fatal_bonds": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+        "AbilityCastRange": "1000",
+        "AbilityCastPoint": "0.2",
+        "AbilityCooldown": "36 30 24 18",
+        "AbilityDamage": "0 0 0 0",
+        "AbilityManaCost": "110 120 130 140",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "count": "6",
+            "LinkedSpecialBonus": "special_bonus_unique_warlock_9"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "damage_share_percentage": "12 16 20 24",
+            "LinkedSpecialBonus": "special_bonus_unique_warlock_5"
+          },
+          "03": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "25.0"
+          },
+          "04": {
+            "var_type": "FIELD_FLOAT",
+            "search_aoe": "700"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_warlock_fatal_bonds_description": "Binds several enemy units together, causing a percentage of the damage dealt to one of them to be felt by the others.",
+        "dota_tooltip_ability_warlock_fatal_bonds_note0": "The shared damage type is the same as the type of damage inflicted."
+      }
+    },
+    "warlock_shadow_word": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+        "HasShardUpgrade": "1",
+        "AbilityCastPoint": "0.4",
+        "AbilityCooldown": "14",
+        "AbilityManaCost": "120 130 140 150",
+        "AbilityCastRange": "600 700 800 900",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "damage": "18 27 36 45",
+            "LinkedSpecialBonus": "special_bonus_unique_warlock_7"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "10.0"
+          },
+          "03": {
+            "var_type": "FIELD_FLOAT",
+            "tick_interval": "1.0"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_warlock_shadow_word_description": "Warlock whispers an incantation, healing a friendly unit or damaging an enemy unit over time.",
+        "dota_tooltip_ability_warlock_shadow_word_shard_description": "Turns Shadow Word into a 450 AoE Spell. Grants 10%% movement speed bonus to allies and slows enemies by 10%%. "
+      }
+    },
+    "warlock_rain_of_chaos": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+        "HasScepterUpgrade": "1",
+        "AbilityCastPoint": "0.5 0.5 0.5",
+        "AbilityCooldown": "170",
+        "AbilityManaCost": "250 375 500",
+        "AbilityCastRange": "1200",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "golem_duration": "60 60 60"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "stun_duration": "1.0"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "aoe": "600"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "golem_hp_tooltip": "1200 2100 3000"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "golem_dmg_tooltip": "100 150 200"
+          },
+          "06": {
+            "var_type": "FIELD_INTEGER",
+            "golem_armor_tooltip": "6 9 12",
+            "LinkedSpecialBonus": "special_bonus_unique_warlock_2"
+          },
+          "07": {
+            "var_type": "FIELD_INTEGER",
+            "golem_regen_tooltip": "25 50 75"
+          },
+          "08": {
+            "var_type": "FIELD_INTEGER",
+            "number_of_golems_scepter": "2",
+            "RequiresScepter": "1"
+          },
+          "09": {
+            "var_type": "FIELD_INTEGER",
+            "golem_hp_tooltip_scepter": "800 1600 2400",
+            "RequiresScepter": "1"
+          },
+          "10": {
+            "var_type": "FIELD_INTEGER",
+            "golem_dmg_tooltip_scepter": "75 110 150",
+            "RequiresScepter": "1"
+          },
+          "11": {
+            "var_type": "FIELD_INTEGER",
+            "hp_dmg_reduction_scepter": "25",
+            "RequiresScepter": "1"
+          },
+          "12": {
+            "var_type": "FIELD_INTEGER",
+            "bounty_reduction_scepter": "50",
+            "RequiresScepter": "1"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_warlock_rain_of_chaos_description": "Summons a Golem from the depths, stunning enemies for one second. The Golem lives %golem_duration% seconds, takes reduced damage from spells, has Permanent Immolation and Flaming Fists on attack.",
+        "dota_tooltip_ability_warlock_rain_of_chaos_scepter_description": "Calls %number_of_golems_scepter% Golems with reduced stats and bounty.",
+        "dota_tooltip_ability_warlock_rain_of_chaos_note0": "Spell Immune units will be stunned.",
+        "dota_tooltip_ability_warlock_rain_of_chaos_note1": "This ability destroys trees in its area of effect."
+      }
+    },
+    "queenofpain_blink": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+        "HasShardUpgrade": "1",
+        "AbilityCastRange": "0",
+        "AbilityCastPoint": "0.33 0.33 0.33 0.33",
+        "AbilityCooldown": "12.0 10.0 8.0 6.0",
+        "AbilityManaCost": "60 60 60 60",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "blink_range": "1075 1150 1225 1300"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "min_blink_range": "200"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_queenofpain_blink_description": "Short distance teleportation that allows Queen of Pain to move in and out of combat.",
+        "dota_tooltip_ability_queenofpain_blink_shard_description": "Releases a sonic boom when Queen of Pain blinks, at both her starting and ending locations. Deals 175 damage in a 300 AoE and silences for 1.75 seconds.",
+        "dota_tooltip_ability_queenofpain_blink_note0": "You can use Blink to dodge incoming projectiles."
+      }
+    },
+    "queenofpain_scream_of_pain": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "AbilityCastRange": "0",
+        "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+        "AbilityCooldown": "7",
+        "AbilityManaCost": "85 100 115 130",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "area_of_effect": "550"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "projectile_speed": "900"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "damage": "75 150 225 300",
+            "LinkedSpecialBonus": "special_bonus_unique_queen_of_pain_2"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_queenofpain_scream_of_pain_description": "The Queen of Pain lets loose a piercing scream around her, damaging nearby enemies.",
+        "dota_tooltip_ability_queenofpain_scream_of_pain_note0": "Scream Of Pain will hit invisible units.",
+        "dota_tooltip_ability_queenofpain_scream_of_pain_note1": "Scream Of Pain cannot be disjointed."
+      }
+    },
+    "queenofpain_sonic_wave": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+        "HasScepterUpgrade": "1",
+        "AbilityCastRange": "700",
+        "AbilityCastPoint": "0.452 0.452 0.452",
+        "AbilityCooldown": "125",
+        "AbilityManaCost": "250 400 550",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "starting_aoe": "100"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "distance": "900"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "final_aoe": "450"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "speed": "900"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "damage": "340 450 560"
+          },
+          "06": {
+            "var_type": "FIELD_FLOAT",
+            "cooldown_scepter": "40",
+            "RequiresScepter": "1"
+          },
+          "07": {
+            "var_type": "FIELD_INTEGER",
+            "damage_scepter": "420 560 680",
+            "RequiresScepter": "1"
+          },
+          "08": {
+            "var_type": "FIELD_INTEGER",
+            "knockback_distance": "350"
+          },
+          "09": {
+            "var_type": "FIELD_FLOAT",
+            "knockback_duration": "1.4"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_queenofpain_sonic_wave_description": "Creates a gigantic wave of sound in front of Queen of Pain, dealing heavy damage to all enemy units in its wake and pushing them back.",
+        "dota_tooltip_ability_queenofpain_sonic_wave_scepter_description": "Increases damage and decreases cooldown.",
+        "dota_tooltip_ability_queenofpain_sonic_wave_note0": "Sonic Wave can hit units up to 1150 units away."
+      }
+    },
+    "mirana_starfall": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "HasScepterUpgrade": "0",
+        "AbilityCastPoint": "0.4",
+        "AbilityCooldown": "12.0 12.0 12.0 12.0",
+        "AbilityDuration": "10.0 10.0 10.0 10.0",
+        "AbilityManaCost": "80 105 130 155",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "starfall_radius": "650"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "starfall_secondary_radius": "425"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "secondary_starfall_damage_percent": "75"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "damage": "75 150 225 300",
+            "LinkedSpecialBonus": "special_bonus_unique_mirana_7"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_mirana_starfall_description": "Calls down a wave of meteors to damage nearby enemy units. The closest enemy unit to Mirana in a %starfall_secondary_radius% radius will be struck a second time for %secondary_starfall_damage_percent%%% of the damage.",
+        "dota_tooltip_ability_mirana_starfall_note0": "Starstorm is not blocked by Linken's Sphere.",
+        "dota_tooltip_ability_mirana_starfall_note1": "Starstorm cannot hit invisible units.",
+        "dota_tooltip_ability_mirana_starfall_note2": "Starstorm will choose a new target for the second star if the first died before impact."
+      }
+    },
+    "mirana_arrow": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+        "HasScepterUpgrade": "1",
+        "AbilityCastRange": "3000",
+        "AbilityCastPoint": "0.5 0.5 0.5 0.5",
+        "AbilityCooldown": "19 18 17 16",
+        "AbilityDuration": "3.11 3.11 3.11 3.11",
+        "AbilityDamage": "60 150 240 330",
+        "AbilityManaCost": "100 100 100 100",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "arrow_speed": "900.0"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "arrow_width": "115"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "arrow_range": "3000"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "arrow_max_stunrange": "1500"
+          },
+          "05": {
+            "var_type": "FIELD_FLOAT",
+            "arrow_min_stun": "0.01"
+          },
+          "06": {
+            "var_type": "FIELD_FLOAT",
+            "arrow_max_stun": "3.2 3.8 4.4 5.0"
+          },
+          "07": {
+            "var_type": "FIELD_INTEGER",
+            "arrow_bonus_damage": "180"
+          },
+          "08": {
+            "var_type": "FIELD_INTEGER",
+            "arrow_vision": "400"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_mirana_arrow_description": "Fires a long-range arrow with deadly precision, which stuns and damages the first enemy unit it strikes. The stun duration ranges from %arrow_min_stun% to %arrow_max_stun% seconds, with bonus damage up to %arrow_bonus_damage% added, based on the distance the arrow travels to its target. Instantly kills the first non-ancient creep it hits.",
+        "dota_tooltip_ability_mirana_arrow_scepter_description": "Causes Sacred Arrow to release a Starstorm on enemies within 500 AoE along the travel path of the primary arrow, releasing a second starfall that deals 50% damage to the impacted unit.",
+        "dota_tooltip_ability_mirana_arrow_note0": "For every 150 distance the arrow travels, the stun duration upon impact increases by 0.5 seconds, and the bonus damage added increases by 14.",
+        "dota_tooltip_ability_mirana_arrow_note1": "Sacred Arrow can hit invisible units."
+      }
+    },
+    "mirana_leap": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+        "HasShardUpgrade": "1",
+        "AbilityCooldown": "0",
+        "AbilityCharges": "3",
+        "AbilityChargeRestoreTime": "45 40 35 30",
+        "AbilityManaCost": "40",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "leap_distance": "575",
+            "LinkedSpecialBonus": "special_bonus_unique_mirana_6"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "leap_speed": "1300.0"
+          },
+          "03": {
+            "var_type": "FIELD_FLOAT",
+            "leap_acceleration": "6000.0"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "leap_speedbonus": "8 16 24 32"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "leap_speedbonus_as": "25 50 75 100",
+            "LinkedSpecialBonus": "special_bonus_unique_mirana_1"
+          },
+          "06": {
+            "var_type": "FIELD_FLOAT",
+            "leap_bonus_duration": "2.5"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_mirana_leap_description": "Mirana leaps forward into battle, empowering herself with a ferocious roar that grants bonus attack and movement speed. Speed bonus lasts %leap_bonus_duration% seconds.",
+        "dota_tooltip_ability_mirana_leap_shard_description": "Grants +1 Leap Charge. Leap buff grants Mirana 1.5x Critical Strike attacks for its duration."
+      }
+    },
+    "mirana_invis": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+        "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+        "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+        "AbilityCastRange": "0",
+        "AbilityCastPoint": "0.5 0.5 0.5",
+        "AbilityCooldown": "140.0 120.0 100.0",
+        "AbilityManaCost": "125",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "fade_delay": "2.5 2.0 1.5"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "18.0"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_movement_speed": "9 12 15"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "evasion": "20",
+            "LinkedSpecialBonus": "special_bonus_unique_mirana_5"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_mirana_invis_description": "Turns Mirana and all allied heroes invisible and grants bonus movement speed. If a hero is revealed, invisibility will restore after the fade delay as long as Moonlight Shadow's duration has not expired.",
+        "dota_tooltip_ability_mirana_invis_note0": "Units affected will not auto attack enemies.",
+        "dota_tooltip_ability_mirana_invis_note1": "Spell Immune allies will be affected."
+      }
+    },
+    "zuus_arc_lightning": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "AbilityCastRange": "850",
+        "AbilityCastPoint": "0.2",
+        "AbilityCooldown": "1.6",
+        "AbilityManaCost": "80",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "arc_damage": "75 100 125 150",
+            "LinkedSpecialBonus": "special_bonus_unique_zeus_2"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "500 500 500 500"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "jump_count": "5 7 9 15"
+          },
+          "04": {
+            "var_type": "FIELD_FLOAT",
+            "jump_delay": "0.25 0.25 0.25 0.25"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_zuus_arc_lightning_description": "Hurls a bolt of lightning that leaps through nearby enemy units."
+      }
+    },
+    "zuus_lightning_bolt": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "AbilityCastRange": "700 750 800 850",
+        "AbilityCastPoint": "0.4",
+        "AbilityDamage": "125 200 275 350",
+        "AbilityCooldown": "6.0 6.0 6.0 6.0",
+        "AbilityManaCost": "120 125 130 135",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "true_sight_radius": "750"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "sight_radius_day": "750"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "sight_radius_night": "750"
+          },
+          "04": {
+            "var_type": "FIELD_FLOAT",
+            "sight_duration": "5"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "spread_aoe": "325"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_zuus_lightning_bolt_description": "Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a %sight_radius_night% radius. Can be cast on the ground, affecting the closest enemy hero in %spread_aoe% range.",
+        "dota_tooltip_ability_zuus_lightning_bolt_note0": "You can interrupt channeling spells and items with this ability."
+      }
+    },
+    "zuus_cloud": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "MaxLevel": "1",
+        "IsGrantedByScepter": "1",
+        "HasScepterUpgrade": "1",
+        "AbilityCastRange": "0",
+        "AbilityCastPoint": "0.2",
+        "AbilityCooldown": "45",
+        "AbilityManaCost": "325",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "cloud_duration": "30",
+            "RequiresScepter": "1"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "cloud_bolt_interval": "2.5",
+            "RequiresScepter": "1"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "cloud_radius": "450",
+            "RequiresScepter": "1"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "hits_to_kill_tooltip": "8",
+            "RequiresScepter": "1"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "creep_hits_to_kill_tooltip": "16",
+            "RequiresScepter": "1"
+          },
+          "06": {
+            "var_type": "FIELD_INTEGER",
+            "cloud_bounty_tooltip": "125",
+            "RequiresScepter": "1"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_zuus_cloud_description": "Creates a storm cloud anywhere on the map that automatically casts Lightning Bolt on nearby enemies.",
+        "dota_tooltip_ability_zuus_cloud_note0": "Grants %cloud_bounty_tooltip% gold if destroyed by an enemy hero.",
+        "dota_tooltip_ability_zuus_cloud_note1": "Affects the closest enemy unit with strikes from Zeus's current level of Lightning Bolt.",
+        "dota_tooltip_ability_zuus_cloud_note2": "Towers and creeps do half damage to the Nimbus."
+      }
+    },
+    "zuus_static_field": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "HasShardUpgrade": "1",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "damage_health_pct": "4 6 8 10",
+            "LinkedSpecialBonus": "special_bonus_unique_zeus",
+            "CalculateSpellDamageTooltip": "0"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "hop_distance": "450"
+          },
+          "03": {
+            "var_type": "FIELD_FLOAT",
+            "hop_duration": "0.5"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "hop_height": "250"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "active_mana_cost": "75"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_zuus_static_field_description": "Zeus shocks any enemy hit by his abilities, causing damage proportional to their current health.",
+        "dota_tooltip_ability_zuus_static_field_shard_description": "Static Field can be cast to perform a Heavenly Jump, shocking the closest visible enemy (prioritizing heroes) within 2000 range, dealing Static Field damage to them and reducing their movement speed by 100% for 2.5 seconds. If Zeus was moving forward, he will jump towards that direction. Zeus gets 900 unobstructed vision around him for 3 seconds Cooldown: 11. Manacost: %active_mana_cost%.",
+        "dota_tooltip_ability_zuus_static_field_note0": "The damage from Static Field is dealt before the damage from the used spell.",
+        "dota_tooltip_ability_zuus_static_field_note1": "Using items doesn't trigger Static Field.",
+        "dota_tooltip_ability_zuus_static_field_abilitydraft_note": "Only applies damage with other Zeus abilities."
+      }
+    },
+    "zuus_thundergods_wrath": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "HasScepterUpgrade": "1",
+        "AbilityCastPoint": "0.4 0.4 0.4 0.4",
+        "AbilityCooldown": "130 125 120",
+        "AbilityManaCost": "300 400 500",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "sight_radius_day": "500"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "sight_radius_night": "500"
+          },
+          "03": {
+            "var_type": "FIELD_FLOAT",
+            "sight_duration": "3.0 3.0 3.0 3.0"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "damage": "300 425 550",
+            "LinkedSpecialBonus": "special_bonus_unique_zeus_4"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_zuus_thundergods_wrath_description": "Strikes all enemy heroes with a bolt of lightning, no matter where they may be.  Thundergod's Wrath also provides True Sight around each hero struck.  If an enemy hero is invisible, it takes no damage, but the True Sight is still created at that hero's location.",
+        "dota_tooltip_ability_zuus_thundergods_wrath_abilitydraft_note": "Nimbus requires Lightning Bolt to be drafted for damage."
+      }
+    },
+    "death_prophet_carrion_swarm": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "AbilityCastRange": "600",
+        "AbilityCastPoint": "0.2",
+        "AbilityCooldown": "8 7 6 5",
+        "AbilityDamage": "75 150 225 300",
+        "AbilityManaCost": "80 95 110 125",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "start_radius": "110"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "end_radius": "300"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "range": "810 810 810 810"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "speed": "1100 1100 1100 1100"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_death_prophet_carrion_swarm_description": "Sends a swarm of winged beasts to savage enemy units in front of Death Prophet.",
+        "dota_tooltip_ability_death_prophet_carrion_swarm_note0": "Can hit units up to 1110 range away."
+      }
+    },
+    "death_prophet_silence": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+        "AbilityCastRange": "900",
+        "AbilityCastPoint": "0.2",
+        "AbilityCooldown": "15 14 13 12",
+        "AbilityDuration": "3 4 5 6",
+        "AbilityManaCost": "80 90 100 110",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "425"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "3.0 4.0 5.0 6.0"
+          },
+          "03": {
+            "var_type": "FIELD_FLOAT",
+            "projectile_speed": "1000"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_death_prophet_silence_description": "Fires a projectile that prevents enemy units in a target area from casting spells.",
+        "dota_tooltip_ability_death_prophet_silence_note0": "Doesn't prevent usage of items."
+      }
+    },
+    "death_prophet_spirit_siphon": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+        "HasShardUpgrade": "1",
+        "AbilityCastRange": "500",
+        "AbilityCastPoint": "0.1",
+        "AbilityCooldown": "0",
+        "AbilityCharges": "1 2 3 4",
+        "AbilityChargeRestoreTime": "36 34 32 30",
+        "AbilityManaCost": "80",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "damage": "16"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "damage_pct": "1.0 2.5 4.0 5.5",
+            "LinkedSpecialBonus": "special_bonus_unique_death_prophet_3"
+          },
+          "03": {
+            "var_type": "FIELD_FLOAT",
+            "haunt_duration": "6"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "movement_steal": "0"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "siphon_buffer": "250"
+          },
+          "06": {
+            "var_type": "FIELD_FLOAT",
+            "AbilityChargeRestoreTime": "",
+            "LinkedSpecialBonus": "special_bonus_unique_death_prophet_5",
+            "LinkedSpecialBonusOperation": "SPECIAL_BONUS_SUBTRACT"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_death_prophet_spirit_siphon_description": "Creates a spirit link between Death Prophet and an enemy unit, draining health from the enemy.",
+        "dota_tooltip_ability_death_prophet_spirit_siphon_shard_description": "Increases Spirit Siphon charges by 1 and causes enemies to be feared for 2 seconds if they are siphoned for 4 seconds consecutively.",
+        "dota_tooltip_ability_death_prophet_spirit_siphon_note0": "Cannot cast multiple on same target."
+      }
+    },
+    "death_prophet_exorcism": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+        "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+        "HasScepterUpgrade": "1",
+        "AbilityCastPoint": "0.5 0.5 0.5",
+        "AbilityCooldown": "150.0",
+        "AbilityDuration": "35",
+        "AbilityManaCost": "250 350 450",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "700 700 700"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "spirits": "8 16 24",
+            "LinkedSpecialBonus": "special_bonus_unique_death_prophet"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "spirit_speed": "525"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "max_distance": "2000 2000 2000"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "give_up_distance": "1200 1200 1200"
+          },
+          "06": {
+            "var_type": "FIELD_INTEGER",
+            "min_damage": "59"
+          },
+          "07": {
+            "var_type": "FIELD_INTEGER",
+            "max_damage": "64"
+          },
+          "08": {
+            "var_type": "FIELD_INTEGER",
+            "heal_percent": "25 25 25"
+          },
+          "09": {
+            "var_type": "FIELD_INTEGER",
+            "average_damage": "61"
+          },
+          "10": {
+            "var_type": "FIELD_FLOAT",
+            "ghost_spawn_rate": "0.35"
+          },
+          "11": {
+            "var_type": "FIELD_INTEGER",
+            "scepter_movespeed_slow": "100",
+            "RequiresScepter": "1"
+          },
+          "12": {
+            "var_type": "FIELD_FLOAT",
+            "scepter_movespeed_debuff_duration": "0.3",
+            "RequiresScepter": "1"
+          },
+          "13": {
+            "var_type": "FIELD_INTEGER",
+            "scepter_spirit_life_duration": "20",
+            "RequiresScepter": "1"
+          },
+          "14": {
+            "var_type": "FIELD_INTEGER",
+            "scepter_spirit_bonus_damage": "50",
+            "RequiresScepter": "1",
+            "CalculateSpellDamageTooltip": "0"
+          },
+          "15": {
+            "var_type": "FIELD_INTEGER",
+            "movement_bonus": "16 18 20"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_death_prophet_exorcism_description": "Unleashes evil spirits to drain the life of nearby enemy units and structures. At the end of the spell's duration, Death Prophet is healed in proportion to the damage dealt. Lasts %abilityduration% seconds.",
+        "dota_tooltip_ability_death_prophet_exorcism_scepter_description": "Whenever an enemy is affected by Death Prophet's spells or when she attacks an enemy, a ghost will fly out, slow and hit the enemy for bonus its usual damage then return to her with life.",
+        "dota_tooltip_ability_death_prophet_exorcism_note0": "Radius represents the area in which the spirits will acquire targets around Death Prophet.",
+        "dota_tooltip_ability_death_prophet_exorcism_note1": "Spirit damage isn't reduced by damage block abilities."
+      }
+    },
+    "vengefulspirit_command_aura": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+        "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+        "AbilityCastRange": "1200",
+        "HasScepterUpgrade": "1",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_base_damage": "11 18 25 32",
+            "LinkedSpecialBonus": "special_bonus_unique_vengeful_spirit_2"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "aura_radius": "1200"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "illusion_damage_out_pct": "100"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "illusion_damage_in_pct": "100"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_vengefulspirit_command_aura_description": "Vengeful Spirit's presence increases the damage of nearby friendly heroes.",
+        "dota_tooltip_ability_vengefulspirit_command_aura_scepter_description": "Upon death, creates a strong illusion of Vengeful Spirit that deals and takes 100%% damage and can cast all of her spells. Illusion has 12%% movement speed bonus. If the illusion is alive when Vengeful Spirit respawn, she will take its place. XP earned by her illusion is given to her.",
+        "dota_tooltip_ability_vengefulspirit_command_aura_note0": "Vengeance Illusion keeps providing the Vengeance Aura after Vengeful Spirit's death.",
+        "dota_tooltip_ability_vengefulspirit_command_aura_note1": "Strong Illusions are not instantly killed by spells."
+      }
+    },
+    "item_ultimate_scepter": {
+      "fields": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+        "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
+        "AbilityCastRange": "600",
+        "ItemCost": "4200",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_all_stats": "10"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_health": "175"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_mana": "175"
+          }
+        }
+      },
+      "texts": {
+        "dota_tooltip_ability_item_ultimate_scepter_description": "<h1>Passive: Ability Upgrade</h1>Upgrades the ultimate, and some abilities, of all heroes.",
+        "dota_tooltip_ability_item_ultimate_scepter_2_description": "<h1>Passive: Ability Upgrade</h1>Upgrades the ultimate, and some abilities, of all heroes.",
+        "dota_tooltip_ability_item_ultimate_scepter_roshan_description": "<h1>Passive: Ability Upgrade</h1>Upgrades the ultimate, and some abilities, of all heroes."
+      }
+    }
+  },
+  "primary_public_pages": [
+    {
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=221432188",
+      "title": "The secrets of Mirana",
+      "author": "Myzzrym",
+      "published": "2014-01-27（页面时间，时区未定）",
+      "updated": "2014-02-06（页面时间，时区未定）",
+      "scope_read": "作者/日期，Starstorm段90—108行；未看嵌入视频。页面有removed/incompatible提示。",
+      "use": "Q：早期玩家解释曾区分初选与原目标死亡后重选；175范围/随机选择与7.30e的425/最近不同，不能迁移为7.30e取样证明。"
+    },
+    {
+      "url": "https://www.reddit.com/r/TrueDoTA2/comments/mtsx97/",
+      "title": "Warlock Sneaky Winner of 7.29",
+      "author": "bibittyboopity（原帖）；chomplite及其他评论者",
+      "published": "7.29时期讨论；本轮正文显示相对日期，不据此补造精确日",
+      "scope_read": "原帖19—38行，评论82—101、146—193、340—385相关段；未逐条读完整844行，未核作者水平/录像。",
+      "use": "Q：已有剧变封区、与其他技能争用引导时间，以及术士中路的自述；不能认定本次发明预热/封区、也不能由个别自述证明2021普及率或强度。"
+    }
+  ],
+  "search_limits": "搜索结果中的Wiki、统计站及后期bug仅作线索，未用作当期机制证据；没有同款组合查新结论，没有新比赛API/录像/Replay或引擎测试。",
+  "models": {
+    "upheaval_sonic_wave": {
+      "status": "I/H",
+      "warlock_level": 7,
+      "warlock_skill_points": [
+        1,
+        1,
+        4,
+        1
+      ],
+      "qop_level": 8,
+      "qop_skill_points": [
+        1,
+        2,
+        4,
+        1
+      ],
+      "zone_center": [
+        900,
+        0
+      ],
+      "zone_radius": 650,
+      "enemy_initial": [
+        0,
+        0
+      ],
+      "qop_cast_position": [
+        -300,
+        0
+      ],
+      "warlock_cast_position": [
+        900,
+        900
+      ],
+      "assumed_push": [
+        350,
+        0
+      ],
+      "assumed_full_prewarm_seconds": 4,
+      "slow_rate_per_second": 27,
+      "slow_cap": 100,
+      "warlock_E_mana": 130,
+      "qop_blink_E_R_mana": 440,
+      "unknowns": [
+        "实际增幅刷新节拍/受控移动与减速结算",
+        "推退方向与地形可共同成立",
+        "信息、引导不中断与对手无及时免疫/位移不是自动保证"
+      ]
+    },
+    "starstorm_death_retarget": {
+      "status": "H",
+      "mirana_level": 7,
+      "skill_points": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "initial_mirana_x": 0,
+      "creep_x": 200,
+      "hero_x": 500,
+      "leap_end_x": 575,
+      "first_radius": 650,
+      "secondary_radius": 425,
+      "first_damage": 300,
+      "secondary_fraction": 0.75,
+      "illustrative_magic_resistance": 0.25,
+      "creep_initial_HP": 100,
+      "optional_Q_E_W_mana": 295,
+      "unknowns": [
+        "重选发生的时点、中心及有效目标集合",
+        "死亡重选是否来得及依据晚信息移动后进入新范围",
+        "普通跳Q同样能打双星，不能把相同伤害再算增量"
+      ]
+    },
+    "nimbus_target_set": {
+      "status": "I/H",
+      "zeus_level": 9,
+      "skill_points": [
+        4,
+        3,
+        1,
+        1
+      ],
+      "cloud_center_x": 800,
+      "blocking_creep_x": 700,
+      "hero_x": 1000,
+      "zeus_x": 0,
+      "cloud_radius": 450,
+      "bolt_interval": 2.5,
+      "arc_cast_range": 850,
+      "arc_damage": 150,
+      "blocking_creep_HP": 100,
+      "illustrative_magic_resistance": 0.25,
+      "scepter_gold": 4200,
+      "Q_W_cloud_R_mana": 835,
+      "unknowns": [
+        "新一击实际选目标/有无排队与视野资格",
+        "空区后恢复的节拍、首击和相位不由2.5字段推出",
+        "敌方新单位/更近目标进入会推翻本模型"
+      ]
+    }
+  },
+  "claim_limits": {
+    "advanced_status": "三组是条件推演，不直接计作新机制发现或当期进阶认证。公开不等于普及；本轮没有全样本普及度判断。",
+    "fiction": "相容H可按D54进入可逆X方案；没有本轮具体剧情或英雄池采用。",
+    "engine_verified": false
+  },
+  "local_sample_recheck": {
+    "evidence": "O：本轮重新读取既有第三方解析JSON；没有重新请求API或看Replay。",
+    "files_read": 171,
+    "manifest_sha256": "4c43d8f6b5538e7442ed2bfb4d66ab0f7a94b54d5ef9de946c32cdf3bea01768",
+    "filter": "patch_precision.candidate=7.30e; lane_role=2; position_est=2; not is_roaming",
+    "matches": 20,
+    "mid_labels": 40,
+    "hero_types": 14,
+    "date_utc_from": "2021-12-13",
+    "date_utc_to": "2022-02-20",
+    "target_counts": [
+      {
+        "hero_id": 9,
+        "name": "米拉娜",
+        "count": 0
+      },
+      {
+        "hero_id": 22,
+        "name": "宙斯",
+        "count": 0
+      },
+      {
+        "hero_id": 39,
+        "name": "痛苦女王",
+        "count": 9
+      },
+      {
+        "hero_id": 43,
+        "name": "死亡先知",
+        "count": 1
+      }
+    ],
+    "matching_target_records": [
+      {
+        "match_id": 6318181592,
+        "date_utc": "2021-12-13",
+        "hero_id": 39,
+        "path": "05_matches/classics-2021-2023/data/6318181592.json"
+      },
+      {
+        "match_id": 6318234034,
+        "date_utc": "2021-12-13",
+        "hero_id": 43,
+        "path": "05_matches/classics-2021-2023/data/6318234034.json"
+      },
+      {
+        "match_id": 6332020917,
+        "date_utc": "2021-12-20",
+        "hero_id": 39,
+        "path": "05_matches/classics-2021-2023/data/6332020917.json"
+      },
+      {
+        "match_id": 6332245360,
+        "date_utc": "2021-12-20",
+        "hero_id": 39,
+        "path": "05_matches/classics-2021-2023/data/6332245360.json"
+      },
+      {
+        "match_id": 6356788698,
+        "date_utc": "2022-01-03",
+        "hero_id": 39,
+        "path": "05_matches/classics-2021-2023/data/6356788698.json"
+      },
+      {
+        "match_id": 6390424153,
+        "date_utc": "2022-01-22",
+        "hero_id": 39,
+        "path": "05_matches/classics-2021-2023/data/6390424153.json"
+      },
+      {
+        "match_id": 6390571192,
+        "date_utc": "2022-01-22",
+        "hero_id": 39,
+        "path": "05_matches/classics-2021-2023/data/6390571192.json"
+      },
+      {
+        "match_id": 6430229342,
+        "date_utc": "2022-02-13",
+        "hero_id": 39,
+        "path": "05_matches/classics-2021-2023/data/6430229342.json"
+      },
+      {
+        "match_id": 6430334629,
+        "date_utc": "2022-02-13",
+        "hero_id": 39,
+        "path": "05_matches/classics-2021-2023/data/6430334629.json"
+      },
+      {
+        "match_id": 6440951394,
+        "date_utc": "2022-02-20",
+        "hero_id": 39,
+        "path": "05_matches/classics-2021-2023/data/6440951394.json"
+      }
+    ],
+    "prior_count_agreement": true,
+    "limits": [
+      "经典选择库非随机样本，计数不是职业/天梯选率。",
+      "位置标签及赛事字母补丁未逐局验证。",
+      "0只表示这40条未检出，不证明英雄不能中单。",
+      "英雄走中不证明使用过三个理论组合；日志/总伤害不能认证取样时点与处理增量。",
+      "样本全晚于2021年11月开篇，不是角色提前已知的数据。"
+    ]
+  }
+}
