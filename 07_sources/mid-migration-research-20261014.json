@@ -1,0 +1,116 @@
+{
+  "id": "sources:mid-migration-research-20261014",
+  "as_of_client": "2026-10-14 America/Los_Angeles",
+  "purpose": "53/54与45在7.33免疫/跳刀变化下的限定迁移，不增加单元/设计数量",
+  "source": {
+    "url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english",
+    "public_page": "https://www.dota2.com/newfrontiers",
+    "cache_group": "mid-all-hero-screen-20261012",
+    "file": "patch-7.33.json",
+    "status": 200,
+    "bytes": 169457,
+    "sha256": "b65cb135d43236e8816546e661a58aaf30de3ec7f737a201905590e041f17d04",
+    "patch_timestamp": 1681974000,
+    "date_utc": "2023-04-20T07:00:00+00:00",
+    "read_scope": "复用保存响应；重读指定一般规则、物品1/116、英雄4/34/58/101相关条目，不作全补丁核验。"
+  },
+  "selected_general_paths": [
+    {
+      "path": "general_notes/0/generic/89/note",
+      "chars": 217
+    },
+    {
+      "path": "general_notes/0/generic/90/note",
+      "chars": 345
+    },
+    {
+      "path": "general_notes/0/generic/91/note",
+      "chars": 326
+    },
+    {
+      "path": "general_notes/0/generic/97/note",
+      "chars": 128
+    },
+    {
+      "path": "general_notes/0/generic/99/note",
+      "chars": 222
+    },
+    {
+      "path": "general_notes/0/generic/100/note",
+      "chars": 245
+    },
+    {
+      "path": "general_notes/0/generic/101/note",
+      "chars": 146
+    },
+    {
+      "path": "general_notes/0/generic/120/note",
+      "chars": 60
+    },
+    {
+      "path": "general_notes/0/generic/122/note",
+      "chars": 118
+    }
+  ],
+  "selected_item_ids": [
+    1,
+    116
+  ],
+  "selected_hero_ids": [
+    4,
+    34,
+    58,
+    101
+  ],
+  "claims": [
+    {
+      "class": "F",
+      "topic": "7.33免疫",
+      "summary": "非穿透负面效果可被施加但在免疫期间不生效；非穿透魔伤按有效魔抗结算，纯伤/反射伤免疫。穿透者另按规则，不把纯伤等同穿透。"
+    },
+    {
+      "class": "I/H",
+      "topic": "53",
+      "summary": "若后来推进仍是非穿透纯伤组件，则不能靠命中距离绕过该纯伤免疫。普通攻击物理部分另算；没有由条目未列改动证明20%/1750/900全期不变。"
+    },
+    {
+      "class": "I/H",
+      "topic": "54",
+      "summary": "看到7.33 BKB不能仅按旧法术免疫直接判这发魔伤归零/必应放弃增幅。给最终有效魔抗m作输入，未增幅275(1-m)、增幅357.5(1-m)；仍须比较生命代价与其他任务。"
+    },
+    {
+      "class": "F/I",
+      "topic": "45/53跳刀",
+      "summary": "英雄/Roshan伤害改为三秒物品禁用，区别于设置三秒冷却；刷新冷却本身不证明解除该禁用，模型仍要求原本可用。"
+    },
+    {
+      "class": "F",
+      "topic": "血怒代价与数字迁移",
+      "summary": "7.33血怒每秒最大生命代价2%降1.8%；智力新增每点0.1%基础魔抗，屏障结算亦有变化。54的目标25%为场景输入，不能由旧默认值自动迁移。"
+    }
+  ],
+  "illustrative_model": {
+    "classification": "I/H：只演示给定最终魔抗，不认证BKB与全部魔抗的叠加公式",
+    "final_effective_magic_resistance_H": 0.625,
+    "unamplified_raw_from54_H": 275,
+    "amplified_raw_from54_H": 357.5,
+    "unamplified_effective_H": 103.125,
+    "amplified_effective_H": 134.0625,
+    "increment_H": 30.9375
+  },
+  "limitations": [
+    "官方遗漏条目不证明组件未变",
+    "不认证后续所有字母版、客户端或赛事版本",
+    "没有读取新的玩家对局/录像/成功率",
+    "沿用旧H不得因补丁摘要自动升级真实成立",
+    "不增加作者操作或采用门槛",
+    "date_utc仅为API patch_timestamp的UTC转换，不认证精确服务器上线时刻。"
+  ],
+  "status": {
+    "cumulative_units": 54,
+    "cumulative_conditional_designs": 14,
+    "cumulative_public_specials": 5,
+    "runtime_or_prevalence_verified": false,
+    "fiction_adoption": false
+  }
+}
