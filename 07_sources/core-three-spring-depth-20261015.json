@@ -1,0 +1,1391 @@
+{
+  "id": "sources:core-three-spring-depth-20261015",
+  "date_local": "2026-10-15",
+  "timezone": "America/Los_Angeles",
+  "purpose": "三重点春季完整职责、六项对抗过程；原方向深化，不新计发现。",
+  "authority": "SteamTracking固定历史镜像，沿原SteamDatabase地址；非Valve引擎实现/实际赛事客户端认证。",
+  "snapshot": "bb15013c200ef44c981495e034c1e33aeed7c7d4",
+  "directory": {
+    "url": "https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/contents/game/dota/pak01_dir/scripts/npc?ref=bb15013c200ef44c981495e034c1e33aeed7c7d4",
+    "file": "directory.json",
+    "bytes": 16718,
+    "sha256": "0b97c8defad059de1099c73e61362611e3ae9c67a243322e1b817087eadcb5a0",
+    "status": null,
+    "origin": "本轮先前成功取得；初次解析前未保存HTTP状态，现复用文件不重报状态",
+    "read_at_utc": "2026-10-15T13:21:15.069209+00:00"
+  },
+  "inputs": {
+    "items.txt": {
+      "url": "https://raw.githubusercontent.com/SteamTracking/GameTracking-Dota2/bb15013c200ef44c981495e034c1e33aeed7c7d4/game/dota/pak01_dir/scripts/npc/items.txt",
+      "file": "items.txt",
+      "bytes": 612531,
+      "sha256": "7a20635657caa34109e24dc3a575cdfd948b71a448cb021013e7453e87017a40",
+      "status": null,
+      "origin": "本轮先前成功取得；初次解析前未保存HTTP状态，现复用文件不重报状态",
+      "read_at_utc": "2026-10-15T13:21:15.075754+00:00"
+    },
+    "npc_abilities.txt": {
+      "url": "https://raw.githubusercontent.com/SteamTracking/GameTracking-Dota2/bb15013c200ef44c981495e034c1e33aeed7c7d4/game/dota/pak01_dir/scripts/npc/npc_abilities.txt",
+      "file": "npc_abilities.txt",
+      "bytes": 3175621,
+      "sha256": "33cb7b5cb2583c0df9f128dc8a75cc056e3186a4260fa65b26279213f8c6cee0",
+      "status": null,
+      "origin": "本轮先前成功取得；初次解析前未保存HTTP状态，现复用文件不重报状态",
+      "read_at_utc": "2026-10-15T13:21:15.076754+00:00"
+    },
+    "npc_heroes.txt": {
+      "url": "https://raw.githubusercontent.com/SteamTracking/GameTracking-Dota2/bb15013c200ef44c981495e034c1e33aeed7c7d4/game/dota/pak01_dir/scripts/npc/npc_heroes.txt",
+      "file": "npc_heroes.txt",
+      "bytes": 640465,
+      "sha256": "f3e9151fe91e27e2b2055c101d73600baf24b0bb913338428f8e5a39a3fab8d1",
+      "status": null,
+      "origin": "本轮先前成功取得；初次解析前未保存HTTP状态，现复用文件不重报状态",
+      "read_at_utc": "2026-10-15T13:21:15.075754+00:00"
+    }
+  },
+  "scope": "列出的21技能/12物品/3英雄指定字段；不读取其余实现或声明完整客户端核验。",
+  "ability_fields": {
+    "ember_spirit_searing_chains": {
+      "ID": "5603",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastRange": "400",
+      "AbilityCastPoint": "0",
+      "AbilityCooldown": "13 12 11 10",
+      "AbilityManaCost": "80 90 100 110",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "1.5 2.0 2.5 3.0",
+          "LinkedSpecialBonus": "special_bonus_unique_ember_spirit_2"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "400"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "damage_per_second": "50 70 90 110"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "tick_interval": "0.5"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "unit_count": "2",
+          "LinkedSpecialBonus": "special_bonus_unique_ember_spirit_7"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "radius_scepter": "500"
+        }
+      }
+    },
+    "ember_spirit_sleight_of_fist": {
+      "ID": "5604",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "AbilityCastRange": "700",
+      "AbilityCastPoint": "0",
+      "AbilityCooldown": "15 12 9 6",
+      "AbilityManaCost": "50",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "250 350 450 550"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_hero_damage": "60 90 120 150",
+          "LinkedSpecialBonus": "special_bonus_unique_ember_spirit_6",
+          "CalculateSpellDamageTooltip": "0"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "attack_interval": "0.2"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "creep_damage_penalty": "0",
+          "CalculateSpellDamageTooltip": "0"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "AbilityCharges": "",
+          "LinkedSpecialBonus": "special_bonus_unique_ember_spirit_4"
+        }
+      }
+    },
+    "ember_spirit_flame_guard": {
+      "ID": "5605",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastRange": "400",
+      "AbilityCastPoint": "0",
+      "AbilityCooldown": "35.0",
+      "AbilityManaCost": "80 90 100 110",
+      "AbilityValues": {
+        "duration": "11 14 17 20",
+        "radius": "400",
+        "absorb_amount": {
+          "value": "85 190 295 400",
+          "LinkedSpecialBonus": "special_bonus_unique_ember_spirit_1",
+          "DamageTypeTooltip": "DAMAGE_TYPE_MAGICAL"
+        },
+        "tick_interval": "0.2",
+        "damage_per_second": {
+          "value": "25 35 45 55",
+          "LinkedSpecialBonus": "special_bonus_unique_ember_spirit_3"
+        },
+        "blind_pct": "50",
+        "shield_pct_absorb": "70"
+      }
+    },
+    "ember_spirit_fire_remnant": {
+      "ID": "5606",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "HasShardUpgrade": "1",
+      "HasScepterUpgrade": "1",
+      "AbilityCastRange": "1400",
+      "AbilityCastPoint": "0.1",
+      "AbilityCooldown": "0.0",
+      "AbilityChargeRestoreTime": "38.0",
+      "AbilityManaCost": "0",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "speed_multiplier": "250"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "AbilityChargeRestoreTime": "",
+          "LinkedSpecialBonus": "special_bonus_unique_ember_spirit_5",
+          "LinkedSpecialBonusOperation": "SPECIAL_BONUS_SUBTRACT"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "100 200 300"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "450"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "45.0"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "scepter_range": "3000",
+          "RequiresScepter": "1"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "scepter_speed_multiplier": "2",
+          "RequiresScepter": "1"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_max_charges": "5",
+          "RequiresScepter": "1"
+        },
+        "09": {
+          "var_type": "FIELD_INTEGER",
+          "shard_radius": "600",
+          "RequiresShard": "1"
+        },
+        "10": {
+          "var_type": "FIELD_INTEGER",
+          "shard_damage_per_second": "45",
+          "RequiresShard": "1"
+        },
+        "11": {
+          "var_type": "FIELD_INTEGER",
+          "shard_charge_radius": "400",
+          "RequiresShard": "1"
+        }
+      }
+    },
+    "ember_spirit_activate_fire_remnant": {
+      "ID": "5607",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "AbilityCastRange": "99999",
+      "AbilityCastPoint": "0.1",
+      "AbilityCooldown": "0.0",
+      "AbilityManaCost": "150",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "speed_multiplier": "250"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "max_charges": "3"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "charge_restore_time": "35.0"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "100 200 300"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "450"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "speed": "1300"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_mana_cost": "75",
+          "RequiresScepter": "1"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "shard_remnant_speed_pct": "300"
+        }
+      }
+    },
+    "storm_spirit_static_remnant": {
+      "ID": "5098",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "AbilityCastPoint": "0 0 0 0",
+      "AbilityCooldown": "3.5",
+      "AbilityManaCost": "70 80 90 100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "static_remnant_radius": "235"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "static_remnant_damage_radius": "260",
+          "DamageTypeTooltip": "DAMAGE_TYPE_NONE"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "static_remnant_delay": "1.0"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "static_remnant_damage": "120 180 240 300",
+          "LinkedSpecialBonus": "special_bonus_unique_storm_spirit_5"
+        }
+      }
+    },
+    "storm_spirit_electric_vortex": {
+      "ID": "5099",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+      "HasScepterUpgrade": "1",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityCastRange": "300",
+      "AbilityCooldown": "20 18 16 14",
+      "AbilityManaCost": "60 70 80 90",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "electric_vortex_pull_distance": "180 220 260 300"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "electric_vortex_pull_tether_range": "1200.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "electric_vortex_self_slow": "-50"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "electric_vortex_self_slow_duration": "3.0"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "abilityduration": "",
+          "LinkedSpecialBonus": "special_bonus_unique_storm_spirit"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "radius_scepter": "475",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "storm_spirit_overload": {
+      "ID": "5100",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "HasShardUpgrade": "1",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "overload_aoe": "300"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "overload_move_slow": "-80"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "overload_attack_slow": "-80"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "overload_damage": "40 60 80 100",
+          "LinkedSpecialBonus": "special_bonus_unique_storm_spirit_6"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "shard_activation_radius": "750",
+          "RequiresShard": "1"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "shard_activation_charges": "3",
+          "RequiresShard": "1"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "shard_activation_duration": "12",
+          "RequiresShard": "1"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "shard_manacost": "150",
+          "RequiresShard": "1"
+        },
+        "09": {
+          "var_type": "FIELD_FLOAT",
+          "shard_cooldown": "30",
+          "RequiresShard": "1"
+        },
+        "10": {
+          "var_type": "FIELD_INTEGER",
+          "shard_attack_speed_bonus": "40",
+          "RequiresShard": "1"
+        }
+      }
+    },
+    "storm_spirit_ball_lightning": {
+      "ID": "5101",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "AbilityCastPoint": "0.3 0.3 0.3",
+      "AbilityManaCost": "30",
+      "AbilityDamage": "8 12 16",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "ball_lightning_initial_mana_percentage": "7.5"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "ball_lightning_initial_mana_base": "25"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "ball_lightning_move_speed": "1400 1850 2300"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "ball_lightning_aoe": "200"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "ball_lightning_travel_cost_base": "10"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "ball_lightning_travel_cost_percent": "0.65"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "ball_lightning_vision_radius": "400"
+        },
+        "08": {
+          "var_type": "FIELD_FLOAT",
+          "blocker_duration": "5"
+        },
+        "09": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_remnant_interval": "300"
+        }
+      }
+    },
+    "templar_assassin_refraction": {
+      "ID": "5194",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+      "AbilityCooldown": "17.0 17.0 17.0 17.0",
+      "AbilityManaCost": "100",
+      "AbilityValues": {
+        "instances": {
+          "value": "3 4 5 6",
+          "LinkedSpecialBonus": "special_bonus_unique_templar_assassin"
+        },
+        "bonus_damage": "25 50 75 100",
+        "damage_threshold": "5",
+        "duration": "17.0 17.0 17.0 17.0"
+      }
+    },
+    "templar_assassin_meld": {
+      "ID": "5195",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+      "AbilityCooldown": "11 9 7 5",
+      "AbilityManaCost": "35 40 45 50",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_damage": "80 120 160 200"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_armor": "-5 -6 -7 -8",
+          "LinkedSpecialBonus": "special_bonus_unique_templar_assassin_2"
+        }
+      }
+    },
+    "templar_assassin_psi_blades": {
+      "ID": "5196",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "AbilityValues": {
+        "bonus_attack_range": {
+          "value": "80 130 180 230",
+          "special_bonus_unique_templar_assassin_8": "+120"
+        },
+        "attack_spill_range": {
+          "value": "550 600 650 700",
+          "special_bonus_unique_templar_assassin_8": "+120"
+        },
+        "attack_spill_width": "90",
+        "attack_spill_pct": "100",
+        "attack_spill_penalty": "5"
+      }
+    },
+    "templar_assassin_psionic_trap": {
+      "ID": "5197",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "HasShardUpgrade": "1",
+      "AbilityCastRange": "1800",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityCooldown": "11.0 8.0 5.0",
+      "AbilityManaCost": "15 15 15",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "max_traps": "5 8 11",
+          "LinkedSpecialBonus": "special_bonus_unique_templar_assassin_6"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "trap_fade_time": "2.0 2.0 2.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "movement_speed_min": "30"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "movement_speed_max": "60"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "trap_duration_tooltip": "5"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "trap_bonus_damage": "250 300 350",
+          "LinkedSpecialBonus": "special_bonus_unique_templar_assassin_3",
+          "DamageTypeTooltip": "DAMAGE_TYPE_MAGICAL"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "trap_max_charge_duration": "4"
+        },
+        "08": {
+          "var_type": "FIELD_FLOAT",
+          "shard_min_silence_duration": "1.5",
+          "RequiresShard": "1"
+        },
+        "09": {
+          "var_type": "FIELD_FLOAT",
+          "shard_max_silence_duration": "3.5",
+          "RequiresShard": "1"
+        },
+        "10": {
+          "var_type": "FIELD_INTEGER",
+          "shard_bonus_max_traps": "4",
+          "RequiresShard": "1"
+        },
+        "11": {
+          "var_type": "FIELD_INTEGER",
+          "shard_bonus_vision": "125",
+          "RequiresShard": "1"
+        }
+      }
+    },
+    "templar_assassin_trap": {
+      "ID": "5198",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "0.5",
+      "AbilityManaCost": "0",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "trap_radius": "400"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "trap_duration": "5.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "trap_bonus_damage": "250 300 350"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "movement_speed_min": "30"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "movement_speed_max": "60"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "trap_max_charge_duration": "4"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "shard_min_silence_duration": "1.5",
+          "RequiresShard": "1"
+        },
+        "08": {
+          "var_type": "FIELD_FLOAT",
+          "shard_max_silence_duration": "3.5",
+          "RequiresShard": "1"
+        },
+        "09": {
+          "var_type": "FIELD_INTEGER",
+          "shard_bonus_max_traps": "4",
+          "RequiresShard": "1"
+        },
+        "10": {
+          "var_type": "FIELD_INTEGER",
+          "shard_bonus_vision": "125",
+          "RequiresShard": "1"
+        }
+      }
+    },
+    "bane_fiends_grip": {
+      "ID": "5013",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+      "HasScepterUpgrade": "1",
+      "AbilityCastRange": "625",
+      "AbilityCastPoint": "0.2",
+      "AbilityCooldown": "120 110 100",
+      "AbilityManaCost": "200 300 400",
+      "AbilityValues": {
+        "fiend_grip_tick_interval": "0.5",
+        "fiend_grip_mana_drain": {
+          "value": "5",
+          "special_bonus_unique_bane_9": "+5"
+        },
+        "abilitychanneltime": {
+          "value": "6.0 6.0 6.0",
+          "special_bonus_unique_bane_3": "+5"
+        },
+        "fiend_grip_damage": "70 110 150",
+        "scepter_cooldown": {
+          "value": "45",
+          "RequiresScepter": "1"
+        },
+        "scepter_incoming_illusion_damage": {
+          "value": "200",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "tidehunter_ravage": {
+      "ID": "5121",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+      "AbilityCastRange": "0",
+      "AbilityCastPoint": "0.3 0.3 0.3",
+      "AbilityCooldown": "150.0 150.0 150.0",
+      "AbilityDamage": "200 300 400",
+      "AbilityManaCost": "150 225 325",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "1250"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "speed": "725"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "2.4 2.6 2.8",
+          "LinkedSpecialBonus": "special_bonus_unique_tidehunter_7"
+        }
+      }
+    },
+    "oracle_false_promise": {
+      "ID": "5640",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "HasShardUpgrade": "1",
+      "AbilityCastRange": "700 850 1000",
+      "AbilityCastPoint": "0.3",
+      "AbilityCooldown": "120 90 60",
+      "AbilityManaCost": "100 150 200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "7 8.5 10",
+          "LinkedSpecialBonus": "special_bonus_unique_oracle"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "radius": "400"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "shard_fade_time": "0.15",
+          "RequiresShard": "1"
+        }
+      }
+    },
+    "oracle_fates_edict": {
+      "ID": "5638",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastRange": "500 600 700 800",
+      "AbilityCastPoint": "0.3",
+      "AbilityCooldown": "17 14 11 8",
+      "AbilityManaCost": "50",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "3.5 4.0 4.5 5.0"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "magic_damage_resistance_pct_tooltip": "100"
+        }
+      }
+    },
+    "oracle_fortunes_end": {
+      "ID": "5637",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastRange": "850",
+      "AbilityCastPoint": "0",
+      "AbilityCooldown": "15 12 9 6",
+      "AbilityManaCost": "100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "channel_time": "2.5",
+          "LinkedSpecialBonus": "special_bonus_unique_oracle_7",
+          "LinkedSpecialBonusOperation": "SPECIAL_BONUS_SUBTRACT"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "100 160 220 280"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bolt_speed": "1000"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "minimum_purge_duration": "0.5",
+          "LinkedSpecialBonus": "special_bonus_unique_oracle_2"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "maximum_purge_duration": "2.5",
+          "LinkedSpecialBonus": "special_bonus_unique_oracle_2"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "300"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_bonus_range": "800",
+          "RequiresScepter": "1"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_bonus_radius": "150",
+          "RequiresScepter": "1"
+        },
+        "09": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_stun_percentage": "50",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "dazzle_shallow_grave": {
+      "ID": "5234",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastRange": "700 800 900 1000",
+      "AbilityCastPoint": "0.3",
+      "AbilityCooldown": "36 30 24 18",
+      "AbilityManaCost": "120 130 140 150",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "4 4.5 5.0 5.5"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "fx_halo_height": "190 240 300 350"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "heal_amplify": "2 4 6 8"
+        }
+      }
+    },
+    "faceless_void_chronosphere": {
+      "ID": "5185",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastRange": "500",
+      "AbilityCastPoint": "0.35 0.35 0.35",
+      "AbilityCooldown": "160 150 140",
+      "AbilityManaCost": "150 225 300",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "500",
+          "LinkedSpecialBonus": "special_bonus_unique_faceless_void_2"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "4.0 4.5 5.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "vision_radius": "475"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_attack_speed": "0",
+          "LinkedSpecialBonus": "special_bonus_unique_faceless_void"
+        }
+      }
+    }
+  },
+  "item_fields": {
+    "item_black_king_bar": {
+      "ID": "116",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityCooldown": "75",
+      "ItemCost": "4050",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_strength": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_damage": "24"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "9.0 8.0 7.0 6.0"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "max_level": "4"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "model_scale": "30"
+        }
+      }
+    },
+    "item_null_talisman": {
+      "ID": "77",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "ItemCost": "505",
+      "AbilityValues": {
+        "bonus_intellect": "5 10",
+        "bonus_strength": "2 4",
+        "bonus_agility": "2 4",
+        "bonus_mana_reduction": "4 8",
+        "bonus_mana_regen": "0.6 1.2",
+        "clock_time": "25"
+      }
+    },
+    "item_cyclone": {
+      "ID": "100",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_CUSTOM",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_CUSTOM",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastRange": "550",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "23.0",
+      "AbilityManaCost": "175",
+      "ItemCost": "2725",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_intellect": "10"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "bonus_mana_regen": "2.5"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_movement_speed": "20"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "cyclone_duration": "2.5"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "tooltip_drop_damage": "50"
+        }
+      }
+    },
+    "item_blink": {
+      "ID": "1",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_OVERSHOOT",
+      "AbilityCastRange": "1200",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "15.0",
+      "AbilityManaCost": "0",
+      "ItemCost": "2250",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "blink_range": "1200"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "blink_damage_cooldown": "3.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "blink_range_clamp": "960"
+        }
+      }
+    },
+    "item_desolator": {
+      "ID": "168",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "ItemCost": "3500",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityValues": {
+        "bonus_damage": "50",
+        "corruption_armor": "-6",
+        "corruption_duration": "7.0",
+        "bonus_damage_per_kill": "2",
+        "bonus_damage_per_assist": "1",
+        "max_damage": "25"
+      }
+    },
+    "item_orchid": {
+      "ID": "98",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastRange": "900",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "18.0",
+      "AbilityManaCost": "100",
+      "ItemCost": "3475",
+      "AbilityValues": {
+        "bonus_attack_speed": "40",
+        "bonus_damage": "30",
+        "bonus_mana_regen": "3",
+        "silence_damage_percent": "30",
+        "silence_duration": "5"
+      }
+    },
+    "item_soul_ring": {
+      "ID": "178",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+      "AbilityCooldown": "25.0",
+      "AbilityManaCost": "0",
+      "ItemCost": "700",
+      "AbilityValues": {
+        "bonus_strength": "6",
+        "bonus_armor": "2",
+        "health_sacrifice": "170",
+        "mana_gain": "150",
+        "duration": "10"
+      }
+    },
+    "item_bloodthorn": {
+      "ID": "250",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastRange": "900",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "15.0",
+      "AbilityManaCost": "100",
+      "ItemCost": "6800",
+      "AbilityValues": {
+        "bonus_intellect": "20",
+        "bonus_attack_speed": "60",
+        "bonus_damage": "50",
+        "bonus_mana_regen": "5",
+        "bonus_magic_resist": "20",
+        "silence_duration": "5",
+        "silence_damage_percent": "30",
+        "target_crit_multiplier": "130",
+        "tooltip_crit_chance": "100",
+        "duration": "6",
+        "spell_amp_debuff": "35"
+      }
+    },
+    "item_sheepstick": {
+      "ID": "96",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+      "AbilityCastRange": "800",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "20.0",
+      "AbilityManaCost": "250",
+      "ItemCost": "5675",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_strength": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_agility": "10"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_intellect": "35"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "bonus_mana_regen": "9.0"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "sheep_duration": "3.5"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "sheep_movement_speed": "140"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "upgrade_radius": "200"
+        }
+      }
+    },
+    "item_lotus_orb": {
+      "ID": "226",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityCooldown": "15.0",
+      "AbilityCastRange": "900",
+      "AbilityManaCost": "175",
+      "ItemCost": "3850",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_armor": "10"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "bonus_health_regen": "6.5"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "bonus_mana_regen": "4.0"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_mana": "250"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "active_duration": "6"
+        }
+      }
+    },
+    "item_force_staff": {
+      "ID": "102",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CUSTOM",
+      "AbilityCastRange": "550",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "20.0",
+      "AbilityManaCost": "100",
+      "ItemCost": "2200",
+      "AbilityValues": {
+        "bonus_intellect": "10",
+        "bonus_health": "150",
+        "push_length": "600",
+        "enemy_cast_range": "850"
+      }
+    },
+    "item_tpscroll": {
+      "ID": "46",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NOASSIST | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_BUILDING",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
+      "AbilityCastRange": "0",
+      "AbilityCooldown": "80.0",
+      "AbilityChannelTime": "3.0",
+      "AbilityCastPoint": "0.0",
+      "AbilityManaCost": "75",
+      "ItemCost": "100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "minimun_distance": "70"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "maximum_distance": "800"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "vision_radius": "200"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "tooltip_channel_time": "3.0"
+        }
+      }
+    }
+  },
+  "hero_fields": {
+    "npc_dota_hero_ember_spirit": {
+      "HeroID": "106",
+      "Ability1": "ember_spirit_searing_chains",
+      "Ability2": "ember_spirit_sleight_of_fist",
+      "Ability3": "ember_spirit_flame_guard",
+      "Ability4": "ember_spirit_activate_fire_remnant",
+      "Ability5": "generic_hidden",
+      "Ability6": "ember_spirit_fire_remnant",
+      "ArmorPhysical": "-1",
+      "AttackDamageMin": "33",
+      "AttackDamageMax": "37",
+      "AttackRate": "1.700000",
+      "AttackAnimationPoint": "0.400000",
+      "AttackRange": "150",
+      "AttributePrimary": "DOTA_ATTRIBUTE_AGILITY",
+      "AttributeBaseStrength": "21",
+      "AttributeStrengthGain": "2.600000",
+      "AttributeBaseAgility": "22",
+      "AttributeAgilityGain": "2.900000",
+      "AttributeBaseIntelligence": "20",
+      "AttributeIntelligenceGain": "2.200000",
+      "MovementSpeed": "305"
+    },
+    "npc_dota_hero_storm_spirit": {
+      "HeroID": "17",
+      "Ability1": "storm_spirit_static_remnant",
+      "Ability2": "storm_spirit_electric_vortex",
+      "Ability3": "storm_spirit_overload",
+      "Ability4": "generic_hidden",
+      "Ability5": "generic_hidden",
+      "Ability6": "storm_spirit_ball_lightning",
+      "ArmorPhysical": "2",
+      "AttackDamageMin": "24",
+      "AttackDamageMax": "34",
+      "AttackRate": "1.700000",
+      "AttackAnimationPoint": "0.500000",
+      "AttackRange": "480",
+      "ProjectileSpeed": "1100",
+      "AttributePrimary": "DOTA_ATTRIBUTE_INTELLECT",
+      "AttributeBaseStrength": "21",
+      "AttributeStrengthGain": "2.000000",
+      "AttributeBaseIntelligence": "23",
+      "AttributeIntelligenceGain": "3.900000",
+      "AttributeBaseAgility": "22",
+      "AttributeAgilityGain": "1.900000",
+      "StatusManaRegen": "0.5",
+      "MovementSpeed": "285"
+    },
+    "npc_dota_hero_templar_assassin": {
+      "HeroID": "46",
+      "Ability1": "templar_assassin_refraction",
+      "Ability2": "templar_assassin_meld",
+      "Ability3": "templar_assassin_psi_blades",
+      "Ability4": "templar_assassin_trap",
+      "Ability5": "templar_assassin_trap_teleport",
+      "Ability6": "templar_assassin_psionic_trap",
+      "ArmorPhysical": "0",
+      "AttackDamageMin": "30",
+      "AttackDamageMax": "36",
+      "AttackRate": "1.700000",
+      "AttackAnimationPoint": "0.300000",
+      "AttackRange": "160",
+      "ProjectileSpeed": "900",
+      "AttributePrimary": "DOTA_ATTRIBUTE_AGILITY",
+      "AttributeBaseStrength": "21",
+      "AttributeStrengthGain": "2.400000",
+      "AttributeBaseAgility": "23",
+      "AttributeAgilityGain": "3.200000",
+      "AttributeBaseIntelligence": "20",
+      "AttributeIntelligenceGain": "2.000000",
+      "MovementSpeed": "305"
+    }
+  },
+  "processing_failure_and_recovery": {
+    "failure": "旧解析器只识别引号串，娜迦AbilityValues的未引号-1被忽略，火猫误嵌在娜迦下；KeyError不是能力不存在。",
+    "recovery": "原响应不变，增加未引号token与严格括号检查；21技能ID和三英雄/物品字段与原文本比较。",
+    "status_limit": "首次HTTP状态未持久保存，复用不补记200。"
+  },
+  "public_Q": [
+    {
+      "url": "https://slashstrikedota.wordpress.com/2019/06/12/slashstrikes-guide-to-ember-spirit-7-22c/",
+      "original_date": "2019-06-12",
+      "read_scope": "Searing Chains随机目标、Sleight目标快照/物品/返回及Euls段",
+      "supports": "拳中物品组件及候选集合，不沿用2019数值/天赋/无风险/神杖免费或绝对装备推荐。"
+    },
+    {
+      "url": "https://www.reddit.com/r/learndota2/comments/cfgar8/storm_spirit_midgame/",
+      "original_date": "2019-07-20，沿既有卡日期",
+      "read_scope": "ScarredBlood第5/6点与提问者回应",
+      "supports": "已有飞行攻击文字认知，不证明职业普及、资格、飞行再R免费或本轮几何时序。"
+    },
+    {
+      "url": "https://www.reddit.com/r/learndota2/comments/l78kty/78k_mmr_templar_assassin_guide/",
+      "original_date": "2021-01，沿既有卡日期",
+      "read_scope": "对线/护甲穿刺/直接打/跳刀黯灭BKB先后相关段",
+      "supports": "护甲入口、不能为追角度踏危险区；旧减甲数值/天赋与一律必杀/绝对装备说法不采用。"
+    },
+    {
+      "url": "https://howdoiplay.com/tips/templar_assassin",
+      "date": "维护日期不明",
+      "access_now": "web内部错误，正文未新取得",
+      "supports": "命中时取自身位置的依据复用09_training/mid-technique-families-20261008.md中的既有Q；不新报已读，不授权2021陷阱反补。"
+    }
+  ],
+  "role_examples_H": [
+    {
+      "hero": "Ember",
+      "level": 7,
+      "ranks": [
+        1,
+        4,
+        1,
+        1
+      ]
+    },
+    {
+      "hero": "Storm",
+      "level": 7,
+      "ranks": [
+        4,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "hero": "TA",
+      "level": 7,
+      "ranks": [
+        3,
+        1,
+        2,
+        1
+      ]
+    }
+  ],
+  "models_I_H": {
+    "ember_budget": {
+      "level_H": 7,
+      "ranks_H": [
+        1,
+        4,
+        1,
+        1
+      ],
+      "actions_F": {
+        "sleight": 50,
+        "cyclone": 175,
+        "chains1": 80,
+        "activate": 150,
+        "guard1": 80
+      },
+      "full_no_guard_H": 455,
+      "full_guard_H": 535,
+      "ordinary_no_cyclone_H": 280,
+      "mana_current_H": 480,
+      "remaining_H": 25,
+      "low_mana_H": 350
+    },
+    "storm_cast_window": {
+      "remaining_distance_H": 900,
+      "speeds_F": [
+        1400,
+        1850,
+        2300
+      ],
+      "cast_point_F": 0.3,
+      "extra_preparation_H": 0.1,
+      "available_H": [
+        0.6428571428571429,
+        0.4864864864864865,
+        0.391304347826087
+      ],
+      "longer_distance_H": 1050,
+      "longer_level3_H": 0.45652173913043476,
+      "limits": "只检查总时长，不认证范围/反射/控制结算与人手。"
+    },
+    "storm_tp_window": {
+      "remaining_distance_H": 6000,
+      "speeds_F": [
+        1400,
+        1850,
+        2300
+      ],
+      "channel_H": 3,
+      "available_H": [
+        4.285714285714286,
+        3.2432432432432434,
+        2.608695652173913
+      ],
+      "level3_distance_min_H": 6900,
+      "limits": "目标建筑实际吟唱若不同须重算；不认证整波清完或必能断推进。"
+    },
+    "ta_armor_change": {
+      "attack_H": 200,
+      "spill_H": 0.95,
+      "board_armors_H": [
+        0,
+        8
+      ],
+      "core_armor_H": 14,
+      "two_spill_H": [
+        380.0,
+        256.7567567567568
+      ],
+      "three_direct_H": 326.0869565217392,
+      "one_spill_H": 190,
+      "two_direct_H": 217.3913043478261
+    },
+    "ta_late_angle": {
+      "level_H": 11,
+      "ranks_H": [
+        4,
+        2,
+        4,
+        1
+      ],
+      "A_H": [
+        0,
+        0
+      ],
+      "B_H": [
+        350,
+        0
+      ],
+      "C_H": [
+        650,
+        200
+      ],
+      "A_after_H": [
+        50,
+        -200
+      ],
+      "attack_range_F": 390,
+      "spill_range_F": 700,
+      "spill_width_field_F": 90,
+      "projectile_speed_F": 900,
+      "attack_point_F": 0.3,
+      "initial_B_distance_H": 350,
+      "projectile_time_H": 0.3888888888888889,
+      "blink_distance_H": 206.15528128088303,
+      "B_C_distance_H": 360.5551275463989,
+      "after_C_distance_H": 721.1102550927978,
+      "limits": "命中按当前位置取方向为既有Q/旧期H；直线恒速静止点模型，无运行/手速认证。"
+    }
+  },
+  "macro_adoption": "首秀与iG工作选角是D38/D39下可逆X；夏季继续XG/另组新队为未采用核心设定，不新增D57。",
+  "not_verified": [
+    "全部资源语义与引擎实现",
+    "真实比赛/Replay/视频/手速/当期普及与首创",
+    "2023俱乐部注册、扣分、TI12资格和真人私下意愿"
+  ]
+}
