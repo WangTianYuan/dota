@@ -1,0 +1,1661 @@
+{
+  "id": "sources:mid-shallow-closure-20261015",
+  "date_local": "2026-10-15",
+  "timezone": "America/Los_Angeles",
+  "scope": "原29浅入口的17项职责/反例补足与全124比较复核；不推进剧情。",
+  "fixed_inputs": [
+    {
+      "id": "AW-abilities",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "bytes": 3099817,
+      "cache": "mid-companion-research-20261014\\fresh-AW-abilities.txt",
+      "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据"
+    },
+    {
+      "id": "AW-localization",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "bytes": 1235305,
+      "cache": "mid-companion-research-20261014\\fresh-AW-localization.txt",
+      "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据"
+    },
+    {
+      "id": "AW-items",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "bytes": 621009,
+      "cache": "mid-companion-research-20261014\\fresh-AW-items.txt",
+      "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据"
+    },
+    {
+      "id": "AR-heroes",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_heroes.txt",
+      "sha256": "c53ff35869b5678a9ef4c5b032643be379eefa536695644dbf989644c851b181",
+      "bytes": 634652,
+      "cache": "mid-persistent-units-20261012\\npc_heroes.txt",
+      "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据"
+    }
+  ],
+  "read_at_utc": "2026-10-16T05:04:05.285355+00:00",
+  "read_scope": {
+    "compact": "17英雄/78技能：蓝量、冷却、范围/准备、描述前280字符和指定英雄字段；不称78完整技能/实现。",
+    "deep": "另读15指定技能必要特殊字段；其中棒/虚无/吸血、盾/蛇、酿酒/贪婪、决斗、火灵/蛋、旧雷/陷阱的必要说明；神杖/魔晶残留描述不自动赋许可。",
+    "patches": "7.31工程师/帕格纳/凤凰；7.31d加入玛西CM一句；7.32玛西/帕格纳/凤凰；7.33力丸/美杜莎/钢背/军团/凤凰。其余行只定位，不称全补丁核验。",
+    "public": "2019/2022玛尔斯两原帖的位移/后段眩晕/防护反例与相关回复；2021凤凰辅助原帖的火灵/危险线/队伍接手段；6.84帕格纳原指南的支点/资源段。未看图片/视频或实际比赛。"
+  },
+  "compact_fields_F": {
+    "death_prophet": {
+      "hero_id": "43",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "death_prophet_carrion_swarm",
+          "ID": "5090",
+          "AbilityCastRange": "600",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "8 7 6 5",
+          "AbilityManaCost": "80 95 110 125"
+        },
+        {
+          "key": "death_prophet_silence",
+          "ID": "5091",
+          "AbilityCastRange": "900",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "15 14 13 12",
+          "AbilityDuration": "3 4 5 6",
+          "AbilityManaCost": "80 90 100 110"
+        },
+        {
+          "key": "death_prophet_spirit_siphon",
+          "ID": "5685",
+          "HasShardUpgrade": "1",
+          "AbilityCastRange": "500",
+          "AbilityCastPoint": "0.1",
+          "AbilityCooldown": "0",
+          "AbilityCharges": "1 2 3 4",
+          "AbilityChargeRestoreTime": "36 34 32 30",
+          "AbilityManaCost": "80"
+        },
+        {
+          "key": "death_prophet_exorcism",
+          "ID": "5093",
+          "AbilityCastPoint": "0.5 0.5 0.5",
+          "AbilityCooldown": "150.0",
+          "AbilityDuration": "35",
+          "AbilityManaCost": "250 350 450"
+        }
+      ]
+    },
+    "dragon_knight": {
+      "hero_id": "49",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "dragon_knight_breathe_fire",
+          "ID": "5226",
+          "AbilityCastRange": "600",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "14 13 12 11",
+          "AbilityManaCost": "90 100 110 120"
+        },
+        {
+          "key": "dragon_knight_dragon_tail",
+          "ID": "5227",
+          "AbilityCastRange": "150",
+          "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+          "AbilityCooldown": "16 14 12 10",
+          "AbilityManaCost": "70 80 90 100"
+        },
+        {
+          "key": "dragon_knight_dragon_blood",
+          "ID": "5228"
+        },
+        {
+          "key": "dragon_knight_fireball",
+          "ID": "660",
+          "IsGrantedByShard": "1",
+          "AbilityCastRange": "1400",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "20",
+          "AbilityManaCost": "100"
+        },
+        {
+          "key": "dragon_knight_elder_dragon_form",
+          "ID": "5229",
+          "AbilityCooldown": "115 110 105 100",
+          "AbilityManaCost": "50 50 50"
+        }
+      ]
+    },
+    "sniper": {
+      "hero_id": "35",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "sniper_shrapnel",
+          "ID": "5154",
+          "AbilityCastRange": "1800",
+          "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+          "AbilityCooldown": "0",
+          "AbilityCharges": "3",
+          "AbilityChargeRestoreTime": "35",
+          "AbilityManaCost": "50"
+        },
+        {
+          "key": "sniper_headshot",
+          "ID": "5155"
+        },
+        {
+          "key": "sniper_take_aim",
+          "ID": "5156",
+          "AbilityCastRange": "0",
+          "AbilityCastPoint": "0 0 0 0",
+          "AbilityCooldown": "20 18 16 14",
+          "AbilityManaCost": "25"
+        },
+        {
+          "key": "sniper_concussive_grenade",
+          "ID": "694",
+          "IsGrantedByShard": "1",
+          "AbilityCastRange": "600",
+          "AbilityCastPoint": "0.1",
+          "AbilityCooldown": "16",
+          "AbilityManaCost": "50"
+        },
+        {
+          "key": "sniper_assassinate",
+          "ID": "5157",
+          "AbilityCastRange": "3000",
+          "AbilityCastPoint": "2",
+          "AbilityCooldown": "20 15 10",
+          "AbilityManaCost": "175 225 275"
+        }
+      ]
+    },
+    "mars": {
+      "hero_id": "129",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "mars_spear",
+          "ID": "6583",
+          "HasShardUpgrade": "1",
+          "AbilityCastPoint": "0.25",
+          "AbilityCooldown": "14.0 13.0 12.0 11.0",
+          "AbilityManaCost": "110 120 130 140"
+        },
+        {
+          "key": "mars_gods_rebuke",
+          "ID": "6495",
+          "AbilityCastRange": "500",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "16 14 12 10",
+          "AbilityManaCost": "90"
+        },
+        {
+          "key": "mars_bulwark",
+          "ID": "6582"
+        },
+        {
+          "key": "mars_arena_of_blood",
+          "ID": "6598",
+          "AbilityCastRange": "400",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "90",
+          "AbilityManaCost": "150 175 200"
+        }
+      ]
+    },
+    "riki": {
+      "hero_id": "32",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "riki_smoke_screen",
+          "ID": "5142",
+          "AbilityCastRange": "550",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "20 17 14 11",
+          "AbilityDuration": "6",
+          "AbilityManaCost": "75"
+        },
+        {
+          "key": "riki_blink_strike",
+          "ID": "5143",
+          "AbilityCastRange": "600 700 800 900",
+          "AbilityCastPoint": "0.3",
+          "AbilityCooldown": "0.1",
+          "AbilityCharges": "2",
+          "AbilityChargeRestoreTime": "25 20 15 10",
+          "AbilityManaCost": "50"
+        },
+        {
+          "key": "riki_tricks_of_the_trade",
+          "ID": "5145",
+          "AbilityCastRange": "400",
+          "AbilityCastPoint": "0.3",
+          "AbilityChannelTime": "2.0",
+          "AbilityCooldown": "21 18 15 12",
+          "AbilityManaCost": "50"
+        },
+        {
+          "key": "riki_poison_dart",
+          "ID": "550",
+          "IsGrantedByShard": "1",
+          "AbilityCastRange": "1000",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "12",
+          "AbilityManaCost": "75"
+        },
+        {
+          "key": "riki_backstab",
+          "ID": "5144"
+        }
+      ]
+    },
+    "legion_commander": {
+      "hero_id": "104",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "legion_commander_overwhelming_odds",
+          "ID": "5595",
+          "AbilityCooldown": "15",
+          "AbilityCastRange": "1000",
+          "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+          "AbilityManaCost": "100 110 120 130"
+        },
+        {
+          "key": "legion_commander_press_the_attack",
+          "ID": "5596",
+          "AbilityCastRange": "700",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "16.0 15.0 14.0 13.0",
+          "AbilityManaCost": "110",
+          "HasShardUpgrade": "1"
+        },
+        {
+          "key": "legion_commander_moment_of_courage",
+          "ID": "5597",
+          "AbilityCooldown": "2.3 1.8 1.3 0.8"
+        },
+        {
+          "key": "legion_commander_duel",
+          "ID": "5598",
+          "AbilityCastRange": "150",
+          "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+          "AbilityCooldown": "50.0 50.0 50.0",
+          "AbilityManaCost": "75 75 75"
+        }
+      ]
+    },
+    "pugna": {
+      "hero_id": "45",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "pugna_nether_blast",
+          "ID": "5186",
+          "AbilityCastRange": "500",
+          "AbilityCastPoint": "0.2 0.2 0.2 0.2",
+          "AbilityCooldown": "5",
+          "AbilityManaCost": "85 105 125 145"
+        },
+        {
+          "key": "pugna_decrepify",
+          "ID": "5187",
+          "AbilityCastRange": "400 500 600 700",
+          "AbilityCastPoint": "0.2 0.2 0.2 0.2",
+          "AbilityCooldown": "15.0 12.0 9.0 6.0",
+          "AbilityDuration": "3.5",
+          "AbilityManaCost": "60"
+        },
+        {
+          "key": "pugna_nether_ward",
+          "ID": "5188",
+          "AbilityCastPoint": "0.2 0.2 0.2 0.2",
+          "AbilityCastRange": "150",
+          "AbilityCooldown": "35.0 35.0 35.0 35.0",
+          "AbilityDuration": "18 22 26 30",
+          "AbilityManaCost": "80"
+        },
+        {
+          "key": "pugna_life_drain",
+          "ID": "5189",
+          "HasShardUpgrade": "1",
+          "AbilityCastRange": "700",
+          "AbilityCastPoint": "0.2 0.2 0.2",
+          "AbilityChannelTime": "10.0",
+          "AbilityCooldown": "7",
+          "AbilityManaCost": "125 175 225"
+        }
+      ]
+    },
+    "spirit_breaker": {
+      "hero_id": "71",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "spirit_breaker_charge_of_darkness",
+          "ID": "5353",
+          "AbilityCastPoint": "0.3",
+          "AbilityCastRange": "0",
+          "AbilityCooldown": "17 15 13 11",
+          "AbilityManaCost": "100"
+        },
+        {
+          "key": "spirit_breaker_bulldoze",
+          "ID": "7301",
+          "AbilityCooldown": "22 20 18 16",
+          "AbilityManaCost": "30 40 50 60"
+        },
+        {
+          "key": "spirit_breaker_greater_bash",
+          "ID": "5355",
+          "AbilityCooldown": "1.5 1.5 1.5 1.5"
+        },
+        {
+          "key": "spirit_breaker_nether_strike",
+          "ID": "5356",
+          "HasShardUpgrade": "1",
+          "AbilityCastPoint": "1.0",
+          "AbilityCastRange": "700",
+          "AbilityCooldown": "90 70 50",
+          "AbilityManaCost": "125 150 175"
+        }
+      ]
+    },
+    "viper": {
+      "hero_id": "47",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "viper_poison_attack",
+          "ID": "5218",
+          "HasShardUpgrade": "1",
+          "AbilityCastRange": "600 640 680 720",
+          "AbilityCastPoint": "0",
+          "AbilityCooldown": "0.0",
+          "AbilityManaCost": "18 20 22 24"
+        },
+        {
+          "key": "viper_nethertoxin",
+          "ID": "5219",
+          "AbilityCastPoint": "0.2",
+          "AbilityCastRange": "900",
+          "AbilityCooldown": "14.0",
+          "AbilityManaCost": "85"
+        },
+        {
+          "key": "viper_corrosive_skin",
+          "ID": "5220"
+        },
+        {
+          "key": "viper_viper_strike",
+          "ID": "5221",
+          "AbilityCastRange": "500",
+          "AbilityCastPoint": "0.3 0.3 0.3",
+          "AbilityCooldown": "50 40 30",
+          "AbilityManaCost": "100 150 200"
+        }
+      ]
+    },
+    "alchemist": {
+      "hero_id": "73",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "alchemist_acid_spray",
+          "ID": "5365",
+          "AbilityCastPoint": "0.2",
+          "AbilityCastRange": "900",
+          "AbilityCooldown": "22.0",
+          "AbilityManaCost": "130 140 150 160"
+        },
+        {
+          "key": "alchemist_unstable_concoction",
+          "ID": "5366",
+          "AbilityCastRange": "775",
+          "AbilityCastPoint": "0.0",
+          "AbilityCooldown": "13",
+          "AbilityManaCost": "100"
+        },
+        {
+          "key": "alchemist_goblins_greed",
+          "ID": "5368",
+          "AbilityCastRange": "0",
+          "AbilityCastPoint": "0.2"
+        },
+        {
+          "key": "alchemist_berserk_potion",
+          "ID": "642",
+          "IsGrantedByShard": "1",
+          "HasShardUpgrade": "1",
+          "AbilityCastRange": "800",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "35",
+          "AbilityManaCost": "125"
+        },
+        {
+          "key": "alchemist_chemical_rage",
+          "ID": "5369",
+          "AbilityCastPoint": "0.0",
+          "AbilityCooldown": "55.0",
+          "AbilityManaCost": "50 75 100"
+        }
+      ]
+    },
+    "medusa": {
+      "hero_id": "94",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "medusa_split_shot",
+          "ID": "5504",
+          "AbilityCastPoint": "0.4 0.4 0.4 0.4"
+        },
+        {
+          "key": "medusa_mystic_snake",
+          "ID": "5505",
+          "AbilityCastRange": "700",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "10",
+          "AbilityManaCost": "140 150 160 170"
+        },
+        {
+          "key": "medusa_mana_shield",
+          "ID": "5506",
+          "AbilityCastPoint": "0.4 0.4 0.4 0.4"
+        },
+        {
+          "key": "medusa_cold_blooded",
+          "ID": "701",
+          "IsGrantedByShard": "1",
+          "AbilityCooldown": "12"
+        },
+        {
+          "key": "medusa_stone_gaze",
+          "ID": "5507",
+          "AbilityCastPoint": "0.4",
+          "AbilityCastRange": "1200",
+          "AbilityCooldown": "90",
+          "AbilityManaCost": "100"
+        }
+      ]
+    },
+    "sand_king": {
+      "hero_id": "16",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "sandking_burrowstrike",
+          "ID": "5102",
+          "AbilityCastRange": "425 500 575 650",
+          "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+          "AbilityCooldown": "15 14 13 12",
+          "AbilityManaCost": "110 120 130 140"
+        },
+        {
+          "key": "sandking_sand_storm",
+          "ID": "5103",
+          "AbilityCastRange": "0",
+          "AbilityDuration": "20 25 30 35",
+          "AbilityCooldown": "40 34 28 22",
+          "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+          "AbilityManaCost": "75"
+        },
+        {
+          "key": "sandking_caustic_finale",
+          "ID": "5104"
+        },
+        {
+          "key": "sandking_epicenter",
+          "ID": "5105",
+          "HasShardUpgrade": "1",
+          "AbilityCooldown": "120 110 100",
+          "AbilityDuration": "3.0",
+          "AbilityCastPoint": "2.0",
+          "AbilityManaCost": "150 225 300"
+        }
+      ]
+    },
+    "bristleback": {
+      "hero_id": "99",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "bristleback_viscous_nasal_goo",
+          "ID": "5548",
+          "AbilityCastRange": "600",
+          "AbilityCastPoint": "0.3",
+          "AbilityCooldown": "1.75",
+          "AbilityManaCost": "12 16 20 24"
+        },
+        {
+          "key": "bristleback_quill_spray",
+          "ID": "5549",
+          "AbilityCastRange": "650",
+          "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+          "AbilityCooldown": "3.0 3.0 3.0 3.0",
+          "AbilityManaCost": "35 35 35 35"
+        },
+        {
+          "key": "bristleback_bristleback",
+          "ID": "5550"
+        },
+        {
+          "key": "bristleback_hairball",
+          "ID": "643",
+          "IsGrantedByShard": "1",
+          "AbilityCastRange": "1500",
+          "AbilityCastPoint": "0.1",
+          "AbilityCooldown": "20",
+          "AbilityManaCost": "100"
+        },
+        {
+          "key": "bristleback_warpath",
+          "ID": "5551",
+          "AbilityDuration": "10.0 10.0 10.0"
+        }
+      ]
+    },
+    "marci": {
+      "hero_id": "136",
+      "CMEnabled_F": "0",
+      "abilities": [
+        {
+          "key": "marci_grapple",
+          "ID": "8192",
+          "AbilityCastPoint": "0.2",
+          "AbilityCastRange": "175",
+          "AbilityCooldown": "16 14 12 10",
+          "AbilityManaCost": "90"
+        },
+        {
+          "key": "marci_companion_run",
+          "ID": "8235",
+          "AbilityCastPoint": "0.1",
+          "AbilityCastRange": "800",
+          "AbilityCooldown": "17 15 13 11",
+          "AbilityManaCost": "70 80 90 100"
+        },
+        {
+          "key": "marci_guardian",
+          "ID": "8234",
+          "AbilityCastRange": "700",
+          "AbilityCastPoint": "0.0",
+          "AbilityCooldown": "36 28 20 12",
+          "AbilityManaCost": "45 40 35 30"
+        },
+        {
+          "key": "marci_unleash",
+          "ID": "8198",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "110 90 70",
+          "AbilityManaCost": "100 125 150"
+        }
+      ]
+    },
+    "antimage": {
+      "hero_id": "1",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "antimage_mana_break",
+          "ID": "5003"
+        },
+        {
+          "key": "antimage_blink",
+          "ID": "5004",
+          "AbilityCastPoint": "0.4 0.4 0.4 0.4",
+          "AbilityCooldown": "15 12 9 6",
+          "AbilityManaCost": "60"
+        },
+        {
+          "key": "antimage_counterspell",
+          "ID": "7314",
+          "HasShardUpgrade": "1",
+          "AbilityCastRange": "0",
+          "AbilityCastPoint": "0 0 0 0",
+          "AbilityCooldown": "15 11 7 3",
+          "AbilityManaCost": "45 50 55 60"
+        },
+        {
+          "key": "antimage_mana_overload",
+          "ID": "543",
+          "AbilityCastRange": "0",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "0",
+          "AbilityCharges": "3",
+          "AbilityChargeRestoreTime": "25",
+          "AbilityManaCost": "50"
+        },
+        {
+          "key": "antimage_mana_void",
+          "ID": "5006",
+          "AbilityCastRange": "600",
+          "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+          "AbilityCooldown": "70.0 70.0 70.0",
+          "AbilityManaCost": "100 200 300"
+        }
+      ]
+    },
+    "phoenix": {
+      "hero_id": "110",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "phoenix_icarus_dive",
+          "ID": "5623",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "36 34 32 30",
+          "AbilityManaCost": "0"
+        },
+        {
+          "key": "phoenix_fire_spirits",
+          "ID": "5625",
+          "AbilityCastRange": "1400",
+          "AbilityCooldown": "51 44 37 30",
+          "AbilityManaCost": "120"
+        },
+        {
+          "key": "phoenix_sun_ray",
+          "ID": "5626",
+          "HasShardUpgrade": "1",
+          "AbilityCastRange": "1200",
+          "AbilityCastPoint": "0.01",
+          "AbilityCooldown": "30",
+          "AbilityDuration": "6.0",
+          "AbilityManaCost": "100 110 120 130"
+        },
+        {
+          "key": "phoenix_sun_ray_toggle_move",
+          "ID": "5628",
+          "AbilityCastPoint": "0.0 0.0 0.0 0.0"
+        },
+        {
+          "key": "phoenix_supernova",
+          "ID": "5630",
+          "AbilityCastRange": "500",
+          "AbilityCastPoint": "0.01",
+          "AbilityCooldown": "120",
+          "AbilityDuration": "6.0",
+          "AbilityManaCost": "150 200 250"
+        }
+      ]
+    },
+    "techies": {
+      "hero_id": "105",
+      "CMEnabled_F": "1",
+      "abilities": [
+        {
+          "key": "techies_land_mines",
+          "ID": "5599",
+          "AbilityCastRange": "100",
+          "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+          "AbilityCooldown": "0",
+          "AbilityCharges": "3",
+          "AbilityChargeRestoreTime": "23",
+          "AbilityManaCost": "110 130 150 170"
+        },
+        {
+          "key": "techies_stasis_trap",
+          "ID": "5600",
+          "AbilityCastRange": "150",
+          "AbilityCastPoint": "1.0",
+          "AbilityCooldown": "20.0 16.0 13.0 10.0",
+          "AbilityManaCost": "80 110 140 160"
+        },
+        {
+          "key": "techies_suicide",
+          "ID": "5601",
+          "HasShardUpgrade": "1",
+          "AbilityCastRange": "1000",
+          "AbilityCastPoint": "1.0",
+          "AbilityCooldown": "35",
+          "AbilityManaCost": "100 125 150 175"
+        },
+        {
+          "key": "techies_focused_detonate",
+          "ID": "5635",
+          "AbilityCastRange": "0",
+          "AbilityCooldown": "1.0 1.0 1.0"
+        },
+        {
+          "key": "techies_minefield_sign",
+          "ID": "5644",
+          "AbilityCastRange": "10",
+          "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+          "AbilityCooldown": "360.0",
+          "AbilityManaCost": "0"
+        },
+        {
+          "key": "techies_remote_mines",
+          "ID": "5602",
+          "AbilityCastRange": "500",
+          "AbilityCastPoint": "0.75",
+          "AbilityCooldown": "8",
+          "AbilityManaCost": "120 180 240"
+        }
+      ]
+    }
+  },
+  "deep_special_fields_F": {
+    "mars_spear": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "damage": "100 175 250 325",
+        "LinkedSpecialBonus": "special_bonus_unique_mars_spear_bonus_damage"
+      },
+      "02": {
+        "var_type": "FIELD_FLOAT",
+        "spear_speed": "1400"
+      },
+      "03": {
+        "var_type": "FIELD_INTEGER",
+        "spear_width": "125"
+      },
+      "04": {
+        "var_type": "FIELD_INTEGER",
+        "spear_vision": "300"
+      },
+      "05": {
+        "var_type": "FIELD_INTEGER",
+        "spear_range": "900 1000 1100 1200"
+      },
+      "06": {
+        "var_type": "FIELD_FLOAT",
+        "activity_duration": "1.7"
+      },
+      "07": {
+        "var_type": "FIELD_FLOAT",
+        "stun_duration": "1.6 2.0 2.4 2.8",
+        "LinkedSpecialBonus": "special_bonus_unique_mars_spear_stun_duration"
+      },
+      "08": {
+        "var_type": "FIELD_FLOAT",
+        "knockback_duration": "0.25"
+      },
+      "09": {
+        "var_type": "FIELD_FLOAT",
+        "knockback_distance": "75"
+      },
+      "10": {
+        "var_type": "FIELD_FLOAT",
+        "scepter_cooldown": "7"
+      }
+    },
+    "mars_gods_rebuke": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "crit_mult": "150 190 230 270",
+        "LinkedSpecialBonus": "special_bonus_unique_mars_gods_rebuke_extra_crit"
+      },
+      "02": {
+        "var_type": "FIELD_INTEGER",
+        "angle": "140"
+      },
+      "03": {
+        "var_type": "FIELD_INTEGER",
+        "radius": "500"
+      },
+      "04": {
+        "var_type": "FIELD_FLOAT",
+        "knockback_duration": "0.3"
+      },
+      "05": {
+        "var_type": "FIELD_FLOAT",
+        "knockback_distance": "150"
+      },
+      "06": {
+        "var_type": "FIELD_INTEGER",
+        "knockback_slow": "40"
+      },
+      "07": {
+        "var_type": "FIELD_FLOAT",
+        "knockback_slow_duration": "2",
+        "LinkedSpecialBonus": "special_bonus_unique_mars_rebuke_slow"
+      },
+      "08": {
+        "var_type": "FIELD_FLOAT",
+        "activity_duration": "2"
+      },
+      "09": {
+        "var_type": "FIELD_INTEGER",
+        "bonus_damage_vs_heroes": "20 25 30 35"
+      },
+      "10": {
+        "var_type": "FIELD_FLOAT",
+        "scepter_cooldown": "3.5",
+        "RequiresScepter": "1"
+      }
+    },
+    "legion_commander_duel": {
+      "01": {
+        "var_type": "FIELD_FLOAT",
+        "duration": "4.0 4.75 5.5"
+      },
+      "02": {
+        "var_type": "FIELD_FLOAT",
+        "duration_scepter": "6 7 8",
+        "RequiresScepter": "1"
+      },
+      "03": {
+        "var_type": "FIELD_INTEGER",
+        "reward_damage": "10 20 30",
+        "LinkedSpecialBonus": "special_bonus_unique_legion_commander"
+      },
+      "04": {
+        "var_type": "FIELD_INTEGER",
+        "victory_range": "600"
+      }
+    },
+    "pugna_decrepify": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "bonus_spell_damage_pct_allies": "-25"
+      },
+      "02": {
+        "var_type": "FIELD_INTEGER",
+        "bonus_movement_speed_allies": "0"
+      },
+      "03": {
+        "var_type": "FIELD_INTEGER",
+        "bonus_spell_damage_pct": "-30 -40 -50 -60"
+      },
+      "04": {
+        "var_type": "FIELD_INTEGER",
+        "bonus_movement_speed": "-30 -40 -50 -60"
+      },
+      "05": {
+        "var_type": "FIELD_FLOAT",
+        "abilityduration": "",
+        "LinkedSpecialBonus": "special_bonus_unique_pugna_5"
+      }
+    },
+    "pugna_nether_ward": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "radius": "1600"
+      },
+      "02": {
+        "var_type": "FIELD_INTEGER",
+        "base_damage": "50"
+      },
+      "03": {
+        "var_type": "FIELD_FLOAT",
+        "mana_multiplier": "1.0 1.25 1.50 1.75",
+        "LinkedSpecialBonus": "special_bonus_unique_pugna_3"
+      },
+      "04": {
+        "var_type": "FIELD_FLOAT",
+        "mana_regen": "0"
+      },
+      "05": {
+        "var_type": "FIELD_INTEGER",
+        "attacks_to_destroy_tooltip": "4 4 4 4",
+        "LinkedSpecialBonus": "special_bonus_unique_pugna_6"
+      },
+      "06": {
+        "var_type": "FIELD_INTEGER",
+        "mana_drained_per_attack": "5 6 7 8"
+      }
+    },
+    "pugna_life_drain": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "health_drain": "150 225 300",
+        "CalculateSpellDamageTooltip": "1"
+      },
+      "02": {
+        "var_type": "FIELD_INTEGER",
+        "scepter_health_drain": "250 325 400",
+        "RequiresScepter": "1"
+      },
+      "03": {
+        "var_type": "FIELD_FLOAT",
+        "tick_rate": "0.25 0.25 0.25"
+      },
+      "04": {
+        "var_type": "FIELD_INTEGER",
+        "drain_buffer": "200"
+      },
+      "05": {
+        "var_type": "FIELD_INTEGER",
+        "scepter_cooldown": "0",
+        "RequiresScepter": "1"
+      }
+    },
+    "spirit_breaker_greater_bash": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "chance_pct": "17 17 17 17",
+        "LinkedSpecialBonus": "special_bonus_unique_spirit_breaker_1"
+      },
+      "02": {
+        "var_type": "FIELD_FLOAT",
+        "damage": "14 20 26 32",
+        "LinkedSpecialBonus": "special_bonus_unique_spirit_breaker_3"
+      },
+      "03": {
+        "var_type": "FIELD_FLOAT",
+        "duration": "0.9 1.2 1.5 1.8"
+      },
+      "04": {
+        "var_type": "FIELD_FLOAT",
+        "knockback_duration": "0.5 0.5 0.5 0.5"
+      },
+      "05": {
+        "var_type": "FIELD_INTEGER",
+        "knockback_distance": "143 152 158 162"
+      },
+      "06": {
+        "var_type": "FIELD_INTEGER",
+        "knockback_height": "50 50 50 50"
+      },
+      "07": {
+        "var_type": "FIELD_INTEGER",
+        "bonus_movespeed_pct": "17"
+      },
+      "08": {
+        "var_type": "FIELD_FLOAT",
+        "movespeed_duration": "3.0 3.0 3.0 3.0"
+      }
+    },
+    "alchemist_unstable_concoction": {
+      "01": {
+        "var_type": "FIELD_FLOAT",
+        "brew_time": "5.0"
+      },
+      "02": {
+        "var_type": "FIELD_FLOAT",
+        "brew_explosion": "5.5"
+      },
+      "03": {
+        "var_type": "FIELD_FLOAT",
+        "min_stun": "0.25"
+      },
+      "04": {
+        "var_type": "FIELD_FLOAT",
+        "max_stun": "1.75 2.5 3.25 4.0"
+      },
+      "05": {
+        "var_type": "FIELD_INTEGER",
+        "min_damage": "0"
+      },
+      "06": {
+        "var_type": "FIELD_INTEGER",
+        "max_damage": "150 220 290 360",
+        "LinkedSpecialBonus": "special_bonus_unique_alchemist_2"
+      },
+      "07": {
+        "var_type": "FIELD_INTEGER",
+        "radius": "250",
+        "LinkedSpecialBonus": "special_bonus_unique_alchemist"
+      }
+    },
+    "alchemist_goblins_greed": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "duration": "36"
+      },
+      "02": {
+        "var_type": "FIELD_INTEGER",
+        "bonus_gold": "3"
+      },
+      "03": {
+        "var_type": "FIELD_INTEGER",
+        "bonus_bonus_gold": "3"
+      },
+      "04": {
+        "var_type": "FIELD_INTEGER",
+        "bonus_gold_cap": "15 18 21 24"
+      },
+      "05": {
+        "var_type": "FIELD_FLOAT",
+        "bounty_multiplier": "1.5 2.0 2.5 3.0"
+      }
+    },
+    "medusa_mystic_snake": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "radius": "450"
+      },
+      "02": {
+        "var_type": "FIELD_INTEGER",
+        "snake_jumps": "3 4 5 6"
+      },
+      "03": {
+        "var_type": "FIELD_FLOAT",
+        "jump_delay": "0.25 0.25 0.25 0.25"
+      },
+      "04": {
+        "var_type": "FIELD_INTEGER",
+        "snake_damage": "80 120 160 200"
+      },
+      "05": {
+        "var_type": "FIELD_INTEGER",
+        "snake_mana_steal": "11 14 17 20",
+        "LinkedSpecialBonus": "special_bonus_unique_medusa_3"
+      },
+      "06": {
+        "var_type": "FIELD_INTEGER",
+        "snake_scale": "35"
+      },
+      "07": {
+        "var_type": "FIELD_INTEGER",
+        "initial_speed": "800"
+      },
+      "08": {
+        "var_type": "FIELD_INTEGER",
+        "return_speed": "800"
+      },
+      "09": {
+        "var_type": "FIELD_FLOAT",
+        "stone_form_scepter_base": "1.3",
+        "RequiresScepter": "1"
+      },
+      "10": {
+        "var_type": "FIELD_FLOAT",
+        "stone_form_scepter_increment": "0.2",
+        "RequiresScepter": "1"
+      },
+      "11": {
+        "var_type": "FIELD_INTEGER",
+        "movement_slow": "30"
+      },
+      "12": {
+        "var_type": "FIELD_INTEGER",
+        "turn_slow": "50"
+      },
+      "13": {
+        "var_type": "FIELD_FLOAT",
+        "slow_duration": "3"
+      }
+    },
+    "medusa_mana_shield": {
+      "01": {
+        "var_type": "FIELD_FLOAT",
+        "damage_per_mana": "1.3 1.7 2.1 2.5"
+      },
+      "02": {
+        "var_type": "FIELD_FLOAT",
+        "absorption_pct": "70"
+      },
+      "03": {
+        "var_type": "FIELD_INTEGER",
+        "bonus_mana": "100 150 200 250"
+      }
+    },
+    "phoenix_fire_spirits": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "hp_cost_perc": "20"
+      },
+      "02": {
+        "var_type": "FIELD_FLOAT",
+        "spirit_duration": "20"
+      },
+      "03": {
+        "var_type": "FIELD_INTEGER",
+        "spirit_speed": "900 900 900 900"
+      },
+      "04": {
+        "var_type": "FIELD_INTEGER",
+        "radius": "200"
+      },
+      "05": {
+        "var_type": "FIELD_FLOAT",
+        "duration": "4.0"
+      },
+      "06": {
+        "var_type": "FIELD_INTEGER",
+        "attackspeed_slow": "-80 -100 -120 -140"
+      },
+      "07": {
+        "var_type": "FIELD_INTEGER",
+        "damage_per_second": "15 35 55 75",
+        "LinkedSpecialBonus": "special_bonus_unique_phoenix_3"
+      },
+      "08": {
+        "var_type": "FIELD_INTEGER",
+        "spirit_count": "5"
+      },
+      "09": {
+        "var_type": "FIELD_FLOAT",
+        "tick_interval": "1.0"
+      }
+    },
+    "phoenix_supernova": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "aura_radius": "1200"
+      },
+      "02": {
+        "var_type": "FIELD_INTEGER",
+        "damage_per_sec": "60 90 120"
+      },
+      "03": {
+        "var_type": "FIELD_FLOAT",
+        "stun_duration": "2.0 2.5 3.0",
+        "LinkedSpecialBonus": "special_bonus_unique_phoenix_2"
+      },
+      "04": {
+        "var_type": "FIELD_INTEGER",
+        "max_hero_attacks": "6 8 10",
+        "LinkedSpecialBonus": "special_bonus_unique_phoenix_1"
+      },
+      "05": {
+        "var_type": "FIELD_INTEGER",
+        "max_hero_attacks_scepter": "7 10 13",
+        "LinkedSpecialBonus": "special_bonus_unique_phoenix_1",
+        "RequiresScepter": "1"
+      },
+      "07": {
+        "var_type": "FIELD_INTEGER",
+        "cast_range_tooltip_scepter": "500",
+        "RequiresScepter": "1"
+      }
+    },
+    "techies_land_mines": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "radius": "400"
+      },
+      "02": {
+        "var_type": "FIELD_FLOAT",
+        "proximity_threshold": "1.6"
+      },
+      "03": {
+        "var_type": "FIELD_INTEGER",
+        "damage": "200 380 560 740"
+      },
+      "04": {
+        "var_type": "FIELD_FLOAT",
+        "burn_duration": "5"
+      },
+      "05": {
+        "var_type": "FIELD_INTEGER",
+        "building_damage_pct": "30"
+      },
+      "06": {
+        "var_type": "FIELD_FLOAT",
+        "activation_delay": "1.75"
+      },
+      "07": {
+        "var_type": "FIELD_INTEGER",
+        "cast_range_scepter_bonus": "300",
+        "RequiresScepter": "1"
+      },
+      "08": {
+        "var_type": "FIELD_FLOAT",
+        "AbilityChargeRestoreTime": "",
+        "LinkedSpecialBonus": "special_bonus_unique_techies_3"
+      }
+    },
+    "techies_remote_mines": {
+      "01": {
+        "var_type": "FIELD_INTEGER",
+        "max_mines": "21"
+      },
+      "02": {
+        "var_type": "FIELD_INTEGER",
+        "damage": "300 450 600"
+      },
+      "03": {
+        "var_type": "FIELD_INTEGER",
+        "radius": "425"
+      },
+      "04": {
+        "var_type": "FIELD_FLOAT",
+        "duration": "600.0"
+      },
+      "05": {
+        "var_type": "FIELD_FLOAT",
+        "activation_time": "2.0"
+      },
+      "06": {
+        "var_type": "FIELD_INTEGER",
+        "damage_scepter": "450 600 750",
+        "RequiresScepter": "1"
+      },
+      "07": {
+        "var_type": "FIELD_INTEGER",
+        "radius_scepter": "425",
+        "RequiresScepter": "1"
+      },
+      "08": {
+        "var_type": "FIELD_INTEGER",
+        "cast_range_scepter_bonus": "300",
+        "RequiresScepter": "1"
+      },
+      "09": {
+        "var_type": "FIELD_INTEGER",
+        "vision_radius": "500"
+      },
+      "10": {
+        "var_type": "FIELD_FLOAT",
+        "vision_duration": "3.0"
+      },
+      "11": {
+        "var_type": "FIELD_INTEGER",
+        "model_scale": "0 10 20"
+      },
+      "12": {
+        "var_type": "FIELD_FLOAT",
+        "detonate_delay": "0.25"
+      }
+    }
+  },
+  "responses": [
+    {
+      "file": "patch-7.31.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english",
+      "status": 200,
+      "final_url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english",
+      "bytes": 130214,
+      "sha256": "9a5a76422eba02b2e45bf80c81450e9c7155d1a028cc59a8cfecf9cd10fdf28a",
+      "retrieved_at_utc": "2026-10-16T05:06:00.659307+00:00"
+    },
+    {
+      "file": "patch-7.31d.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31d&language=english",
+      "status": 200,
+      "final_url": "https://www.dota2.com/datafeed/patchnotes?version=7.31d&language=english",
+      "bytes": 16153,
+      "sha256": "7e1c74ba750f211d1305c5deeb475e40ac597e423974ec2e898e162f7d5b074c",
+      "retrieved_at_utc": "2026-10-16T05:06:00.660307+00:00"
+    },
+    {
+      "file": "patch-7.32.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.32&language=english",
+      "status": 200,
+      "final_url": "https://www.dota2.com/datafeed/patchnotes?version=7.32&language=english",
+      "bytes": 92953,
+      "sha256": "ed1e0611aaf132a4f870209250781ca31e57178c1a56b20373c3ed0404006c0d",
+      "retrieved_at_utc": "2026-10-16T05:06:00.660307+00:00"
+    },
+    {
+      "file": "patch-7.33.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english",
+      "status": 200,
+      "final_url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english",
+      "bytes": 169457,
+      "sha256": "b65cb135d43236e8816546e661a58aaf30de3ec7f737a201905590e041f17d04",
+      "retrieved_at_utc": "2026-10-16T05:06:00.660307+00:00"
+    },
+    {
+      "file": "pugna-guide.html",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=430681279",
+      "status": 200,
+      "final_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=430681279",
+      "bytes": 99435,
+      "sha256": "84362209c037f910a3c4935634a662dbc7a40bf7a7d79b8c4be994b395d3b17a",
+      "retrieved_at_utc": "2026-10-16T05:06:00.661307+00:00"
+    }
+  ],
+  "public_Q": [
+    {
+      "url": "https://www.reddit.com/r/DotA2/comments/ccsi6g/",
+      "published_period": "2019-07",
+      "supports": "原作者及回复称盾截停矛拖行后，矛撞障碍仍可控原目标；动作须合法。",
+      "read": "主标题/作者回复/障碍和输入范围相关评论；不读链接媒体，不认证2021运行。",
+      "raw_http_saved": false
+    },
+    {
+      "url": "https://www.reddit.com/r/DotA2/comments/tpfw79/",
+      "published_period": "2022-03",
+      "supports": "TheZett解释两段位移替换可给目标防护空档，也可保近处对象；通用实现是Q。",
+      "read": "主楼文字及解释/防护相关回复；没有认证提及的赛事/片段。",
+      "raw_http_saved": false
+    },
+    {
+      "url": "https://www.reddit.com/r/DotA2/comments/mmwkcn/",
+      "published_period": "2021-04",
+      "supports": "辅助原帖已讨论火灵分配、危险线、延后交蛋及队伍接手；不是新发明。",
+      "read": "build、fire spirits、deadlane和反手段；不采职业身份/精确表现/所有装备推荐。",
+      "raw_http_saved": false
+    },
+    {
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=430681279",
+      "guide_version_label": "6.84",
+      "supports": "已有虚无棒/支点与技能点取舍的Q；不沿用旧数值/墓碑许可/总是推荐。",
+      "read": "对应技能和使用/技能点段；当前页面不能证明每句写于2015。"
+    }
+  ],
+  "budget_examples_I": [
+    {
+      "hero": "death_prophet",
+      "label": "DP",
+      "level": 7,
+      "ranks_QWER": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "mana": 535
+    },
+    {
+      "hero": "dragon_knight",
+      "label": "龙骑士",
+      "level": 7,
+      "ranks_QWER": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "mana": 240
+    },
+    {
+      "hero": "sniper",
+      "label": "狙击手",
+      "level": 7,
+      "ranks_QWER": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "mana": 250
+    },
+    {
+      "hero": "mars",
+      "label": "玛尔斯",
+      "level": 7,
+      "ranks_QWER": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "mana": 380
+    },
+    {
+      "hero": "riki",
+      "label": "力丸",
+      "level": 7,
+      "ranks_QWER": [
+        1,
+        4,
+        1,
+        1
+      ],
+      "mana": 175
+    },
+    {
+      "hero": "legion_commander",
+      "label": "军团",
+      "level": 7,
+      "ranks_QWER": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "mana": 315
+    },
+    {
+      "hero": "pugna",
+      "label": "帕格纳",
+      "level": 7,
+      "ranks_QWER": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "mana": 410
+    },
+    {
+      "hero": "spirit_breaker",
+      "label": "裂魂人",
+      "level": 7,
+      "ranks_QWER": [
+        1,
+        1,
+        4,
+        1
+      ],
+      "mana": 255
+    },
+    {
+      "hero": "viper",
+      "label": "毒龙",
+      "level": 7,
+      "ranks_QWER": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "mana": 305
+    },
+    {
+      "hero": "alchemist",
+      "label": "炼金",
+      "level": 7,
+      "ranks_QWER": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "mana": 310
+    },
+    {
+      "hero": "medusa",
+      "label": "美杜莎",
+      "level": 7,
+      "ranks_QWER": [
+        1,
+        4,
+        1,
+        1
+      ],
+      "mana": 270
+    },
+    {
+      "hero": "sand_king",
+      "label": "沙王",
+      "level": 7,
+      "ranks_QWER": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "mana": 365
+    },
+    {
+      "hero": "bristleback",
+      "label": "钢背",
+      "level": 7,
+      "ranks_QWER": [
+        1,
+        4,
+        1,
+        1
+      ],
+      "mana": 82
+    },
+    {
+      "hero": "marci",
+      "label": "玛西",
+      "level": 7,
+      "ranks_QWER": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "mana": 305
+    },
+    {
+      "hero": "antimage",
+      "label": "敌法",
+      "level": 7,
+      "ranks_QWER": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "mana": 205
+    },
+    {
+      "hero": "phoenix",
+      "label": "凤凰",
+      "level": 7,
+      "ranks_QWER": [
+        1,
+        4,
+        1,
+        1
+      ],
+      "mana": 370
+    },
+    {
+      "hero": "techies",
+      "label": "工程师",
+      "level": 7,
+      "ranks_QWER": [
+        1,
+        1,
+        4,
+        1
+      ],
+      "mana": 485
+    }
+  ],
+  "models_I_H": {
+    "mars": {
+      "origin": 0,
+      "target": 100,
+      "obstacle": 1000,
+      "cast_point_F": 0.25,
+      "speed_F": 1400,
+      "target_touch_s": 0.3214285714285714,
+      "obstacle_touch_s": 0.9642857142857143,
+      "rebuke_effect_time_assumed_s": 0.55,
+      "victim_position_before_rebuke_H": 420.00000000000006,
+      "rebuke_radius_F": 500,
+      "possible_control_gap_s": 0.41428571428571426,
+      "limits": [
+        "动画/施法和有效障碍必须允许该时点；控制替换与远端关联保持H。",
+        "已有2019/2022Q，公开不等于普及或新发现；留近处与连续控不能同时取最好。"
+      ]
+    },
+    "pugna_ward": {
+      "rank": 4,
+      "base_F": 50,
+      "mana_multiplier_F": 1.75,
+      "enemy_mana_cost_assumed": 200,
+      "raw_H": 400,
+      "enemy_hp_assumed": 280,
+      "magic_resist_assumed": 0.25,
+      "after_resist_H": 300,
+      "attack_equivalent_heal_branches_H": [
+        1,
+        2
+      ],
+      "limits": [
+        "旧描述25%与7.31前值两次攻击不一致，分别建条件比较，不认证精确旧回血。",
+        "E4状态不能同时借七级Q4；先放虚无或付中断代价，不前移7.31引导中施虚无许可。"
+      ]
+    },
+    "medusa_shield": {
+      "current_mana": 500,
+      "snake_and_gaze_cost": 270,
+      "remaining_mana": 230,
+      "rank": 1,
+      "absorption_F": 0.7,
+      "damage_per_mana_F": 1.3,
+      "capacity_without_spells": 650,
+      "capacity_after_spells": 299,
+      "capacity_lost": 351,
+      "incoming_raw_H": 1000,
+      "life_path_before_mitigation_without_spells": 350,
+      "life_path_before_mitigation_after_spells": 701
+    },
+    "medusa_return": {
+      "origin": [
+        0,
+        0
+      ],
+      "isolated_E": [
+        0,
+        400
+      ],
+      "A": [
+        400,
+        0
+      ],
+      "B": [
+        700,
+        0
+      ],
+      "C": [
+        1000,
+        0
+      ],
+      "jump_range_F": 450,
+      "assumed_each_leg_speed": 800,
+      "intermediate_delay_s": 0.25,
+      "short_distance": 800,
+      "long_distance": 2000,
+      "short_return_s": 1.0,
+      "long_return_s": 3.0,
+      "mana_totals_assumed": {
+        "E": 600,
+        "A": 600,
+        "B": 1000,
+        "C": 1000
+      },
+      "mana_return_fraction_H": 0.2,
+      "short_return_mana_H": 120,
+      "long_return_mana_H": 520,
+      "mana_after_launch_assumed": 30,
+      "incoming_time_after_launch_s": 1.5,
+      "available_short_at_incoming": 150,
+      "available_long_at_incoming": 30,
+      "extra_shield_capacity_H": 156,
+      "limits": [
+        "固定位置/有效对象/不重跳与800后续速度是模型前提，不认证引擎跳速/取样。",
+        "不指挥每跳；同一集合中点E或A，失去其他目标伤害/更多晚回蓝是成本。"
+      ]
+    },
+    "bristle_mana": {
+      "start": 100,
+      "goo": 12,
+      "two_quills": 70,
+      "remaining": 18,
+      "next_quill": 35
+    },
+    "techies_ready": {
+      "remote_cast_point_F": 0.75,
+      "activation_F": 2,
+      "detonation_delay_F": 0.25,
+      "earliest_new_mine_H": 3.0,
+      "limits": "新放而非已备好雷；施法、启用、命令及目标位置共同成立，不认证每种触发。"
+    }
+  },
+  "period_boundaries_F_I": {
+    "Marci": "固定CM=0；7.31d明确加入CM，7.32控制许可从摔转跳。",
+    "Techies": "7.31移除陷阱/遥控雷并重做，不迁入同一套旧方案。",
+    "Pugna": "7.31虚无60→80并准引导中施放；棒不再施法回血，改减伤光环；7.32光环移除/神杖又改。",
+    "Medusa": "7.33护盾变被动并重做吸收与成长；本例70%/1.3不适用。",
+    "Legion": "7.33Q可在决斗中使用，旧禁止不能泛化。",
+    "Riki": "7.33移除睡镖，不能贯穿两年。",
+    "Bristleback": "7.33新增被动针叠战意及超阈值保留，旧场景不借用。",
+    "Phoenix": "原生火灵说明四只，内部5不认证第五只；同资源许可需看生效技能/升级，不以残留描述授予。"
+  },
+  "not_verified": [
+    "没有游戏、Replay、录像、新比赛API或逐局位置认证。",
+    "没有17项新发现、当期普及、全英雄职业强度、精确胜率/装备时点。",
+    "字段/说明冲突明确保留；完整联合作用H可作相容理论，不需作者复现。",
+    "没有剧情采用、新赛果、长期英雄选择或另会话写入。"
+  ]
+}
