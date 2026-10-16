@@ -1,0 +1,2117 @@
+{
+  "id": "sources:xg-ti12-eligibility-20261015",
+  "date_local": "2026-10-15",
+  "timezone": "America/Los_Angeles",
+  "purpose": "D57继续XG后的改组/资格依据；入口、工作名次和数值均不自动采用。",
+  "responses": [
+    {
+      "file": "faq-cn.html",
+      "url": "https://www.dota2.com.cn/international/2023/about",
+      "final_url": "https://www.dota2.com.cn/international/2023/about",
+      "status": 200,
+      "bytes": 56643,
+      "sha256": "b2596f840f0aaa727144c461d18c2aab1a9b92b71bcdb5087d7c34a561c13c8a",
+      "retrieved_at_utc": "2026-10-16T01:39:15.676961+00:00"
+    },
+    {
+      "file": "summer-news.html",
+      "url": "https://www.dota2.com.cn/article/details/20230511/220328.html",
+      "final_url": "https://www.dota2.com.cn/article/details/20230511/220328.html",
+      "status": 200,
+      "bytes": 17862,
+      "sha256": "d10b4bae2fb7c2a6b37a9b41185bb8cfcd27fd9b101c797050a27a2490322d64",
+      "retrieved_at_utc": "2026-10-16T01:39:15.774434+00:00"
+    },
+    {
+      "file": "standings-en.html",
+      "url": "https://www.dota2.com/esports/ti12/tistandings",
+      "final_url": "https://www.dota2.com/esports/ti12/tistandings",
+      "status": 200,
+      "bytes": 47386,
+      "sha256": "1efa29bc40ca2e72de458f755d8138d01e43fdbc89e62b260b03ad0fb1115eeb",
+      "retrieved_at_utc": "2026-10-16T01:39:16.789948+00:00"
+    },
+    {
+      "file": "registration.html",
+      "url": "https://www.dota2.com/majorsregistration/home/",
+      "final_url": "https://www.dota2.com/majorsregistration/home/",
+      "status": 200,
+      "bytes": 12564,
+      "sha256": "157b2015f9df7b1326c63d60bfdd3e1ae96d0f8113f33a5febd0617bfa71f06b",
+      "retrieved_at_utc": "2026-10-16T01:39:16.572511+00:00"
+    },
+    {
+      "file": "official-news-june.json",
+      "url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=570&count=30&maxlength=0&enddate=1688515200&feeds=steam_community_announcements",
+      "final_url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=570&count=30&maxlength=0&enddate=1688515200&feeds=steam_community_announcements",
+      "status": 200,
+      "bytes": 70235,
+      "sha256": "1f271894b7872d738a79a606f6c09730c6387be4e4daf4d0250c0e56ebf1e721",
+      "retrieved_at_utc": "2026-10-16T01:39:16.441764+00:00"
+    },
+    {
+      "file": "official-main.js",
+      "url": "https://www.dota2.com/public/javascript/dota_react/main.js?v=K0KE9f72Ct4H&l=english&_cdn=akamai",
+      "status": 200,
+      "bytes": 3693769,
+      "sha256": "d331cc252965b67515343a935b7e3f37cd35b0da21bd83fee8d9931bf7fc84f0"
+    },
+    {
+      "file": "official-standings.json",
+      "url": "https://www.dota2.com/webapi/IDOTA2DPC/GetDPCStandings/v001?registration_period=8",
+      "status": 200,
+      "bytes": 21923,
+      "sha256": "55f023df3f05fe59f5f2a77fd9ce17449264469425e662d6ab65aa3445729232",
+      "retrieved_at_utc": "2026-10-16T01:42:34.466849+00:00"
+    },
+    {
+      "file": "league-14859.json",
+      "url": "https://www.dota2.com/webapi/IDOTA2DPC/GetLeagueResults/v001?league_id=14859",
+      "status": 200,
+      "bytes": 2128,
+      "sha256": "e809b66af1bf1040ac64702a9d206d30b960544367a24006e3598a484cb0f4c9",
+      "retrieved_at_utc": "2026-10-16T01:44:33.351318+00:00"
+    },
+    {
+      "file": "league-15140.json",
+      "url": "https://www.dota2.com/webapi/IDOTA2DPC/GetLeagueResults/v001?league_id=15140",
+      "status": 200,
+      "bytes": 2246,
+      "sha256": "e0fd810d25448b6aa3a9a5eb9f49a2d06bcb2dd5fa90627c212283bb738e9a57",
+      "retrieved_at_utc": "2026-10-16T01:44:33.087322+00:00"
+    },
+    {
+      "file": "league-15383.json",
+      "url": "https://www.dota2.com/webapi/IDOTA2DPC/GetLeagueResults/v001?league_id=15383",
+      "status": 200,
+      "bytes": 2135,
+      "sha256": "fc653efe82ed926f5cab55a61296a069556ff272c4a9f695779720051dec140c",
+      "retrieved_at_utc": "2026-10-16T01:44:33.092550+00:00"
+    },
+    {
+      "file": "league-15089.json",
+      "url": "https://www.dota2.com/webapi/IDOTA2DPC/GetLeagueResults/v001?league_id=15089",
+      "status": 200,
+      "bytes": 5019,
+      "sha256": "2ef6bf0d23b46e1eb070cd55cf28be0a1df801c33c6140a7a1a8d2f2db3f0823",
+      "retrieved_at_utc": "2026-10-16T01:44:33.348701+00:00"
+    },
+    {
+      "file": "league-15251.json",
+      "url": "https://www.dota2.com/webapi/IDOTA2DPC/GetLeagueResults/v001?league_id=15251",
+      "status": 200,
+      "bytes": 5023,
+      "sha256": "a3527756c04bb52d538e35ef08a7b943943f660bfea97b467b2c9d7d3c65d21b",
+      "retrieved_at_utc": "2026-10-16T01:44:34.066109+00:00"
+    },
+    {
+      "file": "league-15438.json",
+      "url": "https://www.dota2.com/webapi/IDOTA2DPC/GetLeagueResults/v001?league_id=15438",
+      "status": 200,
+      "bytes": 5043,
+      "sha256": "44198ca6c69c01e017a0256af73115e4b1b9f14a5660fd038aa6319cd8be66b6",
+      "retrieved_at_utc": "2026-10-16T01:44:33.679911+00:00"
+    },
+    {
+      "file": "contemporary-ranking.html",
+      "url": "https://www.oneesports.gg/dota2/dpc-2023-point-standings/",
+      "status": 200,
+      "bytes": 87024,
+      "sha256": "921fc9348ae2e2cb606c9dd8bc785e96beccba5ef01cb3b3bdf9f2387767bfe4",
+      "retrieved_at_utc": "2026-10-16T01:44:33.973065+00:00"
+    }
+  ],
+  "read_scope": {
+    "faq-cn.html": "前12、第三巡回两人、人员移除/额外Major扣分、替补区别、机构限制、积分表；旧外卡/通用日期不整页采信。",
+    "summer-news.html": "柏林冠军500分与夏季5月15日开始段。",
+    "standings-en.html": "公开页面的赛事元数据与程序引用；静态壳不是已渲染历史排名。",
+    "registration.html": "仅公开登记入口与登录提示，没有实际登记细节；未登录。",
+    "official-news-june.json": "The Bali Major Approaches的实际赛期和六区预选日期/席位段；其他条目只定位标题/日期，不算全文阅读。",
+    "official-main.js": "只读GetDPCStandings/GetDPCLeagueResults公开请求方法及事件元数据定位，不称整程序审读。",
+    "official-standings.json": "当前43队接口字段，选定差异/审计与事件ID；不称2023最终积分审计。",
+    "league-responses": "六points数组、必要名次字段；净得分与毛档位分开，不逐场观察。",
+    "contemporary-ranking.html": "2023-07-09标注更新的前20排名表，为O比较底表；不认证全部转会/后续更正。"
+  },
+  "rules_F": [
+    {
+      "id": "R1",
+      "url": "https://www.dota2.com.cn/international/2023/about",
+      "summary": "前十二积分直邀；第三巡回参赛阵容之后不超过两人变更是地区预选条件；不是新公开海选。"
+    },
+    {
+      "id": "R2",
+      "url": "https://www.dota2.com.cn/international/2023/about",
+      "summary": "每次移除对当时已有赛事积分扣20%，按赛事向下取整；加入无同类惩罚；Major席位后移除还影响该Major所得。"
+    },
+    {
+      "id": "R3",
+      "url": "https://www.dota2.com.cn/international/2023/about",
+      "summary": "正式人员变更与比赛替补分别处理；同机构多队晋级TI时须解除其中一队的关系或仅一队取得资格。"
+    }
+  ],
+  "official_point_arrays_F": {
+    "14859": {
+      "points_F": [
+        300,
+        180,
+        120,
+        60,
+        30,
+        0,
+        0,
+        0
+      ],
+      "observed_result_rows": 8
+    },
+    "15089": {
+      "points_F": [
+        400,
+        350,
+        300,
+        250,
+        200,
+        200,
+        100,
+        100
+      ],
+      "observed_result_rows": 18
+    },
+    "15140": {
+      "points_F": [
+        400,
+        240,
+        160,
+        80,
+        40,
+        0,
+        0,
+        0
+      ],
+      "observed_result_rows": 8
+    },
+    "15251": {
+      "points_F": [
+        500,
+        450,
+        400,
+        350,
+        300,
+        300,
+        200,
+        200
+      ],
+      "observed_result_rows": 18
+    },
+    "15383": {
+      "points_F": [
+        500,
+        300,
+        200,
+        100,
+        50,
+        0,
+        0,
+        0
+      ],
+      "observed_result_rows": 8
+    },
+    "15438": {
+      "points_F": [
+        600,
+        550,
+        500,
+        450,
+        400,
+        400,
+        300,
+        300
+      ],
+      "observed_result_rows": 18
+    }
+  },
+  "official_event_fields_F": [
+    {
+      "event": 15,
+      "event_name": "#dpc_event_winter23",
+      "registration_period": 8,
+      "timestamp_drop_lock": 1670616000,
+      "timestamp_add_lock": 1670616000,
+      "is_event_completed": true,
+      "leagues": [
+        {
+          "region": 1,
+          "division": 1,
+          "league_id": 14893,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 1,
+          "division": 2,
+          "league_id": 14922,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 2,
+          "division": 1,
+          "league_id": 14886,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 2,
+          "division": 2,
+          "league_id": 14887,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 3,
+          "division": 1,
+          "league_id": 14892,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 3,
+          "division": 2,
+          "league_id": 14921,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 4,
+          "division": 1,
+          "league_id": 14858,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 4,
+          "division": 2,
+          "league_id": 14857,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 5,
+          "division": 1,
+          "league_id": 14859,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 5,
+          "division": 2,
+          "league_id": 14860,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 6,
+          "division": 1,
+          "league_id": 14927,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 6,
+          "division": 2,
+          "league_id": 14928,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": 16,
+      "event_name": "#dpc_event_wintermajor23",
+      "registration_period": 8,
+      "is_event_completed": true,
+      "leagues": [
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15089,
+          "phases": [
+            {
+              "phase": 3,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15089,
+          "phases": [
+            {
+              "phase": 4,
+              "node_group_id": 3
+            }
+          ]
+        },
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15089,
+          "phases": [
+            {
+              "phase": 6,
+              "node_group_id": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": 17,
+      "event_name": "#dpc_event_spring23",
+      "registration_period": 8,
+      "timestamp_drop_lock": 1678219200,
+      "timestamp_add_lock": 1678564800,
+      "is_event_completed": true,
+      "leagues": [
+        {
+          "region": 1,
+          "division": 1,
+          "league_id": 15085,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 1,
+          "division": 2,
+          "league_id": 15087,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 2,
+          "division": 1,
+          "league_id": 15135,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 2,
+          "division": 2,
+          "league_id": 15136,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 3,
+          "division": 1,
+          "league_id": 15086,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 3,
+          "division": 2,
+          "league_id": 15088,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 4,
+          "division": 1,
+          "league_id": 15137,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 4,
+          "division": 2,
+          "league_id": 15138,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 5,
+          "division": 1,
+          "league_id": 15140,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 5,
+          "division": 2,
+          "league_id": 15141,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 6,
+          "division": 1,
+          "league_id": 15125,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 6,
+          "division": 2,
+          "league_id": 15126,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": 18,
+      "event_name": "#dpc_event_springmajor23",
+      "registration_period": 8,
+      "is_event_completed": true,
+      "leagues": [
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15251,
+          "phases": [
+            {
+              "phase": 3,
+              "node_group_id": 8
+            }
+          ]
+        },
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15251,
+          "phases": [
+            {
+              "phase": 4,
+              "node_group_id": 9
+            }
+          ]
+        },
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15251,
+          "phases": [
+            {
+              "phase": 6,
+              "node_group_id": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": 19,
+      "event_name": "#dpc_event_summer23",
+      "registration_period": 8,
+      "timestamp_drop_lock": 1683658800,
+      "timestamp_add_lock": 1684004400,
+      "is_event_completed": true,
+      "leagues": [
+        {
+          "region": 1,
+          "division": 1,
+          "league_id": 15350,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 1,
+          "division": 2,
+          "league_id": 15353,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 2,
+          "division": 1,
+          "league_id": 15365,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 2,
+          "division": 2,
+          "league_id": 15366,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 3,
+          "division": 1,
+          "league_id": 15351,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 3,
+          "division": 2,
+          "league_id": 15352,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 4,
+          "division": 1,
+          "league_id": 15335,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 4,
+          "division": 2,
+          "league_id": 15336,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 5,
+          "division": 1,
+          "league_id": 15383,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 5,
+          "division": 2,
+          "league_id": 15384,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 6,
+          "division": 1,
+          "league_id": 15374,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 6,
+          "division": 2,
+          "league_id": 15375,
+          "phases": [
+            {
+              "phase": 5,
+              "node_group_id": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": 20,
+      "event_name": "#dpc_event_summer23_major",
+      "registration_period": 8,
+      "is_event_completed": true,
+      "leagues": [
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15438,
+          "phases": [
+            {
+              "phase": 3,
+              "node_group_id": 7
+            }
+          ]
+        },
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15438,
+          "phases": [
+            {
+              "phase": 4,
+              "node_group_id": 8
+            }
+          ]
+        },
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15438,
+          "phases": [
+            {
+              "phase": 6,
+              "node_group_id": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": 22,
+      "event_name": "#dpc_event_ti12qual",
+      "registration_period": 8,
+      "timestamp_drop_lock": 1691089200,
+      "timestamp_add_lock": 1691694000,
+      "is_event_completed": true,
+      "leagues": [
+        {
+          "region": 1,
+          "division": 0,
+          "league_id": 15690,
+          "phases": [
+            {
+              "phase": 6,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 2,
+          "division": 0,
+          "league_id": 15692,
+          "phases": [
+            {
+              "phase": 6,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 3,
+          "division": 0,
+          "league_id": 15693,
+          "phases": [
+            {
+              "phase": 6,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 4,
+          "division": 0,
+          "league_id": 15691,
+          "phases": [
+            {
+              "phase": 6,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 5,
+          "division": 0,
+          "league_id": 15689,
+          "phases": [
+            {
+              "phase": 6,
+              "node_group_id": 2
+            }
+          ]
+        },
+        {
+          "region": 6,
+          "division": 0,
+          "league_id": 15694,
+          "phases": [
+            {
+              "phase": 6,
+              "node_group_id": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": 21,
+      "event_name": "#dpc_event_ti12",
+      "registration_period": 8,
+      "timestamp_drop_lock": 1691089200,
+      "timestamp_add_lock": 1691694000,
+      "is_event_completed": true,
+      "leagues": [
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15728,
+          "phases": [
+            {
+              "phase": 3,
+              "node_group_id": 3
+            }
+          ]
+        },
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15728,
+          "phases": [
+            {
+              "phase": 4,
+              "node_group_id": 4
+            }
+          ]
+        },
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15728,
+          "phases": [
+            {
+              "phase": 9,
+              "node_group_id": 5
+            }
+          ]
+        },
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15728,
+          "phases": [
+            {
+              "phase": 10,
+              "node_group_id": 8
+            }
+          ]
+        },
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15728,
+          "phases": [
+            {
+              "phase": 11,
+              "node_group_id": 9
+            }
+          ]
+        },
+        {
+          "region": 0,
+          "division": 0,
+          "league_id": 15728,
+          "phases": [
+            {
+              "phase": 6,
+              "node_group_id": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "calendar_F": {
+    "Bali_group_start": "2023-06-29",
+    "Bali_group_end": "2023-07-03",
+    "Bali_playoffs_start": "2023-07-05",
+    "Bali_end": "2023-07-09",
+    "China_TI_qualifier": [
+      "2023-08-17",
+      "2023-08-21"
+    ],
+    "China_TI_qualifier_slots": 1,
+    "source": "official-news-june.json中The Bali Major Approaches；修改过地区顺序，以取得的修正版为准"
+  },
+  "calendar_excluded": {
+    "url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/dpc/request_for_proposal/dpc_major_2023_rfp.pdf",
+    "access": "web工具文本",
+    "scope": "只读夏季规划日程；原计划Major6月30日起与后来实际公告不同，不作实际开始日依据。"
+  },
+  "current_api_limits_O": {
+    "BETBOOM_TEAM": {
+      "total_now": 0,
+      "later_audit_rows": [
+        {
+          "timestamp": 1779040733,
+          "audit_action": 7
+        }
+      ],
+      "interpretation": "只观察时间晚于2023，不解释审计代码或原因，不当作2023最终积分。"
+    },
+    "totals_differ_from_contemporary_table": {
+      "9Pandas": [
+        1520,
+        1496
+      ],
+      "LGD_Gaming": [
+        1440,
+        1284
+      ]
+    },
+    "names": "当前队名/归属可随稳定ID变化，如当前名Cloud9/Antarctic Penguins；模型不把它们直接写入2023赛事。"
+  },
+  "ranking_baseline_O": {
+    "url": "https://www.oneesports.gg/dota2/dpc-2023-point-standings/",
+    "article_display_update": "2023-07-09 21:17 GMT+8",
+    "classification": "同期二手表观察O，不等完整历史审计",
+    "rows": [
+      {
+        "rank": 1,
+        "team": "Team Liquid",
+        "points": 2150,
+        "region": "Western Europe",
+        "invite": "Yes"
+      },
+      {
+        "rank": 2,
+        "team": "Gaimin Gladiators",
+        "points": 2140,
+        "region": "Western Europe",
+        "invite": "Yes"
+      },
+      {
+        "rank": 3,
+        "team": "Tundra Esports",
+        "points": 1660,
+        "region": "Western Europe",
+        "invite": "Yes"
+      },
+      {
+        "rank": 4,
+        "team": "9Pandas",
+        "points": 1496,
+        "region": "Eastern Europe",
+        "invite": "Yes"
+      },
+      {
+        "rank": 5,
+        "team": "Evil Geniuses",
+        "points": 1470,
+        "region": "South America",
+        "invite": "Yes"
+      },
+      {
+        "rank": 6,
+        "team": "PSG.LGD",
+        "points": 1284,
+        "region": "China",
+        "invite": "Yes"
+      },
+      {
+        "rank": 7,
+        "team": "Shopify Rebellion",
+        "points": 1170,
+        "region": "North America",
+        "invite": "Yes"
+      },
+      {
+        "rank": 8,
+        "team": "Talon Esports",
+        "points": 1120,
+        "region": "Southeast Asia",
+        "invite": "Yes"
+      },
+      {
+        "rank": 9,
+        "team": "beastcoast",
+        "points": 1040,
+        "region": "South America",
+        "invite": "Yes"
+      },
+      {
+        "rank": 10,
+        "team": "Team Spirit",
+        "points": 1020,
+        "region": "Eastern Europe",
+        "invite": "Yes"
+      },
+      {
+        "rank": 11,
+        "team": "TSM",
+        "points": 900,
+        "region": "North America",
+        "invite": "Yes"
+      },
+      {
+        "rank": 12,
+        "team": "BetBoom Team",
+        "points": 760,
+        "region": "Eastern Europe",
+        "invite": "Yes"
+      },
+      {
+        "rank": 13,
+        "team": "Execration",
+        "points": 740,
+        "region": "Southeast Asia",
+        "invite": "No"
+      },
+      {
+        "rank": 14,
+        "team": "Quest Esports",
+        "points": 682,
+        "region": "Western Europe",
+        "invite": "No"
+      },
+      {
+        "rank": 15,
+        "team": "nouns",
+        "points": 608,
+        "region": "North America",
+        "invite": "No"
+      },
+      {
+        "rank": 16,
+        "team": "Bleed Esports",
+        "points": 580,
+        "region": "Southeast Asia",
+        "invite": "No"
+      },
+      {
+        "rank": 17,
+        "team": "Team Aster",
+        "points": 486,
+        "region": "China",
+        "invite": "No"
+      },
+      {
+        "rank": 18,
+        "team": "Invictus Gaming",
+        "points": 460,
+        "region": "China",
+        "invite": "No"
+      },
+      {
+        "rank": 19,
+        "team": "Azure Ray",
+        "points": 400,
+        "region": "China",
+        "invite": "No"
+      },
+      {
+        "rank": 20,
+        "team": "Blacklist International",
+        "points": 380,
+        "region": "Southeast Asia",
+        "invite": "No"
+      }
+    ]
+  },
+  "models_I_X": {
+    "status": "I/X条件模型；赛事数值表F不等于小说名次已采用",
+    "removal_model_H": "每次移除，对当时每个已取得赛事积分乘4/5并向下取整；新加入无同类罚。",
+    "major_model_H": "赛前移除两人，未来Major该赛事另按合计40%扣减建保守模型，不与正式替补80%叠加。",
+    "route_direct": {
+      "name": "直邀路线工作例：原五人巴厘岛后改组",
+      "ranks_X": [
+        3,
+        5,
+        1,
+        1,
+        2,
+        5
+      ],
+      "pre_bali_transfer_X": false,
+      "ledger_H": [
+        {
+          "event": "冬季中国联赛",
+          "league_id": 14859,
+          "rank_X": 3,
+          "gross_F_for_assumed_rank": 120,
+          "current": 60,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "利马Major",
+          "league_id": 15089,
+          "rank_X": 5,
+          "gross_F_for_assumed_rank": 200,
+          "current": 102,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "春季中国联赛",
+          "league_id": 15140,
+          "rank_X": 1,
+          "gross_F_for_assumed_rank": 400,
+          "current": 256,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "柏林Major",
+          "league_id": 15251,
+          "rank_X": 1,
+          "gross_F_for_assumed_rank": 500,
+          "current": 320,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "夏季中国联赛",
+          "league_id": 15383,
+          "rank_X": 2,
+          "gross_F_for_assumed_rank": 300,
+          "current": 192,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "巴厘岛Major",
+          "league_id": 15438,
+          "rank_X": 5,
+          "gross_F_for_assumed_rank": 400,
+          "current": 256,
+          "additional_major_penalty_H": 0
+        }
+      ],
+      "audits_H": [
+        {
+          "person_X": "Pyw→XinQ，第二巡回前",
+          "per_event": [
+            {
+              "event": "冬季中国联赛",
+              "before": 120,
+              "after": 96
+            },
+            {
+              "event": "利马Major",
+              "before": 200,
+              "after": 160
+            }
+          ],
+          "remaining": 256
+        },
+        {
+          "person_X": "Ghost→Ame，巴厘岛后",
+          "per_event": [
+            {
+              "event": "冬季中国联赛",
+              "before": 96,
+              "after": 76
+            },
+            {
+              "event": "利马Major",
+              "before": 160,
+              "after": 128
+            },
+            {
+              "event": "春季中国联赛",
+              "before": 400,
+              "after": 320
+            },
+            {
+              "event": "柏林Major",
+              "before": 500,
+              "after": 400
+            },
+            {
+              "event": "夏季中国联赛",
+              "before": 300,
+              "after": 240
+            },
+            {
+              "event": "巴厘岛Major",
+              "before": 400,
+              "after": 320
+            }
+          ],
+          "remaining": 1484
+        },
+        {
+          "person_X": "JT→XXS，巴厘岛后",
+          "per_event": [
+            {
+              "event": "冬季中国联赛",
+              "before": 76,
+              "after": 60
+            },
+            {
+              "event": "利马Major",
+              "before": 128,
+              "after": 102
+            },
+            {
+              "event": "春季中国联赛",
+              "before": 320,
+              "after": 256
+            },
+            {
+              "event": "柏林Major",
+              "before": 400,
+              "after": 320
+            },
+            {
+              "event": "夏季中国联赛",
+              "before": 240,
+              "after": 192
+            },
+            {
+              "event": "巴厘岛Major",
+              "before": 320,
+              "after": 256
+            }
+          ],
+          "remaining": 1186
+        }
+      ],
+      "points_H": 1186,
+      "global_H": {
+        "rows_H": [
+          {
+            "team": "Team Liquid",
+            "baseline_observed": 2150,
+            "delta_H": -50,
+            "points_H": 2100,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Gaimin Gladiators",
+            "baseline_observed": 2140,
+            "delta_H": -50,
+            "points_H": 2090,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Tundra Esports",
+            "baseline_observed": 1660,
+            "delta_H": 0,
+            "points_H": 1660,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Evil Geniuses",
+            "baseline_observed": 1470,
+            "delta_H": -50,
+            "points_H": 1420,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "9Pandas",
+            "baseline_observed": 1496,
+            "delta_H": -150,
+            "points_H": 1346,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "PSG.LGD",
+            "baseline_observed": 1284,
+            "delta_H": 0,
+            "points_H": 1284,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Xtreme Gaming",
+            "baseline_observed": null,
+            "delta_H": null,
+            "points_H": 1186,
+            "bound": "constructed X ledger"
+          },
+          {
+            "team": "Shopify Rebellion",
+            "baseline_observed": 1170,
+            "delta_H": 0,
+            "points_H": 1170,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "beastcoast",
+            "baseline_observed": 1040,
+            "delta_H": 0,
+            "points_H": 1040,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Talon Esports",
+            "baseline_observed": 1120,
+            "delta_H": -200,
+            "points_H": 920,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Team Spirit",
+            "baseline_observed": 1020,
+            "delta_H": -100,
+            "points_H": 920,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "TSM",
+            "baseline_observed": 900,
+            "delta_H": 0,
+            "points_H": 900,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "BetBoom Team",
+            "baseline_observed": 760,
+            "delta_H": 0,
+            "points_H": 760,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Execration",
+            "baseline_observed": 740,
+            "delta_H": 0,
+            "points_H": 740,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Quest Esports",
+            "baseline_observed": 682,
+            "delta_H": 0,
+            "points_H": 682,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "nouns",
+            "baseline_observed": 608,
+            "delta_H": 0,
+            "points_H": 608,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Bleed Esports",
+            "baseline_observed": 580,
+            "delta_H": 0,
+            "points_H": 580,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Team Aster",
+            "baseline_observed": 486,
+            "delta_H": 0,
+            "points_H": 486,
+            "bound": "upper bound: gross allocation change and later penalties not reconstructed as exact net delta"
+          },
+          {
+            "team": "Invictus Gaming",
+            "baseline_observed": 460,
+            "delta_H": 0,
+            "points_H": 460,
+            "bound": "upper bound: gross allocation change and later penalties not reconstructed as exact net delta"
+          },
+          {
+            "team": "Blacklist International",
+            "baseline_observed": 380,
+            "delta_H": 0,
+            "points_H": 380,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Azure Ray",
+            "baseline_observed": 400,
+            "delta_H": -350,
+            "points_H": 50,
+            "bound": "conditional ledger"
+          }
+        ],
+        "cutoff12_H": 900,
+        "13th_H": 760,
+        "xg_index_H": 7,
+        "xg_direct_H": true
+      },
+      "sensitivity_H": {
+        "ordinary_two_changes_as_40pct_original_balance": 1113
+      }
+    },
+    "route_qualifier": {
+      "name": "地区预选路线工作例",
+      "ranks_X": [
+        5,
+        null,
+        3,
+        1,
+        4,
+        7
+      ],
+      "pre_bali_transfer_X": false,
+      "ledger_H": [
+        {
+          "event": "冬季中国联赛",
+          "league_id": 14859,
+          "rank_X": 5,
+          "gross_F_for_assumed_rank": 30,
+          "current": 15,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "利马Major",
+          "league_id": 15089,
+          "rank_X": null,
+          "gross_F_for_assumed_rank": 0,
+          "current": 0,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "春季中国联赛",
+          "league_id": 15140,
+          "rank_X": 3,
+          "gross_F_for_assumed_rank": 160,
+          "current": 102,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "柏林Major",
+          "league_id": 15251,
+          "rank_X": 1,
+          "gross_F_for_assumed_rank": 500,
+          "current": 320,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "夏季中国联赛",
+          "league_id": 15383,
+          "rank_X": 4,
+          "gross_F_for_assumed_rank": 100,
+          "current": 64,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "巴厘岛Major",
+          "league_id": 15438,
+          "rank_X": 7,
+          "gross_F_for_assumed_rank": 300,
+          "current": 192,
+          "additional_major_penalty_H": 0
+        }
+      ],
+      "audits_H": [
+        {
+          "person_X": "Pyw→XinQ，第二巡回前",
+          "per_event": [
+            {
+              "event": "冬季中国联赛",
+              "before": 30,
+              "after": 24
+            },
+            {
+              "event": "利马Major",
+              "before": 0,
+              "after": 0
+            }
+          ],
+          "remaining": 24
+        },
+        {
+          "person_X": "Ghost→Ame，巴厘岛后",
+          "per_event": [
+            {
+              "event": "冬季中国联赛",
+              "before": 24,
+              "after": 19
+            },
+            {
+              "event": "利马Major",
+              "before": 0,
+              "after": 0
+            },
+            {
+              "event": "春季中国联赛",
+              "before": 160,
+              "after": 128
+            },
+            {
+              "event": "柏林Major",
+              "before": 500,
+              "after": 400
+            },
+            {
+              "event": "夏季中国联赛",
+              "before": 100,
+              "after": 80
+            },
+            {
+              "event": "巴厘岛Major",
+              "before": 300,
+              "after": 240
+            }
+          ],
+          "remaining": 867
+        },
+        {
+          "person_X": "JT→XXS，巴厘岛后",
+          "per_event": [
+            {
+              "event": "冬季中国联赛",
+              "before": 19,
+              "after": 15
+            },
+            {
+              "event": "利马Major",
+              "before": 0,
+              "after": 0
+            },
+            {
+              "event": "春季中国联赛",
+              "before": 128,
+              "after": 102
+            },
+            {
+              "event": "柏林Major",
+              "before": 400,
+              "after": 320
+            },
+            {
+              "event": "夏季中国联赛",
+              "before": 80,
+              "after": 64
+            },
+            {
+              "event": "巴厘岛Major",
+              "before": 240,
+              "after": 192
+            }
+          ],
+          "remaining": 693
+        }
+      ],
+      "points_H": 693,
+      "global_H": {
+        "rows_H": [
+          {
+            "team": "Team Liquid",
+            "baseline_observed": 2150,
+            "delta_H": -50,
+            "points_H": 2100,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Gaimin Gladiators",
+            "baseline_observed": 2140,
+            "delta_H": -50,
+            "points_H": 2090,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Tundra Esports",
+            "baseline_observed": 1660,
+            "delta_H": 0,
+            "points_H": 1660,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "9Pandas",
+            "baseline_observed": 1496,
+            "delta_H": -50,
+            "points_H": 1446,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "PSG.LGD",
+            "baseline_observed": 1284,
+            "delta_H": 160,
+            "points_H": 1444,
+            "bound": "upper bound: +160 gross spring increase; later penalties can reduce it without threatening cutoff proof"
+          },
+          {
+            "team": "Evil Geniuses",
+            "baseline_observed": 1470,
+            "delta_H": -50,
+            "points_H": 1420,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Shopify Rebellion",
+            "baseline_observed": 1170,
+            "delta_H": 0,
+            "points_H": 1170,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "beastcoast",
+            "baseline_observed": 1040,
+            "delta_H": 0,
+            "points_H": 1040,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Team Spirit",
+            "baseline_observed": 1020,
+            "delta_H": 0,
+            "points_H": 1020,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Talon Esports",
+            "baseline_observed": 1120,
+            "delta_H": -200,
+            "points_H": 920,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "TSM",
+            "baseline_observed": 900,
+            "delta_H": 0,
+            "points_H": 900,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "BetBoom Team",
+            "baseline_observed": 760,
+            "delta_H": 0,
+            "points_H": 760,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Execration",
+            "baseline_observed": 740,
+            "delta_H": 0,
+            "points_H": 740,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Xtreme Gaming",
+            "baseline_observed": null,
+            "delta_H": null,
+            "points_H": 693,
+            "bound": "constructed X ledger"
+          },
+          {
+            "team": "Quest Esports",
+            "baseline_observed": 682,
+            "delta_H": 0,
+            "points_H": 682,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "nouns",
+            "baseline_observed": 608,
+            "delta_H": 0,
+            "points_H": 608,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Bleed Esports",
+            "baseline_observed": 580,
+            "delta_H": 0,
+            "points_H": 580,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Invictus Gaming",
+            "baseline_observed": 460,
+            "delta_H": 80,
+            "points_H": 540,
+            "bound": "upper bound: gross allocation change and later penalties not reconstructed as exact net delta"
+          },
+          {
+            "team": "Team Aster",
+            "baseline_observed": 486,
+            "delta_H": 0,
+            "points_H": 486,
+            "bound": "upper bound: gross allocation change and later penalties not reconstructed as exact net delta"
+          },
+          {
+            "team": "Blacklist International",
+            "baseline_observed": 380,
+            "delta_H": 0,
+            "points_H": 380,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Azure Ray",
+            "baseline_observed": 400,
+            "delta_H": -350,
+            "points_H": 50,
+            "bound": "conditional ledger"
+          }
+        ],
+        "cutoff12_H": 760,
+        "13th_H": 740,
+        "xg_index_H": 14,
+        "xg_direct_H": false
+      },
+      "sensitivity_H": {
+        "ordinary_two_changes_as_40pct_original_balance": 650
+      }
+    },
+    "gross_redistributions_H": {
+      "Berlin": {
+        "Xtreme Gaming": 500,
+        "Gaimin Gladiators": -50,
+        "Team Liquid": -50,
+        "9Pandas": -50,
+        "Evil Geniuses": -50,
+        "OG": -100,
+        "Talon Esports": -200
+      },
+      "Lima_direct": {
+        "Xtreme Gaming": 200,
+        "old_Lima_tied5_6_other_slot": -100,
+        "Team Spirit": -100
+      },
+      "Winter_CN_direct": {
+        "Xtreme Gaming": 90,
+        "old_CN_winter_rank3": -60,
+        "old_CN_winter_rank4": -30
+      },
+      "Spring_CN_qualifier": {
+        "Xtreme Gaming": -240,
+        "PSG.LGD": 160,
+        "Invictus Gaming": 80
+      },
+      "Summer_CN_direct": {
+        "Xtreme Gaming": 250,
+        "Invictus Gaming": -100,
+        "Team Aster": -100,
+        "Azure Ray": -50
+      },
+      "Summer_CN_qualifier": {
+        "Xtreme Gaming": 50,
+        "Azure Ray": -50
+      },
+      "Bali_direct": {
+        "Xtreme Gaming": 400,
+        "9Pandas": -100,
+        "Azure Ray": -300
+      },
+      "Bali_qualifier": {
+        "Xtreme Gaming": 300,
+        "Azure Ray": -300
+      }
+    },
+    "ranking_limits": [
+      "以2023-07-09同日报道的前20为O底表；未列队原值不高于第20名380，仅声明的结果变更；未假定未知队伍新增高分。",
+      "非直邀区OG/旧利马5-6档的另一队只下降，不需要伪造未知最终分。Aster/iG不把毛档位差直接当净得分差：直邀例仍取原总分上界，预选例iG增加80也只取净增上界。",
+      "LGD在预选路线春季升档多160毛分，比较用可能净增上界160；不伪造具体后续移除链，仍不影响第12边界。",
+      "当前接口队名可能随稳定ID改名；冬季3/4档与旧利马5-6档不用当前名称冒充2023名称。",
+      "全签表/其余真人转会并未采用。点数守恒核的是毛积分分配；人员处罚损失不再分给别人。",
+      "只证明所列条件下路径可行，不证明选择XG本身就已取得邀请或注册获批。"
+    ],
+    "route_direct_pre_bali": {
+      "name": "直邀赛前改组备选：须另落实主办接受",
+      "ranks_X": [
+        3,
+        5,
+        1,
+        1,
+        2,
+        5
+      ],
+      "pre_bali_transfer_X": true,
+      "ledger_H": [
+        {
+          "event": "冬季中国联赛",
+          "league_id": 14859,
+          "rank_X": 3,
+          "gross_F_for_assumed_rank": 120,
+          "current": 60,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "利马Major",
+          "league_id": 15089,
+          "rank_X": 5,
+          "gross_F_for_assumed_rank": 200,
+          "current": 102,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "春季中国联赛",
+          "league_id": 15140,
+          "rank_X": 1,
+          "gross_F_for_assumed_rank": 400,
+          "current": 256,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "柏林Major",
+          "league_id": 15251,
+          "rank_X": 1,
+          "gross_F_for_assumed_rank": 500,
+          "current": 320,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "夏季中国联赛",
+          "league_id": 15383,
+          "rank_X": 2,
+          "gross_F_for_assumed_rank": 300,
+          "current": 192,
+          "additional_major_penalty_H": 0
+        },
+        {
+          "event": "巴厘岛Major",
+          "league_id": 15438,
+          "rank_X": 5,
+          "gross_F_for_assumed_rank": 400,
+          "current": 240,
+          "additional_major_penalty_H": 40
+        }
+      ],
+      "audits_H": [
+        {
+          "person_X": "Pyw→XinQ，第二巡回前",
+          "per_event": [
+            {
+              "event": "冬季中国联赛",
+              "before": 120,
+              "after": 96
+            },
+            {
+              "event": "利马Major",
+              "before": 200,
+              "after": 160
+            }
+          ],
+          "remaining": 256
+        },
+        {
+          "person_X": "Ghost→Ame，获巴厘岛席位后/赛前",
+          "per_event": [
+            {
+              "event": "冬季中国联赛",
+              "before": 96,
+              "after": 76
+            },
+            {
+              "event": "利马Major",
+              "before": 160,
+              "after": 128
+            },
+            {
+              "event": "春季中国联赛",
+              "before": 400,
+              "after": 320
+            },
+            {
+              "event": "柏林Major",
+              "before": 500,
+              "after": 400
+            },
+            {
+              "event": "夏季中国联赛",
+              "before": 300,
+              "after": 240
+            }
+          ],
+          "remaining": 1164
+        },
+        {
+          "person_X": "JT→XXS，获巴厘岛席位后/赛前",
+          "per_event": [
+            {
+              "event": "冬季中国联赛",
+              "before": 76,
+              "after": 60
+            },
+            {
+              "event": "利马Major",
+              "before": 128,
+              "after": 102
+            },
+            {
+              "event": "春季中国联赛",
+              "before": 320,
+              "after": 256
+            },
+            {
+              "event": "柏林Major",
+              "before": 400,
+              "after": 320
+            },
+            {
+              "event": "夏季中国联赛",
+              "before": 240,
+              "after": 192
+            }
+          ],
+          "remaining": 930
+        }
+      ],
+      "points_H": 1170,
+      "global_H": {
+        "rows_H": [
+          {
+            "team": "Team Liquid",
+            "baseline_observed": 2150,
+            "delta_H": -50,
+            "points_H": 2100,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Gaimin Gladiators",
+            "baseline_observed": 2140,
+            "delta_H": -50,
+            "points_H": 2090,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Tundra Esports",
+            "baseline_observed": 1660,
+            "delta_H": 0,
+            "points_H": 1660,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Evil Geniuses",
+            "baseline_observed": 1470,
+            "delta_H": -50,
+            "points_H": 1420,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "9Pandas",
+            "baseline_observed": 1496,
+            "delta_H": -150,
+            "points_H": 1346,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "PSG.LGD",
+            "baseline_observed": 1284,
+            "delta_H": 0,
+            "points_H": 1284,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Shopify Rebellion",
+            "baseline_observed": 1170,
+            "delta_H": 0,
+            "points_H": 1170,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Xtreme Gaming",
+            "baseline_observed": null,
+            "delta_H": null,
+            "points_H": 1170,
+            "bound": "constructed X ledger"
+          },
+          {
+            "team": "beastcoast",
+            "baseline_observed": 1040,
+            "delta_H": 0,
+            "points_H": 1040,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Talon Esports",
+            "baseline_observed": 1120,
+            "delta_H": -200,
+            "points_H": 920,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Team Spirit",
+            "baseline_observed": 1020,
+            "delta_H": -100,
+            "points_H": 920,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "TSM",
+            "baseline_observed": 900,
+            "delta_H": 0,
+            "points_H": 900,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "BetBoom Team",
+            "baseline_observed": 760,
+            "delta_H": 0,
+            "points_H": 760,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Execration",
+            "baseline_observed": 740,
+            "delta_H": 0,
+            "points_H": 740,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Quest Esports",
+            "baseline_observed": 682,
+            "delta_H": 0,
+            "points_H": 682,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "nouns",
+            "baseline_observed": 608,
+            "delta_H": 0,
+            "points_H": 608,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Bleed Esports",
+            "baseline_observed": 580,
+            "delta_H": 0,
+            "points_H": 580,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Team Aster",
+            "baseline_observed": 486,
+            "delta_H": 0,
+            "points_H": 486,
+            "bound": "upper bound: gross allocation change and later penalties not reconstructed as exact net delta"
+          },
+          {
+            "team": "Invictus Gaming",
+            "baseline_observed": 460,
+            "delta_H": 0,
+            "points_H": 460,
+            "bound": "upper bound: gross allocation change and later penalties not reconstructed as exact net delta"
+          },
+          {
+            "team": "Blacklist International",
+            "baseline_observed": 380,
+            "delta_H": 0,
+            "points_H": 380,
+            "bound": "conditional ledger"
+          },
+          {
+            "team": "Azure Ray",
+            "baseline_observed": 400,
+            "delta_H": -350,
+            "points_H": 50,
+            "bound": "conditional ledger"
+          }
+        ],
+        "cutoff12_H": 900,
+        "13th_H": 760,
+        "xg_index_H": 8,
+        "xg_direct_H": true
+      },
+      "sensitivity_H": {
+        "ordinary_two_changes_as_40pct_original_balance": 1113,
+        "major_extra_sequential20pct": 1186
+      }
+    },
+    "timing_limits_I": [
+      "直邀与预选入口不决定换人必须发生在巴厘岛前或后。默认两案都让原五人完成巴厘岛，再在TI名单截止前改组；直邀另保留赛前改组的条件性备选。",
+      "直邀赛后改组例仍对巴厘岛积分施加两次普通扣减作为保守核算，不依赖邀请发出后自动豁免或积分榜实际会重排的未经核验说法。",
+      "赛后改组例1186分对模型第12上界900分；赛前备选1170分。主办接受、合同与正式登记条件不由算术替代。"
+    ]
+  },
+  "adoption": "D57只确定继续XG；直邀/预选、其他赛事名次、具体换人日与正文仍未采用。",
+  "not_verified": [
+    "巴厘岛主办最终名单接受与具体注册执行",
+    "全部DPC事件/转会/纪律审核及完整小说签表",
+    "XG与AR具体赛事机构关系；创始人相同不足以定性",
+    "真人合同、意愿、私下谈话；全部改组过程标X"
+  ],
+  "unchanged": "原中单研究数量、英雄重点、既有正文、D01—D56和Word方法导出保持。"
+}
