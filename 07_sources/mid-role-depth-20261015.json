@@ -1,0 +1,1316 @@
+{
+  "id": "sources:mid-role-depth-20261015",
+  "read_at_utc": "2026-10-15T10:46:50.367343+00:00",
+  "scope": "62项候选的点数/蓝量与中路职责草案，六项共同过程，指定跨期边界；不是62项进阶认证或全期深研。",
+  "read_scope": {
+    "compact_read": "62英雄技能键、明确蓝量/冷却/范围与描述前190字符；不是全部说明审读。",
+    "deeper_read": "冰女/巫医/VS/蚂蚁/虚空/露娜必要完整相关说明与字段；另读PL/幽鬼/TB/CK/小黑/小鱼指定完整块，不因此认证整英雄。",
+    "factual_limits": "固定资源内容的第三方历史镜像；枚举/数字不等于引擎联合过程。"
+  },
+  "fixed_730e_sources": [
+    {
+      "id": "AW-abilities",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "bytes": 3099817,
+      "cache": "mid-companion-research-20261014\\fresh-AW-abilities.txt",
+      "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据"
+    },
+    {
+      "id": "AW-localization",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "bytes": 1235305,
+      "cache": "mid-companion-research-20261014\\fresh-AW-localization.txt",
+      "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据"
+    },
+    {
+      "id": "AW-items",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "bytes": 621009,
+      "cache": "mid-companion-research-20261014\\fresh-AW-items.txt",
+      "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据"
+    },
+    {
+      "id": "AR-heroes",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_heroes.txt",
+      "sha256": "c53ff35869b5678a9ef4c5b032643be379eefa536695644dbf989644c851b181",
+      "bytes": 634652,
+      "cache": "mid-persistent-units-20261012\\npc_heroes.txt",
+      "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据"
+    }
+  ],
+  "mana_fields_F": {
+    "antimage_blink": "60",
+    "antimage_counterspell": "45 50 55 60",
+    "antimage_mana_void": "100 200 300",
+    "axe_berserkers_call": "80 90 100 110",
+    "axe_battle_hunger": "50 60 70 80",
+    "axe_culling_blade": "60 120 180",
+    "crystal_maiden_crystal_nova": "115 135 155 175",
+    "crystal_maiden_frostbite": "125 135 145 155",
+    "crystal_maiden_freezing_field": "200 400 600",
+    "drow_ranger_frost_arrows": "12",
+    "drow_ranger_wave_of_silence": "70",
+    "drow_ranger_multishot": "50 70 90 110",
+    "juggernaut_blade_fury": "120 110 100 90",
+    "juggernaut_healing_ward": "140",
+    "juggernaut_omni_slash": "200 275 350",
+    "phantom_lancer_spirit_lance": "120",
+    "phantom_lancer_doppelwalk": "50",
+    "phantom_lancer_juxtapose": "75",
+    "pudge_meat_hook": "110",
+    "pudge_dismember": "100 130 170",
+    "sandking_burrowstrike": "110 120 130 140",
+    "sandking_sand_storm": "75",
+    "sandking_epicenter": "150 225 300",
+    "sven_storm_bolt": "110 120 130 140",
+    "sven_warcry": "30 40 50 60",
+    "sven_gods_strength": "100 150 200",
+    "vengefulspirit_magic_missile": "100 110 120 130",
+    "vengefulspirit_wave_of_terror": "25 30 35 40",
+    "vengefulspirit_nether_swap": "100 150 200",
+    "lina_dragon_slave": "100 115 130 145",
+    "lina_light_strike_array": "100 105 110 115",
+    "lina_laguna_blade": "250 400 550",
+    "lion_impale": "85 110 135 160",
+    "lion_voodoo": "125 150 175 200",
+    "lion_mana_drain": "10 10 10 10",
+    "lion_finger_of_death": "200 420 650",
+    "shadow_shaman_ether_shock": "100 120 140 160",
+    "shadow_shaman_voodoo": "70 110 150 190",
+    "shadow_shaman_shackles": "140 150 160 170",
+    "shadow_shaman_mass_serpent_ward": "200 350 550",
+    "slardar_sprint": "25",
+    "slardar_slithereen_crush": "90 100 110 120",
+    "slardar_amplify_damage": "25",
+    "tidehunter_gush": "100 105 110 115",
+    "tidehunter_anchor_smash": "40 50 60 70",
+    "tidehunter_ravage": "150 225 325",
+    "witch_doctor_paralyzing_cask": "80 100 120 140",
+    "witch_doctor_voodoo_restoration": "35 40 45 50",
+    "witch_doctor_maledict": "105 110 115 120",
+    "witch_doctor_death_ward": "200 200 200",
+    "lich_frost_nova": "110 130 150 170",
+    "lich_frost_shield": "100 110 120 130",
+    "lich_sinister_gaze": "80",
+    "lich_chain_frost": "200 350 500",
+    "riki_smoke_screen": "75",
+    "riki_blink_strike": "50",
+    "riki_tricks_of_the_trade": "50",
+    "enigma_malefice": "100 120 140 160",
+    "enigma_demonic_conversion": "140 150 160 170",
+    "enigma_midnight_pulse": "50 80 110 140",
+    "enigma_black_hole": "300 400 500",
+    "sniper_shrapnel": "50",
+    "sniper_take_aim": "25",
+    "sniper_assassinate": "175 225 275",
+    "venomancer_venomous_gale": "125",
+    "venomancer_plague_ward": "20 22 24 26",
+    "venomancer_poison_nova": "200 300 400",
+    "faceless_void_time_walk": "40",
+    "faceless_void_time_dilation": "60 70 80 90",
+    "faceless_void_chronosphere": "150 225 300",
+    "skeleton_king_hellfire_blast": "95 110 125 140",
+    "skeleton_king_vampiric_aura": "70 80 90 100",
+    "skeleton_king_reincarnation": "180",
+    "death_prophet_carrion_swarm": "80 95 110 125",
+    "death_prophet_silence": "80 90 100 110",
+    "death_prophet_spirit_siphon": "80",
+    "death_prophet_exorcism": "250 350 450",
+    "phantom_assassin_stifling_dagger": "30",
+    "phantom_assassin_phantom_strike": "35 40 45 50",
+    "phantom_assassin_blur": "50",
+    "viper_poison_attack": "18 20 22 24",
+    "viper_nethertoxin": "85",
+    "viper_viper_strike": "100 150 200",
+    "luna_lucent_beam": "90 100 110 120",
+    "luna_eclipse": "150 200 250",
+    "rattletrap_battery_assault": "100",
+    "rattletrap_power_cogs": "80",
+    "rattletrap_rocket_flare": "35 40 45 50",
+    "rattletrap_hookshot": "150 150 150",
+    "life_stealer_rage": "75 100 125 150",
+    "life_stealer_infest": "100 125 150",
+    "omniknight_purification": "80 95 110 125",
+    "omniknight_repel": "80 90 100 110",
+    "omniknight_guardian_angel": "150 200 250",
+    "huskar_inner_fire": "75 100 125 150",
+    "huskar_burning_spear": "0 0 0 0",
+    "huskar_life_break": "0 0 0",
+    "night_stalker_void": "80 90 100 110",
+    "night_stalker_crippling_fear": "50",
+    "night_stalker_darkness": "125 175 225",
+    "bounty_hunter_shuriken_toss": "50 60 70 80",
+    "bounty_hunter_wind_walk": "65",
+    "bounty_hunter_track": "60",
+    "weaver_the_swarm": "110",
+    "weaver_shukuchi": "60",
+    "weaver_time_lapse": "150 75 0",
+    "jakiro_dual_breath": "140 150 160 170",
+    "jakiro_ice_path": "100",
+    "jakiro_macropyre": "220 330 440",
+    "batrider_sticky_napalm": "20",
+    "batrider_flamebreak": "110 120 130 140",
+    "batrider_firefly": "125",
+    "batrider_flaming_lasso": "225",
+    "spectre_spectral_dagger": "130 140 150 160",
+    "spectre_haunt": "150 200 250",
+    "doom_bringer_devour": "40 50 60 70",
+    "doom_bringer_scorched_earth": "60 70 80 90",
+    "doom_bringer_infernal_blade": "40",
+    "doom_bringer_doom": "150 200 250",
+    "ursa_earthshock": "85",
+    "ursa_overpower": "30 40 50 60",
+    "ursa_enrage": "0 0 0",
+    "spirit_breaker_charge_of_darkness": "100",
+    "spirit_breaker_bulldoze": "30 40 50 60",
+    "spirit_breaker_nether_strike": "125 150 175",
+    "gyrocopter_rocket_barrage": "90",
+    "gyrocopter_homing_missile": "120 130 140 150",
+    "gyrocopter_flak_cannon": "50 60 70 80",
+    "gyrocopter_call_down": "125 125 125",
+    "alchemist_acid_spray": "130 140 150 160",
+    "alchemist_unstable_concoction": "100",
+    "alchemist_chemical_rage": "50 75 100",
+    "silencer_curse_of_the_silent": "125 130 135 140",
+    "silencer_glaives_of_wisdom": "15",
+    "silencer_last_word": "100 105 110 115",
+    "silencer_global_silence": "300 450 600",
+    "chaos_knight_chaos_bolt": "110 120 130 140",
+    "chaos_knight_reality_rift": "50",
+    "chaos_knight_phantasm": "75 125 175",
+    "treant_natures_grasp": "75 80 85 90",
+    "treant_leech_seed": "80 90 100 110",
+    "treant_living_armor": "50",
+    "treant_overgrowth": "200 250 300",
+    "ogre_magi_fireblast": "70 80 90 100",
+    "ogre_magi_ignite": "80 90 100 110",
+    "ogre_magi_bloodlust": "50 55 60 65",
+    "undying_decay": "85 90 95 100",
+    "undying_soul_rip": "85 100 115 130",
+    "undying_tombstone": "120 130 140 150",
+    "undying_flesh_golem": "100 125 150",
+    "slark_dark_pact": "75",
+    "slark_pounce": "75 75 75 75",
+    "slark_shadow_dance": "120 120 120",
+    "medusa_mystic_snake": "140 150 160 170",
+    "medusa_stone_gaze": "100",
+    "troll_warlord_whirling_axes_ranged": "60",
+    "troll_warlord_whirling_axes_melee": "50",
+    "troll_warlord_battle_trance": "150",
+    "centaur_hoof_stomp": "100 110 120 130",
+    "centaur_double_edge": "0 0 0 0",
+    "centaur_stampede": "150 200 250",
+    "bristleback_viscous_nasal_goo": "12 16 20 24",
+    "bristleback_quill_spray": "35 35 35 35",
+    "abaddon_death_coil": "50",
+    "abaddon_aphotic_shield": "100 110 120 130",
+    "abaddon_borrowed_time": "0 0 0",
+    "legion_commander_overwhelming_odds": "100 110 120 130",
+    "legion_commander_press_the_attack": "110",
+    "legion_commander_duel": "75 75 75",
+    "techies_land_mines": "110 130 150 170",
+    "techies_stasis_trap": "80 110 140 160",
+    "techies_suicide": "100 125 150 175",
+    "techies_remote_mines": "120 180 240",
+    "terrorblade_reflection": "35 40 45 50",
+    "terrorblade_conjure_image": "70 75 80 85",
+    "terrorblade_metamorphosis": "100",
+    "terrorblade_sunder": "150 100 50",
+    "phoenix_icarus_dive": "0",
+    "phoenix_fire_spirits": "120",
+    "phoenix_sun_ray": "100 110 120 130",
+    "phoenix_supernova": "150 200 250",
+    "dark_willow_bramble_maze": "100 120 140 160",
+    "dark_willow_shadow_realm": "70 80 90 100",
+    "dark_willow_cursed_crown": "80 100 120 140",
+    "dark_willow_bedlam": "100 150 200",
+    "hoodwink_acorn_shot": "75 85 95 105",
+    "hoodwink_bushwhack": "90 100 110 120",
+    "hoodwink_scurry": "35",
+    "hoodwink_sharpshooter": "125 175 225",
+    "mars_spear": "110 120 130 140",
+    "mars_gods_rebuke": "90",
+    "mars_arena_of_blood": "150 175 200",
+    "dawnbreaker_fire_wreath": "80",
+    "dawnbreaker_celestial_hammer": "110 120 130 140",
+    "dawnbreaker_solar_guardian": "150 200 250",
+    "marci_grapple": "90",
+    "marci_companion_run": "70 80 90 100",
+    "marci_guardian": "45 40 35 30",
+    "marci_unleash": "100 125 150"
+  },
+  "budget_examples_H": [
+    {"hero_id": 1, "name": "敌法师", "level_H": 7, "skill_keys": ["antimage_mana_break", "antimage_blink", "antimage_counterspell", "antimage_mana_void"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "antimage_blink", "rank": 1, "count": 1, "mana_each": 60.0, "mana": 60.0, "reservation": false}, {"ability": "antimage_counterspell", "rank": 1, "count": 1, "mana_each": 45.0, "mana": 45.0, "reservation": false}, {"ability": "antimage_mana_void", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}], "selected_mana_total": 205.0},
+    {"hero_id": 2, "name": "斧王", "level_H": 7, "skill_keys": ["axe_berserkers_call", "axe_battle_hunger", "axe_counter_helix", "axe_culling_blade"], "skill_points_H": [1, 1, 4, 1], "mana_actions_H": [{"ability": "axe_berserkers_call", "rank": 1, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "axe_battle_hunger", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}, {"ability": "axe_culling_blade", "rank": 1, "count": 1, "mana_each": 60.0, "mana": 60.0, "reservation": false}], "selected_mana_total": 190.0},
+    {"hero_id": 5, "name": "水晶室女", "level_H": 8, "skill_keys": ["crystal_maiden_crystal_nova", "crystal_maiden_frostbite", "crystal_maiden_brilliance_aura", "crystal_maiden_freezing_field"], "skill_points_H": [4, 2, 1, 1], "mana_actions_H": [{"ability": "crystal_maiden_crystal_nova", "rank": 4, "count": 1, "mana_each": 175.0, "mana": 175.0, "reservation": false}, {"ability": "crystal_maiden_frostbite", "rank": 2, "count": 1, "mana_each": 135.0, "mana": 135.0, "reservation": false}, {"ability": "crystal_maiden_freezing_field", "rank": 1, "count": 1, "mana_each": 200.0, "mana": 200.0, "reservation": false}], "selected_mana_total": 510.0},
+    {"hero_id": 6, "name": "卓尔游侠", "level_H": 7, "skill_keys": ["drow_ranger_frost_arrows", "drow_ranger_wave_of_silence", "drow_ranger_multishot", "drow_ranger_marksmanship"], "skill_points_H": [1, 1, 4, 1], "mana_actions_H": [{"ability": "drow_ranger_wave_of_silence", "rank": 1, "count": 1, "mana_each": 70.0, "mana": 70.0, "reservation": false}, {"ability": "drow_ranger_multishot", "rank": 4, "count": 1, "mana_each": 110.0, "mana": 110.0, "reservation": false}], "selected_mana_total": 180.0},
+    {"hero_id": 8, "name": "主宰", "level_H": 7, "skill_keys": ["juggernaut_blade_fury", "juggernaut_healing_ward", "juggernaut_blade_dance", "juggernaut_omni_slash"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "juggernaut_blade_fury", "rank": 4, "count": 1, "mana_each": 90.0, "mana": 90.0, "reservation": false}, {"ability": "juggernaut_healing_ward", "rank": 1, "count": 1, "mana_each": 140.0, "mana": 140.0, "reservation": false}, {"ability": "juggernaut_omni_slash", "rank": 1, "count": 1, "mana_each": 200.0, "mana": 200.0, "reservation": false}], "selected_mana_total": 430.0},
+    {"hero_id": 12, "name": "幻影长矛手", "level_H": 7, "skill_keys": ["phantom_lancer_spirit_lance", "phantom_lancer_doppelwalk", "phantom_lancer_phantom_edge", "phantom_lancer_juxtapose"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "phantom_lancer_spirit_lance", "rank": 4, "count": 1, "mana_each": 120.0, "mana": 120.0, "reservation": false}, {"ability": "phantom_lancer_doppelwalk", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}], "selected_mana_total": 170.0},
+    {"hero_id": 14, "name": "帕吉", "level_H": 7, "skill_keys": ["pudge_meat_hook", "pudge_rot", "pudge_flesh_heap", "pudge_dismember"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "pudge_meat_hook", "rank": 1, "count": 1, "mana_each": 110.0, "mana": 110.0, "reservation": false}, {"ability": "pudge_dismember", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}], "selected_mana_total": 210.0},
+    {"hero_id": 16, "name": "沙王", "level_H": 7, "skill_keys": ["sandking_burrowstrike", "sandking_sand_storm", "sandking_caustic_finale", "sandking_epicenter"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "sandking_burrowstrike", "rank": 4, "count": 1, "mana_each": 140.0, "mana": 140.0, "reservation": false}, {"ability": "sandking_sand_storm", "rank": 1, "count": 1, "mana_each": 75.0, "mana": 75.0, "reservation": false}, {"ability": "sandking_epicenter", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 365.0},
+    {"hero_id": 18, "name": "斯温", "level_H": 7, "skill_keys": ["sven_storm_bolt", "sven_great_cleave", "sven_warcry", "sven_gods_strength"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "sven_storm_bolt", "rank": 1, "count": 1, "mana_each": 110.0, "mana": 110.0, "reservation": false}, {"ability": "sven_warcry", "rank": 1, "count": 1, "mana_each": 30.0, "mana": 30.0, "reservation": false}, {"ability": "sven_gods_strength", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}], "selected_mana_total": 240.0},
+    {"hero_id": 20, "name": "复仇之魂", "level_H": 8, "skill_keys": ["vengefulspirit_magic_missile", "vengefulspirit_wave_of_terror", "vengefulspirit_command_aura", "vengefulspirit_nether_swap"], "skill_points_H": [4, 2, 1, 1], "mana_actions_H": [{"ability": "vengefulspirit_magic_missile", "rank": 4, "count": 1, "mana_each": 130.0, "mana": 130.0, "reservation": false}, {"ability": "vengefulspirit_wave_of_terror", "rank": 2, "count": 1, "mana_each": 30.0, "mana": 30.0, "reservation": false}, {"ability": "vengefulspirit_nether_swap", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}], "selected_mana_total": 260.0},
+    {"hero_id": 25, "name": "莉娜", "level_H": 7, "skill_keys": ["lina_dragon_slave", "lina_light_strike_array", "lina_fiery_soul", "lina_laguna_blade"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "lina_dragon_slave", "rank": 4, "count": 1, "mana_each": 145.0, "mana": 145.0, "reservation": false}, {"ability": "lina_light_strike_array", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "lina_laguna_blade", "rank": 1, "count": 1, "mana_each": 250.0, "mana": 250.0, "reservation": false}], "selected_mana_total": 495.0},
+    {"hero_id": 26, "name": "莱恩", "level_H": 7, "skill_keys": ["lion_impale", "lion_voodoo", "lion_mana_drain", "lion_finger_of_death"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "lion_impale", "rank": 4, "count": 1, "mana_each": 160.0, "mana": 160.0, "reservation": false}, {"ability": "lion_voodoo", "rank": 1, "count": 1, "mana_each": 125.0, "mana": 125.0, "reservation": false}, {"ability": "lion_mana_drain", "rank": 1, "count": 1, "mana_each": 10.0, "mana": 10.0, "reservation": false}, {"ability": "lion_finger_of_death", "rank": 1, "count": 1, "mana_each": 200.0, "mana": 200.0, "reservation": false}], "selected_mana_total": 495.0},
+    {"hero_id": 27, "name": "暗影萨满", "level_H": 7, "skill_keys": ["shadow_shaman_ether_shock", "shadow_shaman_voodoo", "shadow_shaman_shackles", "shadow_shaman_mass_serpent_ward"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "shadow_shaman_ether_shock", "rank": 4, "count": 1, "mana_each": 160.0, "mana": 160.0, "reservation": false}, {"ability": "shadow_shaman_voodoo", "rank": 1, "count": 1, "mana_each": 70.0, "mana": 70.0, "reservation": false}, {"ability": "shadow_shaman_shackles", "rank": 1, "count": 1, "mana_each": 140.0, "mana": 140.0, "reservation": false}, {"ability": "shadow_shaman_mass_serpent_ward", "rank": 1, "count": 1, "mana_each": 200.0, "mana": 200.0, "reservation": false}], "selected_mana_total": 570.0},
+    {"hero_id": 28, "name": "斯拉达", "level_H": 7, "skill_keys": ["slardar_sprint", "slardar_slithereen_crush", "slardar_bash", "slardar_amplify_damage"], "skill_points_H": [1, 1, 4, 1], "mana_actions_H": [{"ability": "slardar_sprint", "rank": 1, "count": 1, "mana_each": 25.0, "mana": 25.0, "reservation": false}, {"ability": "slardar_slithereen_crush", "rank": 1, "count": 1, "mana_each": 90.0, "mana": 90.0, "reservation": false}, {"ability": "slardar_amplify_damage", "rank": 1, "count": 1, "mana_each": 25.0, "mana": 25.0, "reservation": false}], "selected_mana_total": 140.0},
+    {"hero_id": 29, "name": "潮汐猎人", "level_H": 7, "skill_keys": ["tidehunter_gush", "tidehunter_kraken_shell", "tidehunter_anchor_smash", "tidehunter_ravage"], "skill_points_H": [1, 1, 4, 1], "mana_actions_H": [{"ability": "tidehunter_gush", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "tidehunter_anchor_smash", "rank": 4, "count": 1, "mana_each": 70.0, "mana": 70.0, "reservation": false}, {"ability": "tidehunter_ravage", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 320.0},
+    {"hero_id": 30, "name": "巫医", "level_H": 7, "skill_keys": ["witch_doctor_paralyzing_cask", "witch_doctor_voodoo_restoration", "witch_doctor_maledict", "witch_doctor_death_ward"], "skill_points_H": [1, 1, 4, 1], "mana_actions_H": [{"ability": "witch_doctor_paralyzing_cask", "rank": 1, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "witch_doctor_maledict", "rank": 4, "count": 1, "mana_each": 120.0, "mana": 120.0, "reservation": false}, {"ability": "witch_doctor_death_ward", "rank": 1, "count": 1, "mana_each": 200.0, "mana": 200.0, "reservation": false}], "selected_mana_total": 400.0},
+    {"hero_id": 31, "name": "巫妖", "level_H": 7, "skill_keys": ["lich_frost_nova", "lich_frost_shield", "lich_sinister_gaze", "lich_chain_frost"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "lich_frost_nova", "rank": 4, "count": 1, "mana_each": 170.0, "mana": 170.0, "reservation": false}, {"ability": "lich_frost_shield", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "lich_sinister_gaze", "rank": 1, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "lich_chain_frost", "rank": 1, "count": 1, "mana_each": 200.0, "mana": 200.0, "reservation": false}], "selected_mana_total": 550.0},
+    {"hero_id": 32, "name": "力丸", "level_H": 7, "skill_keys": ["riki_smoke_screen", "riki_blink_strike", "riki_tricks_of_the_trade", "riki_backstab"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "riki_smoke_screen", "rank": 1, "count": 1, "mana_each": 75.0, "mana": 75.0, "reservation": false}, {"ability": "riki_blink_strike", "rank": 4, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}, {"ability": "riki_tricks_of_the_trade", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}], "selected_mana_total": 175.0},
+    {"hero_id": 33, "name": "谜团", "level_H": 7, "skill_keys": ["enigma_malefice", "enigma_demonic_conversion", "enigma_midnight_pulse", "enigma_black_hole"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "enigma_malefice", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "enigma_demonic_conversion", "rank": 4, "count": 1, "mana_each": 170.0, "mana": 170.0, "reservation": false}, {"ability": "enigma_midnight_pulse", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}, {"ability": "enigma_black_hole", "rank": 1, "count": 1, "mana_each": 300.0, "mana": 300.0, "reservation": false}], "selected_mana_total": 620.0},
+    {"hero_id": 35, "name": "狙击手", "level_H": 7, "skill_keys": ["sniper_shrapnel", "sniper_headshot", "sniper_take_aim", "sniper_assassinate"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "sniper_shrapnel", "rank": 4, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}, {"ability": "sniper_take_aim", "rank": 1, "count": 1, "mana_each": 25.0, "mana": 25.0, "reservation": false}, {"ability": "sniper_assassinate", "rank": 1, "count": 1, "mana_each": 175.0, "mana": 175.0, "reservation": false}], "selected_mana_total": 250.0},
+    {"hero_id": 40, "name": "剧毒术士", "level_H": 7, "skill_keys": ["venomancer_venomous_gale", "venomancer_poison_sting", "venomancer_plague_ward", "venomancer_poison_nova"], "skill_points_H": [1, 1, 4, 1], "mana_actions_H": [{"ability": "venomancer_venomous_gale", "rank": 1, "count": 1, "mana_each": 125.0, "mana": 125.0, "reservation": false}, {"ability": "venomancer_plague_ward", "rank": 4, "count": 1, "mana_each": 26.0, "mana": 26.0, "reservation": false}, {"ability": "venomancer_poison_nova", "rank": 1, "count": 1, "mana_each": 200.0, "mana": 200.0, "reservation": false}], "selected_mana_total": 351.0},
+    {"hero_id": 41, "name": "虚空假面", "level_H": 10, "skill_keys": ["faceless_void_time_walk", "faceless_void_time_dilation", "faceless_void_time_lock", "faceless_void_chronosphere"], "skill_points_H": [4, 4, 1, 1], "mana_actions_H": [{"ability": "faceless_void_time_walk", "rank": 4, "count": 1, "mana_each": 40.0, "mana": 40.0, "reservation": false}, {"ability": "faceless_void_time_dilation", "rank": 4, "count": 1, "mana_each": 90.0, "mana": 90.0, "reservation": false}, {"ability": "faceless_void_chronosphere", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 280.0},
+    {"hero_id": 42, "name": "冥魂大帝", "level_H": 7, "skill_keys": ["skeleton_king_hellfire_blast", "skeleton_king_vampiric_aura", "skeleton_king_mortal_strike", "skeleton_king_reincarnation"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "skeleton_king_hellfire_blast", "rank": 1, "count": 1, "mana_each": 95.0, "mana": 95.0, "reservation": false}, {"ability": "skeleton_king_vampiric_aura", "rank": 4, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "skeleton_king_reincarnation", "rank": 1, "count": 1, "mana_each": 180.0, "mana": 180.0, "reservation": true}], "selected_mana_total": 375.0},
+    {"hero_id": 43, "name": "死亡先知", "level_H": 7, "skill_keys": ["death_prophet_carrion_swarm", "death_prophet_silence", "death_prophet_spirit_siphon", "death_prophet_exorcism"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "death_prophet_carrion_swarm", "rank": 4, "count": 1, "mana_each": 125.0, "mana": 125.0, "reservation": false}, {"ability": "death_prophet_silence", "rank": 1, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "death_prophet_spirit_siphon", "rank": 1, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "death_prophet_exorcism", "rank": 1, "count": 1, "mana_each": 250.0, "mana": 250.0, "reservation": false}], "selected_mana_total": 535.0},
+    {"hero_id": 44, "name": "幻影刺客", "level_H": 7, "skill_keys": ["phantom_assassin_stifling_dagger", "phantom_assassin_phantom_strike", "phantom_assassin_blur", "phantom_assassin_coup_de_grace"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "phantom_assassin_stifling_dagger", "rank": 4, "count": 1, "mana_each": 30.0, "mana": 30.0, "reservation": false}, {"ability": "phantom_assassin_phantom_strike", "rank": 1, "count": 1, "mana_each": 35.0, "mana": 35.0, "reservation": false}, {"ability": "phantom_assassin_blur", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}], "selected_mana_total": 115.0},
+    {"hero_id": 47, "name": "冥界亚龙", "level_H": 7, "skill_keys": ["viper_poison_attack", "viper_nethertoxin", "viper_corrosive_skin", "viper_viper_strike"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "viper_poison_attack", "rank": 4, "count": 5, "mana_each": 24.0, "mana": 120.0, "reservation": false}, {"ability": "viper_nethertoxin", "rank": 1, "count": 1, "mana_each": 85.0, "mana": 85.0, "reservation": false}, {"ability": "viper_viper_strike", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}], "selected_mana_total": 305.0},
+    {"hero_id": 48, "name": "露娜", "level_H": 7, "skill_keys": ["luna_lucent_beam", "luna_moon_glaive", "luna_lunar_blessing", "luna_eclipse"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "luna_lucent_beam", "rank": 4, "count": 1, "mana_each": 120.0, "mana": 120.0, "reservation": false}, {"ability": "luna_eclipse", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 270.0},
+    {"hero_id": 51, "name": "发条技师", "level_H": 7, "skill_keys": ["rattletrap_battery_assault", "rattletrap_power_cogs", "rattletrap_rocket_flare", "rattletrap_hookshot"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "rattletrap_battery_assault", "rank": 4, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "rattletrap_power_cogs", "rank": 1, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "rattletrap_rocket_flare", "rank": 1, "count": 1, "mana_each": 35.0, "mana": 35.0, "reservation": false}, {"ability": "rattletrap_hookshot", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 365.0},
+    {"hero_id": 54, "name": "噬魂鬼", "level_H": 7, "skill_keys": ["life_stealer_rage", "life_stealer_feast", "life_stealer_ghoul_frenzy", "life_stealer_infest"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "life_stealer_rage", "rank": 4, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}, {"ability": "life_stealer_infest", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}], "selected_mana_total": 250.0},
+    {"hero_id": 57, "name": "全能骑士", "level_H": 7, "skill_keys": ["omniknight_purification", "omniknight_repel", "omniknight_degen_aura", "omniknight_guardian_angel"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "omniknight_purification", "rank": 4, "count": 1, "mana_each": 125.0, "mana": 125.0, "reservation": false}, {"ability": "omniknight_repel", "rank": 1, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "omniknight_guardian_angel", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 355.0},
+    {"hero_id": 59, "name": "哈斯卡", "level_H": 7, "skill_keys": ["huskar_inner_fire", "huskar_burning_spear", "huskar_berserkers_blood", "huskar_life_break"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "huskar_inner_fire", "rank": 1, "count": 1, "mana_each": 75.0, "mana": 75.0, "reservation": false}, {"ability": "huskar_burning_spear", "rank": 4, "count": 1, "mana_each": 0.0, "mana": 0.0, "reservation": false}, {"ability": "huskar_life_break", "rank": 1, "count": 1, "mana_each": 0.0, "mana": 0.0, "reservation": false}], "selected_mana_total": 75.0},
+    {"hero_id": 60, "name": "暗夜魔王", "level_H": 7, "skill_keys": ["night_stalker_void", "night_stalker_crippling_fear", "night_stalker_hunter_in_the_night", "night_stalker_darkness"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "night_stalker_void", "rank": 4, "count": 1, "mana_each": 110.0, "mana": 110.0, "reservation": false}, {"ability": "night_stalker_crippling_fear", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}, {"ability": "night_stalker_darkness", "rank": 1, "count": 1, "mana_each": 125.0, "mana": 125.0, "reservation": false}], "selected_mana_total": 285.0},
+    {"hero_id": 62, "name": "赏金猎人", "level_H": 7, "skill_keys": ["bounty_hunter_shuriken_toss", "bounty_hunter_jinada", "bounty_hunter_wind_walk", "bounty_hunter_track"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "bounty_hunter_shuriken_toss", "rank": 4, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "bounty_hunter_wind_walk", "rank": 1, "count": 1, "mana_each": 65.0, "mana": 65.0, "reservation": false}, {"ability": "bounty_hunter_track", "rank": 1, "count": 1, "mana_each": 60.0, "mana": 60.0, "reservation": false}], "selected_mana_total": 205.0},
+    {"hero_id": 63, "name": "编织者", "level_H": 8, "skill_keys": ["weaver_the_swarm", "weaver_shukuchi", "weaver_geminate_attack", "weaver_time_lapse"], "skill_points_H": [1, 4, 2, 1], "mana_actions_H": [{"ability": "weaver_the_swarm", "rank": 1, "count": 1, "mana_each": 110.0, "mana": 110.0, "reservation": false}, {"ability": "weaver_shukuchi", "rank": 4, "count": 1, "mana_each": 60.0, "mana": 60.0, "reservation": false}, {"ability": "weaver_time_lapse", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 320.0},
+    {"hero_id": 64, "name": "杰奇洛", "level_H": 7, "skill_keys": ["jakiro_dual_breath", "jakiro_ice_path", "jakiro_liquid_fire", "jakiro_macropyre"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "jakiro_dual_breath", "rank": 4, "count": 1, "mana_each": 170.0, "mana": 170.0, "reservation": false}, {"ability": "jakiro_ice_path", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "jakiro_macropyre", "rank": 1, "count": 1, "mana_each": 220.0, "mana": 220.0, "reservation": false}], "selected_mana_total": 490.0},
+    {"hero_id": 65, "name": "蝙蝠骑士", "level_H": 7, "skill_keys": ["batrider_sticky_napalm", "batrider_flamebreak", "batrider_firefly", "batrider_flaming_lasso"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "batrider_sticky_napalm", "rank": 4, "count": 1, "mana_each": 20.0, "mana": 20.0, "reservation": false}, {"ability": "batrider_flamebreak", "rank": 1, "count": 1, "mana_each": 110.0, "mana": 110.0, "reservation": false}, {"ability": "batrider_firefly", "rank": 1, "count": 1, "mana_each": 125.0, "mana": 125.0, "reservation": false}, {"ability": "batrider_flaming_lasso", "rank": 1, "count": 1, "mana_each": 225.0, "mana": 225.0, "reservation": false}], "selected_mana_total": 480.0},
+    {"hero_id": 67, "name": "幽鬼", "level_H": 7, "skill_keys": ["spectre_spectral_dagger", "spectre_desolate", "spectre_dispersion", "spectre_haunt"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "spectre_spectral_dagger", "rank": 4, "count": 1, "mana_each": 160.0, "mana": 160.0, "reservation": false}, {"ability": "spectre_haunt", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 310.0},
+    {"hero_id": 69, "name": "末日使者", "level_H": 7, "skill_keys": ["doom_bringer_devour", "doom_bringer_scorched_earth", "doom_bringer_infernal_blade", "doom_bringer_doom"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "doom_bringer_devour", "rank": 1, "count": 1, "mana_each": 40.0, "mana": 40.0, "reservation": false}, {"ability": "doom_bringer_scorched_earth", "rank": 4, "count": 1, "mana_each": 90.0, "mana": 90.0, "reservation": false}, {"ability": "doom_bringer_infernal_blade", "rank": 1, "count": 1, "mana_each": 40.0, "mana": 40.0, "reservation": false}, {"ability": "doom_bringer_doom", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 320.0},
+    {"hero_id": 70, "name": "熊战士", "level_H": 7, "skill_keys": ["ursa_earthshock", "ursa_overpower", "ursa_fury_swipes", "ursa_enrage"], "skill_points_H": [1, 1, 4, 1], "mana_actions_H": [{"ability": "ursa_earthshock", "rank": 1, "count": 1, "mana_each": 85.0, "mana": 85.0, "reservation": false}, {"ability": "ursa_overpower", "rank": 1, "count": 1, "mana_each": 30.0, "mana": 30.0, "reservation": false}, {"ability": "ursa_enrage", "rank": 1, "count": 1, "mana_each": 0.0, "mana": 0.0, "reservation": false}], "selected_mana_total": 115.0},
+    {"hero_id": 71, "name": "裂魂人", "level_H": 7, "skill_keys": ["spirit_breaker_charge_of_darkness", "spirit_breaker_bulldoze", "spirit_breaker_greater_bash", "spirit_breaker_nether_strike"], "skill_points_H": [1, 1, 4, 1], "mana_actions_H": [{"ability": "spirit_breaker_charge_of_darkness", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "spirit_breaker_bulldoze", "rank": 1, "count": 1, "mana_each": 30.0, "mana": 30.0, "reservation": false}, {"ability": "spirit_breaker_nether_strike", "rank": 1, "count": 1, "mana_each": 125.0, "mana": 125.0, "reservation": false}], "selected_mana_total": 255.0},
+    {"hero_id": 72, "name": "矮人直升机", "level_H": 7, "skill_keys": ["gyrocopter_rocket_barrage", "gyrocopter_homing_missile", "gyrocopter_flak_cannon", "gyrocopter_call_down"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "gyrocopter_rocket_barrage", "rank": 4, "count": 1, "mana_each": 90.0, "mana": 90.0, "reservation": false}, {"ability": "gyrocopter_homing_missile", "rank": 1, "count": 1, "mana_each": 120.0, "mana": 120.0, "reservation": false}, {"ability": "gyrocopter_flak_cannon", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}, {"ability": "gyrocopter_call_down", "rank": 1, "count": 1, "mana_each": 125.0, "mana": 125.0, "reservation": false}], "selected_mana_total": 385.0},
+    {"hero_id": 73, "name": "炼金术士", "level_H": 7, "skill_keys": ["alchemist_acid_spray", "alchemist_unstable_concoction", "alchemist_goblins_greed", "alchemist_chemical_rage"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "alchemist_acid_spray", "rank": 4, "count": 1, "mana_each": 160.0, "mana": 160.0, "reservation": false}, {"ability": "alchemist_unstable_concoction", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "alchemist_chemical_rage", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}], "selected_mana_total": 310.0},
+    {"hero_id": 75, "name": "沉默术士", "level_H": 7, "skill_keys": ["silencer_curse_of_the_silent", "silencer_glaives_of_wisdom", "silencer_last_word", "silencer_global_silence"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "silencer_curse_of_the_silent", "rank": 4, "count": 1, "mana_each": 140.0, "mana": 140.0, "reservation": false}, {"ability": "silencer_last_word", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "silencer_global_silence", "rank": 1, "count": 1, "mana_each": 300.0, "mana": 300.0, "reservation": false}], "selected_mana_total": 540.0},
+    {"hero_id": 81, "name": "混沌骑士", "level_H": 7, "skill_keys": ["chaos_knight_chaos_bolt", "chaos_knight_reality_rift", "chaos_knight_chaos_strike", "chaos_knight_phantasm"], "skill_points_H": [1, 1, 4, 1], "mana_actions_H": [{"ability": "chaos_knight_chaos_bolt", "rank": 1, "count": 1, "mana_each": 110.0, "mana": 110.0, "reservation": false}, {"ability": "chaos_knight_reality_rift", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}, {"ability": "chaos_knight_phantasm", "rank": 1, "count": 1, "mana_each": 75.0, "mana": 75.0, "reservation": false}], "selected_mana_total": 235.0},
+    {"hero_id": 83, "name": "树精卫士", "level_H": 7, "skill_keys": ["treant_natures_grasp", "treant_leech_seed", "treant_living_armor", "treant_overgrowth"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "treant_natures_grasp", "rank": 4, "count": 1, "mana_each": 90.0, "mana": 90.0, "reservation": false}, {"ability": "treant_leech_seed", "rank": 1, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "treant_living_armor", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}, {"ability": "treant_overgrowth", "rank": 1, "count": 1, "mana_each": 200.0, "mana": 200.0, "reservation": false}], "selected_mana_total": 420.0},
+    {"hero_id": 84, "name": "食人魔魔法师", "level_H": 7, "skill_keys": ["ogre_magi_fireblast", "ogre_magi_ignite", "ogre_magi_bloodlust", "ogre_magi_multicast"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "ogre_magi_fireblast", "rank": 4, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "ogre_magi_ignite", "rank": 1, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "ogre_magi_bloodlust", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}], "selected_mana_total": 230.0},
+    {"hero_id": 85, "name": "不朽尸王", "level_H": 7, "skill_keys": ["undying_decay", "undying_soul_rip", "undying_tombstone", "undying_flesh_golem"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "undying_decay", "rank": 4, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "undying_soul_rip", "rank": 1, "count": 1, "mana_each": 85.0, "mana": 85.0, "reservation": false}, {"ability": "undying_tombstone", "rank": 1, "count": 1, "mana_each": 120.0, "mana": 120.0, "reservation": false}, {"ability": "undying_flesh_golem", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}], "selected_mana_total": 405.0},
+    {"hero_id": 93, "name": "斯拉克", "level_H": 7, "skill_keys": ["slark_dark_pact", "slark_pounce", "slark_essence_shift", "slark_shadow_dance"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "slark_dark_pact", "rank": 4, "count": 1, "mana_each": 75.0, "mana": 75.0, "reservation": false}, {"ability": "slark_pounce", "rank": 1, "count": 1, "mana_each": 75.0, "mana": 75.0, "reservation": false}, {"ability": "slark_shadow_dance", "rank": 1, "count": 1, "mana_each": 120.0, "mana": 120.0, "reservation": false}], "selected_mana_total": 270.0},
+    {"hero_id": 94, "name": "美杜莎", "level_H": 7, "skill_keys": ["medusa_split_shot", "medusa_mystic_snake", "medusa_mana_shield", "medusa_stone_gaze"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "medusa_mystic_snake", "rank": 4, "count": 1, "mana_each": 170.0, "mana": 170.0, "reservation": false}, {"ability": "medusa_stone_gaze", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}], "selected_mana_total": 270.0},
+    {"hero_id": 95, "name": "巨魔战将", "level_H": 7, "skill_keys": ["troll_warlord_berserkers_rage", "troll_warlord_whirling_axes_ranged", "troll_warlord_fervor", "troll_warlord_battle_trance"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "troll_warlord_whirling_axes_ranged", "rank": 4, "count": 1, "mana_each": 60.0, "mana": 60.0, "reservation": false}, {"ability": "troll_warlord_battle_trance", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}, {"ability": "troll_warlord_whirling_axes_melee", "rank": 4, "count": 1, "mana_each": 50, "mana": 50, "shares_skill_point_with": "troll_warlord_whirling_axes_ranged"}], "selected_mana_total": 260.0},
+    {"hero_id": 96, "name": "半人马战行者", "level_H": 7, "skill_keys": ["centaur_hoof_stomp", "centaur_double_edge", "centaur_return", "centaur_stampede"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "centaur_hoof_stomp", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "centaur_double_edge", "rank": 4, "count": 1, "mana_each": 0.0, "mana": 0.0, "reservation": false}, {"ability": "centaur_stampede", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 250.0},
+    {"hero_id": 99, "name": "钢背兽", "level_H": 7, "skill_keys": ["bristleback_viscous_nasal_goo", "bristleback_quill_spray", "bristleback_bristleback", "bristleback_warpath"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "bristleback_viscous_nasal_goo", "rank": 1, "count": 1, "mana_each": 12.0, "mana": 12.0, "reservation": false}, {"ability": "bristleback_quill_spray", "rank": 4, "count": 2, "mana_each": 35.0, "mana": 70.0, "reservation": false}], "selected_mana_total": 82.0},
+    {"hero_id": 102, "name": "亚巴顿", "level_H": 7, "skill_keys": ["abaddon_death_coil", "abaddon_aphotic_shield", "abaddon_frostmourne", "abaddon_borrowed_time"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "abaddon_death_coil", "rank": 1, "count": 1, "mana_each": 50.0, "mana": 50.0, "reservation": false}, {"ability": "abaddon_aphotic_shield", "rank": 4, "count": 1, "mana_each": 130.0, "mana": 130.0, "reservation": false}, {"ability": "abaddon_borrowed_time", "rank": 1, "count": 1, "mana_each": 0.0, "mana": 0.0, "reservation": false}], "selected_mana_total": 180.0},
+    {"hero_id": 104, "name": "军团指挥官", "level_H": 7, "skill_keys": ["legion_commander_overwhelming_odds", "legion_commander_press_the_attack", "legion_commander_moment_of_courage", "legion_commander_duel"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "legion_commander_overwhelming_odds", "rank": 4, "count": 1, "mana_each": 130.0, "mana": 130.0, "reservation": false}, {"ability": "legion_commander_press_the_attack", "rank": 1, "count": 1, "mana_each": 110.0, "mana": 110.0, "reservation": false}, {"ability": "legion_commander_duel", "rank": 1, "count": 1, "mana_each": 75.0, "mana": 75.0, "reservation": false}], "selected_mana_total": 315.0},
+    {"hero_id": 105, "name": "工程师", "level_H": 7, "skill_keys": ["techies_land_mines", "techies_stasis_trap", "techies_suicide", "techies_remote_mines"], "skill_points_H": [1, 1, 4, 1], "mana_actions_H": [{"ability": "techies_land_mines", "rank": 1, "count": 1, "mana_each": 110.0, "mana": 110.0, "reservation": false}, {"ability": "techies_stasis_trap", "rank": 1, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "techies_suicide", "rank": 4, "count": 1, "mana_each": 175.0, "mana": 175.0, "reservation": false}, {"ability": "techies_remote_mines", "rank": 1, "count": 1, "mana_each": 120.0, "mana": 120.0, "reservation": false}], "selected_mana_total": 485.0},
+    {"hero_id": 109, "name": "恐怖利刃", "level_H": 7, "skill_keys": ["terrorblade_reflection", "terrorblade_conjure_image", "terrorblade_metamorphosis", "terrorblade_sunder"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "terrorblade_reflection", "rank": 1, "count": 1, "mana_each": 35.0, "mana": 35.0, "reservation": false}, {"ability": "terrorblade_conjure_image", "rank": 4, "count": 1, "mana_each": 85.0, "mana": 85.0, "reservation": false}, {"ability": "terrorblade_metamorphosis", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "terrorblade_sunder", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 370.0},
+    {"hero_id": 110, "name": "凤凰", "level_H": 7, "skill_keys": ["phoenix_icarus_dive", "phoenix_fire_spirits", "phoenix_sun_ray", "phoenix_supernova"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "phoenix_icarus_dive", "rank": 1, "count": 1, "mana_each": 0.0, "mana": 0.0, "reservation": false}, {"ability": "phoenix_fire_spirits", "rank": 4, "count": 1, "mana_each": 120.0, "mana": 120.0, "reservation": false}, {"ability": "phoenix_sun_ray", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "phoenix_supernova", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 370.0},
+    {"hero_id": 119, "name": "邪影芳灵", "level_H": 7, "skill_keys": ["dark_willow_bramble_maze", "dark_willow_shadow_realm", "dark_willow_cursed_crown", "dark_willow_bedlam"], "skill_points_H": [1, 4, 1, 1], "mana_actions_H": [{"ability": "dark_willow_bramble_maze", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "dark_willow_shadow_realm", "rank": 4, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}, {"ability": "dark_willow_cursed_crown", "rank": 1, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "dark_willow_bedlam", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}], "selected_mana_total": 380.0},
+    {"hero_id": 123, "name": "森海飞霞", "level_H": 7, "skill_keys": ["hoodwink_acorn_shot", "hoodwink_bushwhack", "hoodwink_scurry", "hoodwink_sharpshooter"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "hoodwink_acorn_shot", "rank": 4, "count": 1, "mana_each": 105.0, "mana": 105.0, "reservation": false}, {"ability": "hoodwink_bushwhack", "rank": 1, "count": 1, "mana_each": 90.0, "mana": 90.0, "reservation": false}, {"ability": "hoodwink_scurry", "rank": 1, "count": 1, "mana_each": 35.0, "mana": 35.0, "reservation": false}, {"ability": "hoodwink_sharpshooter", "rank": 1, "count": 1, "mana_each": 125.0, "mana": 125.0, "reservation": false}], "selected_mana_total": 355.0},
+    {"hero_id": 129, "name": "玛尔斯", "level_H": 7, "skill_keys": ["mars_spear", "mars_gods_rebuke", "mars_bulwark", "mars_arena_of_blood"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "mars_spear", "rank": 4, "count": 1, "mana_each": 140.0, "mana": 140.0, "reservation": false}, {"ability": "mars_gods_rebuke", "rank": 1, "count": 1, "mana_each": 90.0, "mana": 90.0, "reservation": false}, {"ability": "mars_arena_of_blood", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 380.0},
+    {"hero_id": 135, "name": "破晓辰星", "level_H": 7, "skill_keys": ["dawnbreaker_fire_wreath", "dawnbreaker_celestial_hammer", "dawnbreaker_luminosity", "dawnbreaker_solar_guardian"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "dawnbreaker_fire_wreath", "rank": 4, "count": 1, "mana_each": 80.0, "mana": 80.0, "reservation": false}, {"ability": "dawnbreaker_celestial_hammer", "rank": 1, "count": 1, "mana_each": 110.0, "mana": 110.0, "reservation": false}, {"ability": "dawnbreaker_solar_guardian", "rank": 1, "count": 1, "mana_each": 150.0, "mana": 150.0, "reservation": false}], "selected_mana_total": 340.0},
+    {"hero_id": 136, "name": "玛西", "level_H": 7, "skill_keys": ["marci_grapple", "marci_companion_run", "marci_guardian", "marci_unleash"], "skill_points_H": [4, 1, 1, 1], "mana_actions_H": [{"ability": "marci_grapple", "rank": 4, "count": 1, "mana_each": 90.0, "mana": 90.0, "reservation": false}, {"ability": "marci_companion_run", "rank": 1, "count": 1, "mana_each": 70.0, "mana": 70.0, "reservation": false}, {"ability": "marci_guardian", "rank": 1, "count": 1, "mana_each": 45.0, "mana": 45.0, "reservation": false}, {"ability": "marci_unleash", "rank": 1, "count": 1, "mana_each": 100.0, "mana": 100.0, "reservation": false}], "selected_mana_total": 305.0}
+  ],
+  "budget_limits": [
+    "点数例不是推荐加点；数值和技能状态须共存，不许诺七级拥有装备。",
+    "只列动作各一次，箭数、持续蓝、自损/生命、充能、已刷兵线与下一轮仍另付。",
+    "PL原生R被动，不能由升级75蓝字段当原生主动；WK死亡180蓝计预留。",
+    "巨魔两种斧共享W点数；芳灵两个R按互斥分支，不在同一时刻两套。",
+    "模型不按缺Mana字段推出所有相关动作免费。"
+  ],
+  "deep_fields_F": {
+    "crystal_maiden_freezing_field": {
+      "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "HasScepterUpgrade": "1",
+      "HasShardUpgrade": "1",
+      "AbilityChannelTime": "10",
+      "AbilityCastPoint": "0",
+      "AbilityCooldown": "110 100 90",
+      "AbilityDuration": "10.0",
+      "AbilityManaCost": "200 400 600",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "810"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "explosion_radius": "300"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_armor": "20"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "explosion_interval": "0.1"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "movespeed_slow": "-30"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "attack_slow": "-60"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "slow_duration": "1.0"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "explosion_min_dist": "195"
+        },
+        "09": {
+          "var_type": "FIELD_INTEGER",
+          "explosion_max_dist": "785"
+        },
+        "10": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "105 170 250",
+          "LinkedSpecialBonus": "special_bonus_unique_crystal_maiden_3"
+        },
+        "11": {
+          "var_type": "FIELD_FLOAT",
+          "scepter_delay": "1.75",
+          "RequiresScepter": "1"
+        },
+        "21": {
+          "var_type": "FIELD_FLOAT",
+          "shard_bonus_explosion": "20",
+          "RequiresShard": "1"
+        }
+      }
+    },
+    "crystal_maiden_frostbite": {
+      "AbilityType": "DOTA_ABILITY_TYPE_BASIC",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastRange": "550",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityCooldown": "9 8 7 6",
+      "AbilityManaCost": "125 135 145 155",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "damage_per_second": "100"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "creep_damage_per_second": "100"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "1.5 2.0 2.5 3.0",
+          "LinkedSpecialBonus": "special_bonus_unique_crystal_maiden_1"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "creep_duration": "10",
+          "LinkedSpecialBonus": "special_bonus_unique_crystal_maiden_1"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "tick_interval": "0.25"
+        }
+      }
+    },
+    "vengefulspirit_command_aura": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+      "AbilityCastRange": "1200",
+      "HasScepterUpgrade": "1",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_base_damage": "11 18 25 32",
+          "LinkedSpecialBonus": "special_bonus_unique_vengeful_spirit_2"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "aura_radius": "1200"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "illusion_damage_out_pct": "100"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "illusion_damage_in_pct": "100"
+        }
+      }
+    },
+    "vengefulspirit_nether_swap": {
+      "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_CUSTOM",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_CUSTOM",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "AbilityCastRange": "800 950 1100",
+      "AbilityCastPoint": "0.4",
+      "AbilityCooldown": "50 40 30",
+      "AbilityManaCost": "100 150 200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_radius": "700",
+          "RequiresScepter": "1"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "scepter_charge_reduction": "2",
+          "RequiresScepter": "1"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "damage_reduction": "30 40 50"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "damage_reduction_duration": "3"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "50"
+        }
+      }
+    },
+    "witch_doctor_maledict": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastRange": "575",
+      "AbilityCastPoint": "0.35 0.35 0.35 0.35",
+      "AbilityCooldown": "30 26 22 18",
+      "AbilityDuration": "12.0",
+      "AbilityDamage": "7 14 21 28",
+      "AbilityManaCost": "105 110 115 120",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "180",
+          "LinkedSpecialBonus": "special_bonus_unique_witch_doctor_6"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "abilityduration": ""
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_damage": "16 24 32 40",
+          "LinkedSpecialBonus": "special_bonus_unique_witch_doctor_7"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_damage_threshold": "100"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "ticks": "3",
+          "LinkedSpecialBonusField": "value2"
+        }
+      }
+    },
+    "witch_doctor_voodoo_restoration": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+      "AbilityCooldown": "0.0 0.0 0.0 0.0",
+      "AbilityManaCost": "35 40 45 50",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "mana_per_second": "8 12 16 20",
+          "LinkedSpecialBonus": "special_bonus_unique_witch_doctor_4",
+          "LinkedSpecialBonusOperation": "SPECIAL_BONUS_MULTIPLY",
+          "LinkedSpecialBonusField": "value"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "500"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "heal": "16 24 32 40"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "heal_interval": "0.33 0.33 0.33 0.33"
+        }
+      }
+    },
+    "witch_doctor_death_ward": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
+      "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NO_INVIS | DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE | DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "HasShardUpgrade": "1",
+      "HasScepterUpgrade": "1",
+      "AbilityCastRange": "600",
+      "AbilityCastPoint": "0.35 0.35 0.35",
+      "AbilityCooldown": "80.0",
+      "AbilityChannelTime": "8.0",
+      "AbilityManaCost": "200 200 200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "85 140 195",
+          "LinkedSpecialBonus": "special_bonus_unique_witch_doctor_5",
+          "CalculateSpellDamageTooltip": "0"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "attack_range_tooltip": "700",
+          "LinkedSpecialBonus": "special_bonus_unique_witch_doctor_1"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bounce_radius": "650 650 650",
+          "RequiresScepter": "1"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_lifesteal": "10",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "witch_doctor_voodoo_switcheroo": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+      "IsGrantedByShard": "1",
+      "HasShardUpgrade": "1",
+      "AbilityCastPoint": "0.1",
+      "AbilityCooldown": "40",
+      "AbilityManaCost": "150",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "2"
+        }
+      }
+    },
+    "weaver_time_lapse": {
+      "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
+      "AbilityCastRange": "500",
+      "HasScepterUpgrade": "1",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityCooldown": "70 55 40",
+      "AbilityManaCost": "150 75 0",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "cooldown_scepter": "20",
+          "RequiresScepter": "1"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "cast_range_tooltip_scepter": "500",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "faceless_void_time_walk": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+      "HasScepterUpgrade": "1",
+      "HasShardUpgrade": "1",
+      "AbilityCastRange": "0",
+      "AbilityCastPoint": "0.3",
+      "AbilityCooldown": "24 18 12 6",
+      "AbilityManaCost": "40",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "speed": "3000"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "range": "650"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "backtrack_duration": "2.0",
+          "LinkedSpecialBonus": "special_bonus_unique_faceless_void_7"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "radius_scepter": "350",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "faceless_void_time_dilation": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "AbilityCastPoint": "0.1",
+      "AbilityCooldown": "28 24 20 16",
+      "AbilityManaCost": "60 70 80 90",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "775"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "8 9 10 11"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "slow": "10"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "cooldown_percentage": "60"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "damage_per_stack": "10 11 12 13",
+          "LinkedSpecialBonus": "special_bonus_unique_faceless_void_6"
+        }
+      }
+    },
+    "faceless_void_chronosphere": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT",
+      "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastRange": "500",
+      "AbilityCastPoint": "0.35 0.35 0.35",
+      "AbilityCooldown": "160 150 140",
+      "AbilityManaCost": "150 225 300",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "500",
+          "LinkedSpecialBonus": "special_bonus_unique_faceless_void_2"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "4.0 4.5 5.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "vision_radius": "475"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_attack_speed": "0",
+          "LinkedSpecialBonus": "special_bonus_unique_faceless_void"
+        }
+      }
+    },
+    "luna_lucent_beam": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+      "HasShardUpgrade": "1",
+      "AbilityCastRange": "800",
+      "AbilityCastPoint": "0.4",
+      "AbilityCooldown": "9.0 8.0 7.0 6.0",
+      "AbilityManaCost": "90 100 110 120",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "stun_duration": "0.8"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "beam_damage": "75 150 225 300",
+          "LinkedSpecialBonus": "special_bonus_unique_luna_1"
+        }
+      }
+    },
+    "luna_eclipse": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "HasScepterUpgrade": "1",
+      "AbilityCastPoint": "0.5",
+      "AbilityCastRange": "0",
+      "AbilityDuration": "2.4 4.2 6.0",
+      "AbilityCooldown": "140.0 130 120",
+      "AbilityManaCost": "150 200 250",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "beams": "6 9 12"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "hit_count": "5"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "beam_interval": "0.6 0.6 0.6"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "beam_interval_scepter": "0.3"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "675"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "beams_scepter": "6 12 18",
+          "RequiresScepter": "1"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "hit_count_scepter": "6 12 18",
+          "RequiresScepter": "1"
+        },
+        "09": {
+          "var_type": "FIELD_FLOAT",
+          "duration_tooltip_scepter": "1.8 3.6 5.4",
+          "RequiresScepter": "1"
+        },
+        "10": {
+          "var_type": "FIELD_INTEGER",
+          "cast_range_tooltip_scepter": "2500",
+          "RequiresScepter": "1"
+        },
+        "11": {
+          "var_type": "FIELD_FLOAT",
+          "night_duration": "10.0"
+        }
+      }
+    }
+  },
+  "items_F": {
+    "item_aghanims_shard": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "ItemCost": "1400",
+      "ItemStockTime": "1",
+      "ItemStockMax": "1",
+      "ItemInitialStockTime": "1290.0"
+    },
+    "item_ultimate_scepter": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
+      "AbilityCastRange": "600",
+      "ItemCost": "4200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_all_stats": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_health": "175"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_mana": "175"
+        }
+      }
+    },
+    "item_blink": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "AbilityCastRange": "0",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "15.0",
+      "AbilityManaCost": "0",
+      "ItemCost": "2250",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "blink_range": "1200"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "blink_damage_cooldown": "3.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "blink_range_clamp": "960"
+        }
+      }
+    },
+    "item_black_king_bar": {
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityCooldown": "75",
+      "ItemCost": "4050",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_strength": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_damage": "24"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "9.0 8.0 7.0 6.0"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "max_level": "4"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "model_scale": "30"
+        }
+      }
+    }
+  },
+  "official_patch_729": {
+    "url": "https://www.dota2.com/datafeed/patchnotes?version=7.29&language=english",
+    "read_at_utc": "2026-10-15T10:22:13.353059+00:00",
+    "status": 200,
+    "bytes": 113399,
+    "sha256": "0d4494da56ea0aabde9ced3c992b4ec9b43769530d1c4d1ad2639073803ebc49",
+    "final_url": "https://www.dota2.com/datafeed/patchnotes?version=7.29&language=english",
+    "scope": "仅虚空假面相关英雄/技能/天赋条目；非全补丁审读",
+    "facts_summary_zh": "虚空W每个冷却10/11/12/13 DPS，冷却减速75%→60%，持续8/9/10/11等指定条目；数值沿7.30e再核。"
+  },
+  "official_patch_reuse": [
+    {
+      "version": "7.31",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english",
+      "cache": "mid-all-hero-screen-20261012\\patch-7.31.json",
+      "bytes": 130214,
+      "sha256": "9a5a76422eba02b2e45bf80c81450e9c7155d1a028cc59a8cfecf9cd10fdf28a",
+      "reuse": "本轮复读已保存官方响应，非新下载",
+      "read_scope": "仅六英雄5/20/30/41/48/63及魔晶相关条目，不审全补丁",
+      "facts_summary_zh": [
+        "物品609魔晶可于15分钟购买。",
+        "编织者神杖不再降低回溯冷却；VS魔晶改魔法箭弹跳/距离。"
+      ]
+    },
+    {
+      "version": "7.32",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.32&language=english",
+      "cache": "mid-all-hero-screen-20261012\\patch-7.32.json",
+      "bytes": 92953,
+      "sha256": "ed1e0611aaf132a4f870209250781ca31e57178c1a56b20373c3ed0404006c0d",
+      "reuse": "本轮复读已保存官方响应，非新下载",
+      "read_scope": "仅六英雄5/20/30/41/48/63及魔晶相关条目，不审全补丁",
+      "facts_summary_zh": [
+        "巫医恢复术新增敌方伤害，转换持续三秒；具体后期参数另读日期快照。",
+        "编织者魔晶改缩地六秒标记；露娜魔晶改月光加攻击；新天赋明确不作用于月蚀月光。"
+      ]
+    },
+    {
+      "version": "7.33",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english",
+      "cache": "mid-all-hero-screen-20261012\\patch-7.33.json",
+      "bytes": 169457,
+      "sha256": "b65cb135d43236e8816546e661a58aaf30de3ec7f737a201905590e041f17d04",
+      "reuse": "本轮复读已保存官方响应，非新下载",
+      "read_scope": "仅六英雄5/20/30/41/48/63及魔晶相关条目，不审全补丁",
+      "facts_summary_zh": [
+        "VS成为全才并调整成长/光环/眩晕；本轮不套后续属性转攻击系数。",
+        "罩内技能及物品冷却冻结，时间膨胀持续相应延长。"
+      ]
+    },
+    {
+      "version": "7.34",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.34&language=english",
+      "cache": "mid-2023-resource-research-20261013\\patch-7.34.json",
+      "bytes": 82566,
+      "sha256": "6b314a1c829f67f28bdcfda3572d8a4df801e41ec761a11945c425e378671740",
+      "reuse": "本轮复读已保存官方响应，非新下载",
+      "read_scope": "仅六英雄5/20/30/41/48/63及魔晶相关条目，不审全补丁",
+      "facts_summary_zh": [
+        "冰女大招移动/攻击/施法许可转神杖，魔晶改新分身。",
+        "巫医守卫改纯粹/穿透减益免疫，转换耗蓝150→200；编织者魔晶改离开缩地后触发，露娜魔晶改环绕月刃。"
+      ]
+    },
+    {
+      "version": "7.34b",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.34b&language=english",
+      "cache": "mid-2023-resource-research-20261013\\patch-7.34b.json",
+      "bytes": 11736,
+      "sha256": "9f4b8f6efad3e0e97f6dca63884bc223f6e3314009f4518d8d59fea39f191c54",
+      "reuse": "本轮复读已保存官方响应，非新下载",
+      "read_scope": "仅六英雄5/20/30/41/48/63及魔晶相关条目，不审全补丁",
+      "facts_summary_zh": [
+        "巫医守卫射程700→600；露娜月蚀冷却140/130/120→110。"
+      ]
+    }
+  ],
+  "archive_20220825": {
+    "scope": "按实际目录恢复2022-08-25归档的技能定义，仅巫医五块；不认证赛事客户端或所有字母版本",
+    "prior_failure": "按旧路径过滤的最后提交是2022-05-22删除/迁移节点，raw404；未当作7.32数据。",
+    "commit": "eddb9ca3d99f43ea69aa455b80fa62126a4405cd",
+    "commit_time": "2022-08-25T07:20:54Z",
+    "dota_entries": [
+      "bin",
+      "cfg",
+      "dota.fgd",
+      "gameinfo.gi",
+      "gameinfo_branchspecific.gi",
+      "itembuilds",
+      "maps",
+      "models_gamedata.fgd",
+      "pak01_dir.txt",
+      "pak01_dir",
+      "panorama",
+      "readonly_tools_asset_info.txt",
+      "replays",
+      "resource",
+      "scripts",
+      "shaders_pcgl_dir.txt",
+      "shaders_vulkan_dir.txt",
+      "steam.inf",
+      "tools",
+      "vdata_dota.fgd"
+    ],
+    "selected_blocks": {
+      "witch_doctor_paralyzing_cask": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "AbilityCastRange": "600",
+        "AbilityCastPoint": "0.35 0.35 0.35 0.35",
+        "AbilityCooldown": "20.0 18.0 16.0 14.0",
+        "AbilityManaCost": "80 100 120 140"
+      },
+      "witch_doctor_voodoo_restoration": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+        "AbilityCooldown": "0.0 0.0 0.0 0.0",
+        "AbilityManaCost": "35 40 45 50",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "mana_per_second": "8 12 16 20",
+            "LinkedSpecialBonus": "special_bonus_unique_witch_doctor_4",
+            "LinkedSpecialBonusOperation": "SPECIAL_BONUS_MULTIPLY",
+            "LinkedSpecialBonusField": "value"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "500 550 600 650"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "heal": "10 20 30 40"
+          },
+          "04": {
+            "var_type": "FIELD_FLOAT",
+            "heal_interval": "0.33 0.33 0.33 0.33"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "enemy_damage_pct": "100"
+          }
+        }
+      },
+      "witch_doctor_maledict": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "AbilityCastRange": "575",
+        "AbilityCastPoint": "0.35 0.35 0.35 0.35",
+        "AbilityCooldown": "30 26 22 18",
+        "AbilityDamage": "12 18 24 30",
+        "AbilityManaCost": "105 110 115 120",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "180",
+            "LinkedSpecialBonus": "special_bonus_unique_witch_doctor_6"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_damage": "16 24 32 40",
+            "LinkedSpecialBonus": "special_bonus_unique_witch_doctor_7"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_damage_threshold": "100"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "ticks": "3",
+            "LinkedSpecialBonusField": "value2"
+          }
+        }
+      },
+      "witch_doctor_death_ward": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+        "AbilityCastRange": "600",
+        "AbilityCastPoint": "0.35 0.35 0.35",
+        "AbilityCooldown": "60.0",
+        "AbilityChannelTime": "8.0",
+        "AbilityManaCost": "200 200 200",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "damage": "85 140 195",
+            "LinkedSpecialBonus": "special_bonus_unique_witch_doctor_5",
+            "CalculateSpellDamageTooltip": "0"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "attack_range_tooltip": "700",
+            "LinkedSpecialBonus": "special_bonus_unique_witch_doctor_1"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "bounce_radius": "650 650 650",
+            "RequiresScepter": "1"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "scepter_lifesteal": "10",
+            "RequiresScepter": "1"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_accuracy": "50"
+          }
+        }
+      },
+      "witch_doctor_voodoo_switcheroo": {
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+        "AbilityCastPoint": "0.1",
+        "AbilityCooldown": "40",
+        "AbilityManaCost": "150",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "3"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "attack_speed_reduction": "30"
+          }
+        }
+      }
+    },
+    "sources": [
+      {
+        "url": "https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/commits?until=2022-08-25T23:59:59Z&per_page=1",
+        "status": 200,
+        "bytes": 4771,
+        "sha256": "7189f2c3709dc19eb8a828defc984f5ece2c6269f52eda324c9afa7eb6a66857",
+        "read_at_utc": "2026-10-15T10:39:55.998806+00:00",
+        "file": "732-global-commit.json"
+      },
+      {
+        "url": "https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/contents/game/dota?ref=eddb9ca3d99f43ea69aa455b80fa62126a4405cd",
+        "status": 200,
+        "bytes": 20611,
+        "sha256": "a9c3036ea5b0877c07999623f587df8395a169afbf8d0b0c28dde47b1a5bc1f3",
+        "read_at_utc": "2026-10-15T10:39:57.162620+00:00",
+        "file": "732-dota-dir.json"
+      },
+      {
+        "url": "https://api.github.com/repos/SteamDatabase/GameTracking-Dota2/contents/game/dota/pak01_dir/scripts/npc?ref=eddb9ca3d99f43ea69aa455b80fa62126a4405cd",
+        "status": 200,
+        "bytes": 16718,
+        "sha256": "1396cd66e1ba826fce431ff56951ad15cce9299ff962d214bc6ca2a55b777bcc",
+        "read_at_utc": "2026-10-15T10:39:58.315893+00:00",
+        "file": "732-npc-dir.json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/SteamTracking/GameTracking-Dota2/eddb9ca3d99f43ea69aa455b80fa62126a4405cd/game/dota/pak01_dir/scripts/npc/npc_abilities.txt",
+        "status": 200,
+        "bytes": 3164459,
+        "sha256": "b8b03ef80aa734bf021e8c8d8e2f400c7e4aa4092650c8636351a32bd5e60795",
+        "read_at_utc": "2026-10-15T10:40:03.108392+00:00",
+        "file": "732-fixed-abilities.txt"
+      }
+    ]
+  },
+  "public_primary_text": [
+    {
+      "url": "https://www.reddit.com/r/DotA2/comments/n2rmtx/",
+      "title": "Shard on CM allows you to avoid some disables while casting Freezing Field",
+      "published_day_reported": "2021-05-01/02，搜索索引日；正文本轮显示相对日期",
+      "read_scope": "原帖/相关回复，尤其93—95、122—141、166；未看嵌入视频或完整568行",
+      "class": "Q",
+      "summary_zh": "玩家解释大招持续与人物仍被根缠/嘲讽分开，并指出决斗有额外沉默/禁物品；不是11月所有控制的实机认证。"
+    },
+    {
+      "url": "https://www.reddit.com/r/TrueDoTA2/comments/pozkb2/",
+      "title": "4 Crystal Maiden",
+      "published_day_reported": "2021-09-15，搜索索引日",
+      "author": "Josh-Pub（原帖）",
+      "read_scope": "19—24原帖及53—108相关评论；未逐条读全部645行，水平/自报胜率未认证",
+      "class": "Q",
+      "summary_zh": "同期已有四号CM经济、跳/BKB、移动与耗蓝的讨论，不能称本轮发明，也不能由评论推出中路职业强度。"
+    },
+    {
+      "url": "https://www.reddit.com/r/TrueDoTA2/comments/l74tt4/",
+      "title": "As an offlaner how the FUCK do you beat witch doctor?",
+      "published_day_reported": "2021-01-28及后续评论，搜索索引日",
+      "read_scope": "搜索返回的原帖/回复文字与回复定位，治疗、距离/单人接战讨论；非视频或全样本核验",
+      "class": "Q",
+      "summary_zh": "同期已有回复、分开双方和控制接近的对策；用来反对把咒术当无条件必杀，不作任何精确胜率或段位认定。"
+    }
+  ],
+  "models_H": {
+    "cm_permission": {
+      "level": 8,
+      "skill_points": [
+        4,
+        2,
+        1,
+        1
+      ],
+      "mana_first_Q_W_R": 510,
+      "items_shard_bkb": 5450,
+      "with_blink": 7700,
+      "R_duration": 10,
+      "first_BKB_duration": 9,
+      "limit": "公开Q不等11月引擎认证；持续不等免控，随机爆炸不全中。"
+    },
+    "maledict_timing": {
+      "starting_net_HP_loss": 400,
+      "effective_MR": 0.25,
+      "raw_ratio": 0.4,
+      "bursts": [
+        120.0,
+        156.0,
+        202.8
+      ],
+      "sum": 478.8,
+      "heal_200_before_first": [
+        60.0,
+        78.0,
+        101.4
+      ],
+      "heal_sum": 239.4,
+      "limits": "既定缺口爆发分量的递推示意；后续净变化为0、既往爆发纳入生命差是共同前提，不是实测总伤害。"
+    },
+    "venge_second_body": {
+      "item": 4200,
+      "level": 8,
+      "skill_points": [
+        4,
+        2,
+        1,
+        1
+      ],
+      "one_Q_W_R_mana": 260,
+      "states": [
+        "正常本体任务",
+        "死亡后幻象留场或转下一任务",
+        "保住幻象的有用位置",
+        "复活接替"
+      ],
+      "limits": "不推全部物品可用、无限两命或免费刷新。"
+    },
+    "weaver_resource": {
+      "effect_time": 5,
+      "snapshot_time": 0,
+      "cast_point": 0.3,
+      "old_HP_MP": [
+        1600,
+        1000
+      ],
+      "before_HP_MP": [
+        700,
+        250
+      ],
+      "restored_HP_MP": [
+        900,
+        750
+      ],
+      "caster_mana": 150,
+      "cast_range": 500,
+      "scepter_cooldown_730e": 20,
+      "limits": "位置/生命/法力回溯，冷却/金钱/经验不回；7.31停止20秒迁移。"
+    },
+    "void_next_cycle": {
+      "cooldowns_remaining": [
+        4,
+        4
+      ],
+      "assumed_progress_rate": 0.4,
+      "continuous_recovery_seconds": 10,
+      "DPS_per_cooldown": 13,
+      "first_4_seconds_raw_budget": 104,
+      "level": 10,
+      "skill_points": [
+        4,
+        4,
+        1,
+        1
+      ],
+      "mana_Q_W_R": 280,
+      "limits": "无额外十级天赋；DPS与进度是连续示意，不认证首尾跳和动态计数。"
+    },
+    "luna_carrier": {
+      "level": 7,
+      "skill_points": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "Aghs": 4200,
+      "R1_beams": 6,
+      "normal_per_target_cap": 5,
+      "beam_damage": 300,
+      "MR_H": 0.25,
+      "Aghs_effective": 1350,
+      "normal_effective": 1125,
+      "increment": 225,
+      "Q_plus_R_mana": 270,
+      "limits": "无其他竞争对象，持续合法覆盖；远距R不能同时当本体800射程Q命中同人。"
+    },
+    "wd_20220825": {
+      "level": 7,
+      "skill_points": [
+        1,
+        4,
+        1,
+        1
+      ],
+      "mana_fixed": 435,
+      "W_mana_per_second": 20,
+      "W_uptime_H": 5,
+      "total_mana": 535,
+      "maledict_ratio_rank1": 0.16,
+      "limits": "恢复术主升与四级40%咒术不能拼；不推未列W伤害类型。"
+    },
+    "void_733_after_chrono": {
+      "W_duration_H": 11,
+      "cooldown_remaining_H": 4,
+      "progress_rate_H": 0.4,
+      "chrono_start_H": 1,
+      "chrono_duration_H": 3.75,
+      "cooldown_remaining_after": 3.6,
+      "continuous_ready_time_H": 13.75,
+      "W_end_time_H": 14.75,
+      "limits": "指定7.33冻结与延长规则；其他参数为场景输入，非全期无改动证明；不加必中特定DPS。"
+    }
+  },
+  "limits": [
+    "没有新增比赛API、录像/Replay、游戏实测或当期普及率。",
+    "公开可为进阶组件，普通机制/完整用途/当期普及分别判断，不声称本项目首创。",
+    "H可按D54入相容X，不要求作者或助手职业操作认证；不能越过已知规则矛盾。",
+    "没有新增具体比赛、比分、长期英雄或正文采用。"
+  ]
+}

@@ -1,0 +1,3191 @@
+{
+  "id": "sources:mid-role-allocation-20261015",
+  "date_local": "2026-10-15",
+  "timezone": "America/Los_Angeles",
+  "scope": "四候选整套资源/分工比较，继续按同一反例核原Lesh/Puck/Razor/Invoker四主干；纠正Pugna旧回血与Medusa不施法对照，不改剧情。",
+  "read_at_utc": "2026-10-16T06:10:35.086333+00:00",
+  "fixed_730e_snapshot": "cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529",
+  "fixed_inputs": [
+    {
+      "id": "AW-abilities",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "bytes": 3099817,
+      "cache": "mid-companion-research-20261014\\fresh-AW-abilities.txt",
+      "origin": "本轮复用既有固定响应并重新核哈希；不重报网络取得"
+    },
+    {
+      "id": "AW-localization",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "bytes": 1235305,
+      "cache": "mid-companion-research-20261014\\fresh-AW-localization.txt",
+      "origin": "本轮复用既有固定响应并重新核哈希；不重报网络取得"
+    },
+    {
+      "id": "AW-items",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "bytes": 621009,
+      "cache": "mid-companion-research-20261014\\fresh-AW-items.txt",
+      "origin": "本轮复用既有固定响应并重新核哈希；不重报网络取得"
+    },
+    {
+      "id": "AR-heroes",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_heroes.txt",
+      "sha256": "c53ff35869b5678a9ef4c5b032643be379eefa536695644dbf989644c851b181",
+      "bytes": 634652,
+      "cache": "mid-persistent-units-20261012\\npc_heroes.txt",
+      "origin": "本轮复用既有固定响应并重新核哈希；不重报网络取得"
+    },
+    {
+      "id": "U03",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_units.txt",
+      "bytes": 871696,
+      "sha256": "7a31c1b172a8e4e6ab6afd35ae97044c94d77460e222a317ab2472e5db87a8b7",
+      "cache": "mid-persistent-units-20261012/npc_units.txt",
+      "origin": "本轮复用既有固定响应并重新核哈希；不重报网络取得"
+    }
+  ],
+  "responses": [
+    {
+      "version": "7.28",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.28&language=english",
+      "status": 200,
+      "bytes": 151,
+      "sha256": "c37d1163c81efa78aee8ce6ef8eff57c8cc74f0ad9e9381481692e2040ccb65d",
+      "read_at_utc": "2026-10-16T06:12:17.120461+00:00",
+      "cache": "mid-role-allocation-20261015/patch-7.28.json",
+      "read_scope": "仅入口元数据，不含英雄/通用改动；随后读取官网mistwoods实际段落"
+    },
+    {
+      "version": "7.30",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.30&language=english",
+      "status": 200,
+      "bytes": 82295,
+      "sha256": "19e8b45247517db57af70f85510c7dd6355b7a93fde92a85d469e5b9ac59b2bd",
+      "read_at_utc": "2026-10-16T06:12:17.310801+00:00",
+      "cache": "mid-role-allocation-20261015/patch-7.30.json",
+      "read_scope": "仅Jakiro/Pugna/Vengeful Spirit/Medusa四英雄条目；不称完整补丁或中间字母版核验"
+    },
+    {
+      "version": "7.33",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english",
+      "status": 200,
+      "bytes": 169457,
+      "sha256": "b65cb135d43236e8816546e661a58aaf30de3ec7f737a201905590e041f17d04",
+      "read_at_utc": "2026-10-16T06:12:17.247818+00:00",
+      "cache": "mid-role-allocation-20261015/patch-7.33.json",
+      "read_scope": "仅Jakiro/Pugna/Vengeful Spirit/Medusa四英雄条目；不称完整补丁或中间字母版核验"
+    },
+    {
+      "url": "https://www.dota2.com/mistwoods",
+      "status": 200,
+      "bytes": 151002,
+      "sha256": "b3848e765608cbc11e14aeb24f426feaccb6c8b3566126a9c1b712857a5b7578",
+      "read_at_utc": "2026-10-16T06:14:16.959277+00:00",
+      "read_scope": "仅Vengeful Spirit重做段及7.28魔晶起购时间；API仅返回入口元数据，不算完整补丁读取",
+      "cache": "mid-role-allocation-20261015/mistwoods.html"
+    }
+  ],
+  "read_scope": {
+    "abilities": "程序提取十二英雄64块（含四调用技能）；实际解释四候选、四主干与DK/Io/SD替代/伙伴所需字段/说明。TA只作资源核对，不新增TA结论；程序抽取不当全块运行审读。",
+    "items": "18物品条目提取成本/恢复、位移与施距字段；实际推导使用文中明确项，魂戒/吹风仅作相邻投入核对，不称全物品交互验证。",
+    "units": "两阵营普通近战/远程兵四块基础赏金、经验和生命，不含升级/攻城车；均等经验分配、无反补、范围等是模型前提。",
+    "localization": "四候选与四主干、Io/SD伙伴所需指定说明，含EMP按实际烧英雄法力回50%；本轮读取范围不包含所有隐含物品/引擎行为。",
+    "official": "7.28实际页面仅VS重做与魔晶起购时间，7.30/7.33各四英雄指定条目；7.31的Pugna条目复用前一来源，不重报本轮HTTP。"
+  },
+  "unit_fields_F": {
+    "npc_dota_creep_goodguys_melee": {
+      "BountyXP": "57",
+      "BountyGoldMin": "34",
+      "BountyGoldMax": "39",
+      "StatusHealth": "550"
+    },
+    "npc_dota_creep_goodguys_ranged": {
+      "BountyXP": "69",
+      "BountyGoldMin": "43",
+      "BountyGoldMax": "52",
+      "StatusHealth": "300"
+    },
+    "npc_dota_creep_badguys_melee": {
+      "BountyXP": "57",
+      "BountyGoldMin": "34",
+      "BountyGoldMax": "39",
+      "StatusHealth": "550"
+    },
+    "npc_dota_creep_badguys_ranged": {
+      "BountyXP": "69",
+      "BountyGoldMin": "43",
+      "BountyGoldMax": "52",
+      "StatusHealth": "300"
+    }
+  },
+  "selected_item_fields_F": {
+    "item_blink": {
+      "AbilityCooldown": "15.0",
+      "AbilityManaCost": "0",
+      "ItemCost": "2250",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "blink_range": "1200"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "blink_damage_cooldown": "3.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "blink_range_clamp": "960"
+        }
+      }
+    },
+    "item_force_staff": {
+      "AbilityCooldown": "23.0",
+      "AbilityManaCost": "100",
+      "ItemCost": "2200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_intellect": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_health": "150"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "push_length": "600"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "enemy_cast_range": "850"
+        }
+      }
+    },
+    "item_aether_lens": {
+      "ItemCost": "2275",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_mana": "300"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "bonus_mana_regen": "2.5"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "cast_range_bonus": "225"
+        }
+      }
+    },
+    "item_black_king_bar": {
+      "AbilityCooldown": "75",
+      "ItemCost": "4050",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_strength": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_damage": "24"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "9.0 8.0 7.0 6.0"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "max_level": "4"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "model_scale": "30"
+        }
+      }
+    },
+    "item_ultimate_scepter": {
+      "ItemCost": "4200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_all_stats": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_health": "175"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_mana": "175"
+        }
+      }
+    },
+    "item_aghanims_shard": {
+      "ItemCost": "1400"
+    },
+    "item_energy_booster": {
+      "ItemCost": "800",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_mana": "250"
+        }
+      }
+    },
+    "item_arcane_boots": {
+      "AbilityCooldown": "55.0",
+      "AbilityManaCost": "0",
+      "ItemCost": "1300",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_movement": "45"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_mana": "250"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "replenish_amount": "175"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "replenish_radius": "1200"
+        }
+      }
+    },
+    "item_boots": {
+      "ItemCost": "500",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_movement_speed": "45"
+        }
+      }
+    },
+    "item_null_talisman": {
+      "ItemCost": "505",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_intellect": "5"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_strength": "2"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_agility": "2"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_spell_amp": "3"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "bonus_mana_regen": "0.6"
+        }
+      }
+    },
+    "item_magic_wand": {
+      "AbilityCooldown": "13.0",
+      "ItemCost": "450",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "max_charges": "20"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "charge_radius": "1200"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_all_stats": "3"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "restore_per_charge": "15"
+        }
+      }
+    },
+    "item_clarity": {
+      "ItemCost": "50",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "mana_regen": "6"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "buff_duration": "25"
+        }
+      }
+    },
+    "item_enchanted_mango": {
+      "ItemCost": "65",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "hp_regen": "0.6"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "replenish_amount": "100"
+        }
+      }
+    },
+    "item_bottle": {
+      "AbilityCooldown": "0.5",
+      "ItemCost": "675",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "health_restore": "110"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "mana_restore": "60"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "health_restore_pct": "0"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "mana_restore_pct": "0"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "restore_time": "2.7"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "max_charges": "3"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "break_on_hero_damage": "1"
+        },
+        "08": {
+          "var_type": "FIELD_FLOAT",
+          "rune_expire_time": "90.0"
+        }
+      }
+    },
+    "item_tpscroll": {
+      "AbilityCooldown": "80.0",
+      "AbilityManaCost": "75",
+      "ItemCost": "100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "minimun_distance": "70"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "maximum_distance": "800"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "vision_radius": "200"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "tooltip_channel_time": "3.0"
+        }
+      }
+    },
+    "item_recipe_ultimate_scepter": {
+      "ItemCost": "0"
+    },
+    "item_soul_ring": {
+      "AbilityCooldown": "25.0",
+      "AbilityManaCost": "0",
+      "ItemCost": "680",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_strength": "6"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "bonus_armor": "2"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "health_sacrifice": "170"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "mana_gain": "150"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "duration": "10"
+        }
+      }
+    },
+    "item_cyclone": {
+      "AbilityCooldown": "23.0",
+      "AbilityManaCost": "175",
+      "ItemCost": "2725",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_intellect": "10"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "bonus_mana_regen": "2.5"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_movement_speed": "20"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "cyclone_duration": "2.5"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "tooltip_drop_damage": "50"
+        }
+      }
+    }
+  },
+  "selected_ability_fields_F": {
+    "jakiro": {
+      "jakiro_dual_breath": {
+        "fields": {
+          "AbilityCastRange": "750",
+          "AbilityCastPoint": "0.35",
+          "AbilityCooldown": "10.0 10.0 10.0 10.0",
+          "AbilityDamage": "0",
+          "AbilityManaCost": "140 150 160 170",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "start_radius": "225"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "end_radius": "275"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "range": "750 750 750 750",
+              "LinkedSpecialBonus": "special_bonus_unique_jakiro_5"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "speed": "1050"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "fire_delay": "0.2"
+            },
+            "06": {
+              "var_type": "FIELD_INTEGER",
+              "burn_damage": "20 40 60 80",
+              "LinkedSpecialBonus": "special_bonus_unique_jakiro_2"
+            },
+            "07": {
+              "var_type": "FIELD_INTEGER",
+              "slow_movement_speed_pct": "-28 -32 -36 -40"
+            },
+            "08": {
+              "var_type": "FIELD_INTEGER",
+              "slow_attack_speed_pct": "-28 -32 -36 -40"
+            },
+            "09": {
+              "var_type": "FIELD_INTEGER",
+              "speed_fire": "1050"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_jakiro_dual_breath_Description": "An icy blast followed by a wave of fire launches out in a path in front of Jakiro. The ice slows enemies, while the fire delivers damage over time.",
+          "DOTA_Tooltip_ability_jakiro_dual_breath_Note0": "Can hit units up to 1025 range away.",
+          "DOTA_Tooltip_ability_jakiro_dual_breath_Note1": "Has a %fire_delay% second interval between each breath."
+        }
+      },
+      "jakiro_ice_path": {
+        "fields": {
+          "AbilityCastRange": "1200",
+          "AbilityCastPoint": "0.65",
+          "AbilityCooldown": "12.0 11.0 10.0 9.0",
+          "AbilityDamage": "0",
+          "AbilityManaCost": "100",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "path_delay": "0.5"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "1 1.5 2.0 2.5",
+              "LinkedSpecialBonus": "special_bonus_unique_jakiro"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "path_radius": "150"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "damage": "50"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_jakiro_ice_path_Description": "Creates a path of ice that stuns and damages enemies that touch it.",
+          "DOTA_Tooltip_ability_jakiro_ice_path_Note0": "It takes %path_delay% seconds for the path to reach its full extent."
+        }
+      },
+      "jakiro_liquid_fire": {
+        "fields": {
+          "AbilityCooldown": "20 15 10 4",
+          "AbilityCastRange": "600",
+          "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "slow_attack_speed_pct": "-30 -40 -50 -60",
+              "LinkedSpecialBonus": "special_bonus_unique_jakiro_4"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "300"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "damage": "15 20 25 30",
+              "LinkedSpecialBonus": "special_bonus_unique_jakiro_8"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_jakiro_liquid_fire_Description": "Jakiro burns his enemies in an area of effect with fire added to his attack, while slowing their attacks.",
+          "DOTA_Tooltip_ability_jakiro_liquid_fire_Note0": "Works on both units and buildings.",
+          "DOTA_Tooltip_ability_jakiro_liquid_fire_abilitydraft_note": "Shard: Does <i>NOT</i> grants Liquid Frost ability."
+        }
+      },
+      "jakiro_liquid_ice": {
+        "fields": {
+          "HasShardUpgrade": "1",
+          "AbilityCooldown": "12",
+          "AbilityCastRange": "600",
+          "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "movement_slow": "20"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "base_damage": "20"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "pct_health_damage": "2.5"
+            },
+            "04": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "4.0"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "300"
+            },
+            "06": {
+              "var_type": "FIELD_FLOAT",
+              "stun_duration": "0.4"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_jakiro_liquid_ice_Description": "Stuns enemies for %stun_duration% seconds and applies a frost debuff that slows enemy movement speed by %movement_slow%%% and take %base_damage% plus %pct_health_damage%%% of their max health per second as damage for %duration% seconds."
+        }
+      },
+      "jakiro_macropyre": {
+        "fields": {
+          "HasScepterUpgrade": "1",
+          "AbilityCastRange": "1400",
+          "AbilityCastPoint": "0.55",
+          "AbilityCooldown": "80 70 60",
+          "AbilityManaCost": "220 330 440",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "damage": "110 155 200",
+              "LinkedSpecialBonus": "special_bonus_unique_jakiro_7"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "cast_range": "1400"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "path_radius": "260"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "duration": "10"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "burn_interval": "0.5 0.5 0.5"
+            },
+            "06": {
+              "var_type": "FIELD_FLOAT",
+              "linger_duration": "2"
+            },
+            "07": {
+              "var_type": "FIELD_INTEGER",
+              "scepter_bonus_range": "400",
+              "RequiresScepter": "1"
+            },
+            "08": {
+              "var_type": "FIELD_FLOAT",
+              "scepter_bonus_duration": "20",
+              "RequiresScepter": "1"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_jakiro_macropyre_Description": "Jakiro exhales a wide line of lasting flames, which deals damage per second to any enemy units caught in the fire.",
+          "DOTA_Tooltip_ability_jakiro_macropyre_scepter_description": "Increases Macropyre distance by +400 range, duration by +20 seconds and causes it to become Pure damage and pierce Spell Immunity.",
+          "DOTA_Tooltip_ability_jakiro_macropyre_Note0": "Units hit by Macropyre will continue to be affected after they leave the area for %linger_duration% additional seconds."
+        }
+      }
+    },
+    "pugna": {
+      "pugna_nether_blast": {
+        "fields": {
+          "AbilityCastRange": "500",
+          "AbilityCastPoint": "0.2 0.2 0.2 0.2",
+          "AbilityCooldown": "5",
+          "AbilityManaCost": "85 105 125 145",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "structure_damage_mod": "0.5"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "delay": "0.8"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "400"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "blast_damage": "100 175 250 325",
+              "LinkedSpecialBonus": "special_bonus_unique_pugna_2"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_pugna_nether_blast_Description": "An exploding pulse deals damage to enemies and structures in the area.  Deals half damage to structures.",
+          "DOTA_Tooltip_ability_pugna_nether_blast_Note0": "Damage is delayed by %delay% seconds."
+        }
+      },
+      "pugna_decrepify": {
+        "fields": {
+          "AbilityCastRange": "400 500 600 700",
+          "AbilityCastPoint": "0.2 0.2 0.2 0.2",
+          "AbilityCooldown": "15.0 12.0 9.0 6.0",
+          "AbilityManaCost": "60",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_spell_damage_pct_allies": "-25"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_movement_speed_allies": "0"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_spell_damage_pct": "-30 -40 -50 -60"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_movement_speed": "-30 -40 -50 -60"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "abilityduration": "",
+              "LinkedSpecialBonus": "special_bonus_unique_pugna_5"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_pugna_decrepify_Description": "A powerful banishing spell that slows a unit and renders it unable to attack or be attacked. Afflicted units take extra magic damage.",
+          "DOTA_Tooltip_ability_pugna_decrepify_Note0": "Only magical and pure damage can affect a unit under the effects of Decrepify.",
+          "DOTA_Tooltip_ability_pugna_decrepify_Note1": "Doesn't slow allied units.",
+          "DOTA_Tooltip_ability_pugna_decrepify_Note2": "Can be used on your Nether Ward."
+        }
+      },
+      "pugna_nether_ward": {
+        "fields": {
+          "AbilityCastPoint": "0.2 0.2 0.2 0.2",
+          "AbilityCastRange": "150",
+          "AbilityCooldown": "35.0 35.0 35.0 35.0",
+          "AbilityManaCost": "80",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "1600"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "base_damage": "50"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "mana_multiplier": "1.0 1.25 1.50 1.75",
+              "LinkedSpecialBonus": "special_bonus_unique_pugna_3"
+            },
+            "04": {
+              "var_type": "FIELD_FLOAT",
+              "mana_regen": "0"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "attacks_to_destroy_tooltip": "4 4 4 4",
+              "LinkedSpecialBonus": "special_bonus_unique_pugna_6"
+            },
+            "06": {
+              "var_type": "FIELD_INTEGER",
+              "mana_drained_per_attack": "5 6 7 8"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_pugna_nether_ward_Description": "Pugna places a Nether Ward at the target location. The ward will fire at any enemy hero who casts a spell dealing base damage plus the damage multiplier of the mana spent by the enemy hero. Nether Ward heals 25% of its total health every time it triggers.",
+          "DOTA_Tooltip_ability_pugna_nether_ward_Note0": "Nether Ward deals damage before the actual spell is cast, so if the caster dies the spell will have no effect.",
+          "DOTA_Tooltip_ability_pugna_nether_ward_Note1": "Nether Ward can be decrepified.",
+          "DOTA_Tooltip_ability_pugna_nether_ward_Note2": "Illusions and creeps deal 25% damage to Nether Ward."
+        }
+      },
+      "pugna_life_drain": {
+        "fields": {
+          "HasShardUpgrade": "1",
+          "HasScepterUpgrade": "1",
+          "AbilityCastRange": "700",
+          "AbilityCastPoint": "0.2 0.2 0.2",
+          "AbilityChannelTime": "10.0",
+          "AbilityCooldown": "7",
+          "AbilityManaCost": "125 175 225",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "health_drain": "150 225 300",
+              "CalculateSpellDamageTooltip": "1"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "scepter_health_drain": "250 325 400",
+              "RequiresScepter": "1"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "tick_rate": "0.25 0.25 0.25"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "drain_buffer": "200"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "scepter_cooldown": "0",
+              "RequiresScepter": "1"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_pugna_life_drain_Description": "CHANNELED - When cast on an enemy, Pugna drains health from the target enemy unit to heal himself and granting vision over the target. If Pugna has full HP, and the enemy target is a Hero, Life Drain will restore mana instead.\\n\\nWhen cast on an ally, Pugna will drain his own health into his ally.",
+          "DOTA_Tooltip_ability_pugna_life_drain_shard_description": "For every 1.5 seconds of channel, another secondary Life Drain is created targeting another random enemy hero.",
+          "DOTA_Tooltip_ability_pugna_life_drain_scepter_description": "Removes cooldown and increases damage.",
+          "DOTA_Tooltip_ability_pugna_life_drain_Note0": "Health gained depends on the actual damage dealt.",
+          "DOTA_Tooltip_ability_pugna_life_drain_Note1": "Illusions are destroyed on the first tick of damage."
+        }
+      }
+    },
+    "vengefulspirit": {
+      "vengefulspirit_magic_missile": {
+        "fields": {
+          "AbilityCastRange": "575 600 625 650",
+          "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+          "AbilityCooldown": "12 11 10 9",
+          "AbilityManaCost": "100 110 120 130",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "magic_missile_speed": "1350"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "magic_missile_stun": "1.4 1.5 1.6 1.7"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "magic_missile_damage": "90 180 270 360",
+              "LinkedSpecialBonus": "special_bonus_unique_vengeful_spirit_1"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_vengefulspirit_magic_missile_Description": "Fires a magic missile at an enemy unit, stunning and dealing damage."
+        }
+      },
+      "vengefulspirit_wave_of_terror": {
+        "fields": {
+          "HasShardUpgrade": "1",
+          "AbilityCastRange": "1400",
+          "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+          "AbilityCooldown": "16 14 12 10",
+          "AbilityDamage": "70 90 110 130",
+          "AbilityManaCost": "25 30 35 40",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "wave_speed": "2000.0"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "wave_width": "325"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "armor_reduction": "-3 -4 -5 -6",
+              "LinkedSpecialBonus": "special_bonus_unique_vengeful_spirit_4"
+            },
+            "04": {
+              "var_type": "FIELD_FLOAT",
+              "vision_aoe": "350"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "vision_duration": "4"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_vengefulspirit_wave_of_terror_Description": "Vengeful Spirit lets loose a wicked cry, weakening the armor of enemies and giving vision of the path ahead.",
+          "DOTA_Tooltip_ability_vengefulspirit_wave_of_terror_shard_description": "Wave of Terror steals 20%% of enemy hero base damage and base armor, granting it to Vengeful Spirit for the debuff duration."
+        }
+      },
+      "vengefulspirit_command_aura": {
+        "fields": {
+          "AbilityCastRange": "1200",
+          "HasScepterUpgrade": "1",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_base_damage": "11 18 25 32",
+              "LinkedSpecialBonus": "special_bonus_unique_vengeful_spirit_2"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "aura_radius": "1200"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "illusion_damage_out_pct": "100"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "illusion_damage_in_pct": "100"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_vengefulspirit_command_aura_Description": "Vengeful Spirit's presence increases the damage of nearby friendly heroes.",
+          "DOTA_Tooltip_ability_vengefulspirit_command_aura_scepter_description": "Upon death, creates a strong illusion of Vengeful Spirit that deals and takes 100%% damage and can cast all of her spells. Illusion has 12%% movement speed bonus. If the illusion is alive when Vengeful Spirit respawn, she will take its place. XP earned by her illusion is given to her.",
+          "DOTA_Tooltip_ability_vengefulspirit_command_aura_Note0": "Vengeance Illusion keeps providing the Vengeance Aura after Vengeful Spirit's death.",
+          "DOTA_Tooltip_ability_vengefulspirit_command_aura_Note1": "Strong Illusions are not instantly killed by spells."
+        }
+      },
+      "vengefulspirit_nether_swap": {
+        "fields": {
+          "AbilityCastRange": "800 950 1100",
+          "AbilityCastPoint": "0.4",
+          "AbilityCooldown": "50 40 30",
+          "AbilityManaCost": "100 150 200",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "scepter_radius": "700",
+              "RequiresScepter": "1"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "scepter_charge_reduction": "2",
+              "RequiresScepter": "1"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "damage_reduction": "30 40 50"
+            },
+            "04": {
+              "var_type": "FIELD_FLOAT",
+              "damage_reduction_duration": "3"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "damage": "50"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_vengefulspirit_nether_swap_Description": "Instantaneously swaps positions with a target Hero, friend or enemy.  Nether Swap interrupts channeling abilities on the target. Enemy Swapped units take %damage% damage Allied swapped units receive less damage for a short duration",
+          "DOTA_Tooltip_ability_vengefulspirit_nether_swap_Note0": "Works on Spell Immune units.",
+          "DOTA_Tooltip_ability_vengefulspirit_nether_swap_Note1": "Trees near Vengeful Spirit and the target will be destroyed when the spell is cast.",
+          "DOTA_Tooltip_ability_vengefulspirit_nether_swap_Note2": "Channeling spells are interrupted by Nether Swap."
+        }
+      }
+    },
+    "medusa": {
+      "medusa_split_shot": {
+        "fields": {
+          "AbilityCastPoint": "0.4 0.4 0.4 0.4",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "damage_modifier": "-50 -40 -30 -20"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "damage_modifier_tooltip": "50 60 70 80"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "arrow_count": "4",
+              "LinkedSpecialBonus": "special_bonus_unique_medusa_2"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "split_shot_bonus_range": "150"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_medusa_split_shot_Description": "Medusa magically splits her shot into several arrows. These arrows deal a lower percent of her normal damage.\\n\\nThe extra targets will not receive other attack effects (such as critical strike).",
+          "DOTA_Tooltip_ability_medusa_split_shot_Note0": "Secondary targets will be the closest enemy units excluding the primary target.",
+          "DOTA_Tooltip_ability_medusa_split_shot_Note1": "If illusions of Medusa are created while Split Shot is active, they will also have this ability."
+        }
+      },
+      "medusa_mystic_snake": {
+        "fields": {
+          "HasScepterUpgrade": "1",
+          "AbilityCastRange": "700",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "10",
+          "AbilityManaCost": "140 150 160 170",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "450"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "snake_jumps": "3 4 5 6"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "jump_delay": "0.25 0.25 0.25 0.25"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "snake_damage": "80 120 160 200"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "snake_mana_steal": "11 14 17 20",
+              "LinkedSpecialBonus": "special_bonus_unique_medusa_3"
+            },
+            "06": {
+              "var_type": "FIELD_INTEGER",
+              "snake_scale": "35"
+            },
+            "07": {
+              "var_type": "FIELD_INTEGER",
+              "initial_speed": "800"
+            },
+            "08": {
+              "var_type": "FIELD_INTEGER",
+              "return_speed": "800"
+            },
+            "09": {
+              "var_type": "FIELD_FLOAT",
+              "stone_form_scepter_base": "1.3",
+              "RequiresScepter": "1"
+            },
+            "10": {
+              "var_type": "FIELD_FLOAT",
+              "stone_form_scepter_increment": "0.2",
+              "RequiresScepter": "1"
+            },
+            "11": {
+              "var_type": "FIELD_INTEGER",
+              "movement_slow": "30"
+            },
+            "12": {
+              "var_type": "FIELD_INTEGER",
+              "turn_slow": "50"
+            },
+            "13": {
+              "var_type": "FIELD_FLOAT",
+              "slow_duration": "3"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_medusa_mystic_snake_Description": "A mystic snake made of energy jumps from target to target dealing damage. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake deals more damage per jump and returns %snake_mana_steal%%% mana based on the targets' total mana.",
+          "DOTA_Tooltip_ability_medusa_mystic_snake_scepter_description": "Causes Mystic Snake to turn enemies hit into stone. Stone duration increases with each bounce of the Mystic Snake.",
+          "DOTA_Tooltip_ability_medusa_mystic_snake_Note0": "Mystic Snake cannot be disjointed.",
+          "DOTA_Tooltip_ability_medusa_mystic_snake_abilitydraft_note": "Stone Gaze must be drafted for Aghanim's Scepter upgrade to work.<br>Shard: Does <i>NOT</i> grant Cold Blooded ability."
+        }
+      },
+      "medusa_mana_shield": {
+        "fields": {
+          "AbilityCastPoint": "0.4 0.4 0.4 0.4",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "damage_per_mana": "1.3 1.7 2.1 2.5"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "absorption_pct": "70"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_mana": "100 150 200 250"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_medusa_mana_shield_Description": "Creates a shield that absorbs %absorption_pct%%% of incoming damage in exchange for Medusa's mana. Provides bonus mana capacity.",
+          "DOTA_Tooltip_ability_medusa_mana_shield_Note0": "Absorbs damage before any damage reduction takes place, meaning that armor will not reduce the amount of mana needed to absorb damage."
+        }
+      },
+      "medusa_cold_blooded": {
+        "fields": {
+          "AbilityCooldown": "12",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "damage": "0"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_medusa_cold_blooded_Description": "When Medusa is targeted with a spell, a single-target Mystic Snake is sent back towards the enemy. Cooldown: 12."
+        }
+      },
+      "medusa_stone_gaze": {
+        "fields": {
+          "AbilityCastPoint": "0.4",
+          "AbilityCastRange": "1200",
+          "AbilityCooldown": "90",
+          "AbilityManaCost": "100",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "1200"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "5 5.5 6",
+              "LinkedSpecialBonus": "special_bonus_unique_medusa"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "slow": "35"
+            },
+            "04": {
+              "var_type": "FIELD_FLOAT",
+              "stone_duration": "3.0"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "face_duration": "2.0"
+            },
+            "06": {
+              "var_type": "FIELD_FLOAT",
+              "vision_cone": "0.08715"
+            },
+            "07": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_physical_damage": "40 45 50"
+            },
+            "08": {
+              "var_type": "FIELD_INTEGER",
+              "speed_boost": "50"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_medusa_stone_gaze_Description": "Any enemy units looking at Medusa will have their movement and attack speed slowed.  If %face_duration% seconds of total time is accumulated looking at Medusa while Stone Gaze is active, that unit will turn to stone.  Petrified units are stunned, and take bonus physical damage.",
+          "DOTA_Tooltip_ability_medusa_stone_gaze_Note0": "Regardless of when a unit receives the Stone Gaze buff while the ability is active on Medusa, it will still receive the full debuff duration."
+        }
+      }
+    },
+    "dragon_knight": {
+      "dragon_knight_breathe_fire": {
+        "fields": {
+          "AbilityCastRange": "600",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "14 13 12 11",
+          "AbilityDamage": "90 170 240 300",
+          "AbilityManaCost": "90 100 110 120",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "start_radius": "150 150 150 150"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "end_radius": "250 250 250 250"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "range": "750"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "speed": "1050"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "reduction": "-25",
+              "LinkedSpecialBonus": "special_bonus_unique_dragon_knight_3"
+            },
+            "06": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "11"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_dragon_knight_breathe_fire_Description": "Unleashes a breath of fire in front of Dragon Knight that burns enemies and reduces the damage their attacks deal.",
+          "DOTA_Tooltip_ability_dragon_knight_breathe_fire_Note0": "Hits units up to 900 away."
+        }
+      },
+      "dragon_knight_dragon_tail": {
+        "fields": {
+          "AbilityCastRange": "150",
+          "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+          "AbilityCooldown": "16 14 12 10",
+          "AbilityDamage": "70 100 130 160",
+          "AbilityManaCost": "70 80 90 100",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "stun_duration": "2.25 2.5 2.75 3.0",
+              "LinkedSpecialBonus": "special_bonus_unique_dragon_knight_2"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "dragon_cast_range": "400"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "projectile_speed": "1600"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_dragon_knight_dragon_tail_Description": "Dragon Knight smites an enemy unit in melee range with his shield, stunning it while dealing minor damage.  When in Elder Dragon Form, the cast range increases to %dragon_cast_range%."
+        }
+      },
+      "dragon_knight_dragon_blood": {
+        "fields": {
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_health_regen": "3 6 9 12",
+              "LinkedSpecialBonus": "special_bonus_unique_dragon_knight"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_armor": "3 6 9 12",
+              "LinkedSpecialBonus": "special_bonus_unique_dragon_knight"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_dragon_knight_dragon_blood_Description": "The life blood of the Dragon improves health regeneration and strengthens armor."
+        }
+      },
+      "dragon_knight_fireball": {
+        "fields": {
+          "AbilityCastRange": "1400",
+          "AbilityCastPoint": "0.2",
+          "AbilityCooldown": "20",
+          "AbilityManaCost": "100",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "450"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "damage": "65"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "10.0"
+            },
+            "04": {
+              "var_type": "FIELD_FLOAT",
+              "burn_interval": "0.5"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "linger_duration": "2"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_dragon_knight_fireball_Description": "Ignites a %radius% AoE area for %duration% seconds, dealing %damage% damage per second that lingers for %linger_duration% seconds to enemies in it. Has reduced cast range when melee."
+        }
+      },
+      "dragon_knight_elder_dragon_form": {
+        "fields": {
+          "HasScepterUpgrade": "1",
+          "AbilityCooldown": "115 110 105 100",
+          "AbilityManaCost": "50 50 50",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "60"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_movement_speed": "25"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_attack_range": "350 350 350 350"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_attack_damage": "0"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "corrosive_breath_damage": "20 20 20 30"
+            },
+            "06": {
+              "var_type": "FIELD_FLOAT",
+              "corrosive_breath_duration": "5.0 5.0 5.0"
+            },
+            "07": {
+              "var_type": "FIELD_INTEGER",
+              "splash_radius": "350"
+            },
+            "08": {
+              "var_type": "FIELD_INTEGER",
+              "splash_damage_percent": "75 75 75 100",
+              "LinkedSpecialBonus": "special_bonus_unique_dragon_knight_6"
+            },
+            "09": {
+              "var_type": "FIELD_INTEGER",
+              "frost_bonus_movement_speed": "-40 -40 -40 -60",
+              "LinkedSpecialBonus": "special_bonus_unique_dragon_knight_5"
+            },
+            "10": {
+              "var_type": "FIELD_INTEGER",
+              "frost_bonus_attack_speed": "-40 -40 -40 -60",
+              "LinkedSpecialBonus": "special_bonus_unique_dragon_knight_5"
+            },
+            "11": {
+              "var_type": "FIELD_FLOAT",
+              "frost_duration": "3.0 3.0 3.0"
+            },
+            "12": {
+              "var_type": "FIELD_FLOAT",
+              "frost_aoe": "300"
+            },
+            "13": {
+              "var_type": "FIELD_INTEGER",
+              "magic_resistance": "0 0 0 25"
+            },
+            "14": {
+              "var_type": "FIELD_INTEGER",
+              "model_scale": "0 0 0 30"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_Description": "Dragon Knight takes the form of one of three powerful elder dragons, increasing his speed, and Dragon Tail's range, while granting him new powers.\\n<font color=\\\"#9acd32\\\">LEVEL 1 Green Dragon</font> - Corrosive Breath: attacks deal %corrosive_breath_damage% poison damage per second for %corrosive_breath_duration% seconds. Works on structures.\\n<font color=\\\"#ff0000\\\">LEVEL 2 Red Dragon</font> - Splash Attack: attacks damage all enemy units in a %splash_radius% radius for %splash_damage_percent%%% damage, with Corrosive Breath added to the targets.\\n<font color=\\\"#87ceeb\\\">LEVEL 3 Blue Dragon</font> - Frost Breath: slows movement speed by %frost_bonus_movement_speed%%% and attack speed by %frost_bonus_attack_speed% of enemy units in Splash Attack range for %frost_duration% seconds, with Corrosive Breath added to the targets.",
+          "DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_shard_description": "Grants Elder Dragon Form the Fireball ability.",
+          "DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_scepter_description": "Increases the level of Dragon Knight's ultimate. Adds a 4th level, Black Dragon. Black Dragon has bonus Corrosive Damage, Splash Damage and Slow amount, 20% increased Magic Resistance and free pathing.",
+          "DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_Note0": "Corrosive Breath poison damage is lethal.",
+          "DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_Note1": "Cooldowns of items that are different for ranged and melee units will be based on which form Dragon Knight was in when the item was used.",
+          "DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_abilitydraft_note": "Shard: Grants Fireball."
+        }
+      }
+    },
+    "leshrac": {
+      "leshrac_split_earth": {
+        "fields": {
+          "HasShardUpgrade": "1",
+          "AbilityCastRange": "650",
+          "AbilityCastPoint": "0.7 0.7 0.7 0.7",
+          "AbilityCooldown": "9 9 9 9",
+          "AbilityManaCost": "80 100 120 140",
+          "AbilityDamage": "120 180 240 300",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "delay": "0.35"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "150 175 200 225",
+              "LinkedSpecialBonus": "special_bonus_unique_leshrac_5"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "2"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_leshrac_split_earth_Description": "Splits the earth under enemies. Deals damage and stuns for a short duration.",
+          "DOTA_Tooltip_ability_leshrac_split_earth_shard_description": "Causes Split Earth to repeat in the same location three additional times, with a 5 second delay between each one. Each time the radius increases by 75. Split Earth echo location is visible to both teams.",
+          "DOTA_Tooltip_ability_leshrac_split_earth_Note0": "Split Earth will destroy trees in its area of effect.",
+          "DOTA_Tooltip_ability_leshrac_split_earth_Note1": "There is a %delay% second delay before the effect is applied."
+        }
+      },
+      "leshrac_diabolic_edict": {
+        "fields": {
+          "AbilityCastPoint": "0.5",
+          "AbilityCooldown": "22 22 22 22",
+          "AbilityManaCost": "95 120 135 155",
+          "AbilityDamage": "7 14 21 28",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "num_explosions": "40",
+              "LinkedSpecialBonus": "special_bonus_unique_leshrac_1"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "500"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "tower_bonus": "0"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_leshrac_diabolic_edict_Description": "Saturates the area around Leshrac with magical explosions that deal pure damage to enemy units and structures.  The fewer units available to attack, the more damage those units will take. Lasts %abilityduration% seconds.",
+          "DOTA_Tooltip_ability_leshrac_diabolic_edict_Note0": "The explosions will continue even if Leshrac is killed.",
+          "DOTA_Tooltip_ability_leshrac_diabolic_edict_Note2": "Can damage buildings, Spell Immune units, and invisible units."
+        }
+      },
+      "leshrac_lightning_storm": {
+        "fields": {
+          "AbilityCastRange": "650",
+          "AbilityCastPoint": "0.3",
+          "AbilityCooldown": "4",
+          "AbilityManaCost": "80 100 120 140",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "damage": "90 130 170 210",
+              "LinkedSpecialBonus": "special_bonus_unique_leshrac_6"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "jump_count": "4 6 8 10"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "475"
+            },
+            "04": {
+              "var_type": "FIELD_FLOAT",
+              "jump_delay": "0.25 0.25 0.25 0.25"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "slow_movement_speed": "-75"
+            },
+            "06": {
+              "var_type": "FIELD_FLOAT",
+              "slow_duration": "0.4 0.6 0.8 1.0",
+              "LinkedSpecialBonus": "special_bonus_unique_leshrac_2"
+            },
+            "07": {
+              "var_type": "FIELD_FLOAT",
+              "interval_scepter": "1.5",
+              "RequiresScepter": "1"
+            },
+            "08": {
+              "var_type": "FIELD_INTEGER",
+              "radius_scepter": "750",
+              "RequiresScepter": "1"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_leshrac_lightning_storm_Description": "Summons a lightning storm that blasts the target enemy unit, then strikes any nearby enemy units. Struck enemies are slowed."
+        }
+      },
+      "leshrac_greater_lightning_storm": {
+        "fields": {
+          "HasScepterUpgrade": "1",
+          "AbilityCooldown": "25",
+          "AbilityManaCost": "75",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "4"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "magic_amp": "30"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "slow": "30"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "450"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_leshrac_greater_lightning_storm_Description": "Causes all nearby enemies in %radius% AoE to turn ethereal, preventing them from attacking, causing them to take %magic_amp%%% more magic damage and be slowed by %slow%%% for %duration% seconds. Increases Leshrac's speed rather than reducing it. Does not cause you to take amplified damage."
+        }
+      },
+      "leshrac_pulse_nova": {
+        "fields": {
+          "AbilityCastPoint": "0 0 0 0",
+          "AbilityCooldown": "1.0 1.0 1.0 1.0",
+          "AbilityManaCost": "70",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "mana_cost_per_second": "20 40 60"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "525",
+              "LinkedSpecialBonus": "special_bonus_unique_leshrac_4"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "damage": "100 150 200",
+              "LinkedSpecialBonus": "special_bonus_unique_leshrac_3"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_leshrac_pulse_nova_Description": "Creates waves of damaging energy around Leshrac, one per second, to damage nearby enemy units. Drains Leshrac's mana with each pulse."
+        }
+      }
+    },
+    "puck": {
+      "puck_illusory_orb": {
+        "fields": {
+          "AbilityCastPoint": "0.1 0.1 0.1 0.1",
+          "AbilityCastRange": "3000",
+          "AbilityCooldown": "12 11 10 9",
+          "AbilityDamage": "75 150 225 300",
+          "AbilityManaCost": "80 100 120 140",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "225"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "max_distance": "1950",
+              "LinkedSpecialBonus": "special_bonus_unique_puck"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "orb_speed": "651"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "orb_vision": "450"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "vision_duration": "3.34"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_puck_illusory_orb_Description": "Puck launches a magic orb that floats in a straight path, damaging enemy units along the way. At any point, Puck may teleport to the orb's location using Ethereal Jaunt.",
+          "DOTA_Tooltip_ability_puck_illusory_orb_abilitydraft_note": "For Ability Draft only, Illusory Orb ability swaps with Ethereal Jaunt while the orb is in flight.",
+          "DOTA_Tooltip_ability_puck_illusory_orb_Note0": "The Illusory Orb grants unobstructed vision around its location while it travels.",
+          "DOTA_Tooltip_ability_puck_illusory_orb_Note1": "Jaunting to the Orb will disjoint projectiles."
+        }
+      },
+      "puck_waning_rift": {
+        "fields": {
+          "HasShardUpgrade": "1",
+          "AbilityCastPoint": "0.1",
+          "AbilityCooldown": "19 17 15 13",
+          "AbilityManaCost": "100 110 120 130",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "400 400 400 400",
+              "LinkedSpecialBonus": "special_bonus_unique_puck_6"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "silence_duration": "2.0 2.5 3.0 3.5",
+              "LinkedSpecialBonus": "special_bonus_unique_puck_7"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "damage": "70 130 190 250",
+              "LinkedSpecialBonus": "special_bonus_unique_puck_4"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "max_distance": "300",
+              "LinkedSpecialBonus": "special_bonus_unique_puck_6"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_puck_waning_rift_Description": "Puck teleports to the target location and releases a burst of faerie dust that deals damage and silences enemy units nearby.",
+          "DOTA_Tooltip_ability_puck_waning_rift_shard_description": "Waning Rift now deals 70 bonus damage and knocks enemies back 250 distance over 0.4 seconds (non-interrupting). Reveals invisible enemy units and wards in the area for 5 seconds."
+        }
+      },
+      "puck_phase_shift": {
+        "fields": {
+          "AbilityCastPoint": "0 0 0 0",
+          "AbilityChannelTime": "0.75 1.50 2.25 3.25",
+          "AbilityCooldown": "8 7.5 7 6.5",
+          "AbilityManaCost": "0 0 0 0",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "0.75 1.50 2.25 3.25"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_puck_phase_shift_Description": "CHANNELED - Puck briefly shifts into another dimension where it is immune from harm.",
+          "DOTA_Tooltip_ability_puck_phase_shift_Note0": "Puck retains collision size while under the effects of Phase Shift.",
+          "DOTA_Tooltip_ability_puck_phase_shift_Note1": "Issuing any action will cancel Phase Shift.",
+          "DOTA_Tooltip_ability_puck_phase_shift_Note2": "Puck is invulnerable during Phase Shift."
+        }
+      },
+      "puck_ethereal_jaunt": {
+        "fields": {
+          "AbilityCastPoint": "0.0 0.0 0.0 0.0"
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_puck_ethereal_jaunt_Description": "Teleports Puck to a flying Illusory Orb."
+        }
+      },
+      "puck_dream_coil": {
+        "fields": {
+          "HasScepterUpgrade": "1",
+          "AbilityCastRange": "750",
+          "AbilityCastPoint": "0.1 0.1 0.1",
+          "AbilityCooldown": "80",
+          "AbilityManaCost": "100 150 200",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "coil_duration": "6.0 6.0 6.0"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "coil_break_radius": "600"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "stun_duration": "0.5"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "coil_initial_damage": "125 200 275"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "coil_stun_duration": "1.8 2.4 3.0"
+            },
+            "06": {
+              "var_type": "FIELD_INTEGER",
+              "coil_break_damage": "200 300 400"
+            },
+            "07": {
+              "var_type": "FIELD_INTEGER",
+              "coil_radius": "375 375 375"
+            },
+            "08": {
+              "var_type": "FIELD_FLOAT",
+              "coil_duration_scepter": "8",
+              "RequiresScepter": "1"
+            },
+            "09": {
+              "var_type": "FIELD_INTEGER",
+              "coil_break_damage_scepter": "300 450 600",
+              "RequiresScepter": "1"
+            },
+            "10": {
+              "var_type": "FIELD_FLOAT",
+              "coil_stun_duration_scepter": "2 3 4",
+              "RequiresScepter": "1"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_puck_dream_coil_Description": "Creates a coil of volatile magic that latches onto enemy Heroes, damaging and leashing them.  If the enemy hero stretches the coil by moving too far away, it snaps, stunning and dealing additional damage.",
+          "DOTA_Tooltip_ability_puck_dream_coil_scepter_description": "Increases damage from coil breaks, increases coil duration, coil break stun goes through spell immunity."
+        }
+      }
+    },
+    "razor": {
+      "razor_plasma_field": {
+        "fields": {
+          "AbilityCastRange": "0",
+          "AbilityCastPoint": "0 0 0 0",
+          "AbilityCooldown": "13 12 11 10",
+          "AbilityManaCost": "125 125 125 125",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "damage_min": "35 40 45 50",
+              "LinkedSpecialBonus": "special_bonus_unique_razor_4"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "damage_max": "80 115 150 185",
+              "LinkedSpecialBonus": "special_bonus_unique_razor_4"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "700"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "speed": "636"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "slow_min": "5"
+            },
+            "06": {
+              "var_type": "FIELD_INTEGER",
+              "slow_max": "25 30 35 40"
+            },
+            "07": {
+              "var_type": "FIELD_FLOAT",
+              "slow_duration": "1.5"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_razor_plasma_field_Description": "Releases a wave of energetic plasma that grows in power as it expands, but also zaps on contraction, slowing and dealing damage to enemy units caught in its path. Damage and slow increases with distance from Razor. The Plasma Field hits each unit twice, once each direction."
+        }
+      },
+      "razor_static_link": {
+        "fields": {
+          "AbilityCastRange": "550",
+          "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+          "AbilityCooldown": "40 35 30 25",
+          "AbilityManaCost": "65",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "drain_length": "5 6 7 8",
+              "LinkedSpecialBonus": "special_bonus_unique_razor_3"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "drain_duration": "15 16 17 18"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "drain_rate": "7 12 17 22",
+              "LinkedSpecialBonus": "special_bonus_unique_razor"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "drain_range_buffer": "250"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "200 200 200 200"
+            },
+            "06": {
+              "var_type": "FIELD_INTEGER",
+              "speed": "900 900 900 900"
+            },
+            "07": {
+              "var_type": "FIELD_INTEGER",
+              "vision_radius": "800 800 800 800"
+            },
+            "08": {
+              "var_type": "FIELD_FLOAT",
+              "vision_duration": "3.34 3.34 3.34 3.34"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_razor_static_link_Description": "Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor. Allows razor to attack while moving with the link active.",
+          "DOTA_Tooltip_ability_razor_static_link_Note0": "The link is broken when either unit dies or the distance between them becomes %drain_range_buffer% units greater than Static Link's cast range.",
+          "DOTA_Tooltip_ability_razor_static_link_Note1": "Can target Spell Immune units."
+        }
+      },
+      "razor_unstable_current": {
+        "fields": {
+          "HasShardUpgrade": "1",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "self_movement_speed_pct": "12 16 20 24",
+              "LinkedSpecialBonus": "special_bonus_unique_razor_5"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_razor_unstable_current_Description": "Passively increases Razor's movement speed.",
+          "DOTA_Tooltip_ability_razor_unstable_current_shard_description": "Causes Storm Surge to have an 18% chance when attacked, and always when targeted with a spell, to release forked lightning that strikes the target and up to 2 other enemies. Deals 150 Damage and slows them by 50% for 1.5 seconds."
+        }
+      },
+      "razor_eye_of_the_storm": {
+        "fields": {
+          "HasScepterUpgrade": "1",
+          "AbilityCastPoint": "0",
+          "AbilityCooldown": "80 70 60",
+          "AbilityManaCost": "100 150 200",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "500"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "30.0"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "strike_interval": "0.7 0.6 0.5",
+              "LinkedSpecialBonus": "special_bonus_unique_razor_2"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "armor_reduction": "1 1 1"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "damage": "60 75 90"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_razor_eye_of_the_storm_Description": "A powerful lightning storm strikes out at enemy units with the lowest health, dealing damage and reducing their armor.",
+          "DOTA_Tooltip_ability_razor_eye_of_the_storm_scepter_description": "Causes Eye of the Storm to strike two different units instead of one and can damage structures. When striking buildings, it will only target towers, barracks, and the Ancient.",
+          "DOTA_Tooltip_ability_razor_eye_of_the_storm_Note0": "Each blast targets the lowest health enemy unit within range.",
+          "DOTA_Tooltip_ability_razor_eye_of_the_storm_Note1": "Eye of the Storm will prioritize striking static linked heroes.",
+          "DOTA_Tooltip_ability_razor_eye_of_the_storm_Note2": "Successive casts of Eye of the Storm will stack."
+        }
+      }
+    },
+    "invoker": {
+      "invoker_quas": {
+        "fields": {
+          "AbilityCooldown": "0",
+          "AbilityManaCost": "0",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "health_regen_per_instance": "1 2 3 4 5 6 7"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_invoker_quas_Description": "Allows manipulation of ice elements. Each <font color='#7998b5'>Quas</font> instance provides increased health regeneration.\\n",
+          "DOTA_Tooltip_ability_invoker_quas_shard_description": "Quas provides +10% Spell Lifesteal per instance.",
+          "DOTA_Tooltip_ability_invoker_quas_Note0": "Invoker can only have 3 of any instance."
+        }
+      },
+      "invoker_wex": {
+        "fields": {
+          "AbilityCooldown": "0",
+          "AbilityManaCost": "0",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "attack_speed_per_instance": "1 2 3 4 5 6 7"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "move_speed_per_instance": "1 2 3 4 5 6 7"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_invoker_wex_Description": "Allows manipulation of storm elements. Each <font color='#d671a9'>Wex</font> instance provides increased attack speed and movement speed.",
+          "DOTA_Tooltip_ability_invoker_wex_shard_description": "Wex provides +100 Cast Range per instance.",
+          "DOTA_Tooltip_ability_invoker_wex_Note0": "Invoker can only have 3 of any instance."
+        }
+      },
+      "invoker_exort": {
+        "fields": {
+          "AbilityCooldown": "0",
+          "AbilityManaCost": "0",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_damage_per_instance": "2 4 6 8 10 12 14"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_invoker_exort_Description": "Allows manipulation of fire elements. Each <font color='#cabe68'>Exort</font> instance provides increased attack damage.",
+          "DOTA_Tooltip_ability_invoker_exort_shard_description": "Exort provides +5% Spell Amplification per instance.",
+          "DOTA_Tooltip_ability_invoker_exort_Note0": "Invoker can only have 3 of any instance."
+        }
+      },
+      "invoker_empty1": {
+        "fields": {},
+        "description_text": {
+          "DOTA_Tooltip_ability_invoker_empty1_Description": "Casting Invoke will replace this slot with one of ten unique spells based on Invoker's currently active <font color='#7998b5'>Quas</font>, <font color='#d671a9'>Wex</font>, and <font color='#cabe68'>Exort</font> buffs."
+        }
+      },
+      "invoker_empty2": {
+        "fields": {},
+        "description_text": {
+          "DOTA_Tooltip_ability_invoker_empty2_Description": "Casting Invoke will replace this slot with one of ten unique spells based on Invoker's currently active <font color='#7998b5'>Quas</font>, <font color='#d671a9'>Wex</font>, and <font color='#cabe68'>Exort</font> buffs."
+        }
+      },
+      "invoker_invoke": {
+        "fields": {
+          "AbilityCooldown": "7",
+          "AbilityManaCost": "0",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "max_invoked_spells": "2"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "cooldown_reduction_per_orb": "0.3"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_invoker_invoke_Description": "Combines the properties of the elements currently being manipulated to create a new spell for Invoker to use. Invoke cooldown is reduced by %cooldown_reduction_per_orb% seconds for each orb level. <br><br> Click the help button to see the list of possible spells.",
+          "DOTA_Tooltip_ability_invoker_invoke_Note0": "The arrangement of instances does not matter.",
+          "DOTA_Tooltip_ability_invoker_invoke_Note1": "Invoke will not cost mana or go on cooldown if the only effect is to swap the positions of existing spells."
+        }
+      },
+      "invoker_emp": {
+        "fields": {
+          "AbilityCastRange": "950",
+          "AbilityCastPoint": "0.05",
+          "AbilityCooldown": "30",
+          "AbilityManaCost": "125",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "delay": "2.9",
+              "levelkey": "wexlevel"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "area_of_effect": "675"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "mana_burned": "100 175 250 325 400 475 550 625",
+              "levelkey": "wexlevel"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "damage_per_mana_pct": "60"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_invoker_emp_Description": "Invoker builds up a charge of electromagnetic energy at a targeted location which automatically detonates after %delay% seconds. The detonation covers an area, draining mana based on the level of <font color='#d671a9'>Wex</font>. Deals damage for each point of mana drained.  If EMP drains mana from an enemy hero, Invoker gains 50% of the mana drained.",
+          "DOTA_Tooltip_ability_invoker_emp_Note0": "Will not affect cycloned units (Tornado or Eul's Scepter of Divinity).",
+          "DOTA_Tooltip_ability_invoker_emp_ad_Description": "Invoker builds up a charge of electromagnetic energy at a targeted location which automatically detonates after %delay% seconds. The detonation covers an area, draining mana. Deals damage for each point of mana drained.  If EMP drains mana from an enemy hero, Invoker gains 50% of the mana drained.",
+          "DOTA_Tooltip_ability_invoker_emp_ad_Note0": "Will not affect cycloned units (Tornado or Eul's Scepter of Divinity)."
+        }
+      },
+      "invoker_tornado": {
+        "fields": {
+          "AbilityCastRange": "2000",
+          "AbilityCastPoint": "0.05",
+          "AbilityCooldown": "30",
+          "AbilityManaCost": "150",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "travel_distance": "800 1200 1600 2000 2400 2800 3200 3600",
+              "levelkey": "wexlevel"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "travel_speed": "1000"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "area_of_effect": "200"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "vision_distance": "200"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "end_vision_duration": "1.75"
+            },
+            "06": {
+              "var_type": "FIELD_FLOAT",
+              "lift_duration": "0.85 1.1 1.35 1.6 1.85 2.1 2.35 2.6",
+              "LinkedSpecialBonus": "special_bonus_unique_invoker_8",
+              "levelkey": "quaslevel"
+            },
+            "07": {
+              "var_type": "FIELD_FLOAT",
+              "base_damage": "70"
+            },
+            "08": {
+              "var_type": "FIELD_FLOAT",
+              "quas_damage": "0 0 0 0 0 0 0",
+              "levelkey": "quaslevel"
+            },
+            "09": {
+              "var_type": "FIELD_FLOAT",
+              "wex_damage": "45 90 135 180 225 270 315 360",
+              "levelkey": "wexlevel"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_invoker_tornado_Description": "Unleashes a fast moving tornado that picks up enemy units in its path, suspending them helplessly in the air shortly before allowing them to plummet to their doom. Travels further based on the level of <font color='#d671a9'>Wex</font>. Holds enemies in the air for a duration based on the level of <font color='#7998b5'>Quas</font>. Deals base damage plus added damage based on levels in <font color='#d671a9'>Wex</font>.\\n\\nDISPEL TYPE: Basic Dispel",
+          "DOTA_Tooltip_ability_invoker_tornado_Note0": "Units are invulnerable while affected by Tornado, and the damage is dealt when landing.",
+          "DOTA_Tooltip_ability_invoker_tornado_ad_Description": "Unleashes a fast moving tornado that picks up enemy units in its path, suspending them helplessly in the air shortly before allowing them to plummet to their doom. Travels further based on the level and holds enemies in the air for a duration.\\n\\nDISPEL TYPE: Basic Dispel",
+          "DOTA_Tooltip_ability_invoker_tornado_ad_Note0": "Units are invulnerable while affected by Tornado, and the damage is dealt when landing."
+        }
+      },
+      "invoker_cold_snap": {
+        "fields": {
+          "AbilityCastRange": "1000",
+          "AbilityCastPoint": "0.05",
+          "AbilityCooldown": "20",
+          "AbilityManaCost": "100",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "3.0 3.5 4.0 4.5 5.0 5.5 6.0 6.5",
+              "levelkey": "quaslevel",
+              "LinkedSpecialBonus": "special_bonus_unique_invoker_7"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "freeze_duration": "0.4"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "freeze_cooldown": "0.83 0.80 0.77 0.74 0.71 0.68 0.65 0.62",
+              "levelkey": "quaslevel"
+            },
+            "04": {
+              "var_type": "FIELD_FLOAT",
+              "freeze_damage": "8 16 24 32 40 48 56 64",
+              "levelkey": "quaslevel"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "damage_trigger": "10.0"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_invoker_cold_snap_Description": "Invoker draws the heat from an enemy, chilling them to their very core for a duration based on the level of <font color='#7998b5'>Quas</font>. The enemy will take damage and be briefly frozen. Further damage taken in this state will freeze the enemy again, dealing bonus damage. The enemy can only be frozen so often, but the freeze cooldown decreases based on the level of <font color='#7998b5'>Quas</font>.",
+          "DOTA_Tooltip_ability_invoker_cold_snap_Note0": "The freeze stun only triggers on damage greater than %damage_trigger% after reductions.",
+          "DOTA_Tooltip_ability_invoker_cold_snap_ad_Description": "Invoker draws the heat from an enemy, chilling them to their very core for a duration. The enemy will take damage and be briefly frozen. Further damage taken in this state will freeze the enemy again, dealing bonus damage. The enemy can only be frozen so often, but the freeze cooldown decreases as the level goes up.",
+          "DOTA_Tooltip_ability_invoker_cold_snap_ad_Note0": "The freeze stun only triggers on damage greater than %damage_trigger% after reductions."
+        }
+      },
+      "invoker_ghost_walk": {
+        "fields": {
+          "AbilityCooldown": "45",
+          "AbilityManaCost": "200",
+          "AbilityCastPoint": "0.05",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "100.0"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "area_of_effect": "400"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "enemy_slow": "-20 -25 -30 -35 -40 -45 -50 -55",
+              "levelkey": "quaslevel"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "self_slow": "-30 -20 -10 0 10 20 30 40",
+              "levelkey": "wexlevel"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "aura_fade_time": "2.0"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_invoker_ghost_walk_Description": "Invoker manipulates the ice and electrical energies around him, rendering his body invisible. The elemental imbalance created as a consequence slows nearby enemies based on the level of <font color='#7998b5'>Quas</font>, and slows Invoker as well based on the level of <font color='#d671a9'>Wex</font>.",
+          "DOTA_Tooltip_ability_invoker_ghost_walk_Note0": "The slow effect does not work on Spell Immune enemies.",
+          "DOTA_Tooltip_ability_invoker_ghost_walk_ad_Description": "Invoker manipulates the ice and electrical energies around him, rendering his body invisible. The elemental imbalance created as a consequence slows nearby enemies, and slows Invoker as well based on the level.",
+          "DOTA_Tooltip_ability_invoker_ghost_walk_ad_Note0": "The slow effect does not work on Spell Immune enemies."
+        }
+      }
+    },
+    "wisp": {
+      "wisp_tether": {
+        "fields": {
+          "HasShardUpgrade": "1",
+          "AbilityCastPoint": "0",
+          "AbilityCooldown": "12",
+          "AbilityManaCost": "40 40 40 40",
+          "AbilityCastRange": "1600",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "1000"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "movespeed": "6 8 10 12"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "latch_distance": "700 700 700 700"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "latch_speed": "1000 1000 1000 1000"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "tether_heal_amp": "0.7 0.9 1.1 1.3"
+            },
+            "06": {
+              "var_type": "FIELD_INTEGER",
+              "self_bonus": "0"
+            },
+            "07": {
+              "var_type": "FIELD_INTEGER",
+              "slow": "15 25 35 45"
+            },
+            "08": {
+              "var_type": "FIELD_FLOAT",
+              "slow_duration": "0.2"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_wisp_tether_Description": "Tethers Io to an allied unit, granting bonus movement speed to both. When Io restores health or mana, tethered units target gains a larger portion of that amount. The tether breaks when the allied unit moves too far away, or Io cancels the tether.",
+          "DOTA_Tooltip_ability_wisp_tether_shard_description": "Tether stuns enemies touching it for 1.75 seconds and deals 150 damage. Does not affect the same unit more than once every 7 seconds. Increases movement speed bonus by 8%%.",
+          "DOTA_Tooltip_ability_wisp_tether_Note0": "If you try to tether a unit that is 700 distance or further away from Io, he will latch on and pull himself closer to the tethered unit (to a distance of 300).",
+          "DOTA_Tooltip_ability_wisp_tether_Note1": "The tethered unit will heal faster and will heal even if Io is at full health.",
+          "DOTA_Tooltip_ability_wisp_tether_Note2": "Io's movement speed matches the tethered unit's.",
+          "DOTA_Tooltip_ability_wisp_tether_break_Description": "Break the link to the tethered unit."
+        }
+      },
+      "wisp_spirits": {
+        "fields": {
+          "HasScepterUpgrade": "1",
+          "AbilityCastPoint": "0",
+          "AbilityCooldown": "26.0 24.0 22.0 20.0",
+          "AbilityDuration": "19.0 19.0 19.0 19.0",
+          "AbilityManaCost": "120 130 140 150",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "creep_damage": "10 15 20 25"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "hero_damage": "30 50 70 90",
+              "LinkedSpecialBonus": "special_bonus_unique_wisp"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "revolution_time": "5.0 5.0 5.0 5.0"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "min_range": "200"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "max_range": "650",
+              "LinkedSpecialBonus": "special_bonus_unique_wisp_3"
+            },
+            "06": {
+              "var_type": "FIELD_INTEGER",
+              "hero_hit_radius": "110"
+            },
+            "07": {
+              "var_type": "FIELD_INTEGER",
+              "explode_radius": "360"
+            },
+            "08": {
+              "var_type": "FIELD_INTEGER",
+              "hit_radius": "150 150 150 150"
+            },
+            "09": {
+              "var_type": "FIELD_INTEGER",
+              "spirit_movement_rate": "250 250 250 250"
+            },
+            "10": {
+              "var_type": "FIELD_FLOAT",
+              "spirit_duration": "19.0 19.0 19.0 19.0"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_wisp_spirits_Description": "Summon five particle spirits that dance in a circle around Io. If a particle collides with an enemy hero, it explodes, damaging all enemy units in an area around it.  Creeps take minor damage from touching a particle spirit, but do not cause them to explode.  When its duration ends, any remaining Spirits explode.",
+          "DOTA_Tooltip_ability_wisp_spirits_Note0": "After summoning, Io can call the spirits in and out.",
+          "DOTA_Tooltip_ability_wisp_spirits_scepter_description": "Spirits now passively spawn around Io constantly every second. Max of 5.",
+          "DOTA_Tooltip_ability_wisp_spirits_in_Description": "Sends the spirits closer to you. Can be toggled on and off.",
+          "DOTA_Tooltip_ability_wisp_spirits_out_Description": "Sends the spirits farther away from you. Can be toggled on and off."
+        }
+      },
+      "wisp_overcharge": {
+        "fields": {
+          "AbilityCastPoint": "0 0 0 0",
+          "AbilityCooldown": "22 20 18 16",
+          "AbilityManaCost": "40 60 80 100",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_attack_speed": "50 70 90 110"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_spell_amp": "10 12 14 16"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "hp_regen": "0.5 0.6 0.7 0.8"
+            },
+            "04": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "8"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_wisp_overcharge_Description": "Io gains bonus attack speed, spell amplification, and HP Regen based on max health.  If Io is Tethered to an ally, that unit also gains the bonuses."
+        }
+      },
+      "wisp_spirits_in": {
+        "fields": {
+          "AbilityCastPoint": "0 0 0 0",
+          "AbilityCooldown": "0"
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_wisp_spirits_in_Description": "Sends the spirits closer to you. Can be toggled on and off."
+        }
+      },
+      "wisp_spirits_out": {
+        "fields": {
+          "AbilityCastPoint": "0 0 0 0"
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_wisp_spirits_out_Description": "Sends the spirits farther away from you. Can be toggled on and off."
+        }
+      },
+      "wisp_relocate": {
+        "fields": {
+          "AbilityCastPoint": "0",
+          "AbilityCooldown": "100 90 80",
+          "AbilityManaCost": "175",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "cast_delay": "3.5 3.25 3.0"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "return_time": "12.0 12.0 12.0"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_wisp_relocate_Description": "Teleports Io and any tethered ally to any location. After the spell expires Io and any tethered ally will return to their original location. Double-click to teleport to your team's base fountain.",
+          "DOTA_Tooltip_ability_wisp_relocate_Note0": "Enemies receive a visual indicator in the world and on the minimap of the target location during the cast delay.",
+          "DOTA_Tooltip_ability_wisp_relocate_Note1": "If Io is disabled during the cast delay, Relocate is cancelled.",
+          "DOTA_Tooltip_ability_wisp_relocate_Note2": "If an allied hero is Tethered, that hero will teleported along with you. You can break the tether at any time to prevent that hero from teleporting with you."
+        }
+      }
+    },
+    "shadow_demon": {
+      "shadow_demon_disruption": {
+        "fields": {
+          "AbilityDuration": "2.75",
+          "AbilityCooldown": "29.0 26.0 23.0 20.0",
+          "AbilityCastRange": "650",
+          "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+          "AbilityManaCost": "120 120 120 120",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "disruption_duration": "2.75",
+              "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_5"
+            },
+            "02": {
+              "var_type": "FIELD_FLOAT",
+              "illusion_duration": "11 12 13 14"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "illusion_outgoing_damage": "-70.0 -55.0 -40.0 -25.0"
+            },
+            "04": {
+              "var_type": "FIELD_FLOAT",
+              "illusion_outgoing_tooltip": "30.0 45.0 60.0 75.0"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "illusion_incoming_damage": "200"
+            },
+            "06": {
+              "var_type": "FIELD_FLOAT",
+              "tooltip_total_illusion_incoming_damage": "300"
+            },
+            "07": {
+              "var_type": "FIELD_INTEGER",
+              "AbilityCharges": "",
+              "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_7"
+            },
+            "08": {
+              "var_type": "FIELD_INTEGER",
+              "illusion_bounty_base": "0"
+            },
+            "09": {
+              "var_type": "FIELD_INTEGER",
+              "illusion_bounty_growth": "2"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_shadow_demon_disruption_Description": "Banishes the targeted unit from the battlefield for a short duration.  Upon returning, two illusions of the banished unit are created under Shadow Demon's control."
+        }
+      },
+      "shadow_demon_soul_catcher": {
+        "fields": {
+          "AbilityCooldown": "26 24 22 20",
+          "AbilityCastRange": "700",
+          "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+          "AbilityManaCost": "80 100 120 140",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "health_lost": "20 25 30 35"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "175 200 225 250"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "duration": "10",
+              "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_8"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "illusion_outgoing_damage": "-70 -55 -40 -25"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "illusion_outgoing_damage_tooltip": "30 45 60 75"
+            },
+            "06": {
+              "var_type": "FIELD_INTEGER",
+              "illusion_incoming_damage": "100"
+            },
+            "07": {
+              "var_type": "FIELD_INTEGER",
+              "illusion_incoming_damage_tooltip": "200"
+            },
+            "08": {
+              "var_type": "FIELD_INTEGER",
+              "bonus_spell_amp": "5 7 9 11"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_shadow_demon_soul_catcher_Description": "Captures the soul of enemy units in an area, causing them to lose a percentage of their current health. Shadow Demon temporarily gains Spell Amplification for each hero's soul captured. When the debuff is removed, the units gain half of the lost health back. Units under the effect of Disruption can still be affected by Soul Catcher."
+        }
+      },
+      "shadow_demon_shadow_poison": {
+        "fields": {
+          "AbilityDuration": "10",
+          "AbilityCooldown": "2.5",
+          "AbilityCastRange": "1500",
+          "AbilityCastPoint": "0.25",
+          "AbilityManaCost": "45",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_FLOAT",
+              "stack_damage": "24 36 48 60",
+              "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_4",
+              "LinkedSpecialBonusOperation": "SPECIAL_BONUS_PERCENTAGE_ADD"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "max_multiply_stacks": "5"
+            },
+            "03": {
+              "var_type": "FIELD_FLOAT",
+              "bonus_stack_damage": "50",
+              "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_4",
+              "LinkedSpecialBonusOperation": "SPECIAL_BONUS_PERCENTAGE_ADD"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "radius": "200"
+            },
+            "05": {
+              "var_type": "FIELD_INTEGER",
+              "speed": "1000 1000 1000 1000"
+            },
+            "06": {
+              "var_type": "FIELD_FLOAT",
+              "hit_damage": "26 34 42 50",
+              "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_4",
+              "LinkedSpecialBonusOperation": "SPECIAL_BONUS_PERCENTAGE_ADD"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_shadow_demon_shadow_poison_abilitydraft_note": "In Ability Draft, Shadow Poison Release works by toggling auto-cast off, either by right-clicking the ability, or using the alt-hotkey combo.  Auto-cast state will be on if there are any units with Shadow Poison applied.",
+          "DOTA_Tooltip_ability_shadow_demon_shadow_poison_Description": "Deals damage in a line, and afflicts enemy units with a poison effect. The poison deals 1/2/4/8/16 times the stack damage based on the number of stacks on the target, up to %max_multiply_stacks% stacks. Additional stacks cause %bonus_stack_damage% damage each.  This deferred damage is dealt when Shadow Poison's duration is expired, or the Release sub-ability is used.",
+          "DOTA_Tooltip_ability_shadow_demon_shadow_poison_Note0": "Shadow Poison can affect units under Disruption.",
+          "DOTA_Tooltip_ability_shadow_demon_shadow_poison_release_Description": "Releases the poison to do damage on all affected enemies. Units under the effect of Disruption can still be affected by Shadow Poison."
+        }
+      },
+      "shadow_demon_shadow_poison_release": {
+        "fields": {
+          "AbilityCastPoint": "0.3",
+          "AbilityCooldown": "1.0"
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_shadow_demon_shadow_poison_release_Description": "Releases the poison to do damage on all affected enemies. Units under the effect of Disruption can still be affected by Shadow Poison."
+        }
+      },
+      "shadow_demon_demonic_purge": {
+        "fields": {
+          "HasScepterUpgrade": "1",
+          "HasShardUpgrade": "1",
+          "AbilityDuration": "7.0",
+          "AbilityCooldown": "60",
+          "AbilityCastRange": "800",
+          "AbilityCastPoint": "0.3 0.3 0.3",
+          "AbilityManaCost": "150 175 200",
+          "AbilitySpecial": {
+            "01": {
+              "var_type": "FIELD_INTEGER",
+              "purge_damage": "300 400 500",
+              "LinkedSpecialBonus": "special_bonus_unique_shadow_demon_1"
+            },
+            "02": {
+              "var_type": "FIELD_INTEGER",
+              "max_charges": "3",
+              "RequiresScepter": "1"
+            },
+            "03": {
+              "var_type": "FIELD_INTEGER",
+              "charge_restore_time": "60",
+              "RequiresScepter": "1"
+            },
+            "04": {
+              "var_type": "FIELD_INTEGER",
+              "charge_restore_time_tooltip_scepter": "60",
+              "RequiresScepter": "1"
+            },
+            "05": {
+              "var_type": "FIELD_FLOAT",
+              "max_slow": "100.0"
+            },
+            "06": {
+              "var_type": "FIELD_FLOAT",
+              "min_slow": "20.0"
+            }
+          }
+        },
+        "description_text": {
+          "DOTA_Tooltip_ability_shadow_demon_demonic_purge_Description": "Purges the target enemy unit, removing positive buffs, and slowing the target for the duration.  The unit slowly regains its speed until the end of the duration, upon which damage is dealt.  Units under the effect of Disruption can still be affected by Demonic Purge.\\n\\nDISPEL TYPE: Basic Dispel",
+          "DOTA_Tooltip_ability_shadow_demon_demonic_purge_scepter_description": "Cooldown is removed, replaced with %max_charges% charges that replenish every %charge_restore_time_tooltip_scepter% seconds. Also causes Demonic Purge to break its target's passive abilities while active.",
+          "DOTA_Tooltip_ability_shadow_demon_demonic_purge_shard_description": "Allows Demonic Purge to be cast on allies, continuously dispelling them and healing for its damage values. Does not slow allies.",
+          "DOTA_Tooltip_ability_shadow_demon_demonic_purge_Note0": "The slow starts at %max_slow%%% decreases over time to %min_slow%%%.",
+          "DOTA_Tooltip_ability_shadow_demon_demonic_purge_Note1": "Positive buffs are continously removed from the target for the duration of the Purge."
+        }
+      }
+    }
+  },
+  "official_selected_F": {
+    "7.30": [
+      {
+        "hero_id": 20,
+        "abilities": [
+          {
+            "ability_id": 5125,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Now deals 50 damage to enemies"
+              },
+              {
+                "indent_level": 1,
+                "note": "Nether Swap now causes Vengeful Spirits and allies she Swaps to take 30/40/50% less damage for 3 seconds"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hero_id": 45,
+        "talent_notes": [
+          {
+            "indent_level": 1,
+            "note": "Level 15 talent improved from -0.8s Nether Blast Cooldown to -1s"
+          }
+        ],
+        "abilities": [
+          {
+            "ability_id": 5188,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "No longer has a mana reducing aura"
+              },
+              {
+                "indent_level": 1,
+                "note": "Now additionally Heals 2 hits whenever it triggers"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hero_id": 64,
+        "abilities": [
+          {
+            "ability_id": 5297,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Cast Point improved from 0.55 to 0.35"
+              }
+            ]
+          },
+          {
+            "ability_id": 5299,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Burn damage increased from 12/16/20/24 to 15/20/25/30"
+              }
+            ]
+          },
+          {
+            "ability_id": 5300,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Cooldown increased from 60 to 80/70/60"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hero_id": 94,
+        "abilities": [
+          {
+            "ability_id": 5505,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Jump radius reduced from 475 to 450"
+              }
+            ]
+          },
+          {
+            "ability_id": 5506,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Damage per mana reduced from 1.6/1.9/2.2/2.5 to 1.3/1.7/2.1/2.5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "7.33": [
+      {
+        "hero_id": 20,
+        "hero_notes": [
+          {
+            "indent_level": 1,
+            "note": "Now is a Universal Hero"
+          },
+          {
+            "indent_level": 1,
+            "note": "Base Damage decreased from 26-32 to 12-18",
+            "icon": "damage"
+          },
+          {
+            "indent_level": 1,
+            "note": "Strength gain decreased from 2.6 to 2.0",
+            "icon": "strength"
+          },
+          {
+            "indent_level": 1,
+            "note": "Agility gain decreased from 3.2 to 2.0",
+            "icon": "agility"
+          },
+          {
+            "indent_level": 1,
+            "note": "Intelligence gain decreased from 1.5 to 1.2",
+            "icon": "intelligence"
+          },
+          {
+            "indent_level": 1,
+            "note": "Damage on level 1 unchanged (46-52)",
+            "icon": "damage"
+          },
+          {
+            "indent_level": 1,
+            "note": "Damage gain per level decreased from +3.2 to +3.12",
+            "icon": "damage"
+          }
+        ],
+        "talent_notes": [
+          {
+            "indent_level": 1,
+            "note": "Level 25 Talent Magic Missile pierces Spell Immunity replaced with +40% Nether Swap Damage Reduction"
+          }
+        ],
+        "abilities": [
+          {
+            "ability_id": 5122,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Stun Duration decreased from 1.4/1.5/1.6/1.7s to 1.1/1.2/1.3/1.4s ",
+                "info": "Duration decreased as a part of the comprehensive Disables Reduction"
+              }
+            ]
+          },
+          {
+            "ability_id": 5123,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Base Damage Bonus decreased from 11/18/25/32% to 10/16/22/28%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hero_id": 45,
+        "abilities": [
+          {
+            "ability_id": 5187,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "When targeting allies or self no longer increases Magic Damage taken. Instead, provides 5/10/15/20% incoming heal amplification"
+              }
+            ]
+          },
+          {
+            "ability_id": 5189,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Healing for allies is no longer based on the damage dealt by Life Drain"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hero_id": 64,
+        "talent_notes": [
+          {
+            "indent_level": 1,
+            "note": "Level 20 Talent Ice Path Duration decreased from +0.5s to +0.4s"
+          }
+        ],
+        "abilities": [
+          {
+            "ability_id": 5298,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Max Stun Duration decreased from 1.6/1.9/2.2/2.5s to 1.25/1.5/1.75/2s ",
+                "info": "Duration decreased as a part of the comprehensive Disables Reduction"
+              }
+            ]
+          },
+          {
+            "ability_id": 5299,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Burn Damage increased from 15/20/25/30 to 15/25/35/45"
+              },
+              {
+                "indent_level": 1,
+                "note": "Now has a 25% damage penalty vs. buildings"
+              }
+            ]
+          },
+          {
+            "ability_id": 5300,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Mana Cost increased from 220/330/440 to 230/340/450"
+              },
+              {
+                "indent_level": 1,
+                "note": "Damage per second decreased from 110/155/200 to 100/150/200"
+              }
+            ]
+          },
+          {
+            "ability_id": 1317,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "No longer applies a mini-stun"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hero_id": 94,
+        "hero_notes": [
+          {
+            "indent_level": 1,
+            "note": "Base Strength decreased from 17 to 0",
+            "icon": "strength"
+          },
+          {
+            "indent_level": 1,
+            "note": "Strength gain decreased from 1.5 to 0",
+            "icon": "strength"
+          },
+          {
+            "indent_level": 1,
+            "note": "Intelligence gain increased from 3.4 to 3.7",
+            "icon": "intelligence"
+          }
+        ],
+        "talent_notes": [
+          {
+            "indent_level": 1,
+            "note": "Level 10 Talent +0.5 Mana Shield Damage per Mana replaced with +5% Stone Gaze Bonus Physical Damage"
+          },
+          {
+            "indent_level": 1,
+            "note": "Level 25 Talent +75 Intelligence replaced with +1.3 Mana Shield Damage per Mana"
+          }
+        ],
+        "abilities": [
+          {
+            "ability_id": 5505,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Mana Cost decreased from 140 to 80/100/120/140"
+              },
+              {
+                "indent_level": 1,
+                "note": "Scepter Stone Base Duration decreased from 1.3s to 1.0s ",
+                "info": "Duration decreased as a part of the comprehensive Disables Reduction"
+              }
+            ]
+          },
+          {
+            "ability_id": 5506,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Ability reworked"
+              },
+              {
+                "indent_level": 1,
+                "hide_dot": true,
+                "note": "Now a passive ability. Medusa starts with one level of Mana Shield, and the ability can be upgraded up to level 5. Creates a shield that absorbs 98% incoming damage in exchange for mana. Increases base mana. Bonus Mana: 200/225/250/275/300. Damage per point of Mana: 2/2.3/2.6/2.9/3.2"
+              },
+              {
+                "indent_level": 1,
+                "note": "Now if a hero has Mana Shield ability, their mana bar will be visible to enemies"
+              },
+              {
+                "indent_level": 1,
+                "note": "Now also absorbs HP Loss type damage"
+              }
+            ]
+          },
+          {
+            "ability_id": 5507,
+            "ability_notes": [
+              {
+                "indent_level": 1,
+                "note": "Stone Form duration decreased from 3s to 2.4s ",
+                "info": "Duration decreased as a part of the comprehensive Disables Reduction"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "corrections": [
+    {
+      "claim": "Pugna ward trigger healing",
+      "official_730": "每次触发治疗两次攻击量",
+      "official_731": "移除此治疗，前值仍写两次攻击量",
+      "fixed_localization": "25%总生命",
+      "judgment": "官方明确设计声明优先；25%为冲突/残留说明线索，不再并列两种同等可信7.30e运行规则。实际引擎未认证。",
+      "previous_source": "mid-shallow-closure-20261015.json"
+    },
+    {
+      "claim": "Medusa shorter return provides more defense",
+      "judgment": "早回比晚回多资源，并不自动优于不放蛇。原支付后30+120=150，未支付前200，不放多50蓝/65一级盾预算；只有其他收益或已投入后的选择才保留。",
+      "previous_source": "mid-shallow-closure-20261015.json"
+    }
+  ],
+  "models_I_H": [
+    {
+      "id": "resource-dose",
+      "claim_type": "H",
+      "assumptions": [
+        "三近战一远程普通基础波",
+        "无反补/成长/额外兵",
+        "全部在经验范围",
+        "两人时等分",
+        "赏金全收仅作量纲"
+      ],
+      "wave_xp": 240,
+      "wave_gold_min": 145,
+      "wave_gold_max": 169,
+      "four_wave_solo_vs_shared_gain": 480,
+      "two_lost_wave_xp": 480,
+      "four_lost_wave_gold": [
+        580,
+        676
+      ],
+      "four_lost_wave_xp": 960,
+      "not_certified": "实际到级/出装分钟、GPM、真实漏兵"
+    },
+    {
+      "id": "jakiro-allocation",
+      "claim_type": "I/H",
+      "states": {
+        "high_level": 8,
+        "high_qwer": [
+          2,
+          1,
+          4,
+          1
+        ],
+        "low_level": 6,
+        "low_qwer": [
+          1,
+          1,
+          3,
+          1
+        ],
+        "dk_high_qwer": [
+          4,
+          1,
+          2,
+          1
+        ],
+        "dk_low_qwer": [
+          3,
+          1,
+          1,
+          1
+        ]
+      },
+      "E3_E4_cooldown": [
+        10,
+        4
+      ],
+      "windows_dense": [
+        0,
+        6
+      ],
+      "windows_sparse": [
+        0,
+        10
+      ],
+      "initial_actual_mana": 500,
+      "preclear": 150,
+      "engage": 470,
+      "arcane_restore": 175,
+      "remaining_before_tp": 55,
+      "tp_cost": 75,
+      "lens_regen_20_seconds": 50,
+      "limits": "不假定八/六级同分钟自然取得；合法完整攻击、五秒持续和目标位置仍前提"
+    },
+    {
+      "id": "pugna-allocation",
+      "claim_type": "I/H",
+      "states": {
+        "high_qwer": [
+          4,
+          1,
+          2,
+          1
+        ],
+        "low_qwer": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "ward_high_qwer": [
+          2,
+          1,
+          4,
+          1
+        ],
+        "ward_low_qwer": [
+          1,
+          1,
+          3,
+          1
+        ]
+      },
+      "blast_rank3_rank4": [
+        250,
+        325
+      ],
+      "target_hp": 300,
+      "target_effective_magic_resist": 0,
+      "ward_enemy_mana_cost": 200,
+      "ward_rank3_rank4_raw": [
+        350,
+        400
+      ],
+      "ward_effective_magic_resist": 0.25,
+      "ward_rank3_rank4_damage": [
+        262.5,
+        300
+      ],
+      "ward_target_hp": 280,
+      "two_clear_and_engage_mana": 700,
+      "initial_and_arcane": 675,
+      "shortfall_before_exit": 25,
+      "limits": "不将Q4/E4塞进八级；不保证英雄真实补刀、塔伤、棒回血或对手选择"
+    },
+    {
+      "id": "venge-item-acquisition",
+      "claim_type": "I/H",
+      "existing_boots_wand": 950,
+      "scepter_cost": 4200,
+      "complete_inventory_cost": 5150,
+      "owned_scepter_components": 2400,
+      "remaining": 1800,
+      "assumed_net_spendable_gold_per_minute": [
+        200,
+        400,
+        600
+      ],
+      "remaining_minutes": [
+        9,
+        4.5,
+        3
+      ],
+      "deadline_minutes": 4,
+      "required_rate": 450,
+      "alternative_remaining_after_force_blink_bkb": [
+        2000,
+        1950,
+        150
+      ],
+      "states": {
+        "high_qwer": [
+          4,
+          2,
+          1,
+          1
+        ],
+        "low_qwer": [
+          3,
+          1,
+          1,
+          1
+        ]
+      },
+      "limits": "收入为自设情景，不是样本GPM；整体经济不固定为两案相等；不借全部物品/技能重置权限"
+    },
+    {
+      "id": "medusa-no-cast-counterexample",
+      "claim_type": "H",
+      "mana_before_cast": 200,
+      "mana_cost": 170,
+      "early_return": 120,
+      "after_early_return": 150,
+      "no_cast_advantage_mana": 50,
+      "shield_rate": 1.3,
+      "no_cast_advantage_shield_budget": 65,
+      "early_vs_late_shield_advantage": 156,
+      "scope": "原蛇已交后短路相对长路，不推成主动施法必保命"
+    },
+    {
+      "id": "medusa-return-break-even",
+      "claim_type": "H",
+      "return_formula": "p*S-C",
+      "assumption": "S为模型按各合法对象法力上限累计的贡献；取样/跳选实现未认证",
+      "rank4_cost": 170,
+      "rank4_fraction": 0.2,
+      "rank4_break_even_S": 850,
+      "rank2_cost": 150,
+      "rank2_fraction": 0.14,
+      "rank2_break_even_S": 1071.4285714285713,
+      "one_600_target_rank4_rank2_net": [
+        -50,
+        -66
+      ]
+    },
+    {
+      "id": "medusa-skill-allocation",
+      "claim_type": "I/H",
+      "states": {
+        "offensive_qwer": [
+          2,
+          4,
+          1,
+          1
+        ],
+        "defensive_qwer": [
+          1,
+          2,
+          4,
+          1
+        ]
+      },
+      "other_filled_mana": 400,
+      "shield_bonus_mana": [
+        100,
+        250
+      ],
+      "starting_actual_mana": [
+        500,
+        650
+      ],
+      "snake_and_gaze_cost": [
+        270,
+        250
+      ],
+      "remaining": [
+        230,
+        400
+      ],
+      "damage_per_mana": [
+        1.3,
+        2.5
+      ],
+      "shield_absorption_budget": [
+        299,
+        1000
+      ],
+      "budget_difference": 701,
+      "limits": "容量须实际填满，暂不计返蓝/回复；不是实际额外生命，也非推荐永远先满盾"
+    },
+    {
+      "id": "leshrac-mainstay",
+      "claim_type": "I/H",
+      "high_level": 10,
+      "high_qwer": [
+        4,
+        4,
+        1,
+        1
+      ],
+      "low_level": 8,
+      "low_qwer": [
+        3,
+        3,
+        1,
+        1
+      ],
+      "q_radius_high_low": [
+        225,
+        200
+      ],
+      "edict_total_raw_upper_high_low": [
+        1120,
+        840
+      ],
+      "initial_actual_mana": 700,
+      "clear_e1": 80,
+      "q4_w4": 295,
+      "nova_activation": 70,
+      "nova_seconds": 8,
+      "nova_per_second": 20,
+      "total": 605,
+      "remaining": 95,
+      "remaining_after_tp": 20,
+      "limits": "持续费按8秒预算而非引擎跳数证明；敕令40次为总分配上限，不给每目标各40次"
+    },
+    {
+      "id": "puck-mainstay",
+      "claim_type": "I/H",
+      "high_level": 8,
+      "high_qwer": [
+        4,
+        2,
+        1,
+        1
+      ],
+      "low_level": 6,
+      "low_qwer": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "orb_cd_high_low": [
+        9,
+        10
+      ],
+      "initial_actual_mana": 600,
+      "preclear_q4": 140,
+      "engage": 350,
+      "remaining": 110,
+      "remaining_after_tp": 35,
+      "io_relocate_mana": 175,
+      "io_new_tether_mana": 40,
+      "io_r1_cooldown": 100,
+      "io_r1_delay_field": 3.5,
+      "limits": "同一球不重复伤害/收费；旧球返场不刷新大招或产生第二颗已就绪球；伙伴运输有真实替代任务"
+    },
+    {
+      "id": "razor-mainstay",
+      "claim_type": "I/H",
+      "high_level": 8,
+      "high_qwer": [
+        2,
+        4,
+        1,
+        1
+      ],
+      "low_level": 6,
+      "low_qwer": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "link_rate_high_low": [
+        22,
+        17
+      ],
+      "same_window": 2.75,
+      "link_drain_high_low": [
+        60.5,
+        46.75
+      ],
+      "marginal_attack_damage": 13.75,
+      "initial_actual_mana": 500,
+      "preclear_q": 125,
+      "engage_qwr": 290,
+      "remaining": 85,
+      "remaining_after_tp": 10,
+      "sd_disruption_rank1_duration": 2.75,
+      "sd_mana": 120,
+      "limits": "跨禁锢连续连接本身沿旧H；吸攻不是伤害，对象受禁锢时失去直接攻击机会"
+    },
+    {
+      "id": "invoker-mainstay",
+      "claim_type": "I/H",
+      "high_orbs_qwe": [
+        4,
+        4,
+        0
+      ],
+      "low_orbs_qwe": [
+        3,
+        3,
+        0
+      ],
+      "invoke_condition": "已实际可用，两技能已准备，不假定0火仍有高火输出",
+      "emp_burn_w3_w4": [
+        250,
+        325
+      ],
+      "tornado_lift_q3_q4": [
+        1.35,
+        1.6
+      ],
+      "combo_cost": 275,
+      "return_fraction_actual_hero_mana_burn": 0.5,
+      "one_full_target_return": 162.5,
+      "one_full_target_net_cost": 112.5,
+      "two_full_targets_return": 325,
+      "two_full_targets_net_gain": 50,
+      "one_100_mana_target_return": 50,
+      "ghost_walk_cost": 200,
+      "limits": "按当前实际烧蓝，非目标最大蓝；EMP不影响仍吹起对象；空间/命中/容量为条件，不冒充已验证回蓝循环"
+    }
+  ],
+  "source_maturity": {
+    "runtime_tested": false,
+    "replay_watched": false,
+    "new_match_API": false,
+    "professional_mid_value_certified": false,
+    "historical_popularity_certified": false,
+    "historical_novelty_certified": false,
+    "fiction_adopted": false
+  },
+  "patch_limits": "主要7.30e数值截面；7.31低级液火/虚无引导/棒重做沿旧来源，7.33四英雄指定重做/数值另列；没有认证中间字母版全期不变。",
+  "related_sources": [
+    "mid-jakiro-depth-20261015.json",
+    "mid-shallow-closure-20261015.json",
+    "mid-role-depth-20261015.json"
+  ]
+}

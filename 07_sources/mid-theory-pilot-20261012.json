@@ -1,0 +1,100 @@
+{
+  "id": "sources:mid-theory-pilot-20261012",
+  "as_of_client": "2026-10-12 America/Los_Angeles",
+  "purpose": "规则驱动方法及N08组件取证/条件模型；现行判断只在技巧总库维护",
+  "retrieved_time_precision": "client-day",
+  "version_scope": {
+    "target_background": "7.30e，2021—2023范围的起始版本",
+    "mirror_commit": "cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529",
+    "mirror_commit_date": "2021-11-01",
+    "mirror_build": "5077",
+    "metadata_basis": "复用mid-value-method-20261008.json已核提交元数据",
+    "limits": "镜像字段/说明不认证赛事客户端、热修或引擎执行；6.84与2019/2022材料分别保留年代"
+  },
+  "http_sources": [
+    {
+      "id": "T01",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "request_mode": "主任务默认路径HTTP GET，审查者另独立读取",
+      "status": 200, "bytes": 3099817,
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "read_scope": "完整ember_spirit_sleight_of_fist块，不是全技能文件审读",
+      "claim_type": "F：资源文件字段",
+      "fields": {"AbilityCastRange": "700", "AbilityCastPoint": "0", "AbilityManaCost": "50", "radius": "250 350 450 550", "attack_interval": "0.2", "root_disables_flag_present": true},
+      "limits": "间隔不等于完整人工输入窗口；没有逐次位置、转向和订单执行实现"
+    },
+    {
+      "id": "T02",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "request_mode": "主任务默认路径HTTP GET，审查者另独立核完整块",
+      "status": 200, "bytes": 621009,
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "read_scope": "item_force_staff、item_lotus_orb、item_glimmer_cape完整定义块，以唯一ID区分配方引用",
+      "claim_type": "F：资源文件字段",
+      "fields": {
+        "force_staff": {"cast_range": 550, "enemy_cast_range": 850, "cast_point_explicit": "0.0", "mana": 100, "cooldown": 23, "cost": 2200, "push_length": 600, "target_team": "BOTH与CUSTOM", "target_type": "HERO、BASIC与CUSTOM"},
+        "lotus_orb": {"cast_range": 900, "cast_point_explicit": null, "mana": 175, "cooldown": 15, "cost": 3850, "duration": 6, "target_team": "FRIENDLY", "target_type": "HERO"},
+        "glimmer_cape": {"cast_range": 550, "cast_point_explicit": null, "mana": 90, "cooldown": 14, "cost": 1950, "fade_delay": 0.6, "active_magic_resistance": 45, "duration": 5, "target_team": "FRIENDLY", "target_type": "HERO与BASIC", "immediate_flag_present": true, "ignore_channel_flag_present": true}
+      },
+      "limits": "CUSTOM筛选、缺省参数和运行仍未核；敌方850不作友军射程；微光标记不证明整套输入无需转向"
+    },
+    {
+      "id": "T03",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "request_mode": "主任务默认路径HTTP GET，审查者另独立核同名说明",
+      "status": 200, "bytes": 1235305,
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "read_scope": "无影拳Description/Note0—3、三物品Description及推推Note0—2；不是全英文说明审读",
+      "claim_type": "F：资源文件说明",
+      "paraphrases": ["无影拳起手确定目标，攻击后归位，期间可用技能和物品", "推推沿受术者朝向，排除时间结界、决斗、黑洞内单位", "莲花基础驱散、镜回多数点目标技能，被保护者仍受原技能伤害", "微光描述称渐隐延迟后给予隐身及主动魔抗，可引导中施放"],
+      "limits": "不认证特定友军物品在拳中的执行时点、距离采样、输入、退出或准确效果帧"
+    }
+  ],
+  "web_sources": [
+    {
+      "id": "T04",
+      "url": "https://slashstrikedota.wordpress.com/2019/06/12/slashstrikes-guide-to-ember-spirit-7-22c/",
+      "published_at": "2019-06-12",
+      "read_scope": "无影拳113—140及物品303—308行；非全指南深读",
+      "claim_type": "Q：作者原始攻略",
+      "paraphrase": "已有拳中远距吹风、随机跳斩/归位，以及普通莲花友军用途；所读段落未取得三件友军物品拳中救援整链",
+      "limits": "2019数值/Meta不倒填2021；未看视频或认证普及"
+    },
+    {
+      "id": "T05",
+      "url": "https://www.reddit.com/r/DotA2/comments/zizba6/every_single_ember_trick/",
+      "published_at": "2022-12-11",
+      "read_scope": "142—179行取消/返回及拳中物品段，Force Staff字符串无命中；审查者加读相关转向评论",
+      "claim_type": "Q：作者原始说法",
+      "paraphrase": "已有拳中物品扩大有效施法范围与返回/取消用法；所读范围未取得同款友军救援全链",
+      "limits": "2022不认证7.30e全链；未看视频"
+    },
+    {
+      "id": "T06",
+      "url": "https://www.dota2.com/684?l=english",
+      "read_scope": "Lotus Orb与Glimmer Cape段513—543行",
+      "claim_type": "F：官方旧规则",
+      "paraphrase": "莲花普通驱散不解眩晕、镜回不挡原技能；微光早期设计包含隐身期间额外魔抗及攻击/施法重新渐隐",
+      "limits": "仅历史锚点；不迁移6.84数值，不由未见改动推定7.30e全部延续"
+    }
+  ],
+  "bounded_novelty_search": {
+    "generation_order_policy": "规则入口按瓶颈生成候选后有界查新；本轮复用已读N08作方法试点，不主张独立首次生成",
+    "queries_by_root": ["\"Sleight of Fist\" \"Force Staff\"", "\"Ember\" \"Sleight\" \"Lotus\" \"ally\"", "\"Sleight of Fist\" \"Glimmer Cape\""],
+    "local_overlap": "与既有N08重合，扩写原项，不增加候选/发现数",
+    "result": "本次检索及所读原帖段落未取得可靠同款全链；Wiki/转载/无关结果未作核心规则证据",
+    "limits": "非全球查新，不证明无人使用、当期未知或实际未普及"
+  },
+  "model_example": {
+    "type": "条件性几何模型，非游戏测试/真实对局",
+    "O": [0, 0], "C": [650, 0], "B": [900, 0], "U": [1300, 0],
+    "assumed_max_distance_actual_cast_position_to_B": 150,
+    "conditions": ["C距O650≤700", "B距C250≤四级范围550", "U距B400加假设偏移150≤550", "U距O1300>550"],
+    "limits": "150是假设偏移上界；几何有解不证明状态可达、目标标记或订单执行"
+  },
+  "arithmetic_checks": {"force_plus_sleight_mana": 150, "lotus_plus_sleight_mana": 225, "glimmer_plus_sleight_mana": 140},
+  "execution": {"video_playback_performed": false, "replay_download_or_parse_performed": false, "game_test_performed": false, "old_client_setup_performed": false, "human_success_rate_measured": false, "new_verified_discovery": false, "novel_adoption": false},
+  "review": {"scope": "两名只读审查者核实际方法/N08/来源底稿，主任务核原文和差异；非异构审查或引擎验证", "status": "原四处发现已修正，针对修订的有限复核未发现阻止发布的问题", "corrections": ["施放/射程结算与救援效果时刻分开；延迟效果允许归位后及时起效", "共同满足是待核约束，不写成已证明有共同窗口", "PROJECT标明最小测试方案未执行", "预算称无耗蓝修正时单次基础耗蓝，不称实际最低值", "主任务将N08表述校准为复用已读候选，不主张独立首次生成"]},
+  "manual_export": {"root_filename": "逐梦之旅_DOTA2中单竞技价值分析手册_v1.1.docx", "status": "已生成且最终17页完成视觉与结构检查", "previous_v1_0_retained": true, "pages": 17, "sections": 14, "tables": 8, "docx_sha256": "029af65df3ecaedb0a7de9bd2f13430149c62c580b161c5ad74f22feb20a65f9", "canonical_source_sha256": "9f6987d78af88e00aa3f7689b9a9f2676b1bf43aac78b0cd2711fdc4755cabcc"},
+  "document_validation": {"markdown_files": 4, "local_links_checked": 186, "docx_local_links": 13, "reference_files_unchanged": 6, "previous_manual_hash_unchanged": true, "raw_source_hashes_verified": 3, "geometry_and_base_mana_checked": true, "source_markdown_count_recursive": 24, "source_json_count_recursive": 6, "visual_review": "第4稿17页均按原尺寸检查；最终第5稿13页逐像素一致，变更9/14/16/17页重新打开原尺寸检查，参考入口另起页，无截断、重叠或缺字", "render_backend": "沿既有Word独立隐藏实例只读PDF导出与打包render_docx.py的rasterize/PyMuPDF路径，无新依赖或桌面LibreOffice", "limits": "文件、计算、排版及逻辑审查不证明客户端执行、人工容错或实战净收益"}
+}

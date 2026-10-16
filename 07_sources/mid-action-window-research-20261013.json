@@ -1,0 +1,1580 @@
+{
+  "id": "sources:mid-action-window-research-20261013",
+  "as_of_client": "2026-10-13 America/Los_Angeles",
+  "purpose": "第19—24单元：单位调度、选择性释放控制及普通处理强对照；判断在总库维护",
+  "version_scope": {
+    "fixed_commit": "cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529",
+    "baseline": "7.30e；7.31/7.32/7.32b/7.33/7.34d仅指定官方改动，未取得全部运行快照",
+    "limitations": "无全期认证、实机、视频、Replay、比赛扫描或角色当时全知；H可相容设计X，不升级F/O"
+  },
+  "raw_sources": [
+    {
+      "id": "AW-abilities",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "bytes": 3099817,
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "acquisition": "复用固定响应；本轮重读限定字段/说明",
+      "claim_type": "F：定义和文本，不认证完整引擎交互或赛事客户端"
+    },
+    {
+      "id": "AW-localization",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "bytes": 1235305,
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "acquisition": "复用固定响应；本轮重读限定字段/说明",
+      "claim_type": "F：定义和文本，不认证完整引擎交互或赛事客户端"
+    },
+    {
+      "id": "AW-items",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "bytes": 621009,
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "acquisition": "复用固定响应；本轮重读限定字段/说明",
+      "claim_type": "F：定义和文本，不认证完整引擎交互或赛事客户端"
+    }
+  ],
+  "saved_public_sources": [
+    {
+      "file": "patch-7.31.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english",
+      "requested_at": "2026-10-13T11:08:31.123430+00:00",
+      "status": 200,
+      "resolved_url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english",
+      "bytes": 130214,
+      "sha256": "9a5a76422eba02b2e45bf80c81450e9c7155d1a028cc59a8cfecf9cd10fdf28a",
+      "cache_group": "mid-action-window-research-20261013",
+      "read_scope": "仅英雄36镰刀的死亡等待移除/永久恢复两项",
+      "claim_type": "F：Valve限定条目"
+    },
+    {
+      "file": "patch-7.32.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.32&language=english",
+      "requested_at": "2026-10-13T11:08:31.123430+00:00",
+      "status": 200,
+      "resolved_url": "https://www.dota2.com/datafeed/patchnotes?version=7.32&language=english",
+      "bytes": 92953,
+      "sha256": "ed1e0611aaf132a4f870209250781ca31e57178c1a56b20373c3ed0404006c0d",
+      "cache_group": "mid-action-window-research-20261013",
+      "read_scope": "仅英雄78神杖重做与分裂技能不刷新、英雄66神杖/相关天赋及英雄36镰刀耗蓝/冷却；不是整版Meta分析",
+      "claim_type": "F：Valve限定条目"
+    },
+    {
+      "file": "patch-7.33.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english",
+      "requested_at": "2026-10-13T11:08:31.123430+00:00",
+      "status": 200,
+      "resolved_url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english",
+      "bytes": 169457,
+      "sha256": "b65cb135d43236e8816546e661a58aaf30de3ec7f737a201905590e041f17d04",
+      "cache_group": "mid-action-window-research-20261013",
+      "read_scope": "仅英雄78的分裂/魔晶取消等相关条目，英雄88新基础技能、Mana Burn到Mind Flare天赋及相关技能变化；不认证全部现行运行交互",
+      "claim_type": "F：Valve限定条目"
+    },
+    {
+      "file": "patch-7.34d.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.34d&language=english",
+      "requested_at": "2026-10-13T11:08:31.123430+00:00",
+      "status": 200,
+      "resolved_url": "https://www.dota2.com/datafeed/patchnotes?version=7.34d&language=english",
+      "bytes": 13611,
+      "sha256": "8e853acf3905d256de83d83f0c6cda49f90d8af8eba409e628d6f7511f0bee7d",
+      "cache_group": "mid-action-window-research-20261013",
+      "read_scope": "仅英雄78取消按普通优先级及分裂耗蓝；其余版本不外推",
+      "claim_type": "F：Valve限定条目"
+    },
+    {
+      "file": "brewmaster-tips.html",
+      "url": "https://howdoiplay.com/tips/brewmaster.html",
+      "requested_at": "2026-10-13T11:08:31.887708+00:00",
+      "status": 200,
+      "resolved_url": "https://howdoiplay.com/tips/brewmaster.html",
+      "bytes": 8192,
+      "sha256": "f946ad70e385c3ab8c3761d1fd966e4cdc5b8045a68964fe77edbcf128e62151",
+      "cache_group": "mid-action-window-research-20261013",
+      "read_scope": "回归优先级、风吹跨结束/驱散、单位角色和保护相关段；后期取消优先级不当2021规则",
+      "claim_type": "Q：原作者现行技巧，不认证旧期整链"
+    },
+    {
+      "file": "chen-tips.html",
+      "url": "https://howdoiplay.com/tips/chen.html",
+      "requested_at": "2026-10-13T11:08:32.716283+00:00",
+      "status": 200,
+      "resolved_url": "https://howdoiplay.com/tips/chen.html",
+      "bytes": 8226,
+      "sha256": "fa0dfdbf79f4c3551b6d9023b9ccaa6b8019b4a561c455d69124d70d7fc940b0",
+      "cache_group": "mid-action-window-research-20261013",
+      "read_scope": "现行自点控单位销毁、Zealot传送受伤取消、不要随本体一起回泉及单位版本例子；旧召回只由固定定义支持，不迁移后期新野怪/双生之门/神杖免疫",
+      "claim_type": "Q：原作者现行技巧，不认证旧期整链"
+    },
+    {
+      "file": "naga_siren-tips.html",
+      "url": "https://howdoiplay.com/tips/naga_siren.html",
+      "requested_at": "2026-10-13T11:08:32.856801+00:00",
+      "status": 200,
+      "resolved_url": "https://howdoiplay.com/tips/naga_siren.html",
+      "bytes": 8283,
+      "sha256": "081cdb98168e1e9a047f05e28db73c8f84dc0f74620aec55c20111fde9649e61",
+      "cache_group": "mid-action-window-research-20261013",
+      "read_scope": "镜像/网/歌相关段与免疫隔离对照；后期无升级睡后网、先天/累计激流/新物品不迁移",
+      "claim_type": "Q：原作者现行技巧，不认证旧期整链"
+    },
+    {
+      "file": "nyx_assassin-tips.html",
+      "url": "https://howdoiplay.com/tips/nyx_assassin.html",
+      "requested_at": "2026-10-13T11:08:33.522446+00:00",
+      "status": 200,
+      "resolved_url": "https://howdoiplay.com/tips/nyx_assassin.html",
+      "bytes": 6787,
+      "sha256": "c96d89705d60712644cf06cee98202d60bd8b14c7260b96394643e9f42549896",
+      "cache_group": "mid-action-window-research-20261013",
+      "read_scope": "掘地可推/不许跳或TP、朝向、反刺与隐身相关段；Mind Flare/鱼叉/先天不当旧法力燃烧",
+      "claim_type": "Q：原作者现行技巧，不认证旧期整链"
+    },
+    {
+      "file": "hero-index.html",
+      "url": "https://howdoiplay.com/",
+      "requested_at": "2026-10-13T11:13:01.224634+00:00",
+      "status": 200,
+      "resolved_url": "https://howdoiplay.com/",
+      "bytes": 18773,
+      "sha256": "452a974ecca78718e4e958a3042bcd7075d6a96f167bfc29c4c9de23eae3de5a",
+      "cache_group": "mid-action-window-research-20261013",
+      "read_scope": "仅英雄名称和公开脚本入口路由定位；不作机制证据，未继续扩成读取工程",
+      "claim_type": "仅路由定位"
+    },
+    {
+      "file": "patch-7.32b.json",
+      "cache_group": "mid-return-research-20261013",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.32b&language=english",
+      "bytes": 16337,
+      "sha256": "a06712aafc17af006ba552ab51ac74a72486e58d5399d66824badedd371bd2cf",
+      "acquisition": "复用原响应，本轮新增读取Brewmaster条目，非重复下载或独立新来源",
+      "read_scope": "仅hero_id=78、ability_id=5403的重召刷新恢复；前轮Puck范围不自动覆盖该条",
+      "claim_type": "F：Valve限定条目"
+    }
+  ],
+  "source_failures": [
+    {
+      "file": "furion-tips.html",
+      "url": "https://howdoiplay.com/tips/furion.html",
+      "requested_at": "2026-10-13T11:08:33.411040+00:00",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "primary_q_reads": [
+    {
+      "url": "https://www.reddit.com/r/learndota2/comments/ql2eh8/",
+      "author": "Smoki_fox及相关评论者",
+      "published_label": "检索2021-11-02日级标签，创建UTC未核",
+      "read_scope": "主楼21—44技能/装备和原作者282—285回归、354—357中路经历；126/368/393—394只读相邻单位分工。没有看片/账号认证/全评论审读",
+      "supports": "旧神杖可在任一熊猫位置主动结束、单位分工和三/四号位强对照Q；不采近乎无敌/必杀或四个熊猫同时留场"
+    },
+    {
+      "url": "https://www.reddit.com/r/learndota2/comments/t6vi98/",
+      "author": "主楼已删除名；OtherPlayers",
+      "published_label": "2022-03-04主楼/03-05回复检索日级标签，创建UTC未核",
+      "read_scope": "主楼19—21与48—50回复；未看4:25片段，其他按血量/顺序回复不作为规则",
+      "supports": "主动结束按所选单位、自然结束依旧优先级是同期Q，非本项目O"
+    },
+    {
+      "url": "https://www.reddit.com/r/DotA2/comments/qlddrf/",
+      "author": "Faines及相关回复",
+      "published_label": "检索2021-11-02日级标签，创建UTC未核",
+      "read_scope": "主楼21—25与169—172分裂前摇/过渡及连按输入；Shift/缓冲争论仅保留争议，不认证万能输入",
+      "supports": "连按同一键可能误取消，0.55/0.6组件的相邻说明Q；不是实机或成功率"
+    }
+  ],
+  "pointer_only": [
+    {
+      "url": "https://liquipedia.net/dota2/Brewmaster/Changelogs",
+      "use": "定位7.34d/7.32/7.33后回官方响应，未以二手页作技术结论"
+    },
+    {
+      "url": "https://liquipedia.net/dota2/Chen/Old_Abilities",
+      "use": "旧位置结束取样只是邻近指针，不当7.30e召回引擎认证"
+    }
+  ],
+  "source_independence": "三固定文件同一快照，四技巧页同一作者站，五官方补丁同一发布方；逐主张追溯，不按响应个数算独立印证。主页是路由定位，另计读取而非机制支持。检索范围内未读到Naga/Chen同款完整链，不证明首次或当期无人知晓。",
+  "component_fields": {
+    "brewmaster_primal_split": {
+      "ID": "5403",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "HasShardUpgrade": "1",
+      "HasScepterUpgrade": "1",
+      "AbilityCooldown": "140 130 120",
+      "AbilityCastPoint": "0.55",
+      "AbilityManaCost": "125 150 175",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "16 18 20"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "split_duration": "0.6"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "scepter_bonus_duration": "20",
+          "RequiresScepter": "1"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "max_charges": "2",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "brewmaster_primal_split_cancel": {
+      "ID": "537",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+      "MaxLevel": "1",
+      "HasScepterUpgrade": "1",
+      "AbilityCooldown": "0",
+      "AbilityCastPoint": "0",
+      "AbilityManaCost": "0",
+      "AbilitySpecial": {}
+    },
+    "brewmaster_storm_dispel_magic": {
+      "ID": "5408",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "AbilityCastRange": "500 500 500 500",
+      "AbilityCooldown": "4",
+      "AbilityCastPoint": "0.4",
+      "AbilityManaCost": "75 75 75 75",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "1000"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "600"
+        }
+      }
+    },
+    "brewmaster_storm_cyclone": {
+      "ID": "5409",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastRange": "600 600 600 600",
+      "AbilityCooldown": "8.0",
+      "AbilityCastPoint": "0.4",
+      "AbilityManaCost": "150 150 150 150",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration_hero": "6.0"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "duration_unit": "20.0 20.0 20.0 20.0"
+        }
+      }
+    },
+    "brewmaster_storm_wind_walk": {
+      "ID": "5410",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCooldown": "5",
+      "AbilityManaCost": "75 75 75 75",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_damage": "140 200 260"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_movement_speeed": "50 50 50 50"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "20.0 20.0 20.0 20.0"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "fade_time": "0.6 0.6 0.6 0.6"
+        }
+      }
+    },
+    "chen_holy_persuasion": {
+      "ID": "5330",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "HasShardUpgrade": "1",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityCastRange": "600",
+      "AbilityCooldown": "15",
+      "AbilityManaCost": "90 110 130 150",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "max_units": "1 2 3 4",
+          "LinkedSpecialBonus": "special_bonus_unique_chen_1"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "level_req": "3 4 5 6"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "health_min": "700 800 900 1000",
+          "LinkedSpecialBonus": "special_bonus_unique_chen_4"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "movement_speed_bonus": "10 15 20 25"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "damage_bonus": "8 16 24 32",
+          "LinkedSpecialBonus": "special_bonus_unique_chen_5"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "teleport_delay": "6"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "AbilityCharges": "",
+          "LinkedSpecialBonus": "special_bonus_unique_chen_1"
+        }
+      }
+    },
+    "chen_divine_favor": {
+      "ID": "7306",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastPoint": "0.2",
+      "AbilityCastRange": "600",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "armor": "1 2 3 4"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "heal_rate": "1.5 3 4.5 6"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "aura_radius": "1200"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "teleport_delay": "6"
+        }
+      }
+    },
+    "naga_siren_song_of_the_siren": {
+      "ID": "5470",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "HasShardUpgrade": "1",
+      "AbilityCastPoint": "1.0",
+      "AbilityCastRange": "1000 1200 1400",
+      "AbilityCooldown": "160.0 120.0 80.0",
+      "AbilityManaCost": "150 175 200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "1000 1200 1400"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "7.0 7.0 7.0"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "animation_rate": "0.55 0.55 0.55"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "regen_rate": "10.0"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "regen_rate_self": "10.0"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "regen_rate_tooltip_scepter": "10",
+          "RequiresScepter": "1"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_cooldown": "160.0 120.0 80.0",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "naga_siren_song_of_the_siren_cancel": {
+      "ID": "5478",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "MaxLevel": "1",
+      "AbilityCastPoint": "0 0 0",
+      "AbilityCooldown": "1.0 1.0 1.0"
+    },
+    "naga_siren_mirror_image": {
+      "ID": "5467",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityCastPoint": "0.65",
+      "AbilityCooldown": "40 35 30 25",
+      "AbilityManaCost": "70 85 100 115",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "illusion_duration": "26"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "outgoing_damage": "-75 -70 -65 -60",
+          "LinkedSpecialBonus": "special_bonus_unique_naga_siren_4"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "outgoing_damage_tooltip": "25 30 35 40",
+          "LinkedSpecialBonus": "special_bonus_unique_naga_siren_4"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "incoming_damage": "250"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "tooltip_incoming_damage_total_pct": "350"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "images_count": "3 3 3 3",
+          "LinkedSpecialBonus": "special_bonus_unique_naga_siren"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "invuln_duration": "0.3"
+        }
+      }
+    },
+    "naga_siren_ensnare": {
+      "ID": "5468",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "HasScepterUpgrade": "1",
+      "AbilityCastPoint": "0.4",
+      "AbilityCooldown": "23 20 17 14",
+      "AbilityManaCost": "70 80 90 100",
+      "AbilityCastRange": "575 600 625 650",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "2.75 3.5 4.25 5.0"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "net_speed": "1500"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "fake_ensnare_distance": "900 900 900 900"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_cooldown": "6"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_range": "400"
+        }
+      }
+    },
+    "nyx_assassin_burrow": {
+      "ID": "5666",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "MaxLevel": "1",
+      "LinkedAbility": "nyx_assassin_unburrow",
+      "HasScepterUpgrade": "1",
+      "AbilityCastPoint": "1.5",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "health_regen_rate": "1",
+          "RequiresScepter": "1"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "mana_regen_rate": "1",
+          "RequiresScepter": "1"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "damage_reduction": "50",
+          "RequiresScepter": "1"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "impale_burn_range_increase_pct_tooltip": "75",
+          "RequiresScepter": "1"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "mana_burn_burrow_range_tooltip": "1050",
+          "RequiresScepter": "1"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "impale_burrow_range_tooltip": "1225",
+          "RequiresScepter": "1"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "impale_burrow_cooldown_tooltip": "7",
+          "RequiresScepter": "1"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "carapace_burrow_range_tooltip": "300",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "nyx_assassin_unburrow": {
+      "ID": "5673",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "MaxLevel": "1",
+      "LinkedAbility": "nyx_assassin_burrow",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "0.0",
+      "AbilityManaCost": "0"
+    },
+    "nyx_assassin_spiked_carapace": {
+      "ID": "5464",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCooldown": "25 20 15 10",
+      "AbilityCastPoint": "0 0 0 0",
+      "AbilityManaCost": "40 40 40 40",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "reflect_duration": "2.0"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "stun_duration": "0.6 1.2 1.8 2.4",
+          "LinkedSpecialBonus": "special_bonus_unique_nyx_6"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_damage": "0"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_armor": "0"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_intellect": "0"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "burrow_aoe": "300"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "damage_reflect_pct": "100",
+          "LinkedSpecialBonus": "special_bonus_unique_nyx"
+        }
+      }
+    },
+    "nyx_assassin_impale": {
+      "ID": "5462",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+      "AbilityCastRange": "700",
+      "AbilityCastPoint": "0.3",
+      "AbilityCooldown": "14",
+      "AbilityManaCost": "105 120 135 150",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "width": "125 125 125 125"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "1.4 1.8 2.2 2.6",
+          "LinkedSpecialBonus": "special_bonus_unique_nyx_4"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "length": "700"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "speed": "1600"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "cooldown_upgrade": "7"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "impale_damage": "100 160 220 280",
+          "LinkedSpecialBonus": "special_bonus_unique_nyx_2"
+        }
+      }
+    },
+    "nyx_assassin_vendetta": {
+      "ID": "5465",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "HasShardUpgrade": "1",
+      "AbilityCooldown": "90 75 60",
+      "AbilityManaCost": "180 240 300",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "40 50 60"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "fade_time": "0.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "movement_speed": "16 18 20"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_damage": "300 450 600"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "health_regen_rate_scepter": "3"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "mana_regen_rate_scepter": "3"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "break_duration": "4.0"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "shard_magic_resist_reduction": "20"
+        }
+      }
+    },
+    "nyx_assassin_mana_burn": {
+      "ID": "5463",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityCastRange": "600 600 600 600",
+      "AbilityCastPoint": "0.4 0.4 0.4 0.4",
+      "AbilityCooldown": "28.0 20.0 12.0 4.0",
+      "AbilityManaCost": "100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "float_multiplier": "3.5 4 4.5 5"
+        }
+      }
+    },
+    "furion_teleportation": {
+      "ID": "5246",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastRange": "0",
+      "AbilityCastPoint": "3 3 3 3",
+      "AbilityCooldown": "65 50 35 20",
+      "AbilityManaCost": "50 50 50 50",
+      "AbilitySpecial": {}
+    },
+    "furion_force_of_nature": {
+      "ID": "5247",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
+      "AbilityCastRange": "750",
+      "AbilityCastPoint": "0.5 0.5 0.5 0.5",
+      "AbilityCooldown": "37",
+      "AbilityManaCost": "130 140 150 160",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "area_of_effect": "150 225 300 375"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "max_treants": "2 3 4 5",
+          "LinkedSpecialBonus": "special_bonus_unique_furion_2"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "60 60 60 60"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "treant_health_tooltip": "550",
+          "LinkedSpecialBonus": "special_bonus_unique_furion",
+          "LinkedSpecialBonusOperation": "SPECIAL_BONUS_MULTIPLY"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "treant_dmg_tooltip": "18 26 34 42",
+          "LinkedSpecialBonus": "special_bonus_unique_furion",
+          "LinkedSpecialBonusOperation": "SPECIAL_BONUS_MULTIPLY"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "treant_hp_bonus": "825"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "treant_damage_bonus": "27 39 51 63"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "treant_large_hp_bonus": "1320",
+          "RequiresScepter": "1"
+        },
+        "09": {
+          "var_type": "FIELD_INTEGER",
+          "treant_large_damage_bonus": "57 67 77 87",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "furion_wrath_of_nature": {
+      "ID": "5248",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "HasScepterUpgrade": "1",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP",
+      "AbilityCastRange": "0",
+      "AbilityCastPoint": "0.5 0.5 0.5",
+      "AbilityCooldown": "85",
+      "AbilityManaCost": "175 225 275",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "max_targets": "18"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "115 150 185",
+          "LinkedSpecialBonus": "special_bonus_unique_furion_5"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "damage_percent_add": "10"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "jump_delay": "0.25"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "kill_damage": "6"
+        },
+        "06": {
+          "var_type": "FIELD_FLOAT",
+          "kill_damage_duration": "50"
+        }
+      }
+    },
+    "necrolyte_reapers_scythe": {
+      "ID": "5161",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "AbilityCastPoint": "0.45",
+      "AbilityCooldown": "120",
+      "AbilityManaCost": "200 350 500",
+      "AbilityCastRange": "600",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "damage_per_health": "0.7 0.8 0.9"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "stun_duration": "1.5 1.5 1.5"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "respawn_constant": "15 25 35"
+        }
+      }
+    }
+  },
+  "selected_item_fields": {
+    "item_blink": {
+      "ID": "1",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "AbilityCastRange": "0",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "15.0",
+      "AbilityManaCost": "0",
+      "ItemCost": "2250",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "blink_range": "1200"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "blink_damage_cooldown": "3.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "blink_range_clamp": "960"
+        }
+      }
+    },
+    "item_tpscroll": {
+      "ID": "46",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NOASSIST | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_BUILDING",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
+      "AbilityCastRange": "0",
+      "AbilityCooldown": "80.0",
+      "AbilityChannelTime": "3.0",
+      "AbilityCastPoint": "0.0",
+      "AbilityManaCost": "75",
+      "ItemCost": "100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "minimun_distance": "70"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "maximum_distance": "800"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "vision_radius": "200"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "tooltip_channel_time": "3.0"
+        }
+      }
+    },
+    "item_force_staff": {
+      "ID": "102",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CUSTOM",
+      "AbilityCastRange": "550",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "23.0",
+      "AbilityManaCost": "100",
+      "ItemCost": "2200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_intellect": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_health": "150"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "push_length": "600"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "enemy_cast_range": "850"
+        }
+      }
+    },
+    "item_ultimate_scepter": {
+      "ID": "108",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
+      "AbilityCastRange": "600",
+      "ItemCost": "4200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_all_stats": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_health": "175"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_mana": "175"
+        }
+      }
+    },
+    "item_refresher": {
+      "ID": "110",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "160.0",
+      "AbilityManaCost": "300",
+      "ItemCost": "5000",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_health_regen": "13"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "bonus_mana_regen": "12.0"
+        }
+      }
+    },
+    "item_black_king_bar": {
+      "ID": "116",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityCooldown": "75",
+      "ItemCost": "4050",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_strength": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_damage": "24"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "9.0 8.0 7.0 6.0"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "max_level": "4"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "model_scale": "30"
+        }
+      }
+    }
+  },
+  "localization_keys_read": {
+    "brewmaster_primal_split": [
+      "dota_tooltip_ability_brewmaster_primal_split_description",
+      "dota_tooltip_ability_brewmaster_primal_split_note0",
+      "dota_tooltip_ability_brewmaster_primal_split_note1",
+      "dota_tooltip_ability_brewmaster_primal_split_note2",
+      "dota_tooltip_ability_brewmaster_primal_split_shard_description",
+      "dota_tooltip_ability_brewmaster_primal_split_scepter_description",
+      "dota_tooltip_ability_brewmaster_primal_split_cancel_description"
+    ],
+    "brewmaster_primal_split_cancel": [
+      "dota_tooltip_ability_brewmaster_primal_split_cancel_description"
+    ],
+    "brewmaster_storm_dispel_magic": [
+      "dota_tooltip_ability_brewmaster_storm_dispel_magic_description"
+    ],
+    "brewmaster_storm_cyclone": [
+      "dota_tooltip_ability_brewmaster_storm_cyclone_description"
+    ],
+    "brewmaster_storm_wind_walk": [
+      "dota_tooltip_ability_brewmaster_storm_wind_walk_description"
+    ],
+    "chen_holy_persuasion": [
+      "dota_tooltip_ability_chen_holy_persuasion_description",
+      "dota_tooltip_ability_chen_holy_persuasion_shard_description",
+      "dota_tooltip_ability_chen_holy_persuasion_abilitydraft_note",
+      "dota_tooltip_ability_chen_holy_persuasion_note0",
+      "dota_tooltip_ability_chen_holy_persuasion_note1",
+      "dota_tooltip_ability_chen_holy_persuasion_note2",
+      "dota_tooltip_ability_chen_holy_persuasion_note3"
+    ],
+    "chen_divine_favor": [
+      "dota_tooltip_ability_chen_divine_favor_description"
+    ],
+    "naga_siren_song_of_the_siren": [
+      "dota_tooltip_ability_naga_siren_song_of_the_siren_description",
+      "dota_tooltip_ability_naga_siren_song_of_the_siren_shard_description",
+      "dota_tooltip_ability_naga_siren_song_of_the_siren_note0",
+      "dota_tooltip_ability_naga_siren_song_of_the_siren_note1",
+      "dota_tooltip_ability_naga_siren_song_of_the_siren_note2",
+      "dota_tooltip_ability_naga_siren_song_of_the_siren_cancel_description"
+    ],
+    "naga_siren_song_of_the_siren_cancel": [
+      "dota_tooltip_ability_naga_siren_song_of_the_siren_cancel_description"
+    ],
+    "naga_siren_mirror_image": [
+      "dota_tooltip_ability_naga_siren_mirror_image_description",
+      "dota_tooltip_ability_naga_siren_mirror_image_note0",
+      "dota_tooltip_ability_naga_siren_mirror_image_note1",
+      "dota_tooltip_ability_naga_siren_mirror_image_note2"
+    ],
+    "naga_siren_ensnare": [
+      "dota_tooltip_ability_naga_siren_ensnare_description",
+      "dota_tooltip_ability_naga_siren_ensnare_scepter_description"
+    ],
+    "nyx_assassin_burrow": [
+      "dota_tooltip_ability_nyx_assassin_burrow_description",
+      "dota_tooltip_ability_nyx_assassin_burrow_note0"
+    ],
+    "nyx_assassin_unburrow": [
+      "dota_tooltip_ability_nyx_assassin_unburrow_description"
+    ],
+    "nyx_assassin_spiked_carapace": [
+      "dota_tooltip_ability_nyx_assassin_spiked_carapace_description",
+      "dota_tooltip_ability_nyx_assassin_spiked_carapace_note0",
+      "dota_tooltip_ability_nyx_assassin_spiked_carapace_note1",
+      "dota_tooltip_ability_nyx_assassin_spiked_carapace_note2"
+    ],
+    "nyx_assassin_impale": [
+      "dota_tooltip_ability_nyx_assassin_impale_description",
+      "dota_tooltip_ability_nyx_assassin_impale_note0",
+      "dota_tooltip_ability_nyx_assassin_impale_note1"
+    ],
+    "nyx_assassin_vendetta": [
+      "dota_tooltip_ability_nyx_assassin_vendetta_shard_description",
+      "dota_tooltip_ability_nyx_assassin_vendetta_description",
+      "dota_tooltip_ability_nyx_assassin_vendetta_note0",
+      "dota_tooltip_ability_nyx_assassin_vendetta_note1",
+      "dota_tooltip_ability_nyx_assassin_vendetta_note2"
+    ],
+    "nyx_assassin_mana_burn": [
+      "dota_tooltip_ability_nyx_assassin_mana_burn_description"
+    ],
+    "furion_teleportation": [
+      "dota_tooltip_ability_furion_teleportation_description",
+      "dota_tooltip_ability_furion_teleportation_note0",
+      "dota_tooltip_ability_furion_teleportation_note1"
+    ],
+    "furion_force_of_nature": [
+      "dota_tooltip_ability_furion_force_of_nature_description",
+      "dota_tooltip_ability_furion_force_of_nature_note0"
+    ],
+    "furion_wrath_of_nature": [
+      "dota_tooltip_ability_furion_wrath_of_nature_description",
+      "dota_tooltip_ability_furion_wrath_of_nature_scepter_description",
+      "dota_tooltip_ability_furion_wrath_of_nature_note0",
+      "dota_tooltip_ability_furion_wrath_of_nature_note1"
+    ],
+    "necrolyte_reapers_scythe": [
+      "dota_tooltip_ability_necrolyte_reapers_scythe_description",
+      "dota_tooltip_ability_necrolyte_reapers_scythe_note0"
+    ],
+    "item_blink": [
+      "dota_tooltip_ability_item_blink_description",
+      "dota_tooltip_ability_item_blink_note0",
+      "dota_tooltip_ability_item_blink_note1"
+    ],
+    "item_tpscroll": [
+      "dota_tooltip_ability_item_tpscroll_description",
+      "dota_tooltip_ability_item_tpscroll_note0",
+      "dota_tooltip_ability_item_tpscroll_note1",
+      "dota_tooltip_ability_item_tpscroll_2_description",
+      "dota_tooltip_ability_item_tpscroll_2_note0"
+    ],
+    "item_force_staff": [
+      "dota_tooltip_ability_item_force_staff_description",
+      "dota_tooltip_ability_item_force_staff_note0",
+      "dota_tooltip_ability_item_force_staff_note1",
+      "dota_tooltip_ability_item_force_staff_note2"
+    ],
+    "item_ultimate_scepter": [
+      "dota_tooltip_ability_item_ultimate_scepter_description",
+      "dota_tooltip_ability_item_ultimate_scepter_2_description",
+      "dota_tooltip_ability_item_ultimate_scepter_roshan_description"
+    ],
+    "item_refresher": [
+      "dota_tooltip_ability_item_refresher_shard_description",
+      "dota_tooltip_ability_item_refresher_shard_note0",
+      "dota_tooltip_ability_item_refresher_description"
+    ],
+    "item_black_king_bar": [
+      "dota_tooltip_ability_item_black_king_bar_description",
+      "dota_tooltip_ability_item_black_king_bar_note0",
+      "dota_tooltip_ability_item_black_king_bar_note1"
+    ]
+  },
+  "official_changes_read": [
+    {
+      "patch": "7.31",
+      "hero_ids_read": [
+        36
+      ],
+      "timestamp_field": 1645603200,
+      "timestamp_utc": "2022-02-23T08:00:00+00:00",
+      "limits": "时间为官方响应字段；不代替赛事客户端或作者知识时间"
+    },
+    {
+      "patch": "7.32",
+      "hero_ids_read": [
+        36,
+        66,
+        78
+      ],
+      "timestamp_field": 1661238000,
+      "timestamp_utc": "2022-08-23T07:00:00+00:00",
+      "limits": "时间为官方响应字段；不代替赛事客户端或作者知识时间"
+    },
+    {
+      "patch": "7.33",
+      "hero_ids_read": [
+        78,
+        88
+      ],
+      "timestamp_field": 1681974000,
+      "timestamp_utc": "2023-04-20T07:00:00+00:00",
+      "limits": "时间为官方响应字段；不代替赛事客户端或作者知识时间"
+    },
+    {
+      "patch": "7.34d",
+      "hero_ids_read": [
+        78
+      ],
+      "timestamp_field": 1696402800,
+      "timestamp_utc": "2023-10-04T07:00:00+00:00",
+      "limits": "时间为官方响应字段；不代替赛事客户端或作者知识时间"
+    },
+    {
+      "patch": "7.32b",
+      "hero_ids_read": [
+        78
+      ],
+      "timestamp_field": 1661842800,
+      "timestamp_utc": "2022-08-30T07:00:00+00:00",
+      "limits": "时间为官方响应字段；不代替赛事客户端或作者知识时间"
+    }
+  ],
+  "mechanism_limits": [
+    "Chen神恩定义为被动，不能用残留单位目标/延迟字段恢复旧友军主动；劝化的古老神杖提示与魔晶说明不择乐观拼接，模型无远古",
+    "当前Chen再点单位销毁与旧召回是不同入口；旧回召的耗蓝/冷却覆盖分支未读取运行代码",
+    "Naga先网再歌不依赖睡后网；旧神杖给睡中目标资格，与现行不带升级说明分开",
+    "Naga歌解除滞后、单位重新入圈取样和镜像生成时刻是H；模型不采用歌恢复字段/魔晶不同值或新版先天/激流",
+    "Brew原有BR2不重复计数，取消结束整次分裂，不能留土继续；持续/技能跨结束、刷新充能和输入资格不由字段单独证明",
+    "Nyx推后仍掘地、朝向与旧主动反刺资格保持H；0.4推过程是假设；刺穿中心路程与宽度接触、抬起/伤害分开",
+    "NP目标特效不是视野或对手必反应；取消不耗蓝/冷却也付时间；Natures Prophet内部名路径404不证明无技巧",
+    "Necro计算用实际生命损失与明示抗性/恢复，无死亡奖励叠加或跨时期用量；解控、伤害和奖励结算未实机认证"
+  ],
+  "models": {
+    "brew_return": {
+      "type": "I/Q：已有BR2时期深化，不新增设计",
+      "earth": [
+        0,
+        0
+      ],
+      "storm": [
+        1800,
+        0
+      ],
+      "both_alive_assumed": true,
+      "natural_anchor_definition": "Earth",
+      "old_scepter_cancel_anchor_q": "selected brewling",
+      "scepter_cost": 4200,
+      "refresher_cost": 5000,
+      "combined_cost": 9200,
+      "ult_mana_l1": 125,
+      "four_ults_plus_refresher_mana_model": 800,
+      "cast_point": 0.55,
+      "split_transition_field": 0.6,
+      "all_brewlings_end_on_cancel_assumed": true,
+      "later_7_34d_anchor_definition": "regular priority regardless of selected brewling",
+      "H": [
+        "风已经合法到B、按钮可用、身体回归存活",
+        "充能/技能效果跨结束不免费保证，刷新由本体正常操作",
+        "不把两持续字段自行加成旧神杖时长"
+      ]
+    },
+    "chen_recall": {
+      "type": "I：晚信息与集合点；结束位置取样整链H",
+      "P": [
+        0,
+        0
+      ],
+      "A": [
+        -1000,
+        0
+      ],
+      "B": [
+        1000,
+        0
+      ],
+      "converted_units_assumed": 2,
+      "persuasion_level": 2,
+      "max_units_field": 2,
+      "level_limit_field": 4,
+      "creep_sites_assumed": [
+        [
+          -3000,
+          0
+        ],
+        [
+          3000,
+          0
+        ]
+      ],
+      "cast_start": 0,
+      "cast_point": 0.3,
+      "effect_start": 0.3,
+      "teleport_delay": 6,
+      "arrival_effect_start_model": 6.3,
+      "arrival_cast_start_counter_branch": 6.0,
+      "new_info_assumed": 5.8,
+      "blink_assumed": 5.9,
+      "blink_distance": 1000,
+      "blink_range": 1200,
+      "deadline_assumed": 6.8,
+      "late_recall_if_start_at_info": 12.1,
+      "walk_speed_assumed": 350,
+      "walk_time": 2.857142857142857,
+      "blink_damage_disable": 3,
+      "mana_field_reserved": 110,
+      "blink_cost": 2250,
+      "H": [
+        "召回取完成时陈的位置；发生在移动之后",
+        "自施真的给两普通受控单位标记，二者存活/不挨取消伤害",
+        "生成偏移在任务允许的空地和附近范围内，不假定同格/120固定偏移",
+        "身体存活、跳刀就绪/无禁跳伤害及控制，信息由普通视野伙伴提供",
+        "回召蓝耗/冷却分支未认证，预算不保证无损再夺兵"
+      ],
+      "counters": [
+        "旧点取样则不能改目的地",
+        "单位伤害清标记/本体死亡/身体不能输入",
+        "消息晚于可用余量，普通步行或晚启动不赶截止",
+        "普通预集结已足够则增量消失"
+      ]
+    },
+    "naga_selective_release": {
+      "type": "I：联合位置/串行输入；解除与重新入圈取样H",
+      "A": [
+        0,
+        0
+      ],
+      "B": [
+        600,
+        0
+      ],
+      "N_start": [
+        300,
+        0
+      ],
+      "N_end": [
+        1400,
+        0
+      ],
+      "song_radius": 1000,
+      "song_cast_start": -1.0,
+      "song_cast_point": 1.0,
+      "song_effect_start": 0,
+      "song_end_model": 7.0,
+      "move_speed_assumed": 350,
+      "move_distance": 1100,
+      "move_end": 3.142857142857143,
+      "A_exit_boundary": 2.0,
+      "B_max_path_distance": 800,
+      "exit_linger_upper_assumed": 0.5,
+      "A_awake_by_model": 2.5,
+      "ally_action_assumed": 2.6,
+      "net_cast_start": -1.7,
+      "net_cast_point": 0.4,
+      "net_launch": -1.3,
+      "net_distance": 300,
+      "net_speed": 1500,
+      "net_effect": -1.1,
+      "net_duration_l4": 5.0,
+      "net_end_model": 3.9,
+      "net_remaining_at_ally_action": 1.3,
+      "mirror_generated_assumed": -2.0,
+      "mirror_duration": 26,
+      "mirror_end_model": 24,
+      "mirror_level": 1,
+      "mirror_count": 3,
+      "mirror_outgoing_tooltip": 25,
+      "mana": 320,
+      "skill_points_with_E1": 7,
+      "A_reentry_time_if_runs_at_350_after_net": 5.042857142857143,
+      "H": [
+        "A/B确已合法睡住，A网前置且未被驱散；无免疫阻碍",
+        "直路可走，身体实际速度350且无新增控制，歌跟随正常移动",
+        "离圈解除滞后不超过0.5，伙伴按正常画面确认醒来再行动",
+        "伙伴/幻象留A处理，本体远侧维持B，不同时免费攻击或远距补网",
+        "再入圈取样与幻象生命周期/实际输入保留未知"
+      ],
+      "counters": [
+        "网继续计时，不是A醒后再给5秒",
+        "B原先免疫或本体受控/死亡，分隔失效",
+        "A驱散网/重新跑入歌圈，攻击资格和任务改变",
+        "已有普通双控足够，或B无法救，绕路失去本体工作"
+      ]
+    },
+    "nyx_moving_burrow": {
+      "type": "公开组件Q＋用途I，旧整链H；不新增自发设计计数",
+      "P": [
+        0,
+        0
+      ],
+      "P_after": [
+        600,
+        0
+      ],
+      "T": [
+        820,
+        0
+      ],
+      "T_counter": [
+        880,
+        0
+      ],
+      "push_length": 600,
+      "carapace_radius": 300,
+      "after_push_distance": 220,
+      "push_duration_assumed": 0.4,
+      "input_assumed": 0.1,
+      "carapace_time_model": 0.5,
+      "burrow_setup": 1.5,
+      "impale_cast_point": 0.3,
+      "impale_speed": 1600,
+      "impale_width_field": 125,
+      "burrow_impale_range_tooltip": 1225,
+      "impale_center_time_model": 0.8125,
+      "impale_front_time_if_125_buffer": 0.734375,
+      "counter_move_speed_assumed": 350,
+      "counter_end": [
+        880,
+        175
+      ],
+      "counter_distance": 330.1893396219811,
+      "carapace_stun_l1": 0.6,
+      "cost": 6400,
+      "mana": 140,
+      "H": [
+        "已安全完成掘地/向正x，推后保留状态与主动反刺资格",
+        "目标非免疫可观察，身体可输入，无地形/其他位移打乱",
+        "推0.4与输入0.1是预算，不认证实际速度/首次控制帧"
+      ],
+      "counters": [
+        "初始600+300内也可能横走后超300",
+        "普通刺穿稳定可用时无需自送前线",
+        "身体被控/状态退出/朝向不对/目标逃离"
+      ]
+    },
+    "furion_cancel": {
+      "type": "I：普通承诺与成本，不晋升进阶",
+      "teleport_cast_duration": 3,
+      "start": 0,
+      "cancel_assumed": 2.6,
+      "next_cast_start_assumed": 2.7,
+      "next_arrival_model": 5.7,
+      "cancel_mana_description": 0,
+      "completed_mana": 50,
+      "H": [
+        "对方实际能看见提示并相信A确有任务，伙伴/树人有独立压力",
+        "正常可输入/合法新目标，人物没有假动作中自由完成其他普通行动",
+        "不假定对方一定回防或交高价值技能"
+      ],
+      "counters": [
+        "提示未见/威胁不可信/对手知道可取消",
+        "下一次仍需3秒，任务时限已错过"
+      ]
+    },
+    "necro_order": {
+      "type": "I：普通伤害顺序/版本对照，不晋升进阶",
+      "max_hp_assumed": 2000,
+      "initial_hp_assumed": 900,
+      "magic_resistance_assumed": 0.25,
+      "reaper_multiplier_l1": 0.7,
+      "ally_actual_hp_loss_assumed": 250,
+      "damage_without_ally": 577.5,
+      "hp_after_pre_ally": 650,
+      "damage_after_pre_ally": 708.75,
+      "hp_if_same_ally_damage_after_reaper": 72.5,
+      "heal_counter_assumed": 50,
+      "hp_after_heal_counter": 700,
+      "damage_with_heal_counter": 682.5,
+      "resistance_counter_assumed": 0.35,
+      "damage_with_resistance_counter": 614.25,
+      "cast_start": 0,
+      "cast_point": 0.45,
+      "stun_duration": 1.5,
+      "damage_time_assumed": 1.95,
+      "ally_hit_assumed": 1.2,
+      "L1_cost": 200,
+      "old_extra_respawn_field": 15,
+      "H": [
+        "无额外恢复/吸收/免疫，250是真实生命损失而非面板伤害",
+        "在伤害结算前发生，离散/动画边界不假定同一帧优先",
+        "奖励归属与复活资格不从局部算式免费推出"
+      ],
+      "counters": [
+        "回血50或魔抗35%已使原门槛失败",
+        "普通队友爆发已能杀则省镰刀",
+        "7.31永久恢复不能与2021额外死亡时间叠加"
+      ]
+    }
+  },
+  "status": {
+    "new_focused_units": 6,
+    "cumulative_focused_units": 24,
+    "new_conditional_designs": 2,
+    "cumulative_interface_conditional_designs": 8,
+    "new_public_specialized_candidates": 1,
+    "cumulative_public_specialized_candidates": 3,
+    "existing_BR2_deepened": true,
+    "new_technique_family_ids": 0,
+    "new_verified_discoveries": 0,
+    "game_test": false,
+    "replay_or_video": false,
+    "new_match_scan": false,
+    "new_prose_adoption": false,
+    "historical_prevalence_verified": false
+  },
+  "mid_role_comparison": {
+    "type": "I：八项既有方案及三项中单任务，不新增单位/发现/采用计数",
+    "unit_ids": [
+      7,
+      8,
+      10,
+      11,
+      16,
+      17,
+      20,
+      21
+    ],
+    "provisional_paths": {
+      "mid_task_first": [
+        11,
+        16,
+        17
+      ],
+      "early_item_task": [
+        7
+      ],
+      "support_collaboration_first": [
+        8,
+        10,
+        20
+      ],
+      "skill_allocation_branch": [
+        21
+      ]
+    },
+    "limits": "顺序针对当前用途，不否定英雄其他玩法或锁长期英雄池；局部、全局、中路与小说采用分开"
+  },
+  "role_reused_component_refs": [
+    {
+      "source_record": "07_sources/mid-position-research-20261013.json",
+      "sha256": "7ca3c2dcf86925b989fa23496ba4daa447e331388eb6bbaeebac863ea7ab8c28",
+      "component_names": [
+        "leshrac_split_earth",
+        "leshrac_diabolic_edict"
+      ],
+      "read_scope": "本轮复读既有字段并与固定定义核对；非四项独立新来源",
+      "hash_basis": "UTF-8 source text with CRLF normalized to LF; independent of Git checkout line endings"
+    },
+    {
+      "source_record": "07_sources/mid-return-research-20261013.json",
+      "sha256": "41fab303ca3c3a926dad504d0752300cb5ac534d3ac77f6e561c10ac05a32c03",
+      "component_names": [
+        "puck_illusory_orb",
+        "razor_static_link"
+      ],
+      "read_scope": "本轮复读既有字段并与固定定义核对；非四项独立新来源",
+      "hash_basis": "UTF-8 source text with CRLF normalized to LF; independent of Git checkout line endings"
+    }
+  ],
+  "mid_role_cases": {
+    "leshrac": {
+      "type": "I/H：既有11单元的任务/资源方案",
+      "example_skill_levels": {
+        "split_earth": 4,
+        "diabolic_edict": 4,
+        "lightning": 1,
+        "nova": 1
+      },
+      "skill_points": 10,
+      "mana_split_earth": 140,
+      "mana_edict": 155,
+      "combined_mana": 295,
+      "edict_start_cast_point": 0.5,
+      "feedback_input_assumed": 0.1,
+      "split_earth_cast_point": 0.7,
+      "split_earth_delay": 0.35,
+      "feedback_to_control_budget": 1.15,
+      "split_earth_radius_l4": 225,
+      "conditions": [
+        "主要站场/兵线任务已需要该正常资源，体力/法力足够",
+        "控制可用、反馈可识别且有任务增量；更强现成视野/稳定先手不可用",
+        "降低技能等级应重算蓝量/范围，10点是示例而非唯一加点"
+      ]
+    },
+    "puck": {
+      "type": "I/H：既有16单元的第二次参与/退出方案",
+      "orb_level": 4,
+      "mana": 140,
+      "cooldown_field": 9,
+      "orb_cast_start_from_case": 11.7,
+      "orb_effect_from_case": 11.8,
+      "return_from_case": 13.2,
+      "earliest_new_orb_if_cd_from_cast": 20.7,
+      "earliest_new_orb_if_cd_from_effect": 20.8,
+      "conditions": [
+        "实际仍可做控制/保护/输出任务，伙伴仍能协同",
+        "相位/其他技能或物品确有退出办法，不能当刚用的球已转好",
+        "没有额外神杖/天赋投资，但辅助运输和短退出成本仍存在"
+      ]
+    },
+    "razor": {
+      "type": "I/H：既有17单元的持续接触/位置方案",
+      "skill_points": 7,
+      "link_level": 4,
+      "other_ordinary_levels": [
+        1,
+        1
+      ],
+      "ultimate_level": 1,
+      "link_mana": 65,
+      "SD_mana": 120,
+      "combined_mana": 185,
+      "link_cooldown_field_l4": 25,
+      "drain_stage_field_l4": 8,
+      "drain_buff_duration_field_l4": 18,
+      "conditions": [
+        "辅助有合法禁锢、链接仍有后续任务，本体撑得住并能安全走位",
+        "禁锢期间直接攻击损失不是额外生命伤害，普通眩晕可能更好",
+        "25秒/8秒/18秒字段分开，实际增益取样/起算不由本轮字段认证",
+        "1/3号位同任务仍是强对照，不锁角色位置"
+      ]
+    }
+  }
+}

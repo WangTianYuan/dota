@@ -1,0 +1,585 @@
+{
+  "id": "sources:mid-jakiro-depth-20261015",
+  "date_local": "2026-10-15",
+  "timezone": "America/Los_Angeles",
+  "scope": "H50竞技价值与有限攻击窗口；本聊天不推进小说剧情/改组/资格/赛果。",
+  "fixed_730e": {
+    "inputs": [
+      {
+        "id": "AW-abilities",
+        "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+        "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+        "bytes": 3099817,
+        "cache": "mid-companion-research-20261014\\fresh-AW-abilities.txt",
+        "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据",
+        "reused": true,
+        "retrieved_this_turn": false
+      },
+      {
+        "id": "AW-localization",
+        "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+        "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+        "bytes": 1235305,
+        "cache": "mid-companion-research-20261014\\fresh-AW-localization.txt",
+        "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据",
+        "reused": true,
+        "retrieved_this_turn": false
+      },
+      {
+        "id": "AW-items",
+        "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+        "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+        "bytes": 621009,
+        "cache": "mid-companion-research-20261014\\fresh-AW-items.txt",
+        "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据",
+        "reused": true,
+        "retrieved_this_turn": false
+      },
+      {
+        "id": "AR-heroes",
+        "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_heroes.txt",
+        "sha256": "c53ff35869b5678a9ef4c5b032643be379eefa536695644dbf989644c851b181",
+        "bytes": 634652,
+        "cache": "mid-persistent-units-20261012\\npc_heroes.txt",
+        "read_scope": "复用固定响应并新核哈希；指定技能/物品字段不是引擎运行证据",
+        "reused": true,
+        "retrieved_this_turn": false
+      }
+    ],
+    "abilities": {
+      "jakiro_dual_breath": {
+        "ID": "5297",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "AbilitySound": "Hero_Jakiro.DualBreath",
+        "AbilityCastRange": "750",
+        "AbilityCastPoint": "0.35",
+        "AbilityCooldown": "10.0 10.0 10.0 10.0",
+        "AbilityDuration": "5.0",
+        "AbilityDamage": "0",
+        "AbilityManaCost": "140 150 160 170",
+        "AbilityModifierSupportValue": "0.25",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "start_radius": "225"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "end_radius": "275"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "range": "750 750 750 750",
+            "LinkedSpecialBonus": "special_bonus_unique_jakiro_5"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "speed": "1050"
+          },
+          "05": {
+            "var_type": "FIELD_FLOAT",
+            "fire_delay": "0.2"
+          },
+          "06": {
+            "var_type": "FIELD_INTEGER",
+            "burn_damage": "20 40 60 80",
+            "LinkedSpecialBonus": "special_bonus_unique_jakiro_2"
+          },
+          "07": {
+            "var_type": "FIELD_INTEGER",
+            "slow_movement_speed_pct": "-28 -32 -36 -40"
+          },
+          "08": {
+            "var_type": "FIELD_INTEGER",
+            "slow_attack_speed_pct": "-28 -32 -36 -40"
+          },
+          "09": {
+            "var_type": "FIELD_INTEGER",
+            "speed_fire": "1050"
+          }
+        },
+        "AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
+      },
+      "jakiro_ice_path": {
+        "ID": "5298",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "AbilitySound": "Hero_Jakiro.IcePath",
+        "AbilityCastRange": "1200",
+        "AbilityCastPoint": "0.65",
+        "AbilityCooldown": "12.0 11.0 10.0 9.0",
+        "AbilityDamage": "0",
+        "AbilityManaCost": "100",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "path_delay": "0.5"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "1 1.5 2.0 2.5",
+            "LinkedSpecialBonus": "special_bonus_unique_jakiro"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "path_radius": "150"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "damage": "50"
+          }
+        },
+        "AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
+      },
+      "jakiro_liquid_fire": {
+        "ID": "5299",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING",
+        "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_DEAD",
+        "AbilitySound": "Hero_Jakiro.LiquidFire",
+        "AbilityCooldown": "20 15 10 4",
+        "AbilityDuration": "5.0",
+        "AbilityCastRange": "600",
+        "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+        "AbilityModifierSupportBonus": "35",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "slow_attack_speed_pct": "-30 -40 -50 -60",
+            "LinkedSpecialBonus": "special_bonus_unique_jakiro_4"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "300"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "damage": "15 20 25 30",
+            "LinkedSpecialBonus": "special_bonus_unique_jakiro_8"
+          }
+        },
+        "AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
+      },
+      "jakiro_liquid_ice": {
+        "ID": "553",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING",
+        "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_DEAD",
+        "AbilitySound": "Hero_Jakiro.LiquidFire",
+        "MaxLevel": "1",
+        "IsGrantedByShard": "1",
+        "HasShardUpgrade": "1",
+        "AbilityCooldown": "12",
+        "AbilityCastRange": "600",
+        "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+        "AbilityModifierSupportBonus": "35",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "movement_slow": "20"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "base_damage": "20"
+          },
+          "03": {
+            "var_type": "FIELD_FLOAT",
+            "pct_health_damage": "2.5"
+          },
+          "04": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "4.0"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "radius": "300"
+          },
+          "06": {
+            "var_type": "FIELD_FLOAT",
+            "stun_duration": "0.4"
+          }
+        },
+        "AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
+      },
+      "jakiro_macropyre": {
+        "ID": "5300",
+        "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "AbilitySound": "Hero_Jakiro.Macropyre.Cast",
+        "HasScepterUpgrade": "1",
+        "AbilityDraftUltShardAbility": "jakiro_liquid_ice",
+        "AbilityCastRange": "1400",
+        "AbilityCastPoint": "0.55",
+        "AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_4",
+        "AbilityCooldown": "80 70 60",
+        "AbilityManaCost": "220 330 440",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "damage": "110 155 200",
+            "LinkedSpecialBonus": "special_bonus_unique_jakiro_7"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "cast_range": "1400"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "path_radius": "260"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "duration": "10"
+          },
+          "05": {
+            "var_type": "FIELD_FLOAT",
+            "burn_interval": "0.5 0.5 0.5"
+          },
+          "06": {
+            "var_type": "FIELD_FLOAT",
+            "linger_duration": "2"
+          },
+          "07": {
+            "var_type": "FIELD_INTEGER",
+            "scepter_bonus_range": "400",
+            "RequiresScepter": "1"
+          },
+          "08": {
+            "var_type": "FIELD_FLOAT",
+            "scepter_bonus_duration": "20",
+            "RequiresScepter": "1"
+          }
+        }
+      }
+    },
+    "hero": {
+      "HeroID": "64",
+      "AttackRate": "1.700000",
+      "AttackAnimationPoint": "0.400000",
+      "AttackRange": "400",
+      "ProjectileSpeed": "1100",
+      "MovementSpeed": "290"
+    },
+    "items": {
+      "item_ultimate_scepter": {
+        "AbilityCastRange": "600",
+        "ItemCost": "4200",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_all_stats": "10"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_health": "175"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_mana": "175"
+          }
+        }
+      },
+      "item_aghanims_shard": {
+        "ItemCost": "1400"
+      },
+      "item_cyclone": {
+        "AbilityCastRange": "550",
+        "AbilityCastPoint": "0.0",
+        "AbilityCooldown": "23.0",
+        "AbilityManaCost": "175",
+        "ItemCost": "2725",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_intellect": "10"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "bonus_mana_regen": "2.5"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_movement_speed": "20"
+          },
+          "04": {
+            "var_type": "FIELD_FLOAT",
+            "cyclone_duration": "2.5"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "tooltip_drop_damage": "50"
+          }
+        }
+      },
+      "item_aether_lens": {
+        "ItemCost": "2275",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "bonus_mana": "300"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "bonus_mana_regen": "2.5"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "cast_range_bonus": "225"
+          }
+        }
+      }
+    }
+  },
+  "responses": [
+    {
+      "file": "patch731.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english",
+      "final_url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english",
+      "status": 200,
+      "bytes": 130214,
+      "sha256": "9a5a76422eba02b2e45bf80c81450e9c7155d1a028cc59a8cfecf9cd10fdf28a",
+      "retrieved_at_utc": "2026-10-16T03:25:17.946683+00:00"
+    },
+    {
+      "file": "patch733.json",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english",
+      "final_url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=english",
+      "status": 200,
+      "bytes": 169457,
+      "sha256": "b65cb135d43236e8816546e661a58aaf30de3ec7f737a201905590e041f17d04",
+      "retrieved_at_utc": "2026-10-16T03:25:17.946683+00:00"
+    },
+    {
+      "file": "issue3249.json",
+      "url": "https://api.github.com/repos/ValveSoftware/Dota2-Gameplay/issues/3249",
+      "final_url": "https://api.github.com/repos/ValveSoftware/Dota2-Gameplay/issues/3249",
+      "status": 200,
+      "bytes": 4561,
+      "sha256": "486f6b02ac78df7237cb8e2d85213b867daedecaa65901dcf09622799d873556",
+      "retrieved_at_utc": "2026-10-16T03:25:17.946683+00:00"
+    },
+    {
+      "file": "issue3249-comments.json",
+      "url": "https://api.github.com/repos/ValveSoftware/Dota2-Gameplay/issues/3249/comments?per_page=100",
+      "final_url": "https://api.github.com/repos/ValveSoftware/Dota2-Gameplay/issues/3249/comments?per_page=100",
+      "status": 200,
+      "bytes": 7327,
+      "sha256": "6c9402117ccfc30dd86290ba8b8fb0fec53331e0050ae8e221dee0a293dc6601",
+      "retrieved_at_utc": "2026-10-16T03:25:17.946683+00:00"
+    },
+    {
+      "file": "guide730e.html",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2273996986",
+      "final_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2273996986",
+      "status": 200,
+      "bytes": 52038,
+      "sha256": "044e4acab83b392f25dc0de008543eff7e3fa19887c9fbe96225affdf8475b97",
+      "retrieved_at_utc": "2026-10-16T03:25:17.946683+00:00"
+    }
+  ],
+  "read_scope": {
+    "fixed": "五技能Ability/特殊字段，六英雄字段，四物品必要字段；完整读取液火/液冰/冰路/大招相关说明，不称全部引擎实现。",
+    "patch731": "仅hero64、item609指定条目；未遍历其他英雄机制。",
+    "patch733": "仅hero64指定条目；通用免疫/所有字母版未本轮审读。",
+    "issue": "正文表和四条评论；状态与日期是元数据，实际交互主张是玩家Q。",
+    "guide": "标题、显示更新日期、关于位置/清线/技能投入的相关段；不采用绝对保证或精确普及判断。"
+  },
+  "primary_Q": [
+    {
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2273996986",
+      "author": "Big Smoke of Deceit",
+      "display_updated": "2021-12-03 22:59，网页本地时区未核",
+      "supports": "辅助已有清线/建筑与距离职责，技能点有取舍；不是本文发明的角色用途。",
+      "limits": "页面有removed/incompatible提示；更新日期不证明每句在当时已存在。"
+    },
+    {
+      "url": "https://github.com/ValveSoftware/Dota2-Gameplay/issues/3249",
+      "created_at_F": "2022-09-19T23:15:54Z",
+      "closed_at_F": "2023-03-24T19:35:44Z",
+      "state_reason_F": "not_planned",
+      "supports_Q": "原报告列液火自动/液冰手动可同击，并声称超过五件装备失效；评论给出相反装备条件。",
+      "comments_metadata_F": [
+        {
+          "login": "TheUnholyWrath",
+          "created_at": "2022-09-19T23:38:23Z"
+        },
+        {
+          "login": "howardzijiesong",
+          "created_at": "2022-09-27T23:09:57Z"
+        },
+        {
+          "login": "PudiccaA",
+          "created_at": "2022-09-27T23:19:10Z"
+        },
+        {
+          "login": "irismus",
+          "created_at": "2023-03-24T19:35:44Z"
+        }
+      ],
+      "closure_Q": "原报告者称转往较早#266并希望修复；关闭不是已修复证明。"
+    },
+    {
+      "url": "https://www.reddit.com/r/TrueDoTA2/comments/11uvcsk/",
+      "reported_period": "2023-03，搜索显示日与页面时区不同，未认证日",
+      "read_scope": "主楼、成功/失败/装备及射程影响、技能点机会成本相关评论；未看链接视频。",
+      "supports_Q": "同击正反结果并存；核心加点、陨星锤价值与生存投入有争议。",
+      "raw_http_saved": false
+    },
+    {
+      "url": "https://www.reddit.com/r/TrueDoTA2/comments/154wcog/",
+      "reported_period": "2023-07",
+      "read_scope": "主楼与回忆修复时点的相关回复；未看视频。",
+      "supports_Q": "双效果与修复时期回忆冲突，不据此固定某补丁可用。",
+      "raw_http_saved": false
+    }
+  ],
+  "patch_F": {
+    "7.31": {
+      "ice_path_cd": [
+        21,
+        17,
+        13,
+        9
+      ],
+      "ice_path_duration": [
+        1.6,
+        1.9,
+        2.2,
+        2.5
+      ],
+      "liquid_fire_cd": [
+        16,
+        12,
+        8,
+        4
+      ],
+      "dual_breath_instances_before_after": [
+        11,
+        10
+      ],
+      "macropyre_cast_point_before_after": [
+        0.55,
+        0.4
+      ],
+      "shard_purchasable_minutes": 15
+    },
+    "7.33": {
+      "ice_path_max_duration": [
+        1.25,
+        1.5,
+        1.75,
+        2
+      ],
+      "liquid_fire_building_damage_penalty_pct": 25,
+      "macropyre_mana": [
+        230,
+        340,
+        450
+      ],
+      "macropyre_dps": [
+        100,
+        150,
+        200
+      ],
+      "liquid_frost_mini_stun_removed": true
+    }
+  },
+  "models_I_H": {
+    "skill_budgets": [
+      {
+        "level": 7,
+        "ranks_QWER": [
+          4,
+          1,
+          1,
+          1
+        ],
+        "mana_QWR": 490,
+        "with_previous_Q": 660,
+        "mana_after_previous_Q_from_500": 330
+      },
+      {
+        "level": 7,
+        "ranks_QWER": [
+          1,
+          1,
+          4,
+          1
+        ],
+        "mana_QWR": 460,
+        "with_previous_Q": 600,
+        "mana_after_previous_Q_from_500": 360
+      }
+    ],
+    "liquid_fire_10s_casts_at_rank1": [
+      0
+    ],
+    "liquid_fire_10s_casts_at_rank4": [
+      0,
+      4,
+      8
+    ],
+    "carrier": {
+      "origin": [
+        0,
+        0
+      ],
+      "creep_at_launch": [
+        560,
+        0
+      ],
+      "tower": [
+        820,
+        0
+      ],
+      "manual_range_F": 600,
+      "radius_F": 300,
+      "initial_creep_tower_distance": 260,
+      "assumed_flight_s": 0.5,
+      "assumed_creep_move_toward_jakiro_per_s": 300,
+      "creep_at_hit": [
+        410,
+        0
+      ],
+      "tower_distance_at_hit": 410,
+      "unknowns_H": [
+        "建筑是否承接敌兵主目标的完整范围负面效果",
+        "半径/命中位置实际取样",
+        "发射前施法/攻击资格与目标存活",
+        "视野/建筑保护/反击与己方兵线"
+      ]
+    },
+    "single_attack": {
+      "actual_interval_assumed_s": 1.2,
+      "first_hit_s": 0.8,
+      "second_hit_s": 2.0,
+      "safe_window_ends_s": 1.5,
+      "opportunity": "同击若成立可节省第二次攻击暴露；不是免费伤害或1.7秒固定节省。"
+    },
+    "do_not_combine": "范围载体的600施放与争议双效果的普通攻击范围/装备条件未证明同时成立。"
+  },
+  "not_verified": [
+    "没有实机、录像、Replay、当期普及率或职业中单收益认证。",
+    "没有新对局扫描、精确清线时间或胜率。",
+    "没有用未知玩法替代中路等级/经济/阵容成本比较。",
+    "不改变已选剧情/队伍/比赛，也不需要作者实测。"
+  ],
+  "access_limits": [
+    {
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2404822167",
+      "result": "网页工具Internal Error；只有搜索定位，未读正文，不用于主张。"
+    }
+  ]
+}

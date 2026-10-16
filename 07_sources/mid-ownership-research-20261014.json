@@ -1,0 +1,1264 @@
+{
+  "id": "sources:mid-ownership-research-20261014",
+  "as_of_client": "2026-10-14 America/Los_Angeles",
+  "purpose": "第36—40技能对象/独立单位与公开专项边界；主任务继续下一工作而非等待继续",
+  "version_scope": {
+    "fixed_commit": "cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529",
+    "baseline": "7.30e固定定义；7.31/7.32只Morph指定条目",
+    "limitations": "定义、当前Q与旧期完整H分开；不把读取时刻当主角当期可读来源"
+  },
+  "reused_fixed_sources": [
+    {
+      "id": "AW-abilities",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "retrieved_at": "2026-10-15T01:37:37.516362+00:00",
+      "status": 200,
+      "bytes": 3099817,
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "final_url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "file": "fresh-AW-abilities.txt",
+      "matches_saved_record": true,
+      "cache_group": "mid-companion-research-20261014",
+      "reuse_scope": "复用本轮已重新取得且哈希一致的固定响应；新读本记录指定19技能/3物品字段"
+    },
+    {
+      "id": "AW-localization",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "retrieved_at": "2026-10-15T01:37:37.516362+00:00",
+      "status": 200,
+      "bytes": 1235305,
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "final_url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "file": "fresh-AW-localization.txt",
+      "matches_saved_record": true,
+      "cache_group": "mid-companion-research-20261014",
+      "reuse_scope": "复用本轮已重新取得且哈希一致的固定响应；新读本记录指定19技能/3物品字段"
+    },
+    {
+      "id": "AW-items",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "retrieved_at": "2026-10-15T01:37:37.516362+00:00",
+      "status": 200,
+      "bytes": 621009,
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "final_url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "file": "fresh-AW-items.txt",
+      "matches_saved_record": true,
+      "cache_group": "mid-companion-research-20261014",
+      "reuse_scope": "复用本轮已重新取得且哈希一致的固定响应；新读本记录指定19技能/3物品字段"
+    }
+  ],
+  "saved_public_sources": [
+    {
+      "id": "morphling",
+      "url": "https://howdoiplay.com/tips/morphling.html",
+      "retrieved_at": "2026-10-15T01:49:32.335426+00:00",
+      "status": 200,
+      "bytes": 9504,
+      "sha256": "b91e0680b22afa1daa5b7f37b32f75b359fd5628aa0bee43cc44007e6b3d90e6",
+      "file": "morphling.html",
+      "final_url": "https://howdoiplay.com/tips/morphling.html",
+      "read_scope": "复制基本技能/物品与形态状态界限、切换残留；不前移当前先天或新神杖幻象。波内接羊另复用旧MF1的2024评论Q。",
+      "published_at": null,
+      "event_time": null,
+      "time_precision": "现行可变页；不当故事当时公开时间"
+    },
+    {
+      "id": "beastmaster",
+      "url": "https://howdoiplay.com/tips/beastmaster.html",
+      "retrieved_at": "2026-10-15T01:49:32.335426+00:00",
+      "status": 200,
+      "bytes": 4003,
+      "sha256": "ec4cf76ca0e7d9f0b3b4df1116c39e148dbe781c063d3e32a826aaf03e4a9875",
+      "file": "beastmaster.html",
+      "final_url": "https://howdoiplay.com/tips/beastmaster.html",
+      "read_scope": "吼主/副对象与林肯/引导Q；不把当前Raptor替代旧隐鹰或自动给新光环。",
+      "published_at": null,
+      "event_time": null,
+      "time_precision": "现行可变页；不当故事当时公开时间"
+    },
+    {
+      "id": "lycan",
+      "url": "https://howdoiplay.com/tips/lycan.html",
+      "retrieved_at": "2026-10-15T01:49:32.335426+00:00",
+      "status": 200,
+      "bytes": 5169,
+      "sha256": "4bb6c9d6f20ffab6eb7af8392f9229a23f0df2c052bb44e2fe91684dccf904f7",
+      "file": "lycan.html",
+      "final_url": "https://howdoiplay.com/tips/lycan.html",
+      "read_scope": "狼跟随/自然死亡、狼咬远程限制Q；旧形态与吸血分享以固定定义为准，不无限外推射程加值。",
+      "published_at": null,
+      "event_time": null,
+      "time_precision": "现行可变页；不当故事当时公开时间"
+    },
+    {
+      "id": "broodmother",
+      "url": "https://howdoiplay.com/tips/broodmother.html",
+      "retrieved_at": "2026-10-15T01:49:32.335426+00:00",
+      "status": 200,
+      "bytes": 6649,
+      "sha256": "7f755a76eba89829b08c8f08f734305394fb00868c9a9e6e4ccd1f7909aa2240",
+      "file": "broodmother.html",
+      "final_url": "https://howdoiplay.com/tips/broodmother.html",
+      "read_scope": "选网删网恢复碰撞与重叠反例；旧BM1既有公开素材不重复计发现，当前先天不前移。",
+      "published_at": null,
+      "event_time": null,
+      "time_precision": "现行可变页；不当故事当时公开时间"
+    },
+    {
+      "id": "clinkz",
+      "url": "https://howdoiplay.com/tips/clinkz.html",
+      "retrieved_at": "2026-10-15T01:49:32.950493+00:00",
+      "status": 200,
+      "bytes": 5112,
+      "sha256": "10977cd846f3e60c64307f33a0a17e95a2beb2b61a9cdaaa9b10453aae40d229",
+      "file": "clinkz.html",
+      "final_url": "https://howdoiplay.com/tips/clinkz.html",
+      "read_scope": "当前Shard Barrage渐隐内启动、Pact/隐身与输出Q；当前Strafe/DeathPact/Shard整体不迁回旧基本Barrage。",
+      "published_at": null,
+      "event_time": null,
+      "time_precision": "现行可变页；不当故事当时公开时间"
+    }
+  ],
+  "reused_official_sources": [
+    {
+      "version": "7.31",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=english",
+      "cache_group": "mid-action-window-research-20261013",
+      "file": "patch-7.31.json",
+      "bytes": 130214,
+      "sha256": "9a5a76422eba02b2e45bf80c81450e9c7155d1a028cc59a8cfecf9cd10fdf28a",
+      "patch_timestamp": 1645603200,
+      "hero_id_read": 10,
+      "ability_ids_read": [
+        5057
+      ],
+      "scope": "只读Morph神杖/属性转换相关条目；不作全补丁覆盖",
+      "claim_summary": "7.31神杖重做为偷三围/按主属性附加项并减R冷却；7.32再改神杖量与转属性魔晶/比例。旧300友军复制不无证与后来收益叠合，未由遗漏一句话认证全部目标许可。"
+    },
+    {
+      "version": "7.32",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.32&language=english",
+      "cache_group": "mid-action-window-research-20261013",
+      "file": "patch-7.32.json",
+      "bytes": 92953,
+      "sha256": "ed1e0611aaf132a4f870209250781ca31e57178c1a56b20373c3ed0404006c0d",
+      "patch_timestamp": 1661238000,
+      "hero_id_read": 10,
+      "ability_ids_read": [
+        5055,
+        5056,
+        5057
+      ],
+      "scope": "只读Morph神杖/属性转换相关条目；不作全补丁覆盖",
+      "claim_summary": "7.31神杖重做为偷三围/按主属性附加项并减R冷却；7.32再改神杖量与转属性魔晶/比例。旧300友军复制不无证与后来收益叠合，未由遗漏一句话认证全部目标许可。"
+    }
+  ],
+  "old_card_ref": {
+    "path": "09_training/technique-discovery-wave-20261006-more.md",
+    "sha256": "339d3f78acd9007f6b6ee0231dff9d95ab83dd7a25630c8ee0611dbdbdff2d3d",
+    "hash_basis": "UTF-8 source text with CRLF normalized to LF",
+    "scope": "MF1/BM1/BM4已有主张与W1/B1出处、日期；复用原卡，不冒称本轮新读原评论/讨论或视频"
+  },
+  "component_fields": {
+    "morphling_waveform": {
+      "ID": "5052",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "AbilityCastRange": "700 800 900 1000",
+      "AbilityCastPoint": "0.25",
+      "AbilityCooldown": "20 17 14 11",
+      "AbilityDamage": "75 150 225 300",
+      "AbilityManaCost": "130",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "speed": "1250"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "width": "200"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "AbilityCharges": "",
+          "LinkedSpecialBonus": "special_bonus_unique_morphling_6"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "abilitycastrange": "",
+          "LinkedSpecialBonus": "special_bonus_unique_morphling_1"
+        }
+      }
+    },
+    "morphling_replicate": {
+      "ID": "5057",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_CUSTOM",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_CUSTOM",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "HasScepterUpgrade": "1",
+      "AbilityCastRange": "700 850 1000",
+      "AbilityCastPoint": "0.25",
+      "AbilityCooldown": "140 100 60",
+      "AbilityManaCost": "50",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "20",
+          "LinkedSpecialBonus": "special_bonus_unique_morphling_8"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_manacost_reduction": "50"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "scepter_cast_range_bonus": "300",
+          "RequiresScepter": "1"
+        }
+      }
+    },
+    "morphling_morph_replicate": {
+      "ID": "5058",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityManaCost": "0",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "1"
+    },
+    "lion_voodoo": {
+      "ID": "5045",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+      "AbilityCastRange": "500",
+      "AbilityCastPoint": "0 0 0 0",
+      "AbilityCooldown": "30.0 24.0 18.0 12.0",
+      "AbilityManaCost": "125 150 175 200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "2.5 3 3.5 4"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "movespeed": "120"
+        }
+      }
+    },
+    "beastmaster_primal_roar": {
+      "ID": "5177",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "AbilityCastPoint": "0.5 0.5 0.5",
+      "AbilityCooldown": "100.0 80.0 60.0",
+      "AbilityManaCost": "150 175 200",
+      "AbilityCastRange": "600",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "3.0 3.5 4.0"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "150 225 300"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "side_damage": "150 225 300"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "damage_radius": "300"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "slow_movement_speed_pct": "-60"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "slow_attack_speed_pct": "-60"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "push_distance": "450"
+        },
+        "08": {
+          "var_type": "FIELD_FLOAT",
+          "push_duration": "1.0"
+        },
+        "09": {
+          "var_type": "FIELD_FLOAT",
+          "slow_duration": "3 3.5 4"
+        },
+        "10": {
+          "var_type": "FIELD_INTEGER",
+          "movement_speed": "40"
+        },
+        "11": {
+          "var_type": "FIELD_FLOAT",
+          "movement_speed_duration": "3.0 3.5 4"
+        }
+      }
+    },
+    "beastmaster_call_of_the_wild_hawk": {
+      "ID": "7231",
+      "AbilityBehavior": " DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "HasShardUpgrade": "1",
+      "AbilityCastRange": "0",
+      "AbilityCastPoint": "0.3",
+      "AbilityCooldown": "60 50 40 30",
+      "AbilityManaCost": "30",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "duration": "60"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "hawk_hp_tooltip": "150 200 250 300"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "hawk_speed_tooltip": "300 340 380 420",
+          "LinkedSpecialBonus": "special_bonus_unique_beastmaster_2"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "hawk_vision_tooltip": "750 800 850 900",
+          "LinkedSpecialBonus": "special_bonus_unique_beastmaster_5"
+        }
+      }
+    },
+    "beastmaster_hawk_dive": {
+      "ID": "700",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "MaxLevel": "1",
+      "AbilityCastRange": "1200",
+      "AbilityCastPoint": "1.0",
+      "AbilityCooldown": "0",
+      "AbilityManaCost": "0",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "250"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "stun_duration": "2"
+        }
+      }
+    },
+    "beastmaster_wild_axes": {
+      "ID": "5168",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "HasScepterUpgrade": "1",
+      "AbilityCastRange": "1500",
+      "AbilityCastPoint": "0.4",
+      "AbilityCooldown": "8",
+      "AbilityManaCost": "65",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "175"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "spread": "450"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "range": "1500"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "axe_damage": "40 70 100 130",
+          "LinkedSpecialBonus": "special_bonus_unique_beastmaster"
+        },
+        "05": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "12"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "damage_amp": "6 8 10 12",
+          "LinkedSpecialBonus": "special_bonus_unique_beastmaster_9"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "scepter_cooldown": "0",
+          "RequiresScepter": "1"
+        },
+        "08": {
+          "var_type": "FIELD_FLOAT",
+          "min_throw_duration": "0.4"
+        },
+        "09": {
+          "var_type": "FIELD_FLOAT",
+          "max_throw_duration": "1.0"
+        }
+      }
+    },
+    "lycan_wolf_bite": {
+      "ID": "333",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+      "MaxLevel": "3",
+      "HasScepterUpgrade": "1",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityCastRange": "300",
+      "AbilityCooldown": "125 110 95",
+      "AbilityManaCost": "150",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "lifesteal_percent": "30"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "lifesteal_range": "1200"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "attack_range": "150"
+        }
+      }
+    },
+    "lycan_shapeshift": {
+      "ID": "5398",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "HasScepterUpgrade": "1",
+      "AbilityCooldown": "125 110 95",
+      "AbilityManaCost": "100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "28",
+          "LinkedSpecialBonus": "special_bonus_unique_lycan_1"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "speed": "550"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_night_vision": "1000"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "transformation_time": "1.1"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "crit_chance": "40",
+          "LinkedSpecialBonus": "special_bonus_unique_lycan_5"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "crit_multiplier": "150 175 200"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "health_bonus": "200 300 400"
+        }
+      }
+    },
+    "lycan_summon_wolves": {
+      "ID": "5395",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "HasShardUpgrade": "1",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityCooldown": "30.0 30.0 30.0 30.0",
+      "AbilityManaCost": "125 130 135 140",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "wolf_index": "1 2 3 4"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "wolf_duration": "50"
+        },
+        "03": {
+          "var_type": "FIELD_FLOAT",
+          "wolf_bat": "1.2 1.1 1.0 0.9"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "wolf_damage": "26 34 42 50",
+          "LinkedSpecialBonus": "special_bonus_unique_lycan_6"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "wolf_hp": "325 375 425 475",
+          "LinkedSpecialBonus": "special_bonus_unique_lycan_7"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "bash_chance": "15"
+        },
+        "07": {
+          "var_type": "FIELD_FLOAT",
+          "bash_duration": "1.0"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "tooltip_wolf_count": "2 2 2 2",
+          "LinkedSpecialBonus": "special_bonus_unique_lycan_2"
+        }
+      }
+    },
+    "lycan_summon_wolves_invisibility": {
+      "ID": "5500",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "fade_time": "0.0 0.0 0.0"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "fade_delay": "1.7"
+        }
+      }
+    },
+    "broodmother_spin_web": {
+      "ID": "5280",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastRange": "1000",
+      "AbilityCastPoint": "0.4",
+      "AbilityCooldown": "0.0",
+      "AbilityManaCost": "50",
+      "AbilityCharges": "4 6 8 10",
+      "AbilityChargeRestoreTime": "30",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "radius": "900"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "count": "3 5 7 9"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "heath_regen": "3 5 7 9"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_movespeed": "18 30 42 54"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "max_charges_scepter": "6 10 14 18",
+          "RequiresScepter": "1"
+        },
+        "06": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_movespeed_scepter": "35 50 65 80",
+          "RequiresScepter": "1"
+        },
+        "07": {
+          "var_type": "FIELD_INTEGER",
+          "count_scepter": "6 10 14 18",
+          "RequiresScepter": "1"
+        },
+        "08": {
+          "var_type": "FIELD_INTEGER",
+          "AbilityChargeRestoreTime": "40",
+          "LinkedSpecialBonus": "special_bonus_unique_broodmother_5",
+          "LinkedSpecialBonusOperation": "SPECIAL_BONUS_SUBTRACT"
+        }
+      }
+    },
+    "broodmother_spin_web_destroy": {
+      "ID": "5643",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+      "MaxLevel": "1",
+      "AbilityCastPoint": "0",
+      "AbilityCooldown": "0",
+      "AbilityManaCost": "0"
+    },
+    "broodmother_spawn_spiderlings": {
+      "ID": "5279",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellDispellableType": "SPELL_DISPELLABLE_YES",
+      "AbilityCastRange": "900",
+      "AbilityCastPoint": "0.2 0.2 0.2 0.2",
+      "AbilityCooldown": "9 8 7",
+      "AbilityManaCost": "120",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "buff_duration": "20"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "spiderling_duration": "60.0 60.0 60.0 60.0"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "damage": "260 340 420",
+          "LinkedSpecialBonus": "special_bonus_unique_broodmother_3"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "count": "4 5 6"
+        },
+        "05": {
+          "var_type": "FIELD_INTEGER",
+          "projectile_speed": "1200"
+        }
+      }
+    },
+    "clinkz_strafe": {
+      "ID": "5259",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "AbilityCastPoint": "0.2",
+      "AbilityChannelTime": "1.5 1.9 2.3 2.7",
+      "AbilityCooldown": "30 26 22 18",
+      "AbilityManaCost": "40 55 70 85",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "wave_count": "3 4 5 6",
+          "LinkedSpecialBonus": "special_bonus_unique_clinkz_12"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "attack_speed_bonus_pct": "90 120 150 180",
+          "LinkedSpecialBonus": "special_bonus_unique_clinkz_7"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "range": "750 800 850 900"
+        },
+        "04": {
+          "var_type": "FIELD_INTEGER",
+          "damage_pct": "65"
+        }
+      }
+    },
+    "clinkz_death_pact": {
+      "ID": "5262",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "AbilityCastRange": "900",
+      "AbilityCastPoint": "0.2",
+      "AbilityCooldown": "80 70 60",
+      "AbilityManaCost": "100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "65"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "health_gain_pct": "30 55 80",
+          "LinkedSpecialBonus": "special_bonus_unique_clinkz_8"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "damage_gain_pct": "4 8 12",
+          "LinkedSpecialBonus": "special_bonus_unique_clinkz_8",
+          "LinkedSpecialBonusField": "value2"
+        }
+      }
+    },
+    "clinkz_wind_walk": {
+      "ID": "5261",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+      "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+      "HasShardUpgrade": "1",
+      "AbilityCooldown": "20 19 18 17",
+      "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+      "AbilityManaCost": "75 75 75 75",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_FLOAT",
+          "duration": "25 30 35 40"
+        },
+        "02": {
+          "var_type": "FIELD_FLOAT",
+          "fade_time": "0.6 0.6 0.6 0.6"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "move_speed_bonus_pct": "15 30 45 60"
+        }
+      }
+    },
+    "clinkz_searing_arrows": {
+      "ID": "5260",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+      "AbilityCastRange": "600",
+      "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+      "AbilityCooldown": "0.0 0.0 0.0 0.0",
+      "AbilityManaCost": "10",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "damage_bonus": "24 36 48 60",
+          "LinkedSpecialBonus": "special_bonus_unique_clinkz_1"
+        }
+      }
+    }
+  },
+  "selected_item_fields": {
+    "item_ultimate_scepter": {
+      "ID": "108",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
+      "AbilityCastRange": "600",
+      "ItemCost": "4200",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_all_stats": "10"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_health": "175"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "bonus_mana": "175"
+        }
+      }
+    },
+    "item_aghanims_shard": {
+      "ID": "609",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "ItemCost": "1400",
+      "ItemStockInitial": "0",
+      "ItemStockMax": "1",
+      "ItemInitialStockTime": "1290.0"
+    },
+    "item_tpscroll": {
+      "ID": "46",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NOASSIST | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_BUILDING",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
+      "AbilityCastRange": "0",
+      "AbilityCooldown": "80.0",
+      "AbilityChannelTime": "3.0",
+      "AbilityCastPoint": "0.0",
+      "AbilityManaCost": "75",
+      "ItemCost": "100",
+      "AbilitySpecial": {
+        "01": {
+          "var_type": "FIELD_INTEGER",
+          "minimun_distance": "70"
+        },
+        "02": {
+          "var_type": "FIELD_INTEGER",
+          "maximum_distance": "800"
+        },
+        "03": {
+          "var_type": "FIELD_INTEGER",
+          "vision_radius": "200"
+        },
+        "04": {
+          "var_type": "FIELD_FLOAT",
+          "tooltip_channel_time": "3.0"
+        }
+      }
+    }
+  },
+  "localization_keys_read": {
+    "morphling_waveform": [
+      "dota_tooltip_ability_morphling_waveform_description"
+    ],
+    "morphling_replicate": [
+      "dota_tooltip_ability_morphling_replicate_description",
+      "dota_tooltip_ability_morphling_replicate_scepter_description",
+      "dota_tooltip_ability_morphling_replicate_note0",
+      "dota_tooltip_ability_morphling_replicate_note1"
+    ],
+    "morphling_morph_replicate": [
+      "dota_tooltip_ability_morphling_morph_replicate_description"
+    ],
+    "lion_voodoo": [
+      "dota_tooltip_ability_lion_voodoo_description",
+      "dota_tooltip_ability_lion_voodoo_note0",
+      "dota_tooltip_ability_lion_voodoo_note1"
+    ],
+    "beastmaster_primal_roar": [
+      "dota_tooltip_ability_beastmaster_primal_roar_description",
+      "dota_tooltip_ability_beastmaster_primal_roar_shard_description"
+    ],
+    "beastmaster_call_of_the_wild_hawk": [
+      "dota_tooltip_ability_beastmaster_call_of_the_wild_hawk_description",
+      "dota_tooltip_ability_beastmaster_call_of_the_wild_hawk_shard_description"
+    ],
+    "beastmaster_hawk_dive": [
+      "dota_tooltip_ability_beastmaster_hawk_dive_description"
+    ],
+    "beastmaster_wild_axes": [
+      "dota_tooltip_ability_beastmaster_wild_axes_description",
+      "dota_tooltip_ability_beastmaster_wild_axes_note0",
+      "dota_tooltip_ability_beastmaster_wild_axes_scepter_description"
+    ],
+    "lycan_wolf_bite": [
+      "dota_tooltip_ability_lycan_wolf_bite_description"
+    ],
+    "lycan_shapeshift": [
+      "dota_tooltip_ability_lycan_shapeshift_description",
+      "dota_tooltip_ability_lycan_shapeshift_note0",
+      "dota_tooltip_ability_lycan_shapeshift_note1",
+      "dota_tooltip_ability_lycan_shapeshift_abilitydraft_note"
+    ],
+    "lycan_summon_wolves": [
+      "dota_tooltip_ability_lycan_summon_wolves_description",
+      "dota_tooltip_ability_lycan_summon_wolves_shard_description",
+      "dota_tooltip_ability_lycan_summon_wolves_note1",
+      "dota_tooltip_ability_lycan_summon_wolves_note2",
+      "dota_tooltip_ability_lycan_summon_wolves_critical_strike_description",
+      "dota_tooltip_ability_lycan_summon_wolves_invisibility_description"
+    ],
+    "lycan_summon_wolves_invisibility": [
+      "dota_tooltip_ability_lycan_summon_wolves_invisibility_description"
+    ],
+    "broodmother_spin_web": [
+      "dota_tooltip_ability_broodmother_spin_web_abilitydraft_note",
+      "dota_tooltip_ability_broodmother_spin_web_description",
+      "dota_tooltip_ability_broodmother_spin_web_scepter_description",
+      "dota_tooltip_ability_broodmother_spin_web_note0",
+      "dota_tooltip_ability_broodmother_spin_web_note1",
+      "dota_tooltip_ability_broodmother_spin_web_destroy_description"
+    ],
+    "broodmother_spin_web_destroy": [
+      "dota_tooltip_ability_broodmother_spin_web_destroy_description"
+    ],
+    "broodmother_spawn_spiderlings": [
+      "dota_tooltip_ability_broodmother_spawn_spiderlings_description",
+      "dota_tooltip_ability_broodmother_spawn_spiderlings_note0",
+      "dota_tooltip_ability_broodmother_spawn_spiderlings_note1"
+    ],
+    "clinkz_strafe": [
+      "dota_tooltip_ability_clinkz_strafe_description",
+      "dota_tooltip_ability_clinkz_strafe_note0"
+    ],
+    "clinkz_death_pact": [
+      "dota_tooltip_ability_clinkz_death_pact_description",
+      "dota_tooltip_ability_clinkz_death_pact_abilitydraft_note",
+      "dota_tooltip_ability_clinkz_death_pact_note0",
+      "dota_tooltip_ability_clinkz_death_pact_note1",
+      "dota_tooltip_ability_clinkz_death_pact_note2"
+    ],
+    "clinkz_wind_walk": [
+      "dota_tooltip_ability_clinkz_wind_walk_description",
+      "dota_tooltip_ability_clinkz_wind_walk_shard_description",
+      "dota_tooltip_ability_clinkz_wind_walk_note0"
+    ],
+    "clinkz_searing_arrows": [
+      "dota_tooltip_ability_clinkz_searing_arrows_description",
+      "dota_tooltip_ability_clinkz_searing_arrows_note0",
+      "dota_tooltip_ability_clinkz_searing_arrows_note1"
+    ],
+    "item_ultimate_scepter": [
+      "dota_tooltip_ability_item_ultimate_scepter_description",
+      "dota_tooltip_ability_item_ultimate_scepter_2_description",
+      "dota_tooltip_ability_item_ultimate_scepter_roshan_description"
+    ],
+    "item_aghanims_shard": [
+      "dota_tooltip_ability_item_aghanims_shard_description",
+      "dota_tooltip_ability_item_aghanims_shard_roshan_description"
+    ],
+    "item_tpscroll": [
+      "dota_tooltip_ability_item_tpscroll_description",
+      "dota_tooltip_ability_item_tpscroll_note0",
+      "dota_tooltip_ability_item_tpscroll_note1",
+      "dota_tooltip_ability_item_tpscroll_2_description",
+      "dota_tooltip_ability_item_tpscroll_2_note0"
+    ]
+  },
+  "source_independence": "三固定文件同快照、五技巧页同作者、两补丁同发布方；复用响应不增加独立证据数。临时完整网页不提交，公开材料仅有限转述。",
+  "models": {
+    "36-morphling": {
+      "classification": "I/H：旧MF1公开组件与保护窗口深化；不新增设计/专项",
+      "setup": {
+        "wave_level": 4,
+        "morph_level": 1,
+        "lion_hex_level": 1,
+        "wave_start": [
+          0,
+          0
+        ],
+        "wave_end": [
+          900,
+          0
+        ],
+        "lion_position": [
+          450,
+          100
+        ],
+        "wave_cast_start": 0,
+        "wave_cast_point": 0.25,
+        "wave_speed": 1250,
+        "morph_start": 0.35,
+        "morph_cast_point": 0.25,
+        "copied_hex_use_H": 0.65,
+        "state": "取得普通一级妖术且可用；双方有合法视野/目标，敌无吸收/免疫/反制，水人有蓝且能在波中继续R/羊。"
+      },
+      "calculations": {
+        "wave_movement_start": 0.25,
+        "wave_end_time_H": 0.97,
+        "morph_end_H": 0.6,
+        "max_target_distance_for_any_point_on_segment": 460.9772228646444,
+        "r1_range_F": 700,
+        "hex_range_F": 500,
+        "wave_mana_F": 130,
+        "morph_mana_F": 50,
+        "full_hex1_mana_reserved_F": 125,
+        "mana_reserve_not_certified_deduction": 305,
+        "morph_duration_field": 20,
+        "morph_cooldown_r1": 140,
+        "toggle_cooldown_field": 1,
+        "scepter_not_required_for_enemy_basic_hex": true
+      },
+      "decisive_H": [
+        "旧期允许波内施R与复制来的羊且不中断波/无敌，技能及时接入；2024 MF1评论仅给后来Q。",
+        "有效原点只须在起点/沿途/落点这个线段，目标对全部这些位置都在500内，不依赖精确服务器插值。",
+        "不由R字段的50减蓝残留断言本次折扣；按完整妖术蓝保守预留，实际扣法未认证。"
+      ],
+      "counterexamples": [
+        "波前0—0.25和波后仍能被控",
+        "R能作用某类目标不自动授予羊的免疫穿透",
+        "不能抄敌人装备/大招/变身状态，或一秒切换当同帧无限切",
+        "7.31重做神杖，当前新幻象/先天不前移",
+        "已有现成羊/普通先手更好则不必复制绕一层"
+      ]
+    },
+    "37-beastmaster": {
+      "classification": "Q/I/H：公开专项候选第4项，旁单位为吼主对象、关键引导者为副对象；旧期完整链H",
+      "roar_setup": {
+        "beast_position": [
+          0,
+          0
+        ],
+        "primary_ordinary_enemy_creep": [
+          550,
+          0
+        ],
+        "secondary_channeler_with_ready_linkens": [
+          300,
+          100
+        ],
+        "roar_level": 1,
+        "start": 0,
+        "cast_point_F": 0.5,
+        "postcast_effect_delay_H": 0.1,
+        "enemy_channel_finish_H": 1.0,
+        "state": "两个目标均合法可见，副目标非免疫/无其他保护，主目标未死亡/吸收，副对象推开路径有效。"
+      },
+      "roar_calculations": {
+        "primary_distance": 550,
+        "primary_cast_range_F": 600,
+        "secondary_line_distance": 100,
+        "side_radius_field_F": 300,
+        "even_if_300_is_full_width_half": 150,
+        "effect_H": 0.6,
+        "side_push_end_H": 1.6,
+        "primary_stun_end_H": 3.6,
+        "side_push_duration_F": 1,
+        "primary_stun_duration_F": 3,
+        "r1_mana_F": 150,
+        "r1_cooldown_F": 100,
+        "roar_deadline_counterexample": 0.4
+      },
+      "decisive_H": "副目标受到的是AOE推开/控制而非对它的主目标施法，能在此旧期状态绕开林肯并中断引导；现行作者明确指出此类打断/林肯用途，不以所有强制位移类推。",
+      "hawk_scope": {
+        "summon_mana_F": 30,
+        "summon_cast_F": 0.3,
+        "summon_duration_F": 60,
+        "summon_cd_level4_F": 30,
+        "shard_cd_reduction_F": 7,
+        "dive_range_F": 1200,
+        "dive_cast_exposure_F": 1,
+        "dive_damage_F": 250,
+        "dive_stun_F": 2,
+        "dive_mana_F": 0,
+        "dive_cd_F": 0,
+        "hawk_dies_F": true,
+        "cautions": "0CD不产生无限俯冲；1秒暴露后还有未取得实际速度的飞扑，不能拿普通420移速认证到达；改变侦察任务要付失去该鸟。"
+      },
+      "axes_scope": {
+        "caster_and_own_units_only_text": true,
+        "mana_per_cast_F": 65,
+        "regular_cd_F": 8,
+        "scepter_no_cd_wait_until_return_text": true,
+        "cautions": "不能把自己/单位增伤给全队；无CD仍等斧返回并付65蓝，不无限施法。"
+      },
+      "counterexamples": [
+        "副目标不吃主目标整3秒晕，不能据此无缝接固定长伤害",
+        "主对象先死/不可选，或引导0.4就结束，则本模型来不及",
+        "现成普通范围控/先破林肯可能更省100秒R",
+        "吼/鹰已供辅助/三号位，必须另证中路经济增量"
+      ]
+    },
+    "38-lycan": {
+      "classification": "I/H：普通对象/范围与双任务资源对照，不晋升新专项",
+      "setup": {
+        "wolf_bite_previously_applied_within_300": true,
+        "lycan_position": [
+          0,
+          0
+        ],
+        "bitten_ally_position": [
+          1100,
+          0
+        ],
+        "ally_already_transformed_and_lifesteal_active_H": true,
+        "actual_lifesteal_already_generated_input_H": 60,
+        "both_missing_hp_at_least": 60,
+        "no_heal_reduction_amplification_H": true,
+        "state": "普通150射程分支，无例外射程能力；分享生效时双方距离在1200内。"
+      },
+      "calculations": {
+        "bite_cast_range_F": 300,
+        "share_range_F": 1200,
+        "bite_cast_point_F": 0.3,
+        "bite_mana_F": 150,
+        "scepter_gold_F": 4200,
+        "bite_cd_level1_F": 125,
+        "form_attack_range_field_F": 150,
+        "ordinary_original_attack_range_assumed": 600,
+        "max_shared_input_without_extra_scaling_H": 60,
+        "out_of_share_distance_counterexample": 1210,
+        "enemy_position_chase_case": [
+          1400,
+          0
+        ],
+        "needed_ally_position_for150_range": [
+          1250,
+          0
+        ]
+      },
+      "wolf_scope": {
+        "level3_4_invisibility_text": true,
+        "two_wolves_F": 2,
+        "duration_F": 50,
+        "recast_replaces_existing_text": true,
+        "summon_cd_F": 30,
+        "level4_mana_F": 140,
+        "fade_delay_F": 1.7,
+        "cautions": "跟随不等于已失视野/瞬移后全图追踪；不攻击并不延长50寿命，重召将丢掉旧侦察点。"
+      },
+      "counterexamples": [
+        "300施加范围与1200分享范围不是同一许可",
+        "移动到1250追击1400目标会出分享范围，不能同时吃两种理想状态",
+        "已产生的60吸血不再递归变攻击/吸血",
+        "不把两个同数CD字段擅定共享/独立，不默认施WolfBite就免费自R",
+        "当前“不吃任何射程加值”Q与旧AD例外不统一裁定；模型仅普通分支"
+      ],
+      "strong_baselines": [
+        "普通队友续航/位移装",
+        "一号位或三号位狼人供单位/咬人，另一中单输出",
+        "侦察还有价值时不为刷新狼HP直接重召"
+      ]
+    },
+    "39-broodmother": {
+      "classification": "I/H：旧BM1删网碰撞/远端操作联合状态深化，不增加设计/专项",
+      "setup": {
+        "hero_at_tp_start": [
+          2000,
+          0
+        ],
+        "web_A": [
+          0,
+          0
+        ],
+        "web_C": [
+          1000,
+          0
+        ],
+        "web_B": [
+          2000,
+          0
+        ],
+        "web_level": 1,
+        "web_radius_F": 900,
+        "web_count_F": 3,
+        "web_charge_capacity_F": 4,
+        "already_placed_webs": 3,
+        "spiders_near_A_within_assumed": 30,
+        "spider_groups_birth_H": [
+          -30,
+          -22
+        ],
+        "spider_group_count_each_R3_F": 6,
+        "spider_life_F": 60,
+        "two_R3_mana_F": 240,
+        "tp_start_H": 0,
+        "tp_end_if_ordinary_no_penalty_H": 3,
+        "signal_time_H": 0.5,
+        "select_A_and_destroy_time_H": 0.6,
+        "aura_collision_return_delay_bound_H": 0.5,
+        "enemy_reaches_barrier_time_H": 1.4,
+        "rebuild_A_start_after_TP_H": 3.1,
+        "rebuild_cast_F": 0.4,
+        "state": "12只已生成且活着，可在地形形成有用障碍；包围几何不是本轮认证，C/B不覆盖A处蜘蛛；选择网单位操作不打断本体TP是H。"
+      },
+      "calculations": {
+        "spider_count": 12,
+        "first_group_expiry": 30,
+        "second_group_expiry": 38,
+        "nearest_other_web_to_spider_min": 970,
+        "collision_ready_by_H": 1.1,
+        "earliest_rebuild_finish_H": 3.5,
+        "restored_A_touches_C_distance": 1000,
+        "max_touching_centers_same_radius": 1800,
+        "raw_hero_to_A_before_tp": 2000,
+        "ordinary_W_cast_range_F": 1000,
+        "already_paid_three_web_mana": 150,
+        "tp_mana_F": 75,
+        "tp_gold_F": 100,
+        "one_rebuild_mana_F": 50,
+        "gross_two_R_plus_three_W_plus_TP_plus_rebuild_mana": 515,
+        "mana_needed_at_tp_start_for_TP_plus_rebuild": 125
+      },
+      "decisive_H": [
+        "旧期网效果移除使这些蜘蛛恢复碰撞，残留不超过本例0.5；不是只看0CD就断言瞬间封死。",
+        "选网自身无目标立即删除不是在本体上施W，不打断其TP；不采用2022提案尚未上线的本体快捷入口。",
+        "此前已用两个合法目标各一次R3并使其在标记期死亡，6+6蜘蛛剩余寿命足够；不默认无成本12单位。"
+      ],
+      "source_distinctions": [
+        "顶层充能恢复30与special40并存，本模型不选更快者；只用已有一发充能。",
+        "删除0蓝不推出退款；按此前三张网150蓝、重铺另50与一发充能算。",
+        "A重铺依赖仍存在的C，不能把条件全图W当任意全图。",
+        "本体TP结束后才能自己重铺W，不同时把自己当未受引导限制。"
+      ],
+      "counterexamples": [
+        "C/其他网也覆盖蜘蛛时删A不够",
+        "碰撞返回太晚、缺单位/地形、敌有相位/位移/范围清理则不保证挡住",
+        "若C也不在，远处重铺要重新满足连接/范围和充能，不许免费恢复",
+        "重新铺A将再次改变碰撞，不能同时取封路与全部机动优势"
+      ]
+    },
+    "40-clinkz": {
+      "classification": "Q/I/H：公开专项候选第5项为当前渐隐内启动Barrage；7.30e基本技能版本的完整链H。Pact/输出另作普通资源对照。",
+      "fade_setup": {
+        "skeleton_walk_level": 1,
+        "barrage_level": 4,
+        "walk_start": 0,
+        "walk_cast_F": 0,
+        "fade_time_F": 0.6,
+        "barrage_start_H": 0.1,
+        "barrage_cast_F": 0.2,
+        "barrage_channel_F": 2.7,
+        "state": "没有另外取消隐身/引导的输入，角度和目标资格合法；此旧期技能在渐隐期启动不取消待生效隐身且后续箭不取消是决定性H。"
+      },
+      "fade_calculations": {
+        "barrage_effect_H": 0.3,
+        "barrage_end_H": 3.0,
+        "invisible_channel_overlap_H": 2.4,
+        "walk1_mana_F": 75,
+        "barrage4_mana_F": 85,
+        "two_button_mana_F": 160,
+        "walk1_cd_F": 20,
+        "barrage4_cd_F": 18,
+        "barrage_range4_F": 900,
+        "waves4_F": 6,
+        "damage_coefficient_F": 0.65
+      },
+      "pact_setup": {
+        "r_level": 1,
+        "full_ordinary_legal_unit_current_hp_assumed": 1000,
+        "damaged_unit_current_hp_assumed": 400,
+        "sample_at_consumption_H": true,
+        "searing_arrow_autocast_off_H": true,
+        "no_attack_modifier_extra_damage_H": true
+      },
+      "pact_calculations": {
+        "r1_duration_F": 65,
+        "r1_cooldown_F": 80,
+        "r1_gap_between_duration_and_cd": 15,
+        "r1_mana_F": 100,
+        "health_ratio1_F": 0.3,
+        "damage_ratio1_F": 0.04,
+        "full_bonus_hp_H": 300,
+        "damaged_bonus_hp_H": 120,
+        "full_bonus_attack_H": 40,
+        "damaged_bonus_attack_H": 16,
+        "bonus_physical_per_barrage_arrow_full_H": 26,
+        "bonus_physical_per_barrage_arrow_damaged_H": 10.4,
+        "six_arrows_bonus_full_if_all_hit_H": 156,
+        "six_arrows_bonus_damaged_if_all_hit_H": 62.4,
+        "pact_plus_barrage_mana_without_arrow_F": 185,
+        "pact_walk_barrage_mana_reserved_F": 260
+      },
+      "counterexamples": [
+        "当前Shard Barrage不等于旧普通strafe键，旧魔晶是疾风步产骷髅，不免费叠现行方案",
+        "真视/范围控/看到射击方向均可针对，渐隐前与引导期间不是无敌",
+        "已隐身后才启动Barrage的Q分支会显形；不是任何顺序都同效",
+        "六波不保证全中，65%不直接认证所有攻击特效结算",
+        "耗目标当前HP，不从满血上限计算；消耗己方单位有机会成本",
+        "火箭/旧Barrage免疫字段不同，不由一项属性推完另一项；模型只取非免疫目标",
+        "75/85/100是三个独立消耗，全部要用时260而非160或185"
+      ],
+      "strong_baselines": [
+        "先稳控再普通输出",
+        "真视覆盖时正常输出/撤离",
+        "健康单位不可付出时不为Pact牺牲关键单位"
+      ]
+    }
+  },
+  "status": {
+    "cumulative_units": 40,
+    "cumulative_conditional_designs": 11,
+    "cumulative_public_specials": 5,
+    "new_designs": 0,
+    "new_public_specials": 2,
+    "new_N_families": 0,
+    "new_game_test": false,
+    "new_video_replay": false,
+    "new_match_scan": false,
+    "new_prose_adoption": false,
+    "method_semantics_changed": false
+  }
+}
