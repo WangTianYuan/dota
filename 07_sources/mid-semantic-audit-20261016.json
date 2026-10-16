@@ -1,0 +1,1013 @@
+{
+  "id": "sources:mid-semantic-audit-20261016",
+  "date_local": "2026-10-16",
+  "timezone": "America/Los_Angeles",
+  "recorded_at_utc": "2026-10-16T08:17:35.263442+00:00",
+  "scope": "全目标有界验收；本轮逐条语义读取7—54，衔接上一轮1—6，重读15项整套比较/62职责草案/69取舍及选定记录和理论入口；不新增英雄或发现计数。",
+  "baseline_head": "f9ef4e088fb636f065ea02babfb5cbc86ca2ad5c",
+  "read_scope": "人工阅读和定向反证，不以字段检索或断言脚本冒充语义审查；本轮未重取全部历史原帖/比赛数据、未看录像或运行游戏。原始读取范围仍由各来源卡限定。",
+  "fixed_inputs": [
+    {
+      "id": "AW-abilities",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_abilities.txt",
+      "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb",
+      "bytes": 3099817,
+      "cache": "mid-companion-research-20261014\\fresh-AW-abilities.txt"
+    },
+    {
+      "id": "AW-localization",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/resource/localization/abilities_english.txt",
+      "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22",
+      "bytes": 1235305,
+      "cache": "mid-companion-research-20261014\\fresh-AW-localization.txt"
+    },
+    {
+      "id": "AW-items",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/pak01_dir/scripts/npc/items.txt",
+      "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8",
+      "bytes": 621009,
+      "cache": "mid-companion-research-20261014\\fresh-AW-items.txt"
+    },
+    {
+      "id": "AR-heroes",
+      "url": "https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/cb1597f0a599cdd8cf6e0e4785ba735dc9bb9529/game/dota/scripts/npc/npc_heroes.txt",
+      "sha256": "c53ff35869b5678a9ef4c5b032643be379eefa536695644dbf989644c851b181",
+      "bytes": 634652,
+      "cache": "mid-persistent-units-20261012\\npc_heroes.txt"
+    }
+  ],
+  "fresh_field_rechecks_F": {
+    "fixed_hash_checks": [
+      {
+        "id": "AW-abilities",
+        "bytes": 3099817,
+        "sha256": "623ae7f66bdd9f37355f5657def3729a073f5e05575124e022a464559d3b8dfb"
+      },
+      {
+        "id": "AW-localization",
+        "bytes": 1235305,
+        "sha256": "31c2b710f183688d9d2f2611e041a8efdec9f3d2041b1fee91d8c30b51614d22"
+      },
+      {
+        "id": "AW-items",
+        "bytes": 621009,
+        "sha256": "19f9467049e56d8a5051744a9bdc3c568083358d85c148701957055466c6f2d8"
+      },
+      {
+        "id": "AR-heroes",
+        "bytes": 634652,
+        "sha256": "c53ff35869b5678a9ef4c5b032643be379eefa536695644dbf989644c851b181"
+      }
+    ],
+    "ability_blocks": {
+      "windrunner_shackleshot": {
+        "ID": "5130",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_YES_STRONG",
+        "FightRecapLevel": "1",
+        "AbilitySound": "Hero_Windrunner.ShackleshotCast",
+        "AbilityCastRange": "800",
+        "AbilityCastPoint": "0.15",
+        "AbilityCooldown": "16 14 12 10",
+        "AbilityDamage": "0 0 0 0",
+        "AbilityManaCost": "70 80 90 100",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "fail_stun_duration": "0.75 0.75 0.75 0.75"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "stun_duration": "2.0 2.6 3.2 3.8",
+            "LinkedSpecialBonus": "special_bonus_unique_windranger_6"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "shackle_distance": "575"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "arrow_speed": "1650"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "shackle_count": "1"
+          },
+          "06": {
+            "var_type": "FIELD_FLOAT",
+            "shackle_angle": "23"
+          }
+        },
+        "AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1"
+      },
+      "kunkka_torrent_storm": {
+        "ID": "319",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+        "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "MaxLevel": "1",
+        "FightRecapLevel": "1",
+        "IsGrantedByScepter": "1",
+        "HasScepterUpgrade": "1",
+        "AbilitySound": "Ability.Torrent",
+        "AbilityCastPoint": "0.4",
+        "AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_1",
+        "AbilityCooldown": "70",
+        "AbilityManaCost": "250",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "torrent_interval": "0.25",
+            "RequiresScepter": "1"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "torrent_duration": "5.0",
+            "RequiresScepter": "1"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "torrent_min_distance": "300",
+            "RequiresScepter": "1"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "torrent_max_distance": "1100",
+            "RequiresScepter": "1"
+          }
+        }
+      },
+      "kunkka_x_marks_the_spot": {
+        "ID": "5033",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+        "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
+        "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "SpellDispellableType": "SPELL_DISPELLABLE_NO",
+        "FightRecapLevel": "1",
+        "AbilitySound": "Ability.XMarksTheSpot.Target",
+        "AbilityCastRange": "400 600 800 1000",
+        "AbilityCastPoint": "0.4 0.4 0.4 0.4",
+        "AbilityCooldown": "24 20 16 12",
+        "AbilityManaCost": "50",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_FLOAT",
+            "duration": "4.0"
+          },
+          "02": {
+            "var_type": "FIELD_FLOAT",
+            "allied_duration": "8.0"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "fow_range": "400"
+          },
+          "04": {
+            "var_type": "FIELD_FLOAT",
+            "fow_duration": "5.94"
+          }
+        },
+        "AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3"
+      },
+      "kunkka_return": {
+        "ID": "5034",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+        "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+        "AbilitySound": "Ability.XMarksTheSpot.Return",
+        "AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_3",
+        "AbilityCastPoint": "0.4 0.4 0.4 0.4",
+        "AbilityCooldown": "1.0",
+        "AbilityManaCost": "0"
+      },
+      "phantom_lancer_doppelwalk": {
+        "ID": "5066",
+        "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES",
+        "FightRecapLevel": "1",
+        "AbilitySound": "Hero_PhantomLancer.Doppelganger.Cast",
+        "AbilityCastRange": "575",
+        "AbilityCastPoint": "0.1",
+        "AbilityCooldown": "25 20 15 10",
+        "AbilityManaCost": "50",
+        "AbilitySpecial": {
+          "01": {
+            "var_type": "FIELD_INTEGER",
+            "illusion_1_damage_out_pct": "-100",
+            "CalculateSpellDamageTooltip": "0"
+          },
+          "02": {
+            "var_type": "FIELD_INTEGER",
+            "illusion_1_damage_in_pct": "0",
+            "CalculateSpellDamageTooltip": "0"
+          },
+          "03": {
+            "var_type": "FIELD_INTEGER",
+            "illusion_2_damage_out_pct": "-80",
+            "CalculateSpellDamageTooltip": "0"
+          },
+          "04": {
+            "var_type": "FIELD_INTEGER",
+            "illusion_2_damage_in_pct": "500",
+            "CalculateSpellDamageTooltip": "0"
+          },
+          "05": {
+            "var_type": "FIELD_INTEGER",
+            "target_aoe": "325"
+          },
+          "06": {
+            "var_type": "FIELD_INTEGER",
+            "search_radius": "900"
+          },
+          "07": {
+            "var_type": "FIELD_FLOAT",
+            "delay": "1"
+          },
+          "08": {
+            "var_type": "FIELD_FLOAT",
+            "illusion_duration": "8"
+          },
+          "09": {
+            "var_type": "FIELD_FLOAT",
+            "illusion_extended_duration": "2"
+          }
+        },
+        "AbilityCastAnimation": "ACT_DOTA_CAST_ABILITY_2"
+      }
+    }
+  },
+  "fresh_web_attempt": {
+    "url": "https://www.dota2.com/patches/7.30",
+    "method": "web.open",
+    "status": "partial",
+    "scope": "响应页面但可抽取正文0行，不用于证明技能字段或版本全分析。"
+  },
+  "prior_first_six": {
+    "source": "mid-growth-allocation-20261016.json",
+    "results": [
+      {
+        "unit": 1,
+        "hero": "上古巨神",
+        "judgment_I": "短时双区任务的共同条件、严格重叠不等式、十技能点/其他位置对照与放弃已写；新灵体是否清旧增益仍H，不提升整局/占中结论。",
+        "correction": null
+      },
+      {
+        "unit": 2,
+        "hero": "暗影恶魔",
+        "judgment_I": "模板/寿命/冷却、完整生成和普通单批对照明确；25%不够。30%只是同刻边界，不能说成稳定接力。",
+        "correction": "就地明确零余量/事件顺序未知，有正前摇或输入时须更大有效余量。"
+      },
+      {
+        "unit": 3,
+        "hero": "干扰者",
+        "judgment_I": "历史位置可达、形成/返回时机、可见信息、敌人提前开物品与其他位置神杖对照已列；完整中路取得仍只为I/H，不据此直接推荐占中。",
+        "correction": null
+      },
+      {
+        "unit": 4,
+        "hero": "神谕者",
+        "judgment_I": "旧神杖副作用、两次冷却间隔、魔抗非免控与辅助/其他核心对照明确；结果是特定资源窗口I/H而非新进阶认证/中路最优。",
+        "correction": null
+      },
+      {
+        "unit": 5,
+        "hero": "孽主",
+        "judgment_I": "把运输全部收益与R等级只省一秒分开，目标/集结/原区代价、三号位/走路/TP对照及未知信息已列；中路理由尚未成立是有限结果。",
+        "correction": null
+      },
+      {
+        "unit": 6,
+        "hero": "电炎绝手",
+        "judgment_I": "乘员/等待信息/伙伴停工/运输资格与其他运输有对照；吐准备与腹中上限必须共存，不能默认满等再吐。",
+        "correction": "增加完成须在腹内分支w+0.3<=3、w<=2.7并留边界余量；启动即足够仍H。"
+      }
+    ],
+    "boundary_models": {
+      "SD_zero_margin_CDR": 0.3,
+      "SD_ideal_CD_after_CDR": 14,
+      "SD_illusion_lifetime": 14,
+      "gobble_max_hold": 3,
+      "spit_castpoint": 0.3,
+      "wait_conservative_upper": 2.7
+    },
+    "history_only": "上一轮结果复用，不声称本轮重新读取或改写旧源。"
+  },
+  "semantic_reviews_7_54": [
+    {
+      "unit": 7,
+      "judgment": "条件用途H保留；朝向/两段位移/重配时点与沿途候选共同成立，先推再绑是强普通对照。450蓝/6400物品及其他位置对照已列，未证明中路最优。",
+      "change": null,
+      "title": "天涯墨客：主动把缚魂第二目标换成更有价值的人。",
+      "audited_text_sha256": "cb627a86f963010f536889189c617005cef4089a2c22754e5bbe2812c9ed45d0",
+      "revised_text_sha256": "cb627a86f963010f536889189c617005cef4089a2c22754e5bbe2812c9ed45d0"
+    },
+    {
+      "unit": 8,
+      "judgment": "条件协作H保留；宿主不受壳伤、距离/等待/已有定身和微光反例均在，不能强迫萨满取消。黑贤接口不被误写成必须占中。",
+      "change": null,
+      "title": "黑暗贤者配中单电狗：让敌方前排替自己携带对旁人的威胁。",
+      "audited_text_sha256": "58b3c68582be5269e55150ece57e59907cd432177430f4726515e39bf55541c5",
+      "revised_text_sha256": "58b3c68582be5269e55150ece57e59907cd432177430f4726515e39bf55541c5"
+    },
+    {
+      "unit": 9,
+      "judgment": "普通规则收益与阈值反证；神谕可先用低费敕令改变后续抗性，未将残血不能开大扩大成什么都不能开，不计新进阶。",
+      "change": null,
+      "title": "帕格纳：守卫的施法阈值是强对照，暂不升级为进阶发现。",
+      "audited_text_sha256": "2e8f20593b0de7cdc35a1c17dbba5c4e03215a29515b2a8ca9e0c3ef594a1db2",
+      "revised_text_sha256": "2e8f20593b0de7cdc35a1c17dbba5c4e03215a29515b2a8ca9e0c3ef594a1db2"
+    },
+    {
+      "unit": 10,
+      "judgment": "晚信息改第二任务H保留；当前起飞点/位移后释放为决定性未知，示踪与后续冰球速度分开，先站好/直接打B等普通对照与2250成本清楚。",
+      "change": null,
+      "title": "远古冰魄：先确定爆点，再用后来的信息调整沿途禁疗任务。",
+      "audited_text_sha256": "792c16e2e821d769bdf63a7b231e4217bfe502e40dced74fdedae1d7a2e4ef69",
+      "revised_text_sha256": "792c16e2e821d769bdf63a7b231e4217bfe502e40dced74fdedae1d7a2e4ef69"
+    },
+    {
+      "unit": 11,
+      "judgment": "反馈真实性和输入链H保留；用未来位置拦截而非过期粒子，速度450反例、无免费持续真视/封跳、295蓝和9点无闪电配置均分清，整套10点含闪电方案另有说明。",
+      "change": null,
+      "title": "拉席克：用爆炸反馈选逃生路线，再向前拦截隐身目标。",
+      "audited_text_sha256": "29211fe5e156db877feaba08bc9194a7abffc04214a42abd8ca17d5b7ee40d35",
+      "revised_text_sha256": "29211fe5e156db877feaba08bc9194a7abffc04214a42abd8ca17d5b7ee40d35"
+    },
+    {
+      "unit": 12,
+      "judgment": "双区扰动组件/资源H，未晋升新进阶；随机落点非必中，源中心/生成/延迟结算分层，8/12事件只是声明表，6450与300蓝/普通洪流和另一位置有对照。",
+      "change": null,
+      "title": "昆卡：移动持续效果的中心，不等于给两处都保证控制。",
+      "audited_text_sha256": "d7b2f0f96a540ae8e910225785900df1168f8c7d6fb67a41cc465fd53a32a58f",
+      "revised_text_sha256": "d7b2f0f96a540ae8e910225785900df1168f8c7d6fb67a41cc465fd53a32a58f"
+    },
+    {
+      "unit": 13,
+      "judgment": "保留反证结果；覆盖本体记录并不能概括所有可偷对象，奥术至尊范围与取样前输入已分开。分身续握/可偷资格仍H，无三倍伤害/旧Bug必胜，不直接推荐中单。",
+      "change": null,
+      "title": "祸乱之源：分身继续引导，不保证盖掉本体技能就完全防偷。",
+      "audited_text_sha256": "80dc6cdc3a4a548fae1d91de867cf601a271d56bc9e8c4752b0b65eb8997c39e",
+      "revised_text_sha256": "80dc6cdc3a4a548fae1d91de867cf601a271d56bc9e8c4752b0b65eb8997c39e"
+    },
+    {
+      "unit": 14,
+      "judgment": "公开专项Q/H；仅已可见对象和合法输入反馈，判定顺序/真身刚施法与及时取消移动是共同前提，不是雾内扫描或所有错误都是真假认证；六级辅助也有入口。",
+      "change": null,
+      "title": "拉比克：用合法输入的拒绝反馈，区分已经看见的普通幻象。",
+      "audited_text_sha256": "02df148cf3ad15b0e720beb3f06d5c6d369ed7c5245261e375b1a825e6611e34",
+      "revised_text_sha256": "02df148cf3ad15b0e720beb3f06d5c6d369ed7c5245261e375b1a825e6611e34"
+    },
+    {
+      "unit": 15,
+      "judgment": "公开X返场Q/H；12与12.6分开，不靠同帧优先级，265蓝及重连另费/冷却未知、伙伴支援空档和昆卡X机会成本已列。",
+      "change": null,
+      "title": "艾欧＋昆卡：把强制返程改为短间隙，再回前线。",
+      "audited_text_sha256": "10f0e18a3335560ce60cffcb0f699c3ae91adbda2496de225060841d0bf8c8a5",
+      "revised_text_sha256": "10f0e18a3335560ce60cffcb0f699c3ae91adbda2496de225060841d0bf8c8a5"
+    },
+    {
+      "unit": 16,
+      "judgment": "条件返程接球H；落点安全带0.922秒不等于整球寿命，真实视野/退出空档/球CD及天赋与7.32b速度迁移分开，不能回原点即满资源。",
+      "change": null,
+      "title": "帕克：先安全返回，再凭晚信息决定是否接球重返。",
+      "audited_text_sha256": "34f2738460417fb36c5cdbd502ff1160beec4748453fd5726d8c85dc54e1dc82",
+      "revised_text_sha256": "34f2738460417fb36c5cdbd502ff1160beec4748453fd5726d8c85dc54e1dc82"
+    },
+    {
+      "unit": 17,
+      "judgment": "禁锢对象/换位H保留；赶得到与800边界分开，吸攻非生命伤害且禁锢时失去攻击资格，免疫链接与禁锢资格不拼，普通眩晕是强对照。",
+      "change": null,
+      "title": "剃刀＋暗影恶魔：关谁，会改变谁还能调整位置。",
+      "audited_text_sha256": "5b9c4e15503a2e5f94f201da91a5c3c1ea0a78035d9542b68148f372310ed8ba",
+      "revised_text_sha256": "5b9c4e15503a2e5f94f201da91a5c3c1ea0a78035d9542b68148f372310ed8ba"
+    },
+    {
+      "unit": 18,
+      "judgment": "保护/对象资格对照；2019本体入口修复不被后来指南覆盖，模型用未受控圈外鸟，不将晕住斧王写成解除嘲讽；双鸟输出/石化、重召和圈半径代价已列，不计新进阶。",
+      "change": null,
+      "title": "维萨吉：本体受控、鸟受控与发出命令的入口，不能混为一件事。",
+      "audited_text_sha256": "803ac0f1bd71ae645f7681c81ed8d92cdef599f996d9cc5bac7255a5f12b2c67",
+      "revised_text_sha256": "803ac0f1bd71ae645f7681c81ed8d92cdef599f996d9cc5bac7255a5f12b2c67"
+    },
+    {
+      "unit": 19,
+      "judgment": "旧公开回归选择Q/H；提前取消和自然优先级分开，取消撤掉所有熊猫、再分裂/刷新由本体付费且有真实充能；7.32/7.33/7.34d许可分期，非全期风位回归。",
+      "change": null,
+      "title": "酒仙：提前回归与自然回归不能混用，选择资格还会随补丁变。",
+      "audited_text_sha256": "fb431886b51f51a1d5dd29b4a6251b9f737b91f66ab6f28b030188d5ec394be4",
+      "revised_text_sha256": "fb431886b51f51a1d5dd29b4a6251b9f737b91f66ab6f28b030188d5ec394be4"
+    },
+    {
+      "unit": 20,
+      "judgment": "晚定集合点H；取结束位置仍未知，6秒/0.3起算分支和5.9跳留余量，两普通单位/标记受伤/旧召回资格及蓝费分支不扩权，其他位置/正常走路作对照。",
+      "change": null,
+      "title": "陈：先启动召回，再按晚信息决定单位集合在哪里。",
+      "audited_text_sha256": "6df0794e819038ad46a20cc570657cade040a80ca5f8d2c21110cf518305f59c",
+      "revised_text_sha256": "6df0794e819038ad46a20cc570657cade040a80ca5f8d2c21110cf518305f59c"
+    },
+    {
+      "unit": 21,
+      "judgment": "分步放醒H；网/歌/移动/解除和剩余网串行，共同位置、视野确认、幻象寿命/低级输出和A可能重入歌圈均已列，不免费补网或用满级镜像收兵。",
+      "change": null,
+      "title": "娜迦：只放醒一个目标，幻象与伙伴留在另一边工作。",
+      "audited_text_sha256": "8879848eb7ec6d193c3167b45a0d210217e7bd0dcef60170eaa30e94f09f0a39",
+      "revised_text_sha256": "8879848eb7ec6d193c3167b45a0d210217e7bd0dcef60170eaa30e94f09f0a39"
+    },
+    {
+      "unit": 22,
+      "judgment": "公开组件专项Q/H；预先掘地/自推保持资格仍H，0.4推速显式假设，普通刺穿强对照与移动目标330.2出圈反例、6400/140蓝/一级0.6秒分清。",
+      "change": null,
+      "title": "司夜刺客：提前掘地，再用强制位移取代临场挖洞的等待。",
+      "audited_text_sha256": "b980fb2d6a244a288d9070a9967e47218d010b524f28dd65e0d1bb97d2e75fbb",
+      "revised_text_sha256": "b980fb2d6a244a288d9070a9967e47218d010b524f28dd65e0d1bb97d2e75fbb"
+    },
+    {
+      "unit": 23,
+      "judgment": "普通可取消承诺I/H；取消不花蓝不等于不花2.6秒，真实树人/兵线威胁、对手不信和直接去真实任务均保留，未因特效宣称中路/新进阶。",
+      "change": null,
+      "title": "先知：可取消的传送提示，必须和真实威胁、时间成本一起评价。",
+      "audited_text_sha256": "e4b4a5a413354f6b9f8b72e48057858ed8677f279ca81f60fc69e3d249d06ac1",
+      "revised_text_sha256": "e4b4a5a413354f6b9f8b72e48057858ed8677f279ca81f60fc69e3d249d06ac1"
+    },
+    {
+      "unit": 24,
+      "judgment": "普通时序/版本对照；250伤害先后改变已损生命基数，治疗/抗性反例可推翻阈值，旧额外复活时间与7.31永久回复不拼，不靠归属证明中单。",
+      "change": null,
+      "title": "瘟疫法师：队友伤害顺序能改变镰刀门槛，奖励类型不能跨时期拼接。",
+      "audited_text_sha256": "39eb1b787ec9867ab60ebe78f4bd16833c67bf98521845fec3a907f6ba982264",
+      "revised_text_sha256": "39eb1b787ec9867ab60ebe78f4bd16833c67bf98521845fec3a907f6ba982264"
+    },
+    {
+      "unit": 25,
+      "judgment": "移动幻象锚H保留；开始前已有幻象、消息后才移动、1.5准备和190安全下界共同成立；晚起施/晚消息反例、现成真身/跳刀强对照及逐身体蓝量已列，不凭空换W目标。",
+      "change": null,
+      "title": "米波：先准备忽悠，幻象承接晚信息",
+      "audited_text_sha256": "cd0d172c60c08693d9579784c5d4e9e786703ea25fdde7056a721d925517fa2d",
+      "revised_text_sha256": "cd0d172c60c08693d9579784c5d4e9e786703ea25fdde7056a721d925517fa2d"
+    },
+    {
+      "unit": 26,
+      "judgment": "首树取样H保留；链碰树时刻与身体到达分开，850/1200两路线须W4，伙伴50金/站位与飞锯砍树不拼；晚重施赶不上0.8，普通近树优先。",
+      "change": null,
+      "title": "伐木机：消息变坏后，队友改变首棵树",
+      "audited_text_sha256": "bffd0ae44f15c0e37248fd6bb416a7cabc5dfdcc090359002d2eec7e3126fefb",
+      "revised_text_sha256": "bffd0ae44f15c0e37248fd6bb416a7cabc5dfdcc090359002d2eec7e3126fefb"
+    },
+    {
+      "unit": 27,
+      "judgment": "点兵只稳定主对象，不能固定第二目标；575须明确为后方搜索距离，主施法800，两组范围不混用。23角度含义/搜索时点和背向凝视整链仍H，175蓝/七点与普通控制对照保留。",
+      "change": "将笼统距离575改为主目标施法800、后方对象搜索575；数值来自重读固定技能块，不认证搜索算法。",
+      "title": "风行者：稳定第一目标，不代表稳定后方束缚",
+      "audited_text_sha256": "3fc5c2ed7ad7f33b04066aa3fe6d0bd5c69a6d26cc5bbba05f022be19eea01b1",
+      "revised_text_sha256": "fb422acd67d43873c41030032ff344b2646514b77f5c98f464daa521a97e7ea5"
+    },
+    {
+      "unit": 28,
+      "judgment": "提前放波的线性伤害是声明模型H，双光波与900/1050速度区分；Chakra只减已冷却技能，三种起算分支不能证明八秒两波，425基础预算/上限截断与九点配置明确。",
+      "change": null,
+      "title": "光之守卫：区分两种光波和已经开始的冷却",
+      "audited_text_sha256": "4338794a0e9a091c8936fb45394ff669ee2416e28b924aba3cfcdf543561911b",
+      "revised_text_sha256": "4338794a0e9a091c8936fb45394ff669ee2416e28b924aba3cfcdf543561911b"
+    },
+    {
+      "unit": 29,
+      "judgment": "2023分期及累计掉血模型保留H；600血三次仅余37.5不保证活到第四次，分别到期省62.5不能错过救援；官方修复只约束对应时期，不把旧充能报告推广全期。",
+      "change": null,
+      "title": "戴泽：分别到期的生命消耗，修复后的充能问题",
+      "audited_text_sha256": "b5e92e64b3960ca10ec4bcce231b8b66901ca5809a46b6a2115bc79768081a4c",
+      "revised_text_sha256": "b5e92e64b3960ca10ec4bcce231b8b66901ca5809a46b6a2115bc79768081a4c"
+    },
+    {
+      "unit": 30,
+      "judgment": "零抬手与1.7蓄力/100最短路分开，0.1333仅模型而非BKB反应窗口；碎片朝向及Force/Eul触发不泛化，7.34层数不回填2022。",
+      "change": null,
+      "title": "兽：零抬手与首岩碎片，不等于零反应机会",
+      "audited_text_sha256": "677f3d298ca958944e587aa1bd668079197fe652397d32d8a1a720bcf27c5e15",
+      "revised_text_sha256": "677f3d298ca958944e587aa1bd668079197fe652397d32d8a1a720bcf27c5e15"
+    },
+    {
+      "unit": 31,
+      "judgment": "无敌灵魂不保护身体；7.33的50%与7.34的35%使同一500入血变250/325，300血结论不同；敌方300与友方救援、四秒停工和普通保护分开，未证灵魂技能不补输出。",
+      "change": null,
+      "title": "琼英碧灵：灵魂安全，身体仍在付代价",
+      "audited_text_sha256": "98286171204edfb51a841872f9b173e682e6812ec7e4ec054227a27eda484d0f",
+      "revised_text_sha256": "98286171204edfb51a841872f9b173e682e6812ec7e4ec054227a27eda484d0f"
+    },
+    {
+      "unit": 32,
+      "judgment": "分身退出后的旋风持续仍H；19.5吹到22、分身20退出，但旋风无敌失去集火，次R约62而非20；独立CD不免除两个175蓝，2725与本体普通吹作对照。",
+      "change": null,
+      "title": "天穹守望者：分身退出后留住已经建立的控制",
+      "audited_text_sha256": "cd39d5d7d15c48f0cf014bcfdfad0cbc06645fda9a933870eba0ec225d644098",
+      "revised_text_sha256": "cd39d5d7d15c48f0cf014bcfdfad0cbc06645fda9a933870eba0ec225d644098"
+    },
+    {
+      "unit": 33,
+      "judgment": "怒吼复制Q/H保留；熊E与主身圈半径分开、根与恐惧重叠，最后0.2仍可能跑；共享38冷却及保守预留100不是实扣认证，离开的熊不再计满普攻，基本驱散不解任意控制。",
+      "change": null,
+      "title": "德鲁伊：让仍能施法的一侧复制怒吼",
+      "audited_text_sha256": "2247a201b4fb812477431b72b5e1b7c5827e831134ffffac40df36a16c2ba773",
+      "revised_text_sha256": "2247a201b4fb812477431b72b5e1b7c5827e831134ffffac40df36a16c2ba773"
+    },
+    {
+      "unit": 34,
+      "judgment": "EMP中心与共同时间联合设计H；正常中心550无窗口仅限此模型，400可留0.1714余量；决策必须早于施法，275蓝/八元素点/两槽、实烧蓝和普通硬控已列。",
+      "change": null,
+      "title": "祈求者：先决定共同时间，再决定EMP中心",
+      "audited_text_sha256": "cceab312b6c2d61cf46dc3aec8e61d5fa2978b9272d87be6a582c8df79b627d4",
+      "revised_text_sha256": "cceab312b6c2d61cf46dc3aec8e61d5fa2978b9272d87be6a582c8df79b627d4"
+    },
+    {
+      "unit": 35,
+      "judgment": "RP后的准备、抓取圆和伙伴区域共同成立；短冲保住区域而长冲可能带离，不证明默认聚点；E不穿魔免、230/310/另125分清，现成不冲及三号控+中路输出为强对照。",
+      "change": null,
+      "title": "马格纳斯：抓取圆、短冲和伙伴输出同时核对",
+      "audited_text_sha256": "21deb307c50842fcd753c79e94e7d33f11398dcecfc9353860b876f4f20d822c",
+      "revised_text_sha256": "21deb307c50842fcd753c79e94e7d33f11398dcecfc9353860b876f4f20d822c"
+    },
+    {
+      "unit": 36,
+      "judgment": "波内复制羊完整链仍H；沿途最远461在500内不借未知插值，0.65在0.25—0.97移动内，305是预留；不取大招/物品或跨期神杖最好状态，已有羊/普通先手优先。",
+      "change": null,
+      "title": "变体精灵：在已有无敌移动里取得普通先手",
+      "audited_text_sha256": "ab7d10aaf392b230c5a51165761b4ee72b6afcb57ec9e8158cefbacca5487a0e",
+      "revised_text_sha256": "ab7d10aaf392b230c5a51165761b4ee72b6afcb57ec9e8158cefbacca5487a0e"
+    },
+    {
+      "unit": 37,
+      "judgment": "副目标推开断引导及绕吸收保持旧期H；路径半宽解释不改变100偏轴例，0.4短引导来不及，副控不取主晕三秒；鹰俯冲死亡、侦察损失与普通范围控分清。",
+      "change": null,
+      "title": "兽王：主对象吃吼，不代表副对象只能等慢速",
+      "audited_text_sha256": "bde91afd72b7a2238c83be9823d4fb0831cad7fd14b80dba1c92cef756697c5a",
+      "revised_text_sha256": "bde91afd72b7a2238c83be9823d4fb0831cad7fd14b80dba1c92cef756697c5a"
+    },
+    {
+      "unit": 38,
+      "judgment": "狼咬300施法和1200分享分开，150攻击距离/特例及两技能冷却关系不乱补；1210出分享边界，实际60吸血不递归，50寿命/重召替换/有限观察和一三号位对照明确。",
+      "change": null,
+      "title": "狼人：分享距离不是施法距离，侦察不是无限资产",
+      "audited_text_sha256": "69e2f4821d0941d34aba4a956f51c22298ae922d7743b9568ab97b6f87ca5536",
+      "revised_text_sha256": "69e2f4821d0941d34aba4a956f51c22298ae922d7743b9568ab97b6f87ca5536"
+    },
+    {
+      "unit": 39,
+      "judgment": "删网恢复碰撞/不打断本体TP仍H；蜘蛛前史、其他网不覆盖和1.1早于1.4共同成立，恢复网3.5需C邻接与充能；总515与TP时125分开，恢复机动不同时维持阻挡。",
+      "change": null,
+      "title": "育母蜘蛛：控制的是已存在单位的碰撞资格",
+      "audited_text_sha256": "958b2af8b7b31eab4940e3d9a7e8576be22fc2cf5890d2722d3ca00fd9a2b0b3",
+      "revised_text_sha256": "958b2af8b7b31eab4940e3d9a7e8576be22fc2cf5890d2722d3ca00fd9a2b0b3"
+    },
+    {
+      "unit": 40,
+      "judgment": "旧基本Barrage与现行魔晶分期，0.6—3.0隐身引导需两项决定性H且不免疫；Pact取当前血，1000/400给300/120生命和40/16攻击，260蓝全链与普通输出对照已列。",
+      "change": null,
+      "title": "克林克兹：渐隐窗口与被吃单位的当前生命",
+      "audited_text_sha256": "b4a43ee167a84e314e2eeea6b1f6fee78a35c8f2343b56660740187ae9a84e1f",
+      "revised_text_sha256": "b4a43ee167a84e314e2eeea6b1f6fee78a35c8f2343b56660740187ae9a84e1f"
+    },
+    {
+      "unit": 41,
+      "judgment": "零前摇R换远端触发H；8.4赶8.65而普通E8.95已晚，沟壑生命周期/封跳与半余震不能省；315蓝/150秒/合法魔晶、早信号35蓝E及其他位置接口已列。",
+      "change": null,
+      "title": "撼地者：用大招的零前摇支付远处沟壑的最后窗口",
+      "audited_text_sha256": "220daeea8c41e47214f956d90dc11a4d550cdaa44d36efc2adc42daabb68c541",
+      "revised_text_sha256": "220daeea8c41e47214f956d90dc11a4d550cdaa44d36efc2adc42daabb68c541"
+    },
+    {
+      "unit": 42,
+      "judgment": "转向与施法重叠仍H，不删除0.55前摇；目标665距中压中心215、小于半径250，755距305失败，270三压不保证全中，R/隐刀225是另一预算。",
+      "change": null,
+      "title": "影魔：重叠转身保住命中时间，不能删掉影压前摇",
+      "audited_text_sha256": "264763acadf0606b55634ac44205643f8e565a8d6644b97ce81b7f7d1909bdd2",
+      "revised_text_sha256": "264763acadf0606b55634ac44205643f8e565a8d6644b97ce81b7f7d1909bdd2"
+    },
+    {
+      "unit": 43,
+      "judgment": "飞树后隐刀Q在旧期仍H；0.2发射/1.2命中仅静态路程，115蓝/3000金和抓树攻击次数有成本，175不复制为所有溅射背刺；普通先手及其他特效不被代证。",
+      "change": null,
+      "title": "小小：飞行已开始，攻击结算仍可能读取后来状态",
+      "audited_text_sha256": "af6abee42f3ffccbdf5200b09a40821e94bbdf45bf9d78f78a102665a57ac148",
+      "revised_text_sha256": "af6abee42f3ffccbdf5200b09a40821e94bbdf45bf9d78f78a102665a57ac148"
+    },
+    {
+      "unit": 44,
+      "judgment": "诺言保护/治疗错时H保留；4.25伤害落3.5—4.3的模型不认证旧结算，治疗先到反例明确；容量22%不回当前蓝，240法球后192不足R、各动作350/275/475分开。",
+      "change": null,
+      "title": "殁境神蚀者：保护与治疗可有两个时刻，容量与当前蓝也有两本账",
+      "audited_text_sha256": "44f4698c9af261f71ae582aac01efb058a1a003f2ed1c52c39b19efe742a7b8b",
+      "revised_text_sha256": "44f4698c9af261f71ae582aac01efb058a1a003f2ed1c52c39b19efe742a7b8b"
+    },
+    {
+      "unit": 45,
+      "judgment": "旧屏障完全吸收不封跳仍H，350漏30不能保证跳，不清除已有封锁；475与中断再刷新775、三级18级和引导3.5分清，未借未来升级补预算。",
+      "change": null,
+      "title": "修补匠：屏障留下的跳刀资格，要与下一轮蓝量一起算",
+      "audited_text_sha256": "11e42840144db5c6e25b54aa16cb220769570d80b0e17b83ebd18904f6b86017",
+      "revised_text_sha256": "11e42840144db5c6e25b54aa16cb220769570d80b0e17b83ebd18904f6b86017"
+    },
+    {
+      "unit": 46,
+      "judgment": "雪球终点与冰片视野仍H；进球前不无敌，蓄球/飞行分别最多三秒，675只作基线，175蓝/队友范围/中途碰撞/目标活着共同成立，辅助接口和普通近目标优先。",
+      "change": null,
+      "title": "海民：救援路径先要有一个活着、可见、不会把人带深的终点",
+      "audited_text_sha256": "cbacf207602118ba01ed84cea4b2c5299e075d34bbc56fc1743b8e54a54fc678",
+      "revised_text_sha256": "cbacf207602118ba01ed84cea4b2c5299e075d34bbc56fc1743b8e54a54fc678"
+    },
+    {
+      "unit": 47,
+      "judgment": "残焰场上寿命和手中充能分开；20激活消费两个旧锚仍H，不凭剩一充能保住旧退路；150激活/200含拳、投放速度与激活/临时位置分清，安全魂是强对照。",
+      "change": null,
+      "title": "灰烬之灵：场上的残焰和手里的充能，承担不同的退路",
+      "audited_text_sha256": "65a3fedcace00ecf2fe7d379002177a438a03dab4315da2f01c45913806d0db7",
+      "revised_text_sha256": "65a3fedcace00ecf2fe7d379002177a438a03dab4315da2f01c45913806d0db7"
+    },
+    {
+      "unit": 48,
+      "judgment": "同石双用公开Q不重复计发现；准备0.61和普通/增强路程速度分开，150蓝、七充能/20恢复、旧375地面视野与控制重叠损失保留，2023无敌不回填。",
+      "change": null,
+      "title": "大地之灵：省一颗石头有价值，也可能丢掉分段控制",
+      "audited_text_sha256": "eb0e8415fea383a5486874d6bb4b46b44274aa7a454bdff610eddbced644caba",
+      "revised_text_sha256": "eb0e8415fea383a5486874d6bb4b46b44274aa7a454bdff610eddbced644caba"
+    },
+    {
+      "unit": 49,
+      "judgment": "副嘲讽断引导/绕吸收旧期H，主兵可选存活且副对象不免疫共同成立；主穿透不授副对象，主副伤害保护不能与全队输出并计，400蓝与普通控制/辅助分工有对照。",
+      "change": null,
+      "title": "寒冬飞龙：旁单位可以承载控制，受保护的伤害窗口也会跟过来",
+      "audited_text_sha256": "74cb70d50b8f75b1277c2b4f0fae4f67167cc625c7140c95023eb7d830e04c37",
+      "revised_text_sha256": "74cb70d50b8f75b1277c2b4f0fae4f67167cc625c7140c95023eb7d830e04c37"
+    },
+    {
+      "unit": 50,
+      "judgment": "补首点不追溯封锁仍H；留点先失去此前作用，1.3落树不保证安全且砍树四秒晕；变形0.2与现行0.1分开，普通走位/脱仇恨和真实树资格不省。",
+      "change": null,
+      "title": "齐天大圣：留点换的是一次资格窗口，也放弃此前的技能作用",
+      "audited_text_sha256": "66dcbf41c03e2777dca573f313151284eff80673260fa301cae609a85e183e0b",
+      "revised_text_sha256": "66dcbf41c03e2777dca573f313151284eff80673260fa301cae609a85e183e0b"
+    },
+    {
+      "unit": 51,
+      "judgment": "旧甲盾36%减伤仍掉64血，不能借现行屏障保瓶跳；滚中0.75位移412.5只是H，不与步行225叠加，205/255分清，旧魔免/同目标再生效不推无限晕。",
+      "change": null,
+      "title": "石鳞剑士：旧减伤不是现行护盾，移动也不等于无缝晕",
+      "audited_text_sha256": "4608c432636a3b3e12aed4072003a35154e9111ba0fa55f1690f335d30e0852a",
+      "revised_text_sha256": "4608c432636a3b3e12aed4072003a35154e9111ba0fa55f1690f335d30e0852a"
+    },
+    {
+      "unit": 52,
+      "judgment": "六外门旋转/取样H；260能到而转30度419.86不能到，不把有限门当圆周任意点；两真英雄310物理吸收不认证所有物理技能，260/350蓝和0.3准备/根缠保留。",
+      "change": null,
+      "title": "虚无之灵：门户是有限落点，朝向改变的是可选集合",
+      "audited_text_sha256": "8bd73668cde48de97fa23afba05726f50cfe521ffb35823a42cc3a106915cfd4",
+      "revised_text_sha256": "8bd73668cde48de97fa23afba05726f50cfe521ffb35823a42cc3a106915cfd4"
+    },
+    {
+      "unit": 53,
+      "judgment": "已出箭后后撤同时服务离险/增伤H；575合法出箭，1650量距未超1750，0.611命中和0.7危险期限共同成立；55蓝/2250/封跳、普通推走与辅助供箭对照清楚。",
+      "change": null,
+      "title": "魅惑魔女：先让箭离手，再让后撤同时服务生存与增伤",
+      "audited_text_sha256": "633026291f461bba84e3728a78437826fbb803fe2aa743d1b2c56a7cf71d823b",
+      "revised_text_sha256": "633026291f461bba84e3728a78437826fbb803fe2aa743d1b2c56a7cf71d823b"
+    },
+    {
+      "unit": 54,
+      "judgment": "增幅伤害时取样仍H；0.8信息先于1.0决定/1.2效果/1.7命中，增61.875不是必杀；两个蓝池90/25、完整八秒掉血不退款，提前增幅其他任务与反向分工是强对照。",
+      "change": null,
+      "title": "血魔与天怒：把是否支付增幅的决定留到弹道中后段",
+      "audited_text_sha256": "bbd5ed2d03bfb6403f9b7eec2b8221fce3bbde3846b4cdd325bbcdb5e8fd3ffc",
+      "revised_text_sha256": "bbd5ed2d03bfb6403f9b7eec2b8221fce3bbde3846b4cdd325bbcdb5e8fd3ffc"
+    }
+  ],
+  "whole_plan_reviews_15": [
+    {
+      "hero": "拉席克",
+      "judgment_I": "10点/700蓝路线与兵线、新星持续费、回城/推推冲突核对；反馈仅在本来承担站场时增量，不能单独证明占中。"
+    },
+    {
+      "hero": "帕克",
+      "judgment_I": "8对6级与600实际蓝、球/大招真实冷却及艾欧成本核对；二次参与只用剩余资源，提前断缆/留场是强对照。"
+    },
+    {
+      "hero": "剃刀",
+      "judgment_I": "8对6级连续2.75秒的边际仅13.75攻击力，185分担与清线/退出另计；普通晕保攻击、三号位供压攻均保留。"
+    },
+    {
+      "hero": "祈求者",
+      "judgment_I": "4/4/0对3/3/0元素、两槽和实际烧蓝返还核对；一人325只回162.5，两人325也须蓝池空间，不借高火或免费退出。"
+    },
+    {
+      "hero": "杰奇洛",
+      "judgment_I": "E4冷却增量要有密集合法出手，低资源E3不当零；500实际蓝清线后即使蓝鞋仍缺退出，等级取得不能直接报分钟。"
+    },
+    {
+      "hero": "帕格纳",
+      "judgment_I": "八级主Q和主棒互斥、700总蓝及官方两次攻击回血优先于残留25%已分清；7.31引导施虚无不能回填7.30e。"
+    },
+    {
+      "hero": "复仇之魂",
+      "judgment_I": "5150库存与净收入取得先过关；杀/不杀/控而不杀三回应及幻象移走损失明确，主接口由辅助供给仍为强对照。"
+    },
+    {
+      "hero": "美杜莎",
+      "judgment_I": "早回要胜过不放、四级至少850法力基数才收支平；两条八点互斥，换线不自动形成二号位价值，7.33重做不混。"
+    },
+    {
+      "hero": "水晶室女",
+      "judgment_I": "魔晶起购与等级分开、6400路线和低资源1900对照、光环逐人逐时预算已列；BKB不自动覆盖全部领域/控制。"
+    },
+    {
+      "hero": "巫医",
+      "judgment_I": "E4对E3边际116.15，不占伙伴全部伤害；2022主W费用/伤害及三秒转换与2021分开，转换不代大招冷却。"
+    },
+    {
+      "hero": "编织者",
+      "judgment_I": "5150库存及另一路4200分配比较；5与26效果取0与21新快照，同250当前蓝因消耗先后得到不同回蓝，施法者另付300。"
+    },
+    {
+      "hero": "虚空假面",
+      "judgment_I": "各级W同60%减速，给定四秒冷却W4对W3无额外延迟；7.33罩3.75与W6边际不重复归因，下一任务不免费再罩。"
+    },
+    {
+      "hero": "露娜",
+      "judgment_I": "1.25生效后窗口内普通2—3/A4—5束，独立相位差225—675非450保底；自Q后起R仅余0.3，5150投资与140秒空档有强对照。"
+    },
+    {
+      "hero": "米波",
+      "judgment_I": "R4/11/18与2/3/4身体、主身120不足180但分身300可接网、只到达伤害180/270核对；幻象前史及安全真身/跳刀强对照明确。"
+    },
+    {
+      "hero": "伐木机",
+      "judgment_I": "三种八点互斥、六层非满24层、650实际蓝的持续费与退出145核对；额外五秒锯导致差13，W4链程和伙伴树不得借W2预算。"
+    }
+  ],
+  "coverage_crosscheck": {
+    "roster": 124,
+    "priority": 43,
+    "prior_primary_hero_ids": [
+      3,
+      7,
+      10,
+      11,
+      13,
+      15,
+      19,
+      21,
+      23,
+      34,
+      36,
+      38,
+      45,
+      50,
+      52,
+      53,
+      55,
+      56,
+      61,
+      66,
+      68,
+      74,
+      76,
+      77,
+      78,
+      79,
+      80,
+      82,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      97,
+      98,
+      100,
+      103,
+      106,
+      107,
+      108,
+      111,
+      112,
+      113,
+      114,
+      120,
+      121,
+      126,
+      128,
+      137,
+      138
+    ],
+    "baseline_hero_ids": [
+      17,
+      46,
+      49
+    ],
+    "other_candidate_hero_ids": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      37,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      47,
+      48,
+      51,
+      54,
+      57,
+      58,
+      59,
+      60,
+      62,
+      63,
+      64,
+      65,
+      67,
+      69,
+      70,
+      71,
+      72,
+      73,
+      75,
+      81,
+      83,
+      84,
+      85,
+      93,
+      94,
+      95,
+      96,
+      99,
+      101,
+      102,
+      104,
+      105,
+      109,
+      110,
+      119,
+      123,
+      129,
+      135,
+      136
+    ],
+    "initial_partitions_disjoint_and_union_124": true,
+    "decision_groups": {
+      "机制储备": 27,
+      "队伍接口": 23,
+      "既有详模": 3,
+      "联合深化": 4,
+      "常规方案": 12
+    },
+    "role_drafts": 62,
+    "seven_with_other_models": [
+      "4 血魔",
+      "9 米拉娜",
+      "22 宙斯",
+      "37 术士",
+      "39 痛苦女王",
+      "58 魅惑魔女",
+      "101 天怒法师"
+    ],
+    "counts_overlap_after_deepening": true
+  },
+  "acceptance_manual_findings": [
+    {
+      "criterion": "名单和候选处置闭合",
+      "finding_I": "124个ID与原源表一致；旧52主单元/3基线/69第二轮候选是互斥的最初覆盖分区，后续54单元含重合。43优先均有入口；69分组与62草案及另七项模型对应。",
+      "evidence": [
+        "全英雄首轮排查",
+        "余69候选的第二轮取舍",
+        "六十二项候选的中路职责与资源对照"
+      ]
+    },
+    {
+      "criterion": "记录与自主推演并行",
+      "finding_I": "实际读FE1/FE4、SS2、TA4/TA5当前内容、六项7.31b过程，读N01—N09及N08/N09完整任务链；有已知组件和无同款要求的H路径，未将后者冒称O/F。",
+      "evidence": [
+        "按英雄查全部材料",
+        "三位重点的7.31b完整职责与六项对抗过程",
+        "用途候选的完整说明"
+      ]
+    },
+    {
+      "criterion": "重点最小记录及强对照",
+      "finding_I": "前六沿上一轮逐条审查及两处修正，本轮完整读取7—54、十四组选用/反制、三新模型、62草案和15项整套比较。任务、输入/条件、识别/放弃、成功/失败、自己/伙伴成本、强普通对照与决定性未知已有具体内容；未发现需追加为本轮必做的缺项。",
+      "evidence": [
+        "semantic_reviews_7_54",
+        "whole_plan_reviews_15",
+        "prior_first_six"
+      ]
+    },
+    {
+      "criterion": "从局部回到英雄和中路投入",
+      "finding_I": "15整套比较实际核对资源取得、技能路线、第一/第二任务、同英雄换路及另一中单分工。无法由单项接口证明占中的结论照样交付，不硬补中路最优或胜率。",
+      "evidence": [
+        "whole_plan_reviews_15",
+        "全英雄复筛后的比较结论"
+      ]
+    },
+    {
+      "criterion": "必要版本和证据分层",
+      "finding_I": "124名单122+后发2、发布/CM/赛事资格、指定7.31/7.32/7.33/7.34迁移及旧现代接口已分开。冲突条目保持撤回/条件；无历史同款、客户端与普及率的未知不会升级。",
+      "evidence": [
+        "从2021方案继续到必要的跨期变化",
+        "两项在途推演的7.33迁移边界",
+        "不再沿用的结论与仍保留的问题"
+      ]
+    },
+    {
+      "criterion": "渠道和来源范围可追溯",
+      "finding_I": "现行渠道用途表、取得/已读/已核与局部受阻边界已有记录；旧32JSON保持。本轮只重核四缓存哈希并读五技能块；官方7.30网页零正文不作新F，不新采比赛/视频。",
+      "evidence": [
+        "来源渠道与取证选择",
+        "渠道状态与受阻处理",
+        "fresh_field_rechecks_F"
+      ]
+    },
+    {
+      "criterion": "交付和已知未知分开",
+      "finding_I": "当前总库/覆盖/PROJECT/任务记录一致；Word v1.2仅方法阅读版，未包含以后全部英雄。完成的是授权时期的全名单排查、候选取舍、重点条件研究及本轮语义审查，不宣称124位同深度/全期Meta/职业认证。分支和PR交付还须新鲜验证。",
+      "evidence": [
+        "current_scope_conclusion",
+        "remaining_uncertainties"
+      ]
+    }
+  ],
+  "remaining_uncertainties": [
+    "整链H的旧引擎实现、实际输入容错/成功率、全队长期收益，未由本项目实测认证。",
+    "当期可用机会/普及分母和历史无人知道未建立；公开组件不按公开自动降级，也不冒称原创。",
+    "124位研究深度不均，主要7.30e截面加必要迁移，不是2021—2023每个字母版和阵容的穷尽。",
+    "TA3/TA5指定推推分支、早期清熊Q、其他负面边界保持原限制；不存在的权限不以小说天赋补齐。"
+  ],
+  "maturity": {
+    "new_independent_discoveries_certified": false,
+    "engine_or_professional_value_certified": false,
+    "popularity_or_historical_unknown_certified": false,
+    "story_adoption_authorized": false,
+    "uniform_all_hero_depth_certified": false
+  },
+  "current_scope_conclusion": "手册规定的可交付层次已实际覆盖，未发现尚需本轮执行的实质缺项；可在验证和既授权草稿PR交付后结束此持续目标。保留未知不是认定现实有效，也不新设124位等深/全期穷尽或实机认证门槛。",
+  "changes": [
+    "风行第27单元就地把主目标800与副对象575两种距离分开。",
+    "更新结果入口与本次进度，区分已完成研究活动、允许保留未知及未认证强结论。"
+  ],
+  "preserved_source_jsons": {
+    "07_sources/batch-012-ti10-extract.json": "0648ce5ec9e07d7ca6b2bbd19b18b1e984e205887c8d94c47cbd948cebec028e",
+    "07_sources/core-three-growth-20261015.json": "49754ea8385efc576c56fe6f0464a0e49560f89ba02a3cf62b837d6d402f3200",
+    "07_sources/core-three-spring-depth-20261015.json": "753fb5420f5a113733b73227d8dd84b07eeccc7786a05174eec78c50d7dcf0f2",
+    "07_sources/mid-2023-resource-research-20261013.json": "44976fd128f8cd96f29816f0104d2bfbc30222a268f46cf2600398e1ef920cd2",
+    "07_sources/mid-action-window-research-20261013.json": "bc20c87ed0ce285701877c29629b61aefafc175faab8b7e1f45f33248cfcc728",
+    "07_sources/mid-all-hero-screen-20261013.json": "01a30252ff8a0ffe458caba3a3986593eea1556c843fc5b0ffbae6bd9691c9f5",
+    "07_sources/mid-analysis-channels-20261012.json": "e35cced75036274436d9d9c032fd3f214a870d643ceb0bf812b78b1b9bbcf45f",
+    "07_sources/mid-borrowed-units-20261012.json": "523ceb3d87ccffe086bb533f1059ed49e8301b50a09acc76e3f45642f70f59af",
+    "07_sources/mid-candidate-decisions-20261015.json": "a78906e4b83f2b7f8681e774acf7911bce08bf90a0ec1bbcdea6b0f86643f4fc",
+    "07_sources/mid-command-research-20261013.json": "761e6ae07e9015ecd0f39b4ad48ecaef01b5ad6f918beedcdab2f42dfdb67904",
+    "07_sources/mid-companion-research-20261014.json": "801e243d2b41ad0ac84de8e431dd16872d8e71815c9d610a00bd0cd7308cb39b",
+    "07_sources/mid-control-research-20261014.json": "6228704636ab268622ad9370a6a32663df9f36418264830db55d927fad2a4cc7",
+    "07_sources/mid-growth-allocation-20261016.json": "d51931a0342f4db8c62325c655474336d163f49170d40d0330439d9bc9623103",
+    "07_sources/mid-interface-research-20261013.json": "c785d8624eefd88fd3829d0c137ef47d2d45ca3c105ddeb925760366b3fc12d4",
+    "07_sources/mid-jakiro-depth-20261015.json": "4090b278349bbf22523611010a563077b57b04ca03e8a14ff0d838f6e3d0bf31",
+    "07_sources/mid-late-choice-research-20261013.json": "a4c43e775a05a0499976ce913a7a3fc7644743b50b49c6bacc429044b80f3b21",
+    "07_sources/mid-migration-research-20261014.json": "5982b3fc3294e695037e29525ca3ec37348f41db5229f3000ee149866492e936",
+    "07_sources/mid-ownership-research-20261014.json": "be7080a92dde989a0e1e9ec15d444547d0bc89600f4f796eee8d7bc3c2196b9a",
+    "07_sources/mid-position-research-20261013.json": "7ca3c2dcf86925b989fa23496ba4daa447e331388eb6bbaeebac863ea7ab8c28",
+    "07_sources/mid-priority-research-20261014.json": "53dd53308a6262b1af0bcd8d2f77135ca7566021c7ffb404ed92e471674b986c",
+    "07_sources/mid-remaining-research-20261014.json": "b1303ce59499aa1c1a8d44ba52a54821e5b6faac10ad495140157dec8d6f0a67",
+    "07_sources/mid-return-research-20261013.json": "41fab303ca3c3a926dad504d0752300cb5ac534d3ac77f6e561c10ac05a32c03",
+    "07_sources/mid-role-allocation-20261015.json": "f2ec51593c55949dc29a956f080d44db5b3cb04c2364d239c26f5210c6d43dcc",
+    "07_sources/mid-role-depth-20261015.json": "a01d17eca1abb5596c8f852d9c21fce496074ce2bcbce08e6cc83b273f774074",
+    "07_sources/mid-secondary-allocation-20261015.json": "21489abc7d88402c93a083148a9c577ce2726f11bbe223e4036ab573427dc9f1",
+    "07_sources/mid-shallow-closure-20261015.json": "1cedb32da29539112287a36f070e3de3f6b3607c77b649ede76c95b937751b64",
+    "07_sources/mid-ta-proxy-20261012.json": "203e3cd6be9b4bea854fc078105473018c177668dd67d6b738a58ae2e169e688",
+    "07_sources/mid-theory-pilot-20261012.json": "7b5a7360c6ed8951cdc2cb08694951016a801d8fd7375a8a9c4234ef76a89b92",
+    "07_sources/mid-value-method-20261008.json": "25f6f99b6cdf529794b6e7751751253dfd85d52805cb038cf74c7fe8144f177f",
+    "07_sources/opening-mid-ecology-20261007.json": "f78c99ff920316ac143a41ad3951611e05cc8c481c4e9408bc20dd9e2178d4e2",
+    "07_sources/version-mid-20260923-data.json": "404540ee3895267362eed25d3e61ac8f08371c8b78fe5a77c95cbb38ab65839b",
+    "07_sources/xg-ti12-eligibility-20261015.json": "fee6d9d296950d71d90508924dcd1f3a8ff187086bf014b5598dda9e2309e182"
+  }
+}
